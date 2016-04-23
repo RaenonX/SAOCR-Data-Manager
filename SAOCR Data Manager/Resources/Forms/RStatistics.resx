@@ -136,9 +136,33 @@
     <value>武器相關</value>
   </data>
   <data name="Message_Samples1" xml:space="preserve">
-    <value> (武器統計樣本數量: </value>
+    <value> (統計樣本數量: </value>
   </data>
   <data name="Message_Samples2" xml:space="preserve">
     <value>)</value>
+  </data>
+  <data name="Layout_CharaRarityRate" xml:space="preserve">
+    <value>角色星級占比</value>
+  </data>
+  <data name="Layout_CharaSceneRate" xml:space="preserve">
+    <value>角色舞台占比</value>
+  </data>
+  <data name="Layout_CharaSeriesRate" xml:space="preserve">
+    <value>角色系列占比</value>
+  </data>
+  <data name="Log_Calculated1" xml:space="preserve">
+    <value>資料種類: </value>
+  </data>
+  <data name="Log_Calculated2" xml:space="preserve">
+    <value> 的資料計算完成。</value>
+  </data>
+  <data name="Log_Calculating1" xml:space="preserve">
+    <value>正在計算 </value>
+  </data>
+  <data name="Log_Calculating2" xml:space="preserve">
+    <value> 的相關資料...資料種類: </value>
+  </data>
+  <data name="Log_Calculating3" xml:space="preserve">
+    <value>。</value>
   </data>
 </root>

@@ -47,6 +47,17 @@ namespace SAOCR_Data_Manager
             public const string WEAPON_CATEGORY_ID = "武器種類ID";
             public const string WEAPON_CATEGORY = "武器種類";
             public const string WEAPON_USING_RATE = "武器使用比率";
+            public const string ELEMENT_CATEGORY_ID = "屬性ID";
+            public const string ELEMENT_CATEGORY = "屬性名稱";
+            public const string ELEMENT_RATE = "屬性占比";
+            public const string SCENE_CATEGORY_ID = "舞台ID";
+            public const string SCENE_CATEGORY = "舞台名稱";
+            public const string SCENE_RATE = "舞台占比";
+            public const string RARITY = "星級";
+            public const string RARITY_RATE = "占比";
+            public const string SERIES_CATEGORY_ID = "角色系ID";
+            public const string SERIES_CATEGORY = "角色系名稱";
+            public const string SERIES_RATE = "角色系占比";
         }
 
         public static class Path
@@ -80,6 +91,9 @@ namespace SAOCR_Data_Manager
             public const int BA = 3;
             public const int PARAM_TYPE = 4;
             public const int WEAPON_CATEGORY = 12;
+            public const int ELEMENT_CATEGORY = 3;
+            public const int SCENE_CATEGORY = 4;
+            public const int RARITY = 6;
         }
 
         public static class Column

@@ -1463,4 +1463,40 @@
     <value>錯誤代碼 0x00001009\n\n</value>
     <comment>WeaponStatus</comment>
   </data>
+  <data name="E_0x0002A001" xml:space="preserve">
+    <value>錯誤代碼 0x0002A001\n\n計算或顯示樣本數量時發生錯誤。</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A002" xml:space="preserve">
+    <value>錯誤代碼 0x0002A002\n\n計算角色武器使用占比時發生錯誤。</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A003" xml:space="preserve">
+    <value>錯誤代碼 0x0002A003\n\n計算屬性武器使用占比時發生錯誤。</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A004" xml:space="preserve">
+    <value>錯誤代碼 0x0002A004\n\n計算舞台武器使用占比時發生錯誤。</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A005" xml:space="preserve">
+    <value>錯誤代碼 0x0002A005\n\n計算系列武器使用占比時發生錯誤。</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A006" xml:space="preserve">
+    <value>錯誤代碼 0x0002A006\n\n計算星級武器使用占比時發生錯誤。</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A007" xml:space="preserve">
+    <value>錯誤代碼 0x0002A007\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A008" xml:space="preserve">
+    <value>錯誤代碼 0x0002A008\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A009" xml:space="preserve">
+    <value>錯誤代碼 0x0002A009\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
 </root>

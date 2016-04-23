@@ -120,9 +120,12 @@ namespace SAOCR_Data_Manager
                 SS_Weapon.Text = RStatistics.Layout_WeaponRelated;
                 SS_Character.Text = RStatistics.Layout_CharacterRelated;
                 SS_Monster.Text = RStatistics.Layout_MonsterRelated;
-                SS_CharaWeaponUsingRateText.Text = RStatistics.Layout_CharaWeaponUsingRate;
                 SS_CharaCalculate.ButtonText = RStatistics.Layout_Calculate;
-                SS_ChsaraElementRateText.Text = RStatistics.Layout_CharaElementRate;
+                SS_CharaWeaponUsingRateText.Text = RStatistics.Layout_CharaWeaponUsingRate;
+                SS_CharaElementRateText.Text = RStatistics.Layout_CharaElementRate;
+                SS_CharaRarityRateText.Text = RStatistics.Layout_CharaRarityRate;
+                SS_CharaSceneRateText.Text = RStatistics.Layout_CharaSceneRate;
+                SS_CharaSeriesRateText.Text = RStatistics.Layout_CharaSeriesRate;
             }
             catch (Exception e)
             {
@@ -292,12 +295,39 @@ namespace SAOCR_Data_Manager
                         CD_Favorite.Columns.Add(Const.ColName.CHARA_ID, 85, HorizontalAlignment.Left);
                         CD_Favorite.Columns.Add(Const.ColName.CHARA_NAME, 200, HorizontalAlignment.Left);
                         break;
-                    case InitItem.WeaponUsingRate:
+                    case InitItem.CharaWeaponUsingRate:
                         SS_CharaWeaponUsingRate.Clear();
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.WEAPON_CATEGORY_ID, 80, HorizontalAlignment.Left);
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.WEAPON_CATEGORY, 80, HorizontalAlignment.Left);
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.WEAPON_USING_RATE, 100, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.CharaElementRate:
+                        SS_CharaElementRate.Clear();
+                        SS_CharaElementRate.Columns.Add(Const.ColName.N_A, 0);
+                        SS_CharaElementRate.Columns.Add(Const.ColName.ELEMENT_CATEGORY_ID, 80, HorizontalAlignment.Left);
+                        SS_CharaElementRate.Columns.Add(Const.ColName.ELEMENT_CATEGORY, 80, HorizontalAlignment.Left);
+                        SS_CharaElementRate.Columns.Add(Const.ColName.ELEMENT_RATE, 100, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.CharaSceneRate:
+                        SS_CharaSceneRate.Clear();
+                        SS_CharaSceneRate.Columns.Add(Const.ColName.N_A, 0);
+                        SS_CharaSceneRate.Columns.Add(Const.ColName.SCENE_CATEGORY_ID, 80, HorizontalAlignment.Left);
+                        SS_CharaSceneRate.Columns.Add(Const.ColName.SCENE_CATEGORY, 80, HorizontalAlignment.Left);
+                        SS_CharaSceneRate.Columns.Add(Const.ColName.SCENE_RATE, 100, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.CharaRarityRate:
+                        SS_CharaRarityRate.Clear();
+                        SS_CharaRarityRate.Columns.Add(Const.ColName.N_A, 0);
+                        SS_CharaRarityRate.Columns.Add(Const.ColName.RARITY, 100, HorizontalAlignment.Left);
+                        SS_CharaRarityRate.Columns.Add(Const.ColName.RARITY_RATE, 160, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.CharaSeriesRate:
+                        SS_CharaSeriesRate.Clear();
+                        SS_CharaSeriesRate.Columns.Add(Const.ColName.N_A, 0);
+                        SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_CATEGORY_ID, 80, HorizontalAlignment.Left);
+                        SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_CATEGORY, 80, HorizontalAlignment.Left);
+                        SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_RATE, 100, HorizontalAlignment.Left);
                         break;
                 }
             }
@@ -625,7 +655,6 @@ namespace SAOCR_Data_Manager
                 InitializeUIText();
                 InitializeEventHandler();
                 InitializeList(InitItem.CrDataTitle);
-                InitializeList(InitItem.WeaponUsingRate);
                 InitializeBGM();
                 InitializeDataTables();
             }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MN_Title = new System.Windows.Forms.Label();
             this.P_HomePage = new System.Windows.Forms.Panel();
             this.HM_ToStatistics = new SAOCR_Data_Manager.Button_SE_();
@@ -54,7 +54,7 @@
             this.P_Statistics = new System.Windows.Forms.Panel();
             this.SS_Monster = new System.Windows.Forms.GroupBox();
             this.SS_Character = new System.Windows.Forms.GroupBox();
-            this.SS_ChsaraElementRateText = new System.Windows.Forms.Label();
+            this.SS_CharaElementRateText = new System.Windows.Forms.Label();
             this.SS_CharaElementRate = new System.Windows.Forms.ListView();
             this.SS_CharaCalculate = new SAOCR_Data_Manager.Button_SE_();
             this.SS_CharaWeaponUsingRateText = new System.Windows.Forms.Label();
@@ -141,6 +141,13 @@
             this.CD_FavoriteText = new System.Windows.Forms.Label();
             this.EX_FileDialog = new System.Windows.Forms.OpenFileDialog();
             this.EX_DirectoryDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.SS_CharaSeriesRateText = new System.Windows.Forms.Label();
+            this.SS_CharaSeriesRate = new System.Windows.Forms.ListView();
+            this.SS_CharaRarityRateText = new System.Windows.Forms.Label();
+            this.SS_CharaRarityRate = new System.Windows.Forms.ListView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SS_CharaSceneRateText = new System.Windows.Forms.Label();
+            this.SS_CharaSceneRate = new System.Windows.Forms.ListView();
             this.P_HomePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BGM)).BeginInit();
             this.MN_Border.SuspendLayout();
@@ -161,6 +168,7 @@
             this.CD_CharacterTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.CD_SearchGB.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MN_Title
@@ -499,7 +507,7 @@
             // SS_Monster
             // 
             this.SS_Monster.ForeColor = System.Drawing.Color.White;
-            this.SS_Monster.Location = new System.Drawing.Point(365, 92);
+            this.SS_Monster.Location = new System.Drawing.Point(426, 39);
             this.SS_Monster.Name = "SS_Monster";
             this.SS_Monster.Size = new System.Drawing.Size(200, 185);
             this.SS_Monster.TabIndex = 1;
@@ -507,26 +515,23 @@
             // 
             // SS_Character
             // 
-            this.SS_Character.Controls.Add(this.SS_ChsaraElementRateText);
-            this.SS_Character.Controls.Add(this.SS_CharaElementRate);
+            this.SS_Character.Controls.Add(this.panel1);
             this.SS_Character.Controls.Add(this.SS_CharaCalculate);
-            this.SS_Character.Controls.Add(this.SS_CharaWeaponUsingRateText);
-            this.SS_Character.Controls.Add(this.SS_CharaWeaponUsingRate);
             this.SS_Character.ForeColor = System.Drawing.Color.White;
             this.SS_Character.Location = new System.Drawing.Point(12, 4);
             this.SS_Character.Name = "SS_Character";
-            this.SS_Character.Size = new System.Drawing.Size(349, 663);
+            this.SS_Character.Size = new System.Drawing.Size(369, 663);
             this.SS_Character.TabIndex = 1;
             this.SS_Character.TabStop = false;
             // 
-            // SS_ChsaraElementRateText
+            // SS_CharaElementRateText
             // 
-            this.SS_ChsaraElementRateText.Location = new System.Drawing.Point(6, 202);
-            this.SS_ChsaraElementRateText.Margin = new System.Windows.Forms.Padding(3);
-            this.SS_ChsaraElementRateText.Name = "SS_ChsaraElementRateText";
-            this.SS_ChsaraElementRateText.Size = new System.Drawing.Size(337, 18);
-            this.SS_ChsaraElementRateText.TabIndex = 27;
-            this.SS_ChsaraElementRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.SS_CharaElementRateText.Location = new System.Drawing.Point(0, 180);
+            this.SS_CharaElementRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaElementRateText.Name = "SS_CharaElementRateText";
+            this.SS_CharaElementRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaElementRateText.TabIndex = 27;
+            this.SS_CharaElementRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // SS_CharaElementRate
             // 
@@ -537,7 +542,7 @@
             this.SS_CharaElementRate.ForeColor = System.Drawing.Color.White;
             this.SS_CharaElementRate.FullRowSelect = true;
             this.SS_CharaElementRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.SS_CharaElementRate.Location = new System.Drawing.Point(6, 226);
+            this.SS_CharaElementRate.Location = new System.Drawing.Point(0, 204);
             this.SS_CharaElementRate.MultiSelect = false;
             this.SS_CharaElementRate.Name = "SS_CharaElementRate";
             this.SS_CharaElementRate.Size = new System.Drawing.Size(337, 150);
@@ -557,7 +562,7 @@
             this.SS_CharaCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.SS_CharaCalculate.ButtonText = "";
             this.SS_CharaCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.SS_CharaCalculate.Location = new System.Drawing.Point(278, 628);
+            this.SS_CharaCalculate.Location = new System.Drawing.Point(298, 628);
             this.SS_CharaCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SS_CharaCalculate.Name = "SS_CharaCalculate";
             this.SS_CharaCalculate.Size = new System.Drawing.Size(65, 28);
@@ -565,7 +570,7 @@
             // 
             // SS_CharaWeaponUsingRateText
             // 
-            this.SS_CharaWeaponUsingRateText.Location = new System.Drawing.Point(6, 22);
+            this.SS_CharaWeaponUsingRateText.Location = new System.Drawing.Point(0, 0);
             this.SS_CharaWeaponUsingRateText.Margin = new System.Windows.Forms.Padding(3);
             this.SS_CharaWeaponUsingRateText.Name = "SS_CharaWeaponUsingRateText";
             this.SS_CharaWeaponUsingRateText.Size = new System.Drawing.Size(337, 18);
@@ -581,7 +586,7 @@
             this.SS_CharaWeaponUsingRate.ForeColor = System.Drawing.Color.White;
             this.SS_CharaWeaponUsingRate.FullRowSelect = true;
             this.SS_CharaWeaponUsingRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.SS_CharaWeaponUsingRate.Location = new System.Drawing.Point(6, 46);
+            this.SS_CharaWeaponUsingRate.Location = new System.Drawing.Point(0, 24);
             this.SS_CharaWeaponUsingRate.MultiSelect = false;
             this.SS_CharaWeaponUsingRate.Name = "SS_CharaWeaponUsingRate";
             this.SS_CharaWeaponUsingRate.Size = new System.Drawing.Size(337, 150);
@@ -592,7 +597,7 @@
             // SS_Weapon
             // 
             this.SS_Weapon.ForeColor = System.Drawing.Color.White;
-            this.SS_Weapon.Location = new System.Drawing.Point(632, 120);
+            this.SS_Weapon.Location = new System.Drawing.Point(725, 55);
             this.SS_Weapon.Name = "SS_Weapon";
             this.SS_Weapon.Size = new System.Drawing.Size(332, 375);
             this.SS_Weapon.TabIndex = 0;
@@ -810,29 +815,29 @@
             this.CT_CsvView.AllowUserToDeleteRows = false;
             this.CT_CsvView.AllowUserToResizeRows = false;
             this.CT_CsvView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CT_CsvView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CT_CsvView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.CT_CsvView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CT_CsvView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CT_CsvView.DefaultCellStyle = dataGridViewCellStyle2;
             this.CT_CsvView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.CT_CsvView.Location = new System.Drawing.Point(251, 8);
             this.CT_CsvView.Name = "CT_CsvView";
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.CT_CsvView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.CT_CsvView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.CT_CsvView.RowTemplate.Height = 20;
             this.CT_CsvView.Size = new System.Drawing.Size(816, 659);
             this.CT_CsvView.TabIndex = 8;
@@ -1749,6 +1754,102 @@
             // 
             this.EX_FileDialog.Filter = "csv 檔案|*.csv|assetbundle 檔案|*.assetbundle|wav 檔案|*.wav|mp3 檔案|*.mp3|所有檔案|*.*";
             // 
+            // SS_CharaSeriesRateText
+            // 
+            this.SS_CharaSeriesRateText.Location = new System.Drawing.Point(0, 360);
+            this.SS_CharaSeriesRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaSeriesRateText.Name = "SS_CharaSeriesRateText";
+            this.SS_CharaSeriesRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaSeriesRateText.TabIndex = 29;
+            this.SS_CharaSeriesRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_CharaSeriesRate
+            // 
+            this.SS_CharaSeriesRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaSeriesRate.AutoArrange = false;
+            this.SS_CharaSeriesRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_CharaSeriesRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_CharaSeriesRate.ForeColor = System.Drawing.Color.White;
+            this.SS_CharaSeriesRate.FullRowSelect = true;
+            this.SS_CharaSeriesRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.SS_CharaSeriesRate.Location = new System.Drawing.Point(0, 384);
+            this.SS_CharaSeriesRate.MultiSelect = false;
+            this.SS_CharaSeriesRate.Name = "SS_CharaSeriesRate";
+            this.SS_CharaSeriesRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaSeriesRate.TabIndex = 28;
+            this.SS_CharaSeriesRate.UseCompatibleStateImageBehavior = false;
+            this.SS_CharaSeriesRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_CharaRarityRateText
+            // 
+            this.SS_CharaRarityRateText.Location = new System.Drawing.Point(0, 538);
+            this.SS_CharaRarityRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaRarityRateText.Name = "SS_CharaRarityRateText";
+            this.SS_CharaRarityRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaRarityRateText.TabIndex = 31;
+            this.SS_CharaRarityRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_CharaRarityRate
+            // 
+            this.SS_CharaRarityRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaRarityRate.AutoArrange = false;
+            this.SS_CharaRarityRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_CharaRarityRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_CharaRarityRate.ForeColor = System.Drawing.Color.White;
+            this.SS_CharaRarityRate.FullRowSelect = true;
+            this.SS_CharaRarityRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.SS_CharaRarityRate.Location = new System.Drawing.Point(0, 562);
+            this.SS_CharaRarityRate.MultiSelect = false;
+            this.SS_CharaRarityRate.Name = "SS_CharaRarityRate";
+            this.SS_CharaRarityRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaRarityRate.TabIndex = 30;
+            this.SS_CharaRarityRate.UseCompatibleStateImageBehavior = false;
+            this.SS_CharaRarityRate.View = System.Windows.Forms.View.Details;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.SS_CharaSceneRateText);
+            this.panel1.Controls.Add(this.SS_CharaSceneRate);
+            this.panel1.Controls.Add(this.SS_CharaRarityRateText);
+            this.panel1.Controls.Add(this.SS_CharaRarityRate);
+            this.panel1.Controls.Add(this.SS_CharaWeaponUsingRateText);
+            this.panel1.Controls.Add(this.SS_CharaSeriesRateText);
+            this.panel1.Controls.Add(this.SS_CharaWeaponUsingRate);
+            this.panel1.Controls.Add(this.SS_CharaElementRate);
+            this.panel1.Controls.Add(this.SS_CharaSeriesRate);
+            this.panel1.Controls.Add(this.SS_CharaElementRateText);
+            this.panel1.Location = new System.Drawing.Point(6, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(357, 599);
+            this.panel1.TabIndex = 30;
+            // 
+            // SS_CharaSceneRateText
+            // 
+            this.SS_CharaSceneRateText.Location = new System.Drawing.Point(0, 718);
+            this.SS_CharaSceneRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaSceneRateText.Name = "SS_CharaSceneRateText";
+            this.SS_CharaSceneRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaSceneRateText.TabIndex = 33;
+            this.SS_CharaSceneRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_CharaSceneRate
+            // 
+            this.SS_CharaSceneRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaSceneRate.AutoArrange = false;
+            this.SS_CharaSceneRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_CharaSceneRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_CharaSceneRate.ForeColor = System.Drawing.Color.White;
+            this.SS_CharaSceneRate.FullRowSelect = true;
+            this.SS_CharaSceneRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.SS_CharaSceneRate.Location = new System.Drawing.Point(0, 742);
+            this.SS_CharaSceneRate.MultiSelect = false;
+            this.SS_CharaSceneRate.Name = "SS_CharaSceneRate";
+            this.SS_CharaSceneRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaSceneRate.TabIndex = 32;
+            this.SS_CharaSceneRate.UseCompatibleStateImageBehavior = false;
+            this.SS_CharaSceneRate.View = System.Windows.Forms.View.Details;
+            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1789,6 +1890,7 @@
             this.tabPage1.ResumeLayout(false);
             this.CD_SearchGB.ResumeLayout(false);
             this.CD_SearchGB.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1899,11 +2001,18 @@
         private System.Windows.Forms.GroupBox SS_Weapon;
         private System.Windows.Forms.GroupBox SS_Monster;
         private System.Windows.Forms.GroupBox SS_Character;
-        private System.Windows.Forms.Label SS_ChsaraElementRateText;
+        private System.Windows.Forms.Label SS_CharaElementRateText;
         private System.Windows.Forms.ListView SS_CharaElementRate;
         private Button_SE_ SS_CharaCalculate;
         private System.Windows.Forms.Label SS_CharaWeaponUsingRateText;
         private System.Windows.Forms.ListView SS_CharaWeaponUsingRate;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label SS_CharaSceneRateText;
+        private System.Windows.Forms.ListView SS_CharaSceneRate;
+        private System.Windows.Forms.Label SS_CharaRarityRateText;
+        private System.Windows.Forms.ListView SS_CharaRarityRate;
+        private System.Windows.Forms.Label SS_CharaSeriesRateText;
+        private System.Windows.Forms.ListView SS_CharaSeriesRate;
     }
 }
 

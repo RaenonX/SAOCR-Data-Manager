@@ -88,6 +88,33 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
+        ///   查詢類似 角色星級占比 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_CharaRarityRate {
+            get {
+                return ResourceManager.GetString("Layout_CharaRarityRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色舞台占比 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_CharaSceneRate {
+            get {
+                return ResourceManager.GetString("Layout_CharaSceneRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色系列占比 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_CharaSeriesRate {
+            get {
+                return ResourceManager.GetString("Layout_CharaSeriesRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 武器使用比率 的當地語系化字串。
         /// </summary>
         internal static string Layout_CharaWeaponUsingRate {
@@ -115,7 +142,52 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似  (武器統計樣本數量:  的當地語系化字串。
+        ///   查詢類似 資料種類:  的當地語系化字串。
+        /// </summary>
+        internal static string Log_Calculated1 {
+            get {
+                return ResourceManager.GetString("Log_Calculated1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  的資料計算完成。 的當地語系化字串。
+        /// </summary>
+        internal static string Log_Calculated2 {
+            get {
+                return ResourceManager.GetString("Log_Calculated2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 正在計算  的當地語系化字串。
+        /// </summary>
+        internal static string Log_Calculating1 {
+            get {
+                return ResourceManager.GetString("Log_Calculating1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  的相關資料...資料種類:  的當地語系化字串。
+        /// </summary>
+        internal static string Log_Calculating2 {
+            get {
+                return ResourceManager.GetString("Log_Calculating2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 。 的當地語系化字串。
+        /// </summary>
+        internal static string Log_Calculating3 {
+            get {
+                return ResourceManager.GetString("Log_Calculating3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  (統計樣本數量:  的當地語系化字串。
         /// </summary>
         internal static string Message_Samples1 {
             get {

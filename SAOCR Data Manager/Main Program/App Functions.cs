@@ -136,7 +136,7 @@ namespace SAOCR_Data_Manager
             P_CsvTable.Visible = false;
             P_Config.Visible = false;
             P_CharacterData.Visible = false;
-            P_Statistics.Visible = true;
+            P_Statistics.Visible = false;
             
             PanelToShow.Visible = true;
             string LogText = RMain.Log_GoToPage;

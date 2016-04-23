@@ -110,7 +110,11 @@ public enum InitItem
     CrDataFindResultList,
     CharaFindResult,
     Favorite,
-    WeaponUsingRate
+    CharaWeaponUsingRate,
+    CharaElementRate,
+    CharaSceneRate,
+    CharaRarityRate,
+    CharaSeriesRate
 }
 
 [Flags] 
@@ -299,7 +303,9 @@ public enum ENameSecCol
     SEX = 4,
     INTRO = 5,
     RARITY = 6,
+    ID_ORG = 7,
     HEAD = 14,
+    LONG_NAME = 15,
     CV = 24,
     CHARA_SERIES = 25
 }
