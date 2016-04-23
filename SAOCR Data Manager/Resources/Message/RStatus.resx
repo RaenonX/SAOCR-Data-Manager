@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Acting_Loading" xml:space="preserve">
+    <value>讀取資料中......</value>
+  </data>
+  <data name="Error_DataNotFound" xml:space="preserve">
+    <value>未查詢到指定的欄位。請重新輸入。</value>
+  </data>
+  <data name="Error_DataNotInput" xml:space="preserve">
+    <value>請先匯入csv檔案再跳轉。</value>
+  </data>
+  <data name="Error_EmptyParameterArray" xml:space="preserve">
+    <value>未輸入參數陣列。</value>
+  </data>
+  <data name="Error_Exception1" xml:space="preserve">
+    <value>發生例外狀況。訊息: </value>
+  </data>
+  <data name="Error_Exception2" xml:space="preserve">
+    <value> 種類:</value>
+  </data>
+  <data name="Error_Exception3" xml:space="preserve">
+    <value>。</value>
+  </data>
+  <data name="Error_FileNotFoundCSV" xml:space="preserve">
+    <value>找不到csv檔案。請重新選擇。</value>
+  </data>
+  <data name="Error_FileNotLegal" xml:space="preserve">
+    <value>匯入檔案格式錯誤。請重新選擇檔案。</value>
+  </data>
+  <data name="Error_NeedToInputCSV" xml:space="preserve">
+    <value>請先匯入csv。</value>
+  </data>
+  <data name="Error_WrongColumnNumber" xml:space="preserve">
+    <value>結束欄位不得小於起始欄位，請重新輸入。</value>
+  </data>
+  <data name="Result_DataPreloadCompleted" xml:space="preserve">
+    <value>資料預載完成。</value>
+  </data>
+  <data name="Result_DisunityComplete" xml:space="preserve">
+    <value>csv解壓縮完成。檔案位於匯入的assetbundle的目錄底下。csv路徑已自動登錄。</value>
+  </data>
+  <data name="Result_FoundString1" xml:space="preserve">
+    <value>根據關鍵字"</value>
+  </data>
+  <data name="Result_FoundString2" xml:space="preserve">
+    <value>"，找到了</value>
+  </data>
+  <data name="Result_ImportAssetbundleComplete" xml:space="preserve">
+    <value>已匯入assetbundle檔案。 路徑:</value>
+  </data>
+  <data name="Result_ImportCsvComplete" xml:space="preserve">
+    <value>已匯入csv檔案。 路徑:</value>
+  </data>
+  <data name="Result_LoadingComplete" xml:space="preserve">
+    <value>資料讀取完畢。</value>
+  </data>
+  <data name="Result_SEChangedBeep" xml:space="preserve">
+    <value>按鍵音已更換。 路徑:</value>
+  </data>
+  <data name="Result_SEChangedWarning" xml:space="preserve">
+    <value>警示音已更換。 路徑:</value>
+  </data>
+  <data name="Result_SettingsSaved" xml:space="preserve">
+    <value>設定已儲存。</value>
+  </data>
+  <data name="Result_Standby" xml:space="preserve">
+    <value>就緒。</value>
+  </data>
+  <data name="Result_StringNotFound" xml:space="preserve">
+    <value>未找到資料。</value>
+  </data>
+  <data name="Warning_EndOfSerachResult" xml:space="preserve">
+    <value>已達到搜尋資料的最末端。</value>
+  </data>
+  <data name="Warning_FileNotImported" xml:space="preserve">
+    <value>未匯入任何資源(.assetbundle)或資料(.csv)檔。</value>
+  </data>
+  <data name="Warning_ReadCsvFirst" xml:space="preserve">
+    <value>請先讀取csv檔案後，再尋找資料位置。</value>
+  </data>
+  <data name="Warning_ReCheckExtension" xml:space="preserve">
+    <value>請檢查副檔名是否正確。</value>
+  </data>
+  <data name="Warning_SENotChanged" xml:space="preserve">
+    <value>音效未更動。</value>
+  </data>
+  <data name="Warning_WrongExtension" xml:space="preserve">
+    <value>副檔名錯誤。</value>
+  </data>
+  <data name="Error_FileNotFoundBADict" xml:space="preserve">
+    <value>找不到BA字典檔。請重新選擇。</value>
+  </data>
+  <data name="Error_NeedToInputBADict" xml:space="preserve">
+    <value>請先匯入BA字典檔。</value>
+  </data>
+  <data name="Result_DataCSVPreloadInCompleted" xml:space="preserve">
+    <value>csv預載未完成。</value>
+  </data>
+  <data name="Error_KeywordEmpty" xml:space="preserve">
+    <value>請先輸入關鍵字後再搜尋。</value>
+  </data>
+  <data name="Result_FoundString3" xml:space="preserve">
+    <value>個結果。</value>
+  </data>
+  <data name="Action_CheckingUpdate" xml:space="preserve">
+    <value>檢查更新中...</value>
+  </data>
+  <data name="Result_CheckUpdateFailed" xml:space="preserve">
+    <value>檢查更新失敗。狀態: </value>
+  </data>
+  <data name="Result_CheckUpdateSucceed" xml:space="preserve">
+    <value>檢查更新完成。狀態: </value>
+  </data>
+  <data name="Error_StartIsBiggerThanEnd" xml:space="preserve">
+    <value>起始欄位不得大於終點欄位。請重新輸入搜尋目標欄位。</value>
+  </data>
+  <data name="Result_DataBADictPreloadInCompleted" xml:space="preserve">
+    <value>BA資料預載未完成。</value>
+  </data>
+  <data name="S_0xF0027000" xml:space="preserve">
+    <value>狀態代碼 0xF0027000\n\n檔案下載的儲存路徑已更動。更動後的路徑為: </value>
+    <comment>PConfig</comment>
+  </data>
+</root>

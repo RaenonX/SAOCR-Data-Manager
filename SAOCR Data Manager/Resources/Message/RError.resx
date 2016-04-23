@@ -1,0 +1,1466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error_ArrayOutOfBound" xml:space="preserve">
+    <value>終止位置大於陣列長度，請重新輸入。</value>
+  </data>
+  <data name="Error_ArrayWithSectionNotLegal" xml:space="preserve">
+    <value>陣列區間不合法，請確認起始位置小於等於終止位置。</value>
+  </data>
+  <data name="Error_AUCheckFailed" xml:space="preserve">
+    <value>檢查更新時發生錯誤。</value>
+  </data>
+  <data name="Error_BAIDNotFoundReCheckCharacterID" xml:space="preserve">
+    <value>未找到BA的ID，請重新確認角色ID是否正確。</value>
+  </data>
+  <data name="Error_BAInfoMethodWrong" xml:space="preserve">
+    <value>要查詢BA效果(中文)、分數、系列一、系列二時，必須使用含有BADict (DataTable)參數的GetInfo函數。請重新輸入參數。</value>
+  </data>
+  <data name="Error_BAInfoRequestWrong" xml:space="preserve">
+    <value>要求的BA資料目錄不正確。</value>
+  </data>
+  <data name="Error_BANotLegal" xml:space="preserve">
+    <value>選擇到的BA不合法。BA總共只有三欄，請輸入1~3之間其中一個數字。</value>
+  </data>
+  <data name="Error_BGMNotFound" xml:space="preserve">
+    <value>找不到指定的背景音樂檔案。請到"設定"畫面中重新選擇BGM。</value>
+  </data>
+  <data name="Error_CanNotReachSpecifiedURL" xml:space="preserve">
+    <value>指定的URL可能無法使用。</value>
+  </data>
+  <data name="Error_FileNotFound" xml:space="preserve">
+    <value>未找到檔案。</value>
+  </data>
+  <data name="Error_FlagError" xml:space="preserve">
+    <value>檢查更新狀態錯誤。</value>
+  </data>
+  <data name="Error_LengthOfParametersIllegal" xml:space="preserve">
+    <value>參數長度不合法。陣列元素數量應為80。</value>
+  </data>
+  <data name="Error_ProgramCheckUseAnotherMethod" xml:space="preserve">
+    <value>檢查程式更新時請使用(Uri, AutoUpdateItem)建構子。</value>
+  </data>
+  <data name="Error_ProgramCheckUseOnly" xml:space="preserve">
+    <value>檢查程式更新時才可以調用此建構子。</value>
+  </data>
+  <data name="Error_Reinstall" xml:space="preserve">
+    <value>遺失部分檔案。請重新安裝程式以利程式順利進行。關閉程式嗎？</value>
+  </data>
+  <data name="Error_SourceError" xml:space="preserve">
+    <value>來源錯誤。</value>
+  </data>
+  <data name="Error_WrongAUMode" xml:space="preserve">
+    <value>傳入的自動更新模式(enum)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongAUModeString" xml:space="preserve">
+    <value>傳入的自動更新模式(字串)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongAUTarget" xml:space="preserve">
+    <value>錯誤的查詢更新目標。</value>
+  </data>
+  <data name="Error_WrongBASeries" xml:space="preserve">
+    <value>傳入的BA系列(enum)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongFindDataMethodCalled" xml:space="preserve">
+    <value>資料尋找範圍只有單欄的話，請使用FindDataInDataTable(DataTable ,string, int, int, int)，或是FindDataInDataTable(DataTable, string, int, int, int, int)。</value>
+  </data>
+  <data name="Error_WrongVersionData" xml:space="preserve">
+    <value>版本資料組合錯誤。</value>
+  </data>
+  <data name="Error_WrongVersionDataType" xml:space="preserve">
+    <value>版本型態不正確。</value>
+  </data>
+  <data name="Warning_AUHaveNotChecked" xml:space="preserve">
+    <value>尚未檢查更新。</value>
+  </data>
+  <data name="Warning_AUNoConnection" xml:space="preserve">
+    <value>無法連線。</value>
+  </data>
+  <data name="Warning_DisplayingJPBADescription" xml:space="preserve">
+    <value>目前顯示的是日文BA敘述。</value>
+  </data>
+  <data name="Error_WrongDLInfoCategory" xml:space="preserve">
+    <value>錯誤的下載資訊目錄。</value>
+  </data>
+  <data name="Error_WrongSizeUnit" xml:space="preserve">
+    <value>錯誤的單位。</value>
+  </data>
+  <data name="Error_WrongWeaponCategory" xml:space="preserve">
+    <value>傳入的武器(enum)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongWeaponCategoryString" xml:space="preserve">
+    <value>傳入的武器(字串)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongElement" xml:space="preserve">
+    <value>傳入的屬性(enum)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongElementString" xml:space="preserve">
+    <value>傳入的屬性(字串)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongScene" xml:space="preserve">
+    <value>傳入的場景(enum)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongSceneString" xml:space="preserve">
+    <value>傳入的場景(字串)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongSex" xml:space="preserve">
+    <value>傳入的性別(enum)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongSexString" xml:space="preserve">
+    <value>傳入的性別(字串)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongSharpness" xml:space="preserve">
+    <value>傳入的業物度(enum)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongSharpnessString" xml:space="preserve">
+    <value>傳入的性別(字串)有誤，請確認傳入的值合法。</value>
+  </data>
+  <data name="Error_WrongLanguage" xml:space="preserve">
+    <value>要求的語言錯誤。請確認傳入的值合法。</value>
+  </data>
+  <data name="E_0x00000001_1" xml:space="preserve">
+    <value>錯誤代碼 0x00000001\n\n讀取csv檔案時發生問題。請洽程式開發者。讀取中檔案: </value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000001_2" xml:space="preserve">
+    <value>，目標資料表: </value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000001_3" xml:space="preserve">
+    <value>，分隔子: </value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="Error_WrongBACategory" xml:space="preserve">
+    <value>錯誤的BA目錄。應為BA1、2或3。</value>
+  </data>
+  <data name="E_0x00007031" xml:space="preserve">
+    <value>錯誤代碼 0x00007031\n\n</value>
+    <comment>CharaData.CBA.BAData.GetInfo</comment>
+  </data>
+  <data name="E_0x00007032" xml:space="preserve">
+    <value>錯誤代碼 0x00007032\n\n</value>
+    <comment>CharaData.CBA.BAData.GetArray</comment>
+  </data>
+  <data name="E_0x00007033" xml:space="preserve">
+    <value>錯誤代碼 0x00007033\n\n</value>
+    <comment>CharaData.CBA.BAData.ctor</comment>
+  </data>
+  <data name="E_0xFFFFFFFF" xml:space="preserve">
+    <value>錯誤代碼 0xFFFFFFFF\n\n發生未知的錯誤。</value>
+    <comment>-Others</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="Error_ProgramRestart" xml:space="preserve">
+    <value>是否要重新啟動程式？</value>
+  </data>
+  <data name="E_0x00007000" xml:space="preserve">
+    <value>錯誤代碼 0x00007000\n\n</value>
+    <comment>CharaData.ctor</comment>
+  </data>
+  <data name="E_0x00007011" xml:space="preserve">
+    <value>錯誤代碼 0x00007011\n\n</value>
+    <comment>CharaData.CParameters.ctor</comment>
+  </data>
+  <data name="E_0x00007012" xml:space="preserve">
+    <value>錯誤代碼 0x00007012\n\n</value>
+    <comment>CharaData.CParameters.GetArray</comment>
+  </data>
+  <data name="E_0x00007034" xml:space="preserve">
+    <value>錯誤代碼 0x00007034\n\n</value>
+    <comment>CharaData.CBA.ctor</comment>
+  </data>
+  <data name="E_0x00003001" xml:space="preserve">
+    <value>錯誤代碼 0x00003001\n\n</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003002" xml:space="preserve">
+    <value>錯誤代碼 0x00003002\n\n轉譯參數種類時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003003" xml:space="preserve">
+    <value>錯誤代碼 0x00003003\n\n轉譯星期時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003004" xml:space="preserve">
+    <value>錯誤代碼 0x00003004\n\n轉譯日誌種類時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003005" xml:space="preserve">
+    <value>錯誤代碼 0x00003005\n\n轉譯BA系列發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003006" xml:space="preserve">
+    <value>錯誤代碼 0x00003006\n\n轉譯下載狀態時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003007" xml:space="preserve">
+    <value>錯誤代碼 0x00003007\n\n</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003008" xml:space="preserve">
+    <value>錯誤代碼 0x00003008\n\n</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00003009" xml:space="preserve">
+    <value>錯誤代碼 0x00003009\n\n</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00007013" xml:space="preserve">
+    <value>錯誤代碼 0x00007013\n\n</value>
+    <comment>CharaData.CParameters.BasicP.ctor</comment>
+  </data>
+  <data name="E_0x00007014" xml:space="preserve">
+    <value>錯誤代碼 0x00007014\n\n</value>
+    <comment>CharaData.CParameters.BasicP.ParamType.ctor</comment>
+  </data>
+  <data name="E_0x00007015" xml:space="preserve">
+    <value>錯誤代碼 0x00007015\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x00007016" xml:space="preserve">
+    <value>錯誤代碼 0x00007016\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x00007017" xml:space="preserve">
+    <value>錯誤代碼 0x00007017\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x00007018" xml:space="preserve">
+    <value>錯誤代碼 0x00007018\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x00007019" xml:space="preserve">
+    <value>錯誤代碼 0x00007019\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x0000701A" xml:space="preserve">
+    <value>錯誤代碼 0x0000701A\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x0000701B" xml:space="preserve">
+    <value>錯誤代碼 0x0000701B\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x0000701C" xml:space="preserve">
+    <value>錯誤代碼 0x0000701C\n\n</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x00007021" xml:space="preserve">
+    <value>錯誤代碼 0x00007021\n\n</value>
+    <comment>CharaData.CInfo</comment>
+  </data>
+  <data name="E_0x00007022" xml:space="preserve">
+    <value>錯誤代碼 0x00007022\n\n</value>
+    <comment>CharaData.CInfo</comment>
+  </data>
+  <data name="E_0x00007023" xml:space="preserve">
+    <value>錯誤代碼 0x00007023\n\n</value>
+    <comment>CharaData.CInfo</comment>
+  </data>
+  <data name="E_0x00007024" xml:space="preserve">
+    <value>錯誤代碼 0x00007024\n\n</value>
+    <comment>CharaData.CInfo</comment>
+  </data>
+  <data name="E_0x00007025" xml:space="preserve">
+    <value>錯誤代碼 0x00007025\n\n</value>
+    <comment>CharaData.CInfo</comment>
+  </data>
+  <data name="E_0x00007026" xml:space="preserve">
+    <value>錯誤代碼 0x00007026\n\n</value>
+    <comment>CharaData.CInfo</comment>
+  </data>
+  <data name="E_0x00007027" xml:space="preserve">
+    <value>錯誤代碼 0x00007027\n\n</value>
+    <comment>CharaData.CInfo</comment>
+  </data>
+  <data name="E_0x00007041" xml:space="preserve">
+    <value>錯誤代碼 0x00007041\n\n</value>
+    <comment>CharaData.CLS</comment>
+  </data>
+  <data name="E_0x00007042" xml:space="preserve">
+    <value>錯誤代碼 0x00007042\n\n</value>
+    <comment>CharaData.CLS</comment>
+  </data>
+  <data name="E_0x00007043" xml:space="preserve">
+    <value>錯誤代碼 0x00007043\n\n</value>
+    <comment>CharaData.CLS</comment>
+  </data>
+  <data name="E_0x00007044" xml:space="preserve">
+    <value>錯誤代碼 0x00007044\n\n</value>
+    <comment>CharaData.CLS</comment>
+  </data>
+  <data name="E_0x0000A001" xml:space="preserve">
+    <value>錯誤代碼 0x0000A001\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A002" xml:space="preserve">
+    <value>錯誤代碼 0x0000A002\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A003" xml:space="preserve">
+    <value>錯誤代碼 0x0000A003\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A004" xml:space="preserve">
+    <value>錯誤代碼 0x0000A004\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A005" xml:space="preserve">
+    <value>錯誤代碼 0x0000A005\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A006" xml:space="preserve">
+    <value>錯誤代碼 0x0000A006\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A007" xml:space="preserve">
+    <value>錯誤代碼 0x0000A007\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A008" xml:space="preserve">
+    <value>錯誤代碼 0x0000A008\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A009" xml:space="preserve">
+    <value>錯誤代碼 0x0000A009\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A00A" xml:space="preserve">
+    <value>錯誤代碼 0x0000A00A\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A00B" xml:space="preserve">
+    <value>錯誤代碼 0x0000A00B\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A00C" xml:space="preserve">
+    <value>錯誤代碼 0x0000A00C\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A00D" xml:space="preserve">
+    <value>錯誤代碼 0x0000A00D\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A00E" xml:space="preserve">
+    <value>錯誤代碼 0x0000A00E\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A00F" xml:space="preserve">
+    <value>錯誤代碼 0x0000A00F\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A010" xml:space="preserve">
+    <value>錯誤代碼 0x0000A010\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A011" xml:space="preserve">
+    <value>錯誤代碼 0x0000A011\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A012" xml:space="preserve">
+    <value>錯誤代碼 0x0000A012\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A013" xml:space="preserve">
+    <value>錯誤代碼 0x0000A013\n\n顯示角色參數時發生錯誤。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A014" xml:space="preserve">
+    <value>錯誤代碼 0x0000A014\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A015" xml:space="preserve">
+    <value>錯誤代碼 0x0000A015\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A016" xml:space="preserve">
+    <value>錯誤代碼 0x0000A016\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A017" xml:space="preserve">
+    <value>錯誤代碼 0x0000A017\n\n傳入的角色覺醒狀態錯誤。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A018" xml:space="preserve">
+    <value>錯誤代碼 0x0000A018\n\n刷新參數頁面時發生錯誤。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A019" xml:space="preserve">
+    <value>錯誤代碼 0x0000A019\n\n顯示成長倍率時發生錯誤。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A01A" xml:space="preserve">
+    <value>錯誤代碼 0x0000A01A\n\n顯示本質參數時發生錯誤。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A01B" xml:space="preserve">
+    <value>錯誤代碼 0x0000A01B\n\n顯示參數配置時發生錯誤。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A01C" xml:space="preserve">
+    <value>錯誤代碼 0x0000A01C\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A01D" xml:space="preserve">
+    <value>錯誤代碼 0x0000A01D\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A01E" xml:space="preserve">
+    <value>錯誤代碼 0x0000A01E\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000A01F" xml:space="preserve">
+    <value>錯誤代碼 0x0000A01F\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="E_0x0000C001" xml:space="preserve">
+    <value>錯誤代碼 0x0000C001\n\n發出警告聲時發生錯誤。</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C002" xml:space="preserve">
+    <value>錯誤代碼 0x0000C002\n\n發出按鍵聲時發生錯誤。</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C003" xml:space="preserve">
+    <value>錯誤代碼 0x0000C003\n\n發出訊息聲時發生錯誤。</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C004" xml:space="preserve">
+    <value>錯誤代碼 0x0000C004\n\n</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C005" xml:space="preserve">
+    <value>錯誤代碼 0x0000C005\n\n</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C006" xml:space="preserve">
+    <value>錯誤代碼 0x0000C006\n\n</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C007" xml:space="preserve">
+    <value>錯誤代碼 0x0000C007\n\n</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C008" xml:space="preserve">
+    <value>錯誤代碼 0x0000C008\n\n</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000C009" xml:space="preserve">
+    <value>錯誤代碼 0x0000C009\n\n</value>
+    <comment>SystemExtent</comment>
+  </data>
+  <data name="E_0x0000701D" xml:space="preserve">
+    <value>錯誤代碼 0x0000701D\n\n要求的參數配置目錄錯誤。只限要求STR、VIT、INT、MEN。</value>
+    <comment>CharaData.CParameters</comment>
+  </data>
+  <data name="E_0x0000E001" xml:space="preserve">
+    <value>錯誤代碼 0x0000E001\n\nBA的ID不正確，請重新確認。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E002" xml:space="preserve">
+    <value>錯誤代碼 0x0000E002\n\n設定BA系列的顏色時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E003" xml:space="preserve">
+    <value>錯誤代碼 0x0000E003\n\n顯示角色BA時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E004" xml:space="preserve">
+    <value>錯誤代碼 0x0000E004\n\n建立BA介面時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E005" xml:space="preserve">
+    <value>錯誤代碼 0x0000E005\n\n鎖定BA介面尺寸時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E006" xml:space="preserve">
+    <value>錯誤代碼 0x0000E006\n\n初始化BA介面的文字時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E007" xml:space="preserve">
+    <value>錯誤代碼 0x0000E007\n\n建立BA介面的控制項事件時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E008" xml:space="preserve">
+    <value>錯誤代碼 0x0000E008\n\nBA介面中，獲取文字是否轉譯的屬性時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E009" xml:space="preserve">
+    <value>錯誤代碼 0x0000E009\n\nBA介面中，設定文字是否轉譯的屬性時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x00011001" xml:space="preserve">
+    <value>錯誤代碼 0x00011001\n\n搜尋關鍵字時發生錯誤。</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011002" xml:space="preserve">
+    <value>錯誤代碼 0x00011002\n\n搜尋和顯示角色資料時發生錯誤。</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011003" xml:space="preserve">
+    <value>錯誤代碼 0x00011003\n\n新增角色資料的標籤頁面時發生錯誤。</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011004" xml:space="preserve">
+    <value>錯誤代碼 0x00011004\n\n關閉角色資料的標籤頁面時發生錯誤。</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011005" xml:space="preserve">
+    <value>錯誤代碼 0x00011005\n\n刷新最愛角色清單時發生錯誤。</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011006" xml:space="preserve">
+    <value>錯誤代碼 0x00011006\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011007" xml:space="preserve">
+    <value>錯誤代碼 0x00011007\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011008" xml:space="preserve">
+    <value>錯誤代碼 0x00011008\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00011009" xml:space="preserve">
+    <value>錯誤代碼 0x00011009\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="E_0x00007001" xml:space="preserve">
+    <value>錯誤代碼 0x00007001\n\n要求傳入的相關參數時發生錯誤。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x00013001" xml:space="preserve">
+    <value>錯誤代碼 0x00013001\n\n建立新的角色基本資料物件時發生錯誤。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013002" xml:space="preserve">
+    <value>錯誤代碼 0x00013002\n\n初始化介面文字時發生錯誤。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013003" xml:space="preserve">
+    <value>錯誤代碼 0x00013003\n\n初始化控制項事件時發生錯誤。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013004" xml:space="preserve">
+    <value>錯誤代碼 0x00013004\n\n初始化控制項時發生錯誤。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013005" xml:space="preserve">
+    <value>錯誤代碼 0x00013005\n\n顯示角色基本資料時發生錯誤。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013006" xml:space="preserve">
+    <value>錯誤代碼 0x00013006\n\n開啟圖片顯示器時發生錯誤。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013007" xml:space="preserve">
+    <value>錯誤代碼 0x00013007\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013008" xml:space="preserve">
+    <value>錯誤代碼 0x00013008\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00013009" xml:space="preserve">
+    <value>錯誤代碼 0x00013009\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="E_0x00015001" xml:space="preserve">
+    <value>錯誤代碼 0x00015001\n\n建立新的角色基本資料物件時發生錯誤。</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015002" xml:space="preserve">
+    <value>錯誤代碼 0x00015002\n\n初始化介面文字時發生錯誤。</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015003" xml:space="preserve">
+    <value>錯誤代碼 0x00015003\n\n初始化控制項事件時發生錯誤。</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015004" xml:space="preserve">
+    <value>錯誤代碼 0x00015004\n\n移動視窗前，紀錄原始位置時發生錯誤。</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015005" xml:space="preserve">
+    <value>錯誤代碼 0x00015005\n\n移動視窗中，計算和更改視窗位置時發生錯誤。</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015006" xml:space="preserve">
+    <value>錯誤代碼 0x00015006\n\n儲存圖片時發生錯誤。</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015007" xml:space="preserve">
+    <value>錯誤代碼 0x00015007\n\n</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015008" xml:space="preserve">
+    <value>錯誤代碼 0x00015008\n\n</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00015009" xml:space="preserve">
+    <value>錯誤代碼 0x00015009\n\n</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="E_0x00007035" xml:space="preserve">
+    <value>錯誤代碼 0x00007035\n\n輸出戰鬥相關的角色基本資料時發生錯誤。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x00007036" xml:space="preserve">
+    <value>錯誤代碼 0x00007035\n\n解析角色輸出日期時發生錯誤。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x00017001" xml:space="preserve">
+    <value>錯誤代碼 0x00017001\n\n獲取標籤文字時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017002" xml:space="preserve">
+    <value>錯誤代碼 0x00017002\n\n設定標籤文字時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017003" xml:space="preserve">
+    <value>錯誤代碼 0x00017003\n\n獲取標籤字型時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017004" xml:space="preserve">
+    <value>錯誤代碼 0x00017004\n\n設定標籤字型時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017005" xml:space="preserve">
+    <value>錯誤代碼 0x00017005\n\n獲取標籤文字貼齊位置時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017006" xml:space="preserve">
+    <value>錯誤代碼 0x00017006\n\n設定標籤文字貼齊位置時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017007" xml:space="preserve">
+    <value>錯誤代碼 0x00017007\n\n獲取標籤的文字顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017008" xml:space="preserve">
+    <value>錯誤代碼 0x00017008\n\n設定標籤的文字顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017009" xml:space="preserve">
+    <value>錯誤代碼 0x00017009\n\n獲取標籤的框線樣式時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001700A" xml:space="preserve">
+    <value>錯誤代碼 0x0001700A\n\n設定標籤的框線樣式時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001700B" xml:space="preserve">
+    <value>錯誤代碼 0x0001700B\n\n獲取顏色變化的時間長度時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001700C" xml:space="preserve">
+    <value>錯誤代碼 0x0001700C\n\n設定顏色變化的時間長度時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001700D" xml:space="preserve">
+    <value>錯誤代碼 0x0001700D\n\n標籤與控制項尺寸同步時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001700E" xml:space="preserve">
+    <value>錯誤代碼 0x0001700E\n\n呼吸標籤初始化時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001700F" xml:space="preserve">
+    <value>錯誤代碼 0x0001700F\n\n於呼吸效果準備就緒時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017010" xml:space="preserve">
+    <value>錯誤代碼 0x00017010\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017011" xml:space="preserve">
+    <value>錯誤代碼 0x00017011\n\n屬於ARGB中的R的計時器觸發Tick事件時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017012" xml:space="preserve">
+    <value>錯誤代碼 0x00017012\n\n屬於ARGB中的G的計時器觸發Tick事件時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017013" xml:space="preserve">
+    <value>錯誤代碼 0x00017013\n\n屬於ARGB中的B的計時器觸發Tick事件時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017014" xml:space="preserve">
+    <value>錯誤代碼 0x00017014\n\n獲取標籤的背景顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017015" xml:space="preserve">
+    <value>錯誤代碼 0x00017015\n\n設定標籤的背景顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017016" xml:space="preserve">
+    <value>錯誤代碼 0x00017016\n\n停止呼吸效果時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017017" xml:space="preserve">
+    <value>錯誤代碼 0x00017017\n\n設定是否變往第二顏色與否時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017018" xml:space="preserve">
+    <value>錯誤代碼 0x00017018\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017019" xml:space="preserve">
+    <value>錯誤代碼 0x00017019\n\n獲得第一顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00007045" xml:space="preserve">
+    <value>錯誤代碼 0x00007045\n\n獲取隊長技資訊陣列時發生錯誤。</value>
+    <comment>CharaData.CLS</comment>
+  </data>
+  <data name="E_0x00007046" xml:space="preserve">
+    <value>錯誤代碼 0x00007046\n\n計算隊長技效果的分數時發生錯誤。</value>
+    <comment>CharaData.CLS</comment>
+  </data>
+  <data name="E_0x0000E00A" xml:space="preserve">
+    <value>錯誤代碼 0x0000E00A\n\n設定BA介面的治癒量顯示屬性時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E00B" xml:space="preserve">
+    <value>錯誤代碼 0x0000E00B\n\n設定BA介面的BA威力顯示屬性時發生錯誤。</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E00C" xml:space="preserve">
+    <value>錯誤代碼 0x0000E00C\n\n</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E00D" xml:space="preserve">
+    <value>錯誤代碼 0x0000E00D\n\n</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E00E" xml:space="preserve">
+    <value>錯誤代碼 0x0000E00E\n\n</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0000E00F" xml:space="preserve">
+    <value>錯誤代碼 0x0000E00F\n\n</value>
+    <comment>BADisplay</comment>
+  </data>
+  <data name="E_0x0001701A" xml:space="preserve">
+    <value>錯誤代碼 0x0001701A\n\n設定第一顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001701B" xml:space="preserve">
+    <value>錯誤代碼 0x0001701B\n\n獲得第二顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001701C" xml:space="preserve">
+    <value>錯誤代碼 0x0001701C\n\n設定第二顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001701D" xml:space="preserve">
+    <value>錯誤代碼 0x0001701D\n\n屬於ARGB中的A的計時器觸發Tick事件時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001701E" xml:space="preserve">
+    <value>錯誤代碼 0x0001701E\n\n重設標籤顏色以重新開始呼吸效果時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x0001701F" xml:space="preserve">
+    <value>錯誤代碼 0x0001701F\n\n刷新角色狀態時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00019001" xml:space="preserve">
+    <value>錯誤代碼 0x00019001\n\n初始化角色資料介面時發生錯誤。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019002" xml:space="preserve">
+    <value>錯誤代碼 0x00019002\n\n初始化角色資料介面的事件管理器時發生錯誤。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019003" xml:space="preserve">
+    <value>錯誤代碼 0x00019003\n\n初始化角色資料介面的文字時發生錯誤。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019004" xml:space="preserve">
+    <value>錯誤代碼 0x00019004\n\n顯示角色資料時發生錯誤。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019005" xml:space="preserve">
+    <value>錯誤代碼 0x00019005\n\n刷新角色的最愛狀態時發生錯誤。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019006" xml:space="preserve">
+    <value>錯誤代碼 0x00019006\n\n按下我的最愛按鈕以刷新最愛狀態時發生錯誤。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019007" xml:space="preserve">
+    <value>錯誤代碼 0x00019007\n\n設定作用中的控制項時發生錯誤。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019008" xml:space="preserve">
+    <value>錯誤代碼 0x00019008\n\n</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x00019009" xml:space="preserve">
+    <value>錯誤代碼 0x00019009\n\n</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="E_0x0001B001" xml:space="preserve">
+    <value>錯誤代碼 0x0001B001\n\n建立資料表顯示物件時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B002" xml:space="preserve">
+    <value>錯誤代碼 0x0001B002\n\n初始化資料表顯示介面中的文字時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B003" xml:space="preserve">
+    <value>錯誤代碼 0x0001B003\n\n初始化資料表顯示介面中的事件時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B004" xml:space="preserve">
+    <value>錯誤代碼 0x0001B004\n\n根據關鍵字搜尋資料時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B005" xml:space="preserve">
+    <value>錯誤代碼 0x0001B005\n\n顯示搜尋到的結果時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B006" xml:space="preserve">
+    <value>錯誤代碼 0x0001B006\n\n移動視窗前，紀錄原始位置時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B007" xml:space="preserve">
+    <value>錯誤代碼 0x0001B007\n\n移動視窗中，計算和更改視窗位置時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B008" xml:space="preserve">
+    <value>錯誤代碼 0x0001B008\n\n轉移進程以開始搜尋資料時發生錯誤。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001B009" xml:space="preserve">
+    <value>錯誤代碼 0x0001B009\n\n</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="E_0x0001D001" xml:space="preserve">
+    <value>錯誤代碼 0x0001D001\n\n建立狀態日誌時發生錯誤。</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D002" xml:space="preserve">
+    <value>錯誤代碼 0x0001D002\n\n建立狀態日誌標頭時發生錯誤。</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D003" xml:space="preserve">
+    <value>錯誤代碼 0x0001D003\n\n寫入日誌時發生錯誤。</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D004" xml:space="preserve">
+    <value>錯誤代碼 0x0001D004\n\n寫入日誌時發生錯誤。</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D005" xml:space="preserve">
+    <value>錯誤代碼 0x0001D005\n\n清除日誌檔案內文字時發生錯誤。</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D006" xml:space="preserve">
+    <value>錯誤代碼 0x0001D006\n\n刪除日誌檔案時發生錯誤。</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D007" xml:space="preserve">
+    <value>錯誤代碼 0x0001D007\n\n開啟日誌檔案時發生錯誤。</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D008" xml:space="preserve">
+    <value>錯誤代碼 0x0001D008\n\n</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x0001D009" xml:space="preserve">
+    <value>錯誤代碼 0x0001D009\n\n</value>
+    <comment>StatusLog</comment>
+  </data>
+  <data name="E_0x00000002" xml:space="preserve">
+    <value>錯誤代碼 0x00000002\n\n將csv讀入資料表時發生錯誤。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000003" xml:space="preserve">
+    <value>錯誤代碼 0x00000003\n\n將csv逐行讀入字串陣列時發生錯誤。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000004" xml:space="preserve">
+    <value>錯誤代碼 0x00000004\n\n合併資料表(直接合併)時發生錯誤。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000005" xml:space="preserve">
+    <value>錯誤代碼 0x00000005\n\n合併資料表(指定欄位)時發生錯誤。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000006" xml:space="preserve">
+    <value>錯誤代碼 0x00000006\n\n分離資料表時發生錯誤。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000007" xml:space="preserve">
+    <value>錯誤代碼 0x00000007\n\n將資料表寫入CSV(不指定分隔子)時發生錯誤。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000008" xml:space="preserve">
+    <value>錯誤代碼 0x00000008\n\n將資料表寫入CSV(指定分隔子)時發生錯誤。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x00000009" xml:space="preserve">
+    <value>錯誤代碼 0x00000009\n\n</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="E_0x0001F001" xml:space="preserve">
+    <value>錯誤代碼 0x0001F001\n\n公告中的文字到達邊界時發生錯誤。</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F002" xml:space="preserve">
+    <value>錯誤代碼 0x0001F002\n\n公告下載完成(無論下載成功與否)，並且準備歸檔時發生錯誤。</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F003" xml:space="preserve">
+    <value>錯誤代碼 0x0001F003\n\n</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F004" xml:space="preserve">
+    <value>錯誤代碼 0x0001F004\n\n</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F005" xml:space="preserve">
+    <value>錯誤代碼 0x0001F005\n\n</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F006" xml:space="preserve">
+    <value>錯誤代碼 0x0001F006\n\n</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F007" xml:space="preserve">
+    <value>錯誤代碼 0x0001F007\n\n</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F008" xml:space="preserve">
+    <value>錯誤代碼 0x0001F008\n\n</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x0001F009" xml:space="preserve">
+    <value>錯誤代碼 0x0001F009\n\n</value>
+    <comment>PHome</comment>
+  </data>
+  <data name="E_0x00020001" xml:space="preserve">
+    <value>錯誤代碼 0x00020001\n\n根據點選的選單文字做出相對動作時發生錯誤。點選的項目文字: </value>
+    <comment>-ActionMain</comment>
+  </data>
+  <data name="E_0x00020002" xml:space="preserve">
+    <value>錯誤代碼 0x00020002\n\n擷取目前的程式影像時發生錯誤。</value>
+    <comment>-ActionMain</comment>
+  </data>
+  <data name="E_0x00021001" xml:space="preserve">
+    <value>錯誤代碼 0x00021001\n\n建立資料庫介面時發生錯誤。</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021002" xml:space="preserve">
+    <value>錯誤代碼 0x00021002\n\n自動讀取資源時發生錯誤。</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021003" xml:space="preserve">
+    <value>錯誤代碼 0x00021003\n\n設定全部的SE靜音狀態(暫時無效化or全部恢復)時發生促喔。</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021004" xml:space="preserve">
+    <value>錯誤代碼 0x00021004\n\n</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021005" xml:space="preserve">
+    <value>錯誤代碼 0x00021005\n\n</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021006" xml:space="preserve">
+    <value>錯誤代碼 0x00021006\n\n</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021007" xml:space="preserve">
+    <value>錯誤代碼 0x00021007\n\n</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021008" xml:space="preserve">
+    <value>錯誤代碼 0x00021008\n\n</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00021009" xml:space="preserve">
+    <value>錯誤代碼 0x00021009\n\n</value>
+    <comment>-WHEN Start</comment>
+  </data>
+  <data name="E_0x00023001" xml:space="preserve">
+    <value>錯誤代碼 0x00023001\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023002" xml:space="preserve">
+    <value>錯誤代碼 0x00023002\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023003" xml:space="preserve">
+    <value>錯誤代碼 0x00023003\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023004" xml:space="preserve">
+    <value>錯誤代碼 0x00023004\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023005" xml:space="preserve">
+    <value>錯誤代碼 0x00023005\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023006" xml:space="preserve">
+    <value>錯誤代碼 0x00023006\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023007" xml:space="preserve">
+    <value>錯誤代碼 0x00023007\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023008" xml:space="preserve">
+    <value>錯誤代碼 0x00023008\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023009" xml:space="preserve">
+    <value>錯誤代碼 0x00023009\n\n建立訊息方塊時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x0002300A" xml:space="preserve">
+    <value>錯誤代碼 0x0002300A\n\n建立訊息方塊的事件時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x0002300B" xml:space="preserve">
+    <value>錯誤代碼 0x0002300B\n\n選擇訊息方塊樣式時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x0002300C" xml:space="preserve">
+    <value>錯誤代碼 0x0002300C\n\n傳入的訊息方塊樣式有誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x0002300D" xml:space="preserve">
+    <value>錯誤代碼 0x0002300D\n\n回傳對話方塊結果"OK"時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x0002300E" xml:space="preserve">
+    <value>錯誤代碼 0x0002300E\n\n回傳對話方塊結果"Yes"時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x0002300F" xml:space="preserve">
+    <value>錯誤代碼 0x0002300F\n\n回傳對話方塊結果"No"時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023010" xml:space="preserve">
+    <value>錯誤代碼 0x00023010\n\n回傳對話方塊結果"Retry"時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023011" xml:space="preserve">
+    <value>錯誤代碼 0x00023011\n\n回傳對話方塊結果"Cancel"時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023012" xml:space="preserve">
+    <value>錯誤代碼 0x00023012\n\n開始進行下載時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023013" xml:space="preserve">
+    <value>錯誤代碼 0x00023013\n\n取消下載時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023014" xml:space="preserve">
+    <value>錯誤代碼 0x00023014\n\n下載開始後發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023015" xml:space="preserve">
+    <value>錯誤代碼 0x00023015\n\n下載完成時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023016" xml:space="preserve">
+    <value>錯誤代碼 0x00023016\n\n更新下載資訊(刷新)時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023017" xml:space="preserve">
+    <value>錯誤代碼 0x00023017\n\n更新下載資訊(即時)時發生錯誤。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023018" xml:space="preserve">
+    <value>錯誤代碼 0x00023018\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00023019" xml:space="preserve">
+    <value>錯誤代碼 0x00023019\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="E_0x00007047" xml:space="preserve">
+    <value>錯誤代碼 0x00007047\n\n建立額外角色資訊時發生錯誤。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x00025000" xml:space="preserve">
+    <value>錯誤代碼 0x00025000\n\n使用共同初始化函式建立下載模組時發生錯誤。</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025001" xml:space="preserve">
+    <value>錯誤代碼 0x00025001\n\n要求下載中的檔案名稱時發生錯誤。</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025002" xml:space="preserve">
+    <value>錯誤代碼 0x00025002\n\n開始執行下載作業時發生錯誤。</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025003" xml:space="preserve">
+    <value>錯誤代碼 0x00025003\n\n</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025004" xml:space="preserve">
+    <value>錯誤代碼 0x00025004\n\n</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025005" xml:space="preserve">
+    <value>錯誤代碼 0x00025005\n\n</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025006" xml:space="preserve">
+    <value>錯誤代碼 0x00025006\n\n</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025007" xml:space="preserve">
+    <value>錯誤代碼 0x00025007\n\n</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025008" xml:space="preserve">
+    <value>錯誤代碼 0x00025008\n\n</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00025009" xml:space="preserve">
+    <value>錯誤代碼 0x00025009\n\n</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="E_0x00027001" xml:space="preserve">
+    <value>錯誤代碼 0x00027001\n\n選擇資料夾路徑時發生錯誤。</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027002" xml:space="preserve">
+    <value>錯誤代碼 0x00027002\n\n選擇檔案路徑時發生錯誤。</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027003" xml:space="preserve">
+    <value>錯誤代碼 0x00027003\n\n</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027004" xml:space="preserve">
+    <value>錯誤代碼 0x00027004\n\n</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027005" xml:space="preserve">
+    <value>錯誤代碼 0x00027005\n\n</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027006" xml:space="preserve">
+    <value>錯誤代碼 0x00027006\n\n</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027007" xml:space="preserve">
+    <value>錯誤代碼 0x00027007\n\n</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027008" xml:space="preserve">
+    <value>錯誤代碼 0x00027008\n\n</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00027009" xml:space="preserve">
+    <value>錯誤代碼 0x00027009\n\n</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="E_0x00029001" xml:space="preserve">
+    <value>錯誤代碼 0x00029001\n\n初始化下載資料夾時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029002" xml:space="preserve">
+    <value>錯誤代碼 0x00029002\n\n執行最後初始化時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029003" xml:space="preserve">
+    <value>錯誤代碼 0x00029003\n\n初始化集合區塊擲回錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029004" xml:space="preserve">
+    <value>錯誤代碼 0x00029004\n\n初始化BGM時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029005" xml:space="preserve">
+    <value>錯誤代碼 0x00029005\n\n初始化資料表時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029006" xml:space="preserve">
+    <value>錯誤代碼 0x00029006\n\n初始化角色基本資料時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029007" xml:space="preserve">
+    <value>錯誤代碼 0x00029007n\n獲取資料標頭位置時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029008" xml:space="preserve">
+    <value>錯誤代碼 0x00029008\n\n初始化資料表時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029009" xml:space="preserve">
+    <value>錯誤代碼 0x00029009\n\n初始化資料表時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x0002900A" xml:space="preserve">
+    <value>錯誤代碼 0x0002900A\n\n初始化資料表時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x0002900B" xml:space="preserve">
+    <value>錯誤代碼 0x0002900B\n\n初始化資料表時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x0002900C" xml:space="preserve">
+    <value>錯誤代碼 0x0002900C\n\n初始化資料表時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x0002900D" xml:space="preserve">
+    <value>錯誤代碼 0x0002900D\n\n初始化清單時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x0002900E" xml:space="preserve">
+    <value>錯誤代碼 0x0002900E\n\n初始化控制像的各項屬性時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x0002900F" xml:space="preserve">
+    <value>錯誤代碼 0x0002900F\n\n建立控制項的各項事件時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029010" xml:space="preserve">
+    <value>錯誤代碼 0x00029010\n\n初始化控制項的文字時發生錯誤。</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029011" xml:space="preserve">
+    <value>錯誤代碼 0x00029011\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029012" xml:space="preserve">
+    <value>錯誤代碼 0x00029012\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029013" xml:space="preserve">
+    <value>錯誤代碼 0x00029013\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029014" xml:space="preserve">
+    <value>錯誤代碼 0x00029014\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029015" xml:space="preserve">
+    <value>錯誤代碼 0x00029015\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029016" xml:space="preserve">
+    <value>錯誤代碼 0x00029016\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029017" xml:space="preserve">
+    <value>錯誤代碼 0x00029017\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029018" xml:space="preserve">
+    <value>錯誤代碼 0x00029018\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00029019" xml:space="preserve">
+    <value>錯誤代碼 0x00029019\n\n</value>
+    <comment>InitializeBlocks</comment>
+  </data>
+  <data name="E_0x00017020" xml:space="preserve">
+    <value>錯誤代碼 0x00017020\n\n初始化呼吸效果相關參數時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017021" xml:space="preserve">
+    <value>錯誤代碼 0x00017021\n\n刷新背景顏色時發生錯誤。</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017022" xml:space="preserve">
+    <value>錯誤代碼 0x00017022\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017023" xml:space="preserve">
+    <value>錯誤代碼 0x00017023\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017024" xml:space="preserve">
+    <value>錯誤代碼 0x00017024\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017025" xml:space="preserve">
+    <value>錯誤代碼 0x00017025\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017026" xml:space="preserve">
+    <value>錯誤代碼 0x00017026\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017027" xml:space="preserve">
+    <value>錯誤代碼 0x00017027\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017028" xml:space="preserve">
+    <value>錯誤代碼 0x00017028\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00017029" xml:space="preserve">
+    <value>錯誤代碼 0x00017029\n\n</value>
+    <comment>BreezeLabel</comment>
+  </data>
+  <data name="E_0x00001000" xml:space="preserve">
+    <value>錯誤代碼 0x00001000\n\n初始化武器基本資料時發生錯誤。</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001001" xml:space="preserve">
+    <value>錯誤代碼 0x00001001\n\n初始化武器基本資料的事件時發生錯誤。</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001002" xml:space="preserve">
+    <value>錯誤代碼 0x00001002\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001003" xml:space="preserve">
+    <value>錯誤代碼 0x00001003\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001004" xml:space="preserve">
+    <value>錯誤代碼 0x00001004\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001005" xml:space="preserve">
+    <value>錯誤代碼 0x00001005\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001006" xml:space="preserve">
+    <value>錯誤代碼 0x00001006\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001007" xml:space="preserve">
+    <value>錯誤代碼 0x00001007\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001008" xml:space="preserve">
+    <value>錯誤代碼 0x00001008\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+  <data name="E_0x00001009" xml:space="preserve">
+    <value>錯誤代碼 0x00001009\n\n</value>
+    <comment>WeaponStatus</comment>
+  </data>
+</root>

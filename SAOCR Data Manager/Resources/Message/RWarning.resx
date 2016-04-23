@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="W_0xC0003001" xml:space="preserve">
+    <value>警告代碼 0xC0003001\n\n傳入的隊長技參數目錄有誤，故傳回的值為null。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="W_0xC000A001" xml:space="preserve">
+    <value>警告代碼 0xC000A001\n\n角色ID長度不正確，請重新確認。角色ID由8位數字組成。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A002" xml:space="preserve">
+    <value>警告代碼 0xC000A002\n\n查詢標的資料表沒有內容。請嘗試重新載入資源檔。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A003" xml:space="preserve">
+    <value>警告代碼 0xC000A003\n\n角色ID不能為空，請重新輸入。角色ID由8位數字組成。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A004" xml:space="preserve">
+    <value>警告代碼 0xC000A004\n\n傳入的參數起始堆棧為空。請檢察資源檔是否載入。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A005" xml:space="preserve">
+    <value>警告代碼 0xC000A005\n\n角色ID不存在，請重新檢查輸入的ID是否正確。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A006" xml:space="preserve">
+    <value>警告代碼 0xC000A006\n\n本質參數的參數種類有誤。只有可能是STR、VIT、INT、MEN。</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A007" xml:space="preserve">
+    <value>警告代碼 0xC000A007\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A008" xml:space="preserve">
+    <value>警告代碼 0xC000A008\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC000A009" xml:space="preserve">
+    <value>警告代碼 0xC000A009\n\n</value>
+    <comment>ParamDisplay</comment>
+  </data>
+  <data name="W_0xC0007001" xml:space="preserve">
+    <value>警告代碼 0xC0007001\n\n角色ID長度不正確，請重新確認。角色ID由8位數字組成。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007002" xml:space="preserve">
+    <value>警告代碼 0xC0007002\n\n查詢標的資料表沒有內容。請嘗試重新載入資源檔。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007003" xml:space="preserve">
+    <value>警告代碼 0xC0007003\n\n角色ID不能為空，請重新輸入。角色ID由8位數字組成。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007004" xml:space="preserve">
+    <value>警告代碼 0xC0007004\n\n傳入的參數起始堆棧為空。請檢察資源檔是否載入。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007005" xml:space="preserve">
+    <value>警告代碼 0xC0007005。\n\n角色ID不存在，請重新檢查輸入的ID是否正確。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007006" xml:space="preserve">
+    <value>警告代碼 0xC0007006\n\n沒有提供要搜尋的關鍵字、角色星級，或是角色系代碼。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007007" xml:space="preserve">
+    <value>警告代碼 0xC0007007\n\n因為在BA字典中沒有查詢到本BA的中文翻譯，故以日文顯示。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007008" xml:space="preserve">
+    <value>警告代碼 0xC0007008\n\n因為在隊長技字典中沒有查詢到本隊長技相關資訊的翻譯，故以日文顯示。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0007009" xml:space="preserve">
+    <value>警告代碼 0xC0007009\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="W_0xC0003002" xml:space="preserve">
+    <value>警告代碼 0xC0003002\n\n傳入的參數種類有誤，故傳回的值為null。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="W_0xC0011001" xml:space="preserve">
+    <value>警告代碼 0xC0011001\n\n根據提供的關鍵字，沒有找到相關的結果。</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011002" xml:space="preserve">
+    <value>警告代碼 0xC0011002\n\n您所提供的關鍵字中有不合法的字元，請重新輸入。</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011003" xml:space="preserve">
+    <value>警告代碼 0xC0011003\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011004" xml:space="preserve">
+    <value>警告代碼 0xC0011004\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011005" xml:space="preserve">
+    <value>警告代碼 0xC0011005\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011006" xml:space="preserve">
+    <value>警告代碼 0xC0011006\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011007" xml:space="preserve">
+    <value>警告代碼 0xC0011007\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011008" xml:space="preserve">
+    <value>警告代碼 0xC0011008\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC0011009" xml:space="preserve">
+    <value>警告代碼 0xC0011009\n\n</value>
+    <comment>PCharacterData</comment>
+  </data>
+  <data name="W_0xC000E001" xml:space="preserve">
+    <value>警告代碼 0xC000E001\n\n角色ID長度不正確，請重新確認。角色ID由8位數字組成。</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E002" xml:space="preserve">
+    <value>警告代碼 0xC000E002\n\n查詢標的資料表沒有內容。請嘗試重新載入資源檔。</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E003" xml:space="preserve">
+    <value>警告代碼 0xC000E003\n\n角色ID不能為空，請重新輸入。角色ID由8位數字組成。</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E004" xml:space="preserve">
+    <value>警告代碼 0xC000E004\n\n傳入的參數起始堆棧為空。請檢察資源檔是否載入。</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E005" xml:space="preserve">
+    <value>警告代碼 0xC000E005\n\n傳入的BA起始堆棧為空。請檢察資源檔是否載入。</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E006" xml:space="preserve">
+    <value>警告代碼 0xC000E006\n\n角色ID不存在，請重新檢查輸入的ID是否正確。</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E007" xml:space="preserve">
+    <value>警告代碼 0xC000E007\n\n</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E008" xml:space="preserve">
+    <value>警告代碼 0xC000E008\n\n</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC000E009" xml:space="preserve">
+    <value>警告代碼 0xC000E009\n\n</value>
+    <comment>BaDisplay</comment>
+  </data>
+  <data name="W_0xC0015001" xml:space="preserve">
+    <value>警告代碼 0xC0015001\n\n儲存檔名不能為空，請重新輸入檔名。</value>
+    <comment>PictureForm</comment>
+  </data>
+  <data name="W_0xC0003003" xml:space="preserve">
+    <value>警告代碼 0xC0003003\n\n傳入的星期有誤，故傳回的值為null。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="W_0xC0013001" xml:space="preserve">
+    <value>警告代碼 0xC0013001\n\n傳入的角色舞台有誤，顏色未改變。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013002" xml:space="preserve">
+    <value>警告代碼 0xC0013002\n\n傳入的性別有誤，顏色未改變。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013003" xml:space="preserve">
+    <value>警告代碼 0xC0013003\n\n傳入的屬性有誤，顏色未改變。</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013004" xml:space="preserve">
+    <value>警告代碼 0xC0013004\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013005" xml:space="preserve">
+    <value>警告代碼 0xC0013005\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013006" xml:space="preserve">
+    <value>警告代碼 0xC0013006\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013007" xml:space="preserve">
+    <value>警告代碼 0xC0013007\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013008" xml:space="preserve">
+    <value>警告代碼 0xC0013008\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC0013009" xml:space="preserve">
+    <value>警告代碼 0xC0013009\n\n</value>
+    <comment>BasicInfo</comment>
+  </data>
+  <data name="W_0xC001B001" xml:space="preserve">
+    <value>警告代碼 0xC001B001\n\n根據提供的關鍵字，沒有找到相關的結果。</value>
+    <comment>DataView</comment>
+  </data>
+  <data name="W_0xC0003004" xml:space="preserve">
+    <value>警告代碼 0xC0003003\n\n傳入的日誌種類有誤，故傳回的值為null。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="W_0xC0023000" xml:space="preserve">
+    <value>警告代碼 0xC0023000\n\n傳入的下載模組為空，請先指定下載模組後在使用下載樣式的訊息方塊。</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023001" xml:space="preserve">
+    <value>警告代碼 0xC0023001\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023002" xml:space="preserve">
+    <value>警告代碼 0xC0023002\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023003" xml:space="preserve">
+    <value>警告代碼 0xC0023003\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023004" xml:space="preserve">
+    <value>警告代碼 0xC0023004\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023005" xml:space="preserve">
+    <value>警告代碼 0xC0023005\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023006" xml:space="preserve">
+    <value>警告代碼 0xC0023006\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023007" xml:space="preserve">
+    <value>警告代碼 0xC0023007\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023008" xml:space="preserve">
+    <value>警告代碼 0xC0023008\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0023009" xml:space="preserve">
+    <value>警告代碼 0xC0023009\n\n</value>
+    <comment>MessageBox</comment>
+  </data>
+  <data name="W_0xC0000001" xml:space="preserve">
+    <value>警告代碼 0xC0000001\n\n主資料表的資料行數需大於或等於副資料表。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0019001" xml:space="preserve">
+    <value>警告代碼 0xC0019001\n\n因傳入的角色資料登記為未成功載入，故顯示作業以中斷。</value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="W_0xC0019002" xml:space="preserve">
+    <value>警告代碼 0xC0019002\n\n登記最愛未成功。無法在資料表中找到對應的欄位。角色ID: </value>
+    <comment>CharaDataDisplay</comment>
+  </data>
+  <data name="W_0xC0025000" xml:space="preserve">
+    <value>警告代碼 0xC0025000\n\n傳入的路徑是資料夾而非檔案。請重新確認。路徑:</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="W_0xC0025001" xml:space="preserve">
+    <value>警告代碼 0xC0025001\n\n傳入的檔案來源有誤，應為本地或是網路。</value>
+    <comment>Downloader</comment>
+  </data>
+  <data name="W_0xC0027000" xml:space="preserve">
+    <value>警告代碼 0xC0027000\n\n檔案下載的儲存路徑未更動。</value>
+    <comment>PConfig</comment>
+  </data>
+  <data name="W_0xC0000002" xml:space="preserve">
+    <value>警告代碼 0xC0000002\n\n無法查詢到合乎條件的結果。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0000003" xml:space="preserve">
+    <value>警告代碼 0xC0000003\n\n已超過搜尋結果的最末端。</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0000004" xml:space="preserve">
+    <value>警告代碼 0xC0000004\n\n</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0000005" xml:space="preserve">
+    <value>警告代碼 0xC0000005\n\n</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0000006" xml:space="preserve">
+    <value>警告代碼 0xC0000006\n\n</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0000007" xml:space="preserve">
+    <value>警告代碼 0xC0000007\n\n</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0000008" xml:space="preserve">
+    <value>警告代碼 0xC0000008\n\n</value>
+    <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC0000009" xml:space="preserve">
+    <value>警告代碼 0xC0000009\n\n</value>
+    <comment>DataAPI</comment>
+  </data>
+</root>

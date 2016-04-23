@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SAOCR_Data_Manager.Properties" GeneratedClassName="UserConfig">
+  <Profiles />
+  <Settings>
+    <Setting Name="AU_ProgramMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="SE_BGMMute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AU_ProgramChannel" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SE_Beep" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SE/Feedback.SAO.Click.wav</Value>
+    </Setting>
+    <Setting Name="SE_Warning" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SE/Notify.SAO.System.wav</Value>
+    </Setting>
+    <Setting Name="SE_BGM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SE/Dream - SINCERELY~ever dream~.mp3</Value>
+    </Setting>
+    <Setting Name="SE_WarningMute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Path_Download" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SE_BeepMute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DebugMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="State_AutoLoad" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AU_CSVMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="SE_Message" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SE/Popup.SAO.Message.wav</Value>
+    </Setting>
+    <Setting Name="SE_MessageMute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
