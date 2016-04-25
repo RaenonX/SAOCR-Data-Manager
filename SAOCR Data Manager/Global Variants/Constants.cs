@@ -10,7 +10,8 @@ namespace SAOCR_Data_Manager
     public static class Const
     {
         public const string NUM_COLUMN = "Stack";
-        public const string CHARA_DIM_EX_COMMAND = "SUBSTRING(C1, 8, 1) IN (0)";
+        public const string IS_ORG_CHARA_VERIFY_AT_C1 = "SUBSTRING(C1, 8, 1) IN (0)";
+        public const string IS_ORG_CHARA_VERIFY_AT_C2 = "SUBSTRING(C2, 8, 1) IN (0)";
 
         public const int SCROLL_BAR_WIDTH = 17;
         public const string FORMAT_DATETIME_NOW = "yyyy-MM-dd HH-mm-ss";
@@ -58,6 +59,12 @@ namespace SAOCR_Data_Manager
             public const string SERIES_CATEGORY_ID = "角色系ID";
             public const string SERIES_CATEGORY = "角色系名稱";
             public const string SERIES_RATE = "角色系占比";
+            public const string MONSTER_TYPE_CATEGORY_ID = "怪物種類ID";
+            public const string MONSTER_TYPE_CATEGORY = "怪物種類";
+            public const string MONSTER_TYPE_RATE = "物種占比";
+            public const string MONSTER_HP_MIN = "HP範圍(最低)";
+            public const string MONSTER_HP_MAX = "HP範圍(最高)";
+            public const string MONSTER_HP_RATE = "HP量占比";
         }
 
         public static class Path
@@ -94,6 +101,7 @@ namespace SAOCR_Data_Manager
             public const int ELEMENT_CATEGORY = 3;
             public const int SCENE_CATEGORY = 4;
             public const int RARITY = 6;
+            public const int MONSTER_TYPE = 8;
         }
 
         public static class Column

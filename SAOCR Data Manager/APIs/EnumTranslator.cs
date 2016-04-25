@@ -609,5 +609,38 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+
+        public static string MonsterTypeT(EMonsterType EMS)
+        {
+            try
+            {
+                switch (EMS)
+                {
+                    case EMonsterType.HalfMan:
+                        return RDictEnumString.MS_HalfMan;
+                    case EMonsterType.Bug:
+                        return RDictEnumString.MS_Bug;
+                    case EMonsterType.Plant:
+                        return RDictEnumString.MS_Plant;
+                    case EMonsterType.Animal:
+                        return RDictEnumString.MS_Animal;
+                    case EMonsterType.Phantom:
+                        return RDictEnumString.MS_Phantom;
+                    case EMonsterType.Ghost:
+                        return RDictEnumString.MS_Ghost;
+                    case EMonsterType.Human:
+                        return RDictEnumString.MS_Human;
+                    case EMonsterType.Dragon:
+                        return RDictEnumString.MS_Dragon;
+                    default:
+                        return null;
+                }
+            }
+            catch (Exception e)
+            {
+                SystemAPI.Error(RError.E_0x00003007, e);
+                throw;
+            }
+        }
     } 
 }

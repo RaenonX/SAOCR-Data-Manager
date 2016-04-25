@@ -304,7 +304,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x00003007\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x00003007\n\n轉譯怪物種族時發生錯誤。 的當地語系化字串。
         /// </summary>
         internal static string E_0x00003007 {
             get {
@@ -1978,7 +1978,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x0001D008\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x0001D008\n\n因為檔案沒有找到，故無法將錯誤訊息寫入日誌。 的當地語系化字串。
         /// </summary>
         internal static string E_0x0001D008 {
             get {
@@ -2797,7 +2797,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x0002A001\n\n計算或顯示樣本數量時發生錯誤。 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x0002A001\n\n計算或顯示角色樣本數量時發生錯誤。 的當地語系化字串。
         /// </summary>
         internal static string E_0x0002A001 {
             get {
@@ -2851,7 +2851,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x0002A007\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x0002A007\n\n計算或顯示怪物樣本數量時發生錯誤。 的當地語系化字串。
         /// </summary>
         internal static string E_0x0002A007 {
             get {
@@ -2860,7 +2860,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x0002A008\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x0002A008\n\n計算怪物種類占比時發生錯誤。 的當地語系化字串。
         /// </summary>
         internal static string E_0x0002A008 {
             get {
@@ -2874,6 +2874,60 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string E_0x0002A009 {
             get {
                 return ResourceManager.GetString("E_0x0002A009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x0002A00A\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x0002A00A {
+            get {
+                return ResourceManager.GetString("E_0x0002A00A", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x0002A00B\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x0002A00B {
+            get {
+                return ResourceManager.GetString("E_0x0002A00B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x0002A00C\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x0002A00C {
+            get {
+                return ResourceManager.GetString("E_0x0002A00C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x0002A00D\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x0002A00D {
+            get {
+                return ResourceManager.GetString("E_0x0002A00D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x0002A00E\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x0002A00E {
+            get {
+                return ResourceManager.GetString("E_0x0002A00E", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x0002A00F\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x0002A00F {
+            get {
+                return ResourceManager.GetString("E_0x0002A00F", resourceCulture);
             }
         }
         

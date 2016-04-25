@@ -37,10 +37,7 @@ namespace SAOCR_Data_Manager
         
         public void Button_Click(object sender, MouseEventArgs e)
         {
-            if (ButtonClick != null)
-            {
-                ButtonClick(this, EventArgs.Empty);
-            }
+            ButtonClick?.Invoke(this, EventArgs.Empty);
             SystemAPI.SEBeep();
         }
 

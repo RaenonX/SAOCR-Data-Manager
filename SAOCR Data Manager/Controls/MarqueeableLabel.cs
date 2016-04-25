@@ -210,7 +210,7 @@ namespace SAOCR_Data_Manager
             {
                 TimerO.Count++;
             }
-            
+
             if ((TimerO.Count % (TimerO.Interval / FMain.MarqueeLabel.Interval) == 0) && TimerO.Gate && !TimerO.Freezing)
             {
                 #region
@@ -227,20 +227,14 @@ namespace SAOCR_Data_Manager
                             case MarqueeMode.Continual:
                                 if (-(TextLabel.Location.X + TextLabel.Size.Width) > OverBorderDistance)
                                 {
-                                    if (ArriveToBorder != null)
-                                    {
-                                        ArriveToBorder(this, EventArgs.Empty);
-                                    }
+                                    ArriveToBorder?.Invoke(this, EventArgs.Empty);
                                     Continual();
                                 }
                                 break;
                             case MarqueeMode.ContinualAndSneeze:
                                 if (-(TextLabel.Location.X + TextLabel.Size.Width) > OverBorderDistance)
                                 {
-                                    if (ArriveToBorder != null)
-                                    {
-                                        ArriveToBorder(this, EventArgs.Empty);
-                                    }
+                                    ArriveToBorder?.Invoke(this, EventArgs.Empty);
                                     Continual();
                                 }
                                 else if (TextLabel.Location.X == TextLabelOriginalPosition.X)
@@ -249,10 +243,7 @@ namespace SAOCR_Data_Manager
                                 }
                                 break;
                             case MarqueeMode.ResetAtOriginal:
-                                if (ArriveToBorder != null)
-                                {
-                                    ArriveToBorder(this, EventArgs.Empty);
-                                }
+                                ArriveToBorder?.Invoke(this, EventArgs.Empty);
                                 ResetAtOriginal();
                                 break;
                         }
@@ -270,20 +261,14 @@ namespace SAOCR_Data_Manager
                             case MarqueeMode.Continual:
                                 if (-(TextLabel.Location.Y + TextLabel.Size.Height) > OverBorderDistance)
                                 {
-                                    if (ArriveToBorder != null)
-                                    {
-                                        ArriveToBorder(this, EventArgs.Empty);
-                                    }
+                                    ArriveToBorder?.Invoke(this, EventArgs.Empty);
                                     Continual();
                                 }
                                 break;
                             case MarqueeMode.ContinualAndSneeze:
                                 if (-(TextLabel.Location.Y + TextLabel.Size.Height) > OverBorderDistance)
                                 {
-                                    if (ArriveToBorder != null)
-                                    {
-                                        ArriveToBorder(this, EventArgs.Empty);
-                                    }
+                                    ArriveToBorder?.Invoke(this, EventArgs.Empty);
                                     Continual();
                                 }
                                 else if (TextLabel.Location.Y == TextLabelOriginalPosition.Y)
@@ -292,10 +277,7 @@ namespace SAOCR_Data_Manager
                                 }
                                 break;
                             case MarqueeMode.ResetAtOriginal:
-                                if (ArriveToBorder != null)
-                                {
-                                    ArriveToBorder(this, EventArgs.Empty);
-                                }
+                                ArriveToBorder?.Invoke(this, EventArgs.Empty);
                                 ResetAtOriginal();
                                 break;
                         }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MN_Title = new System.Windows.Forms.Label();
             this.P_HomePage = new System.Windows.Forms.Panel();
             this.HM_ToStatistics = new SAOCR_Data_Manager.Button_SE_();
@@ -51,30 +51,12 @@
             this.HM_ToHomePage = new SAOCR_Data_Manager.Button_SE_();
             this.MN_Close = new SAOCR_Data_Manager.Button_SE_();
             this.MN_Min = new SAOCR_Data_Manager.Button_SE_();
-            this.P_Statistics = new System.Windows.Forms.Panel();
-            this.SS_Monster = new System.Windows.Forms.GroupBox();
-            this.SS_Character = new System.Windows.Forms.GroupBox();
-            this.SS_CharaElementRateText = new System.Windows.Forms.Label();
-            this.SS_CharaElementRate = new System.Windows.Forms.ListView();
-            this.SS_CharaCalculate = new SAOCR_Data_Manager.Button_SE_();
-            this.SS_CharaWeaponUsingRateText = new System.Windows.Forms.Label();
-            this.SS_CharaWeaponUsingRate = new System.Windows.Forms.ListView();
-            this.SS_Weapon = new System.Windows.Forms.GroupBox();
-            this.P_CsvTable = new System.Windows.Forms.Panel();
-            this.CT_FindResultList = new System.Windows.Forms.ListView();
-            this.CT_SearchGo = new SAOCR_Data_Manager.Button_SE_();
-            this.CT_Search = new System.Windows.Forms.TextBox();
-            this.CT_SearchString = new System.Windows.Forms.Label();
-            this.CT_EndColumnLabel = new System.Windows.Forms.Label();
-            this.CT_StartColumnLabel = new System.Windows.Forms.Label();
-            this.CT_EndColumn = new System.Windows.Forms.NumericUpDown();
-            this.CT_StartColumn = new System.Windows.Forms.NumericUpDown();
-            this.CT_Tips = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.CT_StepGo = new SAOCR_Data_Manager.Button_SE_();
-            this.CT_StepLabel = new System.Windows.Forms.Label();
-            this.CT_Step = new System.Windows.Forms.TextBox();
-            this.CT_CsvView = new System.Windows.Forms.DataGridView();
             this.P_Config = new System.Windows.Forms.Panel();
+            this.ST_SourcePath = new System.Windows.Forms.GroupBox();
+            this.ST_SourceASBText = new System.Windows.Forms.Label();
+            this.ST_SourceCSV = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_SourceASB = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_SourceCSVText = new System.Windows.Forms.Label();
             this.WMP = new AxWMPLib.AxWindowsMediaPlayer();
             this.ST_AUProg = new System.Windows.Forms.GroupBox();
             this.ST_AUProgCheckGo = new SAOCR_Data_Manager.Button_SE_();
@@ -139,26 +121,50 @@
             this.CD_CharacterIDGo = new SAOCR_Data_Manager.Button_SE_();
             this.CD_CharacterID = new System.Windows.Forms.TextBox();
             this.CD_FavoriteText = new System.Windows.Forms.Label();
-            this.EX_FileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.EX_DirectoryDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.SS_CharaSeriesRateText = new System.Windows.Forms.Label();
-            this.SS_CharaSeriesRate = new System.Windows.Forms.ListView();
-            this.SS_CharaRarityRateText = new System.Windows.Forms.Label();
-            this.SS_CharaRarityRate = new System.Windows.Forms.ListView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.P_Statistics = new System.Windows.Forms.Panel();
+            this.SS_Monster = new System.Windows.Forms.GroupBox();
+            this.SS_MonsterCalculate = new SAOCR_Data_Manager.Button_SE_();
+            this.SS_MonsterPanel = new System.Windows.Forms.Panel();
+            this.SS_MonsterTypeRateText = new System.Windows.Forms.Label();
+            this.SS_MonsterTypeRate = new System.Windows.Forms.ListView();
+            this.SS_MonsterHPRate = new System.Windows.Forms.ListView();
+            this.SS_MonsterHPRateText = new System.Windows.Forms.Label();
+            this.SS_Character = new System.Windows.Forms.GroupBox();
+            this.SS_CHaraPanel = new System.Windows.Forms.Panel();
             this.SS_CharaSceneRateText = new System.Windows.Forms.Label();
             this.SS_CharaSceneRate = new System.Windows.Forms.ListView();
+            this.SS_CharaRarityRateText = new System.Windows.Forms.Label();
+            this.SS_CharaRarityRate = new System.Windows.Forms.ListView();
+            this.SS_CharaWeaponUsingRateText = new System.Windows.Forms.Label();
+            this.SS_CharaSeriesRateText = new System.Windows.Forms.Label();
+            this.SS_CharaWeaponUsingRate = new System.Windows.Forms.ListView();
+            this.SS_CharaElementRate = new System.Windows.Forms.ListView();
+            this.SS_CharaSeriesRate = new System.Windows.Forms.ListView();
+            this.SS_CharaElementRateText = new System.Windows.Forms.Label();
+            this.SS_CharaCalculate = new SAOCR_Data_Manager.Button_SE_();
+            this.SS_Weapon = new System.Windows.Forms.GroupBox();
+            this.P_CsvTable = new System.Windows.Forms.Panel();
+            this.CT_FindResultList = new System.Windows.Forms.ListView();
+            this.CT_SearchGo = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_Search = new System.Windows.Forms.TextBox();
+            this.CT_SearchString = new System.Windows.Forms.Label();
+            this.CT_EndColumnLabel = new System.Windows.Forms.Label();
+            this.CT_StartColumnLabel = new System.Windows.Forms.Label();
+            this.CT_EndColumn = new System.Windows.Forms.NumericUpDown();
+            this.CT_StartColumn = new System.Windows.Forms.NumericUpDown();
+            this.CT_Tips = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.CT_StepGo = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_StepLabel = new System.Windows.Forms.Label();
+            this.CT_Step = new System.Windows.Forms.TextBox();
+            this.CT_CsvView = new System.Windows.Forms.DataGridView();
+            this.EX_FileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.EX_DirectoryDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.P_HomePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BGM)).BeginInit();
             this.MN_Border.SuspendLayout();
             this.MN_StatusStrip.SuspendLayout();
-            this.P_Statistics.SuspendLayout();
-            this.SS_Character.SuspendLayout();
-            this.P_CsvTable.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CT_EndColumn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CT_StartColumn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CT_CsvView)).BeginInit();
             this.P_Config.SuspendLayout();
+            this.ST_SourcePath.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WMP)).BeginInit();
             this.ST_AUProg.SuspendLayout();
             this.ST_AboutProgram.SuspendLayout();
@@ -168,7 +174,15 @@
             this.CD_CharacterTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.CD_SearchGB.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.P_Statistics.SuspendLayout();
+            this.SS_Monster.SuspendLayout();
+            this.SS_MonsterPanel.SuspendLayout();
+            this.SS_Character.SuspendLayout();
+            this.SS_CHaraPanel.SuspendLayout();
+            this.P_CsvTable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_EndColumn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_StartColumn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_CsvView)).BeginInit();
             this.SuspendLayout();
             // 
             // MN_Title
@@ -212,10 +226,10 @@
             this.HM_ToStatistics.ButtonText = "";
             this.HM_ToStatistics.Font = new System.Drawing.Font("微軟正黑體", 20F);
             this.HM_ToStatistics.ForeColor = System.Drawing.Color.White;
-            this.HM_ToStatistics.Location = new System.Drawing.Point(11, 184);
-            this.HM_ToStatistics.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.HM_ToStatistics.Location = new System.Drawing.Point(809, 8);
+            this.HM_ToStatistics.Margin = new System.Windows.Forms.Padding(4, 6, 3, 6);
             this.HM_ToStatistics.Name = "HM_ToStatistics";
-            this.HM_ToStatistics.Size = new System.Drawing.Size(237, 170);
+            this.HM_ToStatistics.Size = new System.Drawing.Size(258, 170);
             this.HM_ToStatistics.TabIndex = 12;
             // 
             // HM_Announcement
@@ -253,10 +267,10 @@
             this.HM_ToConfig.ButtonText = "";
             this.HM_ToConfig.Font = new System.Drawing.Font("微軟正黑體", 20F);
             this.HM_ToConfig.ForeColor = System.Drawing.Color.White;
-            this.HM_ToConfig.Location = new System.Drawing.Point(740, 9);
+            this.HM_ToConfig.Location = new System.Drawing.Point(847, 474);
             this.HM_ToConfig.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.HM_ToConfig.Name = "HM_ToConfig";
-            this.HM_ToConfig.Size = new System.Drawing.Size(237, 170);
+            this.HM_ToConfig.Size = new System.Drawing.Size(220, 153);
             this.HM_ToConfig.TabIndex = 10;
             // 
             // HM_ToCsvTable
@@ -273,10 +287,10 @@
             this.HM_ToCsvTable.ButtonText = "";
             this.HM_ToCsvTable.Font = new System.Drawing.Font("微軟正黑體", 20F);
             this.HM_ToCsvTable.ForeColor = System.Drawing.Color.White;
-            this.HM_ToCsvTable.Location = new System.Drawing.Point(497, 9);
-            this.HM_ToCsvTable.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.HM_ToCsvTable.Location = new System.Drawing.Point(543, 8);
+            this.HM_ToCsvTable.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.HM_ToCsvTable.Name = "HM_ToCsvTable";
-            this.HM_ToCsvTable.Size = new System.Drawing.Size(237, 170);
+            this.HM_ToCsvTable.Size = new System.Drawing.Size(258, 170);
             this.HM_ToCsvTable.TabIndex = 9;
             // 
             // HM_Res_Load
@@ -333,10 +347,10 @@
             this.HM_ToEquipmentData.ButtonText = "";
             this.HM_ToEquipmentData.Font = new System.Drawing.Font("微軟正黑體", 20F);
             this.HM_ToEquipmentData.ForeColor = System.Drawing.Color.White;
-            this.HM_ToEquipmentData.Location = new System.Drawing.Point(254, 9);
-            this.HM_ToEquipmentData.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.HM_ToEquipmentData.Location = new System.Drawing.Point(277, 8);
+            this.HM_ToEquipmentData.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.HM_ToEquipmentData.Name = "HM_ToEquipmentData";
-            this.HM_ToEquipmentData.Size = new System.Drawing.Size(237, 170);
+            this.HM_ToEquipmentData.Size = new System.Drawing.Size(258, 170);
             this.HM_ToEquipmentData.TabIndex = 4;
             // 
             // HM_ToCharacterData
@@ -354,9 +368,9 @@
             this.HM_ToCharacterData.Font = new System.Drawing.Font("微軟正黑體", 20F);
             this.HM_ToCharacterData.ForeColor = System.Drawing.Color.White;
             this.HM_ToCharacterData.Location = new System.Drawing.Point(11, 8);
-            this.HM_ToCharacterData.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.HM_ToCharacterData.Margin = new System.Windows.Forms.Padding(3, 6, 4, 6);
             this.HM_ToCharacterData.Name = "HM_ToCharacterData";
-            this.HM_ToCharacterData.Size = new System.Drawing.Size(237, 170);
+            this.HM_ToCharacterData.Size = new System.Drawing.Size(258, 170);
             this.HM_ToCharacterData.TabIndex = 3;
             // 
             // BGM
@@ -377,11 +391,11 @@
             this.MN_Border.Controls.Add(this.MN_Min);
             this.MN_Border.Controls.Add(this.MN_Title);
             this.MN_Border.Controls.Add(this.BGM);
-            this.MN_Border.Controls.Add(this.P_Statistics);
-            this.MN_Border.Controls.Add(this.P_CsvTable);
             this.MN_Border.Controls.Add(this.P_Config);
             this.MN_Border.Controls.Add(this.P_CharacterData);
             this.MN_Border.Controls.Add(this.P_HomePage);
+            this.MN_Border.Controls.Add(this.P_Statistics);
+            this.MN_Border.Controls.Add(this.P_CsvTable);
             this.MN_Border.Location = new System.Drawing.Point(0, 0);
             this.MN_Border.Name = "MN_Border";
             this.MN_Border.Size = new System.Drawing.Size(1080, 720);
@@ -492,358 +506,9 @@
             this.MN_Min.Size = new System.Drawing.Size(50, 24);
             this.MN_Min.TabIndex = 2;
             // 
-            // P_Statistics
-            // 
-            this.P_Statistics.Controls.Add(this.SS_Monster);
-            this.P_Statistics.Controls.Add(this.SS_Character);
-            this.P_Statistics.Controls.Add(this.SS_Weapon);
-            this.P_Statistics.Location = new System.Drawing.Point(1, 24);
-            this.P_Statistics.Margin = new System.Windows.Forms.Padding(0);
-            this.P_Statistics.Name = "P_Statistics";
-            this.P_Statistics.Size = new System.Drawing.Size(1078, 695);
-            this.P_Statistics.TabIndex = 21;
-            this.P_Statistics.Visible = false;
-            // 
-            // SS_Monster
-            // 
-            this.SS_Monster.ForeColor = System.Drawing.Color.White;
-            this.SS_Monster.Location = new System.Drawing.Point(426, 39);
-            this.SS_Monster.Name = "SS_Monster";
-            this.SS_Monster.Size = new System.Drawing.Size(200, 185);
-            this.SS_Monster.TabIndex = 1;
-            this.SS_Monster.TabStop = false;
-            // 
-            // SS_Character
-            // 
-            this.SS_Character.Controls.Add(this.panel1);
-            this.SS_Character.Controls.Add(this.SS_CharaCalculate);
-            this.SS_Character.ForeColor = System.Drawing.Color.White;
-            this.SS_Character.Location = new System.Drawing.Point(12, 4);
-            this.SS_Character.Name = "SS_Character";
-            this.SS_Character.Size = new System.Drawing.Size(369, 663);
-            this.SS_Character.TabIndex = 1;
-            this.SS_Character.TabStop = false;
-            // 
-            // SS_CharaElementRateText
-            // 
-            this.SS_CharaElementRateText.Location = new System.Drawing.Point(0, 180);
-            this.SS_CharaElementRateText.Margin = new System.Windows.Forms.Padding(3);
-            this.SS_CharaElementRateText.Name = "SS_CharaElementRateText";
-            this.SS_CharaElementRateText.Size = new System.Drawing.Size(337, 18);
-            this.SS_CharaElementRateText.TabIndex = 27;
-            this.SS_CharaElementRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // SS_CharaElementRate
-            // 
-            this.SS_CharaElementRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.SS_CharaElementRate.AutoArrange = false;
-            this.SS_CharaElementRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.SS_CharaElementRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SS_CharaElementRate.ForeColor = System.Drawing.Color.White;
-            this.SS_CharaElementRate.FullRowSelect = true;
-            this.SS_CharaElementRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.SS_CharaElementRate.Location = new System.Drawing.Point(0, 204);
-            this.SS_CharaElementRate.MultiSelect = false;
-            this.SS_CharaElementRate.Name = "SS_CharaElementRate";
-            this.SS_CharaElementRate.Size = new System.Drawing.Size(337, 150);
-            this.SS_CharaElementRate.TabIndex = 26;
-            this.SS_CharaElementRate.UseCompatibleStateImageBehavior = false;
-            this.SS_CharaElementRate.View = System.Windows.Forms.View.Details;
-            // 
-            // SS_CharaCalculate
-            // 
-            this.SS_CharaCalculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SS_CharaCalculate.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.SS_CharaCalculate.ButtonBackgroundImage = null;
-            this.SS_CharaCalculate.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SS_CharaCalculate.ButtonColor = System.Drawing.Color.White;
-            this.SS_CharaCalculate.ButtonEnabled = true;
-            this.SS_CharaCalculate.ButtonImage = null;
-            this.SS_CharaCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SS_CharaCalculate.ButtonText = "";
-            this.SS_CharaCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.SS_CharaCalculate.Location = new System.Drawing.Point(298, 628);
-            this.SS_CharaCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.SS_CharaCalculate.Name = "SS_CharaCalculate";
-            this.SS_CharaCalculate.Size = new System.Drawing.Size(65, 28);
-            this.SS_CharaCalculate.TabIndex = 23;
-            // 
-            // SS_CharaWeaponUsingRateText
-            // 
-            this.SS_CharaWeaponUsingRateText.Location = new System.Drawing.Point(0, 0);
-            this.SS_CharaWeaponUsingRateText.Margin = new System.Windows.Forms.Padding(3);
-            this.SS_CharaWeaponUsingRateText.Name = "SS_CharaWeaponUsingRateText";
-            this.SS_CharaWeaponUsingRateText.Size = new System.Drawing.Size(337, 18);
-            this.SS_CharaWeaponUsingRateText.TabIndex = 25;
-            this.SS_CharaWeaponUsingRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // SS_CharaWeaponUsingRate
-            // 
-            this.SS_CharaWeaponUsingRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.SS_CharaWeaponUsingRate.AutoArrange = false;
-            this.SS_CharaWeaponUsingRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.SS_CharaWeaponUsingRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SS_CharaWeaponUsingRate.ForeColor = System.Drawing.Color.White;
-            this.SS_CharaWeaponUsingRate.FullRowSelect = true;
-            this.SS_CharaWeaponUsingRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.SS_CharaWeaponUsingRate.Location = new System.Drawing.Point(0, 24);
-            this.SS_CharaWeaponUsingRate.MultiSelect = false;
-            this.SS_CharaWeaponUsingRate.Name = "SS_CharaWeaponUsingRate";
-            this.SS_CharaWeaponUsingRate.Size = new System.Drawing.Size(337, 150);
-            this.SS_CharaWeaponUsingRate.TabIndex = 24;
-            this.SS_CharaWeaponUsingRate.UseCompatibleStateImageBehavior = false;
-            this.SS_CharaWeaponUsingRate.View = System.Windows.Forms.View.Details;
-            // 
-            // SS_Weapon
-            // 
-            this.SS_Weapon.ForeColor = System.Drawing.Color.White;
-            this.SS_Weapon.Location = new System.Drawing.Point(725, 55);
-            this.SS_Weapon.Name = "SS_Weapon";
-            this.SS_Weapon.Size = new System.Drawing.Size(332, 375);
-            this.SS_Weapon.TabIndex = 0;
-            this.SS_Weapon.TabStop = false;
-            // 
-            // P_CsvTable
-            // 
-            this.P_CsvTable.Controls.Add(this.CT_FindResultList);
-            this.P_CsvTable.Controls.Add(this.CT_SearchGo);
-            this.P_CsvTable.Controls.Add(this.CT_Search);
-            this.P_CsvTable.Controls.Add(this.CT_SearchString);
-            this.P_CsvTable.Controls.Add(this.CT_EndColumnLabel);
-            this.P_CsvTable.Controls.Add(this.CT_StartColumnLabel);
-            this.P_CsvTable.Controls.Add(this.CT_EndColumn);
-            this.P_CsvTable.Controls.Add(this.CT_StartColumn);
-            this.P_CsvTable.Controls.Add(this.CT_Tips);
-            this.P_CsvTable.Controls.Add(this.CT_StepGo);
-            this.P_CsvTable.Controls.Add(this.CT_StepLabel);
-            this.P_CsvTable.Controls.Add(this.CT_Step);
-            this.P_CsvTable.Controls.Add(this.CT_CsvView);
-            this.P_CsvTable.Location = new System.Drawing.Point(1, 24);
-            this.P_CsvTable.Margin = new System.Windows.Forms.Padding(0);
-            this.P_CsvTable.Name = "P_CsvTable";
-            this.P_CsvTable.Size = new System.Drawing.Size(1078, 695);
-            this.P_CsvTable.TabIndex = 10;
-            this.P_CsvTable.Visible = false;
-            // 
-            // CT_FindResultList
-            // 
-            this.CT_FindResultList.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.CT_FindResultList.AutoArrange = false;
-            this.CT_FindResultList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CT_FindResultList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CT_FindResultList.ForeColor = System.Drawing.Color.White;
-            this.CT_FindResultList.FullRowSelect = true;
-            this.CT_FindResultList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.CT_FindResultList.Location = new System.Drawing.Point(11, 147);
-            this.CT_FindResultList.MultiSelect = false;
-            this.CT_FindResultList.Name = "CT_FindResultList";
-            this.CT_FindResultList.Size = new System.Drawing.Size(234, 255);
-            this.CT_FindResultList.TabIndex = 20;
-            this.CT_FindResultList.UseCompatibleStateImageBehavior = false;
-            this.CT_FindResultList.View = System.Windows.Forms.View.Details;
-            // 
-            // CT_SearchGo
-            // 
-            this.CT_SearchGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_SearchGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CT_SearchGo.ButtonBackgroundImage = null;
-            this.CT_SearchGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_SearchGo.ButtonColor = System.Drawing.Color.White;
-            this.CT_SearchGo.ButtonEnabled = true;
-            this.CT_SearchGo.ButtonImage = null;
-            this.CT_SearchGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CT_SearchGo.ButtonText = "";
-            this.CT_SearchGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CT_SearchGo.Location = new System.Drawing.Point(193, 118);
-            this.CT_SearchGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CT_SearchGo.Name = "CT_SearchGo";
-            this.CT_SearchGo.Size = new System.Drawing.Size(52, 23);
-            this.CT_SearchGo.TabIndex = 19;
-            // 
-            // CT_Search
-            // 
-            this.CT_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CT_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CT_Search.ForeColor = System.Drawing.Color.White;
-            this.CT_Search.Location = new System.Drawing.Point(11, 118);
-            this.CT_Search.Name = "CT_Search";
-            this.CT_Search.Size = new System.Drawing.Size(176, 23);
-            this.CT_Search.TabIndex = 18;
-            // 
-            // CT_SearchString
-            // 
-            this.CT_SearchString.Location = new System.Drawing.Point(11, 88);
-            this.CT_SearchString.Margin = new System.Windows.Forms.Padding(3);
-            this.CT_SearchString.Name = "CT_SearchString";
-            this.CT_SearchString.Size = new System.Drawing.Size(234, 23);
-            this.CT_SearchString.TabIndex = 17;
-            this.CT_SearchString.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // CT_EndColumnLabel
-            // 
-            this.CT_EndColumnLabel.Location = new System.Drawing.Point(131, 60);
-            this.CT_EndColumnLabel.Margin = new System.Windows.Forms.Padding(3);
-            this.CT_EndColumnLabel.Name = "CT_EndColumnLabel";
-            this.CT_EndColumnLabel.Size = new System.Drawing.Size(63, 23);
-            this.CT_EndColumnLabel.TabIndex = 16;
-            this.CT_EndColumnLabel.Text = "截止欄位";
-            this.CT_EndColumnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CT_StartColumnLabel
-            // 
-            this.CT_StartColumnLabel.Location = new System.Drawing.Point(11, 60);
-            this.CT_StartColumnLabel.Margin = new System.Windows.Forms.Padding(3);
-            this.CT_StartColumnLabel.Name = "CT_StartColumnLabel";
-            this.CT_StartColumnLabel.Size = new System.Drawing.Size(63, 23);
-            this.CT_StartColumnLabel.TabIndex = 15;
-            this.CT_StartColumnLabel.Text = "起始欄位";
-            this.CT_StartColumnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CT_EndColumn
-            // 
-            this.CT_EndColumn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CT_EndColumn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CT_EndColumn.ForeColor = System.Drawing.Color.White;
-            this.CT_EndColumn.Location = new System.Drawing.Point(200, 60);
-            this.CT_EndColumn.Maximum = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
-            this.CT_EndColumn.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.CT_EndColumn.Name = "CT_EndColumn";
-            this.CT_EndColumn.Size = new System.Drawing.Size(45, 23);
-            this.CT_EndColumn.TabIndex = 14;
-            this.CT_EndColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CT_EndColumn.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // CT_StartColumn
-            // 
-            this.CT_StartColumn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CT_StartColumn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CT_StartColumn.ForeColor = System.Drawing.Color.White;
-            this.CT_StartColumn.Location = new System.Drawing.Point(80, 60);
-            this.CT_StartColumn.Maximum = new decimal(new int[] {
-            70,
-            0,
-            0,
-            0});
-            this.CT_StartColumn.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.CT_StartColumn.Name = "CT_StartColumn";
-            this.CT_StartColumn.Size = new System.Drawing.Size(45, 23);
-            this.CT_StartColumn.TabIndex = 13;
-            this.CT_StartColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CT_StartColumn.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // CT_Tips
-            // 
-            this.CT_Tips.Direction = MarqueeDirection.Horizontal;
-            this.CT_Tips.EnableMarquee = true;
-            this.CT_Tips.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CT_Tips.FreezeTime = 2000;
-            this.CT_Tips.LabelSize = new System.Drawing.Size(234, 23);
-            this.CT_Tips.LeftDistance = 5;
-            this.CT_Tips.LForeColor = System.Drawing.Color.White;
-            this.CT_Tips.Location = new System.Drawing.Point(11, 8);
-            this.CT_Tips.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CT_Tips.MarqueeText = "";
-            this.CT_Tips.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.CT_Tips.MoveDifferenceEachTime = 1;
-            this.CT_Tips.MoveInterval = 20;
-            this.CT_Tips.Name = "CT_Tips";
-            this.CT_Tips.OverBorderDistance = 15;
-            this.CT_Tips.Size = new System.Drawing.Size(234, 23);
-            this.CT_Tips.TabIndex = 12;
-            // 
-            // CT_StepGo
-            // 
-            this.CT_StepGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_StepGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CT_StepGo.ButtonBackgroundImage = null;
-            this.CT_StepGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_StepGo.ButtonColor = System.Drawing.Color.White;
-            this.CT_StepGo.ButtonEnabled = true;
-            this.CT_StepGo.ButtonImage = null;
-            this.CT_StepGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CT_StepGo.ButtonText = "";
-            this.CT_StepGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CT_StepGo.Location = new System.Drawing.Point(193, 430);
-            this.CT_StepGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CT_StepGo.Name = "CT_StepGo";
-            this.CT_StepGo.Size = new System.Drawing.Size(52, 23);
-            this.CT_StepGo.TabIndex = 11;
-            // 
-            // CT_StepLabel
-            // 
-            this.CT_StepLabel.Location = new System.Drawing.Point(49, 430);
-            this.CT_StepLabel.Margin = new System.Windows.Forms.Padding(3);
-            this.CT_StepLabel.Name = "CT_StepLabel";
-            this.CT_StepLabel.Size = new System.Drawing.Size(63, 23);
-            this.CT_StepLabel.TabIndex = 10;
-            this.CT_StepLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CT_Step
-            // 
-            this.CT_Step.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CT_Step.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CT_Step.ForeColor = System.Drawing.Color.White;
-            this.CT_Step.Location = new System.Drawing.Point(118, 430);
-            this.CT_Step.MaxLength = 5;
-            this.CT_Step.Name = "CT_Step";
-            this.CT_Step.Size = new System.Drawing.Size(69, 23);
-            this.CT_Step.TabIndex = 9;
-            // 
-            // CT_CsvView
-            // 
-            this.CT_CsvView.AllowUserToAddRows = false;
-            this.CT_CsvView.AllowUserToDeleteRows = false;
-            this.CT_CsvView.AllowUserToResizeRows = false;
-            this.CT_CsvView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CT_CsvView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.CT_CsvView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CT_CsvView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.CT_CsvView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
-            this.CT_CsvView.Location = new System.Drawing.Point(251, 8);
-            this.CT_CsvView.Name = "CT_CsvView";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.CT_CsvView.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.CT_CsvView.RowTemplate.Height = 20;
-            this.CT_CsvView.Size = new System.Drawing.Size(816, 659);
-            this.CT_CsvView.TabIndex = 8;
-            // 
             // P_Config
             // 
+            this.P_Config.Controls.Add(this.ST_SourcePath);
             this.P_Config.Controls.Add(this.WMP);
             this.P_Config.Controls.Add(this.ST_AUProg);
             this.P_Config.Controls.Add(this.ST_AboutProgram);
@@ -855,6 +520,77 @@
             this.P_Config.Size = new System.Drawing.Size(1078, 695);
             this.P_Config.TabIndex = 11;
             this.P_Config.Visible = false;
+            // 
+            // ST_SourcePath
+            // 
+            this.ST_SourcePath.Controls.Add(this.ST_SourceASBText);
+            this.ST_SourcePath.Controls.Add(this.ST_SourceCSV);
+            this.ST_SourcePath.Controls.Add(this.ST_SourceASB);
+            this.ST_SourcePath.Controls.Add(this.ST_SourceCSVText);
+            this.ST_SourcePath.ForeColor = System.Drawing.Color.White;
+            this.ST_SourcePath.Location = new System.Drawing.Point(11, 160);
+            this.ST_SourcePath.Name = "ST_SourcePath";
+            this.ST_SourcePath.Size = new System.Drawing.Size(348, 87);
+            this.ST_SourcePath.TabIndex = 26;
+            this.ST_SourcePath.TabStop = false;
+            // 
+            // ST_SourceASBText
+            // 
+            this.ST_SourceASBText.Location = new System.Drawing.Point(6, 22);
+            this.ST_SourceASBText.Margin = new System.Windows.Forms.Padding(3);
+            this.ST_SourceASBText.Name = "ST_SourceASBText";
+            this.ST_SourceASBText.Size = new System.Drawing.Size(80, 25);
+            this.ST_SourceASBText.TabIndex = 6;
+            this.ST_SourceASBText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ST_SourceCSV
+            // 
+            this.ST_SourceCSV.Direction = MarqueeDirection.Horizontal;
+            this.ST_SourceCSV.EnableMarquee = true;
+            this.ST_SourceCSV.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_SourceCSV.FreezeTime = 2000;
+            this.ST_SourceCSV.LabelSize = new System.Drawing.Size(250, 25);
+            this.ST_SourceCSV.LeftDistance = 5;
+            this.ST_SourceCSV.LForeColor = System.Drawing.Color.White;
+            this.ST_SourceCSV.Location = new System.Drawing.Point(92, 53);
+            this.ST_SourceCSV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_SourceCSV.MarqueeText = "";
+            this.ST_SourceCSV.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.ST_SourceCSV.MoveDifferenceEachTime = 1;
+            this.ST_SourceCSV.MoveInterval = 15;
+            this.ST_SourceCSV.Name = "ST_SourceCSV";
+            this.ST_SourceCSV.OverBorderDistance = 15;
+            this.ST_SourceCSV.Size = new System.Drawing.Size(250, 25);
+            this.ST_SourceCSV.TabIndex = 15;
+            // 
+            // ST_SourceASB
+            // 
+            this.ST_SourceASB.Direction = MarqueeDirection.Horizontal;
+            this.ST_SourceASB.EnableMarquee = true;
+            this.ST_SourceASB.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_SourceASB.FreezeTime = 2000;
+            this.ST_SourceASB.LabelSize = new System.Drawing.Size(250, 25);
+            this.ST_SourceASB.LeftDistance = 5;
+            this.ST_SourceASB.LForeColor = System.Drawing.Color.White;
+            this.ST_SourceASB.Location = new System.Drawing.Point(92, 22);
+            this.ST_SourceASB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_SourceASB.MarqueeText = "";
+            this.ST_SourceASB.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.ST_SourceASB.MoveDifferenceEachTime = 1;
+            this.ST_SourceASB.MoveInterval = 15;
+            this.ST_SourceASB.Name = "ST_SourceASB";
+            this.ST_SourceASB.OverBorderDistance = 15;
+            this.ST_SourceASB.Size = new System.Drawing.Size(250, 25);
+            this.ST_SourceASB.TabIndex = 14;
+            // 
+            // ST_SourceCSVText
+            // 
+            this.ST_SourceCSVText.Location = new System.Drawing.Point(6, 53);
+            this.ST_SourceCSVText.Margin = new System.Windows.Forms.Padding(3);
+            this.ST_SourceCSVText.Name = "ST_SourceCSVText";
+            this.ST_SourceCSVText.Size = new System.Drawing.Size(80, 25);
+            this.ST_SourceCSVText.TabIndex = 7;
+            this.ST_SourceCSVText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // WMP
             // 
@@ -1069,9 +805,9 @@
             this.ST_DataTitle.Controls.Add(this.ST_Data);
             this.ST_DataTitle.Controls.Add(this.ST_AUCsvModeText);
             this.ST_DataTitle.ForeColor = System.Drawing.Color.White;
-            this.ST_DataTitle.Location = new System.Drawing.Point(11, 162);
+            this.ST_DataTitle.Location = new System.Drawing.Point(11, 253);
             this.ST_DataTitle.Name = "ST_DataTitle";
-            this.ST_DataTitle.Size = new System.Drawing.Size(348, 431);
+            this.ST_DataTitle.Size = new System.Drawing.Size(348, 414);
             this.ST_DataTitle.TabIndex = 8;
             this.ST_DataTitle.TabStop = false;
             // 
@@ -1089,7 +825,7 @@
             this.ST_AUCsvBrowse.ButtonText = "";
             this.ST_AUCsvBrowse.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.ST_AUCsvBrowse.ForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvBrowse.Location = new System.Drawing.Point(300, 372);
+            this.ST_AUCsvBrowse.Location = new System.Drawing.Point(300, 354);
             this.ST_AUCsvBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_AUCsvBrowse.Name = "ST_AUCsvBrowse";
             this.ST_AUCsvBrowse.Size = new System.Drawing.Size(42, 23);
@@ -1109,7 +845,7 @@
             this.ST_AUCsvCheckGo.ButtonText = "";
             this.ST_AUCsvCheckGo.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.ST_AUCsvCheckGo.ForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvCheckGo.Location = new System.Drawing.Point(240, 401);
+            this.ST_AUCsvCheckGo.Location = new System.Drawing.Point(240, 383);
             this.ST_AUCsvCheckGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_AUCsvCheckGo.Name = "ST_AUCsvCheckGo";
             this.ST_AUCsvCheckGo.Size = new System.Drawing.Size(102, 24);
@@ -1124,7 +860,7 @@
             this.ST_AUCsvPath.LabelSize = new System.Drawing.Size(288, 23);
             this.ST_AUCsvPath.LeftDistance = 5;
             this.ST_AUCsvPath.LForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvPath.Location = new System.Drawing.Point(6, 372);
+            this.ST_AUCsvPath.Location = new System.Drawing.Point(6, 354);
             this.ST_AUCsvPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_AUCsvPath.MarqueeText = "";
             this.ST_AUCsvPath.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
@@ -1142,14 +878,14 @@
             this.ST_AUCsvMode.Font = new System.Drawing.Font("微軟正黑體", 9F);
             this.ST_AUCsvMode.ForeColor = System.Drawing.Color.White;
             this.ST_AUCsvMode.FormattingEnabled = true;
-            this.ST_AUCsvMode.Location = new System.Drawing.Point(107, 401);
+            this.ST_AUCsvMode.Location = new System.Drawing.Point(107, 383);
             this.ST_AUCsvMode.Name = "ST_AUCsvMode";
             this.ST_AUCsvMode.Size = new System.Drawing.Size(127, 24);
             this.ST_AUCsvMode.TabIndex = 22;
             // 
             // ST_AutoLoad
             // 
-            this.ST_AutoLoad.Location = new System.Drawing.Point(6, 310);
+            this.ST_AutoLoad.Location = new System.Drawing.Point(6, 292);
             this.ST_AutoLoad.Name = "ST_AutoLoad";
             this.ST_AutoLoad.Size = new System.Drawing.Size(336, 25);
             this.ST_AutoLoad.TabIndex = 17;
@@ -1169,7 +905,7 @@
             this.ST_ReadTitle.ButtonText = "";
             this.ST_ReadTitle.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.ST_ReadTitle.ForeColor = System.Drawing.Color.White;
-            this.ST_ReadTitle.Location = new System.Drawing.Point(241, 280);
+            this.ST_ReadTitle.Location = new System.Drawing.Point(241, 262);
             this.ST_ReadTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_ReadTitle.Name = "ST_ReadTitle";
             this.ST_ReadTitle.Size = new System.Drawing.Size(101, 24);
@@ -1178,7 +914,7 @@
             // ST_AUCsvPathText
             // 
             this.ST_AUCsvPathText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_AUCsvPathText.Location = new System.Drawing.Point(6, 341);
+            this.ST_AUCsvPathText.Location = new System.Drawing.Point(6, 323);
             this.ST_AUCsvPathText.Margin = new System.Windows.Forms.Padding(3);
             this.ST_AUCsvPathText.Name = "ST_AUCsvPathText";
             this.ST_AUCsvPathText.Size = new System.Drawing.Size(336, 24);
@@ -1197,7 +933,7 @@
             this.ST_Data.Location = new System.Drawing.Point(6, 22);
             this.ST_Data.MultiSelect = false;
             this.ST_Data.Name = "ST_Data";
-            this.ST_Data.Size = new System.Drawing.Size(336, 251);
+            this.ST_Data.Size = new System.Drawing.Size(336, 233);
             this.ST_Data.TabIndex = 0;
             this.ST_Data.UseCompatibleStateImageBehavior = false;
             this.ST_Data.View = System.Windows.Forms.View.Details;
@@ -1206,7 +942,7 @@
             // 
             this.ST_AUCsvModeText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ST_AUCsvModeText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_AUCsvModeText.Location = new System.Drawing.Point(6, 402);
+            this.ST_AUCsvModeText.Location = new System.Drawing.Point(6, 384);
             this.ST_AUCsvModeText.Margin = new System.Windows.Forms.Padding(3);
             this.ST_AUCsvModeText.Name = "ST_AUCsvModeText";
             this.ST_AUCsvModeText.Size = new System.Drawing.Size(95, 24);
@@ -1750,79 +1486,141 @@
             this.CD_FavoriteText.TabIndex = 36;
             this.CD_FavoriteText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // EX_FileDialog
+            // P_Statistics
             // 
-            this.EX_FileDialog.Filter = "csv 檔案|*.csv|assetbundle 檔案|*.assetbundle|wav 檔案|*.wav|mp3 檔案|*.mp3|所有檔案|*.*";
+            this.P_Statistics.Controls.Add(this.SS_Monster);
+            this.P_Statistics.Controls.Add(this.SS_Character);
+            this.P_Statistics.Controls.Add(this.SS_Weapon);
+            this.P_Statistics.Location = new System.Drawing.Point(1, 24);
+            this.P_Statistics.Margin = new System.Windows.Forms.Padding(0);
+            this.P_Statistics.Name = "P_Statistics";
+            this.P_Statistics.Size = new System.Drawing.Size(1078, 695);
+            this.P_Statistics.TabIndex = 21;
+            this.P_Statistics.Visible = false;
             // 
-            // SS_CharaSeriesRateText
+            // SS_Monster
             // 
-            this.SS_CharaSeriesRateText.Location = new System.Drawing.Point(0, 360);
-            this.SS_CharaSeriesRateText.Margin = new System.Windows.Forms.Padding(3);
-            this.SS_CharaSeriesRateText.Name = "SS_CharaSeriesRateText";
-            this.SS_CharaSeriesRateText.Size = new System.Drawing.Size(337, 18);
-            this.SS_CharaSeriesRateText.TabIndex = 29;
-            this.SS_CharaSeriesRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.SS_Monster.Controls.Add(this.SS_MonsterCalculate);
+            this.SS_Monster.Controls.Add(this.SS_MonsterPanel);
+            this.SS_Monster.ForeColor = System.Drawing.Color.White;
+            this.SS_Monster.Location = new System.Drawing.Point(387, 4);
+            this.SS_Monster.Name = "SS_Monster";
+            this.SS_Monster.Size = new System.Drawing.Size(369, 663);
+            this.SS_Monster.TabIndex = 1;
+            this.SS_Monster.TabStop = false;
             // 
-            // SS_CharaSeriesRate
+            // SS_MonsterCalculate
             // 
-            this.SS_CharaSeriesRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.SS_CharaSeriesRate.AutoArrange = false;
-            this.SS_CharaSeriesRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.SS_CharaSeriesRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SS_CharaSeriesRate.ForeColor = System.Drawing.Color.White;
-            this.SS_CharaSeriesRate.FullRowSelect = true;
-            this.SS_CharaSeriesRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.SS_CharaSeriesRate.Location = new System.Drawing.Point(0, 384);
-            this.SS_CharaSeriesRate.MultiSelect = false;
-            this.SS_CharaSeriesRate.Name = "SS_CharaSeriesRate";
-            this.SS_CharaSeriesRate.Size = new System.Drawing.Size(337, 150);
-            this.SS_CharaSeriesRate.TabIndex = 28;
-            this.SS_CharaSeriesRate.UseCompatibleStateImageBehavior = false;
-            this.SS_CharaSeriesRate.View = System.Windows.Forms.View.Details;
+            this.SS_MonsterCalculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_MonsterCalculate.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.SS_MonsterCalculate.ButtonBackgroundImage = null;
+            this.SS_MonsterCalculate.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_MonsterCalculate.ButtonColor = System.Drawing.Color.White;
+            this.SS_MonsterCalculate.ButtonEnabled = true;
+            this.SS_MonsterCalculate.ButtonImage = null;
+            this.SS_MonsterCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SS_MonsterCalculate.ButtonText = "";
+            this.SS_MonsterCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.SS_MonsterCalculate.Location = new System.Drawing.Point(298, 628);
+            this.SS_MonsterCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SS_MonsterCalculate.Name = "SS_MonsterCalculate";
+            this.SS_MonsterCalculate.Size = new System.Drawing.Size(65, 28);
+            this.SS_MonsterCalculate.TabIndex = 31;
             // 
-            // SS_CharaRarityRateText
+            // SS_MonsterPanel
             // 
-            this.SS_CharaRarityRateText.Location = new System.Drawing.Point(0, 538);
-            this.SS_CharaRarityRateText.Margin = new System.Windows.Forms.Padding(3);
-            this.SS_CharaRarityRateText.Name = "SS_CharaRarityRateText";
-            this.SS_CharaRarityRateText.Size = new System.Drawing.Size(337, 18);
-            this.SS_CharaRarityRateText.TabIndex = 31;
-            this.SS_CharaRarityRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.SS_MonsterPanel.AutoScroll = true;
+            this.SS_MonsterPanel.Controls.Add(this.SS_MonsterTypeRateText);
+            this.SS_MonsterPanel.Controls.Add(this.SS_MonsterTypeRate);
+            this.SS_MonsterPanel.Controls.Add(this.SS_MonsterHPRate);
+            this.SS_MonsterPanel.Controls.Add(this.SS_MonsterHPRateText);
+            this.SS_MonsterPanel.Location = new System.Drawing.Point(6, 22);
+            this.SS_MonsterPanel.Name = "SS_MonsterPanel";
+            this.SS_MonsterPanel.Size = new System.Drawing.Size(357, 599);
+            this.SS_MonsterPanel.TabIndex = 31;
             // 
-            // SS_CharaRarityRate
+            // SS_MonsterTypeRateText
             // 
-            this.SS_CharaRarityRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.SS_CharaRarityRate.AutoArrange = false;
-            this.SS_CharaRarityRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.SS_CharaRarityRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SS_CharaRarityRate.ForeColor = System.Drawing.Color.White;
-            this.SS_CharaRarityRate.FullRowSelect = true;
-            this.SS_CharaRarityRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.SS_CharaRarityRate.Location = new System.Drawing.Point(0, 562);
-            this.SS_CharaRarityRate.MultiSelect = false;
-            this.SS_CharaRarityRate.Name = "SS_CharaRarityRate";
-            this.SS_CharaRarityRate.Size = new System.Drawing.Size(337, 150);
-            this.SS_CharaRarityRate.TabIndex = 30;
-            this.SS_CharaRarityRate.UseCompatibleStateImageBehavior = false;
-            this.SS_CharaRarityRate.View = System.Windows.Forms.View.Details;
+            this.SS_MonsterTypeRateText.Location = new System.Drawing.Point(0, 0);
+            this.SS_MonsterTypeRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_MonsterTypeRateText.Name = "SS_MonsterTypeRateText";
+            this.SS_MonsterTypeRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_MonsterTypeRateText.TabIndex = 25;
+            this.SS_MonsterTypeRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // panel1
+            // SS_MonsterTypeRate
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.SS_CharaSceneRateText);
-            this.panel1.Controls.Add(this.SS_CharaSceneRate);
-            this.panel1.Controls.Add(this.SS_CharaRarityRateText);
-            this.panel1.Controls.Add(this.SS_CharaRarityRate);
-            this.panel1.Controls.Add(this.SS_CharaWeaponUsingRateText);
-            this.panel1.Controls.Add(this.SS_CharaSeriesRateText);
-            this.panel1.Controls.Add(this.SS_CharaWeaponUsingRate);
-            this.panel1.Controls.Add(this.SS_CharaElementRate);
-            this.panel1.Controls.Add(this.SS_CharaSeriesRate);
-            this.panel1.Controls.Add(this.SS_CharaElementRateText);
-            this.panel1.Location = new System.Drawing.Point(6, 22);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(357, 599);
-            this.panel1.TabIndex = 30;
+            this.SS_MonsterTypeRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_MonsterTypeRate.AllowColumnReorder = true;
+            this.SS_MonsterTypeRate.AutoArrange = false;
+            this.SS_MonsterTypeRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_MonsterTypeRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_MonsterTypeRate.ForeColor = System.Drawing.Color.White;
+            this.SS_MonsterTypeRate.FullRowSelect = true;
+            this.SS_MonsterTypeRate.Location = new System.Drawing.Point(0, 24);
+            this.SS_MonsterTypeRate.MultiSelect = false;
+            this.SS_MonsterTypeRate.Name = "SS_MonsterTypeRate";
+            this.SS_MonsterTypeRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_MonsterTypeRate.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.SS_MonsterTypeRate.TabIndex = 24;
+            this.SS_MonsterTypeRate.UseCompatibleStateImageBehavior = false;
+            this.SS_MonsterTypeRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_MonsterHPRate
+            // 
+            this.SS_MonsterHPRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_MonsterHPRate.AllowColumnReorder = true;
+            this.SS_MonsterHPRate.AutoArrange = false;
+            this.SS_MonsterHPRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_MonsterHPRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_MonsterHPRate.ForeColor = System.Drawing.Color.White;
+            this.SS_MonsterHPRate.FullRowSelect = true;
+            this.SS_MonsterHPRate.Location = new System.Drawing.Point(0, 204);
+            this.SS_MonsterHPRate.MultiSelect = false;
+            this.SS_MonsterHPRate.Name = "SS_MonsterHPRate";
+            this.SS_MonsterHPRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_MonsterHPRate.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.SS_MonsterHPRate.TabIndex = 26;
+            this.SS_MonsterHPRate.UseCompatibleStateImageBehavior = false;
+            this.SS_MonsterHPRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_MonsterHPRateText
+            // 
+            this.SS_MonsterHPRateText.Location = new System.Drawing.Point(0, 180);
+            this.SS_MonsterHPRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_MonsterHPRateText.Name = "SS_MonsterHPRateText";
+            this.SS_MonsterHPRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_MonsterHPRateText.TabIndex = 27;
+            this.SS_MonsterHPRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_Character
+            // 
+            this.SS_Character.Controls.Add(this.SS_CHaraPanel);
+            this.SS_Character.Controls.Add(this.SS_CharaCalculate);
+            this.SS_Character.ForeColor = System.Drawing.Color.White;
+            this.SS_Character.Location = new System.Drawing.Point(12, 4);
+            this.SS_Character.Name = "SS_Character";
+            this.SS_Character.Size = new System.Drawing.Size(369, 663);
+            this.SS_Character.TabIndex = 1;
+            this.SS_Character.TabStop = false;
+            // 
+            // SS_CHaraPanel
+            // 
+            this.SS_CHaraPanel.AutoScroll = true;
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaSceneRateText);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaSceneRate);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaRarityRateText);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaRarityRate);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaWeaponUsingRateText);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaSeriesRateText);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaWeaponUsingRate);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaElementRate);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaSeriesRate);
+            this.SS_CHaraPanel.Controls.Add(this.SS_CharaElementRateText);
+            this.SS_CHaraPanel.Location = new System.Drawing.Point(6, 22);
+            this.SS_CHaraPanel.Name = "SS_CHaraPanel";
+            this.SS_CHaraPanel.Size = new System.Drawing.Size(357, 599);
+            this.SS_CHaraPanel.TabIndex = 30;
             // 
             // SS_CharaSceneRateText
             // 
@@ -1836,19 +1634,398 @@
             // SS_CharaSceneRate
             // 
             this.SS_CharaSceneRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaSceneRate.AllowColumnReorder = true;
             this.SS_CharaSceneRate.AutoArrange = false;
             this.SS_CharaSceneRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.SS_CharaSceneRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SS_CharaSceneRate.ForeColor = System.Drawing.Color.White;
             this.SS_CharaSceneRate.FullRowSelect = true;
-            this.SS_CharaSceneRate.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.SS_CharaSceneRate.Location = new System.Drawing.Point(0, 742);
             this.SS_CharaSceneRate.MultiSelect = false;
             this.SS_CharaSceneRate.Name = "SS_CharaSceneRate";
             this.SS_CharaSceneRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaSceneRate.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.SS_CharaSceneRate.TabIndex = 32;
             this.SS_CharaSceneRate.UseCompatibleStateImageBehavior = false;
             this.SS_CharaSceneRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_CharaRarityRateText
+            // 
+            this.SS_CharaRarityRateText.Location = new System.Drawing.Point(0, 538);
+            this.SS_CharaRarityRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaRarityRateText.Name = "SS_CharaRarityRateText";
+            this.SS_CharaRarityRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaRarityRateText.TabIndex = 31;
+            this.SS_CharaRarityRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_CharaRarityRate
+            // 
+            this.SS_CharaRarityRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaRarityRate.AllowColumnReorder = true;
+            this.SS_CharaRarityRate.AutoArrange = false;
+            this.SS_CharaRarityRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_CharaRarityRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_CharaRarityRate.ForeColor = System.Drawing.Color.White;
+            this.SS_CharaRarityRate.FullRowSelect = true;
+            this.SS_CharaRarityRate.Location = new System.Drawing.Point(0, 562);
+            this.SS_CharaRarityRate.MultiSelect = false;
+            this.SS_CharaRarityRate.Name = "SS_CharaRarityRate";
+            this.SS_CharaRarityRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaRarityRate.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.SS_CharaRarityRate.TabIndex = 30;
+            this.SS_CharaRarityRate.UseCompatibleStateImageBehavior = false;
+            this.SS_CharaRarityRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_CharaWeaponUsingRateText
+            // 
+            this.SS_CharaWeaponUsingRateText.Location = new System.Drawing.Point(0, 0);
+            this.SS_CharaWeaponUsingRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaWeaponUsingRateText.Name = "SS_CharaWeaponUsingRateText";
+            this.SS_CharaWeaponUsingRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaWeaponUsingRateText.TabIndex = 25;
+            this.SS_CharaWeaponUsingRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_CharaSeriesRateText
+            // 
+            this.SS_CharaSeriesRateText.Location = new System.Drawing.Point(0, 360);
+            this.SS_CharaSeriesRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaSeriesRateText.Name = "SS_CharaSeriesRateText";
+            this.SS_CharaSeriesRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaSeriesRateText.TabIndex = 29;
+            this.SS_CharaSeriesRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_CharaWeaponUsingRate
+            // 
+            this.SS_CharaWeaponUsingRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaWeaponUsingRate.AllowColumnReorder = true;
+            this.SS_CharaWeaponUsingRate.AutoArrange = false;
+            this.SS_CharaWeaponUsingRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_CharaWeaponUsingRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_CharaWeaponUsingRate.ForeColor = System.Drawing.Color.White;
+            this.SS_CharaWeaponUsingRate.FullRowSelect = true;
+            this.SS_CharaWeaponUsingRate.Location = new System.Drawing.Point(0, 24);
+            this.SS_CharaWeaponUsingRate.MultiSelect = false;
+            this.SS_CharaWeaponUsingRate.Name = "SS_CharaWeaponUsingRate";
+            this.SS_CharaWeaponUsingRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaWeaponUsingRate.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.SS_CharaWeaponUsingRate.TabIndex = 24;
+            this.SS_CharaWeaponUsingRate.UseCompatibleStateImageBehavior = false;
+            this.SS_CharaWeaponUsingRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_CharaElementRate
+            // 
+            this.SS_CharaElementRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaElementRate.AllowColumnReorder = true;
+            this.SS_CharaElementRate.AutoArrange = false;
+            this.SS_CharaElementRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_CharaElementRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_CharaElementRate.ForeColor = System.Drawing.Color.White;
+            this.SS_CharaElementRate.FullRowSelect = true;
+            this.SS_CharaElementRate.Location = new System.Drawing.Point(0, 204);
+            this.SS_CharaElementRate.MultiSelect = false;
+            this.SS_CharaElementRate.Name = "SS_CharaElementRate";
+            this.SS_CharaElementRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaElementRate.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.SS_CharaElementRate.TabIndex = 26;
+            this.SS_CharaElementRate.UseCompatibleStateImageBehavior = false;
+            this.SS_CharaElementRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_CharaSeriesRate
+            // 
+            this.SS_CharaSeriesRate.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.SS_CharaSeriesRate.AllowColumnReorder = true;
+            this.SS_CharaSeriesRate.AutoArrange = false;
+            this.SS_CharaSeriesRate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.SS_CharaSeriesRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SS_CharaSeriesRate.ForeColor = System.Drawing.Color.White;
+            this.SS_CharaSeriesRate.FullRowSelect = true;
+            this.SS_CharaSeriesRate.Location = new System.Drawing.Point(0, 384);
+            this.SS_CharaSeriesRate.MultiSelect = false;
+            this.SS_CharaSeriesRate.Name = "SS_CharaSeriesRate";
+            this.SS_CharaSeriesRate.Size = new System.Drawing.Size(337, 150);
+            this.SS_CharaSeriesRate.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.SS_CharaSeriesRate.TabIndex = 28;
+            this.SS_CharaSeriesRate.UseCompatibleStateImageBehavior = false;
+            this.SS_CharaSeriesRate.View = System.Windows.Forms.View.Details;
+            // 
+            // SS_CharaElementRateText
+            // 
+            this.SS_CharaElementRateText.Location = new System.Drawing.Point(0, 180);
+            this.SS_CharaElementRateText.Margin = new System.Windows.Forms.Padding(3);
+            this.SS_CharaElementRateText.Name = "SS_CharaElementRateText";
+            this.SS_CharaElementRateText.Size = new System.Drawing.Size(337, 18);
+            this.SS_CharaElementRateText.TabIndex = 27;
+            this.SS_CharaElementRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SS_CharaCalculate
+            // 
+            this.SS_CharaCalculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_CharaCalculate.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.SS_CharaCalculate.ButtonBackgroundImage = null;
+            this.SS_CharaCalculate.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_CharaCalculate.ButtonColor = System.Drawing.Color.White;
+            this.SS_CharaCalculate.ButtonEnabled = true;
+            this.SS_CharaCalculate.ButtonImage = null;
+            this.SS_CharaCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SS_CharaCalculate.ButtonText = "";
+            this.SS_CharaCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.SS_CharaCalculate.Location = new System.Drawing.Point(298, 628);
+            this.SS_CharaCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SS_CharaCalculate.Name = "SS_CharaCalculate";
+            this.SS_CharaCalculate.Size = new System.Drawing.Size(65, 28);
+            this.SS_CharaCalculate.TabIndex = 23;
+            // 
+            // SS_Weapon
+            // 
+            this.SS_Weapon.ForeColor = System.Drawing.Color.White;
+            this.SS_Weapon.Location = new System.Drawing.Point(762, 5);
+            this.SS_Weapon.Name = "SS_Weapon";
+            this.SS_Weapon.Size = new System.Drawing.Size(305, 662);
+            this.SS_Weapon.TabIndex = 0;
+            this.SS_Weapon.TabStop = false;
+            // 
+            // P_CsvTable
+            // 
+            this.P_CsvTable.Controls.Add(this.CT_FindResultList);
+            this.P_CsvTable.Controls.Add(this.CT_SearchGo);
+            this.P_CsvTable.Controls.Add(this.CT_Search);
+            this.P_CsvTable.Controls.Add(this.CT_SearchString);
+            this.P_CsvTable.Controls.Add(this.CT_EndColumnLabel);
+            this.P_CsvTable.Controls.Add(this.CT_StartColumnLabel);
+            this.P_CsvTable.Controls.Add(this.CT_EndColumn);
+            this.P_CsvTable.Controls.Add(this.CT_StartColumn);
+            this.P_CsvTable.Controls.Add(this.CT_Tips);
+            this.P_CsvTable.Controls.Add(this.CT_StepGo);
+            this.P_CsvTable.Controls.Add(this.CT_StepLabel);
+            this.P_CsvTable.Controls.Add(this.CT_Step);
+            this.P_CsvTable.Controls.Add(this.CT_CsvView);
+            this.P_CsvTable.Location = new System.Drawing.Point(1, 24);
+            this.P_CsvTable.Margin = new System.Windows.Forms.Padding(0);
+            this.P_CsvTable.Name = "P_CsvTable";
+            this.P_CsvTable.Size = new System.Drawing.Size(1078, 695);
+            this.P_CsvTable.TabIndex = 10;
+            this.P_CsvTable.Visible = false;
+            // 
+            // CT_FindResultList
+            // 
+            this.CT_FindResultList.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.CT_FindResultList.AutoArrange = false;
+            this.CT_FindResultList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CT_FindResultList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CT_FindResultList.ForeColor = System.Drawing.Color.White;
+            this.CT_FindResultList.FullRowSelect = true;
+            this.CT_FindResultList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.CT_FindResultList.Location = new System.Drawing.Point(11, 147);
+            this.CT_FindResultList.MultiSelect = false;
+            this.CT_FindResultList.Name = "CT_FindResultList";
+            this.CT_FindResultList.Size = new System.Drawing.Size(234, 255);
+            this.CT_FindResultList.TabIndex = 20;
+            this.CT_FindResultList.UseCompatibleStateImageBehavior = false;
+            this.CT_FindResultList.View = System.Windows.Forms.View.Details;
+            // 
+            // CT_SearchGo
+            // 
+            this.CT_SearchGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_SearchGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_SearchGo.ButtonBackgroundImage = null;
+            this.CT_SearchGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_SearchGo.ButtonColor = System.Drawing.Color.White;
+            this.CT_SearchGo.ButtonEnabled = true;
+            this.CT_SearchGo.ButtonImage = null;
+            this.CT_SearchGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_SearchGo.ButtonText = "";
+            this.CT_SearchGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_SearchGo.Location = new System.Drawing.Point(193, 118);
+            this.CT_SearchGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_SearchGo.Name = "CT_SearchGo";
+            this.CT_SearchGo.Size = new System.Drawing.Size(52, 23);
+            this.CT_SearchGo.TabIndex = 19;
+            // 
+            // CT_Search
+            // 
+            this.CT_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CT_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CT_Search.ForeColor = System.Drawing.Color.White;
+            this.CT_Search.Location = new System.Drawing.Point(11, 118);
+            this.CT_Search.Name = "CT_Search";
+            this.CT_Search.Size = new System.Drawing.Size(176, 23);
+            this.CT_Search.TabIndex = 18;
+            // 
+            // CT_SearchString
+            // 
+            this.CT_SearchString.Location = new System.Drawing.Point(11, 88);
+            this.CT_SearchString.Margin = new System.Windows.Forms.Padding(3);
+            this.CT_SearchString.Name = "CT_SearchString";
+            this.CT_SearchString.Size = new System.Drawing.Size(234, 23);
+            this.CT_SearchString.TabIndex = 17;
+            this.CT_SearchString.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // CT_EndColumnLabel
+            // 
+            this.CT_EndColumnLabel.Location = new System.Drawing.Point(131, 60);
+            this.CT_EndColumnLabel.Margin = new System.Windows.Forms.Padding(3);
+            this.CT_EndColumnLabel.Name = "CT_EndColumnLabel";
+            this.CT_EndColumnLabel.Size = new System.Drawing.Size(63, 23);
+            this.CT_EndColumnLabel.TabIndex = 16;
+            this.CT_EndColumnLabel.Text = "截止欄位";
+            this.CT_EndColumnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CT_StartColumnLabel
+            // 
+            this.CT_StartColumnLabel.Location = new System.Drawing.Point(11, 60);
+            this.CT_StartColumnLabel.Margin = new System.Windows.Forms.Padding(3);
+            this.CT_StartColumnLabel.Name = "CT_StartColumnLabel";
+            this.CT_StartColumnLabel.Size = new System.Drawing.Size(63, 23);
+            this.CT_StartColumnLabel.TabIndex = 15;
+            this.CT_StartColumnLabel.Text = "起始欄位";
+            this.CT_StartColumnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CT_EndColumn
+            // 
+            this.CT_EndColumn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CT_EndColumn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CT_EndColumn.ForeColor = System.Drawing.Color.White;
+            this.CT_EndColumn.Location = new System.Drawing.Point(200, 60);
+            this.CT_EndColumn.Maximum = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            this.CT_EndColumn.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CT_EndColumn.Name = "CT_EndColumn";
+            this.CT_EndColumn.Size = new System.Drawing.Size(45, 23);
+            this.CT_EndColumn.TabIndex = 14;
+            this.CT_EndColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CT_EndColumn.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // CT_StartColumn
+            // 
+            this.CT_StartColumn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CT_StartColumn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CT_StartColumn.ForeColor = System.Drawing.Color.White;
+            this.CT_StartColumn.Location = new System.Drawing.Point(80, 60);
+            this.CT_StartColumn.Maximum = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            this.CT_StartColumn.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CT_StartColumn.Name = "CT_StartColumn";
+            this.CT_StartColumn.Size = new System.Drawing.Size(45, 23);
+            this.CT_StartColumn.TabIndex = 13;
+            this.CT_StartColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CT_StartColumn.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // CT_Tips
+            // 
+            this.CT_Tips.Direction = MarqueeDirection.Horizontal;
+            this.CT_Tips.EnableMarquee = true;
+            this.CT_Tips.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_Tips.FreezeTime = 2000;
+            this.CT_Tips.LabelSize = new System.Drawing.Size(234, 23);
+            this.CT_Tips.LeftDistance = 5;
+            this.CT_Tips.LForeColor = System.Drawing.Color.White;
+            this.CT_Tips.Location = new System.Drawing.Point(11, 8);
+            this.CT_Tips.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_Tips.MarqueeText = "";
+            this.CT_Tips.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.CT_Tips.MoveDifferenceEachTime = 1;
+            this.CT_Tips.MoveInterval = 20;
+            this.CT_Tips.Name = "CT_Tips";
+            this.CT_Tips.OverBorderDistance = 15;
+            this.CT_Tips.Size = new System.Drawing.Size(234, 23);
+            this.CT_Tips.TabIndex = 12;
+            // 
+            // CT_StepGo
+            // 
+            this.CT_StepGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_StepGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_StepGo.ButtonBackgroundImage = null;
+            this.CT_StepGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_StepGo.ButtonColor = System.Drawing.Color.White;
+            this.CT_StepGo.ButtonEnabled = true;
+            this.CT_StepGo.ButtonImage = null;
+            this.CT_StepGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_StepGo.ButtonText = "";
+            this.CT_StepGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_StepGo.Location = new System.Drawing.Point(193, 430);
+            this.CT_StepGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_StepGo.Name = "CT_StepGo";
+            this.CT_StepGo.Size = new System.Drawing.Size(52, 23);
+            this.CT_StepGo.TabIndex = 11;
+            // 
+            // CT_StepLabel
+            // 
+            this.CT_StepLabel.Location = new System.Drawing.Point(49, 430);
+            this.CT_StepLabel.Margin = new System.Windows.Forms.Padding(3);
+            this.CT_StepLabel.Name = "CT_StepLabel";
+            this.CT_StepLabel.Size = new System.Drawing.Size(63, 23);
+            this.CT_StepLabel.TabIndex = 10;
+            this.CT_StepLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CT_Step
+            // 
+            this.CT_Step.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CT_Step.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CT_Step.ForeColor = System.Drawing.Color.White;
+            this.CT_Step.Location = new System.Drawing.Point(118, 430);
+            this.CT_Step.MaxLength = 5;
+            this.CT_Step.Name = "CT_Step";
+            this.CT_Step.Size = new System.Drawing.Size(69, 23);
+            this.CT_Step.TabIndex = 9;
+            // 
+            // CT_CsvView
+            // 
+            this.CT_CsvView.AllowUserToAddRows = false;
+            this.CT_CsvView.AllowUserToDeleteRows = false;
+            this.CT_CsvView.AllowUserToResizeRows = false;
+            this.CT_CsvView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CT_CsvView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.CT_CsvView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CT_CsvView.DefaultCellStyle = dataGridViewCellStyle5;
+            this.CT_CsvView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
+            this.CT_CsvView.Location = new System.Drawing.Point(251, 8);
+            this.CT_CsvView.Name = "CT_CsvView";
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.CT_CsvView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.CT_CsvView.RowTemplate.Height = 20;
+            this.CT_CsvView.Size = new System.Drawing.Size(816, 659);
+            this.CT_CsvView.TabIndex = 8;
+            // 
+            // EX_FileDialog
+            // 
+            this.EX_FileDialog.Filter = "csv 檔案|*.csv|assetbundle 檔案|*.assetbundle|wav 檔案|*.wav|mp3 檔案|*.mp3|所有檔案|*.*";
             // 
             // FMain
             // 
@@ -1871,14 +2048,8 @@
             this.MN_Border.PerformLayout();
             this.MN_StatusStrip.ResumeLayout(false);
             this.MN_StatusStrip.PerformLayout();
-            this.P_Statistics.ResumeLayout(false);
-            this.SS_Character.ResumeLayout(false);
-            this.P_CsvTable.ResumeLayout(false);
-            this.P_CsvTable.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CT_EndColumn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CT_StartColumn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CT_CsvView)).EndInit();
             this.P_Config.ResumeLayout(false);
+            this.ST_SourcePath.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.WMP)).EndInit();
             this.ST_AUProg.ResumeLayout(false);
             this.ST_AboutProgram.ResumeLayout(false);
@@ -1890,7 +2061,16 @@
             this.tabPage1.ResumeLayout(false);
             this.CD_SearchGB.ResumeLayout(false);
             this.CD_SearchGB.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.P_Statistics.ResumeLayout(false);
+            this.SS_Monster.ResumeLayout(false);
+            this.SS_MonsterPanel.ResumeLayout(false);
+            this.SS_Character.ResumeLayout(false);
+            this.SS_CHaraPanel.ResumeLayout(false);
+            this.P_CsvTable.ResumeLayout(false);
+            this.P_CsvTable.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_EndColumn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_StartColumn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CT_CsvView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2006,13 +2186,24 @@
         private Button_SE_ SS_CharaCalculate;
         private System.Windows.Forms.Label SS_CharaWeaponUsingRateText;
         private System.Windows.Forms.ListView SS_CharaWeaponUsingRate;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel SS_CHaraPanel;
         private System.Windows.Forms.Label SS_CharaSceneRateText;
         private System.Windows.Forms.ListView SS_CharaSceneRate;
         private System.Windows.Forms.Label SS_CharaRarityRateText;
         private System.Windows.Forms.ListView SS_CharaRarityRate;
         private System.Windows.Forms.Label SS_CharaSeriesRateText;
         private System.Windows.Forms.ListView SS_CharaSeriesRate;
+        private System.Windows.Forms.Panel SS_MonsterPanel;
+        private System.Windows.Forms.Label SS_MonsterTypeRateText;
+        private System.Windows.Forms.ListView SS_MonsterTypeRate;
+        private System.Windows.Forms.ListView SS_MonsterHPRate;
+        private System.Windows.Forms.Label SS_MonsterHPRateText;
+        private Button_SE_ SS_MonsterCalculate;
+        private System.Windows.Forms.GroupBox ST_SourcePath;
+        private System.Windows.Forms.Label ST_SourceASBText;
+        private MarqueeableLabel ST_SourceCSV;
+        private MarqueeableLabel ST_SourceASB;
+        private System.Windows.Forms.Label ST_SourceCSVText;
     }
 }
 

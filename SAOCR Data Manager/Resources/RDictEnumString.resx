@@ -324,4 +324,28 @@
   <data name="WP_Rapier" xml:space="preserve">
     <value>細劍</value>
   </data>
+  <data name="MS_Animal" xml:space="preserve">
+    <value>獸種</value>
+  </data>
+  <data name="MS_Bug" xml:space="preserve">
+    <value>昆蟲種</value>
+  </data>
+  <data name="MS_Dragon" xml:space="preserve">
+    <value>龍種</value>
+  </data>
+  <data name="MS_Ghost" xml:space="preserve">
+    <value>不死種</value>
+  </data>
+  <data name="MS_HalfMan" xml:space="preserve">
+    <value>亞人種</value>
+  </data>
+  <data name="MS_Human" xml:space="preserve">
+    <value>人種</value>
+  </data>
+  <data name="MS_Phantom" xml:space="preserve">
+    <value>幻異種</value>
+  </data>
+  <data name="MS_Plant" xml:space="preserve">
+    <value>植物種</value>
+  </data>
 </root>

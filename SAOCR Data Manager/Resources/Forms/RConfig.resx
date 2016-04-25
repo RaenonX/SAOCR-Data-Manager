@@ -249,4 +249,13 @@
   <data name="Message_ChoosePathToStoreFile2" xml:space="preserve">
     <value>的資料夾位置。</value>
   </data>
+  <data name="Layout_SourceASB" xml:space="preserve">
+    <value>Assetbundle</value>
+  </data>
+  <data name="Layout_SourceCSV" xml:space="preserve">
+    <value>Csv</value>
+  </data>
+  <data name="Layout_SourcePath" xml:space="preserve">
+    <value>資源檔路徑</value>
+  </data>
 </root>

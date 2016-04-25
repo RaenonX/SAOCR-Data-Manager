@@ -45,7 +45,7 @@ namespace SAOCR_Data_Manager
                     switch (Sender.Name)
                     {
                         case "ST_PathBeepBrowse":
-                            if (Extension != ".wav" || Extension != ".mp3")
+                            if (Extension != ".wav" && Extension != ".mp3")
                             {
                                 Status(RStatus.Warning_SENotChanged + RStatus.Warning_WrongExtension + RStatus.Warning_ReCheckExtension);
                                 return;
@@ -63,13 +63,14 @@ namespace SAOCR_Data_Manager
                             Status(RStatus.Result_SEChangedWarning + UC.SE_Warning);
                             break;
                         case "ST_PathBGMBrowse":
-                            if (Extension != ".wav" || Extension != ".mp3")
+                            if (Extension != ".wav" && Extension != ".mp3")
                             {
                                 Status(RStatus.Warning_SENotChanged + RStatus.Warning_WrongExtension + RStatus.Warning_ReCheckExtension);
                                 return;
                             }
                             UC.SE_BGM = EX_FileDialog.FileName;
                             Status(RStatus.Result_SEChangedWarning + UC.SE_BGM);
+                            InitializeBGM();
                             break;
                     }
                 }

@@ -67,6 +67,12 @@ namespace SAOCR_Data_Manager
                 ST_PathWarningMute.Text = RConfig.Layout_Mute;
                 ST_PathBeepMute.Text = RConfig.Layout_Mute;
                 ST_PathMessageMute.Text = RConfig.Layout_Mute;
+                //Source
+                ST_SourcePath.Text = RConfig.Layout_SourcePath;
+                ST_SourceASBText.Text = RConfig.Layout_SourceASB;
+                ST_SourceCSVText.Text = RConfig.Layout_SourceCSV;
+                ST_SourceASB.MarqueeText = AC.Path_ASB;
+                ST_SourceCSV.MarqueeText = AC.Path_CSV;
                 //DataRelated
                 ST_DataTitle.Text = RConfig.Layout_AboutData;
                 ST_ReadTitle.ButtonText = RConfig.Layout_ReadTitle;
@@ -121,11 +127,14 @@ namespace SAOCR_Data_Manager
                 SS_Character.Text = RStatistics.Layout_CharacterRelated;
                 SS_Monster.Text = RStatistics.Layout_MonsterRelated;
                 SS_CharaCalculate.ButtonText = RStatistics.Layout_Calculate;
+                SS_MonsterCalculate.ButtonText = RStatistics.Layout_Calculate;
                 SS_CharaWeaponUsingRateText.Text = RStatistics.Layout_CharaWeaponUsingRate;
                 SS_CharaElementRateText.Text = RStatistics.Layout_CharaElementRate;
                 SS_CharaRarityRateText.Text = RStatistics.Layout_CharaRarityRate;
                 SS_CharaSceneRateText.Text = RStatistics.Layout_CharaSceneRate;
                 SS_CharaSeriesRateText.Text = RStatistics.Layout_CharaSeriesRate;
+                SS_MonsterTypeRateText.Text = RStatistics.Layout_MonsterTypeRate;
+                SS_MonsterHPRateText.Text = RStatistics.Layout_MonsterHPRate;
             }
             catch (Exception e)
             {
@@ -212,6 +221,7 @@ namespace SAOCR_Data_Manager
 
                 //Statistics
                 SS_CharaCalculate.ButtonClick += SS_WeaponCalculate_ButtonClick;
+                SS_MonsterCalculate.ButtonClick += SS_MonsterCalculate_ButtonClick;
             }
             catch (Exception e)
             {
@@ -224,12 +234,15 @@ namespace SAOCR_Data_Manager
         {
             try
             {
+                CT_Tips.Marquee();
                 ST_PathBeep.Marquee();
                 ST_PathWarning.Marquee();
-                CT_Tips.Marquee();
                 ST_Developer.Marquee();
                 ST_PathBGM.Marquee();
+                ST_PathMessage.Marquee();
                 ST_AUCsvPath.Marquee();
+                ST_SourceCSV.Marquee();
+                ST_SourceASB.Marquee();
 
                 AUProgram.CheckUpdate();
                 AUCsv.CheckUpdate();
@@ -328,6 +341,20 @@ namespace SAOCR_Data_Manager
                         SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_CATEGORY_ID, 80, HorizontalAlignment.Left);
                         SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_CATEGORY, 80, HorizontalAlignment.Left);
                         SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_RATE, 100, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.MonsterTypeRate:
+                        SS_MonsterTypeRate.Clear();
+                        SS_MonsterTypeRate.Columns.Add(Const.ColName.N_A, 0);
+                        SS_MonsterTypeRate.Columns.Add(Const.ColName.MONSTER_TYPE_CATEGORY_ID, 80, HorizontalAlignment.Left);
+                        SS_MonsterTypeRate.Columns.Add(Const.ColName.MONSTER_TYPE_CATEGORY, 80, HorizontalAlignment.Left);
+                        SS_MonsterTypeRate.Columns.Add(Const.ColName.MONSTER_TYPE_RATE, 100, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.MonsterHPRate:
+                        SS_MonsterHPRate.Clear();
+                        SS_MonsterHPRate.Columns.Add(Const.ColName.N_A, 0);
+                        SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MIN, 80, HorizontalAlignment.Left);
+                        SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MAX, 80, HorizontalAlignment.Left);
+                        SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_RATE, 100, HorizontalAlignment.Left);
                         break;
                 }
             }
@@ -547,7 +574,7 @@ namespace SAOCR_Data_Manager
                 }
 
                 DT.CharaDict = new DataTable();
-                string ExCommand = Const.CHARA_DIM_EX_COMMAND;
+                string ExCommand = Const.IS_ORG_CHARA_VERIFY_AT_C1;
 
                 DT.CharaDict = DataAPI.Specified(DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], DelCol, "Chara Dictionary", ExCommand);
 
@@ -667,6 +694,8 @@ namespace SAOCR_Data_Manager
 
         public void InitializeAtBegin()
         {
+            StatusLog.InitializeLog();
+
             BreezeLabel = new Timer();
             BreezeLabel.Interval = 10;
             BreezeLabel.Enabled = true;
@@ -677,7 +706,6 @@ namespace SAOCR_Data_Manager
             MarqueeLabel.Start();
 
             DataAPI.LoadCSV(ref URLs, Const.Path.PATH_DICT);
-            StatusLog.InitializeLog();
         }
     }
 }

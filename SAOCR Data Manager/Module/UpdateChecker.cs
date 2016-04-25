@@ -47,10 +47,7 @@ namespace SAOCR_Data_Manager
         public void CheckUpdate()
         {
             StatusLog.Log(Description + RMain.Log_CheckingUpdate);
-            if (CheckBegin != null)
-            {
-                CheckBegin(this, EventArgs.Empty);
-            }
+            CheckBegin?.Invoke(this, EventArgs.Empty);
             DownLoadFileOnline();
         }
         
@@ -213,10 +210,7 @@ namespace SAOCR_Data_Manager
             {
                 SetDataToArray(AUSetDataTarget.Local);
                 SetDataToArray(AUSetDataTarget.Network);
-                if (CheckSucceed != null)
-                {
-                    CheckSucceed(this, EventArgs.Empty);
-                }
+                CheckSucceed?.Invoke(this, EventArgs.Empty);
             }
             catch (Exception)
             {

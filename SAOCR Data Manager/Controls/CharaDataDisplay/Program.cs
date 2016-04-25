@@ -59,10 +59,7 @@ namespace SAOCR_Data_Manager.Forms
                     AC.Save();
                     Favorite.ButtonBackColor = Color.FromArgb((int)EBackColorBreeze.Yellow);
                     CharacterName.ColorEnd = Color.FromArgb((int)EBackColorBreeze.Red);
-                    if (FavoriteAdded != null)
-                    {
-                        FavoriteAdded(this, EventArgs.Empty);
-                    }
+                    FavoriteAdded?.Invoke(this, EventArgs.Empty);
                 }
                 else
                 {
@@ -74,17 +71,11 @@ namespace SAOCR_Data_Manager.Forms
                     AC.Save();
                     Favorite.ButtonBackColor = Color.FromArgb((int)EForeColor.Grey70);
                     CharacterName.ColorEnd = Color.FromArgb((int)EBackColorBreeze.Yellow);
-                    if (FavoriteRemoved != null)
-                    {
-                        FavoriteRemoved(this, EventArgs.Empty);
-                    }
+                    FavoriteRemoved?.Invoke(this, EventArgs.Empty);
                 }
                 CharacterName.BreezeBegin();
 
-                if (FavoriteSaved != null)
-                {
-                    FavoriteSaved(this, EventArgs.Empty);
-                }
+                FavoriteSaved?.Invoke(this, EventArgs.Empty);
 
             }
             catch (Exception e)

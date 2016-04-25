@@ -114,7 +114,9 @@ public enum InitItem
     CharaElementRate,
     CharaSceneRate,
     CharaRarityRate,
-    CharaSeriesRate
+    CharaSeriesRate,
+    MonsterTypeRate,
+    MonsterHPRate
 }
 
 [Flags] 
@@ -311,6 +313,13 @@ public enum ENameSecCol
 }
 
 [Flags]
+public enum ECharaIDCol
+{
+    ORG_ID = 2,
+    AWAKED_ID = 3
+}
+
+[Flags]
 public enum ECharaID
 {
     SCENE_START = 0,
@@ -352,6 +361,35 @@ public enum ECharaMixCode
     RELEASE_MONTH,
     RELEASE_DATE,
     FOLK_NAME
+}
+#endregion
+
+#region 怪物資訊相關
+[Flags]
+public enum EMonsterType
+{
+    HalfMan,
+    Bug,
+    Plant,
+    Animal,
+    Phantom,
+    Human,
+    Ghost,
+    Dragon
+}
+
+[Flags]
+public enum EMonsterSecCol
+{
+    RARITY = 3,
+    TYPE = 4,
+    ELEMENT = 5,
+    HP = 6,
+    STR = 7,
+    VIT = 8,
+    INT = 9,
+    MEN = 10,
+    CRT = 11
 }
 #endregion
 

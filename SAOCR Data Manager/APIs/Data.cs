@@ -33,13 +33,43 @@ namespace SAOCR_Data_Manager
         public static DataRow[] Search
             (string TargetText, DataTable DT, int RowToStartFind, int ColumnToFind)
         {
-            return Search(TargetText, DT, RowToStartFind, DT.Rows.Count, ColumnToFind, ColumnToFind);
+            return Search(TargetText, DT, RowToStartFind, DT.Rows.Count, ColumnToFind, ColumnToFind, false, null);
+        }
+
+        public static DataRow[] Search
+            (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToFind, bool isFullConform)
+        {
+            return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToFind, ColumnToFind, isFullConform, null);
+        }
+
+        public static DataRow[] Search
+            (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToFind, string AdditionalFilter)
+        {
+            return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToFind, ColumnToFind, false, AdditionalFilter);
+        }
+
+        public static DataRow[] Search
+            (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToFind, bool isFullConformstring, string AdditionalFilter)
+        {
+            return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToFind, ColumnToFind, isFullConformstring, AdditionalFilter);
         }
 
         public static DataRow[] Search
             (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToFind)
         {
-            return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToFind, ColumnToFind);
+            return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToFind, ColumnToFind, false, null);
+        }
+
+        public static DataRow[] Search
+            (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToStartFInd, int ColumnToEndFind)
+        {
+            return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToStartFInd, ColumnToEndFind, false, null);
+        }
+
+        public static DataRow[] Search
+            (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToStartFInd, int ColumnToEndFind, string AdditionalFilter)
+        {
+            return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToStartFInd, ColumnToEndFind, false, AdditionalFilter);
         }
 
         /// <summary>
@@ -52,7 +82,7 @@ namespace SAOCR_Data_Manager
         /// <param name="ColumnToEndFind">定義的終點欄位</param>
         /// <returns>根據條件所回傳的資料行陣列。如果沒找到則會回傳null。</returns>
         public static DataRow[] Search
-            (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToStartFind, int ColumnToEndFind)
+            (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToStartFind, int ColumnToEndFind, bool isFullConform, string AdditionalFilter)
         {
             string FindStringCondition = "";
 
@@ -63,14 +93,31 @@ namespace SAOCR_Data_Manager
                 return null;
             }
 
+            FindStringCondition += "(";
             for (int i = ColumnToStartFind; i <= ColumnToEndFind; i++)
             {
                 FindStringCondition += "C" + Convert.ToString(i);
-                FindStringCondition += " LIKE '*" + EscapeLikeValue(TargetText) + "*'";
+                if (isFullConform)
+                {
+                    FindStringCondition += " = '" + EscapeLikeValue(TargetText) + "'";
+                } else
+                {
+                    FindStringCondition += " LIKE '*" + EscapeLikeValue(TargetText) + "*'";
+                }
+                
                 if (i < ColumnToEndFind)
                 {
                     FindStringCondition += " OR ";
                 }
+            }
+            FindStringCondition += ")";
+            if (!Extent.isEmptyString(AdditionalFilter))
+            {
+                if (!Extent.isEmptyString(FindStringCondition))
+                {
+                    FindStringCondition += " AND ";
+                }
+                FindStringCondition += AdditionalFilter;
             }
 
             DataRow[] OriginalResult = DT.Select(FindStringCondition), Result;

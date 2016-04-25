@@ -124,11 +124,29 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
+        ///   查詢類似 怪物HP量占比 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_MonsterHPRate {
+            get {
+                return ResourceManager.GetString("Layout_MonsterHPRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 怪物相關 的當地語系化字串。
         /// </summary>
         internal static string Layout_MonsterRelated {
             get {
                 return ResourceManager.GetString("Layout_MonsterRelated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 怪物種類占比 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_MonsterTypeRate {
+            get {
+                return ResourceManager.GetString("Layout_MonsterTypeRate", resourceCulture);
             }
         }
         
@@ -187,20 +205,47 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似  (統計樣本數量:  的當地語系化字串。
+        ///   查詢類似  (角色參數樣本數量:  的當地語系化字串。
         /// </summary>
-        internal static string Message_Samples1 {
+        internal static string Message_CharaSamples1 {
             get {
-                return ResourceManager.GetString("Message_Samples1", resourceCulture);
+                return ResourceManager.GetString("Message_CharaSamples1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 、角色資料樣本數量:  的當地語系化字串。
+        /// </summary>
+        internal static string Message_CharaSamples2 {
+            get {
+                return ResourceManager.GetString("Message_CharaSamples2", resourceCulture);
             }
         }
         
         /// <summary>
         ///   查詢類似 ) 的當地語系化字串。
         /// </summary>
-        internal static string Message_Samples2 {
+        internal static string Message_CharaSamples3 {
             get {
-                return ResourceManager.GetString("Message_Samples2", resourceCulture);
+                return ResourceManager.GetString("Message_CharaSamples3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  (樣本數量:  的當地語系化字串。
+        /// </summary>
+        internal static string Message_MonsterSamples1 {
+            get {
+                return ResourceManager.GetString("Message_MonsterSamples1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ) 的當地語系化字串。
+        /// </summary>
+        internal static string Message_MonsterSamples2 {
+            get {
+                return ResourceManager.GetString("Message_MonsterSamples2", resourceCulture);
             }
         }
     }

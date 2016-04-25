@@ -151,13 +151,16 @@ namespace SAOCR_Data_Manager
             }
         }
 
-        public static void Error(string ErrorMessage, Exception e = null)
+        public static void Error(string ErrorMessage, Exception e = null, bool ToLog = true)
         {
             if (FMain.WMPO.isGateOpen)
             {
                 UserConfig config = new UserConfig();
 
-                StatusLog.Log(RMain.Log_Error + " " + e.GetType().ToString() + " " + ErrorMessage, ELogCategory.Error);
+                if (ToLog)
+                {
+                    StatusLog.Log(RMain.Log_Error + " " + e.GetType().ToString() + " " + ErrorMessage, ELogCategory.Error);
+                }
                 SEWarning();
 
                 ErrorMessage = ErrorMessage.Replace("\\r", "\r").Replace("\\n", "\n");

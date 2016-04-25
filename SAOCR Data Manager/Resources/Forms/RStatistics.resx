@@ -135,11 +135,11 @@
   <data name="Layout_WeaponRelated" xml:space="preserve">
     <value>武器相關</value>
   </data>
-  <data name="Message_Samples1" xml:space="preserve">
-    <value> (統計樣本數量: </value>
+  <data name="Message_CharaSamples1" xml:space="preserve">
+    <value> (角色參數樣本數量: </value>
   </data>
-  <data name="Message_Samples2" xml:space="preserve">
-    <value>)</value>
+  <data name="Message_CharaSamples2" xml:space="preserve">
+    <value>、角色資料樣本數量: </value>
   </data>
   <data name="Layout_CharaRarityRate" xml:space="preserve">
     <value>角色星級占比</value>
@@ -164,5 +164,20 @@
   </data>
   <data name="Log_Calculating3" xml:space="preserve">
     <value>。</value>
+  </data>
+  <data name="Layout_MonsterHPRate" xml:space="preserve">
+    <value>怪物HP量占比</value>
+  </data>
+  <data name="Layout_MonsterTypeRate" xml:space="preserve">
+    <value>怪物種類占比</value>
+  </data>
+  <data name="Message_CharaSamples3" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="Message_MonsterSamples1" xml:space="preserve">
+    <value> (樣本數量: </value>
+  </data>
+  <data name="Message_MonsterSamples2" xml:space="preserve">
+    <value>)</value>
   </data>
 </root>

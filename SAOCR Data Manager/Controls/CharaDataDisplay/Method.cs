@@ -39,10 +39,7 @@ namespace SAOCR_Data_Manager.Forms
 
                     FavoriteSaved += new EventHandler(RefreshFavorite);
 
-                    if (LoadCompleted != null)
-                    {
-                        LoadCompleted(this, EventArgs.Empty);
-                    }
+                    LoadCompleted?.Invoke(this, EventArgs.Empty);
                 } else
                 {
                     SystemAPI.Warning(RWarning.W_0xC0019001);

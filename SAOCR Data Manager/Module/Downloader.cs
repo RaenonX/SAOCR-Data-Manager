@@ -103,10 +103,7 @@ namespace SAOCR_Data_Manager
 
                 DLData.TempForSpeed = new List<long>();
 
-                if (PropertySetComplete != null)
-                {
-                    PropertySetComplete(null, EventArgs.Empty);
-                }
+                PropertySetComplete?.Invoke(null, EventArgs.Empty);
 
                 CreateSucceed = true;
             }
@@ -123,10 +120,7 @@ namespace SAOCR_Data_Manager
             {
                 if (Extent.HaveConnection())
                 {
-                    if (DownloadBegin != null)
-                    {
-                        DownloadBegin(null, EventArgs.Empty);
-                    }
+                    DownloadBegin?.Invoke(null, EventArgs.Empty);
 
                     timer.Enabled = true;
                     timer.Start();
@@ -143,23 +137,14 @@ namespace SAOCR_Data_Manager
                     {
                         StatusLog.Log(RDownloader.Log_DownloadFailed);
                         DLData.Status = DLStatus.DownloadFailed;
-                        if (DownloadFailed != null)
-                        {
-                            DownloadFailed(null, EventArgs.Empty);
-                        }
-                        if (DownloadCompleted != null)
-                        {
-                            DownloadCompleted(null, EventArgs.Empty);
-                        }
+                        DownloadFailed?.Invoke(null, EventArgs.Empty);
+                        DownloadCompleted?.Invoke(null, EventArgs.Empty);
                     }
                 }
                 else
                 {
                     DLData.Status = DLStatus.NoConnection;
-                    if (DownloadCompleted != null)
-                    {
-                        DownloadCompleted(null, EventArgs.Empty);
-                    }
+                    DownloadCompleted?.Invoke(null, EventArgs.Empty);
                 }
             }
             catch (Exception e)
@@ -242,10 +227,7 @@ namespace SAOCR_Data_Manager
             DLData.Info.BytesReceived = e.BytesReceived;
             DLData.Info.TotalBytes = e.TotalBytesToReceive;
             DLData.Info.Percent = Math.Round((double)DLData.Info.BytesReceived / DLData.Info.TotalBytes * 100, 2);
-            if (InfoUpdated != null)
-            {
-                InfoUpdated(this, EventArgs.Empty);
-            }
+            InfoUpdated?.Invoke(this, EventArgs.Empty);
         }
 
         private void DLCompleted(object sender, EventArgs e)
@@ -283,15 +265,9 @@ namespace SAOCR_Data_Manager
                         } 
                     }
                     DLData.Status = DLStatus.DownloadSucceed;
-                    if (DownloadSucceed != null)
-                    {
-                        DownloadSucceed(null, EventArgs.Empty);
-                    }
+                    DownloadSucceed?.Invoke(null, EventArgs.Empty);
                 }
-                if (DownloadCompleted != null)
-                {
-                    DownloadCompleted(null, EventArgs.Empty);
-                }
+                DownloadCompleted?.Invoke(null, EventArgs.Empty);
                 StatusLog.Log(RDownloader.Log_DownloadSucceed1 + DLData.Count.Items + RDownloader.Log_DownloadSucceed2 + DLData.Info.Speed);
                 SystemAPI.SEMessage();
             }

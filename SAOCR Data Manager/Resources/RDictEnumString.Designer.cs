@@ -367,6 +367,78 @@ namespace SAOCR_Data_Manager.Resources {
         }
         
         /// <summary>
+        ///   查詢類似 獸種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_Animal {
+            get {
+                return ResourceManager.GetString("MS_Animal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 昆蟲種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_Bug {
+            get {
+                return ResourceManager.GetString("MS_Bug", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 龍種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_Dragon {
+            get {
+                return ResourceManager.GetString("MS_Dragon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 不死種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_Ghost {
+            get {
+                return ResourceManager.GetString("MS_Ghost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 亞人種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_HalfMan {
+            get {
+                return ResourceManager.GetString("MS_HalfMan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 人種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_Human {
+            get {
+                return ResourceManager.GetString("MS_Human", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 幻異種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_Phantom {
+            get {
+                return ResourceManager.GetString("MS_Phantom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 植物種 的當地語系化字串。
+        /// </summary>
+        internal static string MS_Plant {
+            get {
+                return ResourceManager.GetString("MS_Plant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 HP 的當地語系化字串。
         /// </summary>
         internal static string PR_HP {

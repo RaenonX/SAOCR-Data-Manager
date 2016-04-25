@@ -71,6 +71,11 @@ namespace SAOCR_Data_Manager.APIs
 
                 My.FileSystem.WriteAllText(FMain.LogPath, "[" + EnumTranslator.LogCategoryT(ELC) + "] " + DateTime.Now + " - " + Message + "\r\n", true);
             }
+            catch (DirectoryNotFoundException e)
+            {
+                SystemAPI.Error(RError.E_0x0001D008, e, false);
+                throw;
+            }
             catch (Exception e)
             {
                 SystemAPI.Error(RError.E_0x0001D004, e);

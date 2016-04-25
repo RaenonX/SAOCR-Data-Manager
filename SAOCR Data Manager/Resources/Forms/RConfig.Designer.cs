@@ -358,6 +358,33 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
+        ///   查詢類似 Assetbundle 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_SourceASB {
+            get {
+                return ResourceManager.GetString("Layout_SourceASB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Csv 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_SourceCSV {
+            get {
+                return ResourceManager.GetString("Layout_SourceCSV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 資源檔路徑 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_SourcePath {
+            get {
+                return ResourceManager.GetString("Layout_SourcePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 版本資訊 的當地語系化字串。
         /// </summary>
         internal static string Layout_VersionText {

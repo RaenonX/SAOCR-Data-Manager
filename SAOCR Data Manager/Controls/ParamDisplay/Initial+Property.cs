@@ -144,10 +144,7 @@ namespace SAOCR_Data_Manager
             {
                 try
                 {
-                    if (SortReArrange != null)
-                    {
-                        SortReArrange(this, EventArgs.Empty);
-                    }
+                    SortReArrange?.Invoke(this, EventArgs.Empty);
                     Param1st = (int)value;
                 }
                 catch (Exception e)
@@ -183,10 +180,7 @@ namespace SAOCR_Data_Manager
             {
                 try
                 {
-                    if (SortReArrange != null)
-                    {
-                        SortReArrange(this, EventArgs.Empty);
-                    }
+                    SortReArrange?.Invoke(this, EventArgs.Empty);
                     Param2nd = (int)value;
                 }
                 catch (Exception e)
@@ -221,10 +215,7 @@ namespace SAOCR_Data_Manager
             {
                 try
                 {
-                    if (SortReArrange != null)
-                    {
-                        SortReArrange(this, EventArgs.Empty);
-                    }
+                    SortReArrange?.Invoke(this, EventArgs.Empty);
                     Param3rd = (int)value;
                 }
                 catch (Exception e)
@@ -260,10 +251,7 @@ namespace SAOCR_Data_Manager
             {
                 try
                 {
-                    if (SortReArrange != null)
-                    {
-                        SortReArrange(this, EventArgs.Empty);
-                    }
+                    SortReArrange?.Invoke(this, EventArgs.Empty);
                     Param4th = (int)value;
                 }
                 catch (Exception e)

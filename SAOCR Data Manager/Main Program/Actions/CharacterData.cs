@@ -26,31 +26,35 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                StatusLog.Log(RCharaData.Log_RequestCharacter + CD_CharacterID.Text);
-                SData Data = new SData();
-                Data.CharaID = CD_CharacterID.Text;
-                Data.DTs = DT;
-                Data.TitleP = TitleP;
-
-                CharaData CD = new CharaData(Data);
-                
-                if (CD.CreateSucceed)
+                if (CD_CharacterIDGo.ButtonEnabled)
                 {
-                    foreach (Control item in CD_CharacterTab.SelectedTab.Controls)
+                    StatusLog.Log(RCharaData.Log_RequestCharacter + CD_CharacterID.Text);
+                    SData Data = new SData();
+                    Data.CharaID = CD_CharacterID.Text;
+                    Data.DTs = DT;
+                    Data.TitleP = TitleP;
+
+                    CharaData CD = new CharaData(Data);
+
+                    if (CD.CreateSucceed)
                     {
-                        if (typeof(CharaDataDisplay) == item.GetType())
+                        foreach (Control item in CD_CharacterTab.SelectedTab.Controls)
                         {
-                            CharaDataDisplay CDD = (CharaDataDisplay)item;
-                            CDD.DisplayCharacterData(CD, RefreshFavoriteList);
-                            CD_CharacterTab.SelectedTab.Text = CD_CharacterTab.SelectedTab.ToolTipText = CD.Data.CharaID;
-                            CD_CharacterTab.SelectedTab.ToolTipText += " - " + CD.Info.Basic.GetBasicInfo(EBasicInfoCode.JP_NAME);
-                            Status(RCharaData.Log_ShowCharacter1 + CD.Data.CharaID + RCharaData.Log_ShowCharacter2 + CD.Info.Basic.GetBasicInfo(EBasicInfoCode.JP_NAME));
-                            break;
+                            if (typeof(CharaDataDisplay) == item.GetType())
+                            {
+                                CharaDataDisplay CDD = (CharaDataDisplay)item;
+                                CDD.DisplayCharacterData(CD, RefreshFavoriteList);
+                                CD_CharacterTab.SelectedTab.Text = CD_CharacterTab.SelectedTab.ToolTipText = CD.Data.CharaID;
+                                CD_CharacterTab.SelectedTab.ToolTipText += " - " + CD.Info.Basic.GetBasicInfo(EBasicInfoCode.JP_NAME);
+                                Status(RCharaData.Log_ShowCharacter1 + CD.Data.CharaID + RCharaData.Log_ShowCharacter2 + CD.Info.Basic.GetBasicInfo(EBasicInfoCode.JP_NAME));
+                                break;
+                            }
                         }
                     }
-                } else
-                {
-                    Status(RCharaData.Log_ShowCharacterFail + CD.Data.CharaID);
+                    else
+                    {
+                        Status(RCharaData.Log_ShowCharacterFail + CD.Data.CharaID);
+                    }
                 }
             }
             catch (Exception ex)
@@ -203,10 +207,13 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                CD_CharacterTab.SelectedTab.Dispose();
-                if (CD_CharacterTab.TabCount == 0)
+                if (CD_CharacterTab.TabCount != 0)
                 {
-                    CD_CharacterIDGo.ButtonEnabled = false;
+                    CD_CharacterTab.SelectedTab.Dispose();
+                    if (CD_CharacterTab.TabCount == 0)
+                    {
+                        CD_CharacterIDGo.ButtonEnabled = false;
+                    }
                 }
             }
             catch (Exception ex)

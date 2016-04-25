@@ -312,7 +312,7 @@
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00003007" xml:space="preserve">
-    <value>錯誤代碼 0x00003007\n\n</value>
+    <value>錯誤代碼 0x00003007\n\n轉譯怪物種族時發生錯誤。</value>
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00003008" xml:space="preserve">
@@ -984,7 +984,7 @@
     <comment>StatusLog</comment>
   </data>
   <data name="E_0x0001D008" xml:space="preserve">
-    <value>錯誤代碼 0x0001D008\n\n</value>
+    <value>錯誤代碼 0x0001D008\n\n因為檔案沒有找到，故無法將錯誤訊息寫入日誌。</value>
     <comment>StatusLog</comment>
   </data>
   <data name="E_0x0001D009" xml:space="preserve">
@@ -1464,7 +1464,7 @@
     <comment>WeaponStatus</comment>
   </data>
   <data name="E_0x0002A001" xml:space="preserve">
-    <value>錯誤代碼 0x0002A001\n\n計算或顯示樣本數量時發生錯誤。</value>
+    <value>錯誤代碼 0x0002A001\n\n計算或顯示角色樣本數量時發生錯誤。</value>
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A002" xml:space="preserve">
@@ -1488,15 +1488,39 @@
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A007" xml:space="preserve">
-    <value>錯誤代碼 0x0002A007\n\n</value>
+    <value>錯誤代碼 0x0002A007\n\n計算或顯示怪物樣本數量時發生錯誤。</value>
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A008" xml:space="preserve">
-    <value>錯誤代碼 0x0002A008\n\n</value>
+    <value>錯誤代碼 0x0002A008\n\n計算怪物種類占比時發生錯誤。</value>
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A009" xml:space="preserve">
     <value>錯誤代碼 0x0002A009\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A00A" xml:space="preserve">
+    <value>錯誤代碼 0x0002A00A\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A00B" xml:space="preserve">
+    <value>錯誤代碼 0x0002A00B\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A00C" xml:space="preserve">
+    <value>錯誤代碼 0x0002A00C\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A00D" xml:space="preserve">
+    <value>錯誤代碼 0x0002A00D\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A00E" xml:space="preserve">
+    <value>錯誤代碼 0x0002A00E\n\n</value>
+    <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002A00F" xml:space="preserve">
+    <value>錯誤代碼 0x0002A00F\n\n</value>
     <comment>PStatistics</comment>
   </data>
 </root>
