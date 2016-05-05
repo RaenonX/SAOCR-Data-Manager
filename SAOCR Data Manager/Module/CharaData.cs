@@ -10,28 +10,6 @@ using System.Threading.Tasks;
 using SAOCR_Data_Manager.Resources.Message;
 using System.Drawing;
 
-#region Structs
-public struct SData
-{
-    public string CharaID;
-    public TitlePos TitleP;
-    public DataTables DTs;
-}
-
-public struct CData
-{
-    public List<int> AwakedP;
-    public List<int> UnawakedP;
-    public cost Cost;
-}
-
-public struct cost
-{
-    public int Awaked;
-    public int UnAwaked;
-}
-#endregion
-
 namespace SAOCR_Data_Manager
 {
     public class CharaData
@@ -42,6 +20,7 @@ namespace SAOCR_Data_Manager
         public CBA BA;
         public CLS LS;
         SData data;
+        CData CDT;
 
         public CharaData(SData Data)
         {
@@ -68,15 +47,30 @@ namespace SAOCR_Data_Manager
                     SystemAPI.Warning(RWarning.W_0xC0007004);
                     return;
                 }
-                if (!DataAPI.Search(Data.DTs.Source, Data.CharaID, (int)EParamSecCol.ID))
+
+                for (int k = 0; k <= (int)EParamAwaked.Awaked; k++)
+                {
+                    CDT.Param.Unawaked.DataRow = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterParams], Data.TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.ID);
+                    CDT.Param.Awaked.DataRow =
+                        DataAPI.Search(CharaAPI.AwakedID(Data.CharaID), Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterParams], Data.TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.ID);
+                    if (Convert.ToInt32(Data.CharaID.Substring(6, 1)) < 3 || CDT.Param.Awaked.DataRow == null)
+                    {
+                        CDT.Param.Awaked = CDT.Param.Unawaked;
+                    }
+                }
+                CDT.Info = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID);
+                CDT.CharaDim = DataAPI.Search(Data.CharaID, Data.DTs.CharaDim, 0, (int)ECharaDimCode.ID);
+                CDT.CharaSeries = DataAPI.Search(Data.CharaID.Substring(1, 3), Data.DTs.CharaSeries, 0, (int)ECharaSeriesCode.CODE);
+
+                if (CDT.CharaDim == null)
                 {
                     SystemAPI.Warning(RWarning.W_0xC0007005);
                     return;
                 }
 
-                Parameters = new CParameters(Data);
-                Info = new CInfo(Data);
-                BA = new CBA(Data);
+                Parameters = new CParameters(Data, ref CDT);
+                Info = new CInfo(Data, ref CDT);
+                BA = new CBA(Data, ref CDT);
                 LS = new CLS(Data);
                 CreateSucceed = true;
             }
@@ -107,79 +101,13 @@ namespace SAOCR_Data_Manager
         {
             public BasicP Basic;
             public ExtraP Extra;
-            CData CDT;
 
-            public CParameters(SData Data)
+            public CParameters(SData Data, ref CData CDT)
             {
                 try
                 {
-                    CDT.AwakedP = new List<int>();
-                    CDT.UnawakedP = new List<int>();
-
-                    for (int k = 0; k <= (int)EParamAwaked.Awaked; k++)
-                    {
-                        DataRow[] Unawaked = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterParams], Data.TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.ID);
-                        DataRow[] Awaked = 
-                            DataAPI.Search(CharaAPI.AwakedID(Data.CharaID), Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterParams], Data.TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.ID);
-                        if (Convert.ToInt32(Data.CharaID.Substring(6, 1)) < 3 || Awaked == null)
-                        {
-                            Awaked = Unawaked;
-                        }
-                        
-                        if ((EParamAwaked)k == EParamAwaked.Awaked)
-                        {
-                            CDT.Cost.Awaked = Convert.ToInt32(Awaked[(int)EParamType.Mebius][(int)EParamSecCol.COST]);
-                        }
-                        else
-                        {
-                            CDT.Cost.UnAwaked = Convert.ToInt32(Unawaked[(int)EParamType.Mebius][(int)EParamSecCol.COST]);
-                        }
-
-                        for (int i = 0; i < Const.Count.PARAM_TYPE; i++)
-                        {
-                            for (int j = (int)EParamSecCol.PARAM_START; j <= (int)EParamSecCol.PARAM_END; j++)
-                            {
-                                if ((EParamAwaked)k == EParamAwaked.Awaked)
-                                {
-                                    try
-                                    {
-                                        CDT.AwakedP.Add(Convert.ToInt32(Awaked[i][j]));
-                                    }
-                                    catch (Exception e)
-                                    {
-                                        if (e is IndexOutOfRangeException || e is NullReferenceException)
-                                        {
-                                            CDT.AwakedP.Add(0);
-                                        } else
-                                        {
-                                            throw;
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    try
-                                    {
-                                        CDT.UnawakedP.Add(Convert.ToInt32(Unawaked[i][j]));
-                                    }
-                                    catch (Exception e)
-                                    {
-                                        if (e is IndexOutOfRangeException || e is NullReferenceException)
-                                        {
-                                            CDT.UnawakedP.Add(0);
-                                        }
-                                        else
-                                        {
-                                            throw;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    Basic = new BasicP(Data, CDT);
-                    Extra = new ExtraP(Data, CDT);
+                    Basic = new BasicP(Data, ref CDT);
+                    Extra = new ExtraP(Data, ref CDT);
                 }
                 catch (Exception e)
                 {
@@ -188,32 +116,16 @@ namespace SAOCR_Data_Manager
                 }
             }
 
-            public int[] GetArray()
-            {
-                try
-                {
-                    List<int> L = new List<int>();
-                    L.AddRange(CDT.UnawakedP);
-                    L.AddRange(CDT.AwakedP);
-                    return L.ToArray();
-                }
-                catch (Exception e)
-                {
-                    SystemAPI.Error(RError.E_0x00007012, e);
-                    throw;
-                }
-            }
-
             public class BasicP
             {
                 public ParamType Awaked, Unawaked;
 
-                public BasicP(SData Data, CData DataC)
+                public BasicP(SData Data, ref CData DataC)
                 {
                     try
                     {
-                        Awaked = new ParamType(Data, DataC, true);
-                        Unawaked = new ParamType(Data, DataC, false);
+                        Awaked = new ParamType(Data, ref DataC, true);
+                        Unawaked = new ParamType(Data, ref DataC, false);
                     }
                     catch (Exception e)
                     {
@@ -225,37 +137,48 @@ namespace SAOCR_Data_Manager
                 public class ParamType
                 {
                     public ParamLv Mebius, Force, Aegis, Magius;
-                    int cost;
                     List<int> ToMebius = new List<int>(), ToForce = new List<int>(), ToAegis = new List<int>(), ToMagius = new List<int>(); //HP, HP, STR, STR, VIT, VIT, INT, INT, MEN, MEN
+                    CData CDT;
 
-                    public ParamType(SData Data, CData DataC, bool awaked)
+                    public ParamType(SData Data, ref CData DataC, bool awaked)
                     {
                         try
                         {
+                            CDT = DataC;
                             List<int>[] SArray = { ToMebius, ToForce, ToAegis, ToMagius };
                             ParamLv[] PArray = { Mebius, Force, Aegis, Magius };
+                            List<int> L = new List<int>();
 
                             for (int i = 0; i < SArray.Length; i++)
                             {
                                 int[] Arr = new int[10];
+
                                 if (awaked)
                                 {
-                                    DataC.AwakedP.CopyTo(i * 10, Arr, 0, 10);
+                                    for (int j = 0; j < Arr.Length; j++)
+                                    {
+                                        SArray[i].Add(Convert.ToInt32(DataC.Param.Awaked.DataRow[i][(int)EParamSecCol.PARAM_START + j]));
+                                    }
+                                    L.AddRange(SArray[i]);
                                 }
                                 else
                                 {
-                                    DataC.UnawakedP.CopyTo(i * 10, Arr, 0, 10);
+                                    for (int j = 0; j < Arr.Length; j++)
+                                    {
+                                        SArray[i].Add(Convert.ToInt32(DataC.Param.Unawaked.DataRow[i][(int)EParamSecCol.PARAM_START + j]));
+                                    }
+                                    L.AddRange(SArray[i]);
                                 }
-                                SArray[i].AddRange(Arr);
                             }
 
                             if (awaked)
                             {
-                                cost = DataC.Cost.Awaked;
-                            }
-                            else
+                                DataC.Param.Awaked.Array = L.ToArray();
+                                DataC.Param.Awaked.Cost = Convert.ToInt32(DataC.Param.Awaked.DataRow[(int)EParamType.Mebius][(int)EParamSecCol.COST]);
+                            } else
                             {
-                                cost = DataC.Cost.UnAwaked;
+                                DataC.Param.Unawaked.Array = L.ToArray();
+                                DataC.Param.Unawaked.Cost = Convert.ToInt32(DataC.Param.Unawaked.DataRow[(int)EParamType.Mebius][(int)EParamSecCol.COST]);
                             }
 
                             for (int i = 0; i < PArray.Length; i++)
@@ -270,15 +193,41 @@ namespace SAOCR_Data_Manager
                         }
                     }
 
-                    public int Cost()
+                    public int Cost(bool Awaked)
                     {
                         try
                         {
-                            return cost;
+                            if (Awaked)
+                            {
+                                return CDT.Param.Awaked.Cost;
+                            } else
+                            {
+                                return CDT.Param.Unawaked.Cost;
+                            }
                         }
                         catch (Exception e)
                         {
                             SystemAPI.Error(RError.E_0x00007015, e);
+                            throw;
+                        }
+                    }
+
+                    public int[] GetArray(bool Awaked)
+                    {
+                        try
+                        {
+                            if (Awaked)
+                            {
+                                return CDT.Param.Awaked.Array;
+                            }
+                            else
+                            {
+                                return CDT.Param.Unawaked.Array;
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            SystemAPI.Error(RError.E_0x00007012, e);
                             throw;
                         }
                     }
@@ -412,24 +361,24 @@ namespace SAOCR_Data_Manager
                 List<int> MParam = new List<int>();
                 List<double> GrowRateL = new List<double>();
 
-                public ExtraP(SData Data, CData DataC)
+                public ExtraP(SData Data, ref CData DataC)
                 {   
                     int[] Col = { (int)EPosInPList.STR, (int)EPosInPList.VIT, (int)EPosInPList.INT, (int)EPosInPList.MEN };
                     int[] Col2 = { (int)EPosInPList.HP_MIN, (int)EPosInPList.HP_MAX, (int)EPosInPList.STR_MIN, (int)EPosInPList.STR_MAX };
 
                     for (int i = 0; i < Col.Length; i++)
                     {
-                        MParam.Add(DataC.UnawakedP[Col[i]]);
+                        MParam.Add(DataC.Param.Unawaked.Array[Col[i]]);
                     }
                     for (int j = 0; j < 2; j++)
                     {
                         for (int i = 0; i < Col2.Length / 2; i++)
                         {
                             if ((EParamAwaked)j == EParamAwaked.Awaked) {
-                                GrowRateL.Add((double)DataC.AwakedP[Col2[i * 2 + 1]] / DataC.AwakedP[Col2[i * 2]]);
+                                GrowRateL.Add((double)DataC.Param.Awaked.Array[Col2[i * 2 + 1]] / DataC.Param.Awaked.Array[Col2[i * 2]]);
                             } else
                             {
-                                GrowRateL.Add((double)DataC.UnawakedP[Col2[i * 2 + 1]] / DataC.UnawakedP[Col2[i * 2]]);
+                                GrowRateL.Add((double)DataC.Param.Unawaked.Array[Col2[i * 2 + 1]] / DataC.Param.Unawaked.Array[Col2[i * 2]]);
                             }
                         }
                     }
@@ -439,8 +388,8 @@ namespace SAOCR_Data_Manager
 
                     Mainparam = (EParamCategory)MParam.IndexOf(MParam.Max()) + 1;
 
-                    GrowRate = new ExAwaked(Data, DataC, GrowRateL);
-                    Deploy = new PDeploy(Data, DataC);
+                    GrowRate = new ExAwaked(Data, ref DataC, GrowRateL);
+                    Deploy = new PDeploy(Data, ref DataC);
                 }
 
                 public EParamCategory MainParam
@@ -461,12 +410,12 @@ namespace SAOCR_Data_Manager
                     public Rate Awaked, Unawaked;
                     double[] ToAwaked = new double[2], ToUnawaked = new double[2];
 
-                    public ExAwaked(SData Data, CData DataC, List<double> GrowRateL)
+                    public ExAwaked(SData Data, ref CData DataC, List<double> GrowRateL)
                     {
                         GrowRateL.CopyTo(0, ToUnawaked, 0, 2);
-                        Unawaked = new Rate(Data, DataC, new List<double>(ToUnawaked));
+                        Unawaked = new Rate(Data, ref DataC, new List<double>(ToUnawaked));
                         GrowRateL.CopyTo(2, ToAwaked, 0, 2);
-                        Awaked = new Rate(Data, DataC, new List<double>(ToAwaked));
+                        Awaked = new Rate(Data, ref DataC, new List<double>(ToAwaked));
                     }
 
                     public double[] GetArray(EParamAwaked EPA)
@@ -479,7 +428,7 @@ namespace SAOCR_Data_Manager
                     {
                         double hp, param;
 
-                        public Rate(SData Data, CData DataC, List<double> GrowRateL)
+                        public Rate(SData Data, ref CData DataC, List<double> GrowRateL)
                         {
                             hp = GrowRateL[(int)EGrowRateCatergory.HP];
                             param = GrowRateL[(int)EGrowRateCatergory.Param];
@@ -501,15 +450,15 @@ namespace SAOCR_Data_Manager
                 {
                     List<int> DArray = new List<int>();
 
-                    public PDeploy(SData Data, CData DataC)
+                    public PDeploy(SData Data, ref CData DataC)
                     {
                         List<int> TempP = new List<int>();
 
-                        for (int i = 0; i < DataC.UnawakedP.Count; i += 2)
+                        for (int i = 0; i < DataC.Param.Unawaked.Array.Length; i += 2)
                         {
                             if (i % 10 != 0)
                             {
-                                TempP.Add(DataC.UnawakedP[i]);
+                                TempP.Add(DataC.Param.Unawaked.Array[i]);
                             }
                         }
 
@@ -572,15 +521,15 @@ namespace SAOCR_Data_Manager
             public ExtraI Extra;
             DataRow InfoData;
 
-            public CInfo(SData Data)
+            public CInfo(SData Data, ref CData CDT)
             {
                 try
                 {
-                    InfoData = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID)[0];
+                    InfoData = CDT.Info[0];
 
-                    BattleRelated = new Battle(Data, InfoData);
+                    BattleRelated = new Battle(Data, InfoData, ref CDT);
                     Basic = new BasicI(Data, InfoData);
-                    Extra = new ExtraI(Data);
+                    Extra = new ExtraI(Data, ref CDT);
                 }
                 catch (Exception e)
                 {
@@ -593,16 +542,16 @@ namespace SAOCR_Data_Manager
             {
                 List<int> BattleInfoCode = new List<int>(); // WEAPON, ELEMENT, SCENE, SEX
 
-                public Battle(SData Data, DataRow DataR)
+                public Battle(SData Data, DataRow DataR, ref CData CDT)
                 {
                     try
                     {
-                        DataRow[] WpnAndEle = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterParams], (int)EParamSecCol.ID);
+                        DataRow[] WpnAndEle = CDT.Param.Unawaked.DataRow;
                         int[] Temp = { (int)EParamSecCol.WEAPON, (int)EParamSecCol.ELEMENT };
 
                         for (int i = 0; i < Temp.Length; i++)
                         {
-                            BattleInfoCode.Add(Convert.ToInt32(WpnAndEle[0][Temp[i]]));
+                            BattleInfoCode.Add(Convert.ToInt32(WpnAndEle[(int)EParamType.Mebius][Temp[i]]));
                         }
 
                         BattleInfoCode.Add(Convert.ToInt32(Data.CharaID.Substring((int)ECharaID.SCENE_START, (int)ECharaID.SCENE_LENGTH)));
@@ -747,14 +696,14 @@ namespace SAOCR_Data_Manager
                 public CharaSeries Serie;
                 DataRow info;
 
-                public ExtraI(SData Data)
+                public ExtraI(SData Data, ref CData CDT)
                 {
                     try
                     {
-                        DataRow[] Result = DataAPI.Search(Data.CharaID, Data.DTs.CharaDim, 0, (int)ECharaDimCode.ID);
+                        DataRow[] Result = CDT.CharaDim;
                         if (Result != null)
                         {
-                            info = DataAPI.Search(Data.CharaID, Data.DTs.CharaDim, 0, (int)ECharaDimCode.ID)[0];
+                            info = Result[0];
                         } else
                         {
                             info = Data.DTs.CharaDim.Rows[Const.Default.EMPTY_COLUMN];
@@ -832,9 +781,17 @@ namespace SAOCR_Data_Manager
                 {
                     DataRow dataArr;
 
-                    public CharaSeries(SData Data)
+                    public CharaSeries(SData Data, ref CData CDT)
                     {
-                        dataArr = DataAPI.Search(Data.CharaID.Substring(1, 3), Data.DTs.CharaSeries, 0, (int)ECharaSeriesCode.CODE)[0];
+                        try
+                        {
+                            dataArr = CDT.CharaSeries[0];
+                        }
+                        catch (Exception e)
+                        {
+                            SystemAPI.Error(RError.E_0x00007048, e);
+                            throw;
+                        }
                     }
 
                     public string Code
@@ -875,12 +832,13 @@ namespace SAOCR_Data_Manager
         public class CBA
         {
             public BAData BA1, BA2, BA3;
+            EBADisplayStatus DSP;
 
-            public CBA(SData Data)
+            public CBA(SData Data, ref CData CDT)
             {
                 try
                 {
-                    DataRow ToGetBAID = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterParams], (int)EParamSecCol.ID)[0];
+                    DataRow ToGetBAID = CDT.Param.Unawaked.DataRow[0];
 
                     int[] BAIDCol = { (int)EParamSecCol.BA1, (int)EParamSecCol.BA2, (int)EParamSecCol.BA3 };
                     BAData[] BAD = { BA1, BA2, BA3 };
@@ -891,7 +849,7 @@ namespace SAOCR_Data_Manager
                         BAInfo.Add(ToGetBAID[BAIDCol[i]].ToString());
                         if (ToGetBAID[BAIDCol[i]].ToString() != "0")
                         {
-                            DataRow BADataInTable = DataAPI.Search(BAInfo[(int)EBADataInfo.ID], Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterBATable], (int)EBASecCol.ID)[0];
+                            DataRow BADataInTable = DataAPI.Search(BAInfo[(int)EBADataInfo.ID], Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterBATable], Data.TitleP.End[(int)DataTitle.CharacterBATable], (int)EBASecCol.ID, true)[0];
                             int[] ColT = { (int)EBASecCol.NAME, (int)EBASecCol.DESCRIPTION, (int)EBASecCol.POWER, (int)EBASecCol.HEAL_RATE };
 
                             for (int j = 0; j < ColT.Length; j++)
@@ -921,7 +879,8 @@ namespace SAOCR_Data_Manager
                                     {
                                         if (Extent.isEmptyString(BAAddData[ColD[j]].ToString()))
                                         {
-                                            BAInfo.Add(BAAddData[(int)EBADictCode.DESCRIPTION_JP].ToString() + "【" + RWarning.W_0xC0007007.Replace("\\n\\n", " - ") + "】");
+                                            DSP = EBADisplayStatus.ForceJP;
+                                            BAInfo.Add(BAAddData[(int)EBADictCode.DESCRIPTION_JP].ToString());
                                         } else
                                         {
                                             BAInfo.Add(BAAddData[ColD[j]].ToString());
@@ -939,7 +898,8 @@ namespace SAOCR_Data_Manager
                                 {
                                     if (j == 0)
                                     {
-                                        BAInfo.Add(BADataInTable[(int)EBASecCol.DESCRIPTION].ToString() + "【" + RWarning.W_0xC0007007.Replace("\\n\\n", " - ") + "】");
+                                        DSP = EBADisplayStatus.ForceJP;
+                                        BAInfo.Add(BADataInTable[(int)EBASecCol.DESCRIPTION].ToString());
                                     } else
                                     {
                                         BAInfo.Add("");
@@ -957,13 +917,13 @@ namespace SAOCR_Data_Manager
                         switch (i)
                         {
                             case 0:
-                                BA1 = new BAData(Data, BAInfo);
+                                BA1 = new BAData(Data, BAInfo, DSP);
                                 break;
                             case 1:
-                                BA2 = new BAData(Data, BAInfo);
+                                BA2 = new BAData(Data, BAInfo, DSP);
                                 break;
                             case 2:
-                                BA3 = new BAData(Data, BAInfo);
+                                BA3 = new BAData(Data, BAInfo, DSP);
                                 break;
                         }
                     }
@@ -978,12 +938,14 @@ namespace SAOCR_Data_Manager
             public class BAData
             {
                 List<string> Info = new List<string>();
+                EBADisplayStatus ESP;
 
-                public BAData(SData Data, List<string> BAData)
+                public BAData(SData Data, List<string> BAData, EBADisplayStatus DSP)
                 {
                     try
                     {
                         Info.AddRange(BAData);
+                        ESP = DSP;
                     }
                     catch (Exception)
                     {
@@ -1019,6 +981,19 @@ namespace SAOCR_Data_Manager
                     catch (Exception)
                     {
                         SystemAPI.Error(RError.E_0x00007031);
+                        throw;
+                    }
+                }
+
+                public EBADisplayStatus GetDisplayStatus()
+                {
+                    try
+                    {
+                        return ESP;
+                    }
+                    catch (Exception)
+                    {
+                        SystemAPI.Error(RError.E_0x00007032);
                         throw;
                     }
                 }

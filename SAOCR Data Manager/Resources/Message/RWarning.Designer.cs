@@ -439,7 +439,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0011003\n\n 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0011003\n\n請先開啟至少一個頁籤再查詢角色資料。 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0011003 {
             get {
@@ -732,6 +732,15 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string W_0xC0027000 {
             get {
                 return ResourceManager.GetString("W_0xC0027000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC002B001\n\n在武器特效字典中找不到對應的翻譯，故目前以日文顯示。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC002B001 {
+            get {
+                return ResourceManager.GetString("W_0xC002B001", resourceCulture);
             }
         }
         

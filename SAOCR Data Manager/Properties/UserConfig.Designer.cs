@@ -85,7 +85,7 @@ namespace SAOCR_Data_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SE/Dream - SINCERELY~ever dream~.mp3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("SE/ソウルワーカー(Soul Worker) BGM - STEEL GRAVE.mp3")]
         public string SE_BGM {
             get {
                 return ((string)(this["SE_BGM"]));

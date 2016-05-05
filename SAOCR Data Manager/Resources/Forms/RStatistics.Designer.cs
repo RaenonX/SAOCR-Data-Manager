@@ -205,7 +205,7 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似  (角色參數樣本數量:  的當地語系化字串。
+        ///   查詢類似  (角色數量:  的當地語系化字串。
         /// </summary>
         internal static string Message_CharaSamples1 {
             get {
@@ -214,20 +214,11 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 、角色資料樣本數量:  的當地語系化字串。
+        ///   查詢類似 ) 的當地語系化字串。
         /// </summary>
         internal static string Message_CharaSamples2 {
             get {
                 return ResourceManager.GetString("Message_CharaSamples2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 ) 的當地語系化字串。
-        /// </summary>
-        internal static string Message_CharaSamples3 {
-            get {
-                return ResourceManager.GetString("Message_CharaSamples3", resourceCulture);
             }
         }
         

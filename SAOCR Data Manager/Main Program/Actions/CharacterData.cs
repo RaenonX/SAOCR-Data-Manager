@@ -55,6 +55,9 @@ namespace SAOCR_Data_Manager
                     {
                         Status(RCharaData.Log_ShowCharacterFail + CD.Data.CharaID);
                     }
+                } else
+                {
+                    SystemAPI.Warning(RWarning.W_0xC0011003);
                 }
             }
             catch (Exception ex)
@@ -116,7 +119,7 @@ namespace SAOCR_Data_Manager
 
             CD_CharacterID.Text = Sender.SelectedItems[0].SubItems[1].Text;
             Application.DoEvents();
-            CD_CharacterIDGo.Button_Click(this, null);
+            CD_CharacterIDGo_ButtonClick(this, null);
         }
         
         private void CD_SeriesCodeGo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

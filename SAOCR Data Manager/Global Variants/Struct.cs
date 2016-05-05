@@ -159,6 +159,7 @@ public struct DataTables
     public DataTable CharaDim;
     public DataTable CharaSeries;
     public DataTable CharaMix;
+    public DataTable WeaponEff;
 }
 #endregion
 
@@ -184,5 +185,51 @@ public struct DataTableCounts
     public int RowC;
 }
 
+#region 武器資訊
+public struct WData
+{
+    public string ID;
+    public TitlePos TitleP;
+    public DataTables DTs;
+    public WeaponDataRow Data;
+}
 
+public struct WeaponDataRow
+{
+    public DataRow[] Name;
+    public DataRow[] Effect;
+    public DataRow[] ID;
+    public DataRow[] Param;
+}
+#endregion
+
+#region 角色相關
+public struct SData
+{
+    public string CharaID;
+    public TitlePos TitleP;
+    public DataTables DTs;
+}
+
+public struct CData
+{
+    public CParam Param;
+    public DataRow[] Info;
+    public DataRow[] CharaDim;
+    public DataRow[] CharaSeries;
+}
+
+public struct CParam
+{
+    public CParamData Awaked;
+    public CParamData Unawaked;
+}
+
+public struct CParamData
+{
+    public int Cost;
+    public DataRow[] DataRow;
+    public int[] Array;
+}
+#endregion
 

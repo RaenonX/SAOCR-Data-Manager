@@ -63,15 +63,19 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\DataRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataRegister.Designer.cs">
+      <DependentUpon>DataRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\WeaponStatus\Program.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -235,6 +239,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RCDDisplay.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Forms\RDataReg.Designer.cs">
+      <DependentUpon>RDataReg.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Resources\Forms\RStatistics.Designer.cs">
       <DependentUpon>RStatistics.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -383,6 +392,9 @@
     <EmbeddedResource Include="Controls\WeaponStatus\Initial+Property.resx">
       <DependentUpon>Initial+Property.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataRegister.resx">
+      <DependentUpon>DataRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DataView.resx">
       <DependentUpon>DataView.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,6 +413,10 @@
     <EmbeddedResource Include="Resources\Controls\RCDDisplay.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RCDDisplay.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Forms\RDataReg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RDataReg.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Forms\RStatistics.resx">
       <Generator>ResXFileCodeGenerator</Generator>

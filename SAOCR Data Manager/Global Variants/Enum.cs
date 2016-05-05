@@ -219,23 +219,6 @@ public enum EParamSecCol
 
 #region 角色資料相關
 [Flags]
-public enum EWeapon
-{
-    Sword_1H = 1,
-    Sword_Dual = 2,
-    Axe_1H = 3,
-    Axe_2H = 4,
-    Mace_1H = 5,
-    Mace_2H = 6,
-    Bow = 7,
-    Gun = 8,
-    Dagger = 9,
-    Rapier = 10,
-    Sword_2H = 11,
-    Katana = 12
-}
-
-[Flags]
 public enum EElement
 {
     Fire = 1, Wind = 2, Water = 3
@@ -251,15 +234,6 @@ public enum EScene
 public enum ESex
 {
     Male = 1, Female = 2
-}
-
-/// <summary>
-/// R1=極上，R4=良
-/// </summary>
-[Flags]
-public enum ESharpness
-{
-    R1 = 1, R2 = 2, R3 = 3, R4 = 4
 }
 
 [Flags]
@@ -485,6 +459,13 @@ public enum ELang
 }
 
 #region 隊長技、BA相關
+[Flags]
+public enum EBADisplayStatus
+{
+    JP,
+    ForceJP,
+    Chinese
+}
 
 [Flags]
 public enum BASeriesType
@@ -567,3 +548,90 @@ public enum ELogCategory
     Warning,
     Error
 }
+
+#region 武器資訊相關
+[Flags]
+public enum EWInfoCategory
+{
+    ID,
+    NAME,
+    RARITY,
+    EFFECT_JP,
+    EFFECT_CH
+}
+
+[Flags] 
+public enum EWeaponIDSecCol
+{
+    ID = 3,
+    CRAFT_PRICE = 4,
+    REQUIRED_RANK = 5
+}
+
+[Flags]
+public enum EWeaponParamSecCol
+{
+    ID_WITH_QUALITY = 1,
+    ID = 2,
+    QUALITY = 3,
+    STR_MAX = 4,
+    VIT_MAX = 5,
+    INT_MAX = 6,
+    MEN_MAX = 7,
+}
+
+[Flags]
+public enum EWeaponNameSecCol
+{
+    ID = 1,
+    NAME = 2,
+    CATEGORY = 3,
+    RARITY = 5,
+    STR_MIN = 6,
+    VIT_MIN = 7,
+    INT_MIN = 8,
+    MEN_MIN = 9,
+}
+
+[Flags]
+public enum EWeaponEffectSecCol
+{
+    ID = 2,
+    NAME = 3,
+    DESCRIPTION = 4
+}
+
+[Flags]
+public enum EWeaponEffDictCode
+{
+    DESCRIPTION_JP = 1,
+    DESCRIPTION_CH = 2
+}
+
+/// <summary>
+/// R1=良，R4=極上
+/// </summary>
+[Flags]
+public enum ESharpness
+{
+    R1 = 1, R2 = 2, R3 = 3, R4 = 4
+}
+
+[Flags]
+public enum EWeapon
+{
+    Sword_1H = 1,
+    Sword_Dual = 2,
+    Axe_1H = 3,
+    Axe_2H = 4,
+    Mace_1H = 5,
+    Mace_2H = 6,
+    Bow = 7,
+    Gun = 8,
+    Dagger = 9,
+    Rapier = 10,
+    Sword_2H = 11,
+    Katana = 12
+}
+
+#endregion

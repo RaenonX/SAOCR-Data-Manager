@@ -11,7 +11,11 @@ namespace SAOCR_Data_Manager
     {
         public const string NUM_COLUMN = "Stack";
         public const string IS_ORG_CHARA_VERIFY_AT_C1 = "SUBSTRING(C1, 8, 1) IN (0)";
-        public const string IS_ORG_CHARA_VERIFY_AT_C2 = "SUBSTRING(C2, 8, 1) IN (0)";
+        public const string IS_ORG_CHARA_IN_PARAMS = "SUBSTRING(C1, 8, 2) IN ('01')";
+        public const string SPECIFIED_ON_SERIES_AT_C1_1 = "SUBSTRING(C1, 2, 3) IN ('";
+        public const string SPECIFIED_ON_SERIES_AT_C1_2 = "')";
+
+        public const string EMPTY = "無";
 
         public const int SCROLL_BAR_WIDTH = 17;
         public const string FORMAT_DATETIME_NOW = "yyyy-MM-dd HH-mm-ss";
@@ -76,6 +80,7 @@ namespace SAOCR_Data_Manager
             public const string BA_DICT = "Dimension/BADict.txt";
             public const string LS_DICT = "Dimension/LSDict.txt";
             public const string PATH_DICT = "Dimension/PathDict.txt";
+            public const string WEAPON_EFFECT = "Dimension/WPNEffDict.txt";
             public const string ANNOUNCEMENT = "Properties/Announcement.txt";
             public const string SCREENSHOT = "ScreenShot";
             public const string SCREENSHOT_NAME = "/Screenshot@";
@@ -97,11 +102,14 @@ namespace SAOCR_Data_Manager
             public const int FOLK_NAME = 5;
             public const int BA = 3;
             public const int PARAM_TYPE = 4;
+            public const int PARAM_CATEGORY = 4;
             public const int WEAPON_CATEGORY = 12;
+            public const int WEAPON_SHARPNESS = 4;
             public const int ELEMENT_CATEGORY = 3;
             public const int SCENE_CATEGORY = 4;
             public const int RARITY = 6;
             public const int MONSTER_TYPE = 8;
+            public const int MONSTER_HP_K = 20;
         }
 
         public static class Column
@@ -111,6 +119,7 @@ namespace SAOCR_Data_Manager
             public const int BA_DICT = 7;
             public const int LS_DICT = 13;
             public const int PATH_DICT = 2;
+            public const int WEAPON_EFFECT = 2;
         }
 
         public static class Log

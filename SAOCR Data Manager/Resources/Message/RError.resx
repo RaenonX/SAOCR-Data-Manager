@@ -192,9 +192,6 @@
   <data name="Warning_AUNoConnection" xml:space="preserve">
     <value>無法連線。</value>
   </data>
-  <data name="Warning_DisplayingJPBADescription" xml:space="preserve">
-    <value>目前顯示的是日文BA敘述。</value>
-  </data>
   <data name="Error_WrongDLInfoCategory" xml:space="preserve">
     <value>錯誤的下載資訊目錄。</value>
   </data>
@@ -280,7 +277,7 @@
     <comment>CharaData.CParameters.ctor</comment>
   </data>
   <data name="E_0x00007012" xml:space="preserve">
-    <value>錯誤代碼 0x00007012\n\n</value>
+    <value>錯誤代碼 0x00007012\n\n利用角色狀態獲取參數陣列時發生錯誤。</value>
     <comment>CharaData.CParameters.GetArray</comment>
   </data>
   <data name="E_0x00007034" xml:space="preserve">
@@ -1496,7 +1493,7 @@
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A009" xml:space="preserve">
-    <value>錯誤代碼 0x0002A009\n\n</value>
+    <value>錯誤代碼 0x0002A009\n\n計算怪物血量占比時發生錯誤。</value>
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A00A" xml:space="preserve">
@@ -1522,5 +1519,161 @@
   <data name="E_0x0002A00F" xml:space="preserve">
     <value>錯誤代碼 0x0002A00F\n\n</value>
     <comment>PStatistics</comment>
+  </data>
+  <data name="E_0x0002B001" xml:space="preserve">
+    <value>錯誤代碼 0x0002B001\n\n傳回武器資料時發生錯誤。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B002" xml:space="preserve">
+    <value>錯誤代碼 0x0002B002\n\n傳回武器資料陣列時發生錯誤。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B003" xml:space="preserve">
+    <value>錯誤代碼 0x0002B003\n\n建立武器資料的物件時發生錯誤。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B004" xml:space="preserve">
+    <value>錯誤代碼 0x0002B004\n\n建立武器基本資料時發生錯誤。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B005" xml:space="preserve">
+    <value>錯誤代碼 0x0002B005\n\n根據武器業物度建議物件時發生錯誤。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B006" xml:space="preserve">
+    <value>錯誤代碼 0x0002B006\n\n根據業物度獲得參數陣列時發生錯誤。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B007" xml:space="preserve">
+    <value>錯誤代碼 0x0002B007\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B008" xml:space="preserve">
+    <value>錯誤代碼 0x0002B008\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B009" xml:space="preserve">
+    <value>錯誤代碼 0x0002B009\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B00A" xml:space="preserve">
+    <value>錯誤代碼 0x0002B00A\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B00B" xml:space="preserve">
+    <value>錯誤代碼 0x0002B00B\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B00C" xml:space="preserve">
+    <value>錯誤代碼 0x0002B00C\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B00D" xml:space="preserve">
+    <value>錯誤代碼 0x0002B00D\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B00E" xml:space="preserve">
+    <value>錯誤代碼 0x0002B00E\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x0002B00F" xml:space="preserve">
+    <value>錯誤代碼 0x0002B00F\n\n</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="E_0x00007048" xml:space="preserve">
+    <value>錯誤代碼 0x00007048\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x00007049" xml:space="preserve">
+    <value>錯誤代碼 0x00007049\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000704A" xml:space="preserve">
+    <value>錯誤代碼 0x0000704A\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000704B" xml:space="preserve">
+    <value>錯誤代碼 0x0000704B\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000704C" xml:space="preserve">
+    <value>錯誤代碼 0x0000704C\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000704D" xml:space="preserve">
+    <value>錯誤代碼 0x0000704D\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000704E" xml:space="preserve">
+    <value>錯誤代碼 0x0000704E\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000704F" xml:space="preserve">
+    <value>錯誤代碼 0x0000704F\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0002C000" xml:space="preserve">
+    <value>錯誤代碼 0x0002C000\n\n移動視窗前，紀錄原始位置時發生錯誤。</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C001" xml:space="preserve">
+    <value>錯誤代碼 0x0002C001\n\n移動視窗中，計算和更改視窗位置時發生錯誤。</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C002" xml:space="preserve">
+    <value>錯誤代碼 0x0002C002\n\n初始化資料註冊視窗時發生錯誤。</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C003" xml:space="preserve">
+    <value>錯誤代碼 0x0002C003\n\n建立資料註冊視窗的介面文字時發生錯誤。</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C004" xml:space="preserve">
+    <value>錯誤代碼 0x0002C004\n\n建立資料註冊視窗的事件時發生錯誤。</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C005" xml:space="preserve">
+    <value>錯誤代碼 0x0002C005\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C006" xml:space="preserve">
+    <value>錯誤代碼 0x0002C006\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C007" xml:space="preserve">
+    <value>錯誤代碼 0x0002C007\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C008" xml:space="preserve">
+    <value>錯誤代碼 0x0002C008\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C009" xml:space="preserve">
+    <value>錯誤代碼 0x0002C009\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C00A" xml:space="preserve">
+    <value>錯誤代碼 0x0002C00A\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C00B" xml:space="preserve">
+    <value>錯誤代碼 0x0002C00B\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C00C" xml:space="preserve">
+    <value>錯誤代碼 0x0002C00C\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C00D" xml:space="preserve">
+    <value>錯誤代碼 0x0002C00D\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C00E" xml:space="preserve">
+    <value>錯誤代碼 0x0002C00E\n\n</value>
+    <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002C00F" xml:space="preserve">
+    <value>錯誤代碼 0x0002C00F\n\n</value>
+    <comment>DataRegister</comment>
   </data>
 </root>

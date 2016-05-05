@@ -71,19 +71,12 @@ namespace SAOCR_Data_Manager
         {
             return Search(TargetText, DT, RowToStartFind, RowToEndFind, ColumnToStartFInd, ColumnToEndFind, false, AdditionalFilter);
         }
-
-        /// <summary>
-        /// (區間，多欄) 在指定的資料表範圍內，根據已定義的欄位範圍搜尋並回傳找到的所有資料行。如果沒有找到資料則會回傳null。
-        /// </summary>
-        /// <param name="TargetText">資料表</param>
-        /// <param name="DT">搜尋目標</param>
-        /// <param name="RowToStartFind">搜尋目標的起始行號</param>
-        /// <param name="ColumnToStartFind">定義的起點欄位</param>
-        /// <param name="ColumnToEndFind">定義的終點欄位</param>
-        /// <returns>根據條件所回傳的資料行陣列。如果沒找到則會回傳null。</returns>
+        
         public static DataRow[] Search
             (string TargetText, DataTable DT, int RowToStartFind, int RowToEndFind, int ColumnToStartFind, int ColumnToEndFind, bool isFullConform, string AdditionalFilter)
         {
+            Debug.Print("Search Func Called. Return DataRow[]. Text = {0}, DTName = {1}, RowStart = {2}, RowEnd = {3}, ColStart = {4}, ColEnd = {5}, FullConform = {6}, AddFilter = {7}", TargetText, DT.TableName, RowToStartFind, RowToEndFind, ColumnToStartFind, ColumnToEndFind, isFullConform, AdditionalFilter);
+
             string FindStringCondition = "";
 
             if (ColumnToStartFind > ColumnToEndFind)
@@ -139,21 +132,12 @@ namespace SAOCR_Data_Manager
 
             return Result;
         }
-
-        /// <summary>
-        /// (區間，多欄) 在指定的資料表範圍內，根據已定義的欄位範圍搜尋並回傳找到的資料行中，位於回傳資料欄號的資料。如果沒有找到資料則會回傳"RError.Warning_ResultNotFound"。
-        /// </summary>
-        /// <param name="DT">資料表</param>
-        /// <param name="TargetText">搜尋目標</param>
-        /// <param name="ColumnToReturn">回傳資料欄號</param>
-        /// <param name="RowInResult">搜尋結果陣列中的索引</param>
-        /// <param name="RowToStartFind">搜尋目標的起始行號</param>
-        /// <param name="ColumnToStartFind">定義的起點欄位</param>
-        /// <param name="ColumnToEndFind">定義的終點欄位</param>
-        /// <returns>根據條件所回傳的資料，如果沒找到則會回傳"RError.Warning_ResultNotFound"。</returns>
+        
         public static string Search
             (DataTable DT, string TargetText, int ColumnToReturn, int RowInResult, int RowToStartFind, int ColumnToStartFind, int ColumnToEndFind)
         {
+            Debug.Print("Search Func Called. Return String. Text = {0}, DTName = {1}, RowStart = {2}, RowInResult = {3}, ColStart = {4}, ColEnd = {5}, ColReturn = {6}", TargetText, DT.TableName, RowToStartFind, RowInResult, ColumnToStartFind, ColumnToEndFind, ColumnToReturn);
+
             string FindStringCondition = "";
 
             if (ColumnToStartFind > ColumnToEndFind)
@@ -199,36 +183,14 @@ namespace SAOCR_Data_Manager
             
             return CT_FindStringResult[RowInResult][ColumnToReturn].ToString();
         }
-
-        /// <summary>
-        /// (區間，單欄) 在指定的資料表範圍內，根據已定義的欄位搜尋並回傳找到的資料行中，位於回傳資料欄號的資料。如果沒有找到資料則會回傳"RError.Warning_ResultNotFound"。
-        /// </summary>
-        /// <param name="DT">資料表</param>
-        /// <param name="TargetText">搜尋目標</param>
-        /// <param name="ColumnToReturn">回傳資料欄號</param>
-        /// <param name="RowInResult">搜尋結果陣列中的索引</param>
-        /// <param name="RowToStartFind">搜尋目標的起始行號</param>
-        /// <param name="ColumnToFind">定義的欄位</param>
-        /// <returns>根據條件所回傳的資料，如果沒找到則會回傳"RError.Warning_ResultNotFound"。</returns>
+        
         public static string Search
             (DataTable DT, string TargetText, int ColumnToReturn, int RowInResult, int RowToStartFind, int ColumnToFind)
         {
            return Search(DT, TargetText, ColumnToReturn, RowInResult, RowToStartFind, ColumnToFind, ColumnToFind);
         }
-
-        /// <summary>
-        /// (全部，多欄) 在整張資料表內，根據已定義的欄位範圍搜尋並回傳找到的資料行中，位於回傳資料欄號的資料。如果沒有找到資料則會回傳"RError.Warning_ResultNotFound"。
-        /// </summary>
-        /// <param name="DT">資料表</param>
-        /// <param name="TargetText">搜尋目標</param>
-        /// <param name="isMultiColumn">是否為多欄搜尋</param>
-        /// <param name="ColumnToReturn">回傳資料欄號</param>
-        /// <param name="RowInResult">搜尋結果陣列中的索引</param>
-        /// <param name="ColumnToStartFind">定義的起點欄位</param>
-        /// <param name="ColumnToEndFind">定義的終點欄位</param>
-        /// <returns>根據條件所回傳的資料，如果沒找到則會回傳"RError.Warning_ResultNotFound"。</returns>
-        public static string Search
-            (DataTable DT, string TargetText, bool isMultiColumn, int ColumnToReturn, int RowInResult, int ColumnToStartFind, int ColumnToEndFind)
+        
+        public static string Search (DataTable DT, string TargetText, bool isMultiColumn, int ColumnToReturn, int RowInResult, int ColumnToStartFind, int ColumnToEndFind)
         {
             if (isMultiColumn)
             {
@@ -239,31 +201,13 @@ namespace SAOCR_Data_Manager
                 throw new ArgumentException(RError.Error_WrongFindDataMethodCalled);
             }
         }
-
-        /// <summary>
-        /// (全部，單欄) 在整張資料表內，根據已定義的欄位搜尋並回傳找到的資料行中，位於回傳資料欄號的資料。如果沒有找到資料則會回傳"RError.Warning_ResultNotFound"。
-        /// </summary>
-        /// <param name="DT">資料表</param>
-        /// <param name="TargetText">搜尋目標</param>
-        /// <param name="ColumnToReturn">回傳資料欄號</param>
-        /// <param name="RowInResult">搜尋結果陣列中的索引</param>
-        /// <param name="ColumnToFind">定義的欄位</param>
-        /// <returns>根據條件所回傳的資料，如果沒找到則會回傳"RError.Warning_ResultNotFound"。</returns>
-        public static string Search
-            (DataTable DT, string TargetText, int ColumnToReturn, int RowInResult, int ColumnToFind)
+        
+        public static string Search(DataTable DT, string TargetText, int ColumnToReturn, int RowInResult, int ColumnToFind)
         {
             return Search(DT, TargetText, ColumnToReturn, RowInResult, 0, ColumnToFind, ColumnToFind);
         }
-
-        /// <summary>
-        /// (全部，單欄) 在整張資料表內，根據已定義的欄位搜尋是否存在指定文字。
-        /// </summary>
-        /// <param name="DT">目標資料表</param>
-        /// <param name="TargetText">搜尋目標文字</param>
-        /// <param name="Column">定義的欄位</param>
-        /// <returns>根據條件所回傳的資料，如果沒找到則會回傳"RError.Warning_ResultNotFound"。</returns>
-        public static bool Search
-            (DataTable DT, string TargetText, int Column)
+        
+        public static bool Search(DataTable DT, string TargetText, int Column)
         {
             if (Search(DT, TargetText, Column, 0, 0, Column, Column) != RWarning.W_0xC0000002.Replace("\\n", " "))
             {
@@ -273,17 +217,8 @@ namespace SAOCR_Data_Manager
                 return false;
             }
         }
-
-        /// <summary>
-        /// (全部，多欄) 在整張資料表內，根據已定義的欄位範圍搜尋是否存在指定文字。
-        /// </summary>
-        /// <param name="DT">目標資料表</param>
-        /// <param name="TargetText">搜尋目標文字</param>
-        /// <param name="ColumnToStartFind">定義的起點欄位</param>
-        /// <param name="ColumnToEndFind">定義的終點欄位</param>
-        /// <returns>根據條件所回傳的資料，如果沒找到則會回傳"RError.Warning_ResultNotFound"。</returns>
-        public static bool Search
-            (DataTable DT, string TargetText, int ColumnToStartFind, int ColumnToEndFind)
+        
+        public static bool Search(DataTable DT, string TargetText, int ColumnToStartFind, int ColumnToEndFind)
         {
             if (Search(DT, TargetText, ColumnToStartFind, 0, 0, ColumnToStartFind, ColumnToEndFind) != RWarning.W_0xC0000002.Replace("\\n", " "))
             {
@@ -298,7 +233,7 @@ namespace SAOCR_Data_Manager
 
         #region Specified
         /// <summary>
-        /// (終止字串，指定起終) 擷取指定範圍的資料。
+        /// (主函式) 擷取指定範圍的資料。
         /// </summary>
         /// <param name="OrgDT">原始資料表</param>
         /// <param name="StartStack">起始位置</param>
@@ -317,7 +252,7 @@ namespace SAOCR_Data_Manager
             {
                 EndStack = DataAPI.EndStack(OrgDT, StartStack, EndKey, EndKeyColumnLocation);
             }
-            string StackCondition = "Convert(Stack, 'System.Int32') >= " + StartStack + " AND Convert(Stack, 'System.Int32') <= " + (EndStack + StartStack - 1);
+            string StackCondition = "Convert(" + Const.NUM_COLUMN + ", 'System.Int32') >= " + StartStack + " AND Convert(" + Const.NUM_COLUMN + ", 'System.Int32') <= " + EndStack;
             if (AdditionalCommand != null)
             {
                 StackCondition += " AND " + AdditionalCommand;
@@ -331,15 +266,18 @@ namespace SAOCR_Data_Manager
 
             int DTColumnsCount = DT.Columns.Count;
 
-            foreach (T item in ColumnToRemove)
+            if (ColumnToRemove != null)
             {
-                if (item.GetType() == typeof(int))
+                foreach (T item in ColumnToRemove)
                 {
-                    DT.Columns.RemoveAt(Convert.ToInt32(item));
-                }
-                else if (item.GetType() == typeof(string))
-                {
-                    DT.Columns.Remove(item.ToString());
+                    if (item.GetType() == typeof(int))
+                    {
+                        DT.Columns.RemoveAt(Convert.ToInt32(item));
+                    }
+                    else if (item.GetType() == typeof(string))
+                    {
+                        DT.Columns.Remove(item.ToString());
+                    }
                 }
             }
 
@@ -376,7 +314,7 @@ namespace SAOCR_Data_Manager
         }
 
         /// <summary>
-        /// (終止字串，指定起終) 擷取指定範圍的資料。
+        /// (終止位置，指定起終) 擷取指定範圍的資料。
         /// </summary>
         /// <param name="OrgDT">原始資料表</param>
         /// <param name="StartStack">起始位置</param>
@@ -389,7 +327,7 @@ namespace SAOCR_Data_Manager
         }
 
         /// <summary>
-        /// (終止字串，指定起終) 擷取指定範圍的資料。
+        /// (無終點，指定起點) 擷取指定範圍的資料。
         /// </summary>
         /// <param name="OrgDT">原始資料表</param>
         /// <param name="StartStack">起始位置</param>

@@ -209,7 +209,7 @@
     <comment>PCharacterData</comment>
   </data>
   <data name="W_0xC0011003" xml:space="preserve">
-    <value>警告代碼 0xC0011003\n\n</value>
+    <value>警告代碼 0xC0011003\n\n請先開啟至少一個頁籤再查詢角色資料。</value>
     <comment>PCharacterData</comment>
   </data>
   <data name="W_0xC0011004" xml:space="preserve">
@@ -419,5 +419,9 @@
   <data name="W_0xC0000009" xml:space="preserve">
     <value>警告代碼 0xC0000009\n\n</value>
     <comment>DataAPI</comment>
+  </data>
+  <data name="W_0xC002B001" xml:space="preserve">
+    <value>警告代碼 0xC002B001\n\n在武器特效字典中找不到對應的翻譯，故目前以日文顯示。</value>
+    <comment>WeaponData</comment>
   </data>
 </root>

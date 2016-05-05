@@ -16,6 +16,7 @@ namespace SAOCR_Data_Manager
         public int Count;
         public int FreezeCount;
         public int Interval;
+        public int FreezeCounter;
         public bool Gate;
         public bool Freezing;
     }
@@ -286,9 +287,11 @@ namespace SAOCR_Data_Manager
                 #endregion
             } else if (TimerO.Freezing)
             {
-                if (((TimerO.Count % TimerO.FreezeCount == 0) && TimerO.Gate) || Extent.isEmptyString(MarqueeText))
+                TimerO.FreezeCounter++;
+                if ((TimerO.FreezeCounter >= TimerO.FreezeCount && TimerO.Gate) || Extent.isEmptyString(MarqueeText))
                 {
                     TimerO.Freezing = false;
+                    TimerO.FreezeCounter = 0;
                 }
             }
         }

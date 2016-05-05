@@ -101,7 +101,7 @@ namespace SAOCR_Data_Manager
         /// <returns>空字串結果。</returns>
         public static bool isEmptyString(string str)
         {
-            if (str == null || str == "")
+            if (str == null || str == "" || str == RWarning.W_0xC0000002.Replace("\\n", " ") || str == RWarning.W_0xC0000003.Replace("\\n", " "))
             {
                 return true;
             }

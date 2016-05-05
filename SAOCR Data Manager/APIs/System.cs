@@ -71,8 +71,8 @@ namespace SAOCR_Data_Manager
         {
             ActiveForm.Top = Y + Pos.TOP - Pos.Y;
             ActiveForm.Left = X + Pos.LEFT - Pos.X;
-            Pos.LEFT = FMain.ActiveForm.Left;
-            Pos.TOP = FMain.ActiveForm.Top;
+            Pos.LEFT = ActiveForm.Left;
+            Pos.TOP = ActiveForm.Top;
         }
 
         /// <summary>

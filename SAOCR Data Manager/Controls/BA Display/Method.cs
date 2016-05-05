@@ -51,20 +51,25 @@ namespace SAOCR_Data_Manager
                 Label[] BA1s = { Power1, Heal1, Description1.TextLabel, Score1, Series1st1, Series2nd1 };
                 Label[] BA2s = { Power2, Heal2, Description2.TextLabel, Score2, Series1st2, Series2nd2 };
                 Label[] BA3s = { Power3, Heal3, Description3.TextLabel, Score3, Series1st3, Series2nd3 };
+                MarqueeableLabel[] BADes = { Description1, Description2, Description3 };
                 Label[][] BAs = { BA1s, BA2s, BA3s };
                 for (int i = 0; i < Const.Count.BA; i++)
                 {
                     string[] BAData = new string[9];
+                    EBADisplayStatus EDS = EBADisplayStatus.Chinese;
                     switch (i)
                     {
                         case 0:
                             BAData = Data.BA.BA1.GetArray();
+                            EDS = Data.BA.BA1.GetDisplayStatus();
                             break;
                         case 1:
                             BAData = Data.BA.BA2.GetArray();
+                            EDS = Data.BA.BA2.GetDisplayStatus();
                             break;
                         case 2:
                             BAData = Data.BA.BA3.GetArray();
+                            EDS = Data.BA.BA3.GetDisplayStatus();
                             break;
                     }
 
@@ -75,6 +80,17 @@ namespace SAOCR_Data_Manager
                             if (!TextTranslate)
                             {
                                 BAs[i][j].Text = BAData[(int)EBADataInfo.DesJP];
+                                continue;
+                            } else
+                            {
+                                BAs[i][j].Text = BAData[(int)EBADataInfo.DesCH];
+                                if (EDS == EBADisplayStatus.ForceJP)
+                                {
+                                    BADes[i].BackColor = Color.FromArgb((int)EBackColorAlpha.Red);
+                                } else
+                                {
+                                    BADes[i].BackColor = Color.FromArgb((int)EBackColorAlpha.Grey70);
+                                }
                                 continue;
                             }
                         }

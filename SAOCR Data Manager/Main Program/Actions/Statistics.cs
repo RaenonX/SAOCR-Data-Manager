@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using SAOCR_Data_Manager.Resources.Forms;
 using System.Data;
 using SAOCR_Data_Manager.Resources.Message;
+using System.Diagnostics;
 
 namespace SAOCR_Data_Manager
 {
@@ -12,14 +13,14 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                int ParamCount = 0, InfoCount = 0;
+                int CharaCount = 0;
                 DataRow[] Param = DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID, Const.IS_ORG_CHARA_VERIFY_AT_C1);
                 if (Param != null)
                 {
-                    ParamCount = Param.Length;
+                    CharaCount = Param.Length;
                 }
 
-                SS_Character.Text = RStatistics.Layout_CharacterRelated + RStatistics.Message_CharaSamples1 + ParamCount + RStatistics.Message_CharaSamples2 + InfoCount + RStatistics.Message_CharaSamples3;
+                SS_Character.Text = RStatistics.Layout_CharacterRelated + RStatistics.Message_CharaSamples1 + CharaCount + RStatistics.Message_CharaSamples2;
 
                 try
                 {
@@ -30,11 +31,17 @@ namespace SAOCR_Data_Manager
                     for (int i = 0; i < Const.Count.WEAPON_CATEGORY; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
-                        int Count = DataAPI.Search((i + 1).ToString(), DT.Source, TitleP.Start[(int)DataTitle.CharacterParams], TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.WEAPON).Length;
+                        int Count = 0;
+
+                        DataRow[] Result = DataAPI.Search((i + 1).ToString(), DT.Source, TitleP.Start[(int)DataTitle.CharacterParams], TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.WEAPON, true, Const.IS_ORG_CHARA_IN_PARAMS);
+                        if (Result != null)
+                        {
+                            Count = Result.Length;
+                        }
 
                         LVI.SubItems.Add((i + 1).ToString());
                         LVI.SubItems.Add(EnumTranslator.WeaponT((EWeapon)(i + 1)));
-                        LVI.SubItems.Add(((double)Count / ParamCount).ToString("0.00%"));
+                        LVI.SubItems.Add(((double)Count / CharaCount).ToString("0.00%"));
                         SS_CharaWeaponUsingRate.Items.Add(LVI);
                     }
                     #endregion
@@ -54,11 +61,11 @@ namespace SAOCR_Data_Manager
                     for (int i = 0; i < Const.Count.ELEMENT_CATEGORY; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
-                        int Count = DataAPI.Search((i + 1).ToString(), DT.Source, TitleP.Start[(int)DataTitle.CharacterParams], TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.ELEMENT).Length;
+                        int Count = DataAPI.Search((i + 1).ToString(), DT.Source, TitleP.Start[(int)DataTitle.CharacterParams], TitleP.End[(int)DataTitle.CharacterParams], (int)EParamSecCol.ELEMENT, Const.IS_ORG_CHARA_IN_PARAMS).Length;
 
                         LVI.SubItems.Add((i + 1).ToString());
                         LVI.SubItems.Add(EnumTranslator.ElementT((EElement)(i + 1)));
-                        LVI.SubItems.Add(((double)Count / ParamCount).ToString("0.00%"));
+                        LVI.SubItems.Add(((double)Count / CharaCount).ToString("0.00%"));
                         SS_CharaElementRate.Items.Add(LVI);
                     }
                     #endregion
@@ -80,7 +87,7 @@ namespace SAOCR_Data_Manager
                         ListViewItem LVI = new ListViewItem();
                         int Count = 0;
 
-                        foreach (DataRow DR in DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID))
+                        foreach (DataRow DR in DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID, Const.IS_ORG_CHARA_VERIFY_AT_C1))
                         {
                             if (DR[(int)ENameSecCol.ID_ORG].ToString().Substring(0, 1) == (i + 1).ToString())
                             {
@@ -89,7 +96,7 @@ namespace SAOCR_Data_Manager
                         }
                         LVI.SubItems.Add((i + 1).ToString());
                         LVI.SubItems.Add(EnumTranslator.SceneT((EScene)(i + 1)));
-                        LVI.SubItems.Add(((double)Count / InfoCount).ToString("0.00%"));
+                        LVI.SubItems.Add(((double)Count / CharaCount).ToString("0.00%"));
                         SS_CharaSceneRate.Items.Add(LVI);
                     }
                     #endregion
@@ -112,7 +119,7 @@ namespace SAOCR_Data_Manager
                         string CurrentCode = Convert.ToInt32(DT.CharaSeries.Rows[i][(int)ECharaSeriesCode.CODE]).ToString("D3");
 
                         int Count = 0;
-                        DataRow[] DRs = DataAPI.Search(CurrentCode, DT.Source, TitleP.Start[(int)DataTitle.CharacterAwakedID], TitleP.End[(int)DataTitle.CharacterAwakedID], (int)ECharaIDCol.ORG_ID, true);
+                        DataRow[] DRs = DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID, Const.SPECIFIED_ON_SERIES_AT_C1_1 + CurrentCode + Const.SPECIFIED_ON_SERIES_AT_C1_2 + " AND " + Const.IS_ORG_CHARA_VERIFY_AT_C1);
                         if (DRs != null)
                         {
                             Count = DRs.Length;
@@ -120,8 +127,9 @@ namespace SAOCR_Data_Manager
 
                         LVI.SubItems.Add(CurrentCode);
                         LVI.SubItems.Add(DataAPI.Search(DT.CharaSeries, CurrentCode, (int)ECharaSeriesCode.CH_NAME, 0, (int)ECharaSeriesCode.CODE));
-                        LVI.SubItems.Add(((double)Count / InfoCount).ToString("0.00%"));
+                        LVI.SubItems.Add(((double)Count / CharaCount).ToString("0.00%"));
                         SS_CharaSeriesRate.Items.Add(LVI);
+                        Application.DoEvents();
                     }
                     #endregion
                 }
@@ -142,7 +150,7 @@ namespace SAOCR_Data_Manager
                         ListViewItem LVI = new ListViewItem();
                         int Count = 0;
 
-                        foreach (DataRow DR in DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID_ORG))
+                        foreach (DataRow DR in DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID_ORG, Const.IS_ORG_CHARA_VERIFY_AT_C1))
                         {
                             if (DR[(int)ENameSecCol.ID_ORG].ToString().Substring(6, 1) == (i + 1).ToString())
                             {
@@ -150,7 +158,7 @@ namespace SAOCR_Data_Manager
                             }
                         }
                         LVI.SubItems.Add((i + 1).ToString());
-                        LVI.SubItems.Add(((double)Count / InfoCount).ToString("0.00%"));
+                        LVI.SubItems.Add(((double)Count / CharaCount).ToString("0.00%"));
                         SS_CharaRarityRate.Items.Add(LVI);
                     }
                     #endregion
@@ -196,6 +204,43 @@ namespace SAOCR_Data_Manager
                 }
                 catch (Exception ex)
                 {
+                    SystemAPI.Error(RError.E_0x0002A008, ex);
+                    throw;
+                }
+
+                try
+                {
+                    Status(RStatistics.Log_Calculating1 + RStatistics.Layout_MonsterRelated + RStatistics.Log_Calculating2 + RStatistics.Layout_MonsterHPRate + RStatistics.Log_Calculating3);
+                    Application.DoEvents();
+                    #region 怪物血量占比
+                    DataTable SDT = new DataTable();
+                    SDT = DataAPI.Specified<int>(DT.Source, TitleP.Start[(int)DataTitle.MonsterParams] + 1, TitleP.End[(int)DataTitle.MonsterParams], null, "Monster Parameters");
+
+                    InitializeList(InitItem.MonsterHPRate);
+                    for (int i = 0; i < Const.Count.MONSTER_HP_K; i++)
+                    {
+                        ListViewItem LVI = new ListViewItem();
+                        int Count = 0;
+                        int MinHP = i * 10000, MaxHP = ((i + 1) * 10000) - 1;
+
+                        string AddtFilter = "Convert(C" + (int)EMonsterSecCol.HP + ", 'System.Int32') >= " + MinHP.ToString() + " AND Convert(C" + (int)EMonsterSecCol.HP + ", 'System.Int32') <= " + MaxHP.ToString();
+
+                        DataRow[] Result = DataAPI.Search("", SDT, TitleP.Start[(int)DataTitle.MonsterParams], TitleP.End[(int)DataTitle.MonsterParams], (int)EMonsterSecCol.HP, AddtFilter);
+
+                        if (Result != null)
+                        {
+                            Count = Result.Length;
+                        }
+
+                        LVI.SubItems.Add(MinHP.ToString());
+                        LVI.SubItems.Add(MaxHP.ToString());
+                        LVI.SubItems.Add(((double)Count / TotalCount).ToString("0.00%"));
+                        SS_MonsterHPRate.Items.Add(LVI);
+                    }
+                    #endregion
+                }
+                catch (Exception ex)
+                {
                     SystemAPI.Error(RError.E_0x0002A009, ex);
                     throw;
                 }
@@ -204,7 +249,7 @@ namespace SAOCR_Data_Manager
             }
             catch (Exception ex)
             {
-                SystemAPI.Error(RError.E_0x0002A008, ex);
+                SystemAPI.Error(RError.E_0x0002A007, ex);
                 throw;
             }
         }

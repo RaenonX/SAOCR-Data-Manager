@@ -352,8 +352,8 @@ namespace SAOCR_Data_Manager
                     case InitItem.MonsterHPRate:
                         SS_MonsterHPRate.Clear();
                         SS_MonsterHPRate.Columns.Add(Const.ColName.N_A, 0);
-                        SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MIN, 80, HorizontalAlignment.Left);
-                        SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MAX, 80, HorizontalAlignment.Left);
+                        SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MIN, 100, HorizontalAlignment.Left);
+                        SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MAX, 100, HorizontalAlignment.Left);
                         SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_RATE, 100, HorizontalAlignment.Left);
                         break;
                 }
@@ -606,6 +606,10 @@ namespace SAOCR_Data_Manager
                 DT.LSDict = new DataTable();
                 InitializeDataTable(ref DT.LSDict, Const.Column.LS_DICT, "LS Dictionary");
                 DataAPI.LoadCSV(ref DT.LSDict, Const.Path.LS_DICT, "\t");
+
+                DT.WeaponEff = new DataTable();
+                InitializeDataTable(ref DT.WeaponEff, Const.Column.WEAPON_EFFECT, "Weapon Effect");
+                DataAPI.LoadCSV(ref DT.WeaponEff, Const.Path.WEAPON_EFFECT, "\t");
             }
             catch (Exception e)
             {
