@@ -28,6 +28,7 @@ namespace SAOCR_Data_Manager
             public const int FREEZE_CHANGE_TIME = 2000;
             public const int MARQUEE_FREEZE_TIME = 2000;
             public const int MARQUEE_MOVE_INTERVAL = 10;
+            public const int RELEASE_DATE_UNKNOWN_YEAR = 1800;
         }
 
         public static class AnnouncementKeyword
@@ -81,6 +82,8 @@ namespace SAOCR_Data_Manager
             public const string LS_DICT = "Dimension/LSDict.txt";
             public const string PATH_DICT = "Dimension/PathDict.txt";
             public const string WEAPON_EFFECT = "Dimension/WPNEffDict.txt";
+            public const string CHARA_HTML_TEMPLATE = "Dimension/CharaHTMLTemplate.txt";
+            public const string CHARA_HTML_OUTPUT = "Dimension/CharaHTMLOutput.txt";
             public const string ANNOUNCEMENT = "Properties/Announcement.txt";
             public const string SCREENSHOT = "ScreenShot";
             public const string SCREENSHOT_NAME = "/Screenshot@";
@@ -117,7 +120,7 @@ namespace SAOCR_Data_Manager
             public const int CHARA_SERIES = 4;
             public const int CHARA_DIM = 12;
             public const int BA_DICT = 7;
-            public const int LS_DICT = 13;
+            public const int LS_DICT = 15;
             public const int PATH_DICT = 2;
             public const int WEAPON_EFFECT = 2;
         }

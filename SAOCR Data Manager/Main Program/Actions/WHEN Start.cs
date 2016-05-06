@@ -64,7 +64,6 @@ namespace SAOCR_Data_Manager
                     return;
                 }
                 DT.CharaMix = DataAPI.MergeWithKey(DT.CharaDict, DT.CharaDim, (int)ECharaDictCode.ID, (int)ECharaDimCode.ID);
-                ST_ReadTtile_Click(this, EventArgs.Empty);
 
                 if (!LoadBADictionary())
                 {

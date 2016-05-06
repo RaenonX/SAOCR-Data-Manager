@@ -89,7 +89,7 @@ namespace SAOCR_Data_Manager
 
                         foreach (DataRow DR in DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID, Const.IS_ORG_CHARA_VERIFY_AT_C1))
                         {
-                            if (DR[(int)ENameSecCol.ID_ORG].ToString().Substring(0, 1) == (i + 1).ToString())
+                            if (DR[(int)ENameSecCol.ID].ToString().Substring(0, 1) == (i + 1).ToString())
                             {
                                 Count++;
                             }
@@ -150,9 +150,9 @@ namespace SAOCR_Data_Manager
                         ListViewItem LVI = new ListViewItem();
                         int Count = 0;
 
-                        foreach (DataRow DR in DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID_ORG, Const.IS_ORG_CHARA_VERIFY_AT_C1))
+                        foreach (DataRow DR in DataAPI.Search("", DT.Source, TitleP.Start[(int)DataTitle.CharacterNameAndCV], TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID, Const.IS_ORG_CHARA_VERIFY_AT_C1))
                         {
-                            if (DR[(int)ENameSecCol.ID_ORG].ToString().Substring(6, 1) == (i + 1).ToString())
+                            if (DR[(int)ENameSecCol.ID].ToString().Substring(6, 1) == (i + 1).ToString())
                             {
                                 Count++;
                             }

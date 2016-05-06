@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.Panel = new System.Windows.Forms.Panel();
+            this.Border = new System.Windows.Forms.Panel();
+            this.Favorite = new SAOCR_Data_Manager.Button_SE_();
+            this.CharacterName = new SAOCR_Data_Manager.Controls.BreezeLabel();
             this.LS = new SAOCR_Data_Manager.LsDisplay();
             this.BasicInfo = new SAOCR_Data_Manager.Controls.Initialize_Properties.BasicInfo();
             this.Param = new SAOCR_Data_Manager.ParamDisplay();
             this.BA = new SAOCR_Data_Manager.BaDisplay();
-            this.Border = new System.Windows.Forms.Panel();
-            this.Favorite = new SAOCR_Data_Manager.Button_SE_();
-            this.CharacterName = new SAOCR_Data_Manager.Controls.BreezeLabel();
             this.Panel.SuspendLayout();
             this.Border.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +53,56 @@
             this.Panel.Padding = new System.Windows.Forms.Padding(5);
             this.Panel.Size = new System.Drawing.Size(746, 564);
             this.Panel.TabIndex = 2;
+            // 
+            // Border
+            // 
+            this.Border.Controls.Add(this.Favorite);
+            this.Border.Controls.Add(this.CharacterName);
+            this.Border.Controls.Add(this.Panel);
+            this.Border.Location = new System.Drawing.Point(0, 0);
+            this.Border.Name = "Border";
+            this.Border.Size = new System.Drawing.Size(748, 601);
+            this.Border.TabIndex = 27;
+            // 
+            // Favorite
+            // 
+            this.Favorite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.Favorite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Favorite.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Favorite.ButtonBackgroundImage = global::SAOCR_Data_Manager.Properties.Resources.abc_ic_menu_paste_mtrl_am_alpha;
+            this.Favorite.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Favorite.ButtonColor = System.Drawing.Color.White;
+            this.Favorite.ButtonEnabled = false;
+            this.Favorite.ButtonImage = null;
+            this.Favorite.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Favorite.ButtonText = "";
+            this.Favorite.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.Favorite.Location = new System.Drawing.Point(711, 1);
+            this.Favorite.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
+            this.Favorite.Name = "Favorite";
+            this.Favorite.Size = new System.Drawing.Size(36, 36);
+            this.Favorite.TabIndex = 27;
+            // 
+            // CharacterName
+            // 
+            this.CharacterName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CharacterName.ChangeTime = 2000;
+            this.CharacterName.ColorBegin = System.Drawing.Color.Empty;
+            this.CharacterName.ColorEnd = System.Drawing.Color.Empty;
+            this.CharacterName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CharacterName.Font = new System.Drawing.Font("Meiryo", 17F);
+            this.CharacterName.ForeColor = System.Drawing.Color.White;
+            this.CharacterName.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CharacterName.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CharacterName.LBorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CharacterName.LFont = new System.Drawing.Font("Meiryo", 17F);
+            this.CharacterName.LForeColor = System.Drawing.Color.White;
+            this.CharacterName.Location = new System.Drawing.Point(1, 1);
+            this.CharacterName.LText = "";
+            this.CharacterName.Margin = new System.Windows.Forms.Padding(3, 4, 0, 4);
+            this.CharacterName.Name = "CharacterName";
+            this.CharacterName.Size = new System.Drawing.Size(710, 36);
+            this.CharacterName.TabIndex = 28;
             // 
             // LS
             // 
@@ -102,55 +152,6 @@
             this.BA.Name = "BA";
             this.BA.Size = new System.Drawing.Size(558, 234);
             this.BA.TabIndex = 1;
-            // 
-            // Border
-            // 
-            this.Border.Controls.Add(this.Favorite);
-            this.Border.Controls.Add(this.CharacterName);
-            this.Border.Controls.Add(this.Panel);
-            this.Border.Location = new System.Drawing.Point(0, 0);
-            this.Border.Name = "Border";
-            this.Border.Size = new System.Drawing.Size(748, 601);
-            this.Border.TabIndex = 27;
-            // 
-            // Favorite
-            // 
-            this.Favorite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.Favorite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Favorite.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Favorite.ButtonBackgroundImage = global::SAOCR_Data_Manager.Properties.Resources.abc_ic_menu_paste_mtrl_am_alpha;
-            this.Favorite.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Favorite.ButtonColor = System.Drawing.Color.White;
-            this.Favorite.ButtonEnabled = false;
-            this.Favorite.ButtonImage = null;
-            this.Favorite.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Favorite.ButtonText = "";
-            this.Favorite.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.Favorite.Location = new System.Drawing.Point(711, 1);
-            this.Favorite.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
-            this.Favorite.Name = "Favorite";
-            this.Favorite.Size = new System.Drawing.Size(36, 36);
-            this.Favorite.TabIndex = 27;
-            // 
-            // CharacterName
-            // 
-            this.CharacterName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CharacterName.ChangeTime = 2000;
-            this.CharacterName.ColorBegin = System.Drawing.Color.Empty;
-            this.CharacterName.ColorEnd = System.Drawing.Color.Empty;
-            this.CharacterName.Font = new System.Drawing.Font("Meiryo", 17F);
-            this.CharacterName.ForeColor = System.Drawing.Color.White;
-            this.CharacterName.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CharacterName.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CharacterName.LBorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CharacterName.LFont = new System.Drawing.Font("Meiryo", 17F);
-            this.CharacterName.LForeColor = System.Drawing.Color.White;
-            this.CharacterName.Location = new System.Drawing.Point(1, 1);
-            this.CharacterName.LText = "";
-            this.CharacterName.Margin = new System.Windows.Forms.Padding(3, 4, 0, 4);
-            this.CharacterName.Name = "CharacterName";
-            this.CharacterName.Size = new System.Drawing.Size(710, 36);
-            this.CharacterName.TabIndex = 28;
             // 
             // CharaDataDisplay
             // 

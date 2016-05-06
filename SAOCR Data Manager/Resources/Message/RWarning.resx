@@ -185,11 +185,11 @@
     <comment>CharaData</comment>
   </data>
   <data name="W_0xC0007007" xml:space="preserve">
-    <value>警告代碼 0xC0007007\n\n因為在BA字典中沒有查詢到本BA的中文翻譯，故以日文顯示。</value>
+    <value>警告代碼 0xC0007007\n\n</value>
     <comment>CharaData</comment>
   </data>
   <data name="W_0xC0007008" xml:space="preserve">
-    <value>警告代碼 0xC0007008\n\n因為在隊長技字典中沒有查詢到本隊長技相關資訊的翻譯，故以日文顯示。</value>
+    <value>警告代碼 0xC0007008\n\n</value>
     <comment>CharaData</comment>
   </data>
   <data name="W_0xC0007009" xml:space="preserve">

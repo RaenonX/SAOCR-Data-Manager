@@ -238,4 +238,8 @@
     <value>狀態代碼 0xF0027000\n\n檔案下載的儲存路徑已更動。更動後的路徑為: </value>
     <comment>PConfig</comment>
   </data>
+  <data name="S_0xF0027001" xml:space="preserve">
+    <value>狀態代碼 0xF0027001\n\n資源重新讀取完畢。</value>
+    <comment>PConfig</comment>
+  </data>
 </root>

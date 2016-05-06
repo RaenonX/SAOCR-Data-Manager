@@ -196,10 +196,6 @@ namespace SAOCR_Data_Manager
                         }
                         break;
                 }
-                
-
-                
-               
             }
         }
 

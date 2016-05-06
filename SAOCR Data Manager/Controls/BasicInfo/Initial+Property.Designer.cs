@@ -37,6 +37,7 @@
             this.Picture = new System.Windows.Forms.PictureBox();
             this.IntroText = new System.Windows.Forms.Label();
             this.Intro = new System.Windows.Forms.RichTextBox();
+            this.FolkName = new SAOCR_Data_Manager.MarqueeableLabel();
             this.FolkNameText = new System.Windows.Forms.Label();
             this.GetMethod = new System.Windows.Forms.Label();
             this.GetMethodText = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.ENText = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.EN = new System.Windows.Forms.Label();
-            this.FolkName = new SAOCR_Data_Manager.MarqueeableLabel();
             this.GP_BA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
             this.SuspendLayout();
@@ -192,8 +192,29 @@
             this.Intro.TabIndex = 44;
             this.Intro.Text = "";
             // 
+            // FolkName
+            // 
+            this.FolkName.Direction = MarqueeDirection.Horizontal;
+            this.FolkName.EnableMarquee = true;
+            this.FolkName.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.FolkName.FreezeTime = 2000;
+            this.FolkName.LabelSize = new System.Drawing.Size(386, 30);
+            this.FolkName.LeftDistance = 5;
+            this.FolkName.LForeColor = System.Drawing.Color.White;
+            this.FolkName.Location = new System.Drawing.Point(80, 173);
+            this.FolkName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FolkName.MarqueeText = "";
+            this.FolkName.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.FolkName.MoveDifferenceEachTime = 1;
+            this.FolkName.MoveInterval = 15;
+            this.FolkName.Name = "FolkName";
+            this.FolkName.OverBorderDistance = 15;
+            this.FolkName.Size = new System.Drawing.Size(386, 30);
+            this.FolkName.TabIndex = 43;
+            // 
             // FolkNameText
             // 
+            this.FolkNameText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FolkNameText.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.FolkNameText.Location = new System.Drawing.Point(6, 173);
             this.FolkNameText.Margin = new System.Windows.Forms.Padding(3);
@@ -215,6 +236,7 @@
             // 
             // GetMethodText
             // 
+            this.GetMethodText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GetMethodText.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.GetMethodText.Location = new System.Drawing.Point(306, 137);
             this.GetMethodText.Margin = new System.Windows.Forms.Padding(3);
@@ -236,6 +258,7 @@
             // 
             // ReleaseDateText
             // 
+            this.ReleaseDateText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ReleaseDateText.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.ReleaseDateText.Location = new System.Drawing.Point(6, 137);
             this.ReleaseDateText.Margin = new System.Windows.Forms.Padding(3);
@@ -417,26 +440,6 @@
             this.EN.Size = new System.Drawing.Size(153, 30);
             this.EN.TabIndex = 26;
             this.EN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // FolkName
-            // 
-            this.FolkName.Direction = MarqueeDirection.Horizontal;
-            this.FolkName.EnableMarquee = true;
-            this.FolkName.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.FolkName.FreezeTime = 2000;
-            this.FolkName.LabelSize = new System.Drawing.Size(386, 30);
-            this.FolkName.LeftDistance = 5;
-            this.FolkName.LForeColor = System.Drawing.Color.White;
-            this.FolkName.Location = new System.Drawing.Point(80, 173);
-            this.FolkName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.FolkName.MarqueeText = "";
-            this.FolkName.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.FolkName.MoveDifferenceEachTime = 1;
-            this.FolkName.MoveInterval = 15;
-            this.FolkName.Name = "FolkName";
-            this.FolkName.OverBorderDistance = 15;
-            this.FolkName.Size = new System.Drawing.Size(386, 30);
-            this.FolkName.TabIndex = 43;
             // 
             // BasicInfo
             // 

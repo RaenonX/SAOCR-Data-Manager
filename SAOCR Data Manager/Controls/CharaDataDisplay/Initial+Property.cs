@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SAOCR_Data_Manager.Resources.Message;
+using Microsoft.VisualBasic.Devices;
 
 namespace SAOCR_Data_Manager.Forms
 {
@@ -15,8 +16,10 @@ namespace SAOCR_Data_Manager.Forms
     {
         public delegate void RefreshFavorite(object sender, EventArgs e);
         public event EventHandler FavoriteAdded, FavoriteRemoved, LoadCompleted, FavoriteSaved;
-        public bool isFavorite;
-        CharaData LoadedData;
+        public bool isFavorite, HTMLMade;
+        string ToWrite = "";
+        CharaData CDT;
+        Computer My = new Computer();
 
         public CharaDataDisplay()
         {
@@ -41,6 +44,8 @@ namespace SAOCR_Data_Manager.Forms
                 Panel.MouseEnter += Panel_MouseEnter;
                 Favorite.ButtonClick += Favorite_ButtonClick;
                 SizeChanged += CharaDataDisplay_SizeChanged;
+                CharacterName.LabelClick += CharacterName_Click;
+                CharacterName.LabelDoubleClick += HTML_ButtonClick;
             }
             catch (Exception e)
             {
@@ -48,7 +53,7 @@ namespace SAOCR_Data_Manager.Forms
                 throw;
             }
         }
-
+       
         private void InitializeUIText()
         {
             try

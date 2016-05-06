@@ -123,4 +123,25 @@
   <data name="Log_FavoriteDeleted" xml:space="preserve">
     <value>已從我的最愛清單移除。角色ID:</value>
   </data>
+  <data name="Log_HTMLOutputAbort" xml:space="preserve">
+    <value>HTML輸出中斷，角色ID:</value>
+  </data>
+  <data name="Log_HTMLOutputBegin" xml:space="preserve">
+    <value>開始輸出HTML，角色ID: </value>
+  </data>
+  <data name="Log_HTMLOutputCompleted" xml:space="preserve">
+    <value>HTML輸出完畢，角色ID:</value>
+  </data>
+  <data name="Log_NameCopied" xml:space="preserve">
+    <value>角色名稱已複製。角色ID: </value>
+  </data>
+  <data name="Log_NameCopyAborted" xml:space="preserve">
+    <value>角色名稱複製中斷。角色ID:</value>
+  </data>
+  <data name="Message_HTMLOutputComplete1" xml:space="preserve">
+    <value>HTML輸出完成。角色ID: </value>
+  </data>
+  <data name="Message_HTMLOutputComplete2" xml:space="preserve">
+    <value>，輸出資料已經複製到剪貼簿了。</value>
+  </data>
 </root>

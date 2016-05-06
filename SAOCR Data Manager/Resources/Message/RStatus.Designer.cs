@@ -367,6 +367,15 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
+        ///   查詢類似 狀態代碼 0xF0027001\n\n資源重新讀取完畢。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0027001 {
+            get {
+                return ResourceManager.GetString("S_0xF0027001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 已達到搜尋資料的最末端。 的當地語系化字串。
         /// </summary>
         internal static string Warning_EndOfSerachResult {

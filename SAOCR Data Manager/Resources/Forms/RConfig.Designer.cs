@@ -340,11 +340,11 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 尋找資料位置 的當地語系化字串。
+        ///   查詢類似 重新讀取資源 的當地語系化字串。
         /// </summary>
-        internal static string Layout_ReadTitle {
+        internal static string Layout_Reload {
             get {
-                return ResourceManager.GetString("Layout_ReadTitle", resourceCulture);
+                return ResourceManager.GetString("Layout_Reload", resourceCulture);
             }
         }
         

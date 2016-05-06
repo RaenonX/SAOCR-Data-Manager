@@ -348,4 +348,28 @@
   <data name="MS_Plant" xml:space="preserve">
     <value>植物種</value>
   </data>
+  <data name="DREG_BA" xml:space="preserve">
+    <value>BA</value>
+  </data>
+  <data name="DREG_LS" xml:space="preserve">
+    <value>隊長技</value>
+  </data>
+  <data name="CT_Aegis" xml:space="preserve">
+    <value>イージス (防禦型)</value>
+  </data>
+  <data name="CT_Force" xml:space="preserve">
+    <value>フォース (攻擊型)</value>
+  </data>
+  <data name="CT_Magius" xml:space="preserve">
+    <value>マギウス (魔法型)</value>
+  </data>
+  <data name="CT_Mebius" xml:space="preserve">
+    <value>メビウス (平均型)</value>
+  </data>
+  <data name="BA_SeriesNull" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="DREG_Info" xml:space="preserve">
+    <value>角色資料</value>
+  </data>
 </root>

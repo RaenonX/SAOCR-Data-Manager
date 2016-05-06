@@ -77,5 +77,68 @@ namespace SAOCR_Data_Manager.Resources.Controls {
                 return ResourceManager.GetString("Log_FavoriteDeleted", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查詢類似 HTML輸出中斷，角色ID: 的當地語系化字串。
+        /// </summary>
+        internal static string Log_HTMLOutputAbort {
+            get {
+                return ResourceManager.GetString("Log_HTMLOutputAbort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 開始輸出HTML，角色ID:  的當地語系化字串。
+        /// </summary>
+        internal static string Log_HTMLOutputBegin {
+            get {
+                return ResourceManager.GetString("Log_HTMLOutputBegin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 HTML輸出完畢，角色ID: 的當地語系化字串。
+        /// </summary>
+        internal static string Log_HTMLOutputCompleted {
+            get {
+                return ResourceManager.GetString("Log_HTMLOutputCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色名稱已複製。角色ID:  的當地語系化字串。
+        /// </summary>
+        internal static string Log_NameCopied {
+            get {
+                return ResourceManager.GetString("Log_NameCopied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色名稱複製中斷。角色ID: 的當地語系化字串。
+        /// </summary>
+        internal static string Log_NameCopyAborted {
+            get {
+                return ResourceManager.GetString("Log_NameCopyAborted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 HTML輸出完成。角色ID:  的當地語系化字串。
+        /// </summary>
+        internal static string Message_HTMLOutputComplete1 {
+            get {
+                return ResourceManager.GetString("Message_HTMLOutputComplete1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ，輸出資料已經複製到剪貼簿了。 的當地語系化字串。
+        /// </summary>
+        internal static string Message_HTMLOutputComplete2 {
+            get {
+                return ResourceManager.GetString("Message_HTMLOutputComplete2", resourceCulture);
+            }
+        }
     }
 }

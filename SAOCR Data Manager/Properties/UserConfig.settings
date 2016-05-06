@@ -44,5 +44,8 @@
     <Setting Name="SE_MessageMute" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="Path_CharaHTML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dimension/CharaHTMLTemplate.txt</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

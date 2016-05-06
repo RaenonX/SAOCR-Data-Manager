@@ -40,6 +40,7 @@ namespace SAOCR_Data_Manager
                 HM_ToConfig.ButtonText = RHome.ToPage_Settings;
                 HM_ToHomePage.ButtonText = RHome.ToPage_HomePage;
                 HM_ToStatistics.ButtonText = RHome.ToPage_Statistics;
+                HM_ToDownload.ButtonText = RHome.ToPage_Download;
                 HM_Res_Load.ButtonText = RHome.Layout_ResourcesLoad;
                 HM_Res_Select.ButtonText = RHome.Layout_ResourcesSelect;
                 HM_Announcement.MarqueeText = RHome.Layout_LoadingAnnounce;
@@ -75,7 +76,7 @@ namespace SAOCR_Data_Manager
                 ST_SourceCSV.MarqueeText = AC.Path_CSV;
                 //DataRelated
                 ST_DataTitle.Text = RConfig.Layout_AboutData;
-                ST_ReadTitle.ButtonText = RConfig.Layout_ReadTitle;
+                ST_ReLoad.ButtonText = RConfig.Layout_Reload;
                 ST_AutoLoad.Checked = UC.State_AutoLoad;
                 ST_AutoLoad.Text = RConfig.Layout_AutoLoadText;
                 ST_AUCsvModeText.Text = RConfig.Layout_AUResourceMode;
@@ -173,7 +174,7 @@ namespace SAOCR_Data_Manager
                 //Config
                 ST_PathWarningBrowse.ButtonClick += new EventHandler(ST_FilePathSelect_Click);
                 ST_PathBeepBrowse.ButtonClick += new EventHandler(ST_FilePathSelect_Click);
-                ST_ReadTitle.ButtonClick += new EventHandler(ST_ReadTtile_Click);
+                ST_ReLoad.ButtonClick += new EventHandler(ST_ReLoad_Click);
                 ST_AutoLoad.CheckedChanged += new EventHandler(ST_AutoLoad_CheckedChanged);
                 ST_Developer.ArriveToBorder += new EventHandler(ST_Developer_ArriveToBorder);
                 ST_PathBGMBrowse.ButtonClick += new EventHandler(ST_FilePathSelect_Click);
@@ -461,93 +462,96 @@ namespace SAOCR_Data_Manager
             {
                 #region Read Data into Array
                 if (Extent.isEmptyString(Const.Path.DATA_TITLE))
-            {
-                SystemAPI.SEWarning();
-                if (new MessageDialog(RError.Error_Reinstall, RMessageBox.Title_Warning, MessageBoxButtonStyle.YesNo)
-                    .ShowDialog(this) == DialogResult.Yes)
                 {
-                    SystemAPI.CloseProgram(true);
-                    return;
+                    SystemAPI.SEWarning();
+                    if (new MessageDialog(RError.Error_Reinstall, RMessageBox.Title_Warning, MessageBoxButtonStyle.YesNo)
+                        .ShowDialog(this) == DialogResult.Yes)
+                    {
+                        SystemAPI.CloseProgram(true);
+                        return;
+                    }
                 }
-            }
-            InitializeList(InitItem.CrDataTitle);
+                InitializeList(InitItem.CrDataTitle);
 
-            FDTL.Reader = My.FileSystem.OpenTextFieldParser(Const.Path.DATA_TITLE);
-            FDTL.Reader.SetDelimiters(",");
-            FDTL.Category.CategoryList = new List<string>();
-            FDTL.Basis.BasisList = new List<string>();
-            FDTL.EndKey.KeyList = new List<string>();
+                FDTL.Reader = My.FileSystem.OpenTextFieldParser(Const.Path.DATA_TITLE);
+                FDTL.Reader.SetDelimiters(",");
+                FDTL.Category.CategoryList = new List<string>();
+                FDTL.Basis.BasisList = new List<string>();
+                FDTL.EndKey.KeyList = new List<string>();
 
-            while (!FDTL.Reader.EndOfData)
-            {
-                FDTL.Category.CategoryList.Add(FDTL.Reader.ReadFields()[0]);
-                FDTL.Basis.BasisList.AddRange(FDTL.Reader.ReadFields());
-                FDTL.EndKey.KeyList.AddRange(FDTL.Reader.ReadFields());
-            }
-            FDTL.Category.Category = FDTL.Category.CategoryList.ToArray();
-            FDTL.Basis.Basis = FDTL.Basis.BasisList.ToArray();
-            FDTL.EndKey.Key = FDTL.EndKey.KeyList.ToArray();
-            #endregion
+                while (!FDTL.Reader.EndOfData)
+                {
+                    FDTL.Category.CategoryList.Add(FDTL.Reader.ReadFields()[0]);
+                    FDTL.Basis.BasisList.AddRange(FDTL.Reader.ReadFields());
+                    FDTL.EndKey.KeyList.AddRange(FDTL.Reader.ReadFields());
+                }
+                FDTL.Category.Category = FDTL.Category.CategoryList.ToArray();
+                FDTL.Basis.Basis = FDTL.Basis.BasisList.ToArray();
+                FDTL.EndKey.Key = FDTL.EndKey.KeyList.ToArray();
+                #endregion
 
                 #region Find Title Location
-            FDTL.Location.StartList = new List<int>();
-            FDTL.Location.EndList = new List<int>();
-            if (DT.Source.Rows.Count == 0)
-            {
-                Status(RStatus.Warning_FileNotImported + RStatus.Warning_ReadCsvFirst);
-                SystemAPI.SEWarning();
-                return;
-            }
-
-            for (int i = 0; i < FDTL.Category.Category.Length; i++)
-            {
-                string FindTitleCondition = "";
-                ListViewItem item = new ListViewItem();
-
-                for (int j = 0; j <= 4; j++)
+                FDTL.Location.StartList = new List<int>();
+                FDTL.Location.EndList = new List<int>();
+                if (DT.Source.Rows.Count == 0)
                 {
-                    FindTitleCondition += "C" + Convert.ToString(j + 2);
-
-                    if (Extent.isEmptyString(FDTL.Basis.Basis[i * 5 + j]))
-                    {
-                        FindTitleCondition += " IS NULL";
-                    } else if (FDTL.Basis.Basis[i * 5 + j] == "*")
-                    {
-                        FindTitleCondition += " LIKE '*'";
-                    } else
-                    {
-                        FindTitleCondition += " = '" + FDTL.Basis.Basis[i * 5 + j] + "'";
-                    }
-
-                    if (j < 4)
-                    {
-                        FindTitleCondition += " AND ";
-                    }
+                    Status(RStatus.Warning_FileNotImported + RStatus.Warning_ReadCsvFirst);
+                    SystemAPI.SEWarning();
+                    return;
                 }
-                DataRow[] FindTitleResult = DT.Source.Select(FindTitleCondition);
 
-                item.SubItems.Add(FDTL.Category.Category[i].ToString());
-                if (FindTitleResult.Length != 0)
+                for (int i = 0; i < FDTL.Category.Category.Length; i++)
                 {
-                    item.SubItems.Add(FindTitleResult[0][0].ToString());
-                    FDTL.Location.StartList.Add(Convert.ToInt32(FindTitleResult[0][0]));
-                } else
-                {
-                    item.SubItems.Add("");
-                    item.SubItems.Add("");
-                    break;
+                    string FindTitleCondition = "";
+                    ListViewItem item = new ListViewItem();
+
+                    for (int j = 0; j <= 4; j++)
+                    {
+                        FindTitleCondition += "C" + Convert.ToString(j + 2);
+
+                        if (Extent.isEmptyString(FDTL.Basis.Basis[i * 5 + j]))
+                        {
+                            FindTitleCondition += " = ''";
+                        }
+                        else if (FDTL.Basis.Basis[i * 5 + j] == "*")
+                        {
+                            FindTitleCondition += " LIKE '*'";
+                        }
+                        else
+                        {
+                            FindTitleCondition += " = '" + FDTL.Basis.Basis[i * 5 + j] + "'";
+                        }
+
+                        if (j < 4)
+                        {
+                            FindTitleCondition += " AND ";
+                        }
+                    }
+                    DataRow[] FindTitleResult = DT.Source.Select(FindTitleCondition);
+
+                    item.SubItems.Add(FDTL.Category.Category[i].ToString());
+                    if (FindTitleResult.Length != 0)
+                    {
+                        item.SubItems.Add(FindTitleResult[0][0].ToString());
+                        FDTL.Location.StartList.Add(Convert.ToInt32(FindTitleResult[0][0]));
+                    }
+                    else
+                    {
+                        item.SubItems.Add("");
+                        item.SubItems.Add("");
+                        break;
+                    }
+                    int EndStack = Convert.ToInt32(FDTL.Location.StartList[i] + DataAPI.EndStack(DT.Source, FDTL.Location.StartList[i], FDTL.EndKey.Key[i], 1) - 1);
+                    FDTL.Location.EndList.Add(EndStack);
+                    item.SubItems.Add(EndStack.ToString());
+
+                    ST_Data.Items.Add(item);
                 }
-                int EndStack = Convert.ToInt32(FDTL.Location.StartList[i] + DataAPI.EndStack(DT.Source, FDTL.Location.StartList[i], FDTL.EndKey.Key[i], 1) - 1);
-                FDTL.Location.EndList.Add(EndStack);
-                item.SubItems.Add(EndStack.ToString());
+                FDTL.Location.Start = FDTL.Location.StartList.ToArray();
+                FDTL.Location.End = FDTL.Location.EndList.ToArray();
 
-                ST_Data.Items.Add(item);
-            }
-            FDTL.Location.Start = FDTL.Location.StartList.ToArray();
-            FDTL.Location.End = FDTL.Location.EndList.ToArray();
-            
-            TitleP.Start = FDTL.Location.Start;
-            TitleP.End = FDTL.Location.End;
+                TitleP.Start = FDTL.Location.Start;
+                TitleP.End = FDTL.Location.End;
                 #endregion
             }
             catch (Exception e)
@@ -562,7 +566,7 @@ namespace SAOCR_Data_Manager
             try
             {
                 List<int> KeepCol = new List<int>(
-               new int[] { (int)ENameSecCol.ID, (int)ENameSecCol.HEAD, (int)ENameSecCol.JP_NAME, (int)ENameSecCol.EN_NAME, (int)ENameSecCol.CV, (int)ENameSecCol.SEX, (int)ENameSecCol.INTRO });
+                new int[] { (int)ENameSecCol.ID, (int)ENameSecCol.HEAD, (int)ENameSecCol.JP_NAME, (int)ENameSecCol.EN_NAME, (int)ENameSecCol.CV, (int)ENameSecCol.SEX, (int)ENameSecCol.INTRO });
                 List<string> DelCol = new List<string>();
 
                 for (int i = 1; i < DT.Source.Columns.Count; i++)

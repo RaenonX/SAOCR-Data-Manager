@@ -153,8 +153,8 @@
   <data name="Layout_PathWarning" xml:space="preserve">
     <value>警示音</value>
   </data>
-  <data name="Layout_ReadTitle" xml:space="preserve">
-    <value>尋找資料位置</value>
+  <data name="Layout_Reload" xml:space="preserve">
+    <value>重新讀取資源</value>
   </data>
   <data name="Layout_SEGroupBox" xml:space="preserve">
     <value>音效</value>

@@ -108,5 +108,82 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+
+        public string[] OutputForHTML()
+        {
+            try
+            {
+                List<string> LST = new List<string>();
+
+                string[] L =
+                {
+                    CDT.Data.CharaID,
+                    CDT.Data.CharaID,
+                    SFColorTrans.EParamCategoryT(EnumTranslator.EParamCategoryT(PR_Main.Text)),
+                    PR_Main.Text,
+                    SFColorTrans.SpecColTranslate((EBackColorAlpha)DS_STR.BackColor.ToArgb()),
+                    DS_STR.Text,
+                    SFColorTrans.SpecColTranslate((EBackColorAlpha)DS_VIT.BackColor.ToArgb()),
+                    DS_VIT.Text,
+                    SFColorTrans.SpecColTranslate((EBackColorAlpha)DS_INT.BackColor.ToArgb()),
+                    DS_INT.Text,
+                    SFColorTrans.SpecColTranslate((EBackColorAlpha)DS_MEN.BackColor.ToArgb()),
+                    DS_MEN.Text
+                };
+
+                LST.AddRange(L);
+
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Unawaked.Force.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                }
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Unawaked.Aegis.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                }
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Unawaked.Mebius.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                }
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Unawaked.Magius.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                    if (i == 0)
+                    {
+                        LST.Add(CDT.Parameters.Basic.Unawaked.Cost().ToString());
+                    }
+                }
+                LST.AddRange(CDT.Parameters.Extra.GrowRate.GetArray(EParamAwaked.Unawaked).Select(x => x.ToString("0.000")).ToArray());
+
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Awaked.Force.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                }
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Awaked.Aegis.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                }
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Awaked.Mebius.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                }
+                for (int i = 0; i < 2; i++)
+                {
+                    LST.AddRange(CDT.Parameters.Basic.Awaked.Magius.GetArray((EParamLv)i).Select(x => x.ToString()).ToArray());
+                    if (i == 0)
+                    {
+                        LST.Add(CDT.Parameters.Basic.Awaked.Cost().ToString());
+                    }
+                }
+                LST.AddRange(CDT.Parameters.Extra.GrowRate.GetArray(EParamAwaked.Awaked).Select(x => x.ToString("0.000")).ToArray());
+
+                return LST.ToArray();
+            }
+            catch (Exception e)
+            {
+                SystemAPI.Error(RError.E_0x0000A01C, e);
+                throw;
+            }
+        }
     }
 }

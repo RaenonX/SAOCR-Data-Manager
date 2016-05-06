@@ -21,7 +21,7 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
         {
             try
             {
-                Forms.PictureB PB = new Forms.PictureB();
+                PictureB PB = new PictureB();
                 PB.PictureBox.ImageLocation = Picture.ImageLocation;
                 PB.Title.Text = CharaID.Text + " - " + CharaName;
                 PB.Show();
@@ -102,6 +102,22 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                     SystemAPI.Warning(RWarning.W_0xC0013003);
                     LB.BackColor = Color.FromArgb((int)EBackColorAlpha.White);
                     break;
+            }
+        }
+
+        private void ExtraInfo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                new DataRegister(EDataRegCategory.CharaInfo, Const.Path.CHARA_DIM, CDT.Info.Extra.GetArray()).ShowDialog();
+            }
+            catch (NullReferenceException)
+            {
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00013007, ex);
+                throw;
             }
         }
     }

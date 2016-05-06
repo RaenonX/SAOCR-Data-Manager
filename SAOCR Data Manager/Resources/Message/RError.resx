@@ -204,12 +204,6 @@
   <data name="Error_WrongWeaponCategoryString" xml:space="preserve">
     <value>傳入的武器(字串)有誤，請確認傳入的值合法。</value>
   </data>
-  <data name="Error_WrongElement" xml:space="preserve">
-    <value>傳入的屬性(enum)有誤，請確認傳入的值合法。</value>
-  </data>
-  <data name="Error_WrongElementString" xml:space="preserve">
-    <value>傳入的屬性(字串)有誤，請確認傳入的值合法。</value>
-  </data>
   <data name="Error_WrongScene" xml:space="preserve">
     <value>傳入的場景(enum)有誤，請確認傳入的值合法。</value>
   </data>
@@ -301,7 +295,7 @@
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00003005" xml:space="preserve">
-    <value>錯誤代碼 0x00003005\n\n轉譯BA系列發生錯誤。</value>
+    <value>錯誤代碼 0x00003005\n\n轉譯BA系列時發生錯誤。</value>
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00003006" xml:space="preserve">
@@ -313,11 +307,11 @@
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00003008" xml:space="preserve">
-    <value>錯誤代碼 0x00003008\n\n</value>
+    <value>錯誤代碼 0x00003008\n\n轉譯資料登錄目標時發生錯誤。</value>
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00003009" xml:space="preserve">
-    <value>錯誤代碼 0x00003009\n\n</value>
+    <value>錯誤代碼 0x00003009\n\n轉譯角色種類時發生錯誤。</value>
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00007013" xml:space="preserve">
@@ -513,7 +507,7 @@
     <comment>ParamDisplay</comment>
   </data>
   <data name="E_0x0000A01C" xml:space="preserve">
-    <value>錯誤代碼 0x0000A01C\n\n</value>
+    <value>錯誤代碼 0x0000A01C\n\n回傳HTML專用的值陣列時發生錯誤。</value>
     <comment>ParamDisplay</comment>
   </data>
   <data name="E_0x0000A01D" xml:space="preserve">
@@ -669,7 +663,7 @@
     <comment>BasicInfo</comment>
   </data>
   <data name="E_0x00013007" xml:space="preserve">
-    <value>錯誤代碼 0x00013007\n\n</value>
+    <value>錯誤代碼 0x00013007\n\n開啟資料註冊視窗時發生錯誤。</value>
     <comment>BasicInfo</comment>
   </data>
   <data name="E_0x00013008" xml:space="preserve">
@@ -721,7 +715,7 @@
     <comment>CharaData</comment>
   </data>
   <data name="E_0x00007036" xml:space="preserve">
-    <value>錯誤代碼 0x00007035\n\n解析角色輸出日期時發生錯誤。</value>
+    <value>錯誤代碼 0x00007036\n\n解析角色輸出日期時發生錯誤。</value>
     <comment>CharaData</comment>
   </data>
   <data name="E_0x00017001" xml:space="preserve">
@@ -841,7 +835,7 @@
     <comment>BADisplay</comment>
   </data>
   <data name="E_0x0000E00C" xml:space="preserve">
-    <value>錯誤代碼 0x0000E00C\n\n</value>
+    <value>錯誤代碼 0x0000E00C\n\n開啟BA資料登錄視窗時發生錯誤。</value>
     <comment>BADisplay</comment>
   </data>
   <data name="E_0x0000E00D" xml:space="preserve">
@@ -909,7 +903,7 @@
     <comment>CharaDataDisplay</comment>
   </data>
   <data name="E_0x00019008" xml:space="preserve">
-    <value>錯誤代碼 0x00019008\n\n</value>
+    <value>錯誤代碼 0x00019008\n\n輸出角色的HTML時發生錯誤。</value>
     <comment>CharaDataDisplay</comment>
   </data>
   <data name="E_0x00019009" xml:space="preserve">
@@ -1201,7 +1195,7 @@
     <comment>MessageBox</comment>
   </data>
   <data name="E_0x00007047" xml:space="preserve">
-    <value>錯誤代碼 0x00007047\n\n建立額外角色資訊時發生錯誤。</value>
+    <value>錯誤代碼 0x00007047\n\n獲取特殊資訊的陣列時發生錯誤。</value>
     <comment>CharaData</comment>
   </data>
   <data name="E_0x00025000" xml:space="preserve">
@@ -1473,15 +1467,15 @@
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A004" xml:space="preserve">
-    <value>錯誤代碼 0x0002A004\n\n計算舞台武器使用占比時發生錯誤。</value>
+    <value>錯誤代碼 0x0002A004\n\n計算角色舞台占比時發生錯誤。</value>
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A005" xml:space="preserve">
-    <value>錯誤代碼 0x0002A005\n\n計算系列武器使用占比時發生錯誤。</value>
+    <value>錯誤代碼 0x0002A005\n\n計算角色系占比時發生錯誤。</value>
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A006" xml:space="preserve">
-    <value>錯誤代碼 0x0002A006\n\n計算星級武器使用占比時發生錯誤。</value>
+    <value>錯誤代碼 0x0002A006\n\n計算角色星級占比時發生錯誤。</value>
     <comment>PStatistics</comment>
   </data>
   <data name="E_0x0002A007" xml:space="preserve">
@@ -1580,8 +1574,44 @@
     <value>錯誤代碼 0x0002B00F\n\n</value>
     <comment>WeaponData</comment>
   </data>
+  <data name="E_0x00007037" xml:space="preserve">
+    <value>錯誤代碼 0x00007037\n\n獲取隊長技顯示狀態時發生錯誤。</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x00007038" xml:space="preserve">
+    <value>錯誤代碼 0x00007038\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x00007039" xml:space="preserve">
+    <value>錯誤代碼 0x00007039\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000703A" xml:space="preserve">
+    <value>錯誤代碼 0x0000703A\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000703B" xml:space="preserve">
+    <value>錯誤代碼 0x0000703B\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000703C" xml:space="preserve">
+    <value>錯誤代碼 0x0000703C\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000703D" xml:space="preserve">
+    <value>錯誤代碼 0x0000703D\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000703E" xml:space="preserve">
+    <value>錯誤代碼 0x0000703E\n\n</value>
+    <comment>CharaData</comment>
+  </data>
+  <data name="E_0x0000703F" xml:space="preserve">
+    <value>錯誤代碼 0x0000703F\n\n</value>
+    <comment>CharaData</comment>
+  </data>
   <data name="E_0x00007048" xml:space="preserve">
-    <value>錯誤代碼 0x00007048\n\n</value>
+    <value>錯誤代碼 0x00007048\n\n建立角色系相關資訊的類別時發生錯誤。</value>
     <comment>CharaData</comment>
   </data>
   <data name="E_0x00007049" xml:space="preserve">
@@ -1675,5 +1705,109 @@
   <data name="E_0x0002C00F" xml:space="preserve">
     <value>錯誤代碼 0x0002C00F\n\n</value>
     <comment>DataRegister</comment>
+  </data>
+  <data name="E_0x0002D000" xml:space="preserve">
+    <value>錯誤代碼 0x0002D000\n\n開啟資料手動註冊視窗時發生錯誤。</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D001" xml:space="preserve">
+    <value>錯誤代碼 0x0002D001\n\n顯示隊長技資料時發生錯誤。</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D002" xml:space="preserve">
+    <value>錯誤代碼 0x0002D002\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D003" xml:space="preserve">
+    <value>錯誤代碼 0x0002D003\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D004" xml:space="preserve">
+    <value>錯誤代碼 0x0002D004\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D005" xml:space="preserve">
+    <value>錯誤代碼 0x0002D005\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D006" xml:space="preserve">
+    <value>錯誤代碼 0x0002D006\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D007" xml:space="preserve">
+    <value>錯誤代碼 0x0002D007\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D008" xml:space="preserve">
+    <value>錯誤代碼 0x0002D008\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002D009" xml:space="preserve">
+    <value>錯誤代碼 0x0002D009\n\n</value>
+    <comment>LSDisplay</comment>
+  </data>
+  <data name="E_0x0002E000" xml:space="preserve">
+    <value>錯誤代碼 0x0002E000\n\n回傳角色屬性的顏色時發生錯誤。</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E001" xml:space="preserve">
+    <value>錯誤代碼 0x0002E001\n\n回傳BA系列的顏色時發生錯誤。</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E002" xml:space="preserve">
+    <value>錯誤代碼 0x0002E002\n\n回傳角色場景的顏色時發生錯誤。</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E003" xml:space="preserve">
+    <value>錯誤代碼 0x0002E003\n\n回傳角色參數種類的顏色時發生錯誤。</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E004" xml:space="preserve">
+    <value>錯誤代碼 0x0002E004\n\n回傳參數種類的顏色時發生錯誤。</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E005" xml:space="preserve">
+    <value>錯誤代碼 0x0002E005\n\n使用特殊顏色轉譯函式時發生錯誤。</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E006" xml:space="preserve">
+    <value>錯誤代碼 0x0002E006\n\n</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E007" xml:space="preserve">
+    <value>錯誤代碼 0x0002E007\n\n</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E008" xml:space="preserve">
+    <value>錯誤代碼 0x0002E008n\n</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0002E009" xml:space="preserve">
+    <value>錯誤代碼 0x0002E009\n\n</value>
+    <comment>SFColorTrans</comment>
+  </data>
+  <data name="E_0x0000300A" xml:space="preserve">
+    <value>錯誤代碼 0x0000300A\n\n轉譯屬性成字串時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x0000300B" xml:space="preserve">
+    <value>錯誤代碼 0x0000300B\n\n轉譯屬性成enum時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x0000300C" xml:space="preserve">
+    <value>錯誤代碼 0x0000300C\n\n轉譯參數成enum時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x0000300D" xml:space="preserve">
+    <value>錯誤代碼 0x0000300D\n\n轉譯BA系列時發生錯誤。</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x0000300E" xml:space="preserve">
+    <value>錯誤代碼 0x0000300E\n\n</value>
+    <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x0000300F" xml:space="preserve">
+    <value>錯誤代碼 0x0000300F\n\n</value>
+    <comment>EnumTranslator</comment>
   </data>
 </root>

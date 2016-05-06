@@ -358,6 +358,7 @@
             this.Description3.FreezeTime = 2000;
             this.Description3.LabelSize = new System.Drawing.Size(372, 27);
             this.Description3.LeftDistance = 5;
+            this.Description3.LForeColor = System.Drawing.Color.White;
             this.Description3.Location = new System.Drawing.Point(43, 158);
             this.Description3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Description3.MarqueeText = "";
@@ -371,6 +372,7 @@
             // 
             // Title3
             // 
+            this.Title3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Title3.Location = new System.Drawing.Point(6, 158);
             this.Title3.Margin = new System.Windows.Forms.Padding(3);
             this.Title3.Name = "Title3";
@@ -492,6 +494,7 @@
             this.Description2.FreezeTime = 2000;
             this.Description2.LabelSize = new System.Drawing.Size(372, 27);
             this.Description2.LeftDistance = 5;
+            this.Description2.LForeColor = System.Drawing.Color.White;
             this.Description2.Location = new System.Drawing.Point(43, 90);
             this.Description2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Description2.MarqueeText = "";
@@ -505,6 +508,7 @@
             // 
             // Title2
             // 
+            this.Title2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Title2.Location = new System.Drawing.Point(6, 90);
             this.Title2.Margin = new System.Windows.Forms.Padding(3);
             this.Title2.Name = "Title2";
@@ -541,6 +545,7 @@
             this.Description1.FreezeTime = 2000;
             this.Description1.LabelSize = new System.Drawing.Size(372, 27);
             this.Description1.LeftDistance = 5;
+            this.Description1.LForeColor = System.Drawing.Color.White;
             this.Description1.Location = new System.Drawing.Point(43, 22);
             this.Description1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Description1.MarqueeText = "";
@@ -554,6 +559,7 @@
             // 
             // Title1
             // 
+            this.Title1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Title1.Location = new System.Drawing.Point(6, 22);
             this.Title1.Margin = new System.Windows.Forms.Padding(3);
             this.Title1.Name = "Title1";

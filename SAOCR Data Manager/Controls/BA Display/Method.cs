@@ -18,6 +18,9 @@ namespace SAOCR_Data_Manager
         {
             try
             {
+                BADataImported = false;
+                CDT = Data;
+
                 if (Data.Data.CharaID.Length != 8)
                 {
                     SystemAPI.Warning(RWarning.W_0xC000E001);
@@ -56,7 +59,7 @@ namespace SAOCR_Data_Manager
                 for (int i = 0; i < Const.Count.BA; i++)
                 {
                     string[] BAData = new string[9];
-                    EBADisplayStatus EDS = EBADisplayStatus.Chinese;
+                    EDisplayStatus EDS = EDisplayStatus.Chinese;
                     switch (i)
                     {
                         case 0:
@@ -84,7 +87,7 @@ namespace SAOCR_Data_Manager
                             } else
                             {
                                 BAs[i][j].Text = BAData[(int)EBADataInfo.DesCH];
-                                if (EDS == EBADisplayStatus.ForceJP)
+                                if (EDS == EDisplayStatus.ForceJP)
                                 {
                                     BADes[i].BackColor = Color.FromArgb((int)EBackColorAlpha.Red);
                                 } else
@@ -101,12 +104,48 @@ namespace SAOCR_Data_Manager
                 Description1.Restart();
                 Description2.Restart();
                 Description3.Restart();
+
+                BADataImported = true;
             }
             catch (Exception e)
             {
+                BADataImported = false;
                 SystemAPI.Error(RError.E_0x0000E003, e);
                 throw;
             }
+        }
+
+        /// <returns>系列1色碼、系列1、敘述、分數、系列2色碼、系列2、威力、治癒量</returns>
+        public string[] OutputForHTML()
+        {
+            string[] L =
+            {
+                SFColorTrans.BASeriesTextT(EnumTranslator.BASeriesTextT(Series1st1.Text)),
+                Series1st1.Text,
+                Description1.MarqueeText,
+                Score1.Text,
+                SFColorTrans.BASeriesTextT(EnumTranslator.BASeriesTextT(Series2nd1.Text)),
+                Series2nd1.Text,
+                Power1.Text,
+                Heal1.Text,
+                SFColorTrans.BASeriesTextT(EnumTranslator.BASeriesTextT(Series1st2.Text)),
+                Series1st2.Text,
+                Description2.MarqueeText,
+                Score2.Text,
+                SFColorTrans.BASeriesTextT(EnumTranslator.BASeriesTextT(Series2nd2.Text)),
+                Series2nd2.Text,
+                Power2.Text,
+                Heal2.Text,
+                SFColorTrans.BASeriesTextT(EnumTranslator.BASeriesTextT(Series1st3.Text)),
+                Series1st3.Text,
+                Description3.MarqueeText,
+                Score3.Text,
+                SFColorTrans.BASeriesTextT(EnumTranslator.BASeriesTextT(Series2nd3.Text)),
+                Series2nd3.Text,
+                Power3.Text,
+                Heal3.Text,
+            };
+            return L;
         }
     }
 }

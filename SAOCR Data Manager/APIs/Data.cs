@@ -447,6 +447,10 @@ namespace SAOCR_Data_Manager
                     {
                         DataList.Add(Convert.ToString(count));
                         DataList.AddRange(CSV.ReadFields());
+                        for (int i = DataList.Count; i < DT.Columns.Count; i++)
+                        {
+                            DataList.Add("");
+                        }
                         string[] Data = DataList.ToArray();
 
                         DT.Rows.Add(Data);
@@ -455,7 +459,7 @@ namespace SAOCR_Data_Manager
                     }
                     catch (MalformedLineException)
                     {
-                        DataList.Add("");
+                        DataList.AddRange(new string[DT.Columns.Count - DataList.Count]);
                         string[] Data = DataList.ToArray();
                         DT.Rows.Add(Data);
                     }

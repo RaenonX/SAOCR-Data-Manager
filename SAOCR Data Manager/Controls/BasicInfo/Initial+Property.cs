@@ -14,6 +14,8 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
 {
     public partial class BasicInfo : UserControl
     {
+        CharaData CDT;
+
         public BasicInfo()
         {
             try
@@ -63,6 +65,9 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                 Element.TextChanged += ElementText_TextChanged;
                 Sex.TextChanged += SexText_TextChanged;
                 Scene.TextChanged += SceneText_TextChanged;
+                GetMethodText.Click += ExtraInfo_Click;
+                ReleaseDateText.Click += ExtraInfo_Click;
+                FolkNameText.Click += ExtraInfo_Click;
             }
             catch (Exception e)
             {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SAOCR_Data_Manager.Resources.Forms {
+namespace SAOCR_Data_Manager.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace SAOCR_Data_Manager.Resources.Forms {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class RHome {
+    internal class RDictColor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal RHome() {
+        internal RDictColor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.Forms.RHome", typeof(RHome).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.RDictColor", typeof(RDictColor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,92 +61,56 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 讀取公告中... 的當地語系化字串。
+        ///   查詢類似 #0000FF 的當地語系化字串。
         /// </summary>
-        internal static string Layout_LoadingAnnounce {
+        internal static string Blue {
             get {
-                return ResourceManager.GetString("Layout_LoadingAnnounce", resourceCulture);
+                return ResourceManager.GetString("Blue", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 讀取資源檔 的當地語系化字串。
+        ///   查詢類似 #339966 的當地語系化字串。
         /// </summary>
-        internal static string Layout_ResourcesLoad {
+        internal static string Green {
             get {
-                return ResourceManager.GetString("Layout_ResourcesLoad", resourceCulture);
+                return ResourceManager.GetString("Green", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 選擇資源檔 的當地語系化字串。
+        ///   查詢類似 #464646 的當地語系化字串。
         /// </summary>
-        internal static string Layout_ResourcesSelect {
+        internal static string Grey70 {
             get {
-                return ResourceManager.GetString("Layout_ResourcesSelect", resourceCulture);
+                return ResourceManager.GetString("Grey70", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 csv內容一覽 的當地語系化字串。
+        ///   查詢類似 #FF9900 的當地語系化字串。
         /// </summary>
-        internal static string ToPage_CsvTable {
+        internal static string Orange {
             get {
-                return ResourceManager.GetString("ToPage_CsvTable", resourceCulture);
+                return ResourceManager.GetString("Orange", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 檔案下載 的當地語系化字串。
+        ///   查詢類似 #9900FF 的當地語系化字串。
         /// </summary>
-        internal static string ToPage_Download {
+        internal static string Purple {
             get {
-                return ResourceManager.GetString("ToPage_Download", resourceCulture);
+                return ResourceManager.GetString("Purple", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 回首頁 的當地語系化字串。
+        ///   查詢類似 #FF0000 的當地語系化字串。
         /// </summary>
-        internal static string ToPage_HomePage {
+        internal static string Red {
             get {
-                return ResourceManager.GetString("ToPage_HomePage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 設定 的當地語系化字串。
-        /// </summary>
-        internal static string ToPage_Settings {
-            get {
-                return ResourceManager.GetString("ToPage_Settings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 統計資料 的當地語系化字串。
-        /// </summary>
-        internal static string ToPage_Statistics {
-            get {
-                return ResourceManager.GetString("ToPage_Statistics", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 角色資訊 的當地語系化字串。
-        /// </summary>
-        internal static string ToPage_WebPageChara {
-            get {
-                return ResourceManager.GetString("ToPage_WebPageChara", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 裝備資訊 的當地語系化字串。
-        /// </summary>
-        internal static string ToPage_WebPageEquip {
-            get {
-                return ResourceManager.GetString("ToPage_WebPageEquip", resourceCulture);
+                return ResourceManager.GetString("Red", resourceCulture);
             }
         }
     }

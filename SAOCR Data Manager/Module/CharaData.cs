@@ -62,7 +62,7 @@ namespace SAOCR_Data_Manager
                 CDT.CharaDim = DataAPI.Search(Data.CharaID, Data.DTs.CharaDim, 0, (int)ECharaDimCode.ID);
                 CDT.CharaSeries = DataAPI.Search(Data.CharaID.Substring(1, 3), Data.DTs.CharaSeries, 0, (int)ECharaSeriesCode.CODE);
 
-                if (CDT.CharaDim == null)
+                if (CDT.Info == null)
                 {
                     SystemAPI.Warning(RWarning.W_0xC0007005);
                     return;
@@ -139,14 +139,14 @@ namespace SAOCR_Data_Manager
                     public ParamLv Mebius, Force, Aegis, Magius;
                     List<int> ToMebius = new List<int>(), ToForce = new List<int>(), ToAegis = new List<int>(), ToMagius = new List<int>(); //HP, HP, STR, STR, VIT, VIT, INT, INT, MEN, MEN
                     CData CDT;
+                    bool Awaked;
 
                     public ParamType(SData Data, ref CData DataC, bool awaked)
                     {
                         try
                         {
-                            CDT = DataC;
+                            Awaked = awaked;
                             List<int>[] SArray = { ToMebius, ToForce, ToAegis, ToMagius };
-                            ParamLv[] PArray = { Mebius, Force, Aegis, Magius };
                             List<int> L = new List<int>();
 
                             for (int i = 0; i < SArray.Length; i++)
@@ -157,7 +157,14 @@ namespace SAOCR_Data_Manager
                                 {
                                     for (int j = 0; j < Arr.Length; j++)
                                     {
-                                        SArray[i].Add(Convert.ToInt32(DataC.Param.Awaked.DataRow[i][(int)EParamSecCol.PARAM_START + j]));
+                                        try
+                                        {
+                                            SArray[i].Add(Convert.ToInt32(DataC.Param.Awaked.DataRow[i][(int)EParamSecCol.PARAM_START + j]));
+                                        }
+                                        catch (IndexOutOfRangeException)
+                                        {
+                                            SArray[i].Add(0);
+                                        }
                                     }
                                     L.AddRange(SArray[i]);
                                 }
@@ -165,7 +172,14 @@ namespace SAOCR_Data_Manager
                                 {
                                     for (int j = 0; j < Arr.Length; j++)
                                     {
-                                        SArray[i].Add(Convert.ToInt32(DataC.Param.Unawaked.DataRow[i][(int)EParamSecCol.PARAM_START + j]));
+                                        try
+                                        {
+                                            SArray[i].Add(Convert.ToInt32(DataC.Param.Unawaked.DataRow[i][(int)EParamSecCol.PARAM_START + j]));
+                                        }
+                                        catch (IndexOutOfRangeException)
+                                        {
+                                            SArray[i].Add(0);
+                                        }
                                     }
                                     L.AddRange(SArray[i]);
                                 }
@@ -175,16 +189,19 @@ namespace SAOCR_Data_Manager
                             {
                                 DataC.Param.Awaked.Array = L.ToArray();
                                 DataC.Param.Awaked.Cost = Convert.ToInt32(DataC.Param.Awaked.DataRow[(int)EParamType.Mebius][(int)EParamSecCol.COST]);
-                            } else
+                            }
+                            else
                             {
                                 DataC.Param.Unawaked.Array = L.ToArray();
                                 DataC.Param.Unawaked.Cost = Convert.ToInt32(DataC.Param.Unawaked.DataRow[(int)EParamType.Mebius][(int)EParamSecCol.COST]);
                             }
+                            
+                            Mebius = new ParamLv(Data, ToMebius);
+                            Force = new ParamLv(Data, ToForce);
+                            Aegis = new ParamLv(Data, ToAegis);
+                            Magius = new ParamLv(Data, ToMagius);
 
-                            for (int i = 0; i < PArray.Length; i++)
-                            {
-                                PArray[i] = new ParamLv(Data, SArray[i]);
-                            }
+                            CDT = DataC;
                         }
                         catch (Exception e)
                         {
@@ -193,7 +210,7 @@ namespace SAOCR_Data_Manager
                         }
                     }
 
-                    public int Cost(bool Awaked)
+                    public int Cost()
                     {
                         try
                         {
@@ -212,7 +229,7 @@ namespace SAOCR_Data_Manager
                         }
                     }
 
-                    public int[] GetArray(bool Awaked)
+                    public int[] GetArray()
                     {
                         try
                         {
@@ -695,11 +712,13 @@ namespace SAOCR_Data_Manager
             {
                 public CharaSeries Serie;
                 DataRow info;
+                SData DT;
 
                 public ExtraI(SData Data, ref CData CDT)
                 {
                     try
                     {
+                        DT = Data;
                         DataRow[] Result = CDT.CharaDim;
                         if (Result != null)
                         {
@@ -725,7 +744,7 @@ namespace SAOCR_Data_Manager
                 {
                     get
                     {
-                        DateTime Date = new DateTime(1, 1, 1);
+                        DateTime Date = new DateTime(Const.Default.RELEASE_DATE_UNKNOWN_YEAR, 1, 1);
                         try
                         {
                             Date = new DateTime(
@@ -775,6 +794,30 @@ namespace SAOCR_Data_Manager
                         L.Add(info[(int)ECharaDimCode.FOLKNAME + i].ToString());
                     }
                     return L.ToArray();
+                }
+
+                /// <summary>
+                /// 角色ID、獲得方法、釋出年、釋出月、釋出日、俗名1~5
+                /// </summary>
+                /// <returns></returns>
+                public string[] GetArray()
+                {
+                    try
+                    {
+                        List<string> L = new List<string>();
+                        L.Add(DT.CharaID);
+                        L.Add(GetMethod);
+                        L.Add(ReleaseDate.Year.ToString());
+                        L.Add(ReleaseDate.Month.ToString());
+                        L.Add(ReleaseDate.Day.ToString());
+                        L.AddRange(FolkNameArray());
+                        return L.ToArray();
+                    }
+                    catch (Exception e)
+                    {
+                        SystemAPI.Error(RError.E_0x00007047, e);
+                        throw;
+                    }
                 }
 
                 public class CharaSeries
@@ -832,7 +875,7 @@ namespace SAOCR_Data_Manager
         public class CBA
         {
             public BAData BA1, BA2, BA3;
-            EBADisplayStatus DSP;
+            EDisplayStatus DSP;
 
             public CBA(SData Data, ref CData CDT)
             {
@@ -879,7 +922,7 @@ namespace SAOCR_Data_Manager
                                     {
                                         if (Extent.isEmptyString(BAAddData[ColD[j]].ToString()))
                                         {
-                                            DSP = EBADisplayStatus.ForceJP;
+                                            DSP = EDisplayStatus.ForceJP;
                                             BAInfo.Add(BAAddData[(int)EBADictCode.DESCRIPTION_JP].ToString());
                                         } else
                                         {
@@ -898,7 +941,7 @@ namespace SAOCR_Data_Manager
                                 {
                                     if (j == 0)
                                     {
-                                        DSP = EBADisplayStatus.ForceJP;
+                                        DSP = EDisplayStatus.ForceJP;
                                         BAInfo.Add(BADataInTable[(int)EBASecCol.DESCRIPTION].ToString());
                                     } else
                                     {
@@ -938,9 +981,9 @@ namespace SAOCR_Data_Manager
             public class BAData
             {
                 List<string> Info = new List<string>();
-                EBADisplayStatus ESP;
+                EDisplayStatus ESP;
 
-                public BAData(SData Data, List<string> BAData, EBADisplayStatus DSP)
+                public BAData(SData Data, List<string> BAData, EDisplayStatus DSP)
                 {
                     try
                     {
@@ -985,15 +1028,15 @@ namespace SAOCR_Data_Manager
                     }
                 }
 
-                public EBADisplayStatus GetDisplayStatus()
+                public EDisplayStatus GetDisplayStatus()
                 {
                     try
                     {
                         return ESP;
                     }
-                    catch (Exception)
+                    catch (Exception e)
                     {
-                        SystemAPI.Error(RError.E_0x00007032);
+                        SystemAPI.Error(RError.E_0x00007032, e);
                         throw;
                     }
                 }
@@ -1004,6 +1047,7 @@ namespace SAOCR_Data_Manager
         {
             List<object> Result = new List<object>();
             string LSID;
+            EDisplayStatus ESP;
 
             public CLS(SData Data)
             {
@@ -1016,6 +1060,7 @@ namespace SAOCR_Data_Manager
                         Result = Res2[0].ItemArray.ToList();
                     } else
                     {
+                        ESP = EDisplayStatus.ForceJP;
                         List<object> ItemArr = new List<object>();
                         DataRow[] LSInfoJP = DataAPI.Search(LSID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.LeaderSkillEffect], Data.TitleP.End[(int)DataTitle.LeaderSkillEffect], (int)ELSEffectSecCol.ID);
                         
@@ -1025,13 +1070,16 @@ namespace SAOCR_Data_Manager
                             {
                                 switch (i)
                                 {
+                                    case (int)ELSDictCode.ID:
+                                        ItemArr.Add(LSInfoJP[0][(int)ELSEffectSecCol.ID].ToString());
+                                        break;
                                     case (int)ELSDictCode.EFFECT_CH:
                                     case (int)ELSDictCode.EFFECT_JP:
-                                        ItemArr.Add(LSInfoJP[0][(int)ELSEffectSecCol.Effect].ToString() + "【" + RWarning.W_0xC0007008.Replace("\\n\\n", " - ") + "】");
+                                        ItemArr.Add(LSInfoJP[0][(int)ELSEffectSecCol.Effect].ToString());
                                         break;
                                     case (int)ELSDictCode.TARGET_CH:
                                     case (int)ELSDictCode.TARGET_JP:
-                                        ItemArr.Add(LSInfoJP[0][(int)ELSEffectSecCol.Target].ToString() + "【" + RWarning.W_0xC0007008.Replace("\\n\\n", " - ") + "】");
+                                        ItemArr.Add(LSInfoJP[0][(int)ELSEffectSecCol.Target].ToString());
                                         break;
                                     default:
                                         ItemArr.Add("");
@@ -1146,8 +1194,21 @@ namespace SAOCR_Data_Manager
                 }
             }
 
+            public EDisplayStatus GetDisplayStatus()
+            {
+                try
+                {
+                    return ESP;
+                }
+                catch (Exception e)
+                {
+                    SystemAPI.Error(RError.E_0x00007037, e);
+                    throw;
+                }
+            }
+
             /// <summary>
-            /// LS ID、日文對向、中文對象、中文效果、對象分數、STR、VIT、INT、MEN、HP、SS、Spec
+            /// LS ID、日文對象、中文對象、中文效果、對象分數、STR、VIT、INT、MEN、HP、SS、Spec
             /// </summary>
             /// <returns></returns>
             public string[] GetArray()

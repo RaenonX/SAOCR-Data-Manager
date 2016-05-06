@@ -302,6 +302,8 @@ namespace SAOCR_Data_Manager
 
                         Button_Right.ButtonText = RMessageBox.Cmd_OK;
                         Button_Right.ButtonClick += new EventHandler(ResOK);
+                        Sys_Close.ButtonClick += ResOK;
+
                         AcceptButton = Button_Right.Btn;
                         CancelButton = Sys_Close.Btn;
 
@@ -317,6 +319,8 @@ namespace SAOCR_Data_Manager
 
                         Button_Left.ButtonClick += new EventHandler(ResCancel);
                         Button_Right.ButtonClick += new EventHandler(ResOK);
+                        Sys_Close.ButtonClick += ResCancel;
+
                         AcceptButton = Button_Right.Btn;
                         CancelButton = Button_Left.Btn;
 
@@ -333,7 +337,9 @@ namespace SAOCR_Data_Manager
 
                         Button_Left.ButtonClick += new EventHandler(ResYes);
                         Button_Center.ButtonClick += new EventHandler(ResNo);
-                        Button_Right.ButtonClick += new EventHandler(ResOK);
+                        Button_Right.ButtonClick += new EventHandler(ResCancel);
+                        Sys_Close.ButtonClick += ResCancel;
+
                         AcceptButton = Button_Left.Btn;
                         CancelButton = Button_Right.Btn;
 
@@ -349,6 +355,8 @@ namespace SAOCR_Data_Manager
 
                         Button_Left.ButtonClick += new EventHandler(ResRetry);
                         Button_Center.ButtonClick += new EventHandler(ResCancel);
+                        Sys_Close.ButtonClick += ResCancel;
+
                         AcceptButton = Button_Left.Btn;
                         CancelButton = Sys_Close.Btn;
 
@@ -364,6 +372,8 @@ namespace SAOCR_Data_Manager
 
                         Button_Left.ButtonClick += new EventHandler(ResNo);
                         Button_Right.ButtonClick += new EventHandler(ResYes);
+                        Sys_Close.ButtonClick += ResNo;
+
                         AcceptButton = Button_Right.Btn;
                         CancelButton = Button_Left.Btn;
 
@@ -379,6 +389,8 @@ namespace SAOCR_Data_Manager
 
                         Button_Left.ButtonClick += new EventHandler(CancelDownload);
                         Button_Right.ButtonClick += new EventHandler(StartDownload);
+                        Sys_Close.ButtonClick += CancelDownload;
+
                         AcceptButton = Button_Right.Btn;
                         CancelButton = Button_Left.Btn;
 

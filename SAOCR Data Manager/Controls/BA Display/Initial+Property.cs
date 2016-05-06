@@ -18,6 +18,8 @@ namespace SAOCR_Data_Manager
     {
         bool TextTranslate = true;
         Size ControlSize;
+        CharaData CDT;
+        bool BADataImported;
 
         public BaDisplay()
         {
@@ -93,6 +95,9 @@ namespace SAOCR_Data_Manager
                 Power1.TextChanged += PowerCheck;
                 Power2.TextChanged += PowerCheck;
                 Power3.TextChanged += PowerCheck;
+                Title1.Click += Title_Click;
+                Title2.Click += Title_Click;
+                Title3.Click += Title_Click;
             }
             catch (Exception e)
             {

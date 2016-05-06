@@ -20,18 +20,28 @@ namespace SAOCR_Data_Manager
     {
         public static string BASeriesTextT(BASeriesType series)
         {
-            switch (series)
+            try
             {
-                case BASeriesType.Abnormal:
-                    return RDictEnumString.BA_SeriesAbnormal;
-                case BASeriesType.Attack:
-                    return RDictEnumString.BA_SeriesAttack;
-                case BASeriesType.Heal:
-                    return RDictEnumString.BA_SeriesHeal;
-                case BASeriesType.Support:
-                    return RDictEnumString.BA_SeriesSupport;
-                default:
-                    throw new ArgumentException(RError.Error_WrongBASeries);
+                switch (series)
+                {
+                    case BASeriesType.Abnormal:
+                        return RDictEnumString.BA_SeriesAbnormal;
+                    case BASeriesType.Attack:
+                        return RDictEnumString.BA_SeriesAttack;
+                    case BASeriesType.Heal:
+                        return RDictEnumString.BA_SeriesHeal;
+                    case BASeriesType.Support:
+                        return RDictEnumString.BA_SeriesSupport;
+                    case BASeriesType.Null:
+                        return RDictEnumString.BA_SeriesSupport;
+                    default:
+                        throw new ArgumentException(RError.E_0x0000300D);
+                }
+            }
+            catch (Exception e)
+            {
+                SystemAPI.Error(RError.E_0x0000300D, e);
+                throw;
             }
         }
         
@@ -57,7 +67,7 @@ namespace SAOCR_Data_Manager
                 }
                 else
                 {
-                    throw new ArgumentException(RError.E_0x00003005);
+                    return BASeriesType.Null;
                 }
             }
             catch (Exception e)
@@ -319,36 +329,52 @@ namespace SAOCR_Data_Manager
 
         public static string ElementT(EElement EE)
         {
-            switch (EE)
+            try
             {
-                case EElement.Fire:
-                    return RDictEnumString.EL_Fire;
-                case EElement.Wind:
-                    return RDictEnumString.EL_Wind;
-                case EElement.Water:
-                    return RDictEnumString.EL_Water;
-                default:
-                    throw new ArgumentException(RError.Error_WrongElement);
+                switch (EE)
+                {
+                    case EElement.Fire:
+                        return RDictEnumString.EL_Fire;
+                    case EElement.Wind:
+                        return RDictEnumString.EL_Wind;
+                    case EElement.Water:
+                        return RDictEnumString.EL_Water;
+                    default:
+                        throw new ArgumentException(RError.E_0x0000300A);
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x0000300A, ex);
+                throw;
             }
         }
 
         public static EElement ElementT(string EE)
         {
-            if (EE.Contains(RDictEnumString.EL_Fire))
+            try
             {
-                return EElement.Fire;
+                if (EE.Contains(RDictEnumString.EL_Fire))
+                {
+                    return EElement.Fire;
+                }
+                else if (EE.Contains(RDictEnumString.EL_Wind))
+                {
+                    return EElement.Wind;
+                }
+                else if (EE.Contains(RDictEnumString.EL_Water))
+                {
+                    return EElement.Water;
+                }
+                else
+                {
+                    throw new ArgumentException(RError.E_0x0000300B);
+                }
             }
-            else if (EE.Contains(RDictEnumString.EL_Wind))
+            catch (Exception ex)
             {
-                return EElement.Wind;
-            }
-            else if (EE.Contains(RDictEnumString.EL_Water))
-            {
-                return EElement.Water;
-            }
-            else
-            {
-                throw new ArgumentException(RError.Error_WrongElementString);
+                SystemAPI.Error(RError.E_0x0000300B, ex);
+                throw;
             }
         }
 
@@ -510,13 +536,49 @@ namespace SAOCR_Data_Manager
                     case EParamCategory.HP:
                         return RDictEnumString.PR_HP;
                     default:
-                        SystemAPI.Warning(RWarning.W_0xC0003002);
+                        SystemAPI.Error(RError.E_0x00003002);
                         return null;
                 }
             }
             catch (Exception e)
             {
                 SystemAPI.Error(RError.E_0x00003002, e);
+                throw;
+            }
+        }
+
+        public static EParamCategory EParamCategoryT(string EPC)
+        {
+            try
+            {
+                if (EPC.Contains(RDictEnumString.PR_STR))
+                {
+                    return EParamCategory.STR;
+                }
+                else if (EPC.Contains(RDictEnumString.PR_VIT))
+                {
+                    return EParamCategory.VIT;
+                }
+                else if (EPC.Contains(RDictEnumString.PR_INT))
+                {
+                    return EParamCategory.INT;
+                }
+                else if (EPC.Contains(RDictEnumString.PR_MEN))
+                {
+                    return EParamCategory.MEN;
+                }
+                else if (EPC.Contains(RDictEnumString.PR_HP))
+                {
+                    return EParamCategory.HP;
+                }
+                else
+                {
+                    throw new ArgumentException(RError.E_0x0000300C);
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x0000300C, ex);
                 throw;
             }
         }
@@ -639,6 +701,54 @@ namespace SAOCR_Data_Manager
             catch (Exception e)
             {
                 SystemAPI.Error(RError.E_0x00003007, e);
+                throw;
+            }
+        }
+
+        public static string DataRegT(EDataRegCategory DRC)
+        {
+            try
+            {
+                switch (DRC)
+                {
+                    case EDataRegCategory.BA:
+                        return RDictEnumString.DREG_BA;
+                    case EDataRegCategory.LS:
+                        return RDictEnumString.DREG_LS;
+                    case EDataRegCategory.CharaInfo:
+                        return RDictEnumString.DREG_Info;
+                    default:
+                        throw new ArgumentException(RError.E_0x00003008);
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00003008, ex);
+                throw;
+            }
+        }
+
+        public static string CharaTypeT(EParamType EPT)
+        {
+            try
+            {
+                switch (EPT)
+                {
+                    case EParamType.Force:
+                        return RDictEnumString.CT_Force;
+                    case EParamType.Aegis:
+                        return RDictEnumString.CT_Aegis;
+                    case EParamType.Mebius:
+                        return RDictEnumString.CT_Mebius;
+                    case EParamType.Magius:
+                        return RDictEnumString.CT_Magius;
+                    default:
+                        throw new ArgumentException(RError.E_0x00003009);
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00003009, ex);
                 throw;
             }
         }

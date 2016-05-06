@@ -19,6 +19,7 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
         {
             try
             {
+                CDT = Data;
                 CharaID.Text = Data.Data.CharaID;
                 Rarity.Text = Data.Data.CharaID.Substring(6, 1);
                 CharaName = Data.Info.Basic.GetBasicInfo(EBasicInfoCode.JP_NAME);
@@ -37,7 +38,7 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
 
                 GetMethod.Text = Data.Info.Extra.GetMethod;
                 DateTime DTT = Data.Info.Extra.ReleaseDate;
-                if (DTT.Year == 1)
+                if (DTT.Year == Const.Default.RELEASE_DATE_UNKNOWN_YEAR)
                 {
                     ReleaseDate.Text = RBasicInfo.Output_Unknown;
                 }
@@ -57,6 +58,25 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                 SystemAPI.Error(RError.E_0x00013005, e);
                 throw;
             }
+        }
+
+        /// <returns>角色名稱+CV、屬性顏色、屬性、場景顏色、場景、武器、釋出日期、角色名稱、獲得方法、俗名</returns>
+        public string[] OutputForHTML()
+        {
+            string[] A =
+            {
+                CharaName + " (CV:" + CV.Text + ")",
+                SFColorTrans.ElementT(EnumTranslator.ElementT(Element.Text)),
+                Element.Text,
+                SFColorTrans.SceneT(EnumTranslator.SceneT(Scene.Text)),
+                Scene.Text,
+                Weapon.Text,
+                ReleaseDate.Text,
+                CharaName,
+                GetMethod.Text,
+                FolkName.Text
+            };
+            return A;
         }
     }
 }

@@ -59,5 +59,302 @@ namespace SAOCR_Data_Manager.Resources.Forms {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查詢類似 BA 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_BA {
+            get {
+                return ResourceManager.GetString("Layout_BA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 BA中文敘述 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_BACHDescription {
+            get {
+                return ResourceManager.GetString("Layout_BACHDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 BA日文敘述 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_BAJPDescription {
+            get {
+                return ResourceManager.GetString("Layout_BAJPDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 BA日文名稱 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_BAJPName {
+            get {
+                return ResourceManager.GetString("Layout_BAJPName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 (CH) 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_CH {
+            get {
+                return ResourceManager.GetString("Layout_CH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色ID 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_CharaID {
+            get {
+                return ResourceManager.GetString("Layout_CharaID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 隊長技效果 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_Effect {
+            get {
+                return ResourceManager.GetString("Layout_Effect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 檔案路徑 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_FilePath {
+            get {
+                return ResourceManager.GetString("Layout_FilePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 俗名 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_FolkName {
+            get {
+                return ResourceManager.GetString("Layout_FolkName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 以日文名辨認 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_ForceJPName {
+            get {
+                return ResourceManager.GetString("Layout_ForceJPName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 獲得方法 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_GetMethod {
+            get {
+                return ResourceManager.GetString("Layout_GetMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 HP 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_HP {
+            get {
+                return ResourceManager.GetString("Layout_HP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ID 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_ID {
+            get {
+                return ResourceManager.GetString("Layout_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 INT 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_INT {
+            get {
+                return ResourceManager.GetString("Layout_INT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 (JP) 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_JP {
+            get {
+                return ResourceManager.GetString("Layout_JP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 隊長技 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_LS {
+            get {
+                return ResourceManager.GetString("Layout_LS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 MEN 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_MEN {
+            get {
+                return ResourceManager.GetString("Layout_MEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 登錄 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_Register {
+            get {
+                return ResourceManager.GetString("Layout_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 登錄對象 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_RegTarget {
+            get {
+                return ResourceManager.GetString("Layout_RegTarget", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 釋出日期 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_ReleaseDate {
+            get {
+                return ResourceManager.GetString("Layout_ReleaseDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 分數 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_Score {
+            get {
+                return ResourceManager.GetString("Layout_Score", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 系列1 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_Series1 {
+            get {
+                return ResourceManager.GetString("Layout_Series1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 系列2 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_Series2 {
+            get {
+                return ResourceManager.GetString("Layout_Series2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 特殊隊長技 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_Spec {
+            get {
+                return ResourceManager.GetString("Layout_Spec", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 SS 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_SS {
+            get {
+                return ResourceManager.GetString("Layout_SS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 STR 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_STR {
+            get {
+                return ResourceManager.GetString("Layout_STR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 隊長技對象 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_Target {
+            get {
+                return ResourceManager.GetString("Layout_Target", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 VIT 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_VIT {
+            get {
+                return ResourceManager.GetString("Layout_VIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 資料登錄對象:  的當地語系化字串。
+        /// </summary>
+        internal static string Log_Log1 {
+            get {
+                return ResourceManager.GetString("Log_Log1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ，檔案路徑:  的當地語系化字串。
+        /// </summary>
+        internal static string Log_Log2 {
+            get {
+                return ResourceManager.GetString("Log_Log2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ，字串內容: 的當地語系化字串。
+        /// </summary>
+        internal static string Log_Log3 {
+            get {
+                return ResourceManager.GetString("Log_Log3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 確定要登錄以下所列的值嗎？ 的當地語系化字串。
+        /// </summary>
+        internal static string Message_DoubleCheck {
+            get {
+                return ResourceManager.GetString("Message_DoubleCheck", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 資料登錄完成。登錄對象:  的當地語系化字串。
+        /// </summary>
+        internal static string Message_RegisterCompleted {
+            get {
+                return ResourceManager.GetString("Message_RegisterCompleted", resourceCulture);
+            }
+        }
     }
 }

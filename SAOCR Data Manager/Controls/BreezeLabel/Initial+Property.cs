@@ -48,6 +48,7 @@ namespace SAOCR_Data_Manager.Controls
     {
         ColorTimer CTimer = new ColorTimer();
         ColorConfig CConfig = new ColorConfig();
+        public event EventHandler LabelClick, LabelDoubleClick;
 
         public BreezeLabel()
         {
@@ -60,6 +61,9 @@ namespace SAOCR_Data_Manager.Controls
 
                 FMain.BreezeLabel.Tick += new EventHandler(RefreshBackColor);
                 FMain.BreezeLabel.Tick += ColorStatusRefresh;
+
+                label.Click += (sender, e) => LabelClick?.Invoke(this, EventArgs.Empty);
+                label.DoubleClick += (sender, e) => LabelDoubleClick?.Invoke(this, EventArgs.Empty);
             }
             catch (Exception e)
             {

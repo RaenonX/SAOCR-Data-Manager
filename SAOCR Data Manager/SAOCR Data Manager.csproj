@@ -55,6 +55,7 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic">
@@ -70,6 +71,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APIs\ColorTranslator.cs" />
     <Compile Include="Forms\DataRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,7 +87,7 @@
     <Compile Include="Main Program\Actions\Statistics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\StatusLog.cs" />
+    <Compile Include="APIs\StatusLog.cs" />
     <Compile Include="Controls\BreezeLabel\Initial+Property.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -274,6 +276,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RDownloader.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\RDictColor.Designer.cs">
+      <DependentUpon>RDictColor.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -444,6 +451,10 @@
     <EmbeddedResource Include="Resources\Module\RDownloader.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RDownloader.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RDictColor.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RDictColor.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\RDictEnumString.resx">
       <Generator>ResXFileCodeGenerator</Generator>

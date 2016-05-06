@@ -19,11 +19,12 @@ namespace SAOCR_Data_Manager.Forms
         {
             try
             {
+                HTMLMade = false;
                 AppConfig AC = new AppConfig();
 
                 if (Data.CreateSucceed)
                 {
-                    LoadedData = Data;
+                    CDT = Data;
                     isFavorite = Extent.isContainFullElement(AC.Chara_Favorite.Cast<string>().ToList(), Data.Data.CharaID);
                     RefreshFavoriteStatus();
 

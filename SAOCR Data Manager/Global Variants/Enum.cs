@@ -460,7 +460,7 @@ public enum ELang
 
 #region 隊長技、BA相關
 [Flags]
-public enum EBADisplayStatus
+public enum EDisplayStatus
 {
     JP,
     ForceJP,
@@ -474,6 +474,7 @@ public enum BASeriesType
     Support,
     Heal,
     Abnormal,
+    Null
 }
 
 [Flags]
@@ -634,4 +635,14 @@ public enum EWeapon
     Katana = 12
 }
 
+#endregion
+
+#region 資料註冊相關
+[Flags]
+public enum EDataRegCategory
+{
+    BA,
+    LS,
+    CharaInfo
+}
 #endregion

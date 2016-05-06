@@ -31,12 +31,12 @@
             this.GP_LS = new System.Windows.Forms.GroupBox();
             this.EffectScoreText = new System.Windows.Forms.Label();
             this.EffectScore = new System.Windows.Forms.Label();
+            this.Effect = new SAOCR_Data_Manager.MarqueeableLabel();
             this.EffectText = new System.Windows.Forms.Label();
             this.TargetScoreText = new System.Windows.Forms.Label();
             this.TargetScore = new System.Windows.Forms.Label();
-            this.TargetText = new System.Windows.Forms.Label();
-            this.Effect = new SAOCR_Data_Manager.MarqueeableLabel();
             this.Target = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.TargetText = new System.Windows.Forms.Label();
             this.GP_LS.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,8 +79,29 @@
             this.EffectScore.TabIndex = 16;
             this.EffectScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Effect
+            // 
+            this.Effect.Direction = MarqueeDirection.Horizontal;
+            this.Effect.EnableMarquee = true;
+            this.Effect.Font = new System.Drawing.Font("微軟正黑體", 11F);
+            this.Effect.FreezeTime = 2000;
+            this.Effect.LabelSize = new System.Drawing.Size(269, 32);
+            this.Effect.LeftDistance = 5;
+            this.Effect.LForeColor = System.Drawing.Color.White;
+            this.Effect.Location = new System.Drawing.Point(56, 64);
+            this.Effect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Effect.MarqueeText = "";
+            this.Effect.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.Effect.MoveDifferenceEachTime = 1;
+            this.Effect.MoveInterval = 15;
+            this.Effect.Name = "Effect";
+            this.Effect.OverBorderDistance = 100;
+            this.Effect.Size = new System.Drawing.Size(269, 32);
+            this.Effect.TabIndex = 15;
+            // 
             // EffectText
             // 
+            this.EffectText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EffectText.Location = new System.Drawing.Point(6, 64);
             this.EffectText.Margin = new System.Windows.Forms.Padding(3);
             this.EffectText.Name = "EffectText";
@@ -109,42 +130,16 @@
             this.TargetScore.TabIndex = 12;
             this.TargetScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TargetText
-            // 
-            this.TargetText.Location = new System.Drawing.Point(6, 22);
-            this.TargetText.Margin = new System.Windows.Forms.Padding(3);
-            this.TargetText.Name = "TargetText";
-            this.TargetText.Size = new System.Drawing.Size(43, 32);
-            this.TargetText.TabIndex = 0;
-            this.TargetText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Effect
-            // 
-            this.Effect.Direction = MarqueeDirection.Horizontal;
-            this.Effect.EnableMarquee = true;
-            this.Effect.Font = new System.Drawing.Font("微軟正黑體", 11F);
-            this.Effect.FreezeTime = 2000;
-            this.Effect.LabelSize = new System.Drawing.Size(269, 32);
-            this.Effect.LeftDistance = 5;
-            this.Effect.Location = new System.Drawing.Point(56, 64);
-            this.Effect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Effect.MarqueeText = "";
-            this.Effect.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.Effect.MoveDifferenceEachTime = 1;
-            this.Effect.MoveInterval = 15;
-            this.Effect.Name = "Effect";
-            this.Effect.OverBorderDistance = 100;
-            this.Effect.Size = new System.Drawing.Size(269, 32);
-            this.Effect.TabIndex = 15;
-            // 
             // Target
             // 
+            this.Target.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.Target.Direction = MarqueeDirection.Horizontal;
             this.Target.EnableMarquee = true;
             this.Target.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.Target.FreezeTime = 2000;
             this.Target.LabelSize = new System.Drawing.Size(269, 32);
             this.Target.LeftDistance = 5;
+            this.Target.LForeColor = System.Drawing.Color.White;
             this.Target.Location = new System.Drawing.Point(56, 22);
             this.Target.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Target.MarqueeText = "";
@@ -155,6 +150,16 @@
             this.Target.OverBorderDistance = 100;
             this.Target.Size = new System.Drawing.Size(269, 32);
             this.Target.TabIndex = 1;
+            // 
+            // TargetText
+            // 
+            this.TargetText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TargetText.Location = new System.Drawing.Point(6, 22);
+            this.TargetText.Margin = new System.Windows.Forms.Padding(3);
+            this.TargetText.Name = "TargetText";
+            this.TargetText.Size = new System.Drawing.Size(43, 32);
+            this.TargetText.TabIndex = 0;
+            this.TargetText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LsDisplay
             // 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SAOCR_Data_Manager.Properties;
 using System.Diagnostics;
 using SAOCR_Data_Manager.Resources.Message;
+using SAOCR_Data_Manager.Forms;
 
 namespace SAOCR_Data_Manager
 {
@@ -168,6 +169,37 @@ namespace SAOCR_Data_Manager
             catch (Exception ex)
             {
                 SystemAPI.Error(RError.E_0x0000E00B, ex);
+                throw;
+            }
+        }
+
+        private void Title_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Label MQL = (Label)sender;
+
+                if (!BADataImported)
+                {
+                    return;
+                }
+
+                switch (MQL.Name)
+                {
+                    case "Title1":
+                        new DataRegister(EDataRegCategory.BA, Const.Path.BA_DICT, CDT.BA.BA1.GetArray()).ShowDialog();
+                        break;
+                    case "Title2":
+                        new DataRegister(EDataRegCategory.BA, Const.Path.BA_DICT, CDT.BA.BA2.GetArray()).ShowDialog();
+                        break;
+                    case "Title3":
+                        new DataRegister(EDataRegCategory.BA, Const.Path.BA_DICT, CDT.BA.BA3.GetArray()).ShowDialog();
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x0000E00C, ex);
                 throw;
             }
         }

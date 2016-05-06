@@ -51,10 +51,10 @@ namespace SAOCR_Data_Manager.Forms
                 
                 if (isFavorite)
                 {
-                    if (!Extent.isContainFullElement(AC.Chara_Favorite.Cast<string>().ToList(), LoadedData.Data.CharaID))
+                    if (!Extent.isContainFullElement(AC.Chara_Favorite.Cast<string>().ToList(), CDT.Data.CharaID))
                     {
-                        AC.Chara_Favorite.Add(LoadedData.Data.CharaID);
-                        StatusLog.Log(RCDDisplay.Log_FavoriteAdded + LoadedData.Data.CharaID);
+                        AC.Chara_Favorite.Add(CDT.Data.CharaID);
+                        StatusLog.Log(RCDDisplay.Log_FavoriteAdded + CDT.Data.CharaID);
                     }
                     AC.Save();
                     Favorite.ButtonBackColor = Color.FromArgb((int)EBackColorBreeze.Yellow);
@@ -63,10 +63,10 @@ namespace SAOCR_Data_Manager.Forms
                 }
                 else
                 {
-                    if (Extent.isContainFullElement(AC.Chara_Favorite.Cast<string>().ToList(), LoadedData.Data.CharaID))
+                    if (Extent.isContainFullElement(AC.Chara_Favorite.Cast<string>().ToList(), CDT.Data.CharaID))
                     {
-                        AC.Chara_Favorite.Remove(LoadedData.Data.CharaID);
-                        StatusLog.Log(RCDDisplay.Log_FavoriteDeleted + LoadedData.Data.CharaID);
+                        AC.Chara_Favorite.Remove(CDT.Data.CharaID);
+                        StatusLog.Log(RCDDisplay.Log_FavoriteDeleted + CDT.Data.CharaID);
                     }
                     AC.Save();
                     Favorite.ButtonBackColor = Color.FromArgb((int)EForeColor.Grey70);
@@ -76,7 +76,6 @@ namespace SAOCR_Data_Manager.Forms
                 CharacterName.BreezeBegin();
 
                 FavoriteSaved?.Invoke(this, EventArgs.Empty);
-
             }
             catch (Exception e)
             {
@@ -89,6 +88,68 @@ namespace SAOCR_Data_Manager.Forms
         {
             Border.Size = new Size(Size.Width - 1, Size.Height - 1);
             Panel.Size = new Size(Size.Width - 1, Size.Height - CharacterName.Size.Height - 1);
+        }
+
+        private void HTML_ButtonClick(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!HTMLMade)
+                {
+                    ToWrite = "";
+                    StatusLog.Log(RCDDisplay.Log_HTMLOutputBegin + CDT.Data.CharaID);
+
+                    List<string> Template = new List<string>(), Data = new List<string>();
+
+                    Data.AddRange(BasicInfo.OutputForHTML());
+                    Data.AddRange(BA.OutputForHTML());
+                    Data.AddRange(LS.OutputForHTML());
+                    Data.AddRange(Param.OutputForHTML());
+                    DataAPI.LoadCSV(ref Template, Const.Path.CHARA_HTML_TEMPLATE);
+
+                    My.FileSystem.WriteAllText(Const.Path.CHARA_HTML_OUTPUT, "", false);
+                    for (int i = 0; i < Template.Count; i++)
+                    {
+                        ToWrite += Template[i];
+                        try
+                        {
+                            ToWrite += Data[i];
+                        }
+                        catch (ArgumentOutOfRangeException)
+                        {
+                        }
+                    }
+                    HTMLMade = true;
+                }
+                Clipboard.SetText(ToWrite);
+                new MessageDialog(RCDDisplay.Message_HTMLOutputComplete1 + CDT.Data.CharaID + RCDDisplay.Message_HTMLOutputComplete2).ShowDialog();
+                StatusLog.Log(RCDDisplay.Log_HTMLOutputCompleted + CDT.Data.CharaID);
+            }
+            catch (Exception ex)
+            {
+                HTMLMade = false;
+                StatusLog.Log(RCDDisplay.Log_HTMLOutputAbort + CDT.Data.CharaID);
+                SystemAPI.Error(RError.E_0x00019008, ex);
+                throw;
+            }
+        }
+
+        private void CharacterName_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!Extent.isEmptyString(CDT.Data.CharaID))
+                {
+                    Clipboard.SetText(CharacterName.LText);
+                    StatusLog.Log(RCDDisplay.Log_NameCopied + CDT.Data.CharaID);
+                }
+            }
+            catch (Exception ex)
+            {
+                StatusLog.Log(RCDDisplay.Log_NameCopyAborted + CDT.Data.CharaID);
+                SystemAPI.Error(RError.E_0x00019009, ex);
+                throw;
+            }
         }
     }
 }

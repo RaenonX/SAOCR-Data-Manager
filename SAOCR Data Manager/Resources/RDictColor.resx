@@ -117,103 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Layout_BA" xml:space="preserve">
-    <value>BA</value>
+  <data name="Blue" xml:space="preserve">
+    <value>#0000FF</value>
   </data>
-  <data name="Layout_BACHDescription" xml:space="preserve">
-    <value>BA中文敘述</value>
+  <data name="Green" xml:space="preserve">
+    <value>#339966</value>
   </data>
-  <data name="Layout_BAJPDescription" xml:space="preserve">
-    <value>BA日文敘述</value>
+  <data name="Grey70" xml:space="preserve">
+    <value>#464646</value>
   </data>
-  <data name="Layout_BAJPName" xml:space="preserve">
-    <value>BA日文名稱</value>
+  <data name="Orange" xml:space="preserve">
+    <value>#FF9900</value>
   </data>
-  <data name="Layout_CH" xml:space="preserve">
-    <value>(CH)</value>
+  <data name="Purple" xml:space="preserve">
+    <value>#9900FF</value>
   </data>
-  <data name="Layout_Effect" xml:space="preserve">
-    <value>隊長技效果</value>
-  </data>
-  <data name="Layout_FilePath" xml:space="preserve">
-    <value>檔案路徑</value>
-  </data>
-  <data name="Layout_ForceJPName" xml:space="preserve">
-    <value>以日文名辨認</value>
-  </data>
-  <data name="Layout_HP" xml:space="preserve">
-    <value>HP</value>
-  </data>
-  <data name="Layout_ID" xml:space="preserve">
-    <value>ID</value>
-  </data>
-  <data name="Layout_INT" xml:space="preserve">
-    <value>INT</value>
-  </data>
-  <data name="Layout_JP" xml:space="preserve">
-    <value>(JP)</value>
-  </data>
-  <data name="Layout_LS" xml:space="preserve">
-    <value>隊長技</value>
-  </data>
-  <data name="Layout_MEN" xml:space="preserve">
-    <value>MEN</value>
-  </data>
-  <data name="Layout_Register" xml:space="preserve">
-    <value>登錄</value>
-  </data>
-  <data name="Layout_RegTarget" xml:space="preserve">
-    <value>登錄對象</value>
-  </data>
-  <data name="Layout_Score" xml:space="preserve">
-    <value>分數</value>
-  </data>
-  <data name="Layout_Series1" xml:space="preserve">
-    <value>系列1</value>
-  </data>
-  <data name="Layout_Series2" xml:space="preserve">
-    <value>系列2</value>
-  </data>
-  <data name="Layout_Spec" xml:space="preserve">
-    <value>特殊隊長技</value>
-  </data>
-  <data name="Layout_SS" xml:space="preserve">
-    <value>SS</value>
-  </data>
-  <data name="Layout_STR" xml:space="preserve">
-    <value>STR</value>
-  </data>
-  <data name="Layout_Target" xml:space="preserve">
-    <value>隊長技對象</value>
-  </data>
-  <data name="Layout_VIT" xml:space="preserve">
-    <value>VIT</value>
-  </data>
-  <data name="Message_DoubleCheck" xml:space="preserve">
-    <value>確定要登錄以下所列的值嗎？</value>
-  </data>
-  <data name="Log_Log1" xml:space="preserve">
-    <value>資料登錄對象: </value>
-  </data>
-  <data name="Log_Log2" xml:space="preserve">
-    <value>，檔案路徑: </value>
-  </data>
-  <data name="Log_Log3" xml:space="preserve">
-    <value>，字串內容:</value>
-  </data>
-  <data name="Layout_CharaID" xml:space="preserve">
-    <value>角色ID</value>
-  </data>
-  <data name="Layout_FolkName" xml:space="preserve">
-    <value>俗名</value>
-  </data>
-  <data name="Layout_GetMethod" xml:space="preserve">
-    <value>獲得方法</value>
-  </data>
-  <data name="Layout_ReleaseDate" xml:space="preserve">
-    <value>釋出日期</value>
-  </data>
-  <data name="Message_RegisterCompleted" xml:space="preserve">
-    <value>資料登錄完成。登錄對象: </value>
+  <data name="Red" xml:space="preserve">
+    <value>#FF0000</value>
   </data>
 </root>

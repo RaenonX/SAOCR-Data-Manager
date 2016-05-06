@@ -14,8 +14,9 @@ namespace SAOCR_Data_Manager
 {
     public partial class LsDisplay : UserControl
     {
-        bool marquee = true;
+        bool marquee = true, LSDataImported;
         Size ControlSize;
+        CharaData CDT;
 
         public LsDisplay()
         {
@@ -25,8 +26,10 @@ namespace SAOCR_Data_Manager
 
             ControlSize = Size;
             SizeChanged += Display_SizeChanged;
+            TargetText.Click += LSRegister;
+            EffectText.Click += LSRegister;
         }
-
+        
         private void Display_SizeChanged(object sender, EventArgs e)
         {
             Size = ControlSize;

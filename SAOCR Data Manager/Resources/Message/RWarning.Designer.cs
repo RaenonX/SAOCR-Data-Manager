@@ -232,7 +232,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0007007\n\n因為在BA字典中沒有查詢到本BA的中文翻譯，故以日文顯示。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0007007\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0007007 {
             get {
@@ -241,7 +241,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0007008\n\n因為在隊長技字典中沒有查詢到本隊長技相關資訊的翻譯，故以日文顯示。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0007008\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0007008 {
             get {

@@ -178,11 +178,56 @@ namespace SAOCR_Data_Manager.Resources {
         }
         
         /// <summary>
+        ///   查詢類似 不明 的當地語系化字串。
+        /// </summary>
+        internal static string BA_SeriesNull {
+            get {
+                return ResourceManager.GetString("BA_SeriesNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 支援 的當地語系化字串。
         /// </summary>
         internal static string BA_SeriesSupport {
             get {
                 return ResourceManager.GetString("BA_SeriesSupport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 イージス (防禦型) 的當地語系化字串。
+        /// </summary>
+        internal static string CT_Aegis {
+            get {
+                return ResourceManager.GetString("CT_Aegis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 フォース (攻擊型) 的當地語系化字串。
+        /// </summary>
+        internal static string CT_Force {
+            get {
+                return ResourceManager.GetString("CT_Force", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 マギウス (魔法型) 的當地語系化字串。
+        /// </summary>
+        internal static string CT_Magius {
+            get {
+                return ResourceManager.GetString("CT_Magius", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 メビウス (平均型) 的當地語系化字串。
+        /// </summary>
+        internal static string CT_Mebius {
+            get {
+                return ResourceManager.GetString("CT_Mebius", resourceCulture);
             }
         }
         
@@ -291,6 +336,33 @@ namespace SAOCR_Data_Manager.Resources {
         internal static string DL_Ready {
             get {
                 return ResourceManager.GetString("DL_Ready", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 BA 的當地語系化字串。
+        /// </summary>
+        internal static string DREG_BA {
+            get {
+                return ResourceManager.GetString("DREG_BA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色資料 的當地語系化字串。
+        /// </summary>
+        internal static string DREG_Info {
+            get {
+                return ResourceManager.GetString("DREG_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 隊長技 的當地語系化字串。
+        /// </summary>
+        internal static string DREG_LS {
+            get {
+                return ResourceManager.GetString("DREG_LS", resourceCulture);
             }
         }
         

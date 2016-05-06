@@ -190,5 +190,17 @@ namespace SAOCR_Data_Manager.Properties {
                 this["SE_MessageMute"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Dimension/CharaHTMLTemplate.txt")]
+        public string Path_CharaHTML {
+            get {
+                return ((string)(this["Path_CharaHTML"]));
+            }
+            set {
+                this["Path_CharaHTML"] = value;
+            }
+        }
     }
 }

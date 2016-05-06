@@ -151,9 +151,12 @@ namespace SAOCR_Data_Manager
             }
         }
 
-        private void ST_ReadTtile_Click(object sender, EventArgs e)
+        private void ST_ReLoad_Click(object sender, EventArgs e)
         {
             InitializeDataTitle();
+            InitializeCharaDict();
+            InitializeDataTables();
+            Status(RStatus.S_0xF0027001);
         }
 
         private void ST_AutoLoad_CheckedChanged(object sender, EventArgs e)
