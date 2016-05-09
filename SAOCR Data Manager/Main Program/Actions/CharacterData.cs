@@ -176,7 +176,7 @@ namespace SAOCR_Data_Manager
 
         private void CD_SearchCharacter_SearchClicked(object sender, EventArgs e)
         {
-            CD_SearchCharacter.FindCharacter(ref DT.Source, Status);
+            CD_SearchCharacter.FindCharacter(ref DT.CharaMix, Status);
         }
     }
 }

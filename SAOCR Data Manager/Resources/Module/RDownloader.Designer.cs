@@ -113,5 +113,14 @@ namespace SAOCR_Data_Manager.Resources.Module {
                 return ResourceManager.GetString("Log_DownloadSucceed2", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查詢類似 刪除下載不完整的檔案的作業失敗，正在重試...檔案完整路徑:  的當地語系化字串。
+        /// </summary>
+        internal static string Log_RetryToDelete {
+            get {
+                return ResourceManager.GetString("Log_RetryToDelete", resourceCulture);
+            }
+        }
     }
 }

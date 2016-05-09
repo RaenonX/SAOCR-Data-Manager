@@ -102,7 +102,7 @@ namespace SAOCR_Data_Manager
         {
             public const string PIC_AREA = "https://raw.githubusercontent.com/RaenonX/SAOCR-Pictures/Startup-Pictures";
             public const string CHARA_PIC = "/chara";
-            public const string NETWORK_FILE_AREA = "https://sites.google.com/site/raenonx/datamanager";
+            public const string NETWORK_FILE_AREA = "https://raw.githubusercontent.com/RaenonX/SAOCRDM/master";
             public const string ANNOUNCEMENT = "/Announcement.txt";
             public const string FOLDER_DIMENSION = "/Dimension";
         }

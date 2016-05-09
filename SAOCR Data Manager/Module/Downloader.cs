@@ -163,42 +163,79 @@ namespace SAOCR_Data_Manager
         
         public void DLCancel()
         {
-            Web.DownloadFileCompleted -= DLCompleted;
-            Web.DownloadFileCompleted += DLCompleted_Cancel;
-            Web.CancelAsync();
-            DLData.Status = DLStatus.DownloadCancelled;
-            StatusLog.Log(RDownloader.Log_DownloadCancelled);
+            try
+            {
+                Web.DownloadFileCompleted -= DLCompleted;
+                Web.DownloadFileCompleted += DLCompleted_Cancel;
+                Web.CancelAsync();
+                DLData.Status = DLStatus.DownloadCancelled;
+                StatusLog.Log(RDownloader.Log_DownloadCancelled);
+
+                if (My.FileSystem.FileExists(DLData.Location.LocalDLing))
+                {
+                    My.FileSystem.DeleteFile(DLData.Location.LocalDLing);
+                }
+            }
+            catch (IOException)
+            {
+                if (My.FileSystem.FileExists(DLData.Location.LocalDLing))
+                {
+                    My.FileSystem.DeleteFile(DLData.Location.LocalDLing);
+                }
+                StatusLog.Log(RDownloader.Log_RetryToDelete + DLData.Location.LocalDLing);
+            }
+            catch (Exception e)
+            {
+                SystemAPI.Error(RError.E_0x00025003, e);
+                throw;
+            }
         }
 
         private void DLCompleted_Cancel(object sender, EventArgs e)
         {
-            DownloadCancelled?.Invoke(this, EventArgs.Empty);
+            try
+            {
+                DownloadCancelled?.Invoke(this, EventArgs.Empty);
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00025004, ex);
+                throw;
+            }
         }
         
         public string GetDLInfo(DLInfoCategory DLIC)
         {
-            switch (DLIC)
+            try
             {
-                case DLInfoCategory.ItemPercentage:
-                    return DLData.Info.Percent.ToString("0.00") + "%";
-                case DLInfoCategory.SizeReceived:
-                    return (DLData.Info.BytesReceived / (int)DLData.Info.DLSizeUnit).ToString() + " " + EnumTranslator.SizeUnitT(DLData.Info.DLSizeUnit, false);
-                case DLInfoCategory.TotalSize:
-                    return (DLData.Info.TotalBytes / (int)DLData.Info.DLSizeUnit).ToString() + " " + EnumTranslator.SizeUnitT(DLData.Info.DLSizeUnit, false);
-                case DLInfoCategory.Speed:
-                    return DLData.Info.Speed.ToString("0.00") + " " + EnumTranslator.SizeUnitT(DLData.Info.DLSizeUnit, false) + "/s";
-                case DLInfoCategory.CurrentCount:
-                    return DLData.Count.Current.ToString();
-                case DLInfoCategory.TotalItems:
-                    return DLData.Count.Items.ToString();
-                case DLInfoCategory.TotalPercentage:
-                    return ((double)DLData.Count.Current / DLData.Count.Items * 100).ToString("0.00") + "%";
-                case DLInfoCategory.Description:
-                    return DLData.Info.Description;
-                case DLInfoCategory.Status:
-                    return GetStatusString();
-                default:
-                    throw new ArgumentException(RError.Error_WrongDLInfoCategory);
+                switch (DLIC)
+                {
+                    case DLInfoCategory.ItemPercentage:
+                        return DLData.Info.Percent.ToString("0.00") + "%";
+                    case DLInfoCategory.SizeReceived:
+                        return (DLData.Info.BytesReceived / (int)DLData.Info.DLSizeUnit).ToString() + " " + EnumTranslator.SizeUnitT(DLData.Info.DLSizeUnit, false);
+                    case DLInfoCategory.TotalSize:
+                        return (DLData.Info.TotalBytes / (int)DLData.Info.DLSizeUnit).ToString() + " " + EnumTranslator.SizeUnitT(DLData.Info.DLSizeUnit, false);
+                    case DLInfoCategory.Speed:
+                        return DLData.Info.Speed.ToString("0.00") + " " + EnumTranslator.SizeUnitT(DLData.Info.DLSizeUnit, false) + "/s";
+                    case DLInfoCategory.CurrentCount:
+                        return DLData.Count.Current.ToString();
+                    case DLInfoCategory.TotalItems:
+                        return DLData.Count.Items.ToString();
+                    case DLInfoCategory.TotalPercentage:
+                        return ((double)DLData.Count.Current / DLData.Count.Items * 100).ToString("0.00") + "%";
+                    case DLInfoCategory.Description:
+                        return DLData.Info.Description;
+                    case DLInfoCategory.Status:
+                        return GetStatusString();
+                    default:
+                        throw new ArgumentException(RError.E_0x00025006);
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00025005 + DLIC.ToString(), ex);
+                throw;
             }
         }
         

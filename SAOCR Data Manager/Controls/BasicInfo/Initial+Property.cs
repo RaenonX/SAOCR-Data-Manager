@@ -15,6 +15,7 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
     public partial class BasicInfo : UserControl
     {
         CharaData CDT;
+        Downloader DL;
 
         public BasicInfo()
         {
@@ -61,7 +62,6 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
         {
             try
             {
-                Picture.Click += new EventHandler(Picture_Click);
                 Element.TextChanged += ElementText_TextChanged;
                 Sex.TextChanged += SexText_TextChanged;
                 Scene.TextChanged += SceneText_TextChanged;

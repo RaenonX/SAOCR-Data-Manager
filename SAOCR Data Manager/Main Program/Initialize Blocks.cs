@@ -295,8 +295,6 @@ namespace SAOCR_Data_Manager
             {
                 //Csv View
                 CT_Tips.Marquee();
-                CT_CsvView.DefaultCellStyle.ForeColor = Color.FromArgb((int)EForeColor.White);
-                CT_CsvView.DefaultCellStyle.BackColor = Color.FromArgb((int)EForeColor.Grey70);
 
                 //Config
                 ST_PathBeep.Marquee();
@@ -334,14 +332,8 @@ namespace SAOCR_Data_Manager
                 Announce.URL = new Uri(Const.URL.NETWORK_FILE_AREA + Const.URL.ANNOUNCEMENT);
                 Announce.Strings = new List<string>();
 
-                if (Extent.HaveConnection())
-                {
-                    Announce.DL = new Downloader(Announce.URL, Announce.Local, SizeUnit.KB, null);
-                    Announce.DL.DLStart();
-                } else
-                {
-                    Announce_DownloadCompleted(this, EventArgs.Empty);
-                }
+                Announce.DL = new Downloader(Announce.URL, Announce.Local, SizeUnit.KB, null);
+                Announce.DL.DLStart();
 
                 //Download
                 InitializeList(InitItem.DL_DownloadList);

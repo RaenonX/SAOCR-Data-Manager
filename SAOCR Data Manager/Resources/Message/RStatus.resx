@@ -129,15 +129,6 @@
   <data name="Error_EmptyParameterArray" xml:space="preserve">
     <value>未輸入參數陣列。</value>
   </data>
-  <data name="Error_Exception1" xml:space="preserve">
-    <value>發生例外狀況。訊息: </value>
-  </data>
-  <data name="Error_Exception2" xml:space="preserve">
-    <value> 種類:</value>
-  </data>
-  <data name="Error_Exception3" xml:space="preserve">
-    <value>。</value>
-  </data>
   <data name="Error_FileNotFoundCSV" xml:space="preserve">
     <value>找不到csv檔案。請重新選擇。</value>
   </data>

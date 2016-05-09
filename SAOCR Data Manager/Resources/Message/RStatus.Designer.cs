@@ -106,33 +106,6 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 發生例外狀況。訊息:  的當地語系化字串。
-        /// </summary>
-        internal static string Error_Exception1 {
-            get {
-                return ResourceManager.GetString("Error_Exception1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似  種類: 的當地語系化字串。
-        /// </summary>
-        internal static string Error_Exception2 {
-            get {
-                return ResourceManager.GetString("Error_Exception2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 。 的當地語系化字串。
-        /// </summary>
-        internal static string Error_Exception3 {
-            get {
-                return ResourceManager.GetString("Error_Exception3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 找不到BA字典檔。請重新選擇。 的當地語系化字串。
         /// </summary>
         internal static string Error_FileNotFoundBADict {

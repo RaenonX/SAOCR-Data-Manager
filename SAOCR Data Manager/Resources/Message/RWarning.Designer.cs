@@ -358,6 +358,96 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
+        ///   查詢類似 警告代碼 0xC0005000\n\nAssetbundle解壓縮失敗。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005000 {
+            get {
+                return ResourceManager.GetString("W_0xC0005000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005001\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005001 {
+            get {
+                return ResourceManager.GetString("W_0xC0005001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005002\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005002 {
+            get {
+                return ResourceManager.GetString("W_0xC0005002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005003\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005003 {
+            get {
+                return ResourceManager.GetString("W_0xC0005003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005004\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005004 {
+            get {
+                return ResourceManager.GetString("W_0xC0005004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005005\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005005 {
+            get {
+                return ResourceManager.GetString("W_0xC0005005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005006\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005006 {
+            get {
+                return ResourceManager.GetString("W_0xC0005006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005007\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005007 {
+            get {
+                return ResourceManager.GetString("W_0xC0005007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005008\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005008 {
+            get {
+                return ResourceManager.GetString("W_0xC0005008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0005009\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0005009 {
+            get {
+                return ResourceManager.GetString("W_0xC0005009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 警告代碼 0xC0007001\n\n角色ID長度不正確，請重新確認。角色ID由8位數字組成。 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0007001 {

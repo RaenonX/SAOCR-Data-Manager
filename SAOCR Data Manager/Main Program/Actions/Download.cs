@@ -140,7 +140,6 @@ namespace SAOCR_Data_Manager
             try
             {
                 Downloader DL = (Downloader)sender;
-                My.FileSystem.DeleteFile(DL.GetFileLocation(DataSource.Local));
 
                 RefreshCounts();
 

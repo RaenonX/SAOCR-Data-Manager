@@ -512,4 +512,44 @@
     <value>警告代碼 0xC0027002\n\n發生錯誤，清除附件失敗。</value>
     <comment>PConfig</comment>
   </data>
+  <data name="W_0xC0005000" xml:space="preserve">
+    <value>警告代碼 0xC0005000\n\nAssetbundle解壓縮失敗。</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005001" xml:space="preserve">
+    <value>警告代碼 0xC0005001\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005002" xml:space="preserve">
+    <value>警告代碼 0xC0005002\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005003" xml:space="preserve">
+    <value>警告代碼 0xC0005003\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005004" xml:space="preserve">
+    <value>警告代碼 0xC0005004\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005005" xml:space="preserve">
+    <value>警告代碼 0xC0005005\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005006" xml:space="preserve">
+    <value>警告代碼 0xC0005006\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005007" xml:space="preserve">
+    <value>警告代碼 0xC0005007\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005008" xml:space="preserve">
+    <value>警告代碼 0xC0005008\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0005009" xml:space="preserve">
+    <value>警告代碼 0xC0005009\n\n</value>
+    <comment>AppFunction</comment>
+  </data>
 </root>

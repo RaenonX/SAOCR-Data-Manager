@@ -673,6 +673,96 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005000\n\n在使用Disunity解壓縮csv時發生錯誤。 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005000 {
+            get {
+                return ResourceManager.GetString("E_0x00005000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005001\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005001 {
+            get {
+                return ResourceManager.GetString("E_0x00005001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005002\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005002 {
+            get {
+                return ResourceManager.GetString("E_0x00005002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005003\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005003 {
+            get {
+                return ResourceManager.GetString("E_0x00005003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005004\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005004 {
+            get {
+                return ResourceManager.GetString("E_0x00005004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005005\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005005 {
+            get {
+                return ResourceManager.GetString("E_0x00005005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005006\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005006 {
+            get {
+                return ResourceManager.GetString("E_0x00005006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005007\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005007 {
+            get {
+                return ResourceManager.GetString("E_0x00005007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005008\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005008 {
+            get {
+                return ResourceManager.GetString("E_0x00005008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 錯誤代碼 0x00005009\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string E_0x00005009 {
+            get {
+                return ResourceManager.GetString("E_0x00005009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 錯誤代碼 0x00007000\n\n 的當地語系化字串。
         /// </summary>
         internal static string E_0x00007000 {
@@ -2923,7 +3013,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x00025003\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x00025003\n\n取消下載作業時發生錯誤。 的當地語系化字串。
         /// </summary>
         internal static string E_0x00025003 {
             get {
@@ -2932,7 +3022,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x00025004\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x00025004\n\n於下載完成中的取消區塊內，在Invoke的過程中發生錯誤。 的當地語系化字串。
         /// </summary>
         internal static string E_0x00025004 {
             get {
@@ -2941,7 +3031,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x00025005\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x00025005\n\n獲取下載資訊時發生錯誤。要求的下載資訊:  的當地語系化字串。
         /// </summary>
         internal static string E_0x00025005 {
             get {
@@ -2950,7 +3040,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 錯誤代碼 0x00025006\n\n 的當地語系化字串。
+        ///   查詢類似 錯誤代碼 0x00025006\n\n下載資訊目錄錯誤。 的當地語系化字串。
         /// </summary>
         internal static string E_0x00025006 {
             get {
@@ -4098,15 +4188,6 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string Error_WrongBASeries {
             get {
                 return ResourceManager.GetString("Error_WrongBASeries", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 錯誤的下載資訊目錄。 的當地語系化字串。
-        /// </summary>
-        internal static string Error_WrongDLInfoCategory {
-            get {
-                return ResourceManager.GetString("Error_WrongDLInfoCategory", resourceCulture);
             }
         }
         

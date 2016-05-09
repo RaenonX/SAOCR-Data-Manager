@@ -59,7 +59,7 @@ namespace SAOCR_Data_Manager.Controls
             {
                 Keyword.KeyPress += SearchBox_KeyPress;
                 Keyword.KeyPress += Extent.VerifyLetterDigitOnly;
-                Search.ButtonClick += SearchClicked;
+                Search.ButtonClick += (sender, e) => SearchClicked?.Invoke(sender, e);
                 Result.DoubleClick += (sender, e) => ItemSelected?.Invoke(sender, e);
                 Rarity.KeyPress += SearchBox_KeyPress;
                 Rarity.KeyPress += Extent.VerifyTextIsNum;

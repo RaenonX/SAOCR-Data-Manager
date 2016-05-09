@@ -24,6 +24,7 @@ namespace SAOCR_Data_Manager
     {
         private void EC_MainCalc_Click(object sender, EventArgs e)
         {
+            //Separate 功能不完整
             DataTable Data = DataAPI.Separate(DT.Source, TitleP.Start[(int)DataTitle.MainCharacterParams], TitleP.End[(int)DataTitle.MainCharacterParams]);
         }
 

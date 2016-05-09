@@ -192,9 +192,6 @@
   <data name="Warning_AUNoConnection" xml:space="preserve">
     <value>無法連線。</value>
   </data>
-  <data name="Error_WrongDLInfoCategory" xml:space="preserve">
-    <value>錯誤的下載資訊目錄。</value>
-  </data>
   <data name="Error_WrongSizeUnit" xml:space="preserve">
     <value>錯誤的單位。</value>
   </data>
@@ -1211,19 +1208,19 @@
     <comment>Downloader</comment>
   </data>
   <data name="E_0x00025003" xml:space="preserve">
-    <value>錯誤代碼 0x00025003\n\n</value>
+    <value>錯誤代碼 0x00025003\n\n取消下載作業時發生錯誤。</value>
     <comment>Downloader</comment>
   </data>
   <data name="E_0x00025004" xml:space="preserve">
-    <value>錯誤代碼 0x00025004\n\n</value>
+    <value>錯誤代碼 0x00025004\n\n於下載完成中的取消區塊內，在Invoke的過程中發生錯誤。</value>
     <comment>Downloader</comment>
   </data>
   <data name="E_0x00025005" xml:space="preserve">
-    <value>錯誤代碼 0x00025005\n\n</value>
+    <value>錯誤代碼 0x00025005\n\n獲取下載資訊時發生錯誤。要求的下載資訊: </value>
     <comment>Downloader</comment>
   </data>
   <data name="E_0x00025006" xml:space="preserve">
-    <value>錯誤代碼 0x00025006\n\n</value>
+    <value>錯誤代碼 0x00025006\n\n下載資訊目錄錯誤。</value>
     <comment>Downloader</comment>
   </data>
   <data name="E_0x00025007" xml:space="preserve">
@@ -1937,5 +1934,45 @@
   <data name="E_0x0000400F" xml:space="preserve">
     <value>錯誤代碼 0x0000400F\n\n</value>
     <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00005000" xml:space="preserve">
+    <value>錯誤代碼 0x00005000\n\n在使用Disunity解壓縮csv時發生錯誤。</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005001" xml:space="preserve">
+    <value>錯誤代碼 0x00005001\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005002" xml:space="preserve">
+    <value>錯誤代碼 0x00005002\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005003" xml:space="preserve">
+    <value>錯誤代碼 0x00005003\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005004" xml:space="preserve">
+    <value>錯誤代碼 0x00005004\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005005" xml:space="preserve">
+    <value>錯誤代碼 0x00005005\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005006" xml:space="preserve">
+    <value>錯誤代碼 0x00005006\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005007" xml:space="preserve">
+    <value>錯誤代碼 0x00005007\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005008" xml:space="preserve">
+    <value>錯誤代碼 0x00005008\n\n</value>
+    <comment>AppFunctions</comment>
+  </data>
+  <data name="E_0x00005009" xml:space="preserve">
+    <value>錯誤代碼 0x00005009\n\n</value>
+    <comment>AppFunctions</comment>
   </data>
 </root>

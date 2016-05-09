@@ -124,11 +124,19 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
         private void Picture_Download_Succeed(string PicLocation)
         {
             Picture.ImageLocation = PicLocation;
+            Picture.Click += Picture_Click;
         }
 
         private void Picture_Download_Failed(object sender, EventArgs e)
         {
             Picture.Image = Properties.Resources.Error;
+            Picture.Click -= Picture_Click;
+        }
+
+        private void Picture_Download_Begin(object sender, EventArgs e)
+        {
+            Picture.Image = Properties.Resources.Loading;
+            Picture.Click -= Picture_Click;
         }
     }
 }

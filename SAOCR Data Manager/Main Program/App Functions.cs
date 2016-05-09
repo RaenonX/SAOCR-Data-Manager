@@ -26,7 +26,10 @@ namespace SAOCR_Data_Manager
             #region Check Last Imported File Extension
             if (LastImportedFileExt == ".assetbundle")
             {
-                Disunity();
+                if (!Disunity())
+                {
+                    return false;
+                }
             }
             #endregion
 
@@ -36,7 +39,10 @@ namespace SAOCR_Data_Manager
                 Status(RStatus.Error_FileNotFoundCSV);
                 if (My.FileSystem.FileExists(AC.Path_ASB) || My.FileSystem.FileExists(Const.Path.DEFAULT_CSV))
                 {
-                   Disunity();
+                   if (!Disunity())
+                    {
+                        return false;
+                    }
                 } else
                 {
                     SystemAPI.SEWarning();
@@ -82,7 +88,7 @@ namespace SAOCR_Data_Manager
             return true;
         }
 
-        public void Disunity()
+        public bool Disunity()
         {
             try
             {
@@ -122,11 +128,17 @@ namespace SAOCR_Data_Manager
 
                     Status(RStatus.Result_DisunityComplete);
                 }
+                return true;
+            }
+            catch (DirectoryNotFoundException)
+            {
+                SystemAPI.Warning(RWarning.W_0xC0005000);
+                return false;
             }
             catch (Exception e)
             {
-                Status(
-                    RStatus.Error_Exception1 + e.Message + RStatus.Error_Exception2 + e.GetType() + RStatus.Error_Exception3);
+                SystemAPI.Error(RError.E_0x00005000, e);
+                throw;
             }
         }
 

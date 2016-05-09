@@ -33,8 +33,8 @@
             this.SaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.Border = new System.Windows.Forms.Panel();
             this.Sys_Close = new SAOCR_Data_Manager.Button_SE_();
-            this.Sys_Min = new SAOCR_Data_Manager.Button_SE_();
             this.Save = new SAOCR_Data_Manager.Button_SE_();
+            this.Sys_Min = new SAOCR_Data_Manager.Button_SE_();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.Border.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +101,26 @@
             this.Sys_Close.Size = new System.Drawing.Size(50, 24);
             this.Sys_Close.TabIndex = 4;
             // 
+            // Save
+            // 
+            this.Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Save.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Save.ButtonBackgroundImage = null;
+            this.Save.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Save.ButtonColor = System.Drawing.Color.White;
+            this.Save.ButtonEnabled = true;
+            this.Save.ButtonImage = null;
+            this.Save.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Save.ButtonText = "";
+            this.Save.Font = new System.Drawing.Font("微軟正黑體", 11F);
+            this.Save.ForeColor = System.Drawing.Color.White;
+            this.Save.Location = new System.Drawing.Point(515, 1);
+            this.Save.Margin = new System.Windows.Forms.Padding(0);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(77, 24);
+            this.Save.TabIndex = 6;
+            // 
             // Sys_Min
             // 
             this.Sys_Min.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -120,26 +140,6 @@
             this.Sys_Min.Name = "Sys_Min";
             this.Sys_Min.Size = new System.Drawing.Size(50, 24);
             this.Sys_Min.TabIndex = 5;
-            // 
-            // Save
-            // 
-            this.Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Save.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Save.ButtonBackgroundImage = null;
-            this.Save.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Save.ButtonColor = System.Drawing.Color.White;
-            this.Save.ButtonEnabled = false;
-            this.Save.ButtonImage = null;
-            this.Save.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Save.ButtonText = "";
-            this.Save.Font = new System.Drawing.Font("微軟正黑體", 11F);
-            this.Save.ForeColor = System.Drawing.Color.White;
-            this.Save.Location = new System.Drawing.Point(515, 1);
-            this.Save.Margin = new System.Windows.Forms.Padding(0);
-            this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(77, 24);
-            this.Save.TabIndex = 6;
             // 
             // PictureB
             // 

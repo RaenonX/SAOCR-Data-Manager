@@ -63,8 +63,6 @@ namespace SAOCR_Data_Manager.Forms
 
                 Border.Paint += new PaintEventHandler(SystemAPI.DrawBorderCoral);
 
-                PictureBox.LoadCompleted += new AsyncCompletedEventHandler(PictureBox_LoadCompleted);
-
                 Title.MouseMove += new MouseEventHandler(MoveWindow_MouseMove);
                 Title.MouseDown += new MouseEventHandler(MoveWindow_MouseDown);
 
@@ -130,11 +128,6 @@ namespace SAOCR_Data_Manager.Forms
                 SystemAPI.Error(RError.E_0x00015006, ex);
                 throw;
             }
-        }
-
-        private void PictureBox_LoadCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            Save.ButtonEnabled = true;
         }
     }
 }

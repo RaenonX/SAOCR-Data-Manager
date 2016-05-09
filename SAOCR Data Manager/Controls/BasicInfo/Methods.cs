@@ -68,12 +68,18 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                         string PicAtLocal = Const.Path.ATTACHMENT_AREA + "/" + Const.Path.CHARA_PIC + "/" + PicName;
                         string PicOnNet = Const.URL.PIC_AREA + Const.URL.CHARA_PIC + "/" + PicName;
 
+                        
                         if (!My.FileSystem.FileExists(PicAtLocal))
                         {
-                            Picture.Image = Properties.Resources.Loading;
-                            Downloader DL = new Downloader(new Uri(PicOnNet), PicAtLocal, SizeUnit.KB, PicName);
+                            if (DL != null && DL.isDownloading())
+                            {
+                                DL.DLCancel();
+                                DL = null;
+                            }
+                            DL = new Downloader(new Uri(PicOnNet), PicAtLocal, SizeUnit.KB, PicName);
                             DL.DownloadSucceed += (sender, e) => Picture_Download_Succeed(PicAtLocal);
                             DL.DownloadFailed += Picture_Download_Failed;
+                            DL.DownloadBegin += Picture_Download_Begin;
                             DL.DLStart();
                         } else
                         {
