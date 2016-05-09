@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SAOCR_Data_Manager.Resources.Forms {
+namespace SAOCR_Data_Manager.Resources.Controls {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace SAOCR_Data_Manager.Resources.Forms {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class RHome {
+    internal class RCharaSearcher {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal RHome() {
+        internal RCharaSearcher() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.Forms.RHome", typeof(RHome).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.Controls.RCharaSearcher", typeof(RCharaSearcher).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,110 +61,92 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 讀取公告中... 的當地語系化字串。
+        ///   查詢類似 代碼表 的當地語系化字串。
         /// </summary>
-        internal static string Layout_LoadingAnnounce {
+        internal static string Layout_CodeTable {
             get {
-                return ResourceManager.GetString("Layout_LoadingAnnounce", resourceCulture);
+                return ResourceManager.GetString("Layout_CodeTable", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 讀取資源檔 的當地語系化字串。
+        ///   查詢類似 關鍵字 的當地語系化字串。
         /// </summary>
-        internal static string Layout_ResourcesLoad {
+        internal static string Layout_Keyword {
             get {
-                return ResourceManager.GetString("Layout_ResourcesLoad", resourceCulture);
+                return ResourceManager.GetString("Layout_Keyword", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 選擇資源檔 的當地語系化字串。
+        ///   查詢類似 星級 的當地語系化字串。
         /// </summary>
-        internal static string Layout_ResourcesSelect {
+        internal static string Layout_Rarity {
             get {
-                return ResourceManager.GetString("Layout_ResourcesSelect", resourceCulture);
+                return ResourceManager.GetString("Layout_Rarity", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 目前沒有發布任何公告。 的當地語系化字串。
+        ///   查詢類似 搜尋 的當地語系化字串。
         /// </summary>
-        internal static string Message_NoAnnouncement {
+        internal static string Layout_Search {
             get {
-                return ResourceManager.GetString("Message_NoAnnouncement", resourceCulture);
+                return ResourceManager.GetString("Layout_Search", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 csv內容一覽 的當地語系化字串。
+        ///   查詢類似 角色搜尋 的當地語系化字串。
         /// </summary>
-        internal static string ToPage_CsvTable {
+        internal static string Layout_SearchChara {
             get {
-                return ResourceManager.GetString("ToPage_CsvTable", resourceCulture);
+                return ResourceManager.GetString("Layout_SearchChara", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 檔案下載 的當地語系化字串。
+        ///   查詢類似 角色系 的當地語系化字串。
         /// </summary>
-        internal static string ToPage_Download {
+        internal static string Layout_Series {
             get {
-                return ResourceManager.GetString("ToPage_Download", resourceCulture);
+                return ResourceManager.GetString("Layout_Series", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 經驗計算 的當地語系化字串。
+        ///   查詢類似 尋找角色。關鍵字:  的當地語系化字串。
         /// </summary>
-        internal static string ToPage_ExpCalc {
+        internal static string Log_FindChara1 {
             get {
-                return ResourceManager.GetString("ToPage_ExpCalc", resourceCulture);
+                return ResourceManager.GetString("Log_FindChara1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 回首頁 的當地語系化字串。
+        ///   查詢類似 ，星級:  的當地語系化字串。
         /// </summary>
-        internal static string ToPage_HomePage {
+        internal static string Log_FindChara2 {
             get {
-                return ResourceManager.GetString("ToPage_HomePage", resourceCulture);
+                return ResourceManager.GetString("Log_FindChara2", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 設定 的當地語系化字串。
+        ///   查詢類似 ，角色系代碼:  的當地語系化字串。
         /// </summary>
-        internal static string ToPage_Settings {
+        internal static string Log_FindChara3 {
             get {
-                return ResourceManager.GetString("ToPage_Settings", resourceCulture);
+                return ResourceManager.GetString("Log_FindChara3", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 統計資料 的當地語系化字串。
+        ///   查詢類似 已回傳角色系代碼。代碼:  的當地語系化字串。
         /// </summary>
-        internal static string ToPage_Statistics {
+        internal static string Log_FindSeriesCode {
             get {
-                return ResourceManager.GetString("ToPage_Statistics", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 角色資訊 的當地語系化字串。
-        /// </summary>
-        internal static string ToPage_WebPageChara {
-            get {
-                return ResourceManager.GetString("ToPage_WebPageChara", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 裝備資訊 的當地語系化字串。
-        /// </summary>
-        internal static string ToPage_WebPageEquip {
-            get {
-                return ResourceManager.GetString("ToPage_WebPageEquip", resourceCulture);
+                return ResourceManager.GetString("Log_FindSeriesCode", resourceCulture);
             }
         }
     }

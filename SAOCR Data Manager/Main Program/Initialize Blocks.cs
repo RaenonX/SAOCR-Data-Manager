@@ -41,6 +41,7 @@ namespace SAOCR_Data_Manager
                 HM_ToHomePage.ButtonText = RHome.ToPage_HomePage;
                 HM_ToStatistics.ButtonText = RHome.ToPage_Statistics;
                 HM_ToDownload.ButtonText = RHome.ToPage_Download;
+                HM_ToEXPCalc.ButtonText = RHome.ToPage_ExpCalc;
                 HM_Res_Load.ButtonText = RHome.Layout_ResourcesLoad;
                 HM_Res_Select.ButtonText = RHome.Layout_ResourcesSelect;
                 HM_Announcement.MarqueeText = RHome.Layout_LoadingAnnounce;
@@ -87,6 +88,9 @@ namespace SAOCR_Data_Manager
                 ST_AUCsvMode.SelectedIndex = UC.AU_CSVMode;
                 ST_AUCsvCheckGo.ButtonText = RConfig.Layout_CheckUpdate;
                 ST_AUCsvBrowse.ButtonText = RConfig.Layout_Browse;
+                ST_AttachmentModeText.Text = RConfig.Layout_AttachmentMode;
+                ST_AttachmentMode.SelectedIndex = UC.AMMode;
+                ST_ClearAllAttachments.ButtonText = RConfig.Layout_ClearAllAttachments;
                 //About Program
                 ST_AUProg.Text = RConfig.Layout_AUProgram;
                 ST_AUProgCurrentVerText.Text = RConfig.Layout_AUProgramCurrentVersion;
@@ -115,12 +119,6 @@ namespace SAOCR_Data_Manager
                 //Character Data
                 CD_CharacterIDText.Text = RCharaData.Layout_CharaIDText;
                 CD_CharacterIDGo.ButtonText = RCharaData.Layout_CharaIDGo;
-                CD_SearchGB.Text = RCharaData.Layout_KeywordSearch;
-                CD_KeywordText.Text = RCharaData.Layout_Keyword;
-                CD_KeywordGo.ButtonText = RCharaData.Layout_KeywordGo;
-                CD_RarityText.Text = RCharaData.Layout_Rarity;
-                CD_CharaSeriesText.Text = RCharaData.Layout_CharaSeries;
-                CD_SeriesCodeGo.Text = RCharaData.Layout_SeriesCodeGo;
                 CD_FavoriteText.Text = RCharaData.Layout_FavoriteText;
 
                 //Statistics
@@ -136,6 +134,48 @@ namespace SAOCR_Data_Manager
                 SS_CharaSeriesRateText.Text = RStatistics.Layout_CharaSeriesRate;
                 SS_MonsterTypeRateText.Text = RStatistics.Layout_MonsterTypeRate;
                 SS_MonsterHPRateText.Text = RStatistics.Layout_MonsterHPRate;
+
+                //Download
+                DL_KeywordText.Text = RDownload.Layout_Keyword;
+                DL_CharaPicBox.Text = RDownload.Layout_CharaPicDL;
+                DL_RarityText.Text = RDownload.Layout_Rarity;
+                DL_SeriesText.Text = RDownload.Layout_CharaSeries;
+                DL_Search.ButtonText = RDownload.Layout_Search;
+                DL_SeriesForm.Text = RDownload.Layout_CharaSeriesTable;
+                DL_Add.ButtonText = RDownload.Layout_Add;
+                DL_AddAll.ButtonText = RDownload.Layout_AddAll;
+                DL_DownloadLogText.Text = RDownload.Layout_DownloadLog;
+                DL_CompleteListText.Text = RDownload.Layout_CompleteList;
+                DL_DownloadListText.Text = RDownload.Layout_DownloadList;
+                DL_CharaIDText.Text = RDownload.Layout_CharaID;
+                DL_StartDownload.ButtonText = RDownload.Layout_BeginDL;
+                DL_Remove.ButtonText = RDownload.Layout_Remove;
+                DL_CharaIDAdd.ButtonText = RDownload.Layout_Add;
+                DL_ClearAll.ButtonText = RDownload.Layout_ClearAll;
+                DL_PicCountText.Text = RDownload.Layout_PicCount;
+                DL_PendingText.Text = RDownload.Layout_Pending;
+                DL_CompletedText.Text = RDownload.Layout_Complete;
+                DL_DLingText.Text = RDownload.Layout_Downloading;
+                DL_FailedText.Text = RDownload.Layout_Failed;
+                DL_AbortDownload.ButtonText = RDownload.DL_AbortDownload;
+
+                //EXP Calculator
+                EC_Main.Text = RExpCalc.Layout_Main;
+                EC_Chara.Text = RExpCalc.Layout_Chara;
+                EC_MainParamBefore.Text = EC_CharaBefore.Text = EC_MainBefore.Text = RExpCalc.Layout_Before;
+                EC_MainParamAfter.Text = EC_CharaAfter.Text = EC_MainAfter.Text = RExpCalc.Layout_After;
+                EC_MainCalc.ButtonText = EC_CharaCalc.ButtonText = RExpCalc.Layout_Calc;
+                EC_MainExpNeedText.Text = EC_CharaExpNeedText.Text = RExpCalc.Layout_ExpNeed;
+                EC_CharaExpBeforeText.Text = EC_CharaExpAfterText.Text = EC_MainExpBeforeText.Text = EC_MainExpAfterText.Text = RExpCalc.Layout_ExpLeft;
+                EC_CharaLvBeforeText.Text = EC_CharaLvAfterText.Text = EC_MainLvBeforeText.Text = EC_MainLvAfterText.Text = RExpCalc.Layout_Lv;
+                EC_MainSTRBeforeText.Text = EC_MainSTRAfterText.Text = RExpCalc.Layout_STR;
+                EC_MainVITBeforeText.Text = EC_MainVITAfterText.Text = RExpCalc.Layout_VIT;
+                EC_MainINTBeforeText.Text = EC_MainINTAfterText.Text = RExpCalc.Layout_INT;
+                EC_MainMENBeforeText.Text = EC_MainMENAfterText.Text = RExpCalc.Layout_MEN;
+                EC_MainHPBeforeText.Text = EC_MainHPAfterText.Text = RExpCalc.Layout_HP;
+                EC_MainSSBeforeText.Text = EC_MainSSAfterText.Text = RExpCalc.Layout_SS;
+                EC_CharaTips.MarqueeText = RExpCalc.Message_FastTip;
+                EC_MainCostBeforeText.Text = EC_MainCostAfterText.Text = RExpCalc.Layout_Cost;
             }
             catch (Exception e)
             {
@@ -167,6 +207,8 @@ namespace SAOCR_Data_Manager
                 HM_ToCharacterData.ButtonClick += new EventHandler(ToCharacterData_Click);
                 HM_ToEquipmentData.ButtonClick += new EventHandler(ToEquipmentData_Click);
                 HM_ToStatistics.ButtonClick += ToStatistics_Click;
+                HM_ToDownload.ButtonClick += ToDownload_Click;
+                HM_ToEXPCalc.ButtonClick += ToEXPCalc_Click;
                 HM_Res_Load.ButtonClick += new EventHandler(Res_Load_Click);
                 HM_Res_Select.ButtonClick += new EventHandler(Res_Select_Click);
                 HM_Announcement.ArriveToBorder += Announcement_ArriveToBorder;
@@ -191,7 +233,9 @@ namespace SAOCR_Data_Manager
                 ST_AUProgChannel.SelectedIndexChanged += new EventHandler(AUDataSave);
                 ST_AUProgMode.SelectedIndexChanged += new EventHandler(AUDataSave);
                 ST_AUCsvMode.SelectedIndexChanged += new EventHandler(AUDataSave);
+                ST_AttachmentMode.SelectedIndexChanged += AUDataSave;
                 ST_AUCsvBrowse.ButtonClick += ST_DirectoryPathSelect_Click;
+                ST_ClearAllAttachments.ButtonClick += ST_ClearAllAttachments_ButtonClick;
 
                 //CsvTable
                 CT_StepGo.ButtonClick += new EventHandler(CT_StepGo_ButtonClick);
@@ -207,22 +251,36 @@ namespace SAOCR_Data_Manager
                 CD_CharacterID.KeyPress += new KeyPressEventHandler(Extent.VerifyTextIsNum);
                 CD_CharacterID.KeyPress += new KeyPressEventHandler(TextBoxEnter);
                 CD_CharacterIDGo.ButtonClick += new EventHandler(CD_CharacterIDGo_ButtonClick);
-                CD_Keyword.KeyPress += new KeyPressEventHandler(TextBoxEnter);
-                CD_Keyword.KeyPress += Extent.VerifyLetterDigitOnly;
-                CD_KeywordGo.ButtonClick += new EventHandler(CD_KeywordGo_ButtonClick);
-                CD_KeywordResult.DoubleClick += new EventHandler(CD_KeywordResult_DoubleClick);
-                CD_Rarity.KeyPress += new KeyPressEventHandler(TextBoxEnter);
-                CD_CharaSeries.KeyPress += TextBoxEnter;
-                CD_Rarity.KeyPress += Extent.VerifyTextIsNum;
-                CD_CharaSeries.KeyPress += Extent.VerifyTextIsNum;
-                CD_SeriesCodeGo.LinkClicked += CD_SeriesCodeGo_LinkClicked;
                 CD_Favorite.DoubleClick += CD_Favorite_DoubleClick;
                 CD_CloseTab.ButtonClick += CD_CloseTab_ButtonClick;
                 CD_NewTab.ButtonClick += CD_NewTab_ButtonClick;
+                CD_SearchCharacter.ItemSelected += CD_SearchCharacter_ItemSelected;
+                CD_SearchCharacter.SearchClicked += CD_SearchCharacter_SearchClicked;
+                CD_SearchCharacter.SeriesTableClicked += CD_SearchCharacter_SeriesTableClicked;
 
                 //Statistics
                 SS_CharaCalculate.ButtonClick += SS_WeaponCalculate_ButtonClick;
                 SS_MonsterCalculate.ButtonClick += SS_MonsterCalculate_ButtonClick;
+
+                //Download
+                DL_Add.ButtonClick += DL_Add_Click;
+                DL_AddAll.ButtonClick += DL_AddAll_Click;
+                DL_Remove.ButtonClick += DL_Remove_Click;
+                DL_StartDownload.ButtonClick += DL_BeginDownload_Click;
+                DL_CharaIDAdd.ButtonClick += DL_CharaIDAdd_Click;
+                DL_SeriesForm.LinkClicked += DL_CharaSeriesForm_LinkClick;
+                DL_Search.ButtonClick += DL_Search_Click;
+                DL_ClearAll.ButtonClick += DL_ClearAll_Click;
+                DL_CharaID.KeyPress += Extent.VerifyTextIsNum;
+                DL_CharaID.KeyPress += TextBoxEnter;
+                DL_SearchResult.DoubleClick += DL_SearchResult_DoubleClick;
+                DL_DownloadStatus.DoubleClick += DL_DownloadStatus_DoubleClick;
+                DL_CompleteList.TextChanged += LogChanged;
+                DL_AbortDownload.ButtonClick += DL_AbortDownload_Click;
+
+                //EXP Calculator
+                EC_MainCalc.ButtonClick += EC_MainCalc_Click;
+                EC_CharaCalc.ButtonClick += EC_CharaCalc_Click;
             }
             catch (Exception e)
             {
@@ -230,12 +288,17 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
-        
+
         public void InitializeControlAttributes()
         {
             try
             {
+                //Csv View
                 CT_Tips.Marquee();
+                CT_CsvView.DefaultCellStyle.ForeColor = Color.FromArgb((int)EForeColor.White);
+                CT_CsvView.DefaultCellStyle.BackColor = Color.FromArgb((int)EForeColor.Grey70);
+
+                //Config
                 ST_PathBeep.Marquee();
                 ST_PathWarning.Marquee();
                 ST_Developer.Marquee();
@@ -250,15 +313,15 @@ namespace SAOCR_Data_Manager
                 AUResource.CheckUpdate();
                 AU.isCheckAll = true;
 
-                CT_CsvView.DefaultCellStyle.ForeColor = Color.Black;
-                CT_CsvView.DefaultCellStyle.BackColor = Color.White;
-
                 string[] AUMode = { RConfig.AU_ModeDLAndUpdate, RConfig.AU_ModeCheckAndDL, RConfig.AU_ModeCheckOnly, RConfig.AU_ModeNone };
                 ST_AUProgMode.Items.AddRange(AUMode);
                 ST_AUCsvMode.Items.AddRange(AUMode);
                 string[] AUChannel = { RConfig.AU_ChannelBeta, RConfig.AU_ChannelStable };
                 ST_AUProgChannel.Items.AddRange(AUChannel);
+                string[] AMMode = { RConfig.AM_DLonce, RConfig.AM_AlwaysDL, RConfig.AM_DelAfterClose };
+                ST_AttachmentMode.Items.AddRange(AMMode);
 
+                //Main
                 string[] StatusButton = { RMain.Layout_CheckLog, RMain.Layout_CheckProgramAnnouncements, RMain.Layout_ViewCaptureFolder };
                 foreach (string item in StatusButton)
                 {
@@ -270,8 +333,21 @@ namespace SAOCR_Data_Manager
                 Announce.Local = Const.Path.ANNOUNCEMENT;
                 Announce.URL = new Uri(Const.URL.NETWORK_FILE_AREA + Const.URL.ANNOUNCEMENT);
                 Announce.Strings = new List<string>();
-                Announce.DL = new Downloader(Announce.URL, Announce.Local, SizeUnit.KB, null);
-                Announce.DL.DLStart();
+
+                if (Extent.HaveConnection())
+                {
+                    Announce.DL = new Downloader(Announce.URL, Announce.Local, SizeUnit.KB, null);
+                    Announce.DL.DLStart();
+                } else
+                {
+                    Announce_DownloadCompleted(this, EventArgs.Empty);
+                }
+
+                //Download
+                InitializeList(InitItem.DL_DownloadList);
+
+                //Exp Calculator
+                EC_CharaTips.Marquee();
             }
             catch (Exception e)
             {
@@ -286,76 +362,90 @@ namespace SAOCR_Data_Manager
             {
                 switch (ItemName)
                 {
-                    case InitItem.CrDataTitle:
+                    case InitItem.ST_DataTitle:
                         ST_Data.Clear();
                         ST_Data.Columns.Add(Const.ColName.N_A, 0);
-                        ST_Data.Columns.Add(Const.ColName.DATA, 195, HorizontalAlignment.Left);
+                        ST_Data.Columns.Add(Const.ColName.DATA, 110, HorizontalAlignment.Left);
                         ST_Data.Columns.Add(Const.ColName.DATATITLE_BEGIN, 60, HorizontalAlignment.Left);
                         ST_Data.Columns.Add(Const.ColName.DATATITLE_END, 60, HorizontalAlignment.Left);
                         break;
-                    case InitItem.CrDataFindResultList:
+                    case InitItem.CT_FindResultList:
                         CT_FindResultList.Clear();
                         CT_FindResultList.Columns.Add(Const.ColName.COLUMN_POSITION, 194, HorizontalAlignment.Left);
                         break;
-                    case InitItem.CharaFindResult:
-                        CD_KeywordResult.Clear();
-                        CD_KeywordResult.Columns.Add(Const.ColName.N_A, 0);
-                        CD_KeywordResult.Columns.Add(Const.ColName.CHARA_ID, 70, HorizontalAlignment.Left);
-                        CD_KeywordResult.Columns.Add(Const.ColName.CHARA_NAME, 195, HorizontalAlignment.Left);
-                        break;
-                    case InitItem.Favorite:
+                    case InitItem.CD_Favorite:
                         CD_Favorite.Clear();
                         CD_Favorite.Columns.Add(Const.ColName.N_A, 0);
                         CD_Favorite.Columns.Add(Const.ColName.CHARA_ID, 85, HorizontalAlignment.Left);
                         CD_Favorite.Columns.Add(Const.ColName.CHARA_NAME, 200, HorizontalAlignment.Left);
                         break;
-                    case InitItem.CharaWeaponUsingRate:
+                    case InitItem.SS_CharaWeaponUsingRate:
                         SS_CharaWeaponUsingRate.Clear();
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.WEAPON_CATEGORY_ID, 80, HorizontalAlignment.Left);
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.WEAPON_CATEGORY, 80, HorizontalAlignment.Left);
                         SS_CharaWeaponUsingRate.Columns.Add(Const.ColName.WEAPON_USING_RATE, 100, HorizontalAlignment.Left);
                         break;
-                    case InitItem.CharaElementRate:
+                    case InitItem.SS_CharaElementRate:
                         SS_CharaElementRate.Clear();
                         SS_CharaElementRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_CharaElementRate.Columns.Add(Const.ColName.ELEMENT_CATEGORY_ID, 80, HorizontalAlignment.Left);
                         SS_CharaElementRate.Columns.Add(Const.ColName.ELEMENT_CATEGORY, 80, HorizontalAlignment.Left);
                         SS_CharaElementRate.Columns.Add(Const.ColName.ELEMENT_RATE, 100, HorizontalAlignment.Left);
                         break;
-                    case InitItem.CharaSceneRate:
+                    case InitItem.SS_CharaSceneRate:
                         SS_CharaSceneRate.Clear();
                         SS_CharaSceneRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_CharaSceneRate.Columns.Add(Const.ColName.SCENE_CATEGORY_ID, 80, HorizontalAlignment.Left);
                         SS_CharaSceneRate.Columns.Add(Const.ColName.SCENE_CATEGORY, 80, HorizontalAlignment.Left);
                         SS_CharaSceneRate.Columns.Add(Const.ColName.SCENE_RATE, 100, HorizontalAlignment.Left);
                         break;
-                    case InitItem.CharaRarityRate:
+                    case InitItem.SS_CharaRarityRate:
                         SS_CharaRarityRate.Clear();
                         SS_CharaRarityRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_CharaRarityRate.Columns.Add(Const.ColName.RARITY, 100, HorizontalAlignment.Left);
                         SS_CharaRarityRate.Columns.Add(Const.ColName.RARITY_RATE, 160, HorizontalAlignment.Left);
                         break;
-                    case InitItem.CharaSeriesRate:
+                    case InitItem.SS_CharaSeriesRate:
                         SS_CharaSeriesRate.Clear();
                         SS_CharaSeriesRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_CATEGORY_ID, 80, HorizontalAlignment.Left);
                         SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_CATEGORY, 80, HorizontalAlignment.Left);
                         SS_CharaSeriesRate.Columns.Add(Const.ColName.SERIES_RATE, 100, HorizontalAlignment.Left);
                         break;
-                    case InitItem.MonsterTypeRate:
+                    case InitItem.SS_MonsterTypeRate:
                         SS_MonsterTypeRate.Clear();
                         SS_MonsterTypeRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_MonsterTypeRate.Columns.Add(Const.ColName.MONSTER_TYPE_CATEGORY_ID, 80, HorizontalAlignment.Left);
                         SS_MonsterTypeRate.Columns.Add(Const.ColName.MONSTER_TYPE_CATEGORY, 80, HorizontalAlignment.Left);
                         SS_MonsterTypeRate.Columns.Add(Const.ColName.MONSTER_TYPE_RATE, 100, HorizontalAlignment.Left);
                         break;
-                    case InitItem.MonsterHPRate:
+                    case InitItem.SS_MonsterHPRate:
                         SS_MonsterHPRate.Clear();
                         SS_MonsterHPRate.Columns.Add(Const.ColName.N_A, 0);
                         SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MIN, 100, HorizontalAlignment.Left);
                         SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MAX, 100, HorizontalAlignment.Left);
                         SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_RATE, 100, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.DL_SearchResult:
+                        DL_SearchResult.Clear();
+                        DL_SearchResult.Columns.Add(Const.ColName.N_A, 0);
+                        DL_SearchResult.Columns.Add(Const.ColName.CHARA_ID, 70, HorizontalAlignment.Left);
+                        DL_SearchResult.Columns.Add(Const.ColName.CHARA_NAME, 195, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.DL_DownloadList:
+                        DL_DownloadList.Clear();
+                        DL_DownloadList.Columns.Add(Const.ColName.N_A, 0);
+                        DL_DownloadList.Columns.Add(Const.ColName.CHARA_ID, 70, HorizontalAlignment.Left);
+                        DL_DownloadList.Columns.Add(Const.ColName.CHARA_NAME, 195, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.DL_DownloadStatus:
+                        DL_DownloadStatus.Clear();
+                        DL_DownloadStatus.Columns.Add(Const.ColName.N_A, 0);
+                        DL_DownloadStatus.Columns.Add(Const.ColName.CHARA_ID, 70, HorizontalAlignment.Left);
+                        DL_DownloadStatus.Columns.Add(Const.ColName.DOWNLOAD_FILE_SIZE, 60, HorizontalAlignment.Left);
+                        DL_DownloadStatus.Columns.Add(Const.ColName.DOWNLOAD_PROGRESS, 70, HorizontalAlignment.Left);
+                        DL_DownloadStatus.Columns.Add(Const.ColName.DOWNLOAD_STATUS, 110, HorizontalAlignment.Left);
                         break;
                 }
             }
@@ -471,7 +561,7 @@ namespace SAOCR_Data_Manager
                         return;
                     }
                 }
-                InitializeList(InitItem.CrDataTitle);
+                InitializeList(InitItem.ST_DataTitle);
 
                 FDTL.Reader = My.FileSystem.OpenTextFieldParser(Const.Path.DATA_TITLE);
                 FDTL.Reader.SetDelimiters(",");
@@ -670,7 +760,7 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                InitializeList(InitItem.Favorite);
+                InitializeList(InitItem.CD_Favorite);
                 RefreshFavoriteList(this, EventArgs.Empty);
             }
             catch (Exception e)
@@ -689,7 +779,7 @@ namespace SAOCR_Data_Manager
                 InitializeControlAttributes();
                 InitializeUIText();
                 InitializeEventHandler();
-                InitializeList(InitItem.CrDataTitle);
+                InitializeList(InitItem.ST_DataTitle);
                 InitializeBGM();
                 InitializeDataTables();
             }

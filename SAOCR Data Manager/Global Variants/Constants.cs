@@ -70,6 +70,9 @@ namespace SAOCR_Data_Manager
             public const string MONSTER_HP_MIN = "HP範圍(最低)";
             public const string MONSTER_HP_MAX = "HP範圍(最高)";
             public const string MONSTER_HP_RATE = "HP量占比";
+            public const string DOWNLOAD_FILE_SIZE = "檔案大小";
+            public const string DOWNLOAD_PROGRESS = "下載進度";
+            public const string DOWNLOAD_STATUS = "下載狀態";
         }
 
         public static class Path
@@ -87,14 +90,18 @@ namespace SAOCR_Data_Manager
             public const string ANNOUNCEMENT = "Properties/Announcement.txt";
             public const string SCREENSHOT = "ScreenShot";
             public const string SCREENSHOT_NAME = "/Screenshot@";
+            public const string CHARA_PIC_DOWNLOAD = "Character Pictures Download";
+            public const string PIC_EXTENSION = ".png";
+            public const string CHARA_PIC = "CPic";
+            public const string ATTACHMENT_AREA = "Attachments";
 
             public const string PROGRAM = "/SAOCR Data Manager Installer.exe";
         }
     
         public static class URL
         {
-            public const string PIC_AREA = "https://sites.google.com/site/saocrpictures/home/pre-released";
-            public const string CHARA_PIC = "/charas";
+            public const string PIC_AREA = "https://raw.githubusercontent.com/RaenonX/SAOCR-Pictures/Startup-Pictures";
+            public const string CHARA_PIC = "/chara";
             public const string NETWORK_FILE_AREA = "https://sites.google.com/site/raenonx/datamanager";
             public const string ANNOUNCEMENT = "/Announcement.txt";
             public const string FOLDER_DIMENSION = "/Dimension";
@@ -113,6 +120,9 @@ namespace SAOCR_Data_Manager
             public const int RARITY = 6;
             public const int MONSTER_TYPE = 8;
             public const int MONSTER_HP_K = 20;
+            public const int MAX_NUM = 99999;
+
+            public const int MAX_DOWNLOAD_NUM = 7;
         }
 
         public static class Column

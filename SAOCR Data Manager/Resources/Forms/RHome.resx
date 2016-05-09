@@ -147,4 +147,10 @@
   <data name="ToPage_Download" xml:space="preserve">
     <value>檔案下載</value>
   </data>
+  <data name="ToPage_ExpCalc" xml:space="preserve">
+    <value>經驗計算</value>
+  </data>
+  <data name="Message_NoAnnouncement" xml:space="preserve">
+    <value>目前沒有發布任何公告。</value>
+  </data>
 </root>

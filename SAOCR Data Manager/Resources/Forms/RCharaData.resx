@@ -123,35 +123,8 @@
   <data name="Layout_CharaIDText" xml:space="preserve">
     <value>角色ID</value>
   </data>
-  <data name="Layout_CharaSeries" xml:space="preserve">
-    <value>角色代碼</value>
-  </data>
   <data name="Layout_FavoriteText" xml:space="preserve">
     <value>我的最愛角色</value>
-  </data>
-  <data name="Layout_Keyword" xml:space="preserve">
-    <value>關鍵字</value>
-  </data>
-  <data name="Layout_KeywordGo" xml:space="preserve">
-    <value>搜尋</value>
-  </data>
-  <data name="Layout_KeywordSearch" xml:space="preserve">
-    <value>搜尋角色ID</value>
-  </data>
-  <data name="Layout_Rarity" xml:space="preserve">
-    <value>星級</value>
-  </data>
-  <data name="Layout_SeriesCodeGo" xml:space="preserve">
-    <value>角色代碼表</value>
-  </data>
-  <data name="Log_FindChara1" xml:space="preserve">
-    <value>尋找角色。關鍵字: </value>
-  </data>
-  <data name="Log_FindChara2" xml:space="preserve">
-    <value>，星級: </value>
-  </data>
-  <data name="Log_FindChara3" xml:space="preserve">
-    <value>，角色系代碼: </value>
   </data>
   <data name="Log_RequestCharacter" xml:space="preserve">
     <value>要求顯示角色資料，角色ID: </value>

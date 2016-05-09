@@ -79,92 +79,11 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 角色代碼 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_CharaSeries {
-            get {
-                return ResourceManager.GetString("Layout_CharaSeries", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 我的最愛角色 的當地語系化字串。
         /// </summary>
         internal static string Layout_FavoriteText {
             get {
                 return ResourceManager.GetString("Layout_FavoriteText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 關鍵字 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_Keyword {
-            get {
-                return ResourceManager.GetString("Layout_Keyword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 搜尋 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_KeywordGo {
-            get {
-                return ResourceManager.GetString("Layout_KeywordGo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 搜尋角色ID 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_KeywordSearch {
-            get {
-                return ResourceManager.GetString("Layout_KeywordSearch", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 星級 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_Rarity {
-            get {
-                return ResourceManager.GetString("Layout_Rarity", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 角色代碼表 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_SeriesCodeGo {
-            get {
-                return ResourceManager.GetString("Layout_SeriesCodeGo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 尋找角色。關鍵字:  的當地語系化字串。
-        /// </summary>
-        internal static string Log_FindChara1 {
-            get {
-                return ResourceManager.GetString("Log_FindChara1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 ，星級:  的當地語系化字串。
-        /// </summary>
-        internal static string Log_FindChara2 {
-            get {
-                return ResourceManager.GetString("Log_FindChara2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 ，角色系代碼:  的當地語系化字串。
-        /// </summary>
-        internal static string Log_FindChara3 {
-            get {
-                return ResourceManager.GetString("Log_FindChara3", resourceCulture);
             }
         }
         

@@ -156,4 +156,7 @@
   <data name="Cmd_Install" xml:space="preserve">
     <value>安裝</value>
   </data>
+  <data name="Cmd_Input" xml:space="preserve">
+    <value>輸入</value>
+  </data>
 </root>

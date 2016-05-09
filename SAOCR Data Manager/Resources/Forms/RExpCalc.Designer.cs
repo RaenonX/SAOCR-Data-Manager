@@ -22,14 +22,14 @@ namespace SAOCR_Data_Manager.Resources.Forms {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class RMessageBox {
+    internal class RExpCalc {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal RMessageBox() {
+        internal RExpCalc() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.Forms.RMessageBox", typeof(RMessageBox).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.Forms.RExpCalc", typeof(RExpCalc).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,128 +61,146 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 取消 的當地語系化字串。
+        ///   查詢類似 訓練後 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_Cancel {
+        internal static string Layout_After {
             get {
-                return ResourceManager.GetString("Cmd_Cancel", resourceCulture);
+                return ResourceManager.GetString("Layout_After", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 下載 的當地語系化字串。
+        ///   查詢類似 訓練前 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_Download {
+        internal static string Layout_Before {
             get {
-                return ResourceManager.GetString("Cmd_Download", resourceCulture);
+                return ResourceManager.GetString("Layout_Before", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 輸入 的當地語系化字串。
+        ///   查詢類似 計算 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_Input {
+        internal static string Layout_Calc {
             get {
-                return ResourceManager.GetString("Cmd_Input", resourceCulture);
+                return ResourceManager.GetString("Layout_Calc", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 安裝 的當地語系化字串。
+        ///   查詢類似 普通角色 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_Install {
+        internal static string Layout_Chara {
             get {
-                return ResourceManager.GetString("Cmd_Install", resourceCulture);
+                return ResourceManager.GetString("Layout_Chara", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 否 的當地語系化字串。
+        ///   查詢類似 COST 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_No {
+        internal static string Layout_Cost {
             get {
-                return ResourceManager.GetString("Cmd_No", resourceCulture);
+                return ResourceManager.GetString("Layout_Cost", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 確認 的當地語系化字串。
+        ///   查詢類似 剩餘經驗 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_OK {
+        internal static string Layout_ExpLeft {
             get {
-                return ResourceManager.GetString("Cmd_OK", resourceCulture);
+                return ResourceManager.GetString("Layout_ExpLeft", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 重新啟動 的當地語系化字串。
+        ///   查詢類似 經驗需求 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_Restart {
+        internal static string Layout_ExpNeed {
             get {
-                return ResourceManager.GetString("Cmd_Restart", resourceCulture);
+                return ResourceManager.GetString("Layout_ExpNeed", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 重試 的當地語系化字串。
+        ///   查詢類似 HP 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_Retry {
+        internal static string Layout_HP {
             get {
-                return ResourceManager.GetString("Cmd_Retry", resourceCulture);
+                return ResourceManager.GetString("Layout_HP", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 是 的當地語系化字串。
+        ///   查詢類似 INT 的當地語系化字串。
         /// </summary>
-        internal static string Cmd_Yes {
+        internal static string Layout_INT {
             get {
-                return ResourceManager.GetString("Cmd_Yes", resourceCulture);
+                return ResourceManager.GetString("Layout_INT", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 總共有  的當地語系化字串。
+        ///   查詢類似 角色等級 的當地語系化字串。
         /// </summary>
-        internal static string Layout_DownloadItems1 {
+        internal static string Layout_Lv {
             get {
-                return ResourceManager.GetString("Layout_DownloadItems1", resourceCulture);
+                return ResourceManager.GetString("Layout_Lv", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似  個項目要下載。目前進度:  的當地語系化字串。
+        ///   查詢類似 主角/主人公 的當地語系化字串。
         /// </summary>
-        internal static string Layout_DownloadItems2 {
+        internal static string Layout_Main {
             get {
-                return ResourceManager.GetString("Layout_DownloadItems2", resourceCulture);
+                return ResourceManager.GetString("Layout_Main", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 容量:  的當地語系化字串。
+        ///   查詢類似 MEN 的當地語系化字串。
         /// </summary>
-        internal static string Layout_Size {
+        internal static string Layout_MEN {
             get {
-                return ResourceManager.GetString("Layout_Size", resourceCulture);
+                return ResourceManager.GetString("Layout_MEN", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 速度:  的當地語系化字串。
+        ///   查詢類似 SS Power 的當地語系化字串。
         /// </summary>
-        internal static string Layout_Speed {
+        internal static string Layout_SS {
             get {
-                return ResourceManager.GetString("Layout_Speed", resourceCulture);
+                return ResourceManager.GetString("Layout_SS", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查詢類似 警告 的當地語系化字串。
+        ///   查詢類似 STR 的當地語系化字串。
         /// </summary>
-        internal static string Title_Warning {
+        internal static string Layout_STR {
             get {
-                return ResourceManager.GetString("Title_Warning", resourceCulture);
+                return ResourceManager.GetString("Layout_STR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 VIT 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_VIT {
+            get {
+                return ResourceManager.GetString("Layout_VIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 由Lv.01到Lv.60(五星滿等)需要79791經驗；由Lv.01到Lv.70(六星滿等)需要110292經驗；由Lv.01~Lv.80需要145991經驗。 的當地語系化字串。
+        /// </summary>
+        internal static string Message_FastTip {
+            get {
+                return ResourceManager.GetString("Message_FastTip", resourceCulture);
             }
         }
     }

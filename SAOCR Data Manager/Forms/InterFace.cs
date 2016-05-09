@@ -27,21 +27,17 @@ namespace SAOCR_Data_Manager
         DataTables DT = new DataTables();
         TitlePos TitleP = new TitlePos();
         AUSystem AU = new AUSystem();
-
         Announcement Announce = new Announcement();
         public static List<string> URLs = new List<string>(); 
-        
         public static string LaunchTime = DateTime.Now.ToString(Const.FORMAT_DATETIME_NOW);
         public static string LogPath = @"Log\" + LaunchTime + ".txt";
-
         string LastImportedFileExt, LastCaptureName;
         FindDataTitleLocation FDTL = new FindDataTitleLocation();
-        
         UpdateChecker AUProgram, AUResource, AUCsv;
-
         int CT_TipsCounter = 0, ST_DevelopersCounter = 0;
-
         public static Timer BreezeLabel = new Timer(), MarqueeLabel = new Timer();
+        List<Downloader> DLs = new List<Downloader>();
+        PicDownloadInfo PDI = new PicDownloadInfo();
 
         public FMain()
         {

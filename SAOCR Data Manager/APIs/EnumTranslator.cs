@@ -742,13 +742,38 @@ namespace SAOCR_Data_Manager
                         return RDictEnumString.CT_Mebius;
                     case EParamType.Magius:
                         return RDictEnumString.CT_Magius;
+                    case EParamType.Null:
+                        return RDictEnumString.CT_Null;
                     default:
-                        throw new ArgumentException(RError.E_0x00003009);
+                        return null;
                 }
             }
             catch (Exception ex)
             {
                 SystemAPI.Error(RError.E_0x00003009, ex);
+                throw;
+            }
+        }
+
+        public static string AttachmentManageT(EAttachmentManageMode EAMM)
+        {
+            try
+            {
+                switch (EAMM)
+                {
+                    case EAttachmentManageMode.AlwaysDL:
+                        return RDictEnumString.AM_AlwaysDL;
+                    case EAttachmentManageMode.DelAfterClose:
+                        return RDictEnumString.AM_DelAfterClose;
+                    case EAttachmentManageMode.DLonce:
+                        return RDictEnumString.AM_DLonce;
+                    default:
+                        return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00003001, ex);
                 throw;
             }
         }

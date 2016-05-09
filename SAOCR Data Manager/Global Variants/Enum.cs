@@ -11,12 +11,13 @@ using System.Threading.Tasks;
 [Flags]
 public enum MessageBoxButtonStyle
 {
-    OK = 1,
-    OKCancel = 2,
-    YesNoCancel = 3,
-    RetryCancel = 4,
-    YesNo = 5,
-    Downlaoder
+    OK ,
+    OKCancel,
+    YesNoCancel,
+    RetryCancel,
+    YesNo,
+    Downloader,
+    ReturnValue
 }
 #endregion
 
@@ -106,17 +107,19 @@ public enum EPathRowCode
 [Flags]
 public enum InitItem
 {
-    CrDataTitle,
-    CrDataFindResultList,
-    CharaFindResult,
-    Favorite,
-    CharaWeaponUsingRate,
-    CharaElementRate,
-    CharaSceneRate,
-    CharaRarityRate,
-    CharaSeriesRate,
-    MonsterTypeRate,
-    MonsterHPRate
+    ST_DataTitle,
+    CT_FindResultList,
+    CD_Favorite,
+    SS_CharaWeaponUsingRate,
+    SS_CharaElementRate,
+    SS_CharaSceneRate,
+    SS_CharaRarityRate,
+    SS_CharaSeriesRate,
+    SS_MonsterTypeRate,
+    SS_MonsterHPRate,
+    DL_SearchResult,
+    DL_DownloadList,
+    DL_DownloadStatus
 }
 
 [Flags] 
@@ -156,7 +159,7 @@ public enum EParamCategory
 [Flags]
 public enum EParamType
 {
-    Mebius, Force, Aegis, Magius
+    Mebius, Force, Aegis, Magius, Null
 }
 
 [Flags]
@@ -260,12 +263,31 @@ public enum ECharaDictCode
 }
 
 [Flags]
+public enum ECharaDictCodeByColName
+{
+    ID = 1,
+    HEAD = 14,
+    JP_NAME = 2,
+    EN_NAME = 3,
+    CV = 24,
+    SEX = 4,
+    INTRO = 5
+}
+
+[Flags]
 public enum ECharaSeriesCode
 {
     CODE = 1,
     JP_NAME,
     EN_NAME,
     CH_NAME
+}
+
+[Flags]
+public enum ECharaDataInListCode
+{
+    ID = 1,
+    NAME
 }
 #endregion
 
@@ -279,7 +301,7 @@ public enum ENameSecCol
     SEX = 4,
     INTRO = 5,
     RARITY = 6,
-    ID_ORG = 7,
+    ID_PIC = 7,
     HEAD = 14,
     LONG_NAME = 15,
     CV = 24,
@@ -395,7 +417,9 @@ public enum EBackColorAlpha
     Grey70 = 172377670,
     RG120B70 = 175667270,
     White = 184549375,
-    LightBlue = 167805183
+    LightBlue = 167805183,
+    R80GB30 = 5250590,
+    R30G50B80 = -14798256
 }
 
 [Flags]
@@ -449,6 +473,23 @@ public enum DLInfoCategory
     TotalPercentage,
     Status,
     Description
+}
+
+[Flags]
+public enum EPicDLStatusCode
+{
+    ID = 1,
+    FILE_SIZE,
+    PROGRESS,
+    STATUS
+}
+
+[Flags]
+public enum EAttachmentManageMode
+{
+    DLonce,
+    AlwaysDL,
+    DelAfterClose
 }
 #endregion
 
@@ -644,5 +685,29 @@ public enum EDataRegCategory
     BA,
     LS,
     CharaInfo
+}
+#endregion
+
+#region 經驗計算相關
+[Flags]
+public enum ECharaExpSecCol
+{
+    LEVEL = 3,
+    SUM_EXP_REQUIRED = 4,
+    HP = 5,
+    STR = 6,
+    VIT = 7,
+    INT = 8,
+    MEN = 9,
+    SS = 10,
+    COST = 11,
+    RARITY = 12
+}
+
+[Flags]
+public enum EMainExpSecCol
+{
+    LEVEL = 3,
+    SUM_EXP_REQUIRED = 4
 }
 #endregion

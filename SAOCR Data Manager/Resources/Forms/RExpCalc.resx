@@ -117,160 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Error_SelectAFile" xml:space="preserve">
-    <value>檔名不能為空，請選擇一個.wav檔案。</value>
+  <data name="Layout_After" xml:space="preserve">
+    <value>訓練後</value>
   </data>
-  <data name="Layout_About" xml:space="preserve">
-    <value>關於</value>
+  <data name="Layout_Before" xml:space="preserve">
+    <value>訓練前</value>
   </data>
-  <data name="Layout_AboutData" xml:space="preserve">
-    <value>資源相關</value>
+  <data name="Layout_Calc" xml:space="preserve">
+    <value>計算</value>
   </data>
-  <data name="Layout_AutoLoadText" xml:space="preserve">
-    <value>自動載入資料、資源</value>
+  <data name="Layout_Chara" xml:space="preserve">
+    <value>普通角色</value>
   </data>
-  <data name="Layout_Browse" xml:space="preserve">
-    <value>瀏覽</value>
+  <data name="Layout_Cost" xml:space="preserve">
+    <value>COST</value>
   </data>
-  <data name="Layout_DevelopersDev1" xml:space="preserve">
-    <value>桐ヶ谷 水母</value>
+  <data name="Layout_ExpLeft" xml:space="preserve">
+    <value>剩餘經驗</value>
   </data>
-  <data name="Layout_DevelopersTextDev" xml:space="preserve">
-    <value>開發者</value>
+  <data name="Layout_ExpNeed" xml:space="preserve">
+    <value>經驗需求</value>
   </data>
-  <data name="Layout_DevelopersTextTst" xml:space="preserve">
-    <value>測試者</value>
+  <data name="Layout_HP" xml:space="preserve">
+    <value>HP</value>
   </data>
-  <data name="Layout_DevelopersTst1" xml:space="preserve">
-    <value>RaenonX JELLYCAT</value>
+  <data name="Layout_INT" xml:space="preserve">
+    <value>INT</value>
   </data>
-  <data name="Layout_PathBeep" xml:space="preserve">
-    <value>按鍵聲</value>
+  <data name="Layout_Lv" xml:space="preserve">
+    <value>角色等級</value>
   </data>
-  <data name="Layout_PathBGM" xml:space="preserve">
-    <value>BGM</value>
+  <data name="Layout_Main" xml:space="preserve">
+    <value>主角/主人公</value>
   </data>
-  <data name="Layout_PathWarning" xml:space="preserve">
-    <value>警示音</value>
+  <data name="Layout_MEN" xml:space="preserve">
+    <value>MEN</value>
   </data>
-  <data name="Layout_Reload" xml:space="preserve">
-    <value>重新讀取資源</value>
+  <data name="Layout_SS" xml:space="preserve">
+    <value>SS Power</value>
   </data>
-  <data name="Layout_SEGroupBox" xml:space="preserve">
-    <value>音效</value>
+  <data name="Layout_STR" xml:space="preserve">
+    <value>STR</value>
   </data>
-  <data name="Layout_VersionText" xml:space="preserve">
-    <value>版本資訊</value>
+  <data name="Layout_VIT" xml:space="preserve">
+    <value>VIT</value>
   </data>
-  <data name="AU_ChannelBeta" xml:space="preserve">
-    <value>Beta (測試)</value>
-  </data>
-  <data name="AU_ChannelStable" xml:space="preserve">
-    <value>Stable (穩定)</value>
-  </data>
-  <data name="AU_ModeCheckOnly" xml:space="preserve">
-    <value>只檢查</value>
-  </data>
-  <data name="AU_ModeDLAndUpdate" xml:space="preserve">
-    <value>下載並自動更新</value>
-  </data>
-  <data name="AU_ModeCheckAndDL" xml:space="preserve">
-    <value>只檢查和下載</value>
-  </data>
-  <data name="AU_ModeNone" xml:space="preserve">
-    <value>不檢查</value>
-  </data>
-  <data name="Layout_AUProgramChannel" xml:space="preserve">
-    <value>程式更新頻道</value>
-  </data>
-  <data name="Layout_AUProgramMode" xml:space="preserve">
-    <value>程式檢查模式</value>
-  </data>
-  <data name="Layout_AUResourceMode" xml:space="preserve">
-    <value>資源檢查模式</value>
-  </data>
-  <data name="Layout_AUResourcePath" xml:space="preserve">
-    <value>資源下載路徑</value>
-  </data>
-  <data name="Layout_AUProgram" xml:space="preserve">
-    <value>程式自動更新</value>
-  </data>
-  <data name="Layout_AUProgramCurrentVersion" xml:space="preserve">
-    <value>目前版本號</value>
-  </data>
-  <data name="Layout_AUProgramLatestVersion" xml:space="preserve">
-    <value>最新版本號</value>
-  </data>
-  <data name="Layout_CheckUpdate" xml:space="preserve">
-    <value>檢查更新</value>
-  </data>
-  <data name="Message_UpdateAvailable" xml:space="preserve">
-    <value>有可用的更新！</value>
-  </data>
-  <data name="Message_Csv" xml:space="preserve">
-    <value>csv資源檔</value>
-  </data>
-  <data name="Message_Program" xml:space="preserve">
-    <value>程式</value>
-  </data>
-  <data name="Message_Resource" xml:space="preserve">
-    <value>程式資源檔</value>
-  </data>
-  <data name="Layout_DevelopersAst1" xml:space="preserve">
-    <value>范士文</value>
-  </data>
-  <data name="Layout_DevelopersAst2" xml:space="preserve">
-    <value>陳嘉偉</value>
-  </data>
-  <data name="Layout_DevelopersTextAst" xml:space="preserve">
-    <value>協作者</value>
-  </data>
-  <data name="Layout_Mute" xml:space="preserve">
-    <value>靜音</value>
-  </data>
-  <data name="Layout_PathMessage" xml:space="preserve">
-    <value>訊息音</value>
-  </data>
-  <data name="Message_DownloadOrNot" xml:space="preserve">
-    <value>是否下載？</value>
-  </data>
-  <data name="Message_VersionCurrent" xml:space="preserve">
-    <value>目前版本: </value>
-  </data>
-  <data name="Message_VersionNew" xml:space="preserve">
-    <value>，最新版本: </value>
-  </data>
-  <data name="Log_StartChooseDirectory" xml:space="preserve">
-    <value>開啟路徑選擇對話框。對話框敘述: </value>
-  </data>
-  <data name="Message_ChoosePathToStoreFile1" xml:space="preserve">
-    <value>請選擇要存放</value>
-  </data>
-  <data name="Message_ChoosePathToStoreFile2" xml:space="preserve">
-    <value>的資料夾位置。</value>
-  </data>
-  <data name="Layout_SourceASB" xml:space="preserve">
-    <value>Assetbundle</value>
-  </data>
-  <data name="Layout_SourceCSV" xml:space="preserve">
-    <value>Csv</value>
-  </data>
-  <data name="Layout_SourcePath" xml:space="preserve">
-    <value>資源檔路徑</value>
-  </data>
-  <data name="AM_AlwaysDL" xml:space="preserve">
-    <value>總是下載</value>
-  </data>
-  <data name="AM_DelAfterClose" xml:space="preserve">
-    <value>關閉後刪除</value>
-  </data>
-  <data name="AM_DLonce" xml:space="preserve">
-    <value>只下載一次</value>
-  </data>
-  <data name="Layout_AttachmentMode" xml:space="preserve">
-    <value>附件下載模式</value>
-  </data>
-  <data name="Layout_ClearAllAttachments" xml:space="preserve">
-    <value>清除所有已下載的附件</value>
+  <data name="Message_FastTip" xml:space="preserve">
+    <value>由Lv.01到Lv.60(五星滿等)需要79791經驗；由Lv.01到Lv.70(六星滿等)需要110292經驗；由Lv.01~Lv.80需要145991經驗。</value>
   </data>
 </root>

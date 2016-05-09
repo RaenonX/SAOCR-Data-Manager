@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.Panel = new System.Windows.Forms.Panel();
-            this.Border = new System.Windows.Forms.Panel();
-            this.Favorite = new SAOCR_Data_Manager.Button_SE_();
-            this.CharacterName = new SAOCR_Data_Manager.Controls.BreezeLabel();
             this.LS = new SAOCR_Data_Manager.LsDisplay();
             this.BasicInfo = new SAOCR_Data_Manager.Controls.Initialize_Properties.BasicInfo();
             this.Param = new SAOCR_Data_Manager.ParamDisplay();
             this.BA = new SAOCR_Data_Manager.BaDisplay();
+            this.Border = new System.Windows.Forms.Panel();
+            this.Favorite = new SAOCR_Data_Manager.Button_SE_();
+            this.CharacterName = new SAOCR_Data_Manager.Controls.BreezeLabel();
             this.Panel.SuspendLayout();
             this.Border.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +53,55 @@
             this.Panel.Padding = new System.Windows.Forms.Padding(5);
             this.Panel.Size = new System.Drawing.Size(746, 564);
             this.Panel.TabIndex = 2;
+            // 
+            // LS
+            // 
+            this.LS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.LS.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.LS.ForeColor = System.Drawing.Color.White;
+            this.LS.Location = new System.Drawing.Point(160, 664);
+            this.LS.Marquee = true;
+            this.LS.Name = "LS";
+            this.LS.Size = new System.Drawing.Size(411, 115);
+            this.LS.TabIndex = 25;
+            // 
+            // BasicInfo
+            // 
+            this.BasicInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.BasicInfo.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.BasicInfo.ForeColor = System.Drawing.Color.White;
+            this.BasicInfo.Location = new System.Drawing.Point(8, 8);
+            this.BasicInfo.Name = "BasicInfo";
+            this.BasicInfo.Size = new System.Drawing.Size(713, 410);
+            this.BasicInfo.TabIndex = 24;
+            // 
+            // Param
+            // 
+            this.Param.Awaked = EParamAwaked.Null;
+            this.Param.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.Param.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Param.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.Param.ForeColor = System.Drawing.Color.White;
+            this.Param.Location = new System.Drawing.Point(78, 785);
+            this.Param.Lv = EParamLv.Null;
+            this.Param.Name = "Param";
+            this.Param.Size = new System.Drawing.Size(574, 374);
+            this.Param.TabIndex = 0;
+            this.Param.TypeParamAt1st = EParamType.Mebius;
+            this.Param.TypeParamAt2nd = EParamType.Force;
+            this.Param.TypeParamAt3rd = EParamType.Aegis;
+            this.Param.TypeParamAt4th = ((EParamType)((EParamType.Force | EParamType.Aegis)));
+            // 
+            // BA
+            // 
+            this.BA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.BA.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.BA.ForeColor = System.Drawing.Color.White;
+            this.BA.isTextTranslated = true;
+            this.BA.Location = new System.Drawing.Point(86, 424);
+            this.BA.Name = "BA";
+            this.BA.Size = new System.Drawing.Size(558, 234);
+            this.BA.TabIndex = 1;
             // 
             // Border
             // 
@@ -103,55 +152,6 @@
             this.CharacterName.Name = "CharacterName";
             this.CharacterName.Size = new System.Drawing.Size(710, 36);
             this.CharacterName.TabIndex = 28;
-            // 
-            // LS
-            // 
-            this.LS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.LS.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.LS.ForeColor = System.Drawing.Color.White;
-            this.LS.Location = new System.Drawing.Point(160, 664);
-            this.LS.Marquee = true;
-            this.LS.Name = "LS";
-            this.LS.Size = new System.Drawing.Size(411, 115);
-            this.LS.TabIndex = 25;
-            // 
-            // BasicInfo
-            // 
-            this.BasicInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.BasicInfo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.BasicInfo.ForeColor = System.Drawing.Color.White;
-            this.BasicInfo.Location = new System.Drawing.Point(8, 8);
-            this.BasicInfo.Name = "BasicInfo";
-            this.BasicInfo.Size = new System.Drawing.Size(713, 410);
-            this.BasicInfo.TabIndex = 24;
-            // 
-            // Param
-            // 
-            this.Param.Awaked = EParamAwaked.Null;
-            this.Param.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.Param.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Param.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.Param.ForeColor = System.Drawing.Color.White;
-            this.Param.Location = new System.Drawing.Point(78, 785);
-            this.Param.Lv = EParamLv.Null;
-            this.Param.Name = "Param";
-            this.Param.Size = new System.Drawing.Size(574, 374);
-            this.Param.TabIndex = 0;
-            this.Param.TypeParamAt1st = EParamType.Mebius;
-            this.Param.TypeParamAt2nd = EParamType.Force;
-            this.Param.TypeParamAt3rd = EParamType.Aegis;
-            this.Param.TypeParamAt4th = ((EParamType)((EParamType.Force | EParamType.Aegis)));
-            // 
-            // BA
-            // 
-            this.BA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.BA.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.BA.ForeColor = System.Drawing.Color.White;
-            this.BA.isTextTranslated = true;
-            this.BA.Location = new System.Drawing.Point(86, 424);
-            this.BA.Name = "BA";
-            this.BA.Size = new System.Drawing.Size(558, 234);
-            this.BA.TabIndex = 1;
             // 
             // CharaDataDisplay
             // 

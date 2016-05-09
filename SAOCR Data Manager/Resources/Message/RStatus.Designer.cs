@@ -358,6 +358,249 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000000\n\n切換頁面到:  的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000000 {
+            get {
+                return ResourceManager.GetString("S_0xF0000000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000001\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000001 {
+            get {
+                return ResourceManager.GetString("S_0xF0000001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000002\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000002 {
+            get {
+                return ResourceManager.GetString("S_0xF0000002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000003\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000003 {
+            get {
+                return ResourceManager.GetString("S_0xF0000003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000004\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000004 {
+            get {
+                return ResourceManager.GetString("S_0xF0000004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000005\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000005 {
+            get {
+                return ResourceManager.GetString("S_0xF0000005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000006\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000006 {
+            get {
+                return ResourceManager.GetString("S_0xF0000006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000007\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000007 {
+            get {
+                return ResourceManager.GetString("S_0xF0000007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0000008\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0000008 {
+            get {
+                return ResourceManager.GetString("S_0xF0000008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002000\n\n開啟角色系代碼表。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002000 {
+            get {
+                return ResourceManager.GetString("S_0xF0002000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002001\n\n關閉角色系代碼表。回傳的代碼為 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002001 {
+            get {
+                return ResourceManager.GetString("S_0xF0002001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002002\n\n已新增指定的角色到下載清單中。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002002 {
+            get {
+                return ResourceManager.GetString("S_0xF0002002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002003\n\n沒有新增角色到下載清單。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002003 {
+            get {
+                return ResourceManager.GetString("S_0xF0002003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002004\n\n已從下載清單中移除指定的角色。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002004 {
+            get {
+                return ResourceManager.GetString("S_0xF0002004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002005\n\n沒有從下載清單中移除任何角色。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002005 {
+            get {
+                return ResourceManager.GetString("S_0xF0002005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002006\n\n已將搜尋清單中的所有結果新增至下載清單。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002006 {
+            get {
+                return ResourceManager.GetString("S_0xF0002006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002007\n\n沒有新增任何角色到下載清單中。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002007 {
+            get {
+                return ResourceManager.GetString("S_0xF0002007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002008\n\n已根據指定的角色ID將角色新增至下載清單。角色ID:  的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002008 {
+            get {
+                return ResourceManager.GetString("S_0xF0002008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0002009\n\n未根據提供的角色ID將角色新增至下載清單。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0002009 {
+            get {
+                return ResourceManager.GetString("S_0xF0002009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF000200A\n\n尋找角色。關鍵字: 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200A_1 {
+            get {
+                return ResourceManager.GetString("S_0xF000200A_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ，星級: 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200A_2 {
+            get {
+                return ResourceManager.GetString("S_0xF000200A_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ，角色系代碼: 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200A_3 {
+            get {
+                return ResourceManager.GetString("S_0xF000200A_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF000200B\n\n角色全部下載完成。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200B {
+            get {
+                return ResourceManager.GetString("S_0xF000200B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF000200C\n\n已取消角色下載作業。未完成下載的圖片將刪除，已下載完畢的圖片將會續留。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200C {
+            get {
+                return ResourceManager.GetString("S_0xF000200C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF000200D\n\n無網際網路連線，已取消圖片下載作業。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200D {
+            get {
+                return ResourceManager.GetString("S_0xF000200D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF000200E\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200E {
+            get {
+                return ResourceManager.GetString("S_0xF000200E", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF000200F\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF000200F {
+            get {
+                return ResourceManager.GetString("S_0xF000200F", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 狀態代碼 0xF0027000\n\n檔案下載的儲存路徑已更動。更動後的路徑為:  的當地語系化字串。
         /// </summary>
         internal static string S_0xF0027000 {
@@ -372,6 +615,15 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string S_0xF0027001 {
             get {
                 return ResourceManager.GetString("S_0xF0027001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 狀態代碼 0xF0027002\n\n已完成附件清除作業。 的當地語系化字串。
+        /// </summary>
+        internal static string S_0xF0027002 {
+            get {
+                return ResourceManager.GetString("S_0xF0027002", resourceCulture);
             }
         }
         

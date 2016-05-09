@@ -58,8 +58,39 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="bouncywp71">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\bouncywp71.dll</HintPath>
+    </Reference>
+    <Reference Include="FiveRocks">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\FiveRocks.dll</HintPath>
+    </Reference>
+    <Reference Include="HOTween">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\HOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="LibUniSWF">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\LibUniSWF.dll</HintPath>
+    </Reference>
+    <Reference Include="LibUniSWFInternal">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\LibUniSWFInternal.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic">
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="P31RestKit">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\P31RestKit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -69,9 +100,30 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UniExtensions">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\UniExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIs\ColorTranslator.cs" />
+    <Compile Include="Controls\CharacterSearcher\Initial+Property.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CharacterSearcher\Initial+Property.Designer.cs">
+      <DependentUpon>Initial+Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CharacterSearcher\Method.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CharacterSearcher\Program.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\DataRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +135,12 @@
     </Compile>
     <Compile Include="Controls\WeaponStatus\Method.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main Program\Actions\Exp Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Program\Actions\Download.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Program\Actions\Statistics.cs">
       <SubType>Form</SubType>
@@ -186,7 +244,7 @@
     <Compile Include="Module\UpdateChecker.cs" />
     <Compile Include="APIs\EnumTranslator.cs" />
     <Compile Include="APIs\Data.cs" />
-    <Compile Include="ExtentMethod\Extent.cs" />
+    <Compile Include="APIs\Extent.cs" />
     <Compile Include="APIs\CharacterDataManage.cs" />
     <Compile Include="Module\CharaData.cs" />
     <Compile Include="Main Program\Actions\CharacterData.cs">
@@ -241,6 +299,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RCDDisplay.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Controls\RCharaSearcher.Designer.cs">
+      <DependentUpon>RCharaSearcher.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Forms\RExpCalc.Designer.cs">
+      <DependentUpon>RExpCalc.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Forms\RDownload.Designer.cs">
+      <DependentUpon>RDownload.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Resources\Forms\RDataReg.Designer.cs">
       <DependentUpon>RDataReg.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -276,7 +349,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RDownloader.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\RDictColor.Designer.cs">
+    <Compile Include="Resources\Dictionary\RDictColor.Designer.cs">
       <DependentUpon>RDictColor.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -293,7 +366,7 @@
     <Compile Include="Main Program\App Functions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\RDictEnumString.Designer.cs">
+    <Compile Include="Resources\Dictionary\RDictEnumString.Designer.cs">
       <DependentUpon>RDictEnumString.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -384,6 +457,9 @@
     <EmbeddedResource Include="Controls\Button%28SE%29.resx">
       <DependentUpon>Button%28SE%29.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CharacterSearcher\Initial+Property.resx">
+      <DependentUpon>Initial+Property.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\CharaDataDisplay\Initial+Property.resx">
       <DependentUpon>Initial+Property.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,6 +497,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RCDDisplay.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controls\RCharaSearcher.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RCharaSearcher.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Forms\RExpCalc.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RExpCalc.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Forms\RDownload.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RDownload.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Forms\RDataReg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RDataReg.Designer.cs</LastGenOutput>
@@ -452,11 +541,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RDownloader.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\RDictColor.resx">
+    <EmbeddedResource Include="Resources\Dictionary\RDictColor.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RDictColor.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\RDictEnumString.resx">
+    <EmbeddedResource Include="Resources\Dictionary\RDictEnumString.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RDictEnumString.Designer.cs</LastGenOutput>
     </EmbeddedResource>

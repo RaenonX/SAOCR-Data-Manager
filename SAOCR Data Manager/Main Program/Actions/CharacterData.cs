@@ -67,70 +67,13 @@ namespace SAOCR_Data_Manager
             }
         }
 
-        private void CD_KeywordGo_ButtonClick(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Extent.isEmptyString(CD_Keyword.Text) && Extent.isEmptyString(CD_Rarity.Text) && Extent.isEmptyString(CD_CharaSeries.Text))
-                {
-                    SystemAPI.Warning(RWarning.W_0xC0007006);
-                    return;
-                }
-                InitializeList(InitItem.CharaFindResult);
-                DataRow[] Result = DataAPI.Search(CD_Keyword.Text, DT.CharaMix, 0, DT.CharaMix.Rows.Count, 1, DT.CharaMix.Columns.Count - 1);
-                for (int i = 0; i < Result.Length; i++)
-                {
-                    ListViewItem LVI = new ListViewItem();
-                    if ((Extent.isEmptyString(CD_Rarity.Text) ^ Result[i][(int)ECharaMixCode.ID].ToString().Substring(6, 1) == CD_Rarity.Text) &&
-                        (Extent.isEmptyString(CD_CharaSeries.Text) ^ Result[i][(int)ECharaMixCode.ID].ToString().Substring(1, 3) == CD_CharaSeries.Text))
-                    {
-                        DataRow[] CharaName = DataAPI.Search(Result[i][(int)ECharaMixCode.ID].ToString(), DT.CharaMix, 0, (int)ECharaMixCode.ID);
-                        string HEAD = CharaName[0][(int)ECharaMixCode.HEAD].ToString();
-                        string NAME = CharaName[0][(int)ECharaMixCode.NAME].ToString();
-                        LVI.SubItems.Add(Result[i][(int)ECharaMixCode.ID].ToString());
-                        LVI.SubItems.Add(HEAD + NAME);
-                    }
-                    if (LVI.SubItems.Count > 1)
-                    {
-                        CD_KeywordResult.Items.Add(LVI);
-                    }
-                }
-
-                Status(RCharaData.Log_FindChara1 + CD_Keyword.Text + RCharaData.Log_FindChara2 + CD_Rarity.Text + RCharaData.Log_FindChara3 + CD_CharaSeries.Text);
-            }
-            catch (NullReferenceException)
-            {
-                SystemAPI.Warning(RWarning.W_0xC0011001);
-            }
-            catch (SyntaxErrorException)
-            {
-                SystemAPI.Warning(RWarning.W_0xC0011002);
-            }
-            catch (Exception ex)
-            {
-                SystemAPI.Error(RError.E_0x00011001, ex);
-                throw;
-            }
-        }
-
-        private void CD_KeywordResult_DoubleClick(object sender, EventArgs e)
+        private void CD_SearchCharacter_ItemSelected(object sender, EventArgs e)
         {
             ListView Sender = (ListView)sender;
 
             CD_CharacterID.Text = Sender.SelectedItems[0].SubItems[1].Text;
             Application.DoEvents();
             CD_CharacterIDGo_ButtonClick(this, null);
-        }
-        
-        private void CD_SeriesCodeGo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            DataViewF DVF = new DataViewF();
-            string[] ColumnName = {Const.ColName.CHARA_ID, Const.ColName.CHARA_NAME_JP, Const.ColName.CHARA_NAME_EN, Const.ColName.CHARA_NAME_CH };
-            DVF.ImportData(DT.CharaSeries, ColumnName);
-            if (DVF.ShowDialog(this) == DialogResult.OK)
-            {
-                CD_CharaSeries.Text = DVF.ReturnValue;
-            } 
         }
         
         private void CD_Favorite_DoubleClick(object sender, EventArgs e)
@@ -145,7 +88,7 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                InitializeList(InitItem.Favorite);
+                InitializeList(InitItem.CD_Favorite);
                 AppConfig AC = new AppConfig();
 
                 if (AC.Chara_Favorite != null)
@@ -224,6 +167,16 @@ namespace SAOCR_Data_Manager
                 SystemAPI.Error(RError.E_0x00011004, ex);
                 throw;
             }
+        }
+        
+        private void CD_SearchCharacter_SeriesTableClicked(object sender, EventArgs e)
+        {
+            CD_SearchCharacter.OpenSeriesTable(ref DT.CharaSeries, Status);
+        }
+
+        private void CD_SearchCharacter_SearchClicked(object sender, EventArgs e)
+        {
+            CD_SearchCharacter.FindCharacter(ref DT.Source, Status);
         }
     }
 }

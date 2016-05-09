@@ -24,9 +24,20 @@ namespace SAOCR_Data_Manager
         /// </summary>
         public static void CloseProgram(bool Normal)
         {
+            UserConfig UC = new UserConfig();
+            Computer My = new Computer();
+
             if (Normal)
             {
                 StatusLog.Delete();
+            }
+
+            if ((EAttachmentManageMode)UC.AMMode == EAttachmentManageMode.DelAfterClose)
+            {
+                if (My.FileSystem.DirectoryExists(Const.Path.ATTACHMENT_AREA + "/" + Const.Path.CHARA_PIC))
+                {
+                    My.FileSystem.DeleteDirectory(Const.Path.ATTACHMENT_AREA + "/" + Const.Path.CHARA_PIC, Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.DeleteAllContents);
+                }
             }
            
             Process p = Process.GetCurrentProcess();

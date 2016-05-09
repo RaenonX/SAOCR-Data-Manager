@@ -79,6 +79,24 @@ namespace SAOCR_Data_Manager.Resources {
         }
         
         /// <summary>
+        ///   查詢類似 檔案下載 的當地語系化字串。
+        /// </summary>
+        internal static string AtPage_Download {
+            get {
+                return ResourceManager.GetString("AtPage_Download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 經驗計算器 的當地語系化字串。
+        /// </summary>
+        internal static string AtPage_EXPCalc {
+            get {
+                return ResourceManager.GetString("AtPage_EXPCalc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 首頁 的當地語系化字串。
         /// </summary>
         internal static string AtPage_HomePage {

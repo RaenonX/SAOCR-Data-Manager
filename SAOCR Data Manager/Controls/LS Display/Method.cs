@@ -44,14 +44,15 @@ namespace SAOCR_Data_Manager
             }
         }
 
-        /// <returns>對象、對象分數、效果、效果分數</returns>
+        /// <returns>對象、對象分數、效果、效果分數、角色ID</returns>
         public string[] OutputForHTML()
         {
             string[] L = {
                 Target.MarqueeText,
                 TargetScore.Text,
                 Effect.MarqueeText,
-                EffectScore.Text
+                EffectScore.Text,
+                CDT.Data.CharaID
             };
             return L;
         }

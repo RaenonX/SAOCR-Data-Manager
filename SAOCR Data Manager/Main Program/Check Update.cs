@@ -103,7 +103,7 @@ namespace SAOCR_Data_Manager
                         if (new MessageDialog(Message, ExMesssage, MessageBoxButtonStyle.YesNo).ShowDialog(this) == DialogResult.Yes)
                         {
                             Downloader DL = new Downloader(new Uri(URLs[(int)EPathRowCode.PROGRAM_DOWNLOAD_NET]), UC.Path_Download + Const.Path.PROGRAM, SizeUnit.KB, URLs[(int)EPathRowCode.PROGRAM_DESCRIPTION]);
-                            new MessageDialog(Message, MessageBoxButtonStyle.Downlaoder, DL, true).ShowDialog(this);
+                            new MessageDialog(Message, MessageBoxButtonStyle.Downloader, DL, true).ShowDialog(this);
                         };
                         break;
                     case AutoUpdateMode.CheckOnly:
@@ -128,7 +128,7 @@ namespace SAOCR_Data_Manager
                         if (new MessageDialog(Message, ExMesssage, MessageBoxButtonStyle.YesNo).ShowDialog(this) == DialogResult.Yes)
                         {
                             Downloader DL = new Downloader(new Uri(URLs[(int)EPathRowCode.CSV_DOWNLOAD_NET]), AC.Path_CSV, SizeUnit.KB, new Uri(URLs[(int)EPathRowCode.CSV_VERSION_NET]), URLs[(int)EPathRowCode.CSV_VERSION_LOCAL], URLs[(int)EPathRowCode.CSV_DESCRIPTION]);
-                            new MessageDialog(Message, MessageBoxButtonStyle.Downlaoder, DL, true).ShowDialog(this);
+                            new MessageDialog(Message, MessageBoxButtonStyle.Downloader, DL, true).ShowDialog(this);
                         };
                         break;
                     case AutoUpdateMode.CheckOnly:
@@ -159,7 +159,7 @@ namespace SAOCR_Data_Manager
                             }
                             Downloader DL = new Downloader(ResourceURLs.ToArray(), AUResource.GetUpdateAvailableList(), SizeUnit.KB, new Uri(URLs[(int)EPathRowCode.RESOURCES_VERSION_NET]), URLs[(int)EPathRowCode.RESOURCES_VERSION_LOCAL], URLs[(int)EPathRowCode.RESOURCES_DESCRIPTION]);
 
-                            new MessageDialog(Message, MessageBoxButtonStyle.Downlaoder, DL, true).ShowDialog(this);
+                            new MessageDialog(Message, MessageBoxButtonStyle.Downloader, DL, true).ShowDialog(this);
                         };
                         break;
                     case AutoUpdateMode.CheckOnly:

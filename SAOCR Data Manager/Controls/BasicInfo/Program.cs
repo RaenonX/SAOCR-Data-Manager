@@ -22,7 +22,7 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
             try
             {
                 PictureB PB = new PictureB();
-                PB.PictureBox.ImageLocation = Picture.ImageLocation;
+                PB.PictureBox.Image = Picture.Image;
                 PB.Title.Text = CharaID.Text + " - " + CharaName;
                 PB.Show();
             }
@@ -119,6 +119,16 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                 SystemAPI.Error(RError.E_0x00013007, ex);
                 throw;
             }
+        }
+
+        private void Picture_Download_Succeed(string PicLocation)
+        {
+            Picture.ImageLocation = PicLocation;
+        }
+
+        private void Picture_Download_Failed(object sender, EventArgs e)
+        {
+            Picture.Image = Properties.Resources.Error;
         }
     }
 }

@@ -17,6 +17,8 @@ using System.Threading;
 using System.Text.RegularExpressions;
 using SAOCR_Data_Manager.Resources.Message;
 using SAOCR_Data_Manager.Module;
+using AssemblyCSharp;
+using System.Xml;
 
 namespace SAOCR_Data_Manager
 {
@@ -24,13 +26,23 @@ namespace SAOCR_Data_Manager
     {
         public void Test()
         {
+            /*
+            BattlePlayer ATK = new BattlePlayer();
+            BattlePlayer DEF = new BattlePlayer();
+            BaseCalculator BaseCalculator = new NomarlAttackCalculator(ATK, DEF);
+
+            Debug.Print(BaseCalculator.getRandomDamage(500).ToString());
+            */
+
+            /*
             WData WDT = new WData();
             WDT.ID = "101000730";
             WDT.DTs = DT;
             WDT.TitleP = TitleP;
 
             WeaponData WD = new WeaponData(WDT);
-            Debug.Print(WD.Sharp.GetParamArray(ESharpness.R4)[0].ToString());
+            Debug.Print(WD.Param.GetArray(ESharpness.R4)[0].ToString())
+            */
         }
     }
 }

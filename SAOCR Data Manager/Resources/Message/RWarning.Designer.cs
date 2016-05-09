@@ -142,6 +142,96 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
+        ///   查詢類似 警告代碼 0xC0002000\n\n請先選擇要下載圖片的角色，再將其新增至下載清單。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002000 {
+            get {
+                return ResourceManager.GetString("W_0xC0002000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002001\n\n請先選擇要從下載清單移除的角色。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002001 {
+            get {
+                return ResourceManager.GetString("W_0xC0002001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002002\n\n搜尋結果的清單不能為空。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002002 {
+            get {
+                return ResourceManager.GetString("W_0xC0002002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002003\n\n找不到角色，請確認輸入的ID是否正確，並且此角色已存在。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002003 {
+            get {
+                return ResourceManager.GetString("W_0xC0002003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002004\n\n請先提供關鍵字、星級，或是角色系代碼再搜尋角色。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002004 {
+            get {
+                return ResourceManager.GetString("W_0xC0002004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002005\n\n此角色已經新增到下載清單中了。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002005 {
+            get {
+                return ResourceManager.GetString("W_0xC0002005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002006\n\n找不到要開啟的檔案，該檔案可能因為下載不完全或取消下載的後續作業而被刪除了。\n檔案路徑:  的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002006 {
+            get {
+                return ResourceManager.GetString("W_0xC0002006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002007\n\n無網際網路連線。請先連線至網路後再下載圖片。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002007 {
+            get {
+                return ResourceManager.GetString("W_0xC0002007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002008\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002008 {
+            get {
+                return ResourceManager.GetString("W_0xC0002008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0002009\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0002009 {
+            get {
+                return ResourceManager.GetString("W_0xC0002009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 警告代碼 0xC0003001\n\n傳入的隊長技參數目錄有誤，故傳回的值為null。 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0003001 {
@@ -174,6 +264,96 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string W_0xC0003004 {
             get {
                 return ResourceManager.GetString("W_0xC0003004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004000\n\n根據提供的關鍵字，沒有找到相關的結果。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004000 {
+            get {
+                return ResourceManager.GetString("W_0xC0004000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004001\n\n您所提供的關鍵字中有不合法的字元，請重新輸入。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004001 {
+            get {
+                return ResourceManager.GetString("W_0xC0004001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004002\n\n請先提供要搜尋的關鍵字、角色星級，或是角色系代碼再搜尋角色。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004002 {
+            get {
+                return ResourceManager.GetString("W_0xC0004002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004003\n\n請先匯入帶有角色相關資料的資料表再搜尋角色。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004003 {
+            get {
+                return ResourceManager.GetString("W_0xC0004003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004004\n\n請先匯入帶有角色系代碼查閱表的資料表再開啟視窗。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004004 {
+            get {
+                return ResourceManager.GetString("W_0xC0004004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004005\n\n請檢查匯入的資源是否全部都不為null。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004005 {
+            get {
+                return ResourceManager.GetString("W_0xC0004005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004006\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004006 {
+            get {
+                return ResourceManager.GetString("W_0xC0004006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004007\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004007 {
+            get {
+                return ResourceManager.GetString("W_0xC0004007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004008\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004008 {
+            get {
+                return ResourceManager.GetString("W_0xC0004008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0004009\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0004009 {
+            get {
+                return ResourceManager.GetString("W_0xC0004009", resourceCulture);
             }
         }
         
@@ -223,7 +403,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0007006\n\n沒有提供要搜尋的關鍵字、角色星級，或是角色系代碼。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0007006\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0007006 {
             get {
@@ -421,7 +601,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0011001\n\n根據提供的關鍵字，沒有找到相關的結果。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0011001\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0011001 {
             get {
@@ -430,7 +610,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0011002\n\n您所提供的關鍵字中有不合法的字元，請重新輸入。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0011002\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0011002 {
             get {
@@ -732,6 +912,24 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string W_0xC0027000 {
             get {
                 return ResourceManager.GetString("W_0xC0027000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0027001\n\n確定要清除所有已下載的附件嗎？ 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0027001 {
+            get {
+                return ResourceManager.GetString("W_0xC0027001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0027002\n\n發生錯誤，清除附件失敗。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0027002 {
+            get {
+                return ResourceManager.GetString("W_0xC0027002", resourceCulture);
             }
         }
         

@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using SAOCR_Data_Manager.Forms;
 using SAOCR_Data_Manager.Resources.Message;
 using SAOCR_Data_Manager.Resources.Controls;
+using SAOCR_Data_Manager.Properties;
+using Microsoft.VisualBasic.Devices;
+using System.Net;
 
 namespace SAOCR_Data_Manager.Controls.Initialize_Properties
 {
@@ -19,6 +22,8 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
         {
             try
             {
+                UserConfig UC = new UserConfig();
+
                 CDT = Data;
                 CharaID.Text = Data.Data.CharaID;
                 Rarity.Text = Data.Data.CharaID.Substring(6, 1);
@@ -51,7 +56,31 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                 FolkName.Restart();
 
                 Picture.ImageLocation = null;
-                Picture.ImageLocation = Const.URL.PIC_AREA + Const.URL.CHARA_PIC + "/" + Data.Data.CharaID + ".jpg";
+                switch ((EAttachmentManageMode)UC.AMMode)
+                {
+                    case EAttachmentManageMode.AlwaysDL:
+                        Picture.ImageLocation = Const.URL.PIC_AREA + Const.URL.CHARA_PIC + "/" + Data.CDT.Info[0][(int)ENameSecCol.ID_PIC].ToString() + Const.Path.PIC_EXTENSION;
+                        break;
+                    case EAttachmentManageMode.DelAfterClose:
+                    case EAttachmentManageMode.DLonce:
+                        Computer My = new Computer();
+                        string PicName = Data.CDT.Info[0][(int)ENameSecCol.ID_PIC].ToString() + Const.Path.PIC_EXTENSION;
+                        string PicAtLocal = Const.Path.ATTACHMENT_AREA + "/" + Const.Path.CHARA_PIC + "/" + PicName;
+                        string PicOnNet = Const.URL.PIC_AREA + Const.URL.CHARA_PIC + "/" + PicName;
+
+                        if (!My.FileSystem.FileExists(PicAtLocal))
+                        {
+                            Picture.Image = Properties.Resources.Loading;
+                            Downloader DL = new Downloader(new Uri(PicOnNet), PicAtLocal, SizeUnit.KB, PicName);
+                            DL.DownloadSucceed += (sender, e) => Picture_Download_Succeed(PicAtLocal);
+                            DL.DownloadFailed += Picture_Download_Failed;
+                            DL.DLStart();
+                        } else
+                        {
+                            Picture.ImageLocation = PicAtLocal;
+                        }
+                        break;
+                }
             }
             catch (Exception e)
             {
@@ -74,7 +103,7 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                 ReleaseDate.Text,
                 CharaName,
                 GetMethod.Text,
-                FolkName.Text
+                FolkName.MarqueeText
             };
             return A;
         }

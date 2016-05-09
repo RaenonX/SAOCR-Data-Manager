@@ -82,7 +82,7 @@ namespace SAOCR_Data_Manager
                 Status(RStatus.Error_StartIsBiggerThanEnd);
                 return;
             }
-            InitializeList(InitItem.CrDataFindResultList);
+            InitializeList(InitItem.CT_FindResultList);
             DataRow[] Result = DataAPI.Search(CT_Search.Text, DT.Source, 0, DT.Source.Rows.Count, Convert.ToInt32(CT_StartColumn.Value), Convert.ToInt32(CT_EndColumn.Value));
 
             try

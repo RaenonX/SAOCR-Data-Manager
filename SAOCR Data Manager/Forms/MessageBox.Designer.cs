@@ -31,9 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.Title = new System.Windows.Forms.Label();
             this.Border = new System.Windows.Forms.Panel();
+            this.Button_Left = new SAOCR_Data_Manager.Button_SE_();
+            this.Sys_Close = new SAOCR_Data_Manager.Button_SE_();
+            this.Button_Right = new SAOCR_Data_Manager.Button_SE_();
+            this.Sys_Min = new SAOCR_Data_Manager.Button_SE_();
+            this.Button_Center = new SAOCR_Data_Manager.Button_SE_();
             this.Message = new System.Windows.Forms.Label();
-            this.ProgressAll = new System.Windows.Forms.ProgressBar();
-            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.ExMessage = new SAOCR_Data_Manager.MarqueeableLabel();
             this.DownloadUI = new System.Windows.Forms.Panel();
             this.DLMessage = new System.Windows.Forms.Label();
             this.SpeedText = new System.Windows.Forms.Label();
@@ -41,12 +45,9 @@
             this.ProgressSingle = new System.Windows.Forms.ProgressBar();
             this.FileSizeText = new System.Windows.Forms.Label();
             this.FileSize = new System.Windows.Forms.Label();
-            this.ExMessage = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.Button_Left = new SAOCR_Data_Manager.Button_SE_();
-            this.Sys_Close = new SAOCR_Data_Manager.Button_SE_();
-            this.Button_Right = new SAOCR_Data_Manager.Button_SE_();
-            this.Sys_Min = new SAOCR_Data_Manager.Button_SE_();
-            this.Button_Center = new SAOCR_Data_Manager.Button_SE_();
+            this.ProgressAll = new System.Windows.Forms.ProgressBar();
+            this.ReturnText = new System.Windows.Forms.TextBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.Border.SuspendLayout();
             this.DownloadUI.SuspendLayout();
             this.SuspendLayout();
@@ -64,8 +65,6 @@
             // 
             // Border
             // 
-            this.Border.Controls.Add(this.DownloadUI);
-            this.Border.Controls.Add(this.ExMessage);
             this.Border.Controls.Add(this.Title);
             this.Border.Controls.Add(this.Button_Left);
             this.Border.Controls.Add(this.Sys_Close);
@@ -73,143 +72,13 @@
             this.Border.Controls.Add(this.Sys_Min);
             this.Border.Controls.Add(this.Button_Center);
             this.Border.Controls.Add(this.Message);
+            this.Border.Controls.Add(this.ExMessage);
+            this.Border.Controls.Add(this.DownloadUI);
+            this.Border.Controls.Add(this.ReturnText);
             this.Border.Location = new System.Drawing.Point(0, 0);
             this.Border.Name = "Border";
             this.Border.Size = new System.Drawing.Size(600, 250);
             this.Border.TabIndex = 7;
-            // 
-            // Message
-            // 
-            this.Message.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.Message.ForeColor = System.Drawing.Color.White;
-            this.Message.Location = new System.Drawing.Point(20, 45);
-            this.Message.Margin = new System.Windows.Forms.Padding(20, 20, 20, 5);
-            this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(560, 145);
-            this.Message.TabIndex = 3;
-            this.Message.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ProgressAll
-            // 
-            this.ProgressAll.ForeColor = System.Drawing.Color.White;
-            this.ProgressAll.Location = new System.Drawing.Point(0, 108);
-            this.ProgressAll.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.ProgressAll.MarqueeAnimationSpeed = 10;
-            this.ProgressAll.Name = "ProgressAll";
-            this.ProgressAll.Size = new System.Drawing.Size(560, 16);
-            this.ProgressAll.Step = 1;
-            this.ProgressAll.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.ProgressAll.TabIndex = 8;
-            // 
-            // timer
-            // 
-            this.timer.Interval = 500;
-            // 
-            // DownloadUI
-            // 
-            this.DownloadUI.Controls.Add(this.DLMessage);
-            this.DownloadUI.Controls.Add(this.SpeedText);
-            this.DownloadUI.Controls.Add(this.Speed);
-            this.DownloadUI.Controls.Add(this.ProgressSingle);
-            this.DownloadUI.Controls.Add(this.FileSizeText);
-            this.DownloadUI.Controls.Add(this.FileSize);
-            this.DownloadUI.Controls.Add(this.ProgressAll);
-            this.DownloadUI.Location = new System.Drawing.Point(20, 47);
-            this.DownloadUI.Name = "DownloadUI";
-            this.DownloadUI.Size = new System.Drawing.Size(560, 145);
-            this.DownloadUI.TabIndex = 9;
-            this.DownloadUI.Visible = false;
-            // 
-            // DLMessage
-            // 
-            this.DLMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DLMessage.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.DLMessage.ForeColor = System.Drawing.Color.White;
-            this.DLMessage.Location = new System.Drawing.Point(0, 0);
-            this.DLMessage.Margin = new System.Windows.Forms.Padding(3);
-            this.DLMessage.Name = "DLMessage";
-            this.DLMessage.Size = new System.Drawing.Size(560, 61);
-            this.DLMessage.TabIndex = 13;
-            this.DLMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SpeedText
-            // 
-            this.SpeedText.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.SpeedText.ForeColor = System.Drawing.Color.White;
-            this.SpeedText.Location = new System.Drawing.Point(329, 67);
-            this.SpeedText.Margin = new System.Windows.Forms.Padding(3);
-            this.SpeedText.Name = "SpeedText";
-            this.SpeedText.Size = new System.Drawing.Size(72, 33);
-            this.SpeedText.TabIndex = 12;
-            this.SpeedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Speed
-            // 
-            this.Speed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Speed.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.Speed.ForeColor = System.Drawing.Color.White;
-            this.Speed.Location = new System.Drawing.Point(407, 67);
-            this.Speed.Margin = new System.Windows.Forms.Padding(3);
-            this.Speed.Name = "Speed";
-            this.Speed.Size = new System.Drawing.Size(153, 32);
-            this.Speed.TabIndex = 11;
-            this.Speed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ProgressSingle
-            // 
-            this.ProgressSingle.ForeColor = System.Drawing.Color.White;
-            this.ProgressSingle.Location = new System.Drawing.Point(0, 129);
-            this.ProgressSingle.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.ProgressSingle.MarqueeAnimationSpeed = 10;
-            this.ProgressSingle.Name = "ProgressSingle";
-            this.ProgressSingle.Size = new System.Drawing.Size(560, 16);
-            this.ProgressSingle.Step = 1;
-            this.ProgressSingle.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.ProgressSingle.TabIndex = 10;
-            // 
-            // FileSizeText
-            // 
-            this.FileSizeText.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.FileSizeText.ForeColor = System.Drawing.Color.White;
-            this.FileSizeText.Location = new System.Drawing.Point(0, 67);
-            this.FileSizeText.Margin = new System.Windows.Forms.Padding(3);
-            this.FileSizeText.Name = "FileSizeText";
-            this.FileSizeText.Size = new System.Drawing.Size(75, 34);
-            this.FileSizeText.TabIndex = 9;
-            this.FileSizeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // FileSize
-            // 
-            this.FileSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FileSize.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.FileSize.ForeColor = System.Drawing.Color.White;
-            this.FileSize.Location = new System.Drawing.Point(81, 67);
-            this.FileSize.Margin = new System.Windows.Forms.Padding(3);
-            this.FileSize.Name = "FileSize";
-            this.FileSize.Size = new System.Drawing.Size(242, 33);
-            this.FileSize.TabIndex = 8;
-            this.FileSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ExMessage
-            // 
-            this.ExMessage.Direction = MarqueeDirection.Horizontal;
-            this.ExMessage.EnableMarquee = true;
-            this.ExMessage.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.ExMessage.FreezeTime = 3000;
-            this.ExMessage.LabelSize = new System.Drawing.Size(560, 32);
-            this.ExMessage.LeftDistance = 5;
-            this.ExMessage.LForeColor = System.Drawing.Color.White;
-            this.ExMessage.Location = new System.Drawing.Point(20, 158);
-            this.ExMessage.Margin = new System.Windows.Forms.Padding(3, 5, 3, 4);
-            this.ExMessage.MarqueeText = "";
-            this.ExMessage.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.ExMessage.MoveDifferenceEachTime = 1;
-            this.ExMessage.MoveInterval = 15;
-            this.ExMessage.Name = "ExMessage";
-            this.ExMessage.OverBorderDistance = 20;
-            this.ExMessage.Size = new System.Drawing.Size(560, 32);
-            this.ExMessage.TabIndex = 7;
-            this.ExMessage.Visible = false;
             // 
             // Button_Left
             // 
@@ -313,6 +182,151 @@
             this.Button_Center.Size = new System.Drawing.Size(130, 32);
             this.Button_Center.TabIndex = 5;
             // 
+            // Message
+            // 
+            this.Message.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.Message.ForeColor = System.Drawing.Color.White;
+            this.Message.Location = new System.Drawing.Point(20, 45);
+            this.Message.Margin = new System.Windows.Forms.Padding(20, 20, 20, 0);
+            this.Message.Name = "Message";
+            this.Message.Size = new System.Drawing.Size(560, 147);
+            this.Message.TabIndex = 3;
+            this.Message.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ExMessage
+            // 
+            this.ExMessage.Direction = MarqueeDirection.Horizontal;
+            this.ExMessage.EnableMarquee = true;
+            this.ExMessage.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.ExMessage.FreezeTime = 3000;
+            this.ExMessage.LabelSize = new System.Drawing.Size(560, 32);
+            this.ExMessage.LeftDistance = 5;
+            this.ExMessage.LForeColor = System.Drawing.Color.White;
+            this.ExMessage.Location = new System.Drawing.Point(20, 160);
+            this.ExMessage.Margin = new System.Windows.Forms.Padding(3, 0, 3, 4);
+            this.ExMessage.MarqueeText = "";
+            this.ExMessage.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.ExMessage.MoveDifferenceEachTime = 1;
+            this.ExMessage.MoveInterval = 15;
+            this.ExMessage.Name = "ExMessage";
+            this.ExMessage.OverBorderDistance = 20;
+            this.ExMessage.Size = new System.Drawing.Size(560, 32);
+            this.ExMessage.TabIndex = 7;
+            this.ExMessage.Visible = false;
+            // 
+            // DownloadUI
+            // 
+            this.DownloadUI.Controls.Add(this.DLMessage);
+            this.DownloadUI.Controls.Add(this.SpeedText);
+            this.DownloadUI.Controls.Add(this.Speed);
+            this.DownloadUI.Controls.Add(this.ProgressSingle);
+            this.DownloadUI.Controls.Add(this.FileSizeText);
+            this.DownloadUI.Controls.Add(this.FileSize);
+            this.DownloadUI.Controls.Add(this.ProgressAll);
+            this.DownloadUI.Location = new System.Drawing.Point(20, 47);
+            this.DownloadUI.Name = "DownloadUI";
+            this.DownloadUI.Size = new System.Drawing.Size(560, 145);
+            this.DownloadUI.TabIndex = 9;
+            this.DownloadUI.Visible = false;
+            // 
+            // DLMessage
+            // 
+            this.DLMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DLMessage.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.DLMessage.ForeColor = System.Drawing.Color.White;
+            this.DLMessage.Location = new System.Drawing.Point(0, 0);
+            this.DLMessage.Margin = new System.Windows.Forms.Padding(3);
+            this.DLMessage.Name = "DLMessage";
+            this.DLMessage.Size = new System.Drawing.Size(560, 61);
+            this.DLMessage.TabIndex = 13;
+            this.DLMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SpeedText
+            // 
+            this.SpeedText.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.SpeedText.ForeColor = System.Drawing.Color.White;
+            this.SpeedText.Location = new System.Drawing.Point(329, 67);
+            this.SpeedText.Margin = new System.Windows.Forms.Padding(3);
+            this.SpeedText.Name = "SpeedText";
+            this.SpeedText.Size = new System.Drawing.Size(72, 33);
+            this.SpeedText.TabIndex = 12;
+            this.SpeedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Speed
+            // 
+            this.Speed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Speed.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.Speed.ForeColor = System.Drawing.Color.White;
+            this.Speed.Location = new System.Drawing.Point(407, 67);
+            this.Speed.Margin = new System.Windows.Forms.Padding(3);
+            this.Speed.Name = "Speed";
+            this.Speed.Size = new System.Drawing.Size(153, 32);
+            this.Speed.TabIndex = 11;
+            this.Speed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ProgressSingle
+            // 
+            this.ProgressSingle.ForeColor = System.Drawing.Color.White;
+            this.ProgressSingle.Location = new System.Drawing.Point(0, 129);
+            this.ProgressSingle.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.ProgressSingle.MarqueeAnimationSpeed = 10;
+            this.ProgressSingle.Name = "ProgressSingle";
+            this.ProgressSingle.Size = new System.Drawing.Size(560, 16);
+            this.ProgressSingle.Step = 1;
+            this.ProgressSingle.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.ProgressSingle.TabIndex = 10;
+            // 
+            // FileSizeText
+            // 
+            this.FileSizeText.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.FileSizeText.ForeColor = System.Drawing.Color.White;
+            this.FileSizeText.Location = new System.Drawing.Point(0, 67);
+            this.FileSizeText.Margin = new System.Windows.Forms.Padding(3);
+            this.FileSizeText.Name = "FileSizeText";
+            this.FileSizeText.Size = new System.Drawing.Size(75, 34);
+            this.FileSizeText.TabIndex = 9;
+            this.FileSizeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FileSize
+            // 
+            this.FileSize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FileSize.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.FileSize.ForeColor = System.Drawing.Color.White;
+            this.FileSize.Location = new System.Drawing.Point(81, 67);
+            this.FileSize.Margin = new System.Windows.Forms.Padding(3);
+            this.FileSize.Name = "FileSize";
+            this.FileSize.Size = new System.Drawing.Size(242, 33);
+            this.FileSize.TabIndex = 8;
+            this.FileSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ProgressAll
+            // 
+            this.ProgressAll.ForeColor = System.Drawing.Color.White;
+            this.ProgressAll.Location = new System.Drawing.Point(0, 108);
+            this.ProgressAll.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.ProgressAll.MarqueeAnimationSpeed = 10;
+            this.ProgressAll.Name = "ProgressAll";
+            this.ProgressAll.Size = new System.Drawing.Size(560, 16);
+            this.ProgressAll.Step = 1;
+            this.ProgressAll.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.ProgressAll.TabIndex = 8;
+            // 
+            // ReturnText
+            // 
+            this.ReturnText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ReturnText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ReturnText.Font = new System.Drawing.Font("微軟正黑體", 14F);
+            this.ReturnText.ForeColor = System.Drawing.Color.White;
+            this.ReturnText.Location = new System.Drawing.Point(20, 205);
+            this.ReturnText.Name = "ReturnText";
+            this.ReturnText.Size = new System.Drawing.Size(345, 32);
+            this.ReturnText.TabIndex = 10;
+            this.ReturnText.Visible = false;
+            // 
+            // timer
+            // 
+            this.timer.Interval = 500;
+            // 
             // MessageDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -325,8 +339,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MessageDialog";
-            this.Text = "SAOCR Data Manager";
             this.Border.ResumeLayout(false);
+            this.Border.PerformLayout();
             this.DownloadUI.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -352,6 +366,7 @@
         public System.Windows.Forms.Label DLMessage;
         public System.Windows.Forms.Label SpeedText;
         public System.Windows.Forms.Label Speed;
+        private System.Windows.Forms.TextBox ReturnText;
     }
 }
 

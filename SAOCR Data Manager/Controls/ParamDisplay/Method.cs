@@ -117,8 +117,6 @@ namespace SAOCR_Data_Manager
 
                 string[] L =
                 {
-                    CDT.Data.CharaID,
-                    CDT.Data.CharaID,
                     SFColorTrans.EParamCategoryT(EnumTranslator.EParamCategoryT(PR_Main.Text)),
                     PR_Main.Text,
                     SFColorTrans.SpecColTranslate((EBackColorAlpha)DS_STR.BackColor.ToArgb()),

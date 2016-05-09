@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MN_Title = new System.Windows.Forms.Label();
             this.P_HomePage = new System.Windows.Forms.Panel();
+            this.HM_ToEXPCalc = new SAOCR_Data_Manager.Button_SE_();
             this.HM_ToDownload = new SAOCR_Data_Manager.Button_SE_();
             this.HM_ToStatistics = new SAOCR_Data_Manager.Button_SE_();
             this.HM_Announcement = new SAOCR_Data_Manager.MarqueeableLabel();
@@ -52,6 +53,118 @@
             this.HM_ToHomePage = new SAOCR_Data_Manager.Button_SE_();
             this.MN_Close = new SAOCR_Data_Manager.Button_SE_();
             this.MN_Min = new SAOCR_Data_Manager.Button_SE_();
+            this.P_CharacterData = new System.Windows.Forms.Panel();
+            this.CD_CloseTab = new SAOCR_Data_Manager.Button_SE_();
+            this.CD_NewTab = new SAOCR_Data_Manager.Button_SE_();
+            this.CD_CharacterTab = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.CharaDataDisplay = new SAOCR_Data_Manager.Forms.CharaDataDisplay();
+            this.CD_Favorite = new System.Windows.Forms.ListView();
+            this.CD_CharacterIDText = new System.Windows.Forms.Label();
+            this.CD_CharacterIDGo = new SAOCR_Data_Manager.Button_SE_();
+            this.CD_CharacterID = new System.Windows.Forms.TextBox();
+            this.CD_FavoriteText = new System.Windows.Forms.Label();
+            this.P_Download = new System.Windows.Forms.Panel();
+            this.DL_DownloadStatus = new System.Windows.Forms.ListView();
+            this.DL_Failed = new System.Windows.Forms.Label();
+            this.DL_FailedText = new System.Windows.Forms.Label();
+            this.DL_Progress = new System.Windows.Forms.ProgressBar();
+            this.DL_Completed = new System.Windows.Forms.Label();
+            this.DL_CompletedText = new System.Windows.Forms.Label();
+            this.DL_DLing = new System.Windows.Forms.Label();
+            this.DL_DLingText = new System.Windows.Forms.Label();
+            this.DL_Pending = new System.Windows.Forms.Label();
+            this.DL_CompleteListText = new System.Windows.Forms.Label();
+            this.DL_PendingText = new System.Windows.Forms.Label();
+            this.DL_CompleteList = new System.Windows.Forms.RichTextBox();
+            this.DL_DownloadLogText = new System.Windows.Forms.Label();
+            this.DL_CharaPicBox = new System.Windows.Forms.GroupBox();
+            this.DL_AbortDownload = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_PicCount = new System.Windows.Forms.Label();
+            this.DL_PicCountText = new System.Windows.Forms.Label();
+            this.DL_ClearAll = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_StartDownload = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_CharaIDAdd = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_CharaIDText = new System.Windows.Forms.Label();
+            this.DL_CharaID = new System.Windows.Forms.TextBox();
+            this.DL_Add = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_Remove = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_AddAll = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_DownloadListText = new System.Windows.Forms.Label();
+            this.DL_DownloadList = new System.Windows.Forms.ListView();
+            this.DL_Arrow = new System.Windows.Forms.Label();
+            this.DL_SeriesForm = new System.Windows.Forms.LinkLabel();
+            this.DL_Series = new System.Windows.Forms.TextBox();
+            this.DL_SeriesText = new System.Windows.Forms.Label();
+            this.DL_Rarity = new System.Windows.Forms.TextBox();
+            this.DL_RarityText = new System.Windows.Forms.Label();
+            this.DL_SearchResult = new System.Windows.Forms.ListView();
+            this.DL_KeywordText = new System.Windows.Forms.Label();
+            this.DL_Keyword = new System.Windows.Forms.TextBox();
+            this.DL_Search = new SAOCR_Data_Manager.Button_SE_();
+            this.P_EXPCalc = new System.Windows.Forms.Panel();
+            this.EC_Main = new System.Windows.Forms.GroupBox();
+            this.EC_MainExpNeed = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_MainParamAfter = new System.Windows.Forms.GroupBox();
+            this.EC_MainRarityAfter = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_MainSSAfter = new System.Windows.Forms.Label();
+            this.EC_MainSSAfterText = new System.Windows.Forms.Label();
+            this.EC_MainCostAfter = new System.Windows.Forms.Label();
+            this.EC_MainHPAfter = new System.Windows.Forms.Label();
+            this.EC_MainCostAfterText = new System.Windows.Forms.Label();
+            this.EC_MainHPAfterText = new System.Windows.Forms.Label();
+            this.EC_MainMENAfter = new System.Windows.Forms.Label();
+            this.EC_MainINTAfter = new System.Windows.Forms.Label();
+            this.EC_MainMENAfterText = new System.Windows.Forms.Label();
+            this.EC_MainINTAfterText = new System.Windows.Forms.Label();
+            this.EC_MainVITAfter = new System.Windows.Forms.Label();
+            this.EC_MainSTRAfter = new System.Windows.Forms.Label();
+            this.EC_MainVITAfterText = new System.Windows.Forms.Label();
+            this.EC_MainSTRAfterText = new System.Windows.Forms.Label();
+            this.EC_MainParamBefore = new System.Windows.Forms.GroupBox();
+            this.EC_MainRarityBefore = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_MainSSBefore = new System.Windows.Forms.Label();
+            this.EC_MainSSBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainCostBefore = new System.Windows.Forms.Label();
+            this.EC_MainHPBefore = new System.Windows.Forms.Label();
+            this.EC_MainCostBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainHPBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainMENBefore = new System.Windows.Forms.Label();
+            this.EC_MainINTBefore = new System.Windows.Forms.Label();
+            this.EC_MainMENBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainINTBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainVITBefore = new System.Windows.Forms.Label();
+            this.EC_MainSTRBefore = new System.Windows.Forms.Label();
+            this.EC_MainVITBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainSTRBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainExpNeedText = new System.Windows.Forms.Label();
+            this.EC_MainCalc = new SAOCR_Data_Manager.Button_SE_();
+            this.EC_MainAfter = new System.Windows.Forms.GroupBox();
+            this.EC_MainExpAfter = new System.Windows.Forms.TextBox();
+            this.EC_MainExpAfterText = new System.Windows.Forms.Label();
+            this.EC_MainLvAfter = new System.Windows.Forms.TextBox();
+            this.EC_MainLvAfterText = new System.Windows.Forms.Label();
+            this.EC_MainBefore = new System.Windows.Forms.GroupBox();
+            this.EC_MainExpBefore = new System.Windows.Forms.TextBox();
+            this.EC_MainExpBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainLvBefore = new System.Windows.Forms.TextBox();
+            this.EC_MainLvBeforeText = new System.Windows.Forms.Label();
+            this.EC_Chara = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EC_CharaTips = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.EC_CharaExpNeed = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_CharaExpNeedText = new System.Windows.Forms.Label();
+            this.EC_CharaCalc = new SAOCR_Data_Manager.Button_SE_();
+            this.EC_CharaAfter = new System.Windows.Forms.GroupBox();
+            this.EC_CharaExpAfter = new System.Windows.Forms.TextBox();
+            this.EC_CharaExpAfterText = new System.Windows.Forms.Label();
+            this.EC_CharaLvAfter = new System.Windows.Forms.TextBox();
+            this.EC_CharaLvAfterText = new System.Windows.Forms.Label();
+            this.EC_CharaBefore = new System.Windows.Forms.GroupBox();
+            this.EC_CharaExpBefore = new System.Windows.Forms.TextBox();
+            this.EC_CharaExpBeforeText = new System.Windows.Forms.Label();
+            this.EC_CharaLvBefore = new System.Windows.Forms.TextBox();
+            this.EC_CharaLvBeforeText = new System.Windows.Forms.Label();
             this.P_Statistics = new System.Windows.Forms.Panel();
             this.SS_Monster = new System.Windows.Forms.GroupBox();
             this.SS_MonsterCalculate = new SAOCR_Data_Manager.Button_SE_();
@@ -111,6 +224,9 @@
             this.ST_VersionText = new System.Windows.Forms.Label();
             this.ST_Version = new System.Windows.Forms.Label();
             this.ST_DataTitle = new System.Windows.Forms.GroupBox();
+            this.ST_ClearAllAttachments = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_AttachmentMode = new System.Windows.Forms.ComboBox();
+            this.ST_AttachmentModeText = new System.Windows.Forms.Label();
             this.ST_AUCsvBrowse = new SAOCR_Data_Manager.Button_SE_();
             this.ST_AUCsvCheckGo = new SAOCR_Data_Manager.Button_SE_();
             this.ST_AUCsvPath = new SAOCR_Data_Manager.MarqueeableLabel();
@@ -137,44 +253,27 @@
             this.ST_PathWarning = new SAOCR_Data_Manager.MarqueeableLabel();
             this.ST_PathBeep = new SAOCR_Data_Manager.MarqueeableLabel();
             this.ST_PathWarningText = new System.Windows.Forms.Label();
-            this.P_CharacterData = new System.Windows.Forms.Panel();
-            this.CD_CloseTab = new SAOCR_Data_Manager.Button_SE_();
-            this.CD_NewTab = new SAOCR_Data_Manager.Button_SE_();
-            this.CD_CharacterTab = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.CharaDataDisplay = new SAOCR_Data_Manager.Forms.CharaDataDisplay();
-            this.CD_Favorite = new System.Windows.Forms.ListView();
-            this.CD_SearchGB = new System.Windows.Forms.GroupBox();
-            this.CD_SeriesCodeGo = new System.Windows.Forms.LinkLabel();
-            this.CD_CharaSeries = new System.Windows.Forms.TextBox();
-            this.CD_CharaSeriesText = new System.Windows.Forms.Label();
-            this.CD_Rarity = new System.Windows.Forms.TextBox();
-            this.CD_RarityText = new System.Windows.Forms.Label();
-            this.CD_KeywordResult = new System.Windows.Forms.ListView();
-            this.CD_KeywordText = new System.Windows.Forms.Label();
-            this.CD_Keyword = new System.Windows.Forms.TextBox();
-            this.CD_KeywordGo = new SAOCR_Data_Manager.Button_SE_();
-            this.CD_CharacterIDText = new System.Windows.Forms.Label();
-            this.CD_CharacterIDGo = new SAOCR_Data_Manager.Button_SE_();
-            this.CD_CharacterID = new System.Windows.Forms.TextBox();
-            this.CD_FavoriteText = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button_SE_3 = new SAOCR_Data_Manager.Button_SE_();
             this.EX_FileDialog = new System.Windows.Forms.OpenFileDialog();
             this.EX_DirectoryDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.CD_SearchCharacter = new SAOCR_Data_Manager.Controls.CharacterSearcher();
             this.P_HomePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BGM)).BeginInit();
             this.MN_Border.SuspendLayout();
             this.MN_StatusStrip.SuspendLayout();
+            this.P_CharacterData.SuspendLayout();
+            this.CD_CharacterTab.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.P_Download.SuspendLayout();
+            this.DL_CharaPicBox.SuspendLayout();
+            this.P_EXPCalc.SuspendLayout();
+            this.EC_Main.SuspendLayout();
+            this.EC_MainParamAfter.SuspendLayout();
+            this.EC_MainParamBefore.SuspendLayout();
+            this.EC_MainAfter.SuspendLayout();
+            this.EC_MainBefore.SuspendLayout();
+            this.EC_Chara.SuspendLayout();
+            this.EC_CharaAfter.SuspendLayout();
+            this.EC_CharaBefore.SuspendLayout();
             this.P_Statistics.SuspendLayout();
             this.SS_Monster.SuspendLayout();
             this.SS_MonsterPanel.SuspendLayout();
@@ -191,12 +290,6 @@
             this.ST_AboutProgram.SuspendLayout();
             this.ST_DataTitle.SuspendLayout();
             this.ST_SoundPath.SuspendLayout();
-            this.P_CharacterData.SuspendLayout();
-            this.CD_CharacterTab.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.CD_SearchGB.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MN_Title
@@ -212,6 +305,7 @@
             // 
             // P_HomePage
             // 
+            this.P_HomePage.Controls.Add(this.HM_ToEXPCalc);
             this.P_HomePage.Controls.Add(this.HM_ToDownload);
             this.P_HomePage.Controls.Add(this.HM_ToStatistics);
             this.P_HomePage.Controls.Add(this.HM_Announcement);
@@ -226,6 +320,26 @@
             this.P_HomePage.Name = "P_HomePage";
             this.P_HomePage.Size = new System.Drawing.Size(1078, 695);
             this.P_HomePage.TabIndex = 4;
+            // 
+            // HM_ToEXPCalc
+            // 
+            this.HM_ToEXPCalc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToEXPCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToEXPCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToEXPCalc.ButtonBackgroundImage = null;
+            this.HM_ToEXPCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToEXPCalc.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToEXPCalc.ButtonEnabled = true;
+            this.HM_ToEXPCalc.ButtonImage = null;
+            this.HM_ToEXPCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToEXPCalc.ButtonText = "";
+            this.HM_ToEXPCalc.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToEXPCalc.ForeColor = System.Drawing.Color.White;
+            this.HM_ToEXPCalc.Location = new System.Drawing.Point(277, 186);
+            this.HM_ToEXPCalc.Margin = new System.Windows.Forms.Padding(4);
+            this.HM_ToEXPCalc.Name = "HM_ToEXPCalc";
+            this.HM_ToEXPCalc.Size = new System.Drawing.Size(258, 170);
+            this.HM_ToEXPCalc.TabIndex = 14;
             // 
             // HM_ToDownload
             // 
@@ -426,12 +540,13 @@
             this.MN_Border.Controls.Add(this.MN_Min);
             this.MN_Border.Controls.Add(this.MN_Title);
             this.MN_Border.Controls.Add(this.BGM);
-            this.MN_Border.Controls.Add(this.panel1);
+            this.MN_Border.Controls.Add(this.P_CharacterData);
+            this.MN_Border.Controls.Add(this.P_Download);
+            this.MN_Border.Controls.Add(this.P_EXPCalc);
             this.MN_Border.Controls.Add(this.P_HomePage);
             this.MN_Border.Controls.Add(this.P_Statistics);
             this.MN_Border.Controls.Add(this.P_CsvTable);
             this.MN_Border.Controls.Add(this.P_Config);
-            this.MN_Border.Controls.Add(this.P_CharacterData);
             this.MN_Border.Location = new System.Drawing.Point(0, 0);
             this.MN_Border.Name = "MN_Border";
             this.MN_Border.Size = new System.Drawing.Size(1080, 720);
@@ -541,6 +656,1436 @@
             this.MN_Min.Name = "MN_Min";
             this.MN_Min.Size = new System.Drawing.Size(50, 24);
             this.MN_Min.TabIndex = 2;
+            // 
+            // P_CharacterData
+            // 
+            this.P_CharacterData.Controls.Add(this.CD_SearchCharacter);
+            this.P_CharacterData.Controls.Add(this.CD_CloseTab);
+            this.P_CharacterData.Controls.Add(this.CD_NewTab);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterTab);
+            this.P_CharacterData.Controls.Add(this.CD_Favorite);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterIDText);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterIDGo);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterID);
+            this.P_CharacterData.Controls.Add(this.CD_FavoriteText);
+            this.P_CharacterData.Location = new System.Drawing.Point(1, 24);
+            this.P_CharacterData.Margin = new System.Windows.Forms.Padding(0);
+            this.P_CharacterData.Name = "P_CharacterData";
+            this.P_CharacterData.Size = new System.Drawing.Size(1078, 695);
+            this.P_CharacterData.TabIndex = 11;
+            this.P_CharacterData.Visible = false;
+            // 
+            // CD_CloseTab
+            // 
+            this.CD_CloseTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CloseTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CD_CloseTab.ButtonBackgroundImage = null;
+            this.CD_CloseTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CloseTab.ButtonColor = System.Drawing.Color.Red;
+            this.CD_CloseTab.ButtonEnabled = true;
+            this.CD_CloseTab.ButtonImage = null;
+            this.CD_CloseTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CD_CloseTab.ButtonText = "×";
+            this.CD_CloseTab.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.CD_CloseTab.Location = new System.Drawing.Point(1015, 8);
+            this.CD_CloseTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_CloseTab.Name = "CD_CloseTab";
+            this.CD_CloseTab.Size = new System.Drawing.Size(23, 23);
+            this.CD_CloseTab.TabIndex = 39;
+            // 
+            // CD_NewTab
+            // 
+            this.CD_NewTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_NewTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CD_NewTab.ButtonBackgroundImage = null;
+            this.CD_NewTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_NewTab.ButtonColor = System.Drawing.Color.White;
+            this.CD_NewTab.ButtonEnabled = true;
+            this.CD_NewTab.ButtonImage = null;
+            this.CD_NewTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CD_NewTab.ButtonText = "+";
+            this.CD_NewTab.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_NewTab.Location = new System.Drawing.Point(1044, 8);
+            this.CD_NewTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_NewTab.Name = "CD_NewTab";
+            this.CD_NewTab.Size = new System.Drawing.Size(23, 23);
+            this.CD_NewTab.TabIndex = 38;
+            // 
+            // CD_CharacterTab
+            // 
+            this.CD_CharacterTab.Controls.Add(this.tabPage1);
+            this.CD_CharacterTab.HotTrack = true;
+            this.CD_CharacterTab.Location = new System.Drawing.Point(311, 30);
+            this.CD_CharacterTab.Multiline = true;
+            this.CD_CharacterTab.Name = "CD_CharacterTab";
+            this.CD_CharacterTab.SelectedIndex = 0;
+            this.CD_CharacterTab.ShowToolTips = true;
+            this.CD_CharacterTab.Size = new System.Drawing.Size(756, 631);
+            this.CD_CharacterTab.TabIndex = 37;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.CharaDataDisplay);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(748, 602);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "角色資料 1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // CharaDataDisplay
+            // 
+            this.CharaDataDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CharaDataDisplay.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CharaDataDisplay.ForeColor = System.Drawing.Color.White;
+            this.CharaDataDisplay.Location = new System.Drawing.Point(0, 0);
+            this.CharaDataDisplay.Name = "CharaDataDisplay";
+            this.CharaDataDisplay.Padding = new System.Windows.Forms.Padding(5);
+            this.CharaDataDisplay.Size = new System.Drawing.Size(748, 602);
+            this.CharaDataDisplay.TabIndex = 0;
+            // 
+            // CD_Favorite
+            // 
+            this.CD_Favorite.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.CD_Favorite.AutoArrange = false;
+            this.CD_Favorite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CD_Favorite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CD_Favorite.ForeColor = System.Drawing.Color.White;
+            this.CD_Favorite.FullRowSelect = true;
+            this.CD_Favorite.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.CD_Favorite.Location = new System.Drawing.Point(11, 418);
+            this.CD_Favorite.MultiSelect = false;
+            this.CD_Favorite.Name = "CD_Favorite";
+            this.CD_Favorite.Size = new System.Drawing.Size(294, 243);
+            this.CD_Favorite.TabIndex = 36;
+            this.CD_Favorite.UseCompatibleStateImageBehavior = false;
+            this.CD_Favorite.View = System.Windows.Forms.View.Details;
+            // 
+            // CD_CharacterIDText
+            // 
+            this.CD_CharacterIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_CharacterIDText.Location = new System.Drawing.Point(11, 8);
+            this.CD_CharacterIDText.Margin = new System.Windows.Forms.Padding(3);
+            this.CD_CharacterIDText.Name = "CD_CharacterIDText";
+            this.CD_CharacterIDText.Size = new System.Drawing.Size(54, 36);
+            this.CD_CharacterIDText.TabIndex = 22;
+            this.CD_CharacterIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CD_CharacterIDGo
+            // 
+            this.CD_CharacterIDGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CharacterIDGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CD_CharacterIDGo.ButtonBackgroundImage = null;
+            this.CD_CharacterIDGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CharacterIDGo.ButtonColor = System.Drawing.Color.White;
+            this.CD_CharacterIDGo.ButtonEnabled = true;
+            this.CD_CharacterIDGo.ButtonImage = null;
+            this.CD_CharacterIDGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CD_CharacterIDGo.ButtonText = "";
+            this.CD_CharacterIDGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_CharacterIDGo.Location = new System.Drawing.Point(251, 8);
+            this.CD_CharacterIDGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_CharacterIDGo.Name = "CD_CharacterIDGo";
+            this.CD_CharacterIDGo.Size = new System.Drawing.Size(54, 36);
+            this.CD_CharacterIDGo.TabIndex = 21;
+            // 
+            // CD_CharacterID
+            // 
+            this.CD_CharacterID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CD_CharacterID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CD_CharacterID.Font = new System.Drawing.Font("Consolas", 18F);
+            this.CD_CharacterID.ForeColor = System.Drawing.Color.White;
+            this.CD_CharacterID.Location = new System.Drawing.Point(71, 8);
+            this.CD_CharacterID.MaxLength = 8;
+            this.CD_CharacterID.Name = "CD_CharacterID";
+            this.CD_CharacterID.Size = new System.Drawing.Size(176, 36);
+            this.CD_CharacterID.TabIndex = 20;
+            this.CD_CharacterID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CD_FavoriteText
+            // 
+            this.CD_FavoriteText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_FavoriteText.Location = new System.Drawing.Point(11, 391);
+            this.CD_FavoriteText.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.CD_FavoriteText.Name = "CD_FavoriteText";
+            this.CD_FavoriteText.Size = new System.Drawing.Size(294, 24);
+            this.CD_FavoriteText.TabIndex = 36;
+            this.CD_FavoriteText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // P_Download
+            // 
+            this.P_Download.Controls.Add(this.DL_DownloadStatus);
+            this.P_Download.Controls.Add(this.DL_Failed);
+            this.P_Download.Controls.Add(this.DL_FailedText);
+            this.P_Download.Controls.Add(this.DL_Progress);
+            this.P_Download.Controls.Add(this.DL_Completed);
+            this.P_Download.Controls.Add(this.DL_CompletedText);
+            this.P_Download.Controls.Add(this.DL_DLing);
+            this.P_Download.Controls.Add(this.DL_DLingText);
+            this.P_Download.Controls.Add(this.DL_Pending);
+            this.P_Download.Controls.Add(this.DL_CompleteListText);
+            this.P_Download.Controls.Add(this.DL_PendingText);
+            this.P_Download.Controls.Add(this.DL_CompleteList);
+            this.P_Download.Controls.Add(this.DL_DownloadLogText);
+            this.P_Download.Controls.Add(this.DL_CharaPicBox);
+            this.P_Download.Location = new System.Drawing.Point(1, 24);
+            this.P_Download.Margin = new System.Windows.Forms.Padding(0);
+            this.P_Download.Name = "P_Download";
+            this.P_Download.Size = new System.Drawing.Size(1078, 695);
+            this.P_Download.TabIndex = 13;
+            this.P_Download.Visible = false;
+            // 
+            // DL_DownloadStatus
+            // 
+            this.DL_DownloadStatus.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.DL_DownloadStatus.AutoArrange = false;
+            this.DL_DownloadStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_DownloadStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DL_DownloadStatus.ForeColor = System.Drawing.Color.White;
+            this.DL_DownloadStatus.FullRowSelect = true;
+            this.DL_DownloadStatus.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.DL_DownloadStatus.Location = new System.Drawing.Point(12, 457);
+            this.DL_DownloadStatus.MultiSelect = false;
+            this.DL_DownloadStatus.Name = "DL_DownloadStatus";
+            this.DL_DownloadStatus.Size = new System.Drawing.Size(330, 210);
+            this.DL_DownloadStatus.TabIndex = 51;
+            this.DL_DownloadStatus.UseCompatibleStateImageBehavior = false;
+            this.DL_DownloadStatus.View = System.Windows.Forms.View.Details;
+            // 
+            // DL_Failed
+            // 
+            this.DL_Failed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Failed.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_Failed.ForeColor = System.Drawing.Color.Red;
+            this.DL_Failed.Location = new System.Drawing.Point(643, 642);
+            this.DL_Failed.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Failed.Name = "DL_Failed";
+            this.DL_Failed.Size = new System.Drawing.Size(76, 25);
+            this.DL_Failed.TabIndex = 59;
+            this.DL_Failed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_FailedText
+            // 
+            this.DL_FailedText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_FailedText.ForeColor = System.Drawing.Color.Red;
+            this.DL_FailedText.Location = new System.Drawing.Point(643, 619);
+            this.DL_FailedText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_FailedText.Name = "DL_FailedText";
+            this.DL_FailedText.Size = new System.Drawing.Size(76, 17);
+            this.DL_FailedText.TabIndex = 58;
+            this.DL_FailedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_Progress
+            // 
+            this.DL_Progress.ForeColor = System.Drawing.Color.White;
+            this.DL_Progress.Location = new System.Drawing.Point(643, 433);
+            this.DL_Progress.Name = "DL_Progress";
+            this.DL_Progress.Size = new System.Drawing.Size(76, 18);
+            this.DL_Progress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.DL_Progress.TabIndex = 57;
+            // 
+            // DL_Completed
+            // 
+            this.DL_Completed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Completed.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_Completed.Location = new System.Drawing.Point(643, 588);
+            this.DL_Completed.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Completed.Name = "DL_Completed";
+            this.DL_Completed.Size = new System.Drawing.Size(76, 25);
+            this.DL_Completed.TabIndex = 56;
+            this.DL_Completed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CompletedText
+            // 
+            this.DL_CompletedText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CompletedText.Location = new System.Drawing.Point(643, 565);
+            this.DL_CompletedText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_CompletedText.Name = "DL_CompletedText";
+            this.DL_CompletedText.Size = new System.Drawing.Size(76, 17);
+            this.DL_CompletedText.TabIndex = 55;
+            this.DL_CompletedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_DLing
+            // 
+            this.DL_DLing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_DLing.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_DLing.Location = new System.Drawing.Point(643, 534);
+            this.DL_DLing.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DLing.Name = "DL_DLing";
+            this.DL_DLing.Size = new System.Drawing.Size(76, 25);
+            this.DL_DLing.TabIndex = 54;
+            this.DL_DLing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_DLingText
+            // 
+            this.DL_DLingText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_DLingText.Location = new System.Drawing.Point(643, 511);
+            this.DL_DLingText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DLingText.Name = "DL_DLingText";
+            this.DL_DLingText.Size = new System.Drawing.Size(76, 17);
+            this.DL_DLingText.TabIndex = 53;
+            this.DL_DLingText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_Pending
+            // 
+            this.DL_Pending.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Pending.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_Pending.Location = new System.Drawing.Point(643, 480);
+            this.DL_Pending.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Pending.Name = "DL_Pending";
+            this.DL_Pending.Size = new System.Drawing.Size(76, 25);
+            this.DL_Pending.TabIndex = 52;
+            this.DL_Pending.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CompleteListText
+            // 
+            this.DL_CompleteListText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CompleteListText.Location = new System.Drawing.Point(348, 433);
+            this.DL_CompleteListText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_CompleteListText.Name = "DL_CompleteListText";
+            this.DL_CompleteListText.Size = new System.Drawing.Size(289, 18);
+            this.DL_CompleteListText.TabIndex = 50;
+            this.DL_CompleteListText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // DL_PendingText
+            // 
+            this.DL_PendingText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_PendingText.Location = new System.Drawing.Point(643, 457);
+            this.DL_PendingText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_PendingText.Name = "DL_PendingText";
+            this.DL_PendingText.Size = new System.Drawing.Size(76, 17);
+            this.DL_PendingText.TabIndex = 51;
+            this.DL_PendingText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CompleteList
+            // 
+            this.DL_CompleteList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_CompleteList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DL_CompleteList.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CompleteList.ForeColor = System.Drawing.Color.White;
+            this.DL_CompleteList.Location = new System.Drawing.Point(348, 457);
+            this.DL_CompleteList.Name = "DL_CompleteList";
+            this.DL_CompleteList.ReadOnly = true;
+            this.DL_CompleteList.Size = new System.Drawing.Size(289, 210);
+            this.DL_CompleteList.TabIndex = 49;
+            this.DL_CompleteList.Text = "";
+            // 
+            // DL_DownloadLogText
+            // 
+            this.DL_DownloadLogText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_DownloadLogText.Location = new System.Drawing.Point(11, 433);
+            this.DL_DownloadLogText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DownloadLogText.Name = "DL_DownloadLogText";
+            this.DL_DownloadLogText.Size = new System.Drawing.Size(331, 18);
+            this.DL_DownloadLogText.TabIndex = 48;
+            this.DL_DownloadLogText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // DL_CharaPicBox
+            // 
+            this.DL_CharaPicBox.Controls.Add(this.DL_AbortDownload);
+            this.DL_CharaPicBox.Controls.Add(this.DL_PicCount);
+            this.DL_CharaPicBox.Controls.Add(this.DL_PicCountText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_ClearAll);
+            this.DL_CharaPicBox.Controls.Add(this.DL_StartDownload);
+            this.DL_CharaPicBox.Controls.Add(this.DL_CharaIDAdd);
+            this.DL_CharaPicBox.Controls.Add(this.DL_CharaIDText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_CharaID);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Add);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Remove);
+            this.DL_CharaPicBox.Controls.Add(this.DL_AddAll);
+            this.DL_CharaPicBox.Controls.Add(this.DL_DownloadListText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_DownloadList);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Arrow);
+            this.DL_CharaPicBox.Controls.Add(this.DL_SeriesForm);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Series);
+            this.DL_CharaPicBox.Controls.Add(this.DL_SeriesText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Rarity);
+            this.DL_CharaPicBox.Controls.Add(this.DL_RarityText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_SearchResult);
+            this.DL_CharaPicBox.Controls.Add(this.DL_KeywordText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Keyword);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Search);
+            this.DL_CharaPicBox.ForeColor = System.Drawing.Color.White;
+            this.DL_CharaPicBox.Location = new System.Drawing.Point(11, 4);
+            this.DL_CharaPicBox.Name = "DL_CharaPicBox";
+            this.DL_CharaPicBox.Size = new System.Drawing.Size(708, 423);
+            this.DL_CharaPicBox.TabIndex = 28;
+            this.DL_CharaPicBox.TabStop = false;
+            // 
+            // DL_AbortDownload
+            // 
+            this.DL_AbortDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AbortDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_AbortDownload.ButtonBackgroundImage = null;
+            this.DL_AbortDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AbortDownload.ButtonColor = System.Drawing.Color.Red;
+            this.DL_AbortDownload.ButtonEnabled = false;
+            this.DL_AbortDownload.ButtonImage = null;
+            this.DL_AbortDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_AbortDownload.ButtonText = "";
+            this.DL_AbortDownload.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_AbortDownload.Location = new System.Drawing.Point(625, 393);
+            this.DL_AbortDownload.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_AbortDownload.Name = "DL_AbortDownload";
+            this.DL_AbortDownload.Size = new System.Drawing.Size(76, 23);
+            this.DL_AbortDownload.TabIndex = 51;
+            // 
+            // DL_PicCount
+            // 
+            this.DL_PicCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_PicCount.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_PicCount.Location = new System.Drawing.Point(625, 333);
+            this.DL_PicCount.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_PicCount.Name = "DL_PicCount";
+            this.DL_PicCount.Size = new System.Drawing.Size(76, 25);
+            this.DL_PicCount.TabIndex = 50;
+            this.DL_PicCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_PicCountText
+            // 
+            this.DL_PicCountText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_PicCountText.Location = new System.Drawing.Point(625, 310);
+            this.DL_PicCountText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_PicCountText.Name = "DL_PicCountText";
+            this.DL_PicCountText.Size = new System.Drawing.Size(76, 17);
+            this.DL_PicCountText.TabIndex = 49;
+            this.DL_PicCountText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_ClearAll
+            // 
+            this.DL_ClearAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_ClearAll.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_ClearAll.ButtonBackgroundImage = null;
+            this.DL_ClearAll.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_ClearAll.ButtonColor = System.Drawing.Color.White;
+            this.DL_ClearAll.ButtonEnabled = true;
+            this.DL_ClearAll.ButtonImage = null;
+            this.DL_ClearAll.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_ClearAll.ButtonText = "";
+            this.DL_ClearAll.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_ClearAll.Location = new System.Drawing.Point(625, 238);
+            this.DL_ClearAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_ClearAll.Name = "DL_ClearAll";
+            this.DL_ClearAll.Size = new System.Drawing.Size(76, 23);
+            this.DL_ClearAll.TabIndex = 48;
+            // 
+            // DL_StartDownload
+            // 
+            this.DL_StartDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_StartDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_StartDownload.ButtonBackgroundImage = null;
+            this.DL_StartDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_StartDownload.ButtonColor = System.Drawing.Color.Red;
+            this.DL_StartDownload.ButtonEnabled = false;
+            this.DL_StartDownload.ButtonImage = null;
+            this.DL_StartDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_StartDownload.ButtonText = "";
+            this.DL_StartDownload.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_StartDownload.Location = new System.Drawing.Point(625, 364);
+            this.DL_StartDownload.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_StartDownload.Name = "DL_StartDownload";
+            this.DL_StartDownload.Size = new System.Drawing.Size(76, 23);
+            this.DL_StartDownload.TabIndex = 47;
+            // 
+            // DL_CharaIDAdd
+            // 
+            this.DL_CharaIDAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_CharaIDAdd.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_CharaIDAdd.ButtonBackgroundImage = null;
+            this.DL_CharaIDAdd.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_CharaIDAdd.ButtonColor = System.Drawing.Color.White;
+            this.DL_CharaIDAdd.ButtonEnabled = true;
+            this.DL_CharaIDAdd.ButtonImage = null;
+            this.DL_CharaIDAdd.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_CharaIDAdd.ButtonText = "";
+            this.DL_CharaIDAdd.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CharaIDAdd.Location = new System.Drawing.Point(649, 84);
+            this.DL_CharaIDAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_CharaIDAdd.Name = "DL_CharaIDAdd";
+            this.DL_CharaIDAdd.Size = new System.Drawing.Size(52, 25);
+            this.DL_CharaIDAdd.TabIndex = 46;
+            // 
+            // DL_CharaIDText
+            // 
+            this.DL_CharaIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CharaIDText.Location = new System.Drawing.Point(625, 22);
+            this.DL_CharaIDText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_CharaIDText.Name = "DL_CharaIDText";
+            this.DL_CharaIDText.Size = new System.Drawing.Size(76, 25);
+            this.DL_CharaIDText.TabIndex = 45;
+            this.DL_CharaIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CharaID
+            // 
+            this.DL_CharaID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_CharaID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_CharaID.Font = new System.Drawing.Font("Consolas", 11F);
+            this.DL_CharaID.ForeColor = System.Drawing.Color.White;
+            this.DL_CharaID.Location = new System.Drawing.Point(625, 53);
+            this.DL_CharaID.MaxLength = 8;
+            this.DL_CharaID.Name = "DL_CharaID";
+            this.DL_CharaID.Size = new System.Drawing.Size(76, 25);
+            this.DL_CharaID.TabIndex = 44;
+            // 
+            // DL_Add
+            // 
+            this.DL_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Add.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_Add.ButtonBackgroundImage = null;
+            this.DL_Add.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Add.ButtonColor = System.Drawing.Color.White;
+            this.DL_Add.ButtonEnabled = false;
+            this.DL_Add.ButtonImage = null;
+            this.DL_Add.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_Add.ButtonText = "";
+            this.DL_Add.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_Add.Location = new System.Drawing.Point(140, 392);
+            this.DL_Add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_Add.Name = "DL_Add";
+            this.DL_Add.Size = new System.Drawing.Size(71, 24);
+            this.DL_Add.TabIndex = 43;
+            // 
+            // DL_Remove
+            // 
+            this.DL_Remove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Remove.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_Remove.ButtonBackgroundImage = null;
+            this.DL_Remove.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Remove.ButtonColor = System.Drawing.Color.White;
+            this.DL_Remove.ButtonEnabled = true;
+            this.DL_Remove.ButtonImage = null;
+            this.DL_Remove.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_Remove.ButtonText = "";
+            this.DL_Remove.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_Remove.Location = new System.Drawing.Point(625, 209);
+            this.DL_Remove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_Remove.Name = "DL_Remove";
+            this.DL_Remove.Size = new System.Drawing.Size(76, 23);
+            this.DL_Remove.TabIndex = 42;
+            // 
+            // DL_AddAll
+            // 
+            this.DL_AddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AddAll.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_AddAll.ButtonBackgroundImage = null;
+            this.DL_AddAll.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AddAll.ButtonColor = System.Drawing.Color.White;
+            this.DL_AddAll.ButtonEnabled = false;
+            this.DL_AddAll.ButtonImage = null;
+            this.DL_AddAll.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_AddAll.ButtonText = "";
+            this.DL_AddAll.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_AddAll.Location = new System.Drawing.Point(217, 392);
+            this.DL_AddAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_AddAll.Name = "DL_AddAll";
+            this.DL_AddAll.Size = new System.Drawing.Size(71, 24);
+            this.DL_AddAll.TabIndex = 41;
+            // 
+            // DL_DownloadListText
+            // 
+            this.DL_DownloadListText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_DownloadListText.Location = new System.Drawing.Point(337, 22);
+            this.DL_DownloadListText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DownloadListText.Name = "DL_DownloadListText";
+            this.DL_DownloadListText.Size = new System.Drawing.Size(224, 18);
+            this.DL_DownloadListText.TabIndex = 40;
+            this.DL_DownloadListText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // DL_DownloadList
+            // 
+            this.DL_DownloadList.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.DL_DownloadList.AutoArrange = false;
+            this.DL_DownloadList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_DownloadList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_DownloadList.ForeColor = System.Drawing.Color.White;
+            this.DL_DownloadList.FullRowSelect = true;
+            this.DL_DownloadList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.DL_DownloadList.Location = new System.Drawing.Point(337, 46);
+            this.DL_DownloadList.Name = "DL_DownloadList";
+            this.DL_DownloadList.Size = new System.Drawing.Size(282, 370);
+            this.DL_DownloadList.TabIndex = 39;
+            this.DL_DownloadList.UseCompatibleStateImageBehavior = false;
+            this.DL_DownloadList.View = System.Windows.Forms.View.Details;
+            // 
+            // DL_Arrow
+            // 
+            this.DL_Arrow.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_Arrow.Location = new System.Drawing.Point(294, 226);
+            this.DL_Arrow.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Arrow.Name = "DL_Arrow";
+            this.DL_Arrow.Size = new System.Drawing.Size(37, 25);
+            this.DL_Arrow.TabIndex = 38;
+            this.DL_Arrow.Text = "→";
+            this.DL_Arrow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_SeriesForm
+            // 
+            this.DL_SeriesForm.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.DL_SeriesForm.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.DL_SeriesForm.Location = new System.Drawing.Point(114, 53);
+            this.DL_SeriesForm.Name = "DL_SeriesForm";
+            this.DL_SeriesForm.Size = new System.Drawing.Size(116, 24);
+            this.DL_SeriesForm.TabIndex = 35;
+            this.DL_SeriesForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_Series
+            // 
+            this.DL_Series.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_Series.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Series.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.DL_Series.ForeColor = System.Drawing.Color.White;
+            this.DL_Series.Location = new System.Drawing.Point(66, 53);
+            this.DL_Series.MaxLength = 3;
+            this.DL_Series.Name = "DL_Series";
+            this.DL_Series.Size = new System.Drawing.Size(42, 25);
+            this.DL_Series.TabIndex = 34;
+            // 
+            // DL_SeriesText
+            // 
+            this.DL_SeriesText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_SeriesText.Location = new System.Drawing.Point(6, 53);
+            this.DL_SeriesText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_SeriesText.Name = "DL_SeriesText";
+            this.DL_SeriesText.Size = new System.Drawing.Size(54, 25);
+            this.DL_SeriesText.TabIndex = 33;
+            this.DL_SeriesText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_Rarity
+            // 
+            this.DL_Rarity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_Rarity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Rarity.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.DL_Rarity.ForeColor = System.Drawing.Color.White;
+            this.DL_Rarity.Location = new System.Drawing.Point(242, 22);
+            this.DL_Rarity.MaxLength = 1;
+            this.DL_Rarity.Name = "DL_Rarity";
+            this.DL_Rarity.Size = new System.Drawing.Size(46, 25);
+            this.DL_Rarity.TabIndex = 32;
+            // 
+            // DL_RarityText
+            // 
+            this.DL_RarityText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_RarityText.Location = new System.Drawing.Point(199, 22);
+            this.DL_RarityText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_RarityText.Name = "DL_RarityText";
+            this.DL_RarityText.Size = new System.Drawing.Size(37, 25);
+            this.DL_RarityText.TabIndex = 31;
+            this.DL_RarityText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_SearchResult
+            // 
+            this.DL_SearchResult.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.DL_SearchResult.AutoArrange = false;
+            this.DL_SearchResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_SearchResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_SearchResult.ForeColor = System.Drawing.Color.White;
+            this.DL_SearchResult.FullRowSelect = true;
+            this.DL_SearchResult.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.DL_SearchResult.Location = new System.Drawing.Point(6, 85);
+            this.DL_SearchResult.Name = "DL_SearchResult";
+            this.DL_SearchResult.Size = new System.Drawing.Size(282, 300);
+            this.DL_SearchResult.TabIndex = 30;
+            this.DL_SearchResult.UseCompatibleStateImageBehavior = false;
+            this.DL_SearchResult.View = System.Windows.Forms.View.Details;
+            // 
+            // DL_KeywordText
+            // 
+            this.DL_KeywordText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_KeywordText.Location = new System.Drawing.Point(6, 22);
+            this.DL_KeywordText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_KeywordText.Name = "DL_KeywordText";
+            this.DL_KeywordText.Size = new System.Drawing.Size(54, 25);
+            this.DL_KeywordText.TabIndex = 29;
+            this.DL_KeywordText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_Keyword
+            // 
+            this.DL_Keyword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_Keyword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Keyword.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.DL_Keyword.ForeColor = System.Drawing.Color.White;
+            this.DL_Keyword.Location = new System.Drawing.Point(66, 22);
+            this.DL_Keyword.Name = "DL_Keyword";
+            this.DL_Keyword.Size = new System.Drawing.Size(127, 25);
+            this.DL_Keyword.TabIndex = 26;
+            // 
+            // DL_Search
+            // 
+            this.DL_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Search.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_Search.ButtonBackgroundImage = null;
+            this.DL_Search.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Search.ButtonColor = System.Drawing.Color.White;
+            this.DL_Search.ButtonEnabled = true;
+            this.DL_Search.ButtonImage = null;
+            this.DL_Search.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_Search.ButtonText = "";
+            this.DL_Search.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_Search.Location = new System.Drawing.Point(236, 53);
+            this.DL_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_Search.Name = "DL_Search";
+            this.DL_Search.Size = new System.Drawing.Size(52, 25);
+            this.DL_Search.TabIndex = 27;
+            // 
+            // P_EXPCalc
+            // 
+            this.P_EXPCalc.Controls.Add(this.EC_Main);
+            this.P_EXPCalc.Controls.Add(this.EC_Chara);
+            this.P_EXPCalc.Location = new System.Drawing.Point(1, 24);
+            this.P_EXPCalc.Margin = new System.Windows.Forms.Padding(0);
+            this.P_EXPCalc.Name = "P_EXPCalc";
+            this.P_EXPCalc.Size = new System.Drawing.Size(1078, 695);
+            this.P_EXPCalc.TabIndex = 14;
+            this.P_EXPCalc.Visible = false;
+            // 
+            // EC_Main
+            // 
+            this.EC_Main.Controls.Add(this.EC_MainExpNeed);
+            this.EC_Main.Controls.Add(this.EC_MainParamAfter);
+            this.EC_Main.Controls.Add(this.EC_MainParamBefore);
+            this.EC_Main.Controls.Add(this.EC_MainExpNeedText);
+            this.EC_Main.Controls.Add(this.EC_MainCalc);
+            this.EC_Main.Controls.Add(this.EC_MainAfter);
+            this.EC_Main.Controls.Add(this.EC_MainBefore);
+            this.EC_Main.ForeColor = System.Drawing.Color.White;
+            this.EC_Main.Location = new System.Drawing.Point(467, 6);
+            this.EC_Main.Name = "EC_Main";
+            this.EC_Main.Size = new System.Drawing.Size(450, 452);
+            this.EC_Main.TabIndex = 8;
+            this.EC_Main.TabStop = false;
+            // 
+            // EC_MainExpNeed
+            // 
+            this.EC_MainExpNeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_MainExpNeed.ChangeTime = 0;
+            this.EC_MainExpNeed.ColorBegin = System.Drawing.Color.Empty;
+            this.EC_MainExpNeed.ColorEnd = System.Drawing.Color.Empty;
+            this.EC_MainExpNeed.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_MainExpNeed.ForeColor = System.Drawing.Color.White;
+            this.EC_MainExpNeed.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainExpNeed.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainExpNeed.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainExpNeed.LFont = new System.Drawing.Font("Consolas", 25F);
+            this.EC_MainExpNeed.LForeColor = System.Drawing.Color.White;
+            this.EC_MainExpNeed.Location = new System.Drawing.Point(115, 111);
+            this.EC_MainExpNeed.LText = "";
+            this.EC_MainExpNeed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_MainExpNeed.Name = "EC_MainExpNeed";
+            this.EC_MainExpNeed.Size = new System.Drawing.Size(329, 46);
+            this.EC_MainExpNeed.TabIndex = 10;
+            // 
+            // EC_MainParamAfter
+            // 
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainRarityAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainSSAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainSSAfterText);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainCostAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainHPAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainCostAfterText);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainHPAfterText);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainMENAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainINTAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainMENAfterText);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainINTAfterText);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainVITAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainSTRAfter);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainVITAfterText);
+            this.EC_MainParamAfter.Controls.Add(this.EC_MainSTRAfterText);
+            this.EC_MainParamAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_MainParamAfter.Location = new System.Drawing.Point(228, 164);
+            this.EC_MainParamAfter.Name = "EC_MainParamAfter";
+            this.EC_MainParamAfter.Size = new System.Drawing.Size(216, 282);
+            this.EC_MainParamAfter.TabIndex = 22;
+            this.EC_MainParamAfter.TabStop = false;
+            // 
+            // EC_MainRarityAfter
+            // 
+            this.EC_MainRarityAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_MainRarityAfter.ChangeTime = 0;
+            this.EC_MainRarityAfter.ColorBegin = System.Drawing.Color.Empty;
+            this.EC_MainRarityAfter.ColorEnd = System.Drawing.Color.Empty;
+            this.EC_MainRarityAfter.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_MainRarityAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityAfter.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainRarityAfter.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainRarityAfter.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainRarityAfter.LFont = new System.Drawing.Font("微軟正黑體", 20F);
+            this.EC_MainRarityAfter.LForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityAfter.Location = new System.Drawing.Point(6, 23);
+            this.EC_MainRarityAfter.LText = "";
+            this.EC_MainRarityAfter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_MainRarityAfter.Name = "EC_MainRarityAfter";
+            this.EC_MainRarityAfter.Size = new System.Drawing.Size(204, 42);
+            this.EC_MainRarityAfter.TabIndex = 20;
+            // 
+            // EC_MainSSAfter
+            // 
+            this.EC_MainSSAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainSSAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainSSAfter.Location = new System.Drawing.Point(107, 252);
+            this.EC_MainSSAfter.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSSAfter.Name = "EC_MainSSAfter";
+            this.EC_MainSSAfter.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainSSAfter.TabIndex = 19;
+            this.EC_MainSSAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainSSAfterText
+            // 
+            this.EC_MainSSAfterText.Location = new System.Drawing.Point(6, 252);
+            this.EC_MainSSAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSSAfterText.Name = "EC_MainSSAfterText";
+            this.EC_MainSSAfterText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainSSAfterText.TabIndex = 18;
+            this.EC_MainSSAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainCostAfter
+            // 
+            this.EC_MainCostAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainCostAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainCostAfter.Location = new System.Drawing.Point(107, 222);
+            this.EC_MainCostAfter.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainCostAfter.Name = "EC_MainCostAfter";
+            this.EC_MainCostAfter.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainCostAfter.TabIndex = 17;
+            this.EC_MainCostAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainHPAfter
+            // 
+            this.EC_MainHPAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainHPAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainHPAfter.Location = new System.Drawing.Point(107, 192);
+            this.EC_MainHPAfter.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainHPAfter.Name = "EC_MainHPAfter";
+            this.EC_MainHPAfter.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainHPAfter.TabIndex = 16;
+            this.EC_MainHPAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainCostAfterText
+            // 
+            this.EC_MainCostAfterText.Location = new System.Drawing.Point(6, 222);
+            this.EC_MainCostAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainCostAfterText.Name = "EC_MainCostAfterText";
+            this.EC_MainCostAfterText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainCostAfterText.TabIndex = 15;
+            this.EC_MainCostAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainHPAfterText
+            // 
+            this.EC_MainHPAfterText.Location = new System.Drawing.Point(6, 192);
+            this.EC_MainHPAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainHPAfterText.Name = "EC_MainHPAfterText";
+            this.EC_MainHPAfterText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainHPAfterText.TabIndex = 14;
+            this.EC_MainHPAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainMENAfter
+            // 
+            this.EC_MainMENAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainMENAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainMENAfter.Location = new System.Drawing.Point(107, 162);
+            this.EC_MainMENAfter.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainMENAfter.Name = "EC_MainMENAfter";
+            this.EC_MainMENAfter.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainMENAfter.TabIndex = 13;
+            this.EC_MainMENAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainINTAfter
+            // 
+            this.EC_MainINTAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainINTAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainINTAfter.Location = new System.Drawing.Point(107, 132);
+            this.EC_MainINTAfter.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainINTAfter.Name = "EC_MainINTAfter";
+            this.EC_MainINTAfter.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainINTAfter.TabIndex = 12;
+            this.EC_MainINTAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainMENAfterText
+            // 
+            this.EC_MainMENAfterText.Location = new System.Drawing.Point(6, 162);
+            this.EC_MainMENAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainMENAfterText.Name = "EC_MainMENAfterText";
+            this.EC_MainMENAfterText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainMENAfterText.TabIndex = 11;
+            this.EC_MainMENAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainINTAfterText
+            // 
+            this.EC_MainINTAfterText.Location = new System.Drawing.Point(6, 132);
+            this.EC_MainINTAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainINTAfterText.Name = "EC_MainINTAfterText";
+            this.EC_MainINTAfterText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainINTAfterText.TabIndex = 10;
+            this.EC_MainINTAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainVITAfter
+            // 
+            this.EC_MainVITAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainVITAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainVITAfter.Location = new System.Drawing.Point(107, 102);
+            this.EC_MainVITAfter.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainVITAfter.Name = "EC_MainVITAfter";
+            this.EC_MainVITAfter.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainVITAfter.TabIndex = 9;
+            this.EC_MainVITAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainSTRAfter
+            // 
+            this.EC_MainSTRAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainSTRAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainSTRAfter.Location = new System.Drawing.Point(107, 72);
+            this.EC_MainSTRAfter.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSTRAfter.Name = "EC_MainSTRAfter";
+            this.EC_MainSTRAfter.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainSTRAfter.TabIndex = 8;
+            this.EC_MainSTRAfter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainVITAfterText
+            // 
+            this.EC_MainVITAfterText.Location = new System.Drawing.Point(6, 102);
+            this.EC_MainVITAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainVITAfterText.Name = "EC_MainVITAfterText";
+            this.EC_MainVITAfterText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainVITAfterText.TabIndex = 2;
+            this.EC_MainVITAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainSTRAfterText
+            // 
+            this.EC_MainSTRAfterText.Location = new System.Drawing.Point(6, 72);
+            this.EC_MainSTRAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSTRAfterText.Name = "EC_MainSTRAfterText";
+            this.EC_MainSTRAfterText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainSTRAfterText.TabIndex = 0;
+            this.EC_MainSTRAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainParamBefore
+            // 
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainRarityBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainSSBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainSSBeforeText);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainCostBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainHPBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainCostBeforeText);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainHPBeforeText);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainMENBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainINTBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainMENBeforeText);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainINTBeforeText);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainVITBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainSTRBefore);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainVITBeforeText);
+            this.EC_MainParamBefore.Controls.Add(this.EC_MainSTRBeforeText);
+            this.EC_MainParamBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_MainParamBefore.Location = new System.Drawing.Point(6, 164);
+            this.EC_MainParamBefore.Name = "EC_MainParamBefore";
+            this.EC_MainParamBefore.Size = new System.Drawing.Size(216, 282);
+            this.EC_MainParamBefore.TabIndex = 5;
+            this.EC_MainParamBefore.TabStop = false;
+            // 
+            // EC_MainRarityBefore
+            // 
+            this.EC_MainRarityBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_MainRarityBefore.ChangeTime = 0;
+            this.EC_MainRarityBefore.ColorBegin = System.Drawing.Color.Empty;
+            this.EC_MainRarityBefore.ColorEnd = System.Drawing.Color.Empty;
+            this.EC_MainRarityBefore.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_MainRarityBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityBefore.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainRarityBefore.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainRarityBefore.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainRarityBefore.LFont = new System.Drawing.Font("微軟正黑體", 20F);
+            this.EC_MainRarityBefore.LForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityBefore.Location = new System.Drawing.Point(6, 23);
+            this.EC_MainRarityBefore.LText = "";
+            this.EC_MainRarityBefore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_MainRarityBefore.Name = "EC_MainRarityBefore";
+            this.EC_MainRarityBefore.Size = new System.Drawing.Size(204, 42);
+            this.EC_MainRarityBefore.TabIndex = 9;
+            // 
+            // EC_MainSSBefore
+            // 
+            this.EC_MainSSBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainSSBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainSSBefore.Location = new System.Drawing.Point(107, 252);
+            this.EC_MainSSBefore.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSSBefore.Name = "EC_MainSSBefore";
+            this.EC_MainSSBefore.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainSSBefore.TabIndex = 19;
+            this.EC_MainSSBefore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainSSBeforeText
+            // 
+            this.EC_MainSSBeforeText.Location = new System.Drawing.Point(6, 252);
+            this.EC_MainSSBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSSBeforeText.Name = "EC_MainSSBeforeText";
+            this.EC_MainSSBeforeText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainSSBeforeText.TabIndex = 18;
+            this.EC_MainSSBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainCostBefore
+            // 
+            this.EC_MainCostBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainCostBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainCostBefore.Location = new System.Drawing.Point(107, 222);
+            this.EC_MainCostBefore.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainCostBefore.Name = "EC_MainCostBefore";
+            this.EC_MainCostBefore.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainCostBefore.TabIndex = 17;
+            this.EC_MainCostBefore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainHPBefore
+            // 
+            this.EC_MainHPBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainHPBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainHPBefore.Location = new System.Drawing.Point(107, 192);
+            this.EC_MainHPBefore.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainHPBefore.Name = "EC_MainHPBefore";
+            this.EC_MainHPBefore.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainHPBefore.TabIndex = 16;
+            this.EC_MainHPBefore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainCostBeforeText
+            // 
+            this.EC_MainCostBeforeText.Location = new System.Drawing.Point(6, 222);
+            this.EC_MainCostBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainCostBeforeText.Name = "EC_MainCostBeforeText";
+            this.EC_MainCostBeforeText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainCostBeforeText.TabIndex = 15;
+            this.EC_MainCostBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainHPBeforeText
+            // 
+            this.EC_MainHPBeforeText.Location = new System.Drawing.Point(6, 192);
+            this.EC_MainHPBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainHPBeforeText.Name = "EC_MainHPBeforeText";
+            this.EC_MainHPBeforeText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainHPBeforeText.TabIndex = 14;
+            this.EC_MainHPBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainMENBefore
+            // 
+            this.EC_MainMENBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainMENBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainMENBefore.Location = new System.Drawing.Point(107, 162);
+            this.EC_MainMENBefore.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainMENBefore.Name = "EC_MainMENBefore";
+            this.EC_MainMENBefore.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainMENBefore.TabIndex = 13;
+            this.EC_MainMENBefore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainINTBefore
+            // 
+            this.EC_MainINTBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainINTBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainINTBefore.Location = new System.Drawing.Point(107, 132);
+            this.EC_MainINTBefore.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainINTBefore.Name = "EC_MainINTBefore";
+            this.EC_MainINTBefore.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainINTBefore.TabIndex = 12;
+            this.EC_MainINTBefore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainMENBeforeText
+            // 
+            this.EC_MainMENBeforeText.Location = new System.Drawing.Point(6, 162);
+            this.EC_MainMENBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainMENBeforeText.Name = "EC_MainMENBeforeText";
+            this.EC_MainMENBeforeText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainMENBeforeText.TabIndex = 11;
+            this.EC_MainMENBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainINTBeforeText
+            // 
+            this.EC_MainINTBeforeText.Location = new System.Drawing.Point(6, 132);
+            this.EC_MainINTBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainINTBeforeText.Name = "EC_MainINTBeforeText";
+            this.EC_MainINTBeforeText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainINTBeforeText.TabIndex = 10;
+            this.EC_MainINTBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainVITBefore
+            // 
+            this.EC_MainVITBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainVITBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainVITBefore.Location = new System.Drawing.Point(107, 102);
+            this.EC_MainVITBefore.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainVITBefore.Name = "EC_MainVITBefore";
+            this.EC_MainVITBefore.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainVITBefore.TabIndex = 9;
+            this.EC_MainVITBefore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainSTRBefore
+            // 
+            this.EC_MainSTRBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainSTRBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainSTRBefore.Location = new System.Drawing.Point(107, 72);
+            this.EC_MainSTRBefore.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSTRBefore.Name = "EC_MainSTRBefore";
+            this.EC_MainSTRBefore.Size = new System.Drawing.Size(103, 24);
+            this.EC_MainSTRBefore.TabIndex = 8;
+            this.EC_MainSTRBefore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainVITBeforeText
+            // 
+            this.EC_MainVITBeforeText.Location = new System.Drawing.Point(6, 102);
+            this.EC_MainVITBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainVITBeforeText.Name = "EC_MainVITBeforeText";
+            this.EC_MainVITBeforeText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainVITBeforeText.TabIndex = 2;
+            this.EC_MainVITBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainSTRBeforeText
+            // 
+            this.EC_MainSTRBeforeText.Location = new System.Drawing.Point(6, 72);
+            this.EC_MainSTRBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainSTRBeforeText.Name = "EC_MainSTRBeforeText";
+            this.EC_MainSTRBeforeText.Size = new System.Drawing.Size(95, 24);
+            this.EC_MainSTRBeforeText.TabIndex = 0;
+            this.EC_MainSTRBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainExpNeedText
+            // 
+            this.EC_MainExpNeedText.Font = new System.Drawing.Font("微軟正黑體", 11F);
+            this.EC_MainExpNeedText.Location = new System.Drawing.Point(7, 112);
+            this.EC_MainExpNeedText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainExpNeedText.Name = "EC_MainExpNeedText";
+            this.EC_MainExpNeedText.Size = new System.Drawing.Size(102, 46);
+            this.EC_MainExpNeedText.TabIndex = 4;
+            this.EC_MainExpNeedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainCalc
+            // 
+            this.EC_MainCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_MainCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainCalc.ButtonBackgroundImage = null;
+            this.EC_MainCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_MainCalc.ButtonColor = System.Drawing.Color.White;
+            this.EC_MainCalc.ButtonEnabled = true;
+            this.EC_MainCalc.ButtonImage = null;
+            this.EC_MainCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainCalc.ButtonText = "";
+            this.EC_MainCalc.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EC_MainCalc.Location = new System.Drawing.Point(350, 22);
+            this.EC_MainCalc.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.EC_MainCalc.Name = "EC_MainCalc";
+            this.EC_MainCalc.Size = new System.Drawing.Size(94, 82);
+            this.EC_MainCalc.TabIndex = 6;
+            // 
+            // EC_MainAfter
+            // 
+            this.EC_MainAfter.Controls.Add(this.EC_MainExpAfter);
+            this.EC_MainAfter.Controls.Add(this.EC_MainExpAfterText);
+            this.EC_MainAfter.Controls.Add(this.EC_MainLvAfter);
+            this.EC_MainAfter.Controls.Add(this.EC_MainLvAfterText);
+            this.EC_MainAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_MainAfter.Location = new System.Drawing.Point(177, 22);
+            this.EC_MainAfter.Name = "EC_MainAfter";
+            this.EC_MainAfter.Size = new System.Drawing.Size(165, 82);
+            this.EC_MainAfter.TabIndex = 5;
+            this.EC_MainAfter.TabStop = false;
+            // 
+            // EC_MainExpAfter
+            // 
+            this.EC_MainExpAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainExpAfter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainExpAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainExpAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_MainExpAfter.Location = new System.Drawing.Point(81, 52);
+            this.EC_MainExpAfter.Name = "EC_MainExpAfter";
+            this.EC_MainExpAfter.Size = new System.Drawing.Size(78, 24);
+            this.EC_MainExpAfter.TabIndex = 3;
+            this.EC_MainExpAfter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_MainExpAfterText
+            // 
+            this.EC_MainExpAfterText.Location = new System.Drawing.Point(6, 52);
+            this.EC_MainExpAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainExpAfterText.Name = "EC_MainExpAfterText";
+            this.EC_MainExpAfterText.Size = new System.Drawing.Size(69, 24);
+            this.EC_MainExpAfterText.TabIndex = 2;
+            this.EC_MainExpAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainLvAfter
+            // 
+            this.EC_MainLvAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainLvAfter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainLvAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainLvAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_MainLvAfter.Location = new System.Drawing.Point(81, 22);
+            this.EC_MainLvAfter.Name = "EC_MainLvAfter";
+            this.EC_MainLvAfter.Size = new System.Drawing.Size(78, 24);
+            this.EC_MainLvAfter.TabIndex = 1;
+            this.EC_MainLvAfter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_MainLvAfterText
+            // 
+            this.EC_MainLvAfterText.Location = new System.Drawing.Point(6, 22);
+            this.EC_MainLvAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainLvAfterText.Name = "EC_MainLvAfterText";
+            this.EC_MainLvAfterText.Size = new System.Drawing.Size(69, 24);
+            this.EC_MainLvAfterText.TabIndex = 0;
+            this.EC_MainLvAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainBefore
+            // 
+            this.EC_MainBefore.Controls.Add(this.EC_MainExpBefore);
+            this.EC_MainBefore.Controls.Add(this.EC_MainExpBeforeText);
+            this.EC_MainBefore.Controls.Add(this.EC_MainLvBefore);
+            this.EC_MainBefore.Controls.Add(this.EC_MainLvBeforeText);
+            this.EC_MainBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_MainBefore.Location = new System.Drawing.Point(6, 22);
+            this.EC_MainBefore.Name = "EC_MainBefore";
+            this.EC_MainBefore.Size = new System.Drawing.Size(165, 82);
+            this.EC_MainBefore.TabIndex = 4;
+            this.EC_MainBefore.TabStop = false;
+            // 
+            // EC_MainExpBefore
+            // 
+            this.EC_MainExpBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainExpBefore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainExpBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainExpBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_MainExpBefore.Location = new System.Drawing.Point(81, 52);
+            this.EC_MainExpBefore.Name = "EC_MainExpBefore";
+            this.EC_MainExpBefore.Size = new System.Drawing.Size(78, 24);
+            this.EC_MainExpBefore.TabIndex = 3;
+            this.EC_MainExpBefore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_MainExpBeforeText
+            // 
+            this.EC_MainExpBeforeText.Location = new System.Drawing.Point(6, 52);
+            this.EC_MainExpBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainExpBeforeText.Name = "EC_MainExpBeforeText";
+            this.EC_MainExpBeforeText.Size = new System.Drawing.Size(69, 24);
+            this.EC_MainExpBeforeText.TabIndex = 2;
+            this.EC_MainExpBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_MainLvBefore
+            // 
+            this.EC_MainLvBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainLvBefore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainLvBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_MainLvBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_MainLvBefore.Location = new System.Drawing.Point(81, 22);
+            this.EC_MainLvBefore.Name = "EC_MainLvBefore";
+            this.EC_MainLvBefore.Size = new System.Drawing.Size(78, 24);
+            this.EC_MainLvBefore.TabIndex = 1;
+            this.EC_MainLvBefore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_MainLvBeforeText
+            // 
+            this.EC_MainLvBeforeText.Location = new System.Drawing.Point(6, 22);
+            this.EC_MainLvBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_MainLvBeforeText.Name = "EC_MainLvBeforeText";
+            this.EC_MainLvBeforeText.Size = new System.Drawing.Size(69, 24);
+            this.EC_MainLvBeforeText.TabIndex = 0;
+            this.EC_MainLvBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_Chara
+            // 
+            this.EC_Chara.Controls.Add(this.label1);
+            this.EC_Chara.Controls.Add(this.EC_CharaTips);
+            this.EC_Chara.Controls.Add(this.EC_CharaExpNeed);
+            this.EC_Chara.Controls.Add(this.EC_CharaExpNeedText);
+            this.EC_Chara.Controls.Add(this.EC_CharaCalc);
+            this.EC_Chara.Controls.Add(this.EC_CharaAfter);
+            this.EC_Chara.Controls.Add(this.EC_CharaBefore);
+            this.EC_Chara.ForeColor = System.Drawing.Color.White;
+            this.EC_Chara.Location = new System.Drawing.Point(11, 6);
+            this.EC_Chara.Name = "EC_Chara";
+            this.EC_Chara.Size = new System.Drawing.Size(450, 655);
+            this.EC_Chara.TabIndex = 0;
+            this.EC_Chara.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 15F);
+            this.label1.Location = new System.Drawing.Point(7, 196);
+            this.label1.Margin = new System.Windows.Forms.Padding(3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(437, 453);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "將推出角色參數計算功能，敬請期待！";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_CharaTips
+            // 
+            this.EC_CharaTips.Direction = MarqueeDirection.Horizontal;
+            this.EC_CharaTips.EnableMarquee = true;
+            this.EC_CharaTips.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.EC_CharaTips.FreezeTime = 2000;
+            this.EC_CharaTips.LabelSize = new System.Drawing.Size(438, 25);
+            this.EC_CharaTips.LeftDistance = 5;
+            this.EC_CharaTips.LForeColor = System.Drawing.Color.White;
+            this.EC_CharaTips.Location = new System.Drawing.Point(6, 164);
+            this.EC_CharaTips.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_CharaTips.MarqueeText = "";
+            this.EC_CharaTips.Mode = MarqueeMode.ContinualAndSneeze;
+            this.EC_CharaTips.MoveDifferenceEachTime = 1;
+            this.EC_CharaTips.MoveInterval = 15;
+            this.EC_CharaTips.Name = "EC_CharaTips";
+            this.EC_CharaTips.OverBorderDistance = 15;
+            this.EC_CharaTips.Size = new System.Drawing.Size(438, 25);
+            this.EC_CharaTips.TabIndex = 10;
+            // 
+            // EC_CharaExpNeed
+            // 
+            this.EC_CharaExpNeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_CharaExpNeed.ChangeTime = 0;
+            this.EC_CharaExpNeed.ColorBegin = System.Drawing.Color.Empty;
+            this.EC_CharaExpNeed.ColorEnd = System.Drawing.Color.Empty;
+            this.EC_CharaExpNeed.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_CharaExpNeed.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaExpNeed.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_CharaExpNeed.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaExpNeed.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_CharaExpNeed.LFont = new System.Drawing.Font("Consolas", 25F);
+            this.EC_CharaExpNeed.LForeColor = System.Drawing.Color.White;
+            this.EC_CharaExpNeed.Location = new System.Drawing.Point(115, 111);
+            this.EC_CharaExpNeed.LText = "";
+            this.EC_CharaExpNeed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_CharaExpNeed.Name = "EC_CharaExpNeed";
+            this.EC_CharaExpNeed.Size = new System.Drawing.Size(329, 46);
+            this.EC_CharaExpNeed.TabIndex = 9;
+            // 
+            // EC_CharaExpNeedText
+            // 
+            this.EC_CharaExpNeedText.Font = new System.Drawing.Font("微軟正黑體", 11F);
+            this.EC_CharaExpNeedText.Location = new System.Drawing.Point(7, 112);
+            this.EC_CharaExpNeedText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_CharaExpNeedText.Name = "EC_CharaExpNeedText";
+            this.EC_CharaExpNeedText.Size = new System.Drawing.Size(102, 46);
+            this.EC_CharaExpNeedText.TabIndex = 4;
+            this.EC_CharaExpNeedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_CharaCalc
+            // 
+            this.EC_CharaCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_CharaCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaCalc.ButtonBackgroundImage = null;
+            this.EC_CharaCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_CharaCalc.ButtonColor = System.Drawing.Color.White;
+            this.EC_CharaCalc.ButtonEnabled = true;
+            this.EC_CharaCalc.ButtonImage = null;
+            this.EC_CharaCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_CharaCalc.ButtonText = "";
+            this.EC_CharaCalc.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EC_CharaCalc.Location = new System.Drawing.Point(350, 22);
+            this.EC_CharaCalc.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.EC_CharaCalc.Name = "EC_CharaCalc";
+            this.EC_CharaCalc.Size = new System.Drawing.Size(94, 82);
+            this.EC_CharaCalc.TabIndex = 6;
+            // 
+            // EC_CharaAfter
+            // 
+            this.EC_CharaAfter.Controls.Add(this.EC_CharaExpAfter);
+            this.EC_CharaAfter.Controls.Add(this.EC_CharaExpAfterText);
+            this.EC_CharaAfter.Controls.Add(this.EC_CharaLvAfter);
+            this.EC_CharaAfter.Controls.Add(this.EC_CharaLvAfterText);
+            this.EC_CharaAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaAfter.Location = new System.Drawing.Point(177, 22);
+            this.EC_CharaAfter.Name = "EC_CharaAfter";
+            this.EC_CharaAfter.Size = new System.Drawing.Size(165, 82);
+            this.EC_CharaAfter.TabIndex = 5;
+            this.EC_CharaAfter.TabStop = false;
+            // 
+            // EC_CharaExpAfter
+            // 
+            this.EC_CharaExpAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaExpAfter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_CharaExpAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_CharaExpAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaExpAfter.Location = new System.Drawing.Point(81, 52);
+            this.EC_CharaExpAfter.Name = "EC_CharaExpAfter";
+            this.EC_CharaExpAfter.Size = new System.Drawing.Size(78, 24);
+            this.EC_CharaExpAfter.TabIndex = 3;
+            this.EC_CharaExpAfter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_CharaExpAfterText
+            // 
+            this.EC_CharaExpAfterText.Location = new System.Drawing.Point(6, 52);
+            this.EC_CharaExpAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_CharaExpAfterText.Name = "EC_CharaExpAfterText";
+            this.EC_CharaExpAfterText.Size = new System.Drawing.Size(69, 24);
+            this.EC_CharaExpAfterText.TabIndex = 2;
+            this.EC_CharaExpAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_CharaLvAfter
+            // 
+            this.EC_CharaLvAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaLvAfter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_CharaLvAfter.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_CharaLvAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaLvAfter.Location = new System.Drawing.Point(81, 22);
+            this.EC_CharaLvAfter.Name = "EC_CharaLvAfter";
+            this.EC_CharaLvAfter.Size = new System.Drawing.Size(78, 24);
+            this.EC_CharaLvAfter.TabIndex = 1;
+            this.EC_CharaLvAfter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_CharaLvAfterText
+            // 
+            this.EC_CharaLvAfterText.Location = new System.Drawing.Point(6, 22);
+            this.EC_CharaLvAfterText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_CharaLvAfterText.Name = "EC_CharaLvAfterText";
+            this.EC_CharaLvAfterText.Size = new System.Drawing.Size(69, 24);
+            this.EC_CharaLvAfterText.TabIndex = 0;
+            this.EC_CharaLvAfterText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_CharaBefore
+            // 
+            this.EC_CharaBefore.Controls.Add(this.EC_CharaExpBefore);
+            this.EC_CharaBefore.Controls.Add(this.EC_CharaExpBeforeText);
+            this.EC_CharaBefore.Controls.Add(this.EC_CharaLvBefore);
+            this.EC_CharaBefore.Controls.Add(this.EC_CharaLvBeforeText);
+            this.EC_CharaBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaBefore.Location = new System.Drawing.Point(6, 22);
+            this.EC_CharaBefore.Name = "EC_CharaBefore";
+            this.EC_CharaBefore.Size = new System.Drawing.Size(165, 82);
+            this.EC_CharaBefore.TabIndex = 4;
+            this.EC_CharaBefore.TabStop = false;
+            // 
+            // EC_CharaExpBefore
+            // 
+            this.EC_CharaExpBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaExpBefore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_CharaExpBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_CharaExpBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaExpBefore.Location = new System.Drawing.Point(81, 52);
+            this.EC_CharaExpBefore.Name = "EC_CharaExpBefore";
+            this.EC_CharaExpBefore.Size = new System.Drawing.Size(78, 24);
+            this.EC_CharaExpBefore.TabIndex = 3;
+            this.EC_CharaExpBefore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_CharaExpBeforeText
+            // 
+            this.EC_CharaExpBeforeText.Location = new System.Drawing.Point(6, 52);
+            this.EC_CharaExpBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_CharaExpBeforeText.Name = "EC_CharaExpBeforeText";
+            this.EC_CharaExpBeforeText.Size = new System.Drawing.Size(69, 24);
+            this.EC_CharaExpBeforeText.TabIndex = 2;
+            this.EC_CharaExpBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EC_CharaLvBefore
+            // 
+            this.EC_CharaLvBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaLvBefore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_CharaLvBefore.Font = new System.Drawing.Font("Consolas", 15F);
+            this.EC_CharaLvBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaLvBefore.Location = new System.Drawing.Point(81, 22);
+            this.EC_CharaLvBefore.Name = "EC_CharaLvBefore";
+            this.EC_CharaLvBefore.Size = new System.Drawing.Size(78, 24);
+            this.EC_CharaLvBefore.TabIndex = 1;
+            this.EC_CharaLvBefore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // EC_CharaLvBeforeText
+            // 
+            this.EC_CharaLvBeforeText.Location = new System.Drawing.Point(6, 22);
+            this.EC_CharaLvBeforeText.Margin = new System.Windows.Forms.Padding(3);
+            this.EC_CharaLvBeforeText.Name = "EC_CharaLvBeforeText";
+            this.EC_CharaLvBeforeText.Size = new System.Drawing.Size(69, 24);
+            this.EC_CharaLvBeforeText.TabIndex = 0;
+            this.EC_CharaLvBeforeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // P_Statistics
             // 
@@ -923,7 +2468,6 @@
             this.CT_EndColumnLabel.Name = "CT_EndColumnLabel";
             this.CT_EndColumnLabel.Size = new System.Drawing.Size(63, 23);
             this.CT_EndColumnLabel.TabIndex = 16;
-            this.CT_EndColumnLabel.Text = "截止欄位";
             this.CT_EndColumnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CT_StartColumnLabel
@@ -933,7 +2477,6 @@
             this.CT_StartColumnLabel.Name = "CT_StartColumnLabel";
             this.CT_StartColumnLabel.Size = new System.Drawing.Size(63, 23);
             this.CT_StartColumnLabel.TabIndex = 15;
-            this.CT_StartColumnLabel.Text = "起始欄位";
             this.CT_StartColumnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CT_EndColumn
@@ -1052,29 +2595,29 @@
             this.CT_CsvView.AllowUserToDeleteRows = false;
             this.CT_CsvView.AllowUserToResizeRows = false;
             this.CT_CsvView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CT_CsvView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CT_CsvView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.CT_CsvView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CT_CsvView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CT_CsvView.DefaultCellStyle = dataGridViewCellStyle5;
             this.CT_CsvView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.CT_CsvView.Location = new System.Drawing.Point(251, 8);
             this.CT_CsvView.Name = "CT_CsvView";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.CT_CsvView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.CT_CsvView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.CT_CsvView.RowTemplate.Height = 20;
             this.CT_CsvView.Size = new System.Drawing.Size(816, 659);
             this.CT_CsvView.TabIndex = 8;
@@ -1101,9 +2644,9 @@
             this.ST_SourcePath.Controls.Add(this.ST_SourceASB);
             this.ST_SourcePath.Controls.Add(this.ST_SourceCSVText);
             this.ST_SourcePath.ForeColor = System.Drawing.Color.White;
-            this.ST_SourcePath.Location = new System.Drawing.Point(11, 160);
+            this.ST_SourcePath.Location = new System.Drawing.Point(606, 8);
             this.ST_SourcePath.Name = "ST_SourcePath";
-            this.ST_SourcePath.Size = new System.Drawing.Size(348, 87);
+            this.ST_SourcePath.Size = new System.Drawing.Size(461, 87);
             this.ST_SourcePath.TabIndex = 26;
             this.ST_SourcePath.TabStop = false;
             // 
@@ -1122,7 +2665,7 @@
             this.ST_SourceCSV.EnableMarquee = true;
             this.ST_SourceCSV.Font = new System.Drawing.Font("微軟正黑體", 9F);
             this.ST_SourceCSV.FreezeTime = 2000;
-            this.ST_SourceCSV.LabelSize = new System.Drawing.Size(250, 25);
+            this.ST_SourceCSV.LabelSize = new System.Drawing.Size(359, 25);
             this.ST_SourceCSV.LeftDistance = 5;
             this.ST_SourceCSV.LForeColor = System.Drawing.Color.White;
             this.ST_SourceCSV.Location = new System.Drawing.Point(92, 53);
@@ -1133,7 +2676,7 @@
             this.ST_SourceCSV.MoveInterval = 15;
             this.ST_SourceCSV.Name = "ST_SourceCSV";
             this.ST_SourceCSV.OverBorderDistance = 15;
-            this.ST_SourceCSV.Size = new System.Drawing.Size(250, 25);
+            this.ST_SourceCSV.Size = new System.Drawing.Size(359, 25);
             this.ST_SourceCSV.TabIndex = 15;
             // 
             // ST_SourceASB
@@ -1142,7 +2685,7 @@
             this.ST_SourceASB.EnableMarquee = true;
             this.ST_SourceASB.Font = new System.Drawing.Font("微軟正黑體", 9F);
             this.ST_SourceASB.FreezeTime = 2000;
-            this.ST_SourceASB.LabelSize = new System.Drawing.Size(250, 25);
+            this.ST_SourceASB.LabelSize = new System.Drawing.Size(359, 25);
             this.ST_SourceASB.LeftDistance = 5;
             this.ST_SourceASB.LForeColor = System.Drawing.Color.White;
             this.ST_SourceASB.Location = new System.Drawing.Point(92, 22);
@@ -1153,7 +2696,7 @@
             this.ST_SourceASB.MoveInterval = 15;
             this.ST_SourceASB.Name = "ST_SourceASB";
             this.ST_SourceASB.OverBorderDistance = 15;
-            this.ST_SourceASB.Size = new System.Drawing.Size(250, 25);
+            this.ST_SourceASB.Size = new System.Drawing.Size(359, 25);
             this.ST_SourceASB.TabIndex = 14;
             // 
             // ST_SourceCSVText
@@ -1368,6 +2911,9 @@
             // 
             // ST_DataTitle
             // 
+            this.ST_DataTitle.Controls.Add(this.ST_ClearAllAttachments);
+            this.ST_DataTitle.Controls.Add(this.ST_AttachmentMode);
+            this.ST_DataTitle.Controls.Add(this.ST_AttachmentModeText);
             this.ST_DataTitle.Controls.Add(this.ST_AUCsvBrowse);
             this.ST_DataTitle.Controls.Add(this.ST_AUCsvCheckGo);
             this.ST_DataTitle.Controls.Add(this.ST_AUCsvPath);
@@ -1378,11 +2924,54 @@
             this.ST_DataTitle.Controls.Add(this.ST_Data);
             this.ST_DataTitle.Controls.Add(this.ST_AUCsvModeText);
             this.ST_DataTitle.ForeColor = System.Drawing.Color.White;
-            this.ST_DataTitle.Location = new System.Drawing.Point(11, 253);
+            this.ST_DataTitle.Location = new System.Drawing.Point(11, 160);
             this.ST_DataTitle.Name = "ST_DataTitle";
-            this.ST_DataTitle.Size = new System.Drawing.Size(348, 414);
+            this.ST_DataTitle.Size = new System.Drawing.Size(589, 261);
             this.ST_DataTitle.TabIndex = 8;
             this.ST_DataTitle.TabStop = false;
+            // 
+            // ST_ClearAllAttachments
+            // 
+            this.ST_ClearAllAttachments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_ClearAllAttachments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_ClearAllAttachments.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_ClearAllAttachments.ButtonBackgroundImage = null;
+            this.ST_ClearAllAttachments.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_ClearAllAttachments.ButtonColor = System.Drawing.Color.Red;
+            this.ST_ClearAllAttachments.ButtonEnabled = true;
+            this.ST_ClearAllAttachments.ButtonImage = null;
+            this.ST_ClearAllAttachments.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ST_ClearAllAttachments.ButtonText = "";
+            this.ST_ClearAllAttachments.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
+            this.ST_ClearAllAttachments.ForeColor = System.Drawing.Color.White;
+            this.ST_ClearAllAttachments.Location = new System.Drawing.Point(264, 173);
+            this.ST_ClearAllAttachments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_ClearAllAttachments.Name = "ST_ClearAllAttachments";
+            this.ST_ClearAllAttachments.Size = new System.Drawing.Size(319, 29);
+            this.ST_ClearAllAttachments.TabIndex = 29;
+            // 
+            // ST_AttachmentMode
+            // 
+            this.ST_AttachmentMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.ST_AttachmentMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ST_AttachmentMode.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_AttachmentMode.ForeColor = System.Drawing.Color.White;
+            this.ST_AttachmentMode.FormattingEnabled = true;
+            this.ST_AttachmentMode.Location = new System.Drawing.Point(365, 142);
+            this.ST_AttachmentMode.Name = "ST_AttachmentMode";
+            this.ST_AttachmentMode.Size = new System.Drawing.Size(122, 24);
+            this.ST_AttachmentMode.TabIndex = 28;
+            // 
+            // ST_AttachmentModeText
+            // 
+            this.ST_AttachmentModeText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ST_AttachmentModeText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_AttachmentModeText.Location = new System.Drawing.Point(264, 142);
+            this.ST_AttachmentModeText.Margin = new System.Windows.Forms.Padding(3);
+            this.ST_AttachmentModeText.Name = "ST_AttachmentModeText";
+            this.ST_AttachmentModeText.Size = new System.Drawing.Size(95, 24);
+            this.ST_AttachmentModeText.TabIndex = 27;
+            this.ST_AttachmentModeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ST_AUCsvBrowse
             // 
@@ -1398,7 +2987,7 @@
             this.ST_AUCsvBrowse.ButtonText = "";
             this.ST_AUCsvBrowse.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.ST_AUCsvBrowse.ForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvBrowse.Location = new System.Drawing.Point(300, 354);
+            this.ST_AUCsvBrowse.Location = new System.Drawing.Point(541, 52);
             this.ST_AUCsvBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_AUCsvBrowse.Name = "ST_AUCsvBrowse";
             this.ST_AUCsvBrowse.Size = new System.Drawing.Size(42, 23);
@@ -1418,10 +3007,10 @@
             this.ST_AUCsvCheckGo.ButtonText = "";
             this.ST_AUCsvCheckGo.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.ST_AUCsvCheckGo.ForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvCheckGo.Location = new System.Drawing.Point(240, 383);
+            this.ST_AUCsvCheckGo.Location = new System.Drawing.Point(493, 111);
             this.ST_AUCsvCheckGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_AUCsvCheckGo.Name = "ST_AUCsvCheckGo";
-            this.ST_AUCsvCheckGo.Size = new System.Drawing.Size(102, 24);
+            this.ST_AUCsvCheckGo.Size = new System.Drawing.Size(90, 55);
             this.ST_AUCsvCheckGo.TabIndex = 23;
             // 
             // ST_AUCsvPath
@@ -1430,10 +3019,10 @@
             this.ST_AUCsvPath.EnableMarquee = true;
             this.ST_AUCsvPath.Font = new System.Drawing.Font("微軟正黑體", 9F);
             this.ST_AUCsvPath.FreezeTime = 2000;
-            this.ST_AUCsvPath.LabelSize = new System.Drawing.Size(288, 23);
+            this.ST_AUCsvPath.LabelSize = new System.Drawing.Size(271, 23);
             this.ST_AUCsvPath.LeftDistance = 5;
             this.ST_AUCsvPath.LForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvPath.Location = new System.Drawing.Point(6, 354);
+            this.ST_AUCsvPath.Location = new System.Drawing.Point(264, 52);
             this.ST_AUCsvPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_AUCsvPath.MarqueeText = "";
             this.ST_AUCsvPath.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
@@ -1441,7 +3030,7 @@
             this.ST_AUCsvPath.MoveInterval = 15;
             this.ST_AUCsvPath.Name = "ST_AUCsvPath";
             this.ST_AUCsvPath.OverBorderDistance = 15;
-            this.ST_AUCsvPath.Size = new System.Drawing.Size(288, 23);
+            this.ST_AUCsvPath.Size = new System.Drawing.Size(271, 23);
             this.ST_AUCsvPath.TabIndex = 22;
             // 
             // ST_AUCsvMode
@@ -1451,16 +3040,16 @@
             this.ST_AUCsvMode.Font = new System.Drawing.Font("微軟正黑體", 9F);
             this.ST_AUCsvMode.ForeColor = System.Drawing.Color.White;
             this.ST_AUCsvMode.FormattingEnabled = true;
-            this.ST_AUCsvMode.Location = new System.Drawing.Point(107, 383);
+            this.ST_AUCsvMode.Location = new System.Drawing.Point(365, 112);
             this.ST_AUCsvMode.Name = "ST_AUCsvMode";
-            this.ST_AUCsvMode.Size = new System.Drawing.Size(127, 24);
+            this.ST_AUCsvMode.Size = new System.Drawing.Size(122, 24);
             this.ST_AUCsvMode.TabIndex = 22;
             // 
             // ST_AutoLoad
             // 
-            this.ST_AutoLoad.Location = new System.Drawing.Point(6, 292);
+            this.ST_AutoLoad.Location = new System.Drawing.Point(264, 82);
             this.ST_AutoLoad.Name = "ST_AutoLoad";
-            this.ST_AutoLoad.Size = new System.Drawing.Size(336, 25);
+            this.ST_AutoLoad.Size = new System.Drawing.Size(212, 24);
             this.ST_AutoLoad.TabIndex = 17;
             this.ST_AutoLoad.UseVisualStyleBackColor = true;
             // 
@@ -1478,7 +3067,7 @@
             this.ST_ReLoad.ButtonText = "";
             this.ST_ReLoad.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
             this.ST_ReLoad.ForeColor = System.Drawing.Color.White;
-            this.ST_ReLoad.Location = new System.Drawing.Point(241, 262);
+            this.ST_ReLoad.Location = new System.Drawing.Point(482, 82);
             this.ST_ReLoad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ST_ReLoad.Name = "ST_ReLoad";
             this.ST_ReLoad.Size = new System.Drawing.Size(101, 24);
@@ -1487,12 +3076,12 @@
             // ST_AUCsvPathText
             // 
             this.ST_AUCsvPathText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_AUCsvPathText.Location = new System.Drawing.Point(6, 323);
+            this.ST_AUCsvPathText.Location = new System.Drawing.Point(264, 22);
             this.ST_AUCsvPathText.Margin = new System.Windows.Forms.Padding(3);
             this.ST_AUCsvPathText.Name = "ST_AUCsvPathText";
-            this.ST_AUCsvPathText.Size = new System.Drawing.Size(336, 24);
+            this.ST_AUCsvPathText.Size = new System.Drawing.Size(88, 23);
             this.ST_AUCsvPathText.TabIndex = 21;
-            this.ST_AUCsvPathText.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ST_AUCsvPathText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ST_Data
             // 
@@ -1506,7 +3095,7 @@
             this.ST_Data.Location = new System.Drawing.Point(6, 22);
             this.ST_Data.MultiSelect = false;
             this.ST_Data.Name = "ST_Data";
-            this.ST_Data.Size = new System.Drawing.Size(336, 233);
+            this.ST_Data.Size = new System.Drawing.Size(252, 233);
             this.ST_Data.TabIndex = 0;
             this.ST_Data.UseCompatibleStateImageBehavior = false;
             this.ST_Data.View = System.Windows.Forms.View.Details;
@@ -1515,7 +3104,7 @@
             // 
             this.ST_AUCsvModeText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ST_AUCsvModeText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_AUCsvModeText.Location = new System.Drawing.Point(6, 384);
+            this.ST_AUCsvModeText.Location = new System.Drawing.Point(264, 112);
             this.ST_AUCsvModeText.Margin = new System.Windows.Forms.Padding(3);
             this.ST_AUCsvModeText.Name = "ST_AUCsvModeText";
             this.ST_AUCsvModeText.Size = new System.Drawing.Size(95, 24);
@@ -1775,431 +3364,19 @@
             this.ST_PathWarningText.TabIndex = 7;
             this.ST_PathWarningText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // P_CharacterData
-            // 
-            this.P_CharacterData.Controls.Add(this.CD_CloseTab);
-            this.P_CharacterData.Controls.Add(this.CD_NewTab);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterTab);
-            this.P_CharacterData.Controls.Add(this.CD_Favorite);
-            this.P_CharacterData.Controls.Add(this.CD_SearchGB);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterIDText);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterIDGo);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterID);
-            this.P_CharacterData.Controls.Add(this.CD_FavoriteText);
-            this.P_CharacterData.Location = new System.Drawing.Point(1, 24);
-            this.P_CharacterData.Margin = new System.Windows.Forms.Padding(0);
-            this.P_CharacterData.Name = "P_CharacterData";
-            this.P_CharacterData.Size = new System.Drawing.Size(1078, 695);
-            this.P_CharacterData.TabIndex = 11;
-            this.P_CharacterData.Visible = false;
-            // 
-            // CD_CloseTab
-            // 
-            this.CD_CloseTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CloseTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_CloseTab.ButtonBackgroundImage = null;
-            this.CD_CloseTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CloseTab.ButtonColor = System.Drawing.Color.Red;
-            this.CD_CloseTab.ButtonEnabled = true;
-            this.CD_CloseTab.ButtonImage = null;
-            this.CD_CloseTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_CloseTab.ButtonText = "×";
-            this.CD_CloseTab.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.CD_CloseTab.Location = new System.Drawing.Point(1015, 8);
-            this.CD_CloseTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_CloseTab.Name = "CD_CloseTab";
-            this.CD_CloseTab.Size = new System.Drawing.Size(23, 23);
-            this.CD_CloseTab.TabIndex = 39;
-            // 
-            // CD_NewTab
-            // 
-            this.CD_NewTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_NewTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_NewTab.ButtonBackgroundImage = null;
-            this.CD_NewTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_NewTab.ButtonColor = System.Drawing.Color.White;
-            this.CD_NewTab.ButtonEnabled = true;
-            this.CD_NewTab.ButtonImage = null;
-            this.CD_NewTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_NewTab.ButtonText = "+";
-            this.CD_NewTab.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_NewTab.Location = new System.Drawing.Point(1044, 8);
-            this.CD_NewTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_NewTab.Name = "CD_NewTab";
-            this.CD_NewTab.Size = new System.Drawing.Size(23, 23);
-            this.CD_NewTab.TabIndex = 38;
-            // 
-            // CD_CharacterTab
-            // 
-            this.CD_CharacterTab.Controls.Add(this.tabPage1);
-            this.CD_CharacterTab.HotTrack = true;
-            this.CD_CharacterTab.Location = new System.Drawing.Point(311, 30);
-            this.CD_CharacterTab.Multiline = true;
-            this.CD_CharacterTab.Name = "CD_CharacterTab";
-            this.CD_CharacterTab.SelectedIndex = 0;
-            this.CD_CharacterTab.ShowToolTips = true;
-            this.CD_CharacterTab.Size = new System.Drawing.Size(756, 631);
-            this.CD_CharacterTab.TabIndex = 37;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.CharaDataDisplay);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(748, 602);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "角色資料 1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // CharaDataDisplay
-            // 
-            this.CharaDataDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CharaDataDisplay.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CharaDataDisplay.ForeColor = System.Drawing.Color.White;
-            this.CharaDataDisplay.Location = new System.Drawing.Point(0, 0);
-            this.CharaDataDisplay.Name = "CharaDataDisplay";
-            this.CharaDataDisplay.Padding = new System.Windows.Forms.Padding(5);
-            this.CharaDataDisplay.Size = new System.Drawing.Size(748, 602);
-            this.CharaDataDisplay.TabIndex = 0;
-            // 
-            // CD_Favorite
-            // 
-            this.CD_Favorite.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.CD_Favorite.AutoArrange = false;
-            this.CD_Favorite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_Favorite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_Favorite.ForeColor = System.Drawing.Color.White;
-            this.CD_Favorite.FullRowSelect = true;
-            this.CD_Favorite.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.CD_Favorite.Location = new System.Drawing.Point(11, 418);
-            this.CD_Favorite.MultiSelect = false;
-            this.CD_Favorite.Name = "CD_Favorite";
-            this.CD_Favorite.Size = new System.Drawing.Size(294, 243);
-            this.CD_Favorite.TabIndex = 36;
-            this.CD_Favorite.UseCompatibleStateImageBehavior = false;
-            this.CD_Favorite.View = System.Windows.Forms.View.Details;
-            // 
-            // CD_SearchGB
-            // 
-            this.CD_SearchGB.Controls.Add(this.CD_SeriesCodeGo);
-            this.CD_SearchGB.Controls.Add(this.CD_CharaSeries);
-            this.CD_SearchGB.Controls.Add(this.CD_CharaSeriesText);
-            this.CD_SearchGB.Controls.Add(this.CD_Rarity);
-            this.CD_SearchGB.Controls.Add(this.CD_RarityText);
-            this.CD_SearchGB.Controls.Add(this.CD_KeywordResult);
-            this.CD_SearchGB.Controls.Add(this.CD_KeywordText);
-            this.CD_SearchGB.Controls.Add(this.CD_Keyword);
-            this.CD_SearchGB.Controls.Add(this.CD_KeywordGo);
-            this.CD_SearchGB.ForeColor = System.Drawing.Color.White;
-            this.CD_SearchGB.Location = new System.Drawing.Point(11, 50);
-            this.CD_SearchGB.Name = "CD_SearchGB";
-            this.CD_SearchGB.Size = new System.Drawing.Size(294, 335);
-            this.CD_SearchGB.TabIndex = 28;
-            this.CD_SearchGB.TabStop = false;
-            // 
-            // CD_SeriesCodeGo
-            // 
-            this.CD_SeriesCodeGo.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.CD_SeriesCodeGo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.CD_SeriesCodeGo.Location = new System.Drawing.Point(114, 53);
-            this.CD_SeriesCodeGo.Name = "CD_SeriesCodeGo";
-            this.CD_SeriesCodeGo.Size = new System.Drawing.Size(116, 24);
-            this.CD_SeriesCodeGo.TabIndex = 35;
-            this.CD_SeriesCodeGo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CD_CharaSeries
-            // 
-            this.CD_CharaSeries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_CharaSeries.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_CharaSeries.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.CD_CharaSeries.ForeColor = System.Drawing.Color.White;
-            this.CD_CharaSeries.Location = new System.Drawing.Point(69, 53);
-            this.CD_CharaSeries.MaxLength = 3;
-            this.CD_CharaSeries.Name = "CD_CharaSeries";
-            this.CD_CharaSeries.Size = new System.Drawing.Size(39, 25);
-            this.CD_CharaSeries.TabIndex = 34;
-            // 
-            // CD_CharaSeriesText
-            // 
-            this.CD_CharaSeriesText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_CharaSeriesText.Location = new System.Drawing.Point(6, 53);
-            this.CD_CharaSeriesText.Margin = new System.Windows.Forms.Padding(3);
-            this.CD_CharaSeriesText.Name = "CD_CharaSeriesText";
-            this.CD_CharaSeriesText.Size = new System.Drawing.Size(57, 24);
-            this.CD_CharaSeriesText.TabIndex = 33;
-            this.CD_CharaSeriesText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CD_Rarity
-            // 
-            this.CD_Rarity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_Rarity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_Rarity.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.CD_Rarity.ForeColor = System.Drawing.Color.White;
-            this.CD_Rarity.Location = new System.Drawing.Point(242, 22);
-            this.CD_Rarity.MaxLength = 1;
-            this.CD_Rarity.Name = "CD_Rarity";
-            this.CD_Rarity.Size = new System.Drawing.Size(46, 25);
-            this.CD_Rarity.TabIndex = 32;
-            // 
-            // CD_RarityText
-            // 
-            this.CD_RarityText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_RarityText.Location = new System.Drawing.Point(199, 22);
-            this.CD_RarityText.Margin = new System.Windows.Forms.Padding(3);
-            this.CD_RarityText.Name = "CD_RarityText";
-            this.CD_RarityText.Size = new System.Drawing.Size(37, 25);
-            this.CD_RarityText.TabIndex = 31;
-            this.CD_RarityText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CD_KeywordResult
-            // 
-            this.CD_KeywordResult.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.CD_KeywordResult.AutoArrange = false;
-            this.CD_KeywordResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_KeywordResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_KeywordResult.ForeColor = System.Drawing.Color.White;
-            this.CD_KeywordResult.FullRowSelect = true;
-            this.CD_KeywordResult.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.CD_KeywordResult.Location = new System.Drawing.Point(6, 85);
-            this.CD_KeywordResult.MultiSelect = false;
-            this.CD_KeywordResult.Name = "CD_KeywordResult";
-            this.CD_KeywordResult.Size = new System.Drawing.Size(282, 244);
-            this.CD_KeywordResult.TabIndex = 30;
-            this.CD_KeywordResult.UseCompatibleStateImageBehavior = false;
-            this.CD_KeywordResult.View = System.Windows.Forms.View.Details;
-            // 
-            // CD_KeywordText
-            // 
-            this.CD_KeywordText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_KeywordText.Location = new System.Drawing.Point(6, 22);
-            this.CD_KeywordText.Margin = new System.Windows.Forms.Padding(3);
-            this.CD_KeywordText.Name = "CD_KeywordText";
-            this.CD_KeywordText.Size = new System.Drawing.Size(54, 25);
-            this.CD_KeywordText.TabIndex = 29;
-            this.CD_KeywordText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CD_Keyword
-            // 
-            this.CD_Keyword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_Keyword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_Keyword.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.CD_Keyword.ForeColor = System.Drawing.Color.White;
-            this.CD_Keyword.Location = new System.Drawing.Point(66, 22);
-            this.CD_Keyword.Name = "CD_Keyword";
-            this.CD_Keyword.Size = new System.Drawing.Size(127, 25);
-            this.CD_Keyword.TabIndex = 26;
-            // 
-            // CD_KeywordGo
-            // 
-            this.CD_KeywordGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_KeywordGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_KeywordGo.ButtonBackgroundImage = null;
-            this.CD_KeywordGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_KeywordGo.ButtonColor = System.Drawing.Color.White;
-            this.CD_KeywordGo.ButtonEnabled = true;
-            this.CD_KeywordGo.ButtonImage = null;
-            this.CD_KeywordGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_KeywordGo.ButtonText = "";
-            this.CD_KeywordGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_KeywordGo.Location = new System.Drawing.Point(236, 53);
-            this.CD_KeywordGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_KeywordGo.Name = "CD_KeywordGo";
-            this.CD_KeywordGo.Size = new System.Drawing.Size(52, 25);
-            this.CD_KeywordGo.TabIndex = 27;
-            // 
-            // CD_CharacterIDText
-            // 
-            this.CD_CharacterIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_CharacterIDText.Location = new System.Drawing.Point(11, 8);
-            this.CD_CharacterIDText.Margin = new System.Windows.Forms.Padding(3);
-            this.CD_CharacterIDText.Name = "CD_CharacterIDText";
-            this.CD_CharacterIDText.Size = new System.Drawing.Size(54, 36);
-            this.CD_CharacterIDText.TabIndex = 22;
-            this.CD_CharacterIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CD_CharacterIDGo
-            // 
-            this.CD_CharacterIDGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CharacterIDGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_CharacterIDGo.ButtonBackgroundImage = null;
-            this.CD_CharacterIDGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CharacterIDGo.ButtonColor = System.Drawing.Color.White;
-            this.CD_CharacterIDGo.ButtonEnabled = true;
-            this.CD_CharacterIDGo.ButtonImage = null;
-            this.CD_CharacterIDGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_CharacterIDGo.ButtonText = "";
-            this.CD_CharacterIDGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_CharacterIDGo.Location = new System.Drawing.Point(251, 8);
-            this.CD_CharacterIDGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_CharacterIDGo.Name = "CD_CharacterIDGo";
-            this.CD_CharacterIDGo.Size = new System.Drawing.Size(52, 36);
-            this.CD_CharacterIDGo.TabIndex = 21;
-            // 
-            // CD_CharacterID
-            // 
-            this.CD_CharacterID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_CharacterID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_CharacterID.Font = new System.Drawing.Font("Consolas", 18F);
-            this.CD_CharacterID.ForeColor = System.Drawing.Color.White;
-            this.CD_CharacterID.Location = new System.Drawing.Point(71, 8);
-            this.CD_CharacterID.MaxLength = 8;
-            this.CD_CharacterID.Name = "CD_CharacterID";
-            this.CD_CharacterID.Size = new System.Drawing.Size(176, 36);
-            this.CD_CharacterID.TabIndex = 20;
-            this.CD_CharacterID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // CD_FavoriteText
-            // 
-            this.CD_FavoriteText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_FavoriteText.Location = new System.Drawing.Point(11, 391);
-            this.CD_FavoriteText.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.CD_FavoriteText.Name = "CD_FavoriteText";
-            this.CD_FavoriteText.Size = new System.Drawing.Size(294, 24);
-            this.CD_FavoriteText.TabIndex = 36;
-            this.CD_FavoriteText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(1, 24);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1078, 695);
-            this.panel1.TabIndex = 13;
-            this.panel1.Visible = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.linkLabel1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.listView2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.button_SE_3);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(11, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 335);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkLabel1.Location = new System.Drawing.Point(114, 53);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(116, 24);
-            this.linkLabel1.TabIndex = 35;
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(69, 53);
-            this.textBox1.MaxLength = 3;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(39, 25);
-            this.textBox1.TabIndex = 34;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.label1.Location = new System.Drawing.Point(6, 53);
-            this.label1.Margin = new System.Windows.Forms.Padding(3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 24);
-            this.label1.TabIndex = 33;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(242, 22);
-            this.textBox2.MaxLength = 1;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(46, 25);
-            this.textBox2.TabIndex = 32;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.label2.Location = new System.Drawing.Point(199, 22);
-            this.label2.Margin = new System.Windows.Forms.Padding(3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 25);
-            this.label2.TabIndex = 31;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // listView2
-            // 
-            this.listView2.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.listView2.AutoArrange = false;
-            this.listView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listView2.ForeColor = System.Drawing.Color.White;
-            this.listView2.FullRowSelect = true;
-            this.listView2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listView2.Location = new System.Drawing.Point(6, 85);
-            this.listView2.MultiSelect = false;
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(282, 244);
-            this.listView2.TabIndex = 30;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.label3.Location = new System.Drawing.Point(6, 22);
-            this.label3.Margin = new System.Windows.Forms.Padding(3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 25);
-            this.label3.TabIndex = 29;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(66, 22);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 25);
-            this.textBox3.TabIndex = 26;
-            // 
-            // button_SE_3
-            // 
-            this.button_SE_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button_SE_3.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.button_SE_3.ButtonBackgroundImage = null;
-            this.button_SE_3.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button_SE_3.ButtonColor = System.Drawing.Color.White;
-            this.button_SE_3.ButtonEnabled = true;
-            this.button_SE_3.ButtonImage = null;
-            this.button_SE_3.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.button_SE_3.ButtonText = "";
-            this.button_SE_3.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.button_SE_3.Location = new System.Drawing.Point(236, 53);
-            this.button_SE_3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button_SE_3.Name = "button_SE_3";
-            this.button_SE_3.Size = new System.Drawing.Size(52, 25);
-            this.button_SE_3.TabIndex = 27;
-            // 
             // EX_FileDialog
             // 
             this.EX_FileDialog.Filter = "csv 檔案|*.csv|assetbundle 檔案|*.assetbundle|wav 檔案|*.wav|mp3 檔案|*.mp3|所有檔案|*.*";
+            // 
+            // CD_SearchCharacter
+            // 
+            this.CD_SearchCharacter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CD_SearchCharacter.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_SearchCharacter.ForeColor = System.Drawing.Color.White;
+            this.CD_SearchCharacter.Location = new System.Drawing.Point(11, 51);
+            this.CD_SearchCharacter.Name = "CD_SearchCharacter";
+            this.CD_SearchCharacter.Size = new System.Drawing.Size(294, 335);
+            this.CD_SearchCharacter.TabIndex = 40;
             // 
             // FMain
             // 
@@ -2222,6 +3399,26 @@
             this.MN_Border.PerformLayout();
             this.MN_StatusStrip.ResumeLayout(false);
             this.MN_StatusStrip.PerformLayout();
+            this.P_CharacterData.ResumeLayout(false);
+            this.P_CharacterData.PerformLayout();
+            this.CD_CharacterTab.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.P_Download.ResumeLayout(false);
+            this.DL_CharaPicBox.ResumeLayout(false);
+            this.DL_CharaPicBox.PerformLayout();
+            this.P_EXPCalc.ResumeLayout(false);
+            this.EC_Main.ResumeLayout(false);
+            this.EC_MainParamAfter.ResumeLayout(false);
+            this.EC_MainParamBefore.ResumeLayout(false);
+            this.EC_MainAfter.ResumeLayout(false);
+            this.EC_MainAfter.PerformLayout();
+            this.EC_MainBefore.ResumeLayout(false);
+            this.EC_MainBefore.PerformLayout();
+            this.EC_Chara.ResumeLayout(false);
+            this.EC_CharaAfter.ResumeLayout(false);
+            this.EC_CharaAfter.PerformLayout();
+            this.EC_CharaBefore.ResumeLayout(false);
+            this.EC_CharaBefore.PerformLayout();
             this.P_Statistics.ResumeLayout(false);
             this.SS_Monster.ResumeLayout(false);
             this.SS_MonsterPanel.ResumeLayout(false);
@@ -2239,15 +3436,6 @@
             this.ST_AboutProgram.ResumeLayout(false);
             this.ST_DataTitle.ResumeLayout(false);
             this.ST_SoundPath.ResumeLayout(false);
-            this.P_CharacterData.ResumeLayout(false);
-            this.P_CharacterData.PerformLayout();
-            this.CD_CharacterTab.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.CD_SearchGB.ResumeLayout(false);
-            this.CD_SearchGB.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2325,16 +3513,6 @@
         private Button_SE_ CD_CharacterIDGo;
         private System.Windows.Forms.TextBox CD_CharacterID;
         private AxWMPLib.AxWindowsMediaPlayer WMP;
-        private System.Windows.Forms.GroupBox CD_SearchGB;
-        private Button_SE_ CD_KeywordGo;
-        private System.Windows.Forms.TextBox CD_Keyword;
-        private System.Windows.Forms.Label CD_KeywordText;
-        private System.Windows.Forms.ListView CD_KeywordResult;
-        private System.Windows.Forms.Label CD_CharaSeriesText;
-        private System.Windows.Forms.TextBox CD_Rarity;
-        private System.Windows.Forms.Label CD_RarityText;
-        private System.Windows.Forms.TextBox CD_CharaSeries;
-        private System.Windows.Forms.LinkLabel CD_SeriesCodeGo;
         private System.Windows.Forms.CheckBox ST_PathMessageMute;
         public Button_SE_ ST_PathMessageBrowse;
         private MarqueeableLabel ST_PathMessage;
@@ -2382,17 +3560,112 @@
         private MarqueeableLabel ST_SourceASB;
         private System.Windows.Forms.Label ST_SourceCSVText;
         public Button_SE_ HM_ToDownload;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel P_Download;
+        private System.Windows.Forms.GroupBox DL_CharaPicBox;
+        private System.Windows.Forms.LinkLabel DL_SeriesForm;
+        private System.Windows.Forms.TextBox DL_Series;
+        private System.Windows.Forms.Label DL_SeriesText;
+        private System.Windows.Forms.TextBox DL_Rarity;
+        private System.Windows.Forms.Label DL_RarityText;
+        private System.Windows.Forms.ListView DL_SearchResult;
+        private System.Windows.Forms.Label DL_KeywordText;
+        private System.Windows.Forms.TextBox DL_Keyword;
+        private Button_SE_ DL_Search;
+        private Button_SE_ DL_Add;
+        private Button_SE_ DL_Remove;
+        private Button_SE_ DL_AddAll;
+        private System.Windows.Forms.Label DL_DownloadListText;
+        private System.Windows.Forms.ListView DL_DownloadList;
+        private System.Windows.Forms.Label DL_Arrow;
+        private Button_SE_ DL_StartDownload;
+        private Button_SE_ DL_CharaIDAdd;
+        private System.Windows.Forms.Label DL_CharaIDText;
+        private System.Windows.Forms.TextBox DL_CharaID;
+        private System.Windows.Forms.Label DL_CompleteListText;
+        private System.Windows.Forms.RichTextBox DL_CompleteList;
+        private System.Windows.Forms.Label DL_DownloadLogText;
+        private Button_SE_ DL_ClearAll;
+        private System.Windows.Forms.Label DL_PicCount;
+        private System.Windows.Forms.Label DL_PicCountText;
+        private System.Windows.Forms.ProgressBar DL_Progress;
+        private System.Windows.Forms.Label DL_Completed;
+        private System.Windows.Forms.Label DL_CompletedText;
+        private System.Windows.Forms.Label DL_DLing;
+        private System.Windows.Forms.Label DL_DLingText;
+        private System.Windows.Forms.Label DL_Pending;
+        private System.Windows.Forms.Label DL_PendingText;
+        private System.Windows.Forms.Label DL_Failed;
+        private System.Windows.Forms.Label DL_FailedText;
+        private System.Windows.Forms.ListView DL_DownloadStatus;
+        private Button_SE_ DL_AbortDownload;
+        private System.Windows.Forms.ComboBox ST_AttachmentMode;
+        private System.Windows.Forms.Label ST_AttachmentModeText;
+        private System.Windows.Forms.Panel P_EXPCalc;
+        public Button_SE_ HM_ToEXPCalc;
+        private System.Windows.Forms.GroupBox EC_Main;
+        private System.Windows.Forms.GroupBox EC_MainParamBefore;
+        private System.Windows.Forms.Label EC_MainSSBefore;
+        private System.Windows.Forms.Label EC_MainSSBeforeText;
+        private System.Windows.Forms.Label EC_MainCostBefore;
+        private System.Windows.Forms.Label EC_MainHPBefore;
+        private System.Windows.Forms.Label EC_MainCostBeforeText;
+        private System.Windows.Forms.Label EC_MainHPBeforeText;
+        private System.Windows.Forms.Label EC_MainMENBefore;
+        private System.Windows.Forms.Label EC_MainINTBefore;
+        private System.Windows.Forms.Label EC_MainMENBeforeText;
+        private System.Windows.Forms.Label EC_MainINTBeforeText;
+        private System.Windows.Forms.Label EC_MainVITBefore;
+        private System.Windows.Forms.Label EC_MainSTRBefore;
+        private System.Windows.Forms.Label EC_MainVITBeforeText;
+        private System.Windows.Forms.Label EC_MainSTRBeforeText;
+        private System.Windows.Forms.Label EC_MainExpNeedText;
+        private Button_SE_ EC_MainCalc;
+        private System.Windows.Forms.GroupBox EC_MainAfter;
+        private System.Windows.Forms.TextBox EC_MainExpAfter;
+        private System.Windows.Forms.Label EC_MainExpAfterText;
+        private System.Windows.Forms.TextBox EC_MainLvAfter;
+        private System.Windows.Forms.Label EC_MainLvAfterText;
+        private System.Windows.Forms.GroupBox EC_MainBefore;
+        private System.Windows.Forms.TextBox EC_MainExpBefore;
+        private System.Windows.Forms.Label EC_MainExpBeforeText;
+        private System.Windows.Forms.TextBox EC_MainLvBefore;
+        private System.Windows.Forms.Label EC_MainLvBeforeText;
+        private System.Windows.Forms.GroupBox EC_Chara;
+        private System.Windows.Forms.Label EC_CharaExpNeedText;
+        private Button_SE_ EC_CharaCalc;
+        private System.Windows.Forms.GroupBox EC_CharaAfter;
+        private System.Windows.Forms.TextBox EC_CharaExpAfter;
+        private System.Windows.Forms.Label EC_CharaExpAfterText;
+        private System.Windows.Forms.TextBox EC_CharaLvAfter;
+        private System.Windows.Forms.Label EC_CharaLvAfterText;
+        private System.Windows.Forms.GroupBox EC_CharaBefore;
+        private System.Windows.Forms.TextBox EC_CharaExpBefore;
+        private System.Windows.Forms.Label EC_CharaExpBeforeText;
+        private System.Windows.Forms.TextBox EC_CharaLvBefore;
+        private System.Windows.Forms.Label EC_CharaLvBeforeText;
+        private Controls.BreezeLabel EC_MainExpNeed;
+        private System.Windows.Forms.GroupBox EC_MainParamAfter;
+        private Controls.BreezeLabel EC_MainRarityAfter;
+        private System.Windows.Forms.Label EC_MainSSAfter;
+        private System.Windows.Forms.Label EC_MainSSAfterText;
+        private System.Windows.Forms.Label EC_MainCostAfter;
+        private System.Windows.Forms.Label EC_MainHPAfter;
+        private System.Windows.Forms.Label EC_MainCostAfterText;
+        private System.Windows.Forms.Label EC_MainHPAfterText;
+        private System.Windows.Forms.Label EC_MainMENAfter;
+        private System.Windows.Forms.Label EC_MainINTAfter;
+        private System.Windows.Forms.Label EC_MainMENAfterText;
+        private System.Windows.Forms.Label EC_MainINTAfterText;
+        private System.Windows.Forms.Label EC_MainVITAfter;
+        private System.Windows.Forms.Label EC_MainSTRAfter;
+        private System.Windows.Forms.Label EC_MainVITAfterText;
+        private System.Windows.Forms.Label EC_MainSTRAfterText;
+        private Controls.BreezeLabel EC_MainRarityBefore;
+        private MarqueeableLabel EC_CharaTips;
+        private Controls.BreezeLabel EC_CharaExpNeed;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private Button_SE_ button_SE_3;
+        public Button_SE_ ST_ClearAllAttachments;
+        private Controls.CharacterSearcher CD_SearchCharacter;
     }
 }
 

@@ -162,8 +162,8 @@ namespace SAOCR_Data_Manager.Forms
                     strArr2 = new string[] { IDText.Text, TargetJPText.Text, TargetCHText.Text, EffectJPText.Text, SpecText.Text, TargetScoreText.Text, STRText.Text, VITText.Text, INTText.Text, MENText.Text, HPText.Text, SSText.Text, SpecScoreText.Text };
                     break;
                 case EDataRegCategory.CharaInfo:
-                    strArr = new string[] { CharaID.Text, GetMethodText.Text, ReleaseDateText.Text, ReleaseDateText.Text, ReleaseDateText.Text, FolkName1.Text, FolkName2.Text, FolkName3.Text, FolkName4.Text, FolkName5.Text };
-                    strArr2 = new string[] { CharaIDText.Text, GetMethod.Text, ReleaseDate.Value.Year.ToString(), ReleaseDate.Value.Month.ToString(), ReleaseDate.Value.Date.ToString(), FolkNameText.Text, FolkNameText.Text, FolkNameText.Text, FolkNameText.Text, FolkNameText.Text };
+                    strArr = new string[] { CharaID.Text, GetMethod.Text, ReleaseDate.Value.Year.ToString(), ReleaseDate.Value.Month.ToString(), ReleaseDate.Value.Day.ToString(), FolkName1.Text, FolkName2.Text, FolkName3.Text, FolkName4.Text, FolkName5.Text };
+                    strArr2 = new string[] { CharaIDText.Text, GetMethodText.Text, ReleaseDateText.Text, ReleaseDateText.Text, ReleaseDateText.Text, FolkNameText.Text, FolkNameText.Text, FolkNameText.Text, FolkNameText.Text, FolkNameText.Text };
                     break;
                 default:
                     return;
@@ -189,7 +189,7 @@ namespace SAOCR_Data_Manager.Forms
 
             if (new MessageDialog(RDataReg.Message_DoubleCheck, str, MessageBoxButtonStyle.YesNo).ShowDialog() == DialogResult.Yes)
             {
-                string ToWrite = "";
+                string ToWrite = "\r\n";
 
                 switch (DRC)
                 {
@@ -203,39 +203,36 @@ namespace SAOCR_Data_Manager.Forms
                             strArr[0] = "";
                         }
                         
-                        ToWrite = "\r\n";
                         foreach (string var in strArr)
                         {
                             ToWrite += var;
                             ToWrite += "\t";
                         }
-                        ToWrite += "\r\n";
+                        ToWrite += "\n";
 
                         My.FileSystem.WriteAllText(Path.Text, ToWrite, true);
                         break;
                         #endregion
                     case EDataRegCategory.LS:
                         #region LS Section
-                        ToWrite = "\r\n";
                         foreach (string var in strArr)
                         {
                             ToWrite += var;
                             ToWrite += "\t";
                         }
-                        ToWrite += "\r\n";
+                        ToWrite += "\n";
 
                         My.FileSystem.WriteAllText(Path.Text, ToWrite, true);
                         break;
                     #endregion
                     case EDataRegCategory.CharaInfo:
                         #region Info Section
-                        ToWrite = "\r\n";
                         foreach (string var in strArr)
                         {
                             ToWrite += var;
                             ToWrite += "\t";
                         }
-                        ToWrite += "\r\n";
+                        ToWrite += "\n";
                         
                         My.FileSystem.WriteAllText(Path.Text, ToWrite, true);
                         break;

@@ -240,7 +240,24 @@ namespace SAOCR_Data_Manager
             UC.AU_ProgramChannel = ST_AUProgChannel.SelectedIndex;
             UC.AU_ProgramMode = ST_AUProgMode.SelectedIndex;
             UC.AU_CSVMode = ST_AUCsvMode.SelectedIndex;
+            UC.AMMode = ST_AttachmentMode.SelectedIndex;
             UC.Save();
+        }
+
+        private void ST_ClearAllAttachments_ButtonClick(object sender, EventArgs e)
+        {
+            if (new MessageDialog(RWarning.W_0xC0027001.Replace("\\n", "\n"), MessageBoxButtonStyle.YesNo).ShowDialog() == DialogResult.Yes)
+            {
+                My.FileSystem.DeleteDirectory(Const.Path.ATTACHMENT_AREA + "/" + Const.Path.CHARA_PIC, DeleteDirectoryOption.DeleteAllContents);
+                if (My.FileSystem.DirectoryExists(Const.Path.ATTACHMENT_AREA + "/" + Const.Path.CHARA_PIC))
+                {
+                    new MessageDialog(RWarning.W_0xC0027002.Replace("\\n", "\n")).ShowDialog();
+                } else
+                {
+                    new MessageDialog(RStatus.S_0xF0027002.Replace("\\n", "\n")).ShowDialog();
+                    Status(RStatus.S_0xF0027002);
+                }
+            }
         }
     }
 }

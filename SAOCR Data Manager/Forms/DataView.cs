@@ -129,7 +129,7 @@ namespace SAOCR_Data_Manager.Forms
             {
                 KeywordResult.Clear();
                 KeywordResult.Columns.Add("欄位號碼", KeywordResult.Size.Width - Const.SCROLL_BAR_WIDTH, HorizontalAlignment.Left);
-                DataRow[] Result = DataAPI.Search(Keyword.Text, Source, 0, Const.Column.CHARA_SERIES);
+                DataRow[] Result = DataAPI.Search(Keyword.Text, Source, 0, Source.Rows.Count, 1, Source.Columns.Count - 1);
                 if (Result == null)
                 {
                     SystemAPI.Warning(RWarning.W_0xC001B001);

@@ -61,6 +61,33 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
+        ///   查詢類似 總是下載 的當地語系化字串。
+        /// </summary>
+        internal static string AM_AlwaysDL {
+            get {
+                return ResourceManager.GetString("AM_AlwaysDL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 關閉後刪除 的當地語系化字串。
+        /// </summary>
+        internal static string AM_DelAfterClose {
+            get {
+                return ResourceManager.GetString("AM_DelAfterClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 只下載一次 的當地語系化字串。
+        /// </summary>
+        internal static string AM_DLonce {
+            get {
+                return ResourceManager.GetString("AM_DLonce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 Beta (測試) 的當地語系化字串。
         /// </summary>
         internal static string AU_ChannelBeta {
@@ -142,6 +169,15 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
+        ///   查詢類似 附件下載模式 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_AttachmentMode {
+            get {
+                return ResourceManager.GetString("Layout_AttachmentMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 程式自動更新 的當地語系化字串。
         /// </summary>
         internal static string Layout_AUProgram {
@@ -196,7 +232,7 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 資源下載路徑(如果為空，則會下載到&quot;下載&quot;資料夾) 的當地語系化字串。
+        ///   查詢類似 資源下載路徑 的當地語系化字串。
         /// </summary>
         internal static string Layout_AUResourcePath {
             get {
@@ -205,7 +241,7 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 自動載入資料、資源(啟動程式時，需花費較長時間) 的當地語系化字串。
+        ///   查詢類似 自動載入資料、資源 的當地語系化字串。
         /// </summary>
         internal static string Layout_AutoLoadText {
             get {
@@ -228,6 +264,15 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         internal static string Layout_CheckUpdate {
             get {
                 return ResourceManager.GetString("Layout_CheckUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 清除所有已下載的附件 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_ClearAllAttachments {
+            get {
+                return ResourceManager.GetString("Layout_ClearAllAttachments", resourceCulture);
             }
         }
         

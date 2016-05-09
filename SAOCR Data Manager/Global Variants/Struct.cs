@@ -101,6 +101,18 @@ public struct DLSystemObjects
     public DLStatus Status;
     public DLCount Count;
 }
+
+public struct PicDownloadInfo
+{
+    public int Pending;
+    public int Total;
+    public int Completed;
+    public int Downloading;
+    public int Failed;
+    public int Percent;
+    public string FolderName;
+    public bool AllowDL;
+}
 #endregion
 
 public struct FindEndStack
@@ -203,7 +215,7 @@ public struct WeaponDataRow
 }
 #endregion
 
-#region 角色相關
+#region 角色資料相關
 public struct SData
 {
     public string CharaID;

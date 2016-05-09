@@ -137,6 +137,8 @@ namespace SAOCR_Data_Manager
             P_Config.Visible = false;
             P_CharacterData.Visible = false;
             P_Statistics.Visible = false;
+            P_Download.Visible = false;
+            P_EXPCalc.Visible = false;
             
             PanelToShow.Visible = true;
             string LogText = RMain.Log_GoToPage;
@@ -147,18 +149,31 @@ namespace SAOCR_Data_Manager
             {
                 case "P_HomePage":
                     LogText += MN_Title.Text += RMain.AtPage_HomePage;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_HomePage);
                     break;
                 case "P_CsvTable":
                     LogText += MN_Title.Text += RMain.AtPage_CsvTable;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_CsvTable);
                     break;
                 case "P_Config":
                     LogText += MN_Title.Text += RMain.AtPage_Settings;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_Settings);
                     break;
                 case "P_CharacterData":
                     LogText += MN_Title.Text += RMain.AtPage_CharacterData;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_CharacterData);
                     break;
                 case "P_Statistics":
                     LogText += MN_Title.Text += RMain.AtPage_Statistics;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_Statistics);
+                    break;
+                case "P_Download":
+                    LogText += MN_Title.Text += RMain.AtPage_Download;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_Download);
+                    break;
+                case "P_EXPCalc":
+                    LogText += MN_Title.Text += RMain.AtPage_EXPCalc;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_EXPCalc);
                     break;
             }
             StatusLog.Log(LogText);
@@ -186,10 +201,8 @@ namespace SAOCR_Data_Manager
                     case "CD_CharacterID":
                         CD_CharacterIDGo_ButtonClick(this, EventArgs.Empty);
                         break;
-                    case "CD_Keyword":
-                    case "CD_Rarity":
-                    case "CD_CharaSeries":
-                        CD_KeywordGo_ButtonClick(this, EventArgs.Empty);
+                    case "DL_CharaID":
+                        DL_CharaIDAdd_Click(this, EventArgs.Empty);
                         break;
                 }
             }

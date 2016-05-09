@@ -107,6 +107,8 @@ namespace SAOCR_Data_Manager
                         return RDictColor.Green;
                     case EParamType.Magius:
                         return RDictColor.Purple;
+                    case EParamType.Null:
+                        return RDictColor.Grey70;
                     default:
                         throw new ArgumentException(RError.E_0x0002E003);
                 }

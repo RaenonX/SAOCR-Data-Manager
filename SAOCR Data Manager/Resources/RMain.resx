@@ -198,4 +198,10 @@
   <data name="AtPage_Statistics" xml:space="preserve">
     <value>各項統計資料</value>
   </data>
+  <data name="AtPage_Download" xml:space="preserve">
+    <value>檔案下載</value>
+  </data>
+  <data name="AtPage_EXPCalc" xml:space="preserve">
+    <value>經驗計算器</value>
+  </data>
 </root>

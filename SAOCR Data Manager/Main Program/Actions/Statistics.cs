@@ -27,7 +27,7 @@ namespace SAOCR_Data_Manager
                     Status(RStatistics.Log_Calculating1 + RStatistics.Layout_CharacterRelated + RStatistics.Log_Calculating2 + RStatistics.Layout_CharaWeaponUsingRate + RStatistics.Log_Calculating3);
                     Application.DoEvents();
                     #region 武器使用比率
-                    InitializeList(InitItem.CharaWeaponUsingRate);
+                    InitializeList(InitItem.SS_CharaWeaponUsingRate);
                     for (int i = 0; i < Const.Count.WEAPON_CATEGORY; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
@@ -57,7 +57,7 @@ namespace SAOCR_Data_Manager
                     Status(RStatistics.Log_Calculating1 + RStatistics.Layout_CharacterRelated + RStatistics.Log_Calculating2 + RStatistics.Layout_CharaElementRate + RStatistics.Log_Calculating3);
                     Application.DoEvents();
                     #region 角色屬性占比
-                    InitializeList(InitItem.CharaElementRate);
+                    InitializeList(InitItem.SS_CharaElementRate);
                     for (int i = 0; i < Const.Count.ELEMENT_CATEGORY; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
@@ -81,7 +81,7 @@ namespace SAOCR_Data_Manager
                     Status(RStatistics.Log_Calculating1 + RStatistics.Layout_CharacterRelated + RStatistics.Log_Calculating2 + RStatistics.Layout_CharaSceneRate + RStatistics.Log_Calculating3);
                     Application.DoEvents();
                     #region 角色舞台占比
-                    InitializeList(InitItem.CharaSceneRate);
+                    InitializeList(InitItem.SS_CharaSceneRate);
                     for (int i = 0; i < Const.Count.SCENE_CATEGORY; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
@@ -112,7 +112,7 @@ namespace SAOCR_Data_Manager
                     Status(RStatistics.Log_Calculating1 + RStatistics.Layout_CharacterRelated + RStatistics.Log_Calculating2 + RStatistics.Layout_CharaSeriesRate + RStatistics.Log_Calculating3);
                     Application.DoEvents();
                     #region 角色系列占比
-                    InitializeList(InitItem.CharaSeriesRate);
+                    InitializeList(InitItem.SS_CharaSeriesRate);
                     for (int i = 0; i < DT.CharaSeries.Rows.Count; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
@@ -144,7 +144,7 @@ namespace SAOCR_Data_Manager
                     Status(RStatistics.Log_Calculating1 + RStatistics.Layout_CharacterRelated + RStatistics.Log_Calculating2 + RStatistics.Layout_CharaRarityRate + RStatistics.Log_Calculating3);
                     Application.DoEvents();
                     #region 角色星級占比
-                    InitializeList(InitItem.CharaRarityRate);
+                    InitializeList(InitItem.SS_CharaRarityRate);
                     for (int i = 0; i < Const.Count.RARITY; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
@@ -190,7 +190,7 @@ namespace SAOCR_Data_Manager
                     Status(RStatistics.Log_Calculating1 + RStatistics.Layout_MonsterRelated + RStatistics.Log_Calculating2 + RStatistics.Layout_MonsterTypeRate + RStatistics.Log_Calculating3);
                     Application.DoEvents();
                     #region 怪物種類占比
-                    InitializeList(InitItem.MonsterTypeRate);
+                    InitializeList(InitItem.SS_MonsterTypeRate);
                     for (int i = 0; i < Const.Count.MONSTER_TYPE; i++)
                     {
                         ListViewItem LVI = new ListViewItem();
@@ -216,7 +216,7 @@ namespace SAOCR_Data_Manager
                     DataTable SDT = new DataTable();
                     SDT = DataAPI.Specified<int>(DT.Source, TitleP.Start[(int)DataTitle.MonsterParams] + 1, TitleP.End[(int)DataTitle.MonsterParams], null, "Monster Parameters");
 
-                    InitializeList(InitItem.MonsterHPRate);
+                    InitializeList(InitItem.SS_MonsterHPRate);
                     for (int i = 0; i < Const.Count.MONSTER_HP_K; i++)
                     {
                         ListViewItem LVI = new ListViewItem();

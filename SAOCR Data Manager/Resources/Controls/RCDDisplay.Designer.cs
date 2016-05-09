@@ -124,6 +124,15 @@ namespace SAOCR_Data_Manager.Resources.Controls {
         }
         
         /// <summary>
+        ///   查詢類似 已終止HTML輸出作業。角色ID:  的當地語系化字串。
+        /// </summary>
+        internal static string Message_HTMLOutputCancelled {
+            get {
+                return ResourceManager.GetString("Message_HTMLOutputCancelled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 HTML輸出完成。角色ID:  的當地語系化字串。
         /// </summary>
         internal static string Message_HTMLOutputComplete1 {
@@ -138,6 +147,24 @@ namespace SAOCR_Data_Manager.Resources.Controls {
         internal static string Message_HTMLOutputComplete2 {
             get {
                 return ResourceManager.GetString("Message_HTMLOutputComplete2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 請輸入建議型態的代碼。 的當地語系化字串。
+        /// </summary>
+        internal static string Message_KeyInRecommendTypeCode {
+            get {
+                return ResourceManager.GetString("Message_KeyInRecommendTypeCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 0為平均型，1為力量型，2為防禦型，3為魔法型。 的當地語系化字串。
+        /// </summary>
+        internal static string Message_RecommendTypeTip {
+            get {
+                return ResourceManager.GetString("Message_RecommendTypeTip", resourceCulture);
             }
         }
     }

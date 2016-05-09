@@ -39,7 +39,7 @@ namespace SAOCR_Data_Manager.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.RDictColor", typeof(RDictColor).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.Dictionary.RDictColor", typeof(RDictColor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

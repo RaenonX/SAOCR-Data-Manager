@@ -202,5 +202,17 @@ namespace SAOCR_Data_Manager.Properties {
                 this["Path_CharaHTML"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int AMMode {
+            get {
+                return ((int)(this["AMMode"]));
+            }
+            set {
+                this["AMMode"] = value;
+            }
+        }
     }
 }

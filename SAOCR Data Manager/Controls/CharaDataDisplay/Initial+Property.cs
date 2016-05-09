@@ -45,7 +45,7 @@ namespace SAOCR_Data_Manager.Forms
                 Favorite.ButtonClick += Favorite_ButtonClick;
                 SizeChanged += CharaDataDisplay_SizeChanged;
                 CharacterName.LabelClick += CharacterName_Click;
-                CharacterName.LabelDoubleClick += HTML_ButtonClick;
+                CharacterName.LabelDoubleClick += HTML_Generate;
             }
             catch (Exception e)
             {

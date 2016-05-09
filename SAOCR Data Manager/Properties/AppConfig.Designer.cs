@@ -49,9 +49,15 @@ namespace SAOCR_Data_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
-            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>10011550</string>\r\n</ArrayOfString>")]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
+  <string>20061060</string>
+  <string>20661660</string>
+  <string>20021760</string>
+  <string>20520760</string>
+  <string>20661160</string>
+  <string>11081260</string>
+</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection Chara_Favorite {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["Chara_Favorite"]));

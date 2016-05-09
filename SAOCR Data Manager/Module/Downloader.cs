@@ -31,8 +31,9 @@ namespace SAOCR_Data_Manager
 
         public bool CreateSucceed;
 
-        public event EventHandler PropertySetComplete, DownloadBegin, DownloadSucceed, DownloadFailed, DownloadCompleted, InfoUpdated;
+        public event EventHandler PropertySetComplete, DownloadBegin, DownloadSucceed, DownloadFailed, DownloadCancelled, DownloadCompleted, InfoUpdated, InfoUpdatedWithDelay;
 
+        #region Init Section
         public Downloader(Uri NetworkLocation, string LocalLocation, SizeUnit DLSizeUnit, string Description)
         {
             Uri[] URL = { NetworkLocation };
@@ -103,7 +104,7 @@ namespace SAOCR_Data_Manager
 
                 DLData.TempForSpeed = new List<long>();
 
-                PropertySetComplete?.Invoke(null, EventArgs.Empty);
+                PropertySetComplete?.Invoke(this, EventArgs.Empty);
 
                 CreateSucceed = true;
             }
@@ -113,6 +114,7 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+        #endregion
 
         public void DLStart()
         {
@@ -120,7 +122,7 @@ namespace SAOCR_Data_Manager
             {
                 if (Extent.HaveConnection())
                 {
-                    DownloadBegin?.Invoke(null, EventArgs.Empty);
+                    DownloadBegin?.Invoke(this, EventArgs.Empty);
 
                     timer.Enabled = true;
                     timer.Start();
@@ -131,20 +133,25 @@ namespace SAOCR_Data_Manager
 
                     try
                     {
+                        if (!My.FileSystem.DirectoryExists(Path.GetDirectoryName(DLData.Location.LocalDLing)))
+                        {
+                            My.FileSystem.CreateDirectory(Path.GetDirectoryName(DLData.Location.LocalDLing));
+                        }
                         Web.DownloadFileAsync(DLData.Location.NetworkDLing, DLData.Location.LocalDLing);
                     }
                     catch (Exception)
                     {
                         StatusLog.Log(RDownloader.Log_DownloadFailed);
                         DLData.Status = DLStatus.DownloadFailed;
-                        DownloadFailed?.Invoke(null, EventArgs.Empty);
-                        DownloadCompleted?.Invoke(null, EventArgs.Empty);
+                        DownloadFailed?.Invoke(this, EventArgs.Empty);
+                        DownloadCompleted?.Invoke(this, EventArgs.Empty);
                     }
                 }
                 else
                 {
                     DLData.Status = DLStatus.NoConnection;
-                    DownloadCompleted?.Invoke(null, EventArgs.Empty);
+                    DownloadFailed?.Invoke(this, EventArgs.Empty);
+                    DownloadCompleted?.Invoke(this, EventArgs.Empty);
                 }
             }
             catch (Exception e)
@@ -156,9 +163,16 @@ namespace SAOCR_Data_Manager
         
         public void DLCancel()
         {
+            Web.DownloadFileCompleted -= DLCompleted;
+            Web.DownloadFileCompleted += DLCompleted_Cancel;
             Web.CancelAsync();
             DLData.Status = DLStatus.DownloadCancelled;
             StatusLog.Log(RDownloader.Log_DownloadCancelled);
+        }
+
+        private void DLCompleted_Cancel(object sender, EventArgs e)
+        {
+            DownloadCancelled?.Invoke(this, EventArgs.Empty);
         }
         
         public string GetDLInfo(DLInfoCategory DLIC)
@@ -181,6 +195,8 @@ namespace SAOCR_Data_Manager
                     return ((double)DLData.Count.Current / DLData.Count.Items * 100).ToString("0.00") + "%";
                 case DLInfoCategory.Description:
                     return DLData.Info.Description;
+                case DLInfoCategory.Status:
+                    return GetStatusString();
                 default:
                     throw new ArgumentException(RError.Error_WrongDLInfoCategory);
             }
@@ -236,6 +252,7 @@ namespace SAOCR_Data_Manager
             timer.Enabled = false;
 
             DLData.Count.Current++;
+
             if (DLData.Count.Current < DLData.Count.Items)
             {
                 DLData.Location.NetworkDLing = DLData.Location.Network[DLData.Count.Current];
@@ -244,7 +261,8 @@ namespace SAOCR_Data_Manager
                 timer.Start();
                 StatusLog.Log(RDownloader.Log_ASyncDownload1 + DLData.Location.NetworkDLing + RDownloader.Log_ASyncDownload2 + DLData.Location.NetworkDLing);
                 Web.DownloadFileAsync(DLData.Location.NetworkDLing, DLData.Location.LocalDLing);
-            } else
+            }
+            else
             {
                 foreach (string file in DLData.Location.Local)
                 {
@@ -265,11 +283,10 @@ namespace SAOCR_Data_Manager
                         } 
                     }
                     DLData.Status = DLStatus.DownloadSucceed;
-                    DownloadSucceed?.Invoke(null, EventArgs.Empty);
+                    DownloadSucceed?.Invoke(this, EventArgs.Empty);
                 }
-                DownloadCompleted?.Invoke(null, EventArgs.Empty);
+                DownloadCompleted?.Invoke(this, EventArgs.Empty);
                 StatusLog.Log(RDownloader.Log_DownloadSucceed1 + DLData.Count.Items + RDownloader.Log_DownloadSucceed2 + DLData.Info.Speed);
-                SystemAPI.SEMessage();
             }
         }
 
@@ -282,6 +299,8 @@ namespace SAOCR_Data_Manager
             }
 
             DLData.Info.Speed = (double)(DLData.TempForSpeed.Max() - DLData.TempForSpeed.Min()) / (Const.SPEED_BUFFER * timer.Interval);
+
+            InfoUpdatedWithDelay?.Invoke(this, EventArgs.Empty);
         }
     }
 }

@@ -242,4 +242,116 @@
     <value>狀態代碼 0xF0027001\n\n資源重新讀取完畢。</value>
     <comment>PConfig</comment>
   </data>
+  <data name="S_0xF0000000" xml:space="preserve">
+    <value>狀態代碼 0xF0000000\n\n切換頁面到: </value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000001" xml:space="preserve">
+    <value>狀態代碼 0xF0000001\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000002" xml:space="preserve">
+    <value>狀態代碼 0xF0000002\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000003" xml:space="preserve">
+    <value>狀態代碼 0xF0000003\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000004" xml:space="preserve">
+    <value>狀態代碼 0xF0000004\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000005" xml:space="preserve">
+    <value>狀態代碼 0xF0000005\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000006" xml:space="preserve">
+    <value>狀態代碼 0xF0000006\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000007" xml:space="preserve">
+    <value>狀態代碼 0xF0000007\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0000008" xml:space="preserve">
+    <value>狀態代碼 0xF0000008\n\n</value>
+    <comment>-Main</comment>
+  </data>
+  <data name="S_0xF0002000" xml:space="preserve">
+    <value>狀態代碼 0xF0002000\n\n開啟角色系代碼表。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002001" xml:space="preserve">
+    <value>狀態代碼 0xF0002001\n\n關閉角色系代碼表。回傳的代碼為</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002002" xml:space="preserve">
+    <value>狀態代碼 0xF0002002\n\n已新增指定的角色到下載清單中。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002003" xml:space="preserve">
+    <value>狀態代碼 0xF0002003\n\n沒有新增角色到下載清單。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002004" xml:space="preserve">
+    <value>狀態代碼 0xF0002004\n\n已從下載清單中移除指定的角色。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002005" xml:space="preserve">
+    <value>狀態代碼 0xF0002005\n\n沒有從下載清單中移除任何角色。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002006" xml:space="preserve">
+    <value>狀態代碼 0xF0002006\n\n已將搜尋清單中的所有結果新增至下載清單。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002007" xml:space="preserve">
+    <value>狀態代碼 0xF0002007\n\n沒有新增任何角色到下載清單中。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002008" xml:space="preserve">
+    <value>狀態代碼 0xF0002008\n\n已根據指定的角色ID將角色新增至下載清單。角色ID: </value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0002009" xml:space="preserve">
+    <value>狀態代碼 0xF0002009\n\n未根據提供的角色ID將角色新增至下載清單。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200A_1" xml:space="preserve">
+    <value>狀態代碼 0xF000200A\n\n尋找角色。關鍵字:</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200A_2" xml:space="preserve">
+    <value>，星級:</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200A_3" xml:space="preserve">
+    <value>，角色系代碼:</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200B" xml:space="preserve">
+    <value>狀態代碼 0xF000200B\n\n角色全部下載完成。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200C" xml:space="preserve">
+    <value>狀態代碼 0xF000200C\n\n已取消角色下載作業。未完成下載的圖片將刪除，已下載完畢的圖片將會續留。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200D" xml:space="preserve">
+    <value>狀態代碼 0xF000200D\n\n無網際網路連線，已取消圖片下載作業。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200E" xml:space="preserve">
+    <value>狀態代碼 0xF000200E\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF000200F" xml:space="preserve">
+    <value>狀態代碼 0xF000200F\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="S_0xF0027002" xml:space="preserve">
+    <value>狀態代碼 0xF0027002\n\n已完成附件清除作業。</value>
+    <comment>PConfig</comment>
+  </data>
 </root>

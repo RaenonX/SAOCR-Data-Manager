@@ -12,7 +12,7 @@ namespace SAOCR_Data_Manager.Module
     class WeaponData
     {
         public WInfo Info;
-        public WSharp Sharp;
+        public WSharp Param;
         public bool CreateSucceed;
         WData Data;
 
@@ -28,7 +28,7 @@ namespace SAOCR_Data_Manager.Module
                 WData.Data.Param = DataAPI.Search(WData.ID, WData.DTs.Source, WData.TitleP.Start[(int)DataTitle.WeaponParams], WData.TitleP.End[(int)DataTitle.WeaponParams], (int)EWeaponParamSecCol.ID);
 
                 Info = new WInfo(WData);
-                Sharp = new WSharp(WData);
+                Param = new WSharp(WData);
 
                 if (WData.Data.Name != null && WData.Data.ID != null && WData.Data.Param != null)
                 {
@@ -137,7 +137,7 @@ namespace SAOCR_Data_Manager.Module
                 }
             }
 
-            public int[] GetParamArray(ESharpness ESP)
+            public int[] GetArray(ESharpness ESP)
             {
                 try
                 {

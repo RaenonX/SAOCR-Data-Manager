@@ -14,6 +14,7 @@ using Microsoft.VisualBasic.FileIO;
 using System.Collections;
 using System.IO;
 using SAOCR_Data_Manager.Resources.Message;
+using SAOCR_Data_Manager.Resources.Forms;
 
 namespace SAOCR_Data_Manager
 {
@@ -60,6 +61,8 @@ namespace SAOCR_Data_Manager
                     item.ButtonEnabled = true;
                 }
             }
+
+            ST_ReLoad_Click(sender, e);
         }
 
         private void ToCsvTable_Click(object sender, EventArgs e)
@@ -81,9 +84,20 @@ namespace SAOCR_Data_Manager
         {
             PageSwitch(P_CharacterData);
         }
+
         private void ToStatistics_Click(object sender, EventArgs e)
         {
             PageSwitch(P_Statistics);
+        }
+
+        private void ToDownload_Click(object sender, EventArgs e)
+        {
+            PageSwitch(P_Download);
+        }
+
+        private void ToEXPCalc_Click(object sender, EventArgs e)
+        {
+            PageSwitch(P_EXPCalc);
         }
 
         private void ToEquipmentData_Click(object sender, EventArgs e)
@@ -95,35 +109,45 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                if (Announce.Strings[Announce.Counter].Length >= 5)
+                if (Announce.Strings.Count > 0)
                 {
-                    if (Announce.Strings[Announce.Counter].Substring(0, 5) == Const.AnnouncementKeyword.IMPORTANT)
+                    if (Announce.Strings[Announce.Counter].Length >= 5)
                     {
-                        HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Red);
-                        HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter].Replace(Const.AnnouncementKeyword.IMPORTANT, "");
-                    } else if (Announce.Strings[Announce.Counter].Substring(0, 5) == Const.AnnouncementKeyword.WARNING)
-                    {
-                        HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Yellow);
-                        HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter].Replace(Const.AnnouncementKeyword.WARNING, "");
-                    } else if (Announce.Strings[Announce.Counter].Substring(0, 5) == Const.AnnouncementKeyword.INFO)
-                    {
-                        HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Blue);
-                        HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter].Replace(Const.AnnouncementKeyword.INFO, "");
+                        if (Announce.Strings[Announce.Counter].Substring(0, 5) == Const.AnnouncementKeyword.IMPORTANT)
+                        {
+                            HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Red);
+                            HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter].Replace(Const.AnnouncementKeyword.IMPORTANT, "");
+                        }
+                        else if (Announce.Strings[Announce.Counter].Substring(0, 5) == Const.AnnouncementKeyword.WARNING)
+                        {
+                            HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Yellow);
+                            HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter].Replace(Const.AnnouncementKeyword.WARNING, "");
+                        }
+                        else if (Announce.Strings[Announce.Counter].Substring(0, 5) == Const.AnnouncementKeyword.INFO)
+                        {
+                            HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Blue);
+                            HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter].Replace(Const.AnnouncementKeyword.INFO, "");
+                        }
+                        else
+                        {
+                            HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Grey70);
+                            HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter];
+                        }
                     }
                     else
                     {
-                        HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Grey70);
                         HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter];
+                    }
+
+                    Announce.Counter++;
+                    if (Announce.Counter >= Announce.Max)
+                    {
+                        Announce.Counter = 0;
                     }
                 } else
                 {
-                    HM_Announcement.MarqueeText = Announce.Strings[Announce.Counter];
-                }
-                
-                Announce.Counter++;
-                if (Announce.Counter >= Announce.Max)
-                {
-                    Announce.Counter = 0;
+                    HM_Announcement.BackColor = Color.FromArgb((int)EBackColorAlpha.Red);
+                    HM_Announcement.MarqueeText = RHome.Message_NoAnnouncement;
                 }
             }
             catch (Exception ex)

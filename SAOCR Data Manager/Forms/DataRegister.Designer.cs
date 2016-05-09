@@ -30,6 +30,10 @@
         {
             this.Title = new System.Windows.Forms.Label();
             this.Border = new System.Windows.Forms.Panel();
+            this.PathText = new System.Windows.Forms.Label();
+            this.Path = new System.Windows.Forms.Label();
+            this.RegTargetText = new System.Windows.Forms.Label();
+            this.RegTarget = new System.Windows.Forms.Label();
             this.Box_Info = new System.Windows.Forms.GroupBox();
             this.ReleaseDate = new System.Windows.Forms.DateTimePicker();
             this.GetMethod = new System.Windows.Forms.TextBox();
@@ -43,10 +47,6 @@
             this.CharaID = new System.Windows.Forms.Label();
             this.FolkName1 = new System.Windows.Forms.TextBox();
             this.FolkNameText = new System.Windows.Forms.Label();
-            this.PathText = new System.Windows.Forms.Label();
-            this.Path = new System.Windows.Forms.Label();
-            this.RegTargetText = new System.Windows.Forms.Label();
-            this.RegTarget = new System.Windows.Forms.Label();
             this.Box_BA = new System.Windows.Forms.GroupBox();
             this.BAJPNameText = new System.Windows.Forms.Label();
             this.BAJPName = new System.Windows.Forms.Label();
@@ -88,9 +88,9 @@
             this.TargetCHText = new System.Windows.Forms.Label();
             this.TargetJPText = new System.Windows.Forms.Label();
             this.TargetJP = new System.Windows.Forms.Label();
-            this.InfoRegister = new SAOCR_Data_Manager.Button_SE_();
             this.Sys_Close = new SAOCR_Data_Manager.Button_SE_();
             this.Sys_Min = new SAOCR_Data_Manager.Button_SE_();
+            this.InfoRegister = new SAOCR_Data_Manager.Button_SE_();
             this.BARegister = new SAOCR_Data_Manager.Button_SE_();
             this.LSRegister = new SAOCR_Data_Manager.Button_SE_();
             this.Border.SuspendLayout();
@@ -119,13 +119,55 @@
             this.Border.Controls.Add(this.Title);
             this.Border.Controls.Add(this.Sys_Close);
             this.Border.Controls.Add(this.Sys_Min);
-            this.Border.Controls.Add(this.Box_LS);
             this.Border.Controls.Add(this.Box_Info);
             this.Border.Controls.Add(this.Box_BA);
+            this.Border.Controls.Add(this.Box_LS);
             this.Border.Location = new System.Drawing.Point(0, 0);
             this.Border.Name = "Border";
             this.Border.Size = new System.Drawing.Size(640, 400);
             this.Border.TabIndex = 12;
+            // 
+            // PathText
+            // 
+            this.PathText.Location = new System.Drawing.Point(158, 31);
+            this.PathText.Margin = new System.Windows.Forms.Padding(3);
+            this.PathText.Name = "PathText";
+            this.PathText.Size = new System.Drawing.Size(65, 26);
+            this.PathText.TabIndex = 16;
+            this.PathText.Text = "檔案路徑";
+            this.PathText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Path
+            // 
+            this.Path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Path.Font = new System.Drawing.Font("微軟正黑體", 11F);
+            this.Path.Location = new System.Drawing.Point(229, 31);
+            this.Path.Margin = new System.Windows.Forms.Padding(3);
+            this.Path.Name = "Path";
+            this.Path.Size = new System.Drawing.Size(399, 26);
+            this.Path.TabIndex = 15;
+            this.Path.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RegTargetText
+            // 
+            this.RegTargetText.Location = new System.Drawing.Point(12, 31);
+            this.RegTargetText.Margin = new System.Windows.Forms.Padding(3);
+            this.RegTargetText.Name = "RegTargetText";
+            this.RegTargetText.Size = new System.Drawing.Size(65, 26);
+            this.RegTargetText.TabIndex = 13;
+            this.RegTargetText.Text = "更改模式";
+            this.RegTargetText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // RegTarget
+            // 
+            this.RegTarget.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RegTarget.Font = new System.Drawing.Font("微軟正黑體", 11F);
+            this.RegTarget.Location = new System.Drawing.Point(83, 31);
+            this.RegTarget.Margin = new System.Windows.Forms.Padding(3);
+            this.RegTarget.Name = "RegTarget";
+            this.RegTarget.Size = new System.Drawing.Size(69, 26);
+            this.RegTarget.TabIndex = 12;
+            this.RegTarget.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Box_Info
             // 
@@ -158,14 +200,14 @@
             this.ReleaseDate.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.ReleaseDate.CalendarTitleForeColor = System.Drawing.Color.White;
             this.ReleaseDate.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.ReleaseDate.CustomFormat = "yyyy年MM月dd日 (五)";
+            this.ReleaseDate.CustomFormat = "yyyy年MM月dd日";
             this.ReleaseDate.Font = new System.Drawing.Font("微軟正黑體", 10.5F);
             this.ReleaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ReleaseDate.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.ReleaseDate.Location = new System.Drawing.Point(144, 86);
             this.ReleaseDate.Name = "ReleaseDate";
             this.ReleaseDate.Size = new System.Drawing.Size(176, 26);
-            this.ReleaseDate.TabIndex = 38;
+            this.ReleaseDate.TabIndex = 33;
             // 
             // GetMethod
             // 
@@ -177,7 +219,7 @@
             this.GetMethod.Location = new System.Drawing.Point(406, 86);
             this.GetMethod.Name = "GetMethod";
             this.GetMethod.Size = new System.Drawing.Size(105, 26);
-            this.GetMethod.TabIndex = 36;
+            this.GetMethod.TabIndex = 34;
             // 
             // GetMethodText
             // 
@@ -278,7 +320,7 @@
             this.FolkName1.Location = new System.Drawing.Point(66, 54);
             this.FolkName1.Name = "FolkName1";
             this.FolkName1.Size = new System.Drawing.Size(104, 26);
-            this.FolkName1.TabIndex = 19;
+            this.FolkName1.TabIndex = 28;
             // 
             // FolkNameText
             // 
@@ -289,48 +331,6 @@
             this.FolkNameText.TabIndex = 16;
             this.FolkNameText.Text = "俗名";
             this.FolkNameText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PathText
-            // 
-            this.PathText.Location = new System.Drawing.Point(158, 31);
-            this.PathText.Margin = new System.Windows.Forms.Padding(3);
-            this.PathText.Name = "PathText";
-            this.PathText.Size = new System.Drawing.Size(65, 26);
-            this.PathText.TabIndex = 16;
-            this.PathText.Text = "檔案路徑";
-            this.PathText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Path
-            // 
-            this.Path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Path.Font = new System.Drawing.Font("微軟正黑體", 11F);
-            this.Path.Location = new System.Drawing.Point(229, 31);
-            this.Path.Margin = new System.Windows.Forms.Padding(3);
-            this.Path.Name = "Path";
-            this.Path.Size = new System.Drawing.Size(399, 26);
-            this.Path.TabIndex = 15;
-            this.Path.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // RegTargetText
-            // 
-            this.RegTargetText.Location = new System.Drawing.Point(12, 31);
-            this.RegTargetText.Margin = new System.Windows.Forms.Padding(3);
-            this.RegTargetText.Name = "RegTargetText";
-            this.RegTargetText.Size = new System.Drawing.Size(65, 26);
-            this.RegTargetText.TabIndex = 13;
-            this.RegTargetText.Text = "更改模式";
-            this.RegTargetText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // RegTarget
-            // 
-            this.RegTarget.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RegTarget.Font = new System.Drawing.Font("微軟正黑體", 11F);
-            this.RegTarget.Location = new System.Drawing.Point(83, 31);
-            this.RegTarget.Margin = new System.Windows.Forms.Padding(3);
-            this.RegTarget.Name = "RegTarget";
-            this.RegTarget.Size = new System.Drawing.Size(69, 26);
-            this.RegTarget.TabIndex = 12;
-            this.RegTarget.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Box_BA
             // 
@@ -805,26 +805,6 @@
             this.TargetJP.TabIndex = 15;
             this.TargetJP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // InfoRegister
-            // 
-            this.InfoRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.InfoRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.InfoRegister.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.InfoRegister.ButtonBackgroundImage = null;
-            this.InfoRegister.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.InfoRegister.ButtonColor = System.Drawing.Color.White;
-            this.InfoRegister.ButtonEnabled = true;
-            this.InfoRegister.ButtonImage = null;
-            this.InfoRegister.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.InfoRegister.ButtonText = "";
-            this.InfoRegister.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.InfoRegister.ForeColor = System.Drawing.Color.White;
-            this.InfoRegister.Location = new System.Drawing.Point(550, 292);
-            this.InfoRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.InfoRegister.Name = "InfoRegister";
-            this.InfoRegister.Size = new System.Drawing.Size(60, 24);
-            this.InfoRegister.TabIndex = 26;
-            // 
             // Sys_Close
             // 
             this.Sys_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -864,6 +844,26 @@
             this.Sys_Min.Name = "Sys_Min";
             this.Sys_Min.Size = new System.Drawing.Size(50, 24);
             this.Sys_Min.TabIndex = 11;
+            // 
+            // InfoRegister
+            // 
+            this.InfoRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.InfoRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.InfoRegister.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.InfoRegister.ButtonBackgroundImage = null;
+            this.InfoRegister.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.InfoRegister.ButtonColor = System.Drawing.Color.White;
+            this.InfoRegister.ButtonEnabled = true;
+            this.InfoRegister.ButtonImage = null;
+            this.InfoRegister.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.InfoRegister.ButtonText = "";
+            this.InfoRegister.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.InfoRegister.ForeColor = System.Drawing.Color.White;
+            this.InfoRegister.Location = new System.Drawing.Point(550, 292);
+            this.InfoRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.InfoRegister.Name = "InfoRegister";
+            this.InfoRegister.Size = new System.Drawing.Size(60, 24);
+            this.InfoRegister.TabIndex = 26;
             // 
             // BARegister
             // 

@@ -20,7 +20,7 @@ namespace SAOCR_Data_Manager
         public CBA BA;
         public CLS LS;
         SData data;
-        CData CDT;
+        internal CData CDT;
 
         public CharaData(SData Data)
         {
@@ -58,7 +58,7 @@ namespace SAOCR_Data_Manager
                         CDT.Param.Awaked = CDT.Param.Unawaked;
                     }
                 }
-                CDT.Info = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID);
+                CDT.Info = DataAPI.Search(Data.CharaID, Data.DTs.Source, Data.TitleP.Start[(int)DataTitle.CharacterNameAndCV], Data.TitleP.End[(int)DataTitle.CharacterNameAndCV], (int)ENameSecCol.ID, true);
                 CDT.CharaDim = DataAPI.Search(Data.CharaID, Data.DTs.CharaDim, 0, (int)ECharaDimCode.ID);
                 CDT.CharaSeries = DataAPI.Search(Data.CharaID.Substring(1, 3), Data.DTs.CharaSeries, 0, (int)ECharaSeriesCode.CODE);
 

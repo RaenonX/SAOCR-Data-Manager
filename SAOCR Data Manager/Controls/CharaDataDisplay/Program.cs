@@ -90,10 +90,14 @@ namespace SAOCR_Data_Manager.Forms
             Panel.Size = new Size(Size.Width - 1, Size.Height - CharacterName.Size.Height - 1);
         }
 
-        private void HTML_ButtonClick(object sender, EventArgs e)
+        private void HTML_Generate(object sender, EventArgs e)
         {
             try
             {
+                if (CDT == null)
+                {
+                    return;
+                }
                 if (!HTMLMade)
                 {
                     ToWrite = "";
@@ -104,6 +108,27 @@ namespace SAOCR_Data_Manager.Forms
                     Data.AddRange(BasicInfo.OutputForHTML());
                     Data.AddRange(BA.OutputForHTML());
                     Data.AddRange(LS.OutputForHTML());
+
+                    MessageDialog MD = new MessageDialog(RCDDisplay.Message_KeyInRecommendTypeCode, RCDDisplay.Message_RecommendTypeTip, MessageBoxButtonStyle.ReturnValue);
+                    if (MD.ShowDialog() == DialogResult.OK)
+                    {
+                        string Return = MD.ReturnValue;
+                        EParamType EPT = EParamType.Null;
+
+                        if (!Extent.isEmptyString(Return) && Convert.ToInt32(Return) >= 0 && Convert.ToInt32(Return) <= 3)
+                        {
+                            EPT = (EParamType)Convert.ToInt32(Return);
+                        }
+                        
+                        Data.Add(SFColorTrans.CharaTypeT(EPT));
+                        Data.Add(EnumTranslator.CharaTypeT(EPT));
+                    } else
+                    {
+                        StatusLog.Log(RCDDisplay.Log_HTMLOutputAbort + CDT.Data.CharaID);
+                        new MessageDialog(RCDDisplay.Message_HTMLOutputCancelled + CDT.Data.CharaID).ShowDialog();
+                        return;
+                    }
+
                     Data.AddRange(Param.OutputForHTML());
                     DataAPI.LoadCSV(ref Template, Const.Path.CHARA_HTML_TEMPLATE);
 
@@ -138,10 +163,13 @@ namespace SAOCR_Data_Manager.Forms
         {
             try
             {
-                if (!Extent.isEmptyString(CDT.Data.CharaID))
+                if (CDT != null)
                 {
-                    Clipboard.SetText(CharacterName.LText);
-                    StatusLog.Log(RCDDisplay.Log_NameCopied + CDT.Data.CharaID);
+                    if (!Extent.isEmptyString(CDT.Data.CharaID))
+                    {
+                        Clipboard.SetText(CharacterName.LText);
+                        StatusLog.Log(RCDDisplay.Log_NameCopied + CDT.Data.CharaID);
+                    }
                 }
             }
             catch (Exception ex)

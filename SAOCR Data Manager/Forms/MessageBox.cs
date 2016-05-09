@@ -22,7 +22,9 @@ namespace SAOCR_Data_Manager
         WindowPosition WndPos = new WindowPosition();
         Downloader DL;
         bool restart;
+        public string ReturnValue;
 
+        #region Init
         public MessageDialog(string msg, string caption, MessageBoxButtonStyle Button, float FontSize)
         {
             try
@@ -140,6 +142,7 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+        #endregion
 
         public void Initialize(string msg, string exMsg, string caption, MessageBoxButtonStyle Button, float FontSize, Downloader DLer)
         {
@@ -147,7 +150,7 @@ namespace SAOCR_Data_Manager
             {
                 InitializeComponent();
 
-                if (Button == MessageBoxButtonStyle.Downlaoder)
+                if (Button == MessageBoxButtonStyle.Downloader)
                 {
                     SpeedText.Text = RMessageBox.Layout_Speed;
                     FileSizeText.Text = RMessageBox.Layout_Size;
@@ -160,7 +163,11 @@ namespace SAOCR_Data_Manager
                     ExMessage.Visible = true;
                     ExMessage.Marquee();
                     ExMessage.MarqueeText = exMsg;
-                    Message.Size = new Size(560, 103);
+                    Message.Size = new Size(560, 115);
+                }
+                if(Button == MessageBoxButtonStyle.ReturnValue)
+                {
+                    ReturnText.Visible = true;
                 }
 
                 InitializeEventHandler();
@@ -206,6 +213,7 @@ namespace SAOCR_Data_Manager
             }
         }
 
+        #region Downloader Section
         private void DL_InfoUpdated(object sender, EventArgs e)
         {
             try
@@ -222,7 +230,7 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
-
+        
         private void DL_RefreshInfo(object sender, EventArgs e)
         {
             try
@@ -288,6 +296,7 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+        #endregion
 
         public MessageBoxButtonStyle ButtonStyleSelector(MessageBoxButtonStyle Button)
         {
@@ -379,7 +388,7 @@ namespace SAOCR_Data_Manager
 
                         return MessageBoxButtonStyle.RetryCancel;
 
-                    case MessageBoxButtonStyle.Downlaoder:
+                    case MessageBoxButtonStyle.Downloader:
                         Button_Left.Visible = true;
                         Button_Center.Visible = false;
                         Button_Right.Visible = true;
@@ -397,11 +406,28 @@ namespace SAOCR_Data_Manager
                         Button_Left.Enabled = false;
                         Button_Right.Enabled = true;
 
-                        return MessageBoxButtonStyle.Downlaoder;
+                        return MessageBoxButtonStyle.Downloader;
+
+                    case MessageBoxButtonStyle.ReturnValue:
+                        Button_Left.Visible = false;
+                        Button_Center.Visible = false;
+                        Button_Right.Visible = true;
+                        
+                        Button_Right.ButtonText = RMessageBox.Cmd_Input;
+                        
+                        Button_Right.ButtonClick += new EventHandler(ResReturn);
+                        Sys_Close.ButtonClick += ResCancel;
+                        ReturnText.KeyPress += ReturnText_KeyPress;
+                        
+                        CancelButton = Sys_Close.Btn;
+
+                        ActiveControl = ReturnText;
+
+                        return MessageBoxButtonStyle.ReturnValue;
 
                     default:
                         SystemAPI.Error(RError.E_0x0002300C);
-                        throw new ArgumentException();
+                        throw new ArgumentException(RError.E_0x0002300C);
                 }
             }
             catch (Exception e)
@@ -410,7 +436,15 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
-        
+
+        private void ReturnText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                ResReturn(sender, e);
+            }
+        }
+
         private void ResOK(object sender, EventArgs e)
         {
             try
@@ -472,6 +506,21 @@ namespace SAOCR_Data_Manager
             catch (Exception ex)
             {
                 SystemAPI.Error(RError.E_0x00023011, ex);
+                throw;
+            }
+        }
+
+        private void ResReturn(object sender, EventArgs e)
+        {
+            try
+            {
+                ReturnValue = ReturnText.Text;
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00023018, ex);
                 throw;
             }
         }

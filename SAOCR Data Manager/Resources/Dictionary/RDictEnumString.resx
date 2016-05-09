@@ -372,4 +372,16 @@
   <data name="DREG_Info" xml:space="preserve">
     <value>角色資料</value>
   </data>
+  <data name="CT_Null" xml:space="preserve">
+    <value>(不明)</value>
+  </data>
+  <data name="AM_AlwaysDL" xml:space="preserve">
+    <value>總是下載</value>
+  </data>
+  <data name="AM_DelAfterClose" xml:space="preserve">
+    <value>關閉後刪除</value>
+  </data>
+  <data name="AM_DLonce" xml:space="preserve">
+    <value>只下載一次</value>
+  </data>
 </root>

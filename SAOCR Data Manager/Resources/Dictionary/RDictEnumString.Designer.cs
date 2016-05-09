@@ -39,7 +39,7 @@ namespace SAOCR_Data_Manager.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.RDictEnumString", typeof(RDictEnumString).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SAOCR_Data_Manager.Resources.Dictionary.RDictEnumString", typeof(RDictEnumString).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,33 @@ namespace SAOCR_Data_Manager.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 總是下載 的當地語系化字串。
+        /// </summary>
+        internal static string AM_AlwaysDL {
+            get {
+                return ResourceManager.GetString("AM_AlwaysDL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 關閉後刪除 的當地語系化字串。
+        /// </summary>
+        internal static string AM_DelAfterClose {
+            get {
+                return ResourceManager.GetString("AM_DelAfterClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 只下載一次 的當地語系化字串。
+        /// </summary>
+        internal static string AM_DLonce {
+            get {
+                return ResourceManager.GetString("AM_DLonce", resourceCulture);
             }
         }
         
@@ -228,6 +255,15 @@ namespace SAOCR_Data_Manager.Resources {
         internal static string CT_Mebius {
             get {
                 return ResourceManager.GetString("CT_Mebius", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 (不明) 的當地語系化字串。
+        /// </summary>
+        internal static string CT_Null {
+            get {
+                return ResourceManager.GetString("CT_Null", resourceCulture);
             }
         }
         

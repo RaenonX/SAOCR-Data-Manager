@@ -138,10 +138,19 @@
   <data name="Log_NameCopyAborted" xml:space="preserve">
     <value>角色名稱複製中斷。角色ID:</value>
   </data>
+  <data name="Message_HTMLOutputCancelled" xml:space="preserve">
+    <value>已終止HTML輸出作業。角色ID: </value>
+  </data>
   <data name="Message_HTMLOutputComplete1" xml:space="preserve">
     <value>HTML輸出完成。角色ID: </value>
   </data>
   <data name="Message_HTMLOutputComplete2" xml:space="preserve">
     <value>，輸出資料已經複製到剪貼簿了。</value>
+  </data>
+  <data name="Message_KeyInRecommendTypeCode" xml:space="preserve">
+    <value>請輸入建議型態的代碼。</value>
+  </data>
+  <data name="Message_RecommendTypeTip" xml:space="preserve">
+    <value>0為平均型，1為力量型，2為防禦型，3為魔法型。</value>
   </data>
 </root>

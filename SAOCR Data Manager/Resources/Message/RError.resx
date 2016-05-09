@@ -279,7 +279,7 @@
     <comment>CharaData.CBA.ctor</comment>
   </data>
   <data name="E_0x00003001" xml:space="preserve">
-    <value>錯誤代碼 0x00003001\n\n</value>
+    <value>錯誤代碼 0x00003001\n\n轉譯附件管理模式時發生錯誤。</value>
     <comment>EnumTranslator</comment>
   </data>
   <data name="E_0x00003002" xml:space="preserve">
@@ -599,7 +599,7 @@
     <comment>BADisplay</comment>
   </data>
   <data name="E_0x00011001" xml:space="preserve">
-    <value>錯誤代碼 0x00011001\n\n搜尋關鍵字時發生錯誤。</value>
+    <value>錯誤代碼 0x00011001\n\n</value>
     <comment>PCharacterData</comment>
   </data>
   <data name="E_0x00011002" xml:space="preserve">
@@ -1187,7 +1187,7 @@
     <comment>MessageBox</comment>
   </data>
   <data name="E_0x00023018" xml:space="preserve">
-    <value>錯誤代碼 0x00023018\n\n</value>
+    <value>錯誤代碼 0x00023018\n\n回傳輸入的值時發生錯誤。</value>
     <comment>MessageBox</comment>
   </data>
   <data name="E_0x00023019" xml:space="preserve">
@@ -1809,5 +1809,133 @@
   <data name="E_0x0000300F" xml:space="preserve">
     <value>錯誤代碼 0x0000300F\n\n</value>
     <comment>EnumTranslator</comment>
+  </data>
+  <data name="E_0x00002000" xml:space="preserve">
+    <value>錯誤代碼 0x00002000\n\n新增角色至下載清單時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002001" xml:space="preserve">
+    <value>錯誤代碼 0x00002001\n\n將角色從下載清單移除時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002002" xml:space="preserve">
+    <value>錯誤代碼 0x00002002\n\n將提供的關鍵字、星級、角色系...等條件所找到的結果全部新增至下載清單時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002003" xml:space="preserve">
+    <value>錯誤代碼 0x00002003\n\n根據角色ID直接新增角色至下載清單時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002004" xml:space="preserve">
+    <value>錯誤代碼 0x00002004\n\n根據關鍵字搜尋角色時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002005" xml:space="preserve">
+    <value>錯誤代碼 0x00002005\n\n產生角色系代碼表時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002006" xml:space="preserve">
+    <value>錯誤代碼 0x00002006\n\n清除所有下載清單中的角色時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002007" xml:space="preserve">
+    <value>錯誤代碼 0x00002007\n\n利用雙擊角色將角色新增至下載清單時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002008" xml:space="preserve">
+    <value>錯誤代碼 0x00002008\n\n開始下載角色圖片時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002009" xml:space="preserve">
+    <value>錯誤代碼 0x00002009\n\n刷新角色圖片數量時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000200A" xml:space="preserve">
+    <value>錯誤代碼 0x0000200A\n\n刷新圖片下載狀態時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000200B" xml:space="preserve">
+    <value>錯誤代碼 0x0000200B\n\n執行下載完成後的動作時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000200C" xml:space="preserve">
+    <value>錯誤代碼 0x0000200C\n\n取消下載時發生錯誤，</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000200D" xml:space="preserve">
+    <value>錯誤代碼 0x0000200D\n\n收到更新的資訊並輸出時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000200E" xml:space="preserve">
+    <value>錯誤代碼 0x0000200E\n\n建立下載器時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000200F" xml:space="preserve">
+    <value>錯誤代碼 0x0000200F\n\n執行取消下載的後續作業時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00004000" xml:space="preserve">
+    <value>錯誤代碼 0x00004000\n\n搜尋關鍵字時發生錯誤。</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004001" xml:space="preserve">
+    <value>錯誤代碼 0x00004001\n\n產生角色系代碼表的視窗時發生錯誤。</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004002" xml:space="preserve">
+    <value>錯誤代碼 0x00004002\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004003" xml:space="preserve">
+    <value>錯誤代碼 0x00004003\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004004" xml:space="preserve">
+    <value>錯誤代碼 0x00004004\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004005" xml:space="preserve">
+    <value>錯誤代碼 0x00004005\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004006" xml:space="preserve">
+    <value>錯誤代碼 0x00004006\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004007" xml:space="preserve">
+    <value>錯誤代碼 0x00004007\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004008" xml:space="preserve">
+    <value>錯誤代碼 0x00004008\n\n強制設定大小時發生錯誤。</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x00004009" xml:space="preserve">
+    <value>錯誤代碼 0x00004009\n\n初始化介面文字時發生錯誤。</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x0000400A" xml:space="preserve">
+    <value>錯誤代碼 0x0000400A\n\n初始化介面控件的事件時發生錯誤。</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x0000400B" xml:space="preserve">
+    <value>錯誤代碼 0x0000400B\n\n初始化結果清單的欄位時發生錯誤。</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x0000400C" xml:space="preserve">
+    <value>錯誤代碼 0x0000400C\n\n初始化角色搜尋控制項時發生錯誤。</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x0000400D" xml:space="preserve">
+    <value>錯誤代碼 0x0000400D\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x0000400E" xml:space="preserve">
+    <value>錯誤代碼 0x0000400E\n\n</value>
+    <comment>CharacterSearcher</comment>
+  </data>
+  <data name="E_0x0000400F" xml:space="preserve">
+    <value>錯誤代碼 0x0000400F\n\n</value>
+    <comment>CharacterSearcher</comment>
   </data>
 </root>
