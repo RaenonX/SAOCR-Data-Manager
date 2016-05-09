@@ -1,0 +1,71 @@
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\SAOCR Data Manager.exe.config
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\Interop.WMPLib.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\AxInterop.WMPLib.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR Data Manager.csproj.ResolveComReference.cache
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\SAOCR Data Manager.exe
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\SAOCR Data Manager.pdb
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Microsoft.VisualBasic.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Button_SE_.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.MarqueeableLabel.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR Data Manager.csproj.GenerateResource.Cache
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR Data Manager.exe
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR Data Manager.pdb
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.BaDisplay.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Properties\LSScoring.Designer.cs
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Properties\LSScoring.settings
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Properties\AppConfig.settings
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Properties\UserConfig.settings
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Controls.Initialize_Properties.BasicInfo.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Controls.BreezeLabel.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Forms.CharaDataDisplay.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.ParamDisplay.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.LsDisplay.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Forms.DataViewF.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Forms.PictureB.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Properties.Resources.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RBasicInfo.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RCDDisplay.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RDataView.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RPicture.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RCharaData.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Message.RWarning.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.MessageDialog.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RLsDisplay.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RBaDisplay.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RParamI.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.FMain.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RCsvTable.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RConfig.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RHome.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.RMain.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Message.RError.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RMessageBox.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Message.RStatus.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.UI_WMPOnly.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Module.RDownloader.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Interop.WMPLib.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\AxInterop.WMPLib.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Module.WeaponStatus.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RStatistics.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Forms.DataRegister.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RDataReg.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RDownload.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Dictionary.RDictColor.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Dictionary.RDictEnumString.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Assembly-CSharp-firstpass.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Assembly-CSharp.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\bouncywp71.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\FiveRocks.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\HOTween.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\LibUniSWF.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\LibUniSWFInternal.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Mono.Security.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Newtonsoft.Json.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\P31RestKit.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\UniExtensions.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\UnityEngine.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\UnityEngine.UI.dll
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RExpCalc.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Controls.CharacterSearcher.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RCharaSearcher.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR Data Manager.csprojResolveAssemblyReference.cache

@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Chara_x0020_Dimensions>
+    <Stack>1</Stack>
+    <C1>0</C1>
+    <C2>不明</C2>
+    <C3>1800</C3>
+    <C4>1</C4>
+    <C5>1</C5>
+    <C6 />
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>2</Stack>
+    <C1>31520160</C1>
+    <C2>活動</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>6</C5>
+    <C6>睡槍</C6>
+    <C7>蘿亞AA</C7>
+    <C8>睡眠狙擊手</C8>
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>3</Stack>
+    <C1>10010130</C1>
+    <C2>石抽</C2>
+    <C3>2014</C3>
+    <C4>11</C4>
+    <C5>28</C5>
+    <C6 />
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>4</Stack>
+    <C1>10010240</C1>
+    <C2>石抽</C2>
+    <C3>2014</C3>
+    <C4>11</C4>
+    <C5>28</C5>
+    <C6>單獨行動</C6>
+    <C7>單獨風桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>5</Stack>
+    <C1>10010350</C1>
+    <C2>石抽</C2>
+    <C3>2014</C3>
+    <C4>11</C4>
+    <C5>28</C5>
+    <C6>孤獨攻略組</C6>
+    <C7>攻略組風桐</C7>
+    <C8>風補桐</C8>
+    <C9>孤獨桐</C9>
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>6</Stack>
+    <C1>10010450</C1>
+    <C2>友抽</C2>
+    <C3>2015</C3>
+    <C4>1</C4>
+    <C5>15</C5>
+    <C6>月下黑劍士</C6>
+    <C7>友抽桐人</C7>
+    <C8>友抽水桐</C8>
+    <C9>月下桐</C9>
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>7</Stack>
+    <C1>10010550</C1>
+    <C2>石抽</C2>
+    <C3>2014</C3>
+    <C4>11</C4>
+    <C5>28</C5>
+    <C6>黑之劍士</C6>
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>8</Stack>
+    <C1>10010650</C1>
+    <C2>石抽</C2>
+    <C3>2014</C3>
+    <C4>11</C4>
+    <C5>28</C5>
+    <C6>黑之劍士</C6>
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>9</Stack>
+    <C1>10010750</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>4</C4>
+    <C5>2</C5>
+    <C6>漆黑劍士</C6>
+    <C7>漆黑桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>10</Stack>
+    <C1>10010850</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>5</C4>
+    <C5>25</C5>
+    <C6>希望道標</C6>
+    <C7>道標桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>11</Stack>
+    <C1>10010950</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>3</C4>
+    <C5>15</C5>
+    <C6>赤光劍士</C6>
+    <C7>赤光桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>12</Stack>
+    <C1>10011050</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>7</C4>
+    <C5>10</C5>
+    <C6>緋閃交叉</C6>
+    <C7>緋閃桐</C7>
+    <C8>緋閃</C8>
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>13</Stack>
+    <C1>10011130</C1>
+    <C2>序號</C2>
+    <C3>2015</C3>
+    <C4>7</C4>
+    <C5>30</C5>
+    <C6>漆黑之刃</C6>
+    <C7>序號桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>14</Stack>
+    <C1>10011260</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>9</C4>
+    <C5>18</C5>
+    <C6>未來桐</C6>
+    <C7>未來火補桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>15</Stack>
+    <C1>10011360</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>9</C4>
+    <C5>1</C5>
+    <C6>不屈之誓</C6>
+    <C7>不屈桐</C7>
+    <C8>SAOabec桐</C8>
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>16</Stack>
+    <C1>10011460</C1>
+    <C2>石抽</C2>
+    <C3>2016</C3>
+    <C4>1</C4>
+    <C5>12</C5>
+    <C6>新初期桐</C6>
+    <C7>爆擊桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>17</Stack>
+    <C1>10011550</C1>
+    <C2>活動</C2>
+    <C3>2016</C3>
+    <C4>3</C4>
+    <C5>9</C5>
+    <C6>白紳士桐</C6>
+    <C7>獻花桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>18</Stack>
+    <C1>10011660</C1>
+    <C2>石抽</C2>
+    <C3>2016</C3>
+    <C4>3</C4>
+    <C5>11</C5>
+    <C6>命之誓約</C6>
+    <C7>誓約桐</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>19</Stack>
+    <C1>11081160</C1>
+    <C2>限期</C2>
+    <C3>2015</C3>
+    <C4>3</C4>
+    <C5>3</C5>
+    <C6>櫻花斯朵</C6>
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>20</Stack>
+    <C1>11710150</C1>
+    <C2>不明</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>30</C5>
+    <C6>奇歐</C6>
+    <C7>Wild Drive</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>21</Stack>
+    <C1>20661660</C1>
+    <C2>石抽</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>11</C5>
+    <C6>清新有紀</C6>
+    <C7>BoB有紀</C7>
+    <C8>STR上升有紀</C8>
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>22</Stack>
+    <C1>20061060</C1>
+    <C2>石抽</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>11</C5>
+    <C6>仔貓莉茲</C6>
+    <C7>BoB莉茲</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>23</Stack>
+    <C1>20021760</C1>
+    <C2>不明</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>30</C5>
+    <C6>夜空亞絲娜</C6>
+    <C7>黑衣亞絲娜</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>24</Stack>
+    <C1>20520760</C1>
+    <C2>限期</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>18</C5>
+    <C6>洋裝師乃</C6>
+    <C7>雨傘師乃</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>25</Stack>
+    <C1>20661160</C1>
+    <C2>限期</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>18</C5>
+    <C6>洋裝有紀</C6>
+    <C7>雨傘有紀</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>26</Stack>
+    <C1>11081260</C1>
+    <C2>限期</C2>
+    <C3>2016</C3>
+    <C4>5</C4>
+    <C5>18</C5>
+    <C6>雨傘斯朵蕾雅</C6>
+    <C7>洋裝斯朵蕾雅</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>27</Stack>
+    <C1>11080460</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>10</C4>
+    <C5>23</C5>
+    <C6>小惡魔斯朵蕾雅</C6>
+    <C7>小惡魔大姊姊</C7>
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>28</Stack>
+    <C1>11080760</C1>
+    <C2>限期</C2>
+    <C3>2015</C3>
+    <C4>11</C4>
+    <C5>1</C5>
+    <C6>女僕斯朵蕾雅</C6>
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>29</Stack>
+    <C1>11081060</C1>
+    <C2>石抽</C2>
+    <C3>2016</C3>
+    <C4>1</C4>
+    <C5>25</C5>
+    <C6>討債斯朵蕾雅</C6>
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>30</Stack>
+    <C1>21080260</C1>
+    <C2>石抽</C2>
+    <C3>2016</C3>
+    <C4>4</C4>
+    <C5>25</C5>
+    <C6>黃昏日落</C6>
+    <C7>黃昏斯朵蕾雅</C7>
+    <C8>5回輕減盾斯朵蕾雅</C8>
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>31</Stack>
+    <C1>10520360</C1>
+    <C2>石抽</C2>
+    <C3>2015</C3>
+    <C4>10</C4>
+    <C5>23</C5>
+    <C6>獵人詩乃</C6>
+    <C7>眼鏡詩乃</C7>
+    <C8>補師詩乃</C8>
+    <C9>木補詩乃</C9>
+    <C10>風補詩乃</C10>
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+  <Chara_x0020_Dimensions>
+    <Stack>32</Stack>
+    <C1>10520660</C1>
+    <C2>限期</C2>
+    <C3>2015</C3>
+    <C4>11</C4>
+    <C5>13</C5>
+    <C6>巫女詩乃</C6>
+    <C7 />
+    <C8 />
+    <C9 />
+    <C10 />
+    <C11 />
+    <C12 />
+  </Chara_x0020_Dimensions>
+</DocumentElement>
