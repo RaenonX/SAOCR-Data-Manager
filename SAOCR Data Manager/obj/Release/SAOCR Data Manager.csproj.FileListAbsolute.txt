@@ -68,4 +68,3 @@ D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR D
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RExpCalc.resources
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Controls.CharacterSearcher.resources
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RCharaSearcher.resources
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR Data Manager.csprojResolveAssemblyReference.cache

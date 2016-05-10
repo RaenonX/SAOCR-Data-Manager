@@ -115,24 +115,6 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 角色系 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_CharaSeries {
-            get {
-                return ResourceManager.GetString("Layout_CharaSeries", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 角色系代碼表 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_CharaSeriesTable {
-            get {
-                return ResourceManager.GetString("Layout_CharaSeriesTable", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 清除全部 的當地語系化字串。
         /// </summary>
         internal static string Layout_ClearAll {
@@ -196,15 +178,6 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 關鍵字 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_Keyword {
-            get {
-                return ResourceManager.GetString("Layout_Keyword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 待下載圖片 的當地語系化字串。
         /// </summary>
         internal static string Layout_Pending {
@@ -223,29 +196,11 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 星級 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_Rarity {
-            get {
-                return ResourceManager.GetString("Layout_Rarity", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 移除 的當地語系化字串。
         /// </summary>
         internal static string Layout_Remove {
             get {
                 return ResourceManager.GetString("Layout_Remove", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 搜尋 的當地語系化字串。
-        /// </summary>
-        internal static string Layout_Search {
-            get {
-                return ResourceManager.GetString("Layout_Search", resourceCulture);
             }
         }
         

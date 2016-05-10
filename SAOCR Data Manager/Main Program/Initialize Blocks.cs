@@ -136,12 +136,7 @@ namespace SAOCR_Data_Manager
                 SS_MonsterHPRateText.Text = RStatistics.Layout_MonsterHPRate;
 
                 //Download
-                DL_KeywordText.Text = RDownload.Layout_Keyword;
                 DL_CharaPicBox.Text = RDownload.Layout_CharaPicDL;
-                DL_RarityText.Text = RDownload.Layout_Rarity;
-                DL_SeriesText.Text = RDownload.Layout_CharaSeries;
-                DL_Search.ButtonText = RDownload.Layout_Search;
-                DL_SeriesForm.Text = RDownload.Layout_CharaSeriesTable;
                 DL_Add.ButtonText = RDownload.Layout_Add;
                 DL_AddAll.ButtonText = RDownload.Layout_AddAll;
                 DL_DownloadLogText.Text = RDownload.Layout_DownloadLog;
@@ -268,12 +263,12 @@ namespace SAOCR_Data_Manager
                 DL_Remove.ButtonClick += DL_Remove_Click;
                 DL_StartDownload.ButtonClick += DL_BeginDownload_Click;
                 DL_CharaIDAdd.ButtonClick += DL_CharaIDAdd_Click;
-                DL_SeriesForm.LinkClicked += DL_CharaSeriesForm_LinkClick;
-                DL_Search.ButtonClick += DL_Search_Click;
+                DL_SearchCharacter.SeriesTableClicked += DL_CharaSeriesForm_LinkClick;
+                DL_SearchCharacter.SearchClicked += DL_Search_Click;
+                DL_SearchCharacter.ItemSelected += DL_SearchResult_DoubleClick;
                 DL_ClearAll.ButtonClick += DL_ClearAll_Click;
                 DL_CharaID.KeyPress += Extent.VerifyTextIsNum;
                 DL_CharaID.KeyPress += TextBoxEnter;
-                DL_SearchResult.DoubleClick += DL_SearchResult_DoubleClick;
                 DL_DownloadStatus.DoubleClick += DL_DownloadStatus_DoubleClick;
                 DL_CompleteList.TextChanged += LogChanged;
                 DL_AbortDownload.ButtonClick += DL_AbortDownload_Click;
@@ -418,12 +413,6 @@ namespace SAOCR_Data_Manager
                         SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MIN, 100, HorizontalAlignment.Left);
                         SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_MAX, 100, HorizontalAlignment.Left);
                         SS_MonsterHPRate.Columns.Add(Const.ColName.MONSTER_HP_RATE, 100, HorizontalAlignment.Left);
-                        break;
-                    case InitItem.DL_SearchResult:
-                        DL_SearchResult.Clear();
-                        DL_SearchResult.Columns.Add(Const.ColName.N_A, 0);
-                        DL_SearchResult.Columns.Add(Const.ColName.CHARA_ID, 70, HorizontalAlignment.Left);
-                        DL_SearchResult.Columns.Add(Const.ColName.CHARA_NAME, 195, HorizontalAlignment.Left);
                         break;
                     case InitItem.DL_DownloadList:
                         DL_DownloadList.Clear();

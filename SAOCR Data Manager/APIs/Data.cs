@@ -628,12 +628,12 @@ namespace SAOCR_Data_Manager
             }
         }
 
-        public static DataTable Separate(DataTable DT, int RemoveBegin, int RemoveEnd)
+        public static DataTable Separate(DataTable DT, int RemoveColBegin, int RemoveColEnd)
         {
             try
             {
                 List<int> ColRemove = new List<int>();
-                for (int i = RemoveBegin; i < RemoveEnd; i++)
+                for (int i = RemoveColBegin; i < RemoveColEnd; i++)
                 {
                     ColRemove.Add(i);
                 }
@@ -645,6 +645,8 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+
+        //Separate Row
 
         public static void WriteCSV(DataTable DT, string Path)
         {

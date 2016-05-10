@@ -88,7 +88,18 @@ namespace SAOCR_Data_Manager.Controls
         {
             try
             {
-                Size = OrgSize;
+                if (Size.Width != OrgSize.Width)
+                {
+                    Size = OrgSize;
+                } else
+                {
+                    int HeightChange = Size.Height - OrgSize.Height;
+                    Size NewSize = new Size(Result.Size.Width, Result.Size.Height + HeightChange);
+                    Size ControlSize = new Size(Size.Width, Size.Height + HeightChange);
+                    Result.Size = NewSize;
+                    Size = ControlSize;
+                    OrgSize = Size;
+                }                
             }
             catch (Exception ex)
             {

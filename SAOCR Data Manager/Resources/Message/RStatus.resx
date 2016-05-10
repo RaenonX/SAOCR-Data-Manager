@@ -309,18 +309,6 @@
     <value>狀態代碼 0xF0002009\n\n未根據提供的角色ID將角色新增至下載清單。</value>
     <comment>PDownload</comment>
   </data>
-  <data name="S_0xF000200A_1" xml:space="preserve">
-    <value>狀態代碼 0xF000200A\n\n尋找角色。關鍵字:</value>
-    <comment>PDownload</comment>
-  </data>
-  <data name="S_0xF000200A_2" xml:space="preserve">
-    <value>，星級:</value>
-    <comment>PDownload</comment>
-  </data>
-  <data name="S_0xF000200A_3" xml:space="preserve">
-    <value>，角色系代碼:</value>
-    <comment>PDownload</comment>
-  </data>
   <data name="S_0xF000200B" xml:space="preserve">
     <value>狀態代碼 0xF000200B\n\n角色全部下載完成。</value>
     <comment>PDownload</comment>
@@ -344,5 +332,9 @@
   <data name="S_0xF0027002" xml:space="preserve">
     <value>狀態代碼 0xF0027002\n\n已完成附件清除作業。</value>
     <comment>PConfig</comment>
+  </data>
+  <data name="S_0xF000200A" xml:space="preserve">
+    <value>狀態代碼 0xF000200A</value>
+    <comment>PDownload</comment>
   </data>
 </root>

@@ -132,12 +132,6 @@
   <data name="Layout_CharaPicDL" xml:space="preserve">
     <value>角色圖片下載</value>
   </data>
-  <data name="Layout_CharaSeries" xml:space="preserve">
-    <value>角色系</value>
-  </data>
-  <data name="Layout_CharaSeriesTable" xml:space="preserve">
-    <value>角色系代碼表</value>
-  </data>
   <data name="Layout_ClearAll" xml:space="preserve">
     <value>清除全部</value>
   </data>
@@ -159,23 +153,14 @@
   <data name="Layout_Failed" xml:space="preserve">
     <value>下載失敗</value>
   </data>
-  <data name="Layout_Keyword" xml:space="preserve">
-    <value>關鍵字</value>
-  </data>
   <data name="Layout_Pending" xml:space="preserve">
     <value>待下載圖片</value>
   </data>
   <data name="Layout_PicCount" xml:space="preserve">
     <value>圖片數量</value>
   </data>
-  <data name="Layout_Rarity" xml:space="preserve">
-    <value>星級</value>
-  </data>
   <data name="Layout_Remove" xml:space="preserve">
     <value>移除</value>
-  </data>
-  <data name="Layout_Search" xml:space="preserve">
-    <value>搜尋</value>
   </data>
   <data name="Log_OpenSeriesTable" xml:space="preserve">
     <value>於檔案下載中開啟角色系代碼表。</value>

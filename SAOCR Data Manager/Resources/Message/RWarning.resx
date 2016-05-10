@@ -441,7 +441,7 @@
     <comment>PDownload</comment>
   </data>
   <data name="W_0xC0002004" xml:space="preserve">
-    <value>警告代碼 0xC0002004\n\n請先提供關鍵字、星級，或是角色系代碼再搜尋角色。</value>
+    <value>警告代碼 0xC0002004\n\n</value>
     <comment>PDownload</comment>
   </data>
   <data name="W_0xC0002005" xml:space="preserve">

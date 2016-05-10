@@ -194,9 +194,9 @@
         private System.Windows.Forms.Label SeriesText;
         private System.Windows.Forms.TextBox Rarity;
         private System.Windows.Forms.Label RarityText;
-        private System.Windows.Forms.ListView Result;
         private System.Windows.Forms.Label KeywordText;
         private System.Windows.Forms.TextBox Keyword;
         private Button_SE_ Search;
+        internal System.Windows.Forms.ListView Result;
     }
 }

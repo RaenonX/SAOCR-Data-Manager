@@ -178,7 +178,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0002004\n\n請先提供關鍵字、星級，或是角色系代碼再搜尋角色。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0002004\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0002004 {
             get {

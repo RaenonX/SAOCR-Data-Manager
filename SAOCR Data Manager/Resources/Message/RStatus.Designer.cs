@@ -502,29 +502,11 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 狀態代碼 0xF000200A\n\n尋找角色。關鍵字: 的當地語系化字串。
+        ///   查詢類似 狀態代碼 0xF000200A 的當地語系化字串。
         /// </summary>
-        internal static string S_0xF000200A_1 {
+        internal static string S_0xF000200A {
             get {
-                return ResourceManager.GetString("S_0xF000200A_1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 ，星級: 的當地語系化字串。
-        /// </summary>
-        internal static string S_0xF000200A_2 {
-            get {
-                return ResourceManager.GetString("S_0xF000200A_2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 ，角色系代碼: 的當地語系化字串。
-        /// </summary>
-        internal static string S_0xF000200A_3 {
-            get {
-                return ResourceManager.GetString("S_0xF000200A_3", resourceCulture);
+                return ResourceManager.GetString("S_0xF000200A", resourceCulture);
             }
         }
         

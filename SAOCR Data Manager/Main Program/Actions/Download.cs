@@ -290,9 +290,9 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                if (DL_SearchResult.SelectedItems.Count > 0)
+                if (DL_SearchCharacter.Result.SelectedItems.Count > 0)
                 {
-                    foreach (ListViewItem LSV in DL_SearchResult.SelectedItems)
+                    foreach (ListViewItem LSV in DL_SearchCharacter.Result.SelectedItems)
                     {
                         if (!DL_DownloadList.Items.ContainsKey(LSV.Name))
                         {
@@ -302,7 +302,8 @@ namespace SAOCR_Data_Manager
                         }
                     }
                     Status(RStatus.S_0xF0002002);
-                } else
+                }
+                else
                 {
                     SystemAPI.Warning(RWarning.W_0xC0002000);
                     Status(RStatus.S_0xF0002003);
@@ -346,9 +347,9 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                if (DL_SearchResult.Items.Count > 0)
+                if (DL_SearchCharacter.Result.Items.Count > 0)
                 {
-                    foreach (ListViewItem LSV in DL_SearchResult.Items)
+                    foreach (ListViewItem LSV in DL_SearchCharacter.Result.Items)
                     {
                         if (!DL_DownloadList.Items.ContainsKey(LSV.Name))
                         {
@@ -413,43 +414,7 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                if (Extent.isEmptyString(DL_Keyword.Text) && Extent.isEmptyString(DL_Rarity.Text) && Extent.isEmptyString(DL_Series.Text))
-                {
-                    SystemAPI.Warning(RWarning.W_0xC0002004);
-                    return;
-                }
-                InitializeList(InitItem.DL_SearchResult);
-                DataRow[] Result = DataAPI.Search(DataAPI.EscapeLikeValue(DL_Keyword.Text), DT.CharaMix, 0, DT.CharaMix.Rows.Count, 1, DT.CharaMix.Columns.Count - 1);
-
-                for (int i = 0; i < Result.Length; i++)
-                {
-                    ListViewItem LVI = new ListViewItem();
-                    if ((Extent.isEmptyString(DL_Rarity.Text) ^ Result[i][(int)ECharaMixCode.ID].ToString().Substring(6, 1) == DL_Rarity.Text) &&
-                        (Extent.isEmptyString(DL_Series.Text) ^ Result[i][(int)ECharaMixCode.ID].ToString().Substring(1, 3) == DL_Series.Text))
-                    {
-                        DataRow[] CharaName = DataAPI.Search(Result[i][(int)ECharaMixCode.ID].ToString(), DT.CharaMix, 0, (int)ECharaMixCode.ID);
-                        string HEAD = CharaName[0][(int)ECharaMixCode.HEAD].ToString();
-                        string NAME = CharaName[0][(int)ECharaMixCode.NAME].ToString();
-                        LVI.Name = Result[i][(int)ECharaMixCode.ID].ToString();
-                        LVI.SubItems.Add(Result[i][(int)ECharaMixCode.ID].ToString());
-                        LVI.SubItems.Add(HEAD + NAME);
-                    }
-                    if (LVI.SubItems.Count > 1)
-                    {
-                        DL_SearchResult.Items.Add(LVI);
-                    }
-                }
-
-                Status(RStatus.S_0xF000200A_1 + DL_Keyword.Text + RStatus.S_0xF000200A_2 + DL_Rarity.Text + RStatus.S_0xF000200A_3 + DL_Series.Text);
-
-                if (DL_SearchResult.Items.Count > 0)
-                {
-                    DL_Add.ButtonEnabled = DL_AddAll.ButtonEnabled = true;
-                }
-                else
-                {
-                    DL_Add.ButtonEnabled = DL_AddAll.ButtonEnabled = false;
-                }
+                DL_SearchCharacter.FindCharacter(ref DT.CharaMix, Status);
             }
             catch (Exception ex)
             {
@@ -462,17 +427,7 @@ namespace SAOCR_Data_Manager
         {
             try
             {
-                StatusLog.Log(RDownload.Log_OpenSeriesTable);
-                Status(RStatus.S_0xF0002000);
-                DataViewF DVF = new DataViewF();
-                string[] ColumnName = { Const.ColName.CHARA_ID, Const.ColName.CHARA_NAME_JP, Const.ColName.CHARA_NAME_EN, Const.ColName.CHARA_NAME_CH };
-                DVF.ImportData(DT.CharaSeries, ColumnName);
-                if (DVF.ShowDialog(this) == DialogResult.OK)
-                {
-                    DL_Series.Text = DVF.ReturnValue;
-                    Status(RStatus.S_0xF0002001 + DVF.ReturnValue);
-                }
-                DVF.Close();
+                DL_SearchCharacter.OpenSeriesTable(ref DT.CharaSeries, Status);
             }
             catch (Exception ex)
             {

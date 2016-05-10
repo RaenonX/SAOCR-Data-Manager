@@ -117,7 +117,6 @@ public enum InitItem
     SS_CharaSeriesRate,
     SS_MonsterTypeRate,
     SS_MonsterHPRate,
-    DL_SearchResult,
     DL_DownloadList,
     DL_DownloadStatus
 }
