@@ -1975,4 +1975,108 @@
     <value>錯誤代碼 0x00005009\n\n</value>
     <comment>AppFunctions</comment>
   </data>
+  <data name="E_0x00002010" xml:space="preserve">
+    <value>錯誤代碼 0x00002010\n\n檢查搜尋結果以辨認是否致能「新增」、「新增全部」的按鈕時發生錯誤。</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002011" xml:space="preserve">
+    <value>錯誤代碼 0x00002011\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002012" xml:space="preserve">
+    <value>錯誤代碼 0x00002012\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002013" xml:space="preserve">
+    <value>錯誤代碼 0x00002013\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002014" xml:space="preserve">
+    <value>錯誤代碼 0x00002014\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002015" xml:space="preserve">
+    <value>錯誤代碼 0x00002015\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002016" xml:space="preserve">
+    <value>錯誤代碼 0x00002016\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002017" xml:space="preserve">
+    <value>錯誤代碼 0x00002017\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002018" xml:space="preserve">
+    <value>錯誤代碼 0x00002018\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00002019" xml:space="preserve">
+    <value>錯誤代碼 0x00002019\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000201A" xml:space="preserve">
+    <value>錯誤代碼 0x0000201A\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000201B" xml:space="preserve">
+    <value>錯誤代碼 0x0000201B\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000201C" xml:space="preserve">
+    <value>錯誤代碼 0x0000201C\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000201D" xml:space="preserve">
+    <value>錯誤代碼 0x0000201D\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000201E" xml:space="preserve">
+    <value>錯誤代碼 0x0000201E\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x0000201F" xml:space="preserve">
+    <value>錯誤代碼 0x0000201F\n\n</value>
+    <comment>PDownload</comment>
+  </data>
+  <data name="E_0x00006000" xml:space="preserve">
+    <value>錯誤代碼 0x00006000\n\n計算主角的經驗值和其相關參數時發生錯誤。</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006001" xml:space="preserve">
+    <value>錯誤代碼 0x00006001\n\n計算普通角色的經驗值及相關參數時發生錯誤。</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006002" xml:space="preserve">
+    <value>錯誤代碼 0x00006002\n\n根據星級設定標籤背景顏色時發生錯誤。</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006003" xml:space="preserve">
+    <value>錯誤代碼 0x00006003\n\n</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006004" xml:space="preserve">
+    <value>錯誤代碼 0x00006004\n\n</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006005" xml:space="preserve">
+    <value>錯誤代碼 0x00006005\n\n</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006006" xml:space="preserve">
+    <value>錯誤代碼 0x00006006\n\n</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006007" xml:space="preserve">
+    <value>錯誤代碼 0x00006007\n\n</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006008" xml:space="preserve">
+    <value>錯誤代碼 0x00006008\n\n</value>
+    <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x00006009" xml:space="preserve">
+    <value>錯誤代碼 0x00006009\n\n</value>
+    <comment>PExpCalculator</comment>
+  </data>
 </root>

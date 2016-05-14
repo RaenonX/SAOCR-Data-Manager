@@ -692,6 +692,13 @@ public enum EDataRegCategory
 public enum ECharaExpSecCol
 {
     LEVEL = 3,
+    SUM_EXP_REQUIRED = 4
+}
+
+[Flags]
+public enum EMainExpSecCol
+{
+    LEVEL = 3,
     SUM_EXP_REQUIRED = 4,
     HP = 5,
     STR = 6,
@@ -701,12 +708,5 @@ public enum ECharaExpSecCol
     SS = 10,
     COST = 11,
     RARITY = 12
-}
-
-[Flags]
-public enum EMainExpSecCol
-{
-    LEVEL = 3,
-    SUM_EXP_REQUIRED = 4
 }
 #endregion

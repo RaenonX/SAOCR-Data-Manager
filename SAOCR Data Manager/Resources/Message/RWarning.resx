@@ -389,11 +389,11 @@
     <comment>PConfig</comment>
   </data>
   <data name="W_0xC0000002" xml:space="preserve">
-    <value>警告代碼 0xC0000002\n\n無法查詢到合乎條件的結果。</value>
+    <value>警告代碼 0xC0000002\n\n</value>
     <comment>DataAPI</comment>
   </data>
   <data name="W_0xC0000003" xml:space="preserve">
-    <value>警告代碼 0xC0000003\n\n已超過搜尋結果的最末端。</value>
+    <value>警告代碼 0xC0000003\n\n</value>
     <comment>DataAPI</comment>
   </data>
   <data name="W_0xC0000004" xml:space="preserve">
@@ -551,5 +551,45 @@
   <data name="W_0xC0005009" xml:space="preserve">
     <value>警告代碼 0xC0005009\n\n</value>
     <comment>AppFunction</comment>
+  </data>
+  <data name="W_0xC0006000" xml:space="preserve">
+    <value>警告代碼 0xC0006000\n\n請先輸入角色訓練前等級，再執行計算。</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006001" xml:space="preserve">
+    <value>警告代碼 0xC0006001\n\n請先輸入角色訓練後等級，再執行計算。</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006002" xml:space="preserve">
+    <value>警告代碼 0xC0006002\n\n請先輸入主角訓練前等級，再執行計算。</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006003" xml:space="preserve">
+    <value>警告代碼 0xC0006003\n\n請先輸入主角訓練後等級，再執行計算。</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006004" xml:space="preserve">
+    <value>警告代碼 0xC0006004\n\n你角色訓練完會倒退嚕嗎？我訓練這隻完從70等降成1等了，神蹟啊！！</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006005" xml:space="preserve">
+    <value>警告代碼 0xC0006005\n\n主角參數相關資料匯入失敗，已中斷經驗計算作業。</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006006" xml:space="preserve">
+    <value>警告代碼 0xC0006006\n\n資料庫內沒有登記此等級的經驗資料，請重新輸入。</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006007" xml:space="preserve">
+    <value>警告代碼 0xC0006007\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006008" xml:space="preserve">
+    <value>警告代碼 0xC0006008\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC0006009" xml:space="preserve">
+    <value>警告代碼 0xC0006009\n\n</value>
+    <comment>RExpCalculator</comment>
   </data>
 </root>

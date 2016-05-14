@@ -126,6 +126,9 @@
   <data name="Layout_FavoriteText" xml:space="preserve">
     <value>我的最愛角色</value>
   </data>
+  <data name="Layout_MakeIDTable" xml:space="preserve">
+    <value>製作角色圖片、ID對照表</value>
+  </data>
   <data name="Log_RequestCharacter" xml:space="preserve">
     <value>要求顯示角色資料，角色ID: </value>
   </data>

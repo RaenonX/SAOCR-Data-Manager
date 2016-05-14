@@ -70,7 +70,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0000002\n\n無法查詢到合乎條件的結果。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0000002\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0000002 {
             get {
@@ -79,7 +79,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0000003\n\n已超過搜尋結果的最末端。 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0000003\n\n 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0000003 {
             get {
@@ -444,6 +444,96 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string W_0xC0005009 {
             get {
                 return ResourceManager.GetString("W_0xC0005009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006000\n\n請先輸入角色訓練前等級，再執行計算。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006000 {
+            get {
+                return ResourceManager.GetString("W_0xC0006000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006001\n\n請先輸入角色訓練後等級，再執行計算。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006001 {
+            get {
+                return ResourceManager.GetString("W_0xC0006001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006002\n\n請先輸入主角訓練前等級，再執行計算。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006002 {
+            get {
+                return ResourceManager.GetString("W_0xC0006002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006003\n\n請先輸入主角訓練後等級，再執行計算。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006003 {
+            get {
+                return ResourceManager.GetString("W_0xC0006003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006004\n\n你角色訓練完會倒退嚕嗎？我訓練這隻完從70等降成1等了，神蹟啊！！ 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006004 {
+            get {
+                return ResourceManager.GetString("W_0xC0006004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006005\n\n主角參數相關資料匯入失敗，已中斷經驗計算作業。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006005 {
+            get {
+                return ResourceManager.GetString("W_0xC0006005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006006\n\n資料庫內沒有登記此等級的經驗資料，請重新輸入。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006006 {
+            get {
+                return ResourceManager.GetString("W_0xC0006006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006007\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006007 {
+            get {
+                return ResourceManager.GetString("W_0xC0006007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006008\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006008 {
+            get {
+                return ResourceManager.GetString("W_0xC0006008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0006009\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0006009 {
+            get {
+                return ResourceManager.GetString("W_0xC0006009", resourceCulture);
             }
         }
         

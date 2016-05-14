@@ -117,17 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BGM.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
-        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
-        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
-        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAAwAcAAGEC
-        AAAL
-</value>
-  </data>
   <metadata name="MN_StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>313, 17</value>
   </metadata>
@@ -163,6 +152,17 @@
         gSS7qpkJxG5WMU4ceFqcxeO16ob6PekQaIbs9QapQsyjCu9cCJqKpjRPyPQ/ctyg8E4IbLGpdUe991MB
         7AXz7Xq+HFYMMezlULUK6yQBcYuS3k0rx+QzaVA4pxIQWEcT8nKSY4LGte71LT9FkLkGqW3TDQKzZaxz
         lFk/4GYFchdSGetIW20r15a+hWSvaPB+vuM4juM4juM4VTJr1n9CzlgQ5HExZwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BGM.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
+        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
+        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAAwAcAAGEC
+        AAAL
 </value>
   </data>
   <data name="WMP.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">

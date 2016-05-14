@@ -118,7 +118,13 @@ namespace SAOCR_Data_Manager
 
             foreach (DataRow item in OriginalResult)
             {
-                if (Convert.ToInt32(item[Const.NUM_COLUMN]) >= RowToStartFind && Convert.ToInt32(item[Const.NUM_COLUMN]) <= RowToEndFind)
+                if (RowToStartFind != 0)
+                {
+                    if (Convert.ToInt32(item[Const.NUM_COLUMN]) >= RowToStartFind && Convert.ToInt32(item[Const.NUM_COLUMN]) <= RowToEndFind)
+                    {
+                        ResultList.Add(item);
+                    }
+                } else
                 {
                     ResultList.Add(item);
                 }
@@ -160,7 +166,7 @@ namespace SAOCR_Data_Manager
 
             if (CT_FindStringResult.Length == 0)
             {
-                return RWarning.W_0xC0000002.Replace("\\n", " ");
+                return null;
             }
 
             try
@@ -172,13 +178,13 @@ namespace SAOCR_Data_Manager
             }
             catch (IndexOutOfRangeException)
             {
-                return RWarning.W_0xC0000002.Replace("\\n", " ");
+                return null;
             }
 
             if (CT_FindStringResult.Length <= RowInResult)
             {
                 SystemAPI.SEWarning();
-                return RWarning.W_0xC0000003.Replace("\\n", "");
+                return null;
             }
             
             return CT_FindStringResult[RowInResult][ColumnToReturn].ToString();
@@ -645,8 +651,6 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
-
-        //Separate Row
 
         public static void WriteCSV(DataTable DT, string Path)
         {

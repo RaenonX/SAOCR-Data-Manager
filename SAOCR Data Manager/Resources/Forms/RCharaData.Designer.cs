@@ -88,6 +88,15 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
+        ///   查詢類似 製作角色圖片、ID對照表 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_MakeIDTable {
+            get {
+                return ResourceManager.GetString("Layout_MakeIDTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 要求顯示角色資料，角色ID:  的當地語系化字串。
         /// </summary>
         internal static string Log_RequestCharacter {

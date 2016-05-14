@@ -120,6 +120,7 @@ namespace SAOCR_Data_Manager
                 CD_CharacterIDText.Text = RCharaData.Layout_CharaIDText;
                 CD_CharacterIDGo.ButtonText = RCharaData.Layout_CharaIDGo;
                 CD_FavoriteText.Text = RCharaData.Layout_FavoriteText;
+                CD_MakeIDTable.ButtonText = RCharaData.Layout_MakeIDTable;
 
                 //Statistics
                 SS_Weapon.Text = RStatistics.Layout_WeaponRelated;
@@ -252,6 +253,7 @@ namespace SAOCR_Data_Manager
                 CD_SearchCharacter.ItemSelected += CD_SearchCharacter_ItemSelected;
                 CD_SearchCharacter.SearchClicked += CD_SearchCharacter_SearchClicked;
                 CD_SearchCharacter.SeriesTableClicked += CD_SearchCharacter_SeriesTableClicked;
+                CD_MakeIDTable.ButtonClick += CD_MakeIDTable_ButtonClick;
 
                 //Statistics
                 SS_CharaCalculate.ButtonClick += SS_WeaponCalculate_ButtonClick;
@@ -266,6 +268,7 @@ namespace SAOCR_Data_Manager
                 DL_SearchCharacter.SeriesTableClicked += DL_CharaSeriesForm_LinkClick;
                 DL_SearchCharacter.SearchClicked += DL_Search_Click;
                 DL_SearchCharacter.ItemSelected += DL_SearchResult_DoubleClick;
+                DL_SearchCharacter.ItemChanged += DL_SearchCharacter_ItemChanged;
                 DL_ClearAll.ButtonClick += DL_ClearAll_Click;
                 DL_CharaID.KeyPress += Extent.VerifyTextIsNum;
                 DL_CharaID.KeyPress += TextBoxEnter;
@@ -276,6 +279,14 @@ namespace SAOCR_Data_Manager
                 //EXP Calculator
                 EC_MainCalc.ButtonClick += EC_MainCalc_Click;
                 EC_CharaCalc.ButtonClick += EC_CharaCalc_Click;
+                EC_MainExpBefore.KeyPress += EC_MainChara_KeyPress;
+                EC_MainExpAfter.KeyPress += EC_MainChara_KeyPress;
+                EC_MainLvBefore.KeyPress += EC_MainChara_KeyPress;
+                EC_MainLvAfter.KeyPress += EC_MainChara_KeyPress;
+                EC_MainExpBefore.KeyPress += Extent.VerifyTextIsNum;
+                EC_MainExpAfter.KeyPress += Extent.VerifyTextIsNum;
+                EC_MainLvBefore.KeyPress += Extent.VerifyTextIsNum;
+                EC_MainLvAfter.KeyPress += Extent.VerifyTextIsNum;
             }
             catch (Exception e)
             {
@@ -283,7 +294,7 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
-
+        
         public void InitializeControlAttributes()
         {
             try

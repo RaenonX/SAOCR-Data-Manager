@@ -63,7 +63,12 @@ namespace SAOCR_Data_Manager
                     Status(RStatus.Result_DataCSVPreloadInCompleted, true);
                     return;
                 }
+
                 DT.CharaMix = DataAPI.MergeWithKey(DT.CharaDict, DT.CharaDim, (int)ECharaDictCode.ID, (int)ECharaDimCode.ID);
+
+                DT.ExpMain = DataAPI.Specified<int>(DT.Source, TitleP.Start[(int)DataTitle.MainCharacterParams] + 1, TitleP.End[(int)DataTitle.MainCharacterParams], null, "Main Chara Exp Section");
+
+                DT.ExpChara = DataAPI.Specified<int>(DT.Source, TitleP.Start[(int)DataTitle.CharacterParams] + 1, TitleP.End[(int)DataTitle.CharacterParams], null, "Normal Chara Exp Section");
 
                 if (!LoadBADictionary())
                 {

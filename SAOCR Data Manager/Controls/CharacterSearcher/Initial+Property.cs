@@ -14,7 +14,7 @@ namespace SAOCR_Data_Manager.Controls
 {
     public partial class CharacterSearcher : UserControl
     {
-        public event EventHandler ItemSelected, SearchClicked, SeriesTableClicked;
+        public event EventHandler ItemSelected, SearchClicked, SeriesTableClicked, ItemChanged;
         Size OrgSize;
 
         public CharacterSearcher()
@@ -88,18 +88,7 @@ namespace SAOCR_Data_Manager.Controls
         {
             try
             {
-                if (Size.Width != OrgSize.Width)
-                {
-                    Size = OrgSize;
-                } else
-                {
-                    int HeightChange = Size.Height - OrgSize.Height;
-                    Size NewSize = new Size(Result.Size.Width, Result.Size.Height + HeightChange);
-                    Size ControlSize = new Size(Size.Width, Size.Height + HeightChange);
-                    Result.Size = NewSize;
-                    Size = ControlSize;
-                    OrgSize = Size;
-                }                
+                Size = OrgSize;
             }
             catch (Exception ex)
             {

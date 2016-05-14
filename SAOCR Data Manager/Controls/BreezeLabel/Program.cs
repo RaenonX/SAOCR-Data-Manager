@@ -165,21 +165,36 @@ namespace SAOCR_Data_Manager.Controls
                 if (CTimer.Gate)
                 {
                     CTimer.Count++;
-                    if (CTimer.Count % CTimer.A.Interval == 0 && CTimer.A.Enable)
+                    if (CTimer.A.Interval != 0)
                     {
-                        AT_Tick();
+                        if (CTimer.Count % CTimer.A.Interval == 0 && CTimer.A.Enable)
+                        {
+                            AT_Tick();
+                        }
                     }
-                    if (CTimer.Count % CTimer.R.Interval == 0 && CTimer.R.Enable)
+
+                    if (CTimer.R.Interval != 0)
                     {
-                        RT_Tick();
+                        if (CTimer.Count % CTimer.R.Interval == 0 && CTimer.R.Enable)
+                        {
+                            RT_Tick();
+                        }
                     }
-                    if (CTimer.Count % CTimer.G.Interval == 0 && CTimer.G.Enable)
+
+                    if (CTimer.G.Interval != 0)
                     {
-                        GT_Tick();
+                        if (CTimer.Count % CTimer.G.Interval == 0 && CTimer.G.Enable)
+                        {
+                            GT_Tick();
+                        }
                     }
-                    if (CTimer.Count % CTimer.B.Interval == 0 && CTimer.B.Enable)
+
+                    if (CTimer.B.Interval != 0)
                     {
-                        BT_Tick();
+                        if (CTimer.Count % CTimer.B.Interval == 0 && CTimer.B.Enable)
+                        {
+                            BT_Tick();
+                        }
                     }
                 }
             }
@@ -241,6 +256,10 @@ namespace SAOCR_Data_Manager.Controls
                 {
                     CTimer.A.Enable = true;
                     CTimer.A.Interval = Math.Abs(CConfig.Changetime / CConfig.Diff.A);
+                    if (CTimer.A.Interval == 0)
+                    {
+                        CTimer.A.Interval = 1;
+                    }
                 }
 
                 if (CConfig.Diff.R == 0)
@@ -251,6 +270,10 @@ namespace SAOCR_Data_Manager.Controls
                 {
                     CTimer.R.Enable = true;
                     CTimer.R.Interval = Math.Abs(CConfig.Changetime / CConfig.Diff.R);
+                    if (CTimer.R.Interval == 0)
+                    {
+                        CTimer.R.Interval = 1;
+                    }
                 }
 
                 if (CConfig.Diff.G == 0)
@@ -261,6 +284,10 @@ namespace SAOCR_Data_Manager.Controls
                 {
                     CTimer.G.Enable = true;
                     CTimer.G.Interval = Math.Abs(CConfig.Changetime / CConfig.Diff.G);
+                    if (CTimer.G.Interval == 0)
+                    {
+                        CTimer.G.Interval = 1;
+                    }
                 }
 
                 if (CConfig.Diff.B == 0)
@@ -271,6 +298,10 @@ namespace SAOCR_Data_Manager.Controls
                 {
                     CTimer.B.Enable = true;
                     CTimer.B.Interval = Math.Abs(CConfig.Changetime / CConfig.Diff.B);
+                    if (CTimer.B.Interval == 0)
+                    {
+                        CTimer.B.Interval = 1;
+                    }
                 }
             }
             catch (Exception ex)

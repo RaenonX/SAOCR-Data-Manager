@@ -52,19 +52,8 @@ D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR D
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RDownload.resources
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Dictionary.RDictColor.resources
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Dictionary.RDictEnumString.resources
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Assembly-CSharp-firstpass.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Assembly-CSharp.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\bouncywp71.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\FiveRocks.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\HOTween.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\LibUniSWF.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\LibUniSWFInternal.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Mono.Security.dll
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\Newtonsoft.Json.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\P31RestKit.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\UniExtensions.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\UnityEngine.dll
-D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\bin\Release\UnityEngine.UI.dll
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Forms.RExpCalc.resources
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Controls.CharacterSearcher.resources
 D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR_Data_Manager.Resources.Controls.RCharaSearcher.resources
+D:\Multimedia\Documents\OneDrive\Programming Projects\SAOCR Data Manager\SAOCR Data Manager\obj\Release\SAOCR Data Manager.csprojResolveAssemblyReference.cache

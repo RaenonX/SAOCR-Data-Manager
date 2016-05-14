@@ -167,5 +167,30 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+        
+        public static Color RarityT(string Rarity)
+        {
+            try
+            {
+                switch (Rarity)
+                {
+                    case "3":
+                        return Color.FromArgb((int)EForeColor.Yellow);
+                    case "4":
+                        return Color.FromArgb((int)EForeColor.RG120B70);
+                    case "5":
+                        return Color.FromArgb((int)EForeColor.Orange);
+                    case "6":
+                        return Color.FromArgb((int)EForeColor.Red);
+                    default:
+                        throw new ArgumentException(RError.E_0x00006002);
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00006002, ex);
+                throw;
+            }
+        }
     }
 }

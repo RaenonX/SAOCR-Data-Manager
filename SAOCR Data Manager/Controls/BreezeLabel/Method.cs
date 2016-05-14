@@ -48,6 +48,8 @@ namespace SAOCR_Data_Manager.Controls
             try
             {
                 CTimer.Gate = false;
+                CConfig.CurColor = CConfig.Begin.ToArgb();
+                label.BackColor = Color.FromArgb(CConfig.CurColor);
             }
             catch (Exception e)
             {

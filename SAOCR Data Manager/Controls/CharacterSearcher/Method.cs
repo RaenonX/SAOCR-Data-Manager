@@ -46,7 +46,7 @@ namespace SAOCR_Data_Manager.Controls
                         Result.Items.Add(LVI);
                     }
                 }
-
+                ItemChanged?.Invoke(Result, EventArgs.Empty);
                 StatusFunc(RCharaSearcher.Log_FindChara1 + Keyword.Text + RCharaSearcher.Log_FindChara2 + Rarity.Text + RCharaSearcher.Log_FindChara3 + Series.Text);
             }
             catch (NullReferenceException)

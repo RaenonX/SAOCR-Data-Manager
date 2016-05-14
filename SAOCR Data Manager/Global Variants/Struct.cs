@@ -172,6 +172,8 @@ public struct DataTables
     public DataTable CharaSeries;
     public DataTable CharaMix;
     public DataTable WeaponEff;
+    public DataTable ExpMain;
+    public DataTable ExpChara;
 }
 #endregion
 
@@ -242,6 +244,23 @@ public struct CParamData
     public int Cost;
     public DataRow[] DataRow;
     public int[] Array;
+}
+#endregion
+
+#region 角色經驗相關
+public struct CharaExp
+{
+    public CharaExpData Before;
+    public CharaExpData After;
+}
+
+public struct CharaExpData
+{
+    public DataRow[] SpecifiedLv;
+    public DataRow[] AtNextLv;
+    public int Lv;
+    public int ExpLeft;
+    public int Sum;
 }
 #endregion
 

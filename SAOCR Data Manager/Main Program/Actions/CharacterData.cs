@@ -178,5 +178,10 @@ namespace SAOCR_Data_Manager
         {
             CD_SearchCharacter.FindCharacter(ref DT.CharaMix, Status);
         }
+
+        private void CD_MakeIDTable_ButtonClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

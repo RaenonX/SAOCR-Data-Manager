@@ -516,5 +516,24 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+
+        private void DL_SearchCharacter_ItemChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DL_SearchCharacter.Result.Items.Count > 0)
+                {
+                    DL_AddAll.ButtonEnabled = DL_Add.ButtonEnabled = true;
+                } else
+                {
+                    DL_AddAll.ButtonEnabled = DL_Add.ButtonEnabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00002010, ex);
+                throw;
+            }
+        }
     }
 }
