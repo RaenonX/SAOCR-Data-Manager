@@ -35,186 +35,31 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MN_Title = new System.Windows.Forms.Label();
             this.P_HomePage = new System.Windows.Forms.Panel();
-            this.HM_ToEXPCalc = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_ToDownload = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_ToStatistics = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_Announcement = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.HM_ToConfig = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_ToCsvTable = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_Res_Load = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_Res_Select = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_ToEquipmentData = new SAOCR_Data_Manager.Button_SE_();
-            this.HM_ToCharacterData = new SAOCR_Data_Manager.Button_SE_();
             this.MN_Border = new System.Windows.Forms.Panel();
             this.MN_StatusStrip = new System.Windows.Forms.StatusStrip();
             this.MN_Capture = new System.Windows.Forms.ToolStripButton();
             this.MN_Button = new System.Windows.Forms.ToolStripDropDownButton();
             this.MN_Status = new System.Windows.Forms.ToolStripStatusLabel();
-            this.HM_ToHomePage = new SAOCR_Data_Manager.Button_SE_();
-            this.MN_Close = new SAOCR_Data_Manager.Button_SE_();
-            this.MN_Min = new SAOCR_Data_Manager.Button_SE_();
             this.BGM = new AxWMPLib.AxWindowsMediaPlayer();
-            this.P_EXPCalc = new System.Windows.Forms.Panel();
-            this.EC_Main = new System.Windows.Forms.GroupBox();
-            this.EC_MainExpNeed = new SAOCR_Data_Manager.Controls.BreezeLabel();
-            this.EC_MainParamAfter = new System.Windows.Forms.GroupBox();
-            this.EC_MainRarityAfter = new SAOCR_Data_Manager.Controls.BreezeLabel();
-            this.EC_MainSSAfter = new System.Windows.Forms.Label();
-            this.EC_MainSSAfterText = new System.Windows.Forms.Label();
-            this.EC_MainCostAfter = new System.Windows.Forms.Label();
-            this.EC_MainHPAfter = new System.Windows.Forms.Label();
-            this.EC_MainCostAfterText = new System.Windows.Forms.Label();
-            this.EC_MainHPAfterText = new System.Windows.Forms.Label();
-            this.EC_MainMENAfter = new System.Windows.Forms.Label();
-            this.EC_MainINTAfter = new System.Windows.Forms.Label();
-            this.EC_MainMENAfterText = new System.Windows.Forms.Label();
-            this.EC_MainINTAfterText = new System.Windows.Forms.Label();
-            this.EC_MainVITAfter = new System.Windows.Forms.Label();
-            this.EC_MainSTRAfter = new System.Windows.Forms.Label();
-            this.EC_MainVITAfterText = new System.Windows.Forms.Label();
-            this.EC_MainSTRAfterText = new System.Windows.Forms.Label();
-            this.EC_MainParamBefore = new System.Windows.Forms.GroupBox();
-            this.EC_MainRarityBefore = new SAOCR_Data_Manager.Controls.BreezeLabel();
-            this.EC_MainSSBefore = new System.Windows.Forms.Label();
-            this.EC_MainSSBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainCostBefore = new System.Windows.Forms.Label();
-            this.EC_MainHPBefore = new System.Windows.Forms.Label();
-            this.EC_MainCostBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainHPBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainMENBefore = new System.Windows.Forms.Label();
-            this.EC_MainINTBefore = new System.Windows.Forms.Label();
-            this.EC_MainMENBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainINTBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainVITBefore = new System.Windows.Forms.Label();
-            this.EC_MainSTRBefore = new System.Windows.Forms.Label();
-            this.EC_MainVITBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainSTRBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainExpNeedText = new System.Windows.Forms.Label();
-            this.EC_MainCalc = new SAOCR_Data_Manager.Button_SE_();
-            this.EC_MainAfter = new System.Windows.Forms.GroupBox();
-            this.EC_MainExpAfter = new System.Windows.Forms.TextBox();
-            this.EC_MainExpAfterText = new System.Windows.Forms.Label();
-            this.EC_MainLvAfter = new System.Windows.Forms.TextBox();
-            this.EC_MainLvAfterText = new System.Windows.Forms.Label();
-            this.EC_MainBefore = new System.Windows.Forms.GroupBox();
-            this.EC_MainExpBefore = new System.Windows.Forms.TextBox();
-            this.EC_MainExpBeforeText = new System.Windows.Forms.Label();
-            this.EC_MainLvBefore = new System.Windows.Forms.TextBox();
-            this.EC_MainLvBeforeText = new System.Windows.Forms.Label();
-            this.EC_Chara = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.EC_CharaTips = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.EC_CharaExpNeed = new SAOCR_Data_Manager.Controls.BreezeLabel();
-            this.EC_CharaExpNeedText = new System.Windows.Forms.Label();
-            this.EC_CharaCalc = new SAOCR_Data_Manager.Button_SE_();
-            this.EC_CharaAfter = new System.Windows.Forms.GroupBox();
-            this.EC_CharaExpAfter = new System.Windows.Forms.TextBox();
-            this.EC_CharaExpAfterText = new System.Windows.Forms.Label();
-            this.EC_CharaLvAfter = new System.Windows.Forms.TextBox();
-            this.EC_CharaLvAfterText = new System.Windows.Forms.Label();
-            this.EC_CharaBefore = new System.Windows.Forms.GroupBox();
-            this.EC_CharaExpBefore = new System.Windows.Forms.TextBox();
-            this.EC_CharaExpBeforeText = new System.Windows.Forms.Label();
-            this.EC_CharaLvBefore = new System.Windows.Forms.TextBox();
-            this.EC_CharaLvBeforeText = new System.Windows.Forms.Label();
-            this.P_Statistics = new System.Windows.Forms.Panel();
-            this.SS_Monster = new System.Windows.Forms.GroupBox();
-            this.SS_MonsterCalculate = new SAOCR_Data_Manager.Button_SE_();
-            this.SS_MonsterPanel = new System.Windows.Forms.Panel();
-            this.SS_MonsterTypeRateText = new System.Windows.Forms.Label();
-            this.SS_MonsterTypeRate = new System.Windows.Forms.ListView();
-            this.SS_MonsterHPRate = new System.Windows.Forms.ListView();
-            this.SS_MonsterHPRateText = new System.Windows.Forms.Label();
-            this.SS_Character = new System.Windows.Forms.GroupBox();
-            this.SS_CHaraPanel = new System.Windows.Forms.Panel();
-            this.SS_CharaSceneRateText = new System.Windows.Forms.Label();
-            this.SS_CharaSceneRate = new System.Windows.Forms.ListView();
-            this.SS_CharaRarityRateText = new System.Windows.Forms.Label();
-            this.SS_CharaRarityRate = new System.Windows.Forms.ListView();
-            this.SS_CharaWeaponUsingRateText = new System.Windows.Forms.Label();
-            this.SS_CharaSeriesRateText = new System.Windows.Forms.Label();
-            this.SS_CharaWeaponUsingRate = new System.Windows.Forms.ListView();
-            this.SS_CharaElementRate = new System.Windows.Forms.ListView();
-            this.SS_CharaSeriesRate = new System.Windows.Forms.ListView();
-            this.SS_CharaElementRateText = new System.Windows.Forms.Label();
-            this.SS_CharaCalculate = new SAOCR_Data_Manager.Button_SE_();
-            this.SS_Weapon = new System.Windows.Forms.GroupBox();
-            this.P_CsvTable = new System.Windows.Forms.Panel();
-            this.CT_FindResultList = new System.Windows.Forms.ListView();
-            this.CT_SearchGo = new SAOCR_Data_Manager.Button_SE_();
-            this.CT_Search = new System.Windows.Forms.TextBox();
-            this.CT_SearchString = new System.Windows.Forms.Label();
-            this.CT_EndColumnLabel = new System.Windows.Forms.Label();
-            this.CT_StartColumnLabel = new System.Windows.Forms.Label();
-            this.CT_EndColumn = new System.Windows.Forms.NumericUpDown();
-            this.CT_StartColumn = new System.Windows.Forms.NumericUpDown();
-            this.CT_Tips = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.CT_StepGo = new SAOCR_Data_Manager.Button_SE_();
-            this.CT_StepLabel = new System.Windows.Forms.Label();
-            this.CT_Step = new System.Windows.Forms.TextBox();
-            this.CT_CsvView = new System.Windows.Forms.DataGridView();
-            this.P_Config = new System.Windows.Forms.Panel();
-            this.ST_SourcePath = new System.Windows.Forms.GroupBox();
-            this.ST_SourceASBText = new System.Windows.Forms.Label();
-            this.ST_SourceCSV = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_SourceASB = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_SourceCSVText = new System.Windows.Forms.Label();
-            this.WMP = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ST_AUProg = new System.Windows.Forms.GroupBox();
-            this.ST_AUProgCheckGo = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_AUProgChannel = new System.Windows.Forms.ComboBox();
-            this.ST_AUProgMode = new System.Windows.Forms.ComboBox();
-            this.ST_AUProgChannelText = new System.Windows.Forms.Label();
-            this.ST_AUProgModeText = new System.Windows.Forms.Label();
-            this.ST_AUProgLatestVerText = new System.Windows.Forms.Label();
-            this.ST_AUProgLatestVer = new System.Windows.Forms.Label();
-            this.ST_AUProgCurrentVerText = new System.Windows.Forms.Label();
-            this.ST_AUProgCurrentVer = new System.Windows.Forms.Label();
-            this.ST_AboutProgram = new System.Windows.Forms.GroupBox();
-            this.ST_DevelopersText = new System.Windows.Forms.Label();
-            this.ST_Developer = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_VersionText = new System.Windows.Forms.Label();
-            this.ST_Version = new System.Windows.Forms.Label();
-            this.ST_DataTitle = new System.Windows.Forms.GroupBox();
-            this.ST_ClearAllAttachments = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_AttachmentMode = new System.Windows.Forms.ComboBox();
-            this.ST_AttachmentModeText = new System.Windows.Forms.Label();
-            this.ST_AUCsvBrowse = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_AUCsvCheckGo = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_AUCsvPath = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_AUCsvMode = new System.Windows.Forms.ComboBox();
-            this.ST_AutoLoad = new System.Windows.Forms.CheckBox();
-            this.ST_ReLoad = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_AUCsvPathText = new System.Windows.Forms.Label();
-            this.ST_Data = new System.Windows.Forms.ListView();
-            this.ST_AUCsvModeText = new System.Windows.Forms.Label();
-            this.ST_SoundPath = new System.Windows.Forms.GroupBox();
-            this.ST_PathMessageMute = new System.Windows.Forms.CheckBox();
-            this.ST_PathMessageBrowse = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_PathMessage = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_PathMessageText = new System.Windows.Forms.Label();
-            this.ST_PathBGMMute = new System.Windows.Forms.CheckBox();
-            this.ST_PathWarningMute = new System.Windows.Forms.CheckBox();
-            this.ST_PathBeepMute = new System.Windows.Forms.CheckBox();
-            this.ST_PathBGMText = new System.Windows.Forms.Label();
-            this.ST_PathBGM = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_PathWarningBrowse = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_PathBGMBrowse = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_PathBeepText = new System.Windows.Forms.Label();
-            this.ST_PathBeepBrowse = new SAOCR_Data_Manager.Button_SE_();
-            this.ST_PathWarning = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_PathBeep = new SAOCR_Data_Manager.MarqueeableLabel();
-            this.ST_PathWarningText = new System.Windows.Forms.Label();
+            this.P_Equip = new System.Windows.Forms.Panel();
+            this.EQ_FavList = new System.Windows.Forms.ListView();
+            this.EQ_FavText = new System.Windows.Forms.Label();
+            this.EQ_SearchBox = new System.Windows.Forms.GroupBox();
+            this.EQ_Result = new System.Windows.Forms.ListView();
+            this.EQ_Condition2 = new System.Windows.Forms.ListView();
+            this.EQ_Condition1 = new System.Windows.Forms.ListView();
+            this.EQ_SharpBox = new System.Windows.Forms.GroupBox();
+            this.EQ_R4 = new System.Windows.Forms.RadioButton();
+            this.EQ_R3 = new System.Windows.Forms.RadioButton();
+            this.EQ_R2 = new System.Windows.Forms.RadioButton();
+            this.EQ_R1 = new System.Windows.Forms.RadioButton();
+            this.EQ_WeaponIDText = new System.Windows.Forms.Label();
+            this.EQ_WeaponID = new System.Windows.Forms.TextBox();
             this.P_CharacterData = new System.Windows.Forms.Panel();
-            this.CD_SearchCharacter = new SAOCR_Data_Manager.Controls.CharacterSearcher();
-            this.CD_CloseTab = new SAOCR_Data_Manager.Button_SE_();
-            this.CD_NewTab = new SAOCR_Data_Manager.Button_SE_();
             this.CD_CharacterTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.CharaDataDisplay = new SAOCR_Data_Manager.Forms.CharaDataDisplay();
             this.CD_Favorite = new System.Windows.Forms.ListView();
             this.CD_CharacterIDText = new System.Windows.Forms.Label();
-            this.CD_CharacterIDGo = new SAOCR_Data_Manager.Button_SE_();
             this.CD_CharacterID = new System.Windows.Forms.TextBox();
             this.CD_FavoriteText = new System.Windows.Forms.Label();
             this.P_Download = new System.Windows.Forms.Panel();
@@ -232,28 +77,217 @@
             this.DL_CompleteList = new System.Windows.Forms.RichTextBox();
             this.DL_DownloadLogText = new System.Windows.Forms.Label();
             this.DL_CharaPicBox = new System.Windows.Forms.GroupBox();
-            this.DL_SearchCharacter = new SAOCR_Data_Manager.Controls.CharacterSearcher();
-            this.DL_AbortDownload = new SAOCR_Data_Manager.Button_SE_();
             this.DL_PicCount = new System.Windows.Forms.Label();
             this.DL_PicCountText = new System.Windows.Forms.Label();
-            this.DL_ClearAll = new SAOCR_Data_Manager.Button_SE_();
-            this.DL_StartDownload = new SAOCR_Data_Manager.Button_SE_();
-            this.DL_CharaIDAdd = new SAOCR_Data_Manager.Button_SE_();
             this.DL_CharaIDText = new System.Windows.Forms.Label();
             this.DL_CharaID = new System.Windows.Forms.TextBox();
-            this.DL_Add = new SAOCR_Data_Manager.Button_SE_();
-            this.DL_Remove = new SAOCR_Data_Manager.Button_SE_();
-            this.DL_AddAll = new SAOCR_Data_Manager.Button_SE_();
             this.DL_DownloadListText = new System.Windows.Forms.Label();
             this.DL_DownloadList = new System.Windows.Forms.ListView();
             this.DL_Arrow = new System.Windows.Forms.Label();
+            this.P_EXPCalc = new System.Windows.Forms.Panel();
+            this.EC_Main = new System.Windows.Forms.GroupBox();
+            this.EC_MainParamAfter = new System.Windows.Forms.GroupBox();
+            this.EC_MainSSAfter = new System.Windows.Forms.Label();
+            this.EC_MainSSAfterText = new System.Windows.Forms.Label();
+            this.EC_MainCostAfter = new System.Windows.Forms.Label();
+            this.EC_MainHPAfter = new System.Windows.Forms.Label();
+            this.EC_MainCostAfterText = new System.Windows.Forms.Label();
+            this.EC_MainHPAfterText = new System.Windows.Forms.Label();
+            this.EC_MainMENAfter = new System.Windows.Forms.Label();
+            this.EC_MainINTAfter = new System.Windows.Forms.Label();
+            this.EC_MainMENAfterText = new System.Windows.Forms.Label();
+            this.EC_MainINTAfterText = new System.Windows.Forms.Label();
+            this.EC_MainVITAfter = new System.Windows.Forms.Label();
+            this.EC_MainSTRAfter = new System.Windows.Forms.Label();
+            this.EC_MainVITAfterText = new System.Windows.Forms.Label();
+            this.EC_MainSTRAfterText = new System.Windows.Forms.Label();
+            this.EC_MainParamBefore = new System.Windows.Forms.GroupBox();
+            this.EC_MainSSBefore = new System.Windows.Forms.Label();
+            this.EC_MainSSBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainCostBefore = new System.Windows.Forms.Label();
+            this.EC_MainHPBefore = new System.Windows.Forms.Label();
+            this.EC_MainCostBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainHPBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainMENBefore = new System.Windows.Forms.Label();
+            this.EC_MainINTBefore = new System.Windows.Forms.Label();
+            this.EC_MainMENBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainINTBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainVITBefore = new System.Windows.Forms.Label();
+            this.EC_MainSTRBefore = new System.Windows.Forms.Label();
+            this.EC_MainVITBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainSTRBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainExpNeedText = new System.Windows.Forms.Label();
+            this.EC_MainAfter = new System.Windows.Forms.GroupBox();
+            this.EC_MainExpAfter = new System.Windows.Forms.TextBox();
+            this.EC_MainExpAfterText = new System.Windows.Forms.Label();
+            this.EC_MainLvAfter = new System.Windows.Forms.TextBox();
+            this.EC_MainLvAfterText = new System.Windows.Forms.Label();
+            this.EC_MainBefore = new System.Windows.Forms.GroupBox();
+            this.EC_MainExpBefore = new System.Windows.Forms.TextBox();
+            this.EC_MainExpBeforeText = new System.Windows.Forms.Label();
+            this.EC_MainLvBefore = new System.Windows.Forms.TextBox();
+            this.EC_MainLvBeforeText = new System.Windows.Forms.Label();
+            this.EC_Chara = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EC_CharaExpNeedText = new System.Windows.Forms.Label();
+            this.EC_CharaAfter = new System.Windows.Forms.GroupBox();
+            this.EC_CharaExpAfter = new System.Windows.Forms.TextBox();
+            this.EC_CharaExpAfterText = new System.Windows.Forms.Label();
+            this.EC_CharaLvAfter = new System.Windows.Forms.TextBox();
+            this.EC_CharaLvAfterText = new System.Windows.Forms.Label();
+            this.EC_CharaBefore = new System.Windows.Forms.GroupBox();
+            this.EC_CharaExpBefore = new System.Windows.Forms.TextBox();
+            this.EC_CharaExpBeforeText = new System.Windows.Forms.Label();
+            this.EC_CharaLvBefore = new System.Windows.Forms.TextBox();
+            this.EC_CharaLvBeforeText = new System.Windows.Forms.Label();
+            this.P_Statistics = new System.Windows.Forms.Panel();
+            this.SS_Monster = new System.Windows.Forms.GroupBox();
+            this.SS_MonsterPanel = new System.Windows.Forms.Panel();
+            this.SS_MonsterTypeRateText = new System.Windows.Forms.Label();
+            this.SS_MonsterTypeRate = new System.Windows.Forms.ListView();
+            this.SS_MonsterHPRate = new System.Windows.Forms.ListView();
+            this.SS_MonsterHPRateText = new System.Windows.Forms.Label();
+            this.SS_Character = new System.Windows.Forms.GroupBox();
+            this.SS_CHaraPanel = new System.Windows.Forms.Panel();
+            this.SS_CharaSceneRateText = new System.Windows.Forms.Label();
+            this.SS_CharaSceneRate = new System.Windows.Forms.ListView();
+            this.SS_CharaRarityRateText = new System.Windows.Forms.Label();
+            this.SS_CharaRarityRate = new System.Windows.Forms.ListView();
+            this.SS_CharaWeaponUsingRateText = new System.Windows.Forms.Label();
+            this.SS_CharaSeriesRateText = new System.Windows.Forms.Label();
+            this.SS_CharaWeaponUsingRate = new System.Windows.Forms.ListView();
+            this.SS_CharaElementRate = new System.Windows.Forms.ListView();
+            this.SS_CharaSeriesRate = new System.Windows.Forms.ListView();
+            this.SS_CharaElementRateText = new System.Windows.Forms.Label();
+            this.SS_Weapon = new System.Windows.Forms.GroupBox();
+            this.P_CsvTable = new System.Windows.Forms.Panel();
+            this.CT_FindResultList = new System.Windows.Forms.ListView();
+            this.CT_Search = new System.Windows.Forms.TextBox();
+            this.CT_SearchString = new System.Windows.Forms.Label();
+            this.CT_EndColumnLabel = new System.Windows.Forms.Label();
+            this.CT_StartColumnLabel = new System.Windows.Forms.Label();
+            this.CT_EndColumn = new System.Windows.Forms.NumericUpDown();
+            this.CT_StartColumn = new System.Windows.Forms.NumericUpDown();
+            this.CT_StepLabel = new System.Windows.Forms.Label();
+            this.CT_Step = new System.Windows.Forms.TextBox();
+            this.CT_CsvView = new System.Windows.Forms.DataGridView();
+            this.P_Config = new System.Windows.Forms.Panel();
+            this.ST_SourcePath = new System.Windows.Forms.GroupBox();
+            this.ST_SourceASBText = new System.Windows.Forms.Label();
+            this.ST_SourceCSVText = new System.Windows.Forms.Label();
+            this.WMP = new AxWMPLib.AxWindowsMediaPlayer();
+            this.ST_AUProg = new System.Windows.Forms.GroupBox();
+            this.ST_AUProgChannel = new System.Windows.Forms.ComboBox();
+            this.ST_AUProgMode = new System.Windows.Forms.ComboBox();
+            this.ST_AUProgChannelText = new System.Windows.Forms.Label();
+            this.ST_AUProgModeText = new System.Windows.Forms.Label();
+            this.ST_AUProgLatestVerText = new System.Windows.Forms.Label();
+            this.ST_AUProgLatestVer = new System.Windows.Forms.Label();
+            this.ST_AUProgCurrentVerText = new System.Windows.Forms.Label();
+            this.ST_AUProgCurrentVer = new System.Windows.Forms.Label();
+            this.ST_AboutProgram = new System.Windows.Forms.GroupBox();
+            this.ST_DevelopersText = new System.Windows.Forms.Label();
+            this.ST_VersionText = new System.Windows.Forms.Label();
+            this.ST_Version = new System.Windows.Forms.Label();
+            this.ST_DataTitle = new System.Windows.Forms.GroupBox();
+            this.ST_AttachmentMode = new System.Windows.Forms.ComboBox();
+            this.ST_AttachmentModeText = new System.Windows.Forms.Label();
+            this.ST_AUCsvMode = new System.Windows.Forms.ComboBox();
+            this.ST_AutoLoad = new System.Windows.Forms.CheckBox();
+            this.ST_AUCsvPathText = new System.Windows.Forms.Label();
+            this.ST_Data = new System.Windows.Forms.ListView();
+            this.ST_AUCsvModeText = new System.Windows.Forms.Label();
+            this.ST_SoundPath = new System.Windows.Forms.GroupBox();
+            this.ST_PathMessageMute = new System.Windows.Forms.CheckBox();
+            this.ST_PathMessageText = new System.Windows.Forms.Label();
+            this.ST_PathBGMMute = new System.Windows.Forms.CheckBox();
+            this.ST_PathWarningMute = new System.Windows.Forms.CheckBox();
+            this.ST_PathBeepMute = new System.Windows.Forms.CheckBox();
+            this.ST_PathBGMText = new System.Windows.Forms.Label();
+            this.ST_PathBeepText = new System.Windows.Forms.Label();
+            this.ST_PathWarningText = new System.Windows.Forms.Label();
             this.EX_FileDialog = new System.Windows.Forms.OpenFileDialog();
             this.EX_DirectoryDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.HM_ToHomePage = new SAOCR_Data_Manager.Button_SE_();
+            this.MN_Close = new SAOCR_Data_Manager.Button_SE_();
+            this.MN_Min = new SAOCR_Data_Manager.Button_SE_();
+            this.EQ_FavRem = new SAOCR_Data_Manager.Button_SE_();
+            this.EQ_GoAccessory = new SAOCR_Data_Manager.Button_SE_();
+            this.EQ_GoArmor = new SAOCR_Data_Manager.Button_SE_();
+            this.EQ_GoWeapon = new SAOCR_Data_Manager.Button_SE_();
+            this.EQ_FavAdd = new SAOCR_Data_Manager.Button_SE_();
+            this.EQ_Search = new SAOCR_Data_Manager.Button_SE_();
+            this.EQ_WStatus = new SAOCR_Data_Manager.Module.WeaponStatus();
+            this.EQ_WeaponSearch = new SAOCR_Data_Manager.Button_SE_();
             this.CD_MakeIDTable = new SAOCR_Data_Manager.Button_SE_();
+            this.CD_SearchCharacter = new SAOCR_Data_Manager.Controls.CharacterSearcher();
+            this.CD_CloseTab = new SAOCR_Data_Manager.Button_SE_();
+            this.CD_NewTab = new SAOCR_Data_Manager.Button_SE_();
+            this.CharaDataDisplay = new SAOCR_Data_Manager.Forms.CharaDataDisplay();
+            this.CD_CharacterIDGo = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_SearchCharacter = new SAOCR_Data_Manager.Controls.CharacterSearcher();
+            this.DL_AbortDownload = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_ClearAll = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_StartDownload = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_CharaIDAdd = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_Add = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_Remove = new SAOCR_Data_Manager.Button_SE_();
+            this.DL_AddAll = new SAOCR_Data_Manager.Button_SE_();
+            this.EC_MainExpNeed = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_MainRarityAfter = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_MainRarityBefore = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_MainCalc = new SAOCR_Data_Manager.Button_SE_();
+            this.EC_CharaTips = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.EC_CharaExpNeed = new SAOCR_Data_Manager.Controls.BreezeLabel();
+            this.EC_CharaCalc = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_ToEXPCalc = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_ToDownload = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_ToStatistics = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_Announcement = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.HM_ToConfig = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_ToCsvTable = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_Res_Load = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_Res_Select = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_ToEquipmentData = new SAOCR_Data_Manager.Button_SE_();
+            this.HM_ToCharacterData = new SAOCR_Data_Manager.Button_SE_();
+            this.SS_MonsterCalculate = new SAOCR_Data_Manager.Button_SE_();
+            this.SS_CharaCalculate = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_A100 = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_D100 = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_A1K = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_D1K = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_SearchGo = new SAOCR_Data_Manager.Button_SE_();
+            this.CT_Tips = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.CT_StepGo = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_SourceCSV = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_SourceASB = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_AUProgCheckGo = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_Developer = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_ClearAllAttachments = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_AUCsvBrowse = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_AUCsvCheckGo = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_AUCsvPath = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_ReLoad = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_PathMessageBrowse = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_PathMessage = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_PathBGM = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_PathWarningBrowse = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_PathBGMBrowse = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_PathBeepBrowse = new SAOCR_Data_Manager.Button_SE_();
+            this.ST_PathWarning = new SAOCR_Data_Manager.MarqueeableLabel();
+            this.ST_PathBeep = new SAOCR_Data_Manager.MarqueeableLabel();
             this.P_HomePage.SuspendLayout();
             this.MN_Border.SuspendLayout();
             this.MN_StatusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BGM)).BeginInit();
+            this.P_Equip.SuspendLayout();
+            this.EQ_SearchBox.SuspendLayout();
+            this.EQ_SharpBox.SuspendLayout();
+            this.P_CharacterData.SuspendLayout();
+            this.CD_CharacterTab.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.P_Download.SuspendLayout();
+            this.DL_CharaPicBox.SuspendLayout();
             this.P_EXPCalc.SuspendLayout();
             this.EC_Main.SuspendLayout();
             this.EC_MainParamAfter.SuspendLayout();
@@ -279,11 +313,6 @@
             this.ST_AboutProgram.SuspendLayout();
             this.ST_DataTitle.SuspendLayout();
             this.ST_SoundPath.SuspendLayout();
-            this.P_CharacterData.SuspendLayout();
-            this.CD_CharacterTab.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.P_Download.SuspendLayout();
-            this.DL_CharaPicBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // MN_Title
@@ -315,207 +344,6 @@
             this.P_HomePage.Size = new System.Drawing.Size(1078, 695);
             this.P_HomePage.TabIndex = 4;
             // 
-            // HM_ToEXPCalc
-            // 
-            this.HM_ToEXPCalc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToEXPCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToEXPCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToEXPCalc.ButtonBackgroundImage = null;
-            this.HM_ToEXPCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToEXPCalc.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToEXPCalc.ButtonEnabled = true;
-            this.HM_ToEXPCalc.ButtonImage = null;
-            this.HM_ToEXPCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToEXPCalc.ButtonText = "";
-            this.HM_ToEXPCalc.Font = new System.Drawing.Font("微軟正黑體", 20F);
-            this.HM_ToEXPCalc.ForeColor = System.Drawing.Color.White;
-            this.HM_ToEXPCalc.Location = new System.Drawing.Point(277, 186);
-            this.HM_ToEXPCalc.Margin = new System.Windows.Forms.Padding(4);
-            this.HM_ToEXPCalc.Name = "HM_ToEXPCalc";
-            this.HM_ToEXPCalc.Size = new System.Drawing.Size(258, 170);
-            this.HM_ToEXPCalc.TabIndex = 14;
-            // 
-            // HM_ToDownload
-            // 
-            this.HM_ToDownload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToDownload.ButtonBackgroundImage = null;
-            this.HM_ToDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToDownload.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToDownload.ButtonEnabled = true;
-            this.HM_ToDownload.ButtonImage = null;
-            this.HM_ToDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToDownload.ButtonText = "";
-            this.HM_ToDownload.Font = new System.Drawing.Font("微軟正黑體", 20F);
-            this.HM_ToDownload.ForeColor = System.Drawing.Color.White;
-            this.HM_ToDownload.Location = new System.Drawing.Point(11, 186);
-            this.HM_ToDownload.Margin = new System.Windows.Forms.Padding(3, 4, 4, 4);
-            this.HM_ToDownload.Name = "HM_ToDownload";
-            this.HM_ToDownload.Size = new System.Drawing.Size(258, 170);
-            this.HM_ToDownload.TabIndex = 13;
-            // 
-            // HM_ToStatistics
-            // 
-            this.HM_ToStatistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToStatistics.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToStatistics.ButtonBackgroundImage = null;
-            this.HM_ToStatistics.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToStatistics.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToStatistics.ButtonEnabled = true;
-            this.HM_ToStatistics.ButtonImage = null;
-            this.HM_ToStatistics.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToStatistics.ButtonText = "";
-            this.HM_ToStatistics.Font = new System.Drawing.Font("微軟正黑體", 20F);
-            this.HM_ToStatistics.ForeColor = System.Drawing.Color.White;
-            this.HM_ToStatistics.Location = new System.Drawing.Point(809, 8);
-            this.HM_ToStatistics.Margin = new System.Windows.Forms.Padding(4, 4, 3, 4);
-            this.HM_ToStatistics.Name = "HM_ToStatistics";
-            this.HM_ToStatistics.Size = new System.Drawing.Size(258, 170);
-            this.HM_ToStatistics.TabIndex = 12;
-            // 
-            // HM_Announcement
-            // 
-            this.HM_Announcement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.HM_Announcement.Direction = MarqueeDirection.Vertical;
-            this.HM_Announcement.EnableMarquee = true;
-            this.HM_Announcement.Font = new System.Drawing.Font("微軟正黑體", 11F);
-            this.HM_Announcement.FreezeTime = 3000;
-            this.HM_Announcement.LabelSize = new System.Drawing.Size(829, 30);
-            this.HM_Announcement.LeftDistance = 5;
-            this.HM_Announcement.LForeColor = System.Drawing.Color.White;
-            this.HM_Announcement.Location = new System.Drawing.Point(12, 637);
-            this.HM_Announcement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.HM_Announcement.MarqueeText = "";
-            this.HM_Announcement.Mode = MarqueeMode.ContinualAndSneeze;
-            this.HM_Announcement.MoveDifferenceEachTime = 1;
-            this.HM_Announcement.MoveInterval = 15;
-            this.HM_Announcement.Name = "HM_Announcement";
-            this.HM_Announcement.OverBorderDistance = 0;
-            this.HM_Announcement.Size = new System.Drawing.Size(829, 30);
-            this.HM_Announcement.TabIndex = 11;
-            // 
-            // HM_ToConfig
-            // 
-            this.HM_ToConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToConfig.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToConfig.ButtonBackgroundImage = null;
-            this.HM_ToConfig.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToConfig.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToConfig.ButtonEnabled = true;
-            this.HM_ToConfig.ButtonImage = null;
-            this.HM_ToConfig.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToConfig.ButtonText = "";
-            this.HM_ToConfig.Font = new System.Drawing.Font("微軟正黑體", 20F);
-            this.HM_ToConfig.ForeColor = System.Drawing.Color.White;
-            this.HM_ToConfig.Location = new System.Drawing.Point(847, 474);
-            this.HM_ToConfig.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.HM_ToConfig.Name = "HM_ToConfig";
-            this.HM_ToConfig.Size = new System.Drawing.Size(220, 153);
-            this.HM_ToConfig.TabIndex = 10;
-            // 
-            // HM_ToCsvTable
-            // 
-            this.HM_ToCsvTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToCsvTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToCsvTable.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToCsvTable.ButtonBackgroundImage = null;
-            this.HM_ToCsvTable.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToCsvTable.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToCsvTable.ButtonEnabled = true;
-            this.HM_ToCsvTable.ButtonImage = null;
-            this.HM_ToCsvTable.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToCsvTable.ButtonText = "";
-            this.HM_ToCsvTable.Font = new System.Drawing.Font("微軟正黑體", 20F);
-            this.HM_ToCsvTable.ForeColor = System.Drawing.Color.White;
-            this.HM_ToCsvTable.Location = new System.Drawing.Point(543, 8);
-            this.HM_ToCsvTable.Margin = new System.Windows.Forms.Padding(4);
-            this.HM_ToCsvTable.Name = "HM_ToCsvTable";
-            this.HM_ToCsvTable.Size = new System.Drawing.Size(258, 170);
-            this.HM_ToCsvTable.TabIndex = 9;
-            // 
-            // HM_Res_Load
-            // 
-            this.HM_Res_Load.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_Res_Load.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_Res_Load.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_Res_Load.ButtonBackgroundImage = null;
-            this.HM_Res_Load.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_Res_Load.ButtonColor = System.Drawing.Color.White;
-            this.HM_Res_Load.ButtonEnabled = true;
-            this.HM_Res_Load.ButtonImage = null;
-            this.HM_Res_Load.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_Res_Load.ButtonText = "";
-            this.HM_Res_Load.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.HM_Res_Load.ForeColor = System.Drawing.Color.White;
-            this.HM_Res_Load.Location = new System.Drawing.Point(847, 637);
-            this.HM_Res_Load.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.HM_Res_Load.Name = "HM_Res_Load";
-            this.HM_Res_Load.Size = new System.Drawing.Size(107, 30);
-            this.HM_Res_Load.TabIndex = 7;
-            // 
-            // HM_Res_Select
-            // 
-            this.HM_Res_Select.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_Res_Select.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_Res_Select.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_Res_Select.ButtonBackgroundImage = null;
-            this.HM_Res_Select.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_Res_Select.ButtonColor = System.Drawing.Color.White;
-            this.HM_Res_Select.ButtonEnabled = true;
-            this.HM_Res_Select.ButtonImage = null;
-            this.HM_Res_Select.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_Res_Select.ButtonText = "";
-            this.HM_Res_Select.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.HM_Res_Select.ForeColor = System.Drawing.Color.White;
-            this.HM_Res_Select.Location = new System.Drawing.Point(960, 637);
-            this.HM_Res_Select.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
-            this.HM_Res_Select.Name = "HM_Res_Select";
-            this.HM_Res_Select.Size = new System.Drawing.Size(107, 30);
-            this.HM_Res_Select.TabIndex = 6;
-            // 
-            // HM_ToEquipmentData
-            // 
-            this.HM_ToEquipmentData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToEquipmentData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToEquipmentData.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToEquipmentData.ButtonBackgroundImage = null;
-            this.HM_ToEquipmentData.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToEquipmentData.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToEquipmentData.ButtonEnabled = true;
-            this.HM_ToEquipmentData.ButtonImage = null;
-            this.HM_ToEquipmentData.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToEquipmentData.ButtonText = "";
-            this.HM_ToEquipmentData.Font = new System.Drawing.Font("微軟正黑體", 20F);
-            this.HM_ToEquipmentData.ForeColor = System.Drawing.Color.White;
-            this.HM_ToEquipmentData.Location = new System.Drawing.Point(277, 8);
-            this.HM_ToEquipmentData.Margin = new System.Windows.Forms.Padding(4);
-            this.HM_ToEquipmentData.Name = "HM_ToEquipmentData";
-            this.HM_ToEquipmentData.Size = new System.Drawing.Size(258, 170);
-            this.HM_ToEquipmentData.TabIndex = 4;
-            // 
-            // HM_ToCharacterData
-            // 
-            this.HM_ToCharacterData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToCharacterData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToCharacterData.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToCharacterData.ButtonBackgroundImage = null;
-            this.HM_ToCharacterData.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToCharacterData.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToCharacterData.ButtonEnabled = true;
-            this.HM_ToCharacterData.ButtonImage = null;
-            this.HM_ToCharacterData.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToCharacterData.ButtonText = "";
-            this.HM_ToCharacterData.Font = new System.Drawing.Font("微軟正黑體", 20F);
-            this.HM_ToCharacterData.ForeColor = System.Drawing.Color.White;
-            this.HM_ToCharacterData.Location = new System.Drawing.Point(11, 8);
-            this.HM_ToCharacterData.Margin = new System.Windows.Forms.Padding(3, 4, 4, 4);
-            this.HM_ToCharacterData.Name = "HM_ToCharacterData";
-            this.HM_ToCharacterData.Size = new System.Drawing.Size(258, 170);
-            this.HM_ToCharacterData.TabIndex = 3;
-            // 
             // MN_Border
             // 
             this.MN_Border.Controls.Add(this.MN_StatusStrip);
@@ -524,6 +352,7 @@
             this.MN_Border.Controls.Add(this.MN_Min);
             this.MN_Border.Controls.Add(this.MN_Title);
             this.MN_Border.Controls.Add(this.BGM);
+            this.MN_Border.Controls.Add(this.P_Equip);
             this.MN_Border.Controls.Add(this.P_CharacterData);
             this.MN_Border.Controls.Add(this.P_Download);
             this.MN_Border.Controls.Add(this.P_EXPCalc);
@@ -581,66 +410,6 @@
             this.MN_Status.Name = "MN_Status";
             this.MN_Status.Size = new System.Drawing.Size(0, 17);
             // 
-            // HM_ToHomePage
-            // 
-            this.HM_ToHomePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToHomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToHomePage.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.HM_ToHomePage.ButtonBackgroundImage = null;
-            this.HM_ToHomePage.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.HM_ToHomePage.ButtonColor = System.Drawing.Color.White;
-            this.HM_ToHomePage.ButtonEnabled = true;
-            this.HM_ToHomePage.ButtonImage = null;
-            this.HM_ToHomePage.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.HM_ToHomePage.ButtonText = "";
-            this.HM_ToHomePage.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.HM_ToHomePage.ForeColor = System.Drawing.Color.White;
-            this.HM_ToHomePage.Location = new System.Drawing.Point(888, 1);
-            this.HM_ToHomePage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.HM_ToHomePage.Name = "HM_ToHomePage";
-            this.HM_ToHomePage.Size = new System.Drawing.Size(67, 24);
-            this.HM_ToHomePage.TabIndex = 5;
-            // 
-            // MN_Close
-            // 
-            this.MN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.MN_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MN_Close.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.MN_Close.ButtonBackgroundImage = null;
-            this.MN_Close.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MN_Close.ButtonColor = System.Drawing.Color.Red;
-            this.MN_Close.ButtonEnabled = true;
-            this.MN_Close.ButtonImage = null;
-            this.MN_Close.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MN_Close.ButtonText = "";
-            this.MN_Close.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.MN_Close.ForeColor = System.Drawing.Color.Red;
-            this.MN_Close.Location = new System.Drawing.Point(1029, 1);
-            this.MN_Close.Margin = new System.Windows.Forms.Padding(0);
-            this.MN_Close.Name = "MN_Close";
-            this.MN_Close.Size = new System.Drawing.Size(50, 24);
-            this.MN_Close.TabIndex = 1;
-            // 
-            // MN_Min
-            // 
-            this.MN_Min.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.MN_Min.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MN_Min.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.MN_Min.ButtonBackgroundImage = null;
-            this.MN_Min.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MN_Min.ButtonColor = System.Drawing.Color.White;
-            this.MN_Min.ButtonEnabled = true;
-            this.MN_Min.ButtonImage = null;
-            this.MN_Min.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MN_Min.ButtonText = "";
-            this.MN_Min.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.MN_Min.ForeColor = System.Drawing.Color.White;
-            this.MN_Min.Location = new System.Drawing.Point(979, 1);
-            this.MN_Min.Margin = new System.Windows.Forms.Padding(0);
-            this.MN_Min.Name = "MN_Min";
-            this.MN_Min.Size = new System.Drawing.Size(50, 24);
-            this.MN_Min.TabIndex = 2;
-            // 
             // BGM
             // 
             this.BGM.Enabled = true;
@@ -650,6 +419,566 @@
             this.BGM.Size = new System.Drawing.Size(75, 23);
             this.BGM.TabIndex = 22;
             this.BGM.Visible = false;
+            // 
+            // P_Equip
+            // 
+            this.P_Equip.Controls.Add(this.EQ_FavList);
+            this.P_Equip.Controls.Add(this.EQ_FavRem);
+            this.P_Equip.Controls.Add(this.EQ_FavText);
+            this.P_Equip.Controls.Add(this.EQ_GoAccessory);
+            this.P_Equip.Controls.Add(this.EQ_GoArmor);
+            this.P_Equip.Controls.Add(this.EQ_GoWeapon);
+            this.P_Equip.Controls.Add(this.EQ_FavAdd);
+            this.P_Equip.Controls.Add(this.EQ_SearchBox);
+            this.P_Equip.Controls.Add(this.EQ_SharpBox);
+            this.P_Equip.Controls.Add(this.EQ_WStatus);
+            this.P_Equip.Controls.Add(this.EQ_WeaponIDText);
+            this.P_Equip.Controls.Add(this.EQ_WeaponSearch);
+            this.P_Equip.Controls.Add(this.EQ_WeaponID);
+            this.P_Equip.Location = new System.Drawing.Point(1, 24);
+            this.P_Equip.Name = "P_Equip";
+            this.P_Equip.Size = new System.Drawing.Size(1078, 695);
+            this.P_Equip.TabIndex = 23;
+            this.P_Equip.Visible = false;
+            // 
+            // EQ_FavList
+            // 
+            this.EQ_FavList.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.EQ_FavList.AutoArrange = false;
+            this.EQ_FavList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_FavList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EQ_FavList.ForeColor = System.Drawing.Color.White;
+            this.EQ_FavList.FullRowSelect = true;
+            this.EQ_FavList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.EQ_FavList.Location = new System.Drawing.Point(698, 39);
+            this.EQ_FavList.MultiSelect = false;
+            this.EQ_FavList.Name = "EQ_FavList";
+            this.EQ_FavList.ShowItemToolTips = true;
+            this.EQ_FavList.Size = new System.Drawing.Size(369, 121);
+            this.EQ_FavList.TabIndex = 36;
+            this.EQ_FavList.UseCompatibleStateImageBehavior = false;
+            this.EQ_FavList.View = System.Windows.Forms.View.Details;
+            // 
+            // EQ_FavText
+            // 
+            this.EQ_FavText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EQ_FavText.Location = new System.Drawing.Point(698, 7);
+            this.EQ_FavText.Margin = new System.Windows.Forms.Padding(3);
+            this.EQ_FavText.Name = "EQ_FavText";
+            this.EQ_FavText.Size = new System.Drawing.Size(369, 25);
+            this.EQ_FavText.TabIndex = 33;
+            this.EQ_FavText.Text = "我的最愛清單(要求資訊或點選此處以刷新清單)";
+            this.EQ_FavText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // EQ_SearchBox
+            // 
+            this.EQ_SearchBox.Controls.Add(this.EQ_Result);
+            this.EQ_SearchBox.Controls.Add(this.EQ_Search);
+            this.EQ_SearchBox.Controls.Add(this.EQ_Condition2);
+            this.EQ_SearchBox.Controls.Add(this.EQ_Condition1);
+            this.EQ_SearchBox.ForeColor = System.Drawing.Color.White;
+            this.EQ_SearchBox.Location = new System.Drawing.Point(11, 197);
+            this.EQ_SearchBox.Name = "EQ_SearchBox";
+            this.EQ_SearchBox.Size = new System.Drawing.Size(258, 461);
+            this.EQ_SearchBox.TabIndex = 28;
+            this.EQ_SearchBox.TabStop = false;
+            // 
+            // EQ_Result
+            // 
+            this.EQ_Result.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.EQ_Result.AutoArrange = false;
+            this.EQ_Result.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EQ_Result.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EQ_Result.ForeColor = System.Drawing.Color.White;
+            this.EQ_Result.FullRowSelect = true;
+            this.EQ_Result.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.EQ_Result.Location = new System.Drawing.Point(6, 198);
+            this.EQ_Result.MultiSelect = false;
+            this.EQ_Result.Name = "EQ_Result";
+            this.EQ_Result.ShowItemToolTips = true;
+            this.EQ_Result.Size = new System.Drawing.Size(246, 253);
+            this.EQ_Result.TabIndex = 26;
+            this.EQ_Result.UseCompatibleStateImageBehavior = false;
+            this.EQ_Result.View = System.Windows.Forms.View.Details;
+            // 
+            // EQ_Condition2
+            // 
+            this.EQ_Condition2.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.EQ_Condition2.AutoArrange = false;
+            this.EQ_Condition2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EQ_Condition2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EQ_Condition2.ForeColor = System.Drawing.Color.White;
+            this.EQ_Condition2.FullRowSelect = true;
+            this.EQ_Condition2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.EQ_Condition2.HideSelection = false;
+            this.EQ_Condition2.Location = new System.Drawing.Point(133, 22);
+            this.EQ_Condition2.MultiSelect = false;
+            this.EQ_Condition2.Name = "EQ_Condition2";
+            this.EQ_Condition2.Size = new System.Drawing.Size(119, 125);
+            this.EQ_Condition2.TabIndex = 22;
+            this.EQ_Condition2.UseCompatibleStateImageBehavior = false;
+            this.EQ_Condition2.View = System.Windows.Forms.View.Details;
+            // 
+            // EQ_Condition1
+            // 
+            this.EQ_Condition1.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.EQ_Condition1.AutoArrange = false;
+            this.EQ_Condition1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EQ_Condition1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EQ_Condition1.ForeColor = System.Drawing.Color.White;
+            this.EQ_Condition1.FullRowSelect = true;
+            this.EQ_Condition1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.EQ_Condition1.HideSelection = false;
+            this.EQ_Condition1.Location = new System.Drawing.Point(7, 22);
+            this.EQ_Condition1.MultiSelect = false;
+            this.EQ_Condition1.Name = "EQ_Condition1";
+            this.EQ_Condition1.Size = new System.Drawing.Size(120, 125);
+            this.EQ_Condition1.TabIndex = 21;
+            this.EQ_Condition1.UseCompatibleStateImageBehavior = false;
+            this.EQ_Condition1.View = System.Windows.Forms.View.Details;
+            // 
+            // EQ_SharpBox
+            // 
+            this.EQ_SharpBox.Controls.Add(this.EQ_R4);
+            this.EQ_SharpBox.Controls.Add(this.EQ_R3);
+            this.EQ_SharpBox.Controls.Add(this.EQ_R2);
+            this.EQ_SharpBox.Controls.Add(this.EQ_R1);
+            this.EQ_SharpBox.ForeColor = System.Drawing.Color.White;
+            this.EQ_SharpBox.Location = new System.Drawing.Point(11, 49);
+            this.EQ_SharpBox.Name = "EQ_SharpBox";
+            this.EQ_SharpBox.Size = new System.Drawing.Size(258, 95);
+            this.EQ_SharpBox.TabIndex = 27;
+            this.EQ_SharpBox.TabStop = false;
+            // 
+            // EQ_R4
+            // 
+            this.EQ_R4.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EQ_R4.Location = new System.Drawing.Point(133, 57);
+            this.EQ_R4.Name = "EQ_R4";
+            this.EQ_R4.Size = new System.Drawing.Size(90, 28);
+            this.EQ_R4.TabIndex = 3;
+            this.EQ_R4.TabStop = true;
+            this.EQ_R4.UseVisualStyleBackColor = true;
+            // 
+            // EQ_R3
+            // 
+            this.EQ_R3.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EQ_R3.Location = new System.Drawing.Point(37, 56);
+            this.EQ_R3.Name = "EQ_R3";
+            this.EQ_R3.Size = new System.Drawing.Size(90, 28);
+            this.EQ_R3.TabIndex = 2;
+            this.EQ_R3.TabStop = true;
+            this.EQ_R3.UseVisualStyleBackColor = true;
+            // 
+            // EQ_R2
+            // 
+            this.EQ_R2.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EQ_R2.Location = new System.Drawing.Point(133, 22);
+            this.EQ_R2.Name = "EQ_R2";
+            this.EQ_R2.Size = new System.Drawing.Size(90, 28);
+            this.EQ_R2.TabIndex = 1;
+            this.EQ_R2.TabStop = true;
+            this.EQ_R2.UseVisualStyleBackColor = true;
+            // 
+            // EQ_R1
+            // 
+            this.EQ_R1.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EQ_R1.Location = new System.Drawing.Point(37, 22);
+            this.EQ_R1.Name = "EQ_R1";
+            this.EQ_R1.Size = new System.Drawing.Size(90, 28);
+            this.EQ_R1.TabIndex = 0;
+            this.EQ_R1.TabStop = true;
+            this.EQ_R1.UseVisualStyleBackColor = true;
+            // 
+            // EQ_WeaponIDText
+            // 
+            this.EQ_WeaponIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EQ_WeaponIDText.Location = new System.Drawing.Point(11, 7);
+            this.EQ_WeaponIDText.Margin = new System.Windows.Forms.Padding(3);
+            this.EQ_WeaponIDText.Name = "EQ_WeaponIDText";
+            this.EQ_WeaponIDText.Size = new System.Drawing.Size(54, 36);
+            this.EQ_WeaponIDText.TabIndex = 25;
+            this.EQ_WeaponIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EQ_WeaponID
+            // 
+            this.EQ_WeaponID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EQ_WeaponID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EQ_WeaponID.Font = new System.Drawing.Font("Consolas", 18F);
+            this.EQ_WeaponID.ForeColor = System.Drawing.Color.White;
+            this.EQ_WeaponID.Location = new System.Drawing.Point(71, 7);
+            this.EQ_WeaponID.MaxLength = 9;
+            this.EQ_WeaponID.Name = "EQ_WeaponID";
+            this.EQ_WeaponID.Size = new System.Drawing.Size(138, 36);
+            this.EQ_WeaponID.TabIndex = 23;
+            this.EQ_WeaponID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // P_CharacterData
+            // 
+            this.P_CharacterData.Controls.Add(this.CD_MakeIDTable);
+            this.P_CharacterData.Controls.Add(this.CD_SearchCharacter);
+            this.P_CharacterData.Controls.Add(this.CD_CloseTab);
+            this.P_CharacterData.Controls.Add(this.CD_NewTab);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterTab);
+            this.P_CharacterData.Controls.Add(this.CD_Favorite);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterIDText);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterIDGo);
+            this.P_CharacterData.Controls.Add(this.CD_CharacterID);
+            this.P_CharacterData.Controls.Add(this.CD_FavoriteText);
+            this.P_CharacterData.Location = new System.Drawing.Point(1, 24);
+            this.P_CharacterData.Margin = new System.Windows.Forms.Padding(0);
+            this.P_CharacterData.Name = "P_CharacterData";
+            this.P_CharacterData.Size = new System.Drawing.Size(1078, 695);
+            this.P_CharacterData.TabIndex = 11;
+            this.P_CharacterData.Visible = false;
+            // 
+            // CD_CharacterTab
+            // 
+            this.CD_CharacterTab.Controls.Add(this.tabPage1);
+            this.CD_CharacterTab.HotTrack = true;
+            this.CD_CharacterTab.Location = new System.Drawing.Point(311, 30);
+            this.CD_CharacterTab.Multiline = true;
+            this.CD_CharacterTab.Name = "CD_CharacterTab";
+            this.CD_CharacterTab.SelectedIndex = 0;
+            this.CD_CharacterTab.ShowToolTips = true;
+            this.CD_CharacterTab.Size = new System.Drawing.Size(756, 631);
+            this.CD_CharacterTab.TabIndex = 37;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.CharaDataDisplay);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(748, 602);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "角色資料 1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // CD_Favorite
+            // 
+            this.CD_Favorite.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.CD_Favorite.AutoArrange = false;
+            this.CD_Favorite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CD_Favorite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CD_Favorite.ForeColor = System.Drawing.Color.White;
+            this.CD_Favorite.FullRowSelect = true;
+            this.CD_Favorite.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.CD_Favorite.Location = new System.Drawing.Point(11, 418);
+            this.CD_Favorite.MultiSelect = false;
+            this.CD_Favorite.Name = "CD_Favorite";
+            this.CD_Favorite.Size = new System.Drawing.Size(294, 243);
+            this.CD_Favorite.TabIndex = 36;
+            this.CD_Favorite.UseCompatibleStateImageBehavior = false;
+            this.CD_Favorite.View = System.Windows.Forms.View.Details;
+            // 
+            // CD_CharacterIDText
+            // 
+            this.CD_CharacterIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_CharacterIDText.Location = new System.Drawing.Point(11, 8);
+            this.CD_CharacterIDText.Margin = new System.Windows.Forms.Padding(3);
+            this.CD_CharacterIDText.Name = "CD_CharacterIDText";
+            this.CD_CharacterIDText.Size = new System.Drawing.Size(54, 36);
+            this.CD_CharacterIDText.TabIndex = 22;
+            this.CD_CharacterIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CD_CharacterID
+            // 
+            this.CD_CharacterID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CD_CharacterID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CD_CharacterID.Font = new System.Drawing.Font("Consolas", 18F);
+            this.CD_CharacterID.ForeColor = System.Drawing.Color.White;
+            this.CD_CharacterID.Location = new System.Drawing.Point(71, 8);
+            this.CD_CharacterID.MaxLength = 8;
+            this.CD_CharacterID.Name = "CD_CharacterID";
+            this.CD_CharacterID.Size = new System.Drawing.Size(176, 36);
+            this.CD_CharacterID.TabIndex = 20;
+            this.CD_CharacterID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CD_FavoriteText
+            // 
+            this.CD_FavoriteText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CD_FavoriteText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_FavoriteText.Location = new System.Drawing.Point(11, 391);
+            this.CD_FavoriteText.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.CD_FavoriteText.Name = "CD_FavoriteText";
+            this.CD_FavoriteText.Size = new System.Drawing.Size(294, 24);
+            this.CD_FavoriteText.TabIndex = 36;
+            this.CD_FavoriteText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // P_Download
+            // 
+            this.P_Download.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.P_Download.Controls.Add(this.DL_DownloadStatus);
+            this.P_Download.Controls.Add(this.DL_Failed);
+            this.P_Download.Controls.Add(this.DL_FailedText);
+            this.P_Download.Controls.Add(this.DL_Progress);
+            this.P_Download.Controls.Add(this.DL_Completed);
+            this.P_Download.Controls.Add(this.DL_CompletedText);
+            this.P_Download.Controls.Add(this.DL_DLing);
+            this.P_Download.Controls.Add(this.DL_DLingText);
+            this.P_Download.Controls.Add(this.DL_Pending);
+            this.P_Download.Controls.Add(this.DL_CompleteListText);
+            this.P_Download.Controls.Add(this.DL_PendingText);
+            this.P_Download.Controls.Add(this.DL_CompleteList);
+            this.P_Download.Controls.Add(this.DL_DownloadLogText);
+            this.P_Download.Controls.Add(this.DL_CharaPicBox);
+            this.P_Download.Location = new System.Drawing.Point(1, 24);
+            this.P_Download.Margin = new System.Windows.Forms.Padding(0);
+            this.P_Download.Name = "P_Download";
+            this.P_Download.Size = new System.Drawing.Size(1078, 695);
+            this.P_Download.TabIndex = 13;
+            this.P_Download.Visible = false;
+            // 
+            // DL_DownloadStatus
+            // 
+            this.DL_DownloadStatus.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.DL_DownloadStatus.AutoArrange = false;
+            this.DL_DownloadStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_DownloadStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DL_DownloadStatus.ForeColor = System.Drawing.Color.White;
+            this.DL_DownloadStatus.FullRowSelect = true;
+            this.DL_DownloadStatus.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.DL_DownloadStatus.Location = new System.Drawing.Point(12, 457);
+            this.DL_DownloadStatus.MultiSelect = false;
+            this.DL_DownloadStatus.Name = "DL_DownloadStatus";
+            this.DL_DownloadStatus.Size = new System.Drawing.Size(330, 210);
+            this.DL_DownloadStatus.TabIndex = 51;
+            this.DL_DownloadStatus.UseCompatibleStateImageBehavior = false;
+            this.DL_DownloadStatus.View = System.Windows.Forms.View.Details;
+            // 
+            // DL_Failed
+            // 
+            this.DL_Failed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Failed.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_Failed.ForeColor = System.Drawing.Color.Red;
+            this.DL_Failed.Location = new System.Drawing.Point(643, 642);
+            this.DL_Failed.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Failed.Name = "DL_Failed";
+            this.DL_Failed.Size = new System.Drawing.Size(76, 25);
+            this.DL_Failed.TabIndex = 59;
+            this.DL_Failed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_FailedText
+            // 
+            this.DL_FailedText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_FailedText.ForeColor = System.Drawing.Color.Red;
+            this.DL_FailedText.Location = new System.Drawing.Point(643, 619);
+            this.DL_FailedText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_FailedText.Name = "DL_FailedText";
+            this.DL_FailedText.Size = new System.Drawing.Size(76, 17);
+            this.DL_FailedText.TabIndex = 58;
+            this.DL_FailedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_Progress
+            // 
+            this.DL_Progress.ForeColor = System.Drawing.Color.White;
+            this.DL_Progress.Location = new System.Drawing.Point(643, 433);
+            this.DL_Progress.Name = "DL_Progress";
+            this.DL_Progress.Size = new System.Drawing.Size(76, 18);
+            this.DL_Progress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.DL_Progress.TabIndex = 57;
+            // 
+            // DL_Completed
+            // 
+            this.DL_Completed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Completed.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_Completed.Location = new System.Drawing.Point(643, 588);
+            this.DL_Completed.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Completed.Name = "DL_Completed";
+            this.DL_Completed.Size = new System.Drawing.Size(76, 25);
+            this.DL_Completed.TabIndex = 56;
+            this.DL_Completed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CompletedText
+            // 
+            this.DL_CompletedText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CompletedText.Location = new System.Drawing.Point(643, 565);
+            this.DL_CompletedText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_CompletedText.Name = "DL_CompletedText";
+            this.DL_CompletedText.Size = new System.Drawing.Size(76, 17);
+            this.DL_CompletedText.TabIndex = 55;
+            this.DL_CompletedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_DLing
+            // 
+            this.DL_DLing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_DLing.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_DLing.Location = new System.Drawing.Point(643, 534);
+            this.DL_DLing.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DLing.Name = "DL_DLing";
+            this.DL_DLing.Size = new System.Drawing.Size(76, 25);
+            this.DL_DLing.TabIndex = 54;
+            this.DL_DLing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_DLingText
+            // 
+            this.DL_DLingText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_DLingText.Location = new System.Drawing.Point(643, 511);
+            this.DL_DLingText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DLingText.Name = "DL_DLingText";
+            this.DL_DLingText.Size = new System.Drawing.Size(76, 17);
+            this.DL_DLingText.TabIndex = 53;
+            this.DL_DLingText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_Pending
+            // 
+            this.DL_Pending.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_Pending.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_Pending.Location = new System.Drawing.Point(643, 480);
+            this.DL_Pending.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Pending.Name = "DL_Pending";
+            this.DL_Pending.Size = new System.Drawing.Size(76, 25);
+            this.DL_Pending.TabIndex = 52;
+            this.DL_Pending.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CompleteListText
+            // 
+            this.DL_CompleteListText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CompleteListText.Location = new System.Drawing.Point(348, 433);
+            this.DL_CompleteListText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_CompleteListText.Name = "DL_CompleteListText";
+            this.DL_CompleteListText.Size = new System.Drawing.Size(289, 18);
+            this.DL_CompleteListText.TabIndex = 50;
+            this.DL_CompleteListText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // DL_PendingText
+            // 
+            this.DL_PendingText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_PendingText.Location = new System.Drawing.Point(643, 457);
+            this.DL_PendingText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_PendingText.Name = "DL_PendingText";
+            this.DL_PendingText.Size = new System.Drawing.Size(76, 17);
+            this.DL_PendingText.TabIndex = 51;
+            this.DL_PendingText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CompleteList
+            // 
+            this.DL_CompleteList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_CompleteList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DL_CompleteList.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CompleteList.ForeColor = System.Drawing.Color.White;
+            this.DL_CompleteList.Location = new System.Drawing.Point(348, 457);
+            this.DL_CompleteList.Name = "DL_CompleteList";
+            this.DL_CompleteList.ReadOnly = true;
+            this.DL_CompleteList.Size = new System.Drawing.Size(289, 210);
+            this.DL_CompleteList.TabIndex = 49;
+            this.DL_CompleteList.Text = "";
+            // 
+            // DL_DownloadLogText
+            // 
+            this.DL_DownloadLogText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_DownloadLogText.Location = new System.Drawing.Point(11, 433);
+            this.DL_DownloadLogText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DownloadLogText.Name = "DL_DownloadLogText";
+            this.DL_DownloadLogText.Size = new System.Drawing.Size(331, 18);
+            this.DL_DownloadLogText.TabIndex = 48;
+            this.DL_DownloadLogText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // DL_CharaPicBox
+            // 
+            this.DL_CharaPicBox.Controls.Add(this.DL_SearchCharacter);
+            this.DL_CharaPicBox.Controls.Add(this.DL_AbortDownload);
+            this.DL_CharaPicBox.Controls.Add(this.DL_PicCount);
+            this.DL_CharaPicBox.Controls.Add(this.DL_PicCountText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_ClearAll);
+            this.DL_CharaPicBox.Controls.Add(this.DL_StartDownload);
+            this.DL_CharaPicBox.Controls.Add(this.DL_CharaIDAdd);
+            this.DL_CharaPicBox.Controls.Add(this.DL_CharaIDText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_CharaID);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Add);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Remove);
+            this.DL_CharaPicBox.Controls.Add(this.DL_AddAll);
+            this.DL_CharaPicBox.Controls.Add(this.DL_DownloadListText);
+            this.DL_CharaPicBox.Controls.Add(this.DL_DownloadList);
+            this.DL_CharaPicBox.Controls.Add(this.DL_Arrow);
+            this.DL_CharaPicBox.ForeColor = System.Drawing.Color.White;
+            this.DL_CharaPicBox.Location = new System.Drawing.Point(11, 4);
+            this.DL_CharaPicBox.Name = "DL_CharaPicBox";
+            this.DL_CharaPicBox.Size = new System.Drawing.Size(708, 423);
+            this.DL_CharaPicBox.TabIndex = 28;
+            this.DL_CharaPicBox.TabStop = false;
+            // 
+            // DL_PicCount
+            // 
+            this.DL_PicCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_PicCount.Font = new System.Drawing.Font("Consolas", 13F);
+            this.DL_PicCount.Location = new System.Drawing.Point(625, 333);
+            this.DL_PicCount.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_PicCount.Name = "DL_PicCount";
+            this.DL_PicCount.Size = new System.Drawing.Size(76, 25);
+            this.DL_PicCount.TabIndex = 50;
+            this.DL_PicCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_PicCountText
+            // 
+            this.DL_PicCountText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_PicCountText.Location = new System.Drawing.Point(625, 310);
+            this.DL_PicCountText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_PicCountText.Name = "DL_PicCountText";
+            this.DL_PicCountText.Size = new System.Drawing.Size(76, 17);
+            this.DL_PicCountText.TabIndex = 49;
+            this.DL_PicCountText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CharaIDText
+            // 
+            this.DL_CharaIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CharaIDText.Location = new System.Drawing.Point(625, 22);
+            this.DL_CharaIDText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_CharaIDText.Name = "DL_CharaIDText";
+            this.DL_CharaIDText.Size = new System.Drawing.Size(76, 25);
+            this.DL_CharaIDText.TabIndex = 45;
+            this.DL_CharaIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DL_CharaID
+            // 
+            this.DL_CharaID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_CharaID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_CharaID.Font = new System.Drawing.Font("Consolas", 11F);
+            this.DL_CharaID.ForeColor = System.Drawing.Color.White;
+            this.DL_CharaID.Location = new System.Drawing.Point(625, 53);
+            this.DL_CharaID.MaxLength = 8;
+            this.DL_CharaID.Name = "DL_CharaID";
+            this.DL_CharaID.Size = new System.Drawing.Size(76, 25);
+            this.DL_CharaID.TabIndex = 44;
+            // 
+            // DL_DownloadListText
+            // 
+            this.DL_DownloadListText.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_DownloadListText.Location = new System.Drawing.Point(337, 22);
+            this.DL_DownloadListText.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_DownloadListText.Name = "DL_DownloadListText";
+            this.DL_DownloadListText.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DL_DownloadListText.Size = new System.Drawing.Size(224, 18);
+            this.DL_DownloadListText.TabIndex = 40;
+            this.DL_DownloadListText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // DL_DownloadList
+            // 
+            this.DL_DownloadList.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.DL_DownloadList.AutoArrange = false;
+            this.DL_DownloadList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_DownloadList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DL_DownloadList.ForeColor = System.Drawing.Color.White;
+            this.DL_DownloadList.FullRowSelect = true;
+            this.DL_DownloadList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.DL_DownloadList.Location = new System.Drawing.Point(337, 46);
+            this.DL_DownloadList.Name = "DL_DownloadList";
+            this.DL_DownloadList.Size = new System.Drawing.Size(282, 370);
+            this.DL_DownloadList.TabIndex = 39;
+            this.DL_DownloadList.UseCompatibleStateImageBehavior = false;
+            this.DL_DownloadList.View = System.Windows.Forms.View.Details;
+            // 
+            // DL_Arrow
+            // 
+            this.DL_Arrow.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_Arrow.Location = new System.Drawing.Point(294, 226);
+            this.DL_Arrow.Margin = new System.Windows.Forms.Padding(3);
+            this.DL_Arrow.Name = "DL_Arrow";
+            this.DL_Arrow.Size = new System.Drawing.Size(37, 25);
+            this.DL_Arrow.TabIndex = 38;
+            this.DL_Arrow.Text = "→";
+            this.DL_Arrow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // P_EXPCalc
             // 
@@ -678,26 +1007,6 @@
             this.EC_Main.TabIndex = 8;
             this.EC_Main.TabStop = false;
             // 
-            // EC_MainExpNeed
-            // 
-            this.EC_MainExpNeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.EC_MainExpNeed.ChangeTime = 2000;
-            this.EC_MainExpNeed.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_MainExpNeed.ColorEnd = System.Drawing.Color.Gray;
-            this.EC_MainExpNeed.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.EC_MainExpNeed.ForeColor = System.Drawing.Color.White;
-            this.EC_MainExpNeed.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EC_MainExpNeed.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_MainExpNeed.LBorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EC_MainExpNeed.LFont = new System.Drawing.Font("Consolas", 25F);
-            this.EC_MainExpNeed.LForeColor = System.Drawing.Color.White;
-            this.EC_MainExpNeed.Location = new System.Drawing.Point(115, 111);
-            this.EC_MainExpNeed.LText = "";
-            this.EC_MainExpNeed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.EC_MainExpNeed.Name = "EC_MainExpNeed";
-            this.EC_MainExpNeed.Size = new System.Drawing.Size(329, 46);
-            this.EC_MainExpNeed.TabIndex = 10;
-            // 
             // EC_MainParamAfter
             // 
             this.EC_MainParamAfter.Controls.Add(this.EC_MainRarityAfter);
@@ -721,26 +1030,6 @@
             this.EC_MainParamAfter.Size = new System.Drawing.Size(216, 282);
             this.EC_MainParamAfter.TabIndex = 22;
             this.EC_MainParamAfter.TabStop = false;
-            // 
-            // EC_MainRarityAfter
-            // 
-            this.EC_MainRarityAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.EC_MainRarityAfter.ChangeTime = 1500;
-            this.EC_MainRarityAfter.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_MainRarityAfter.ColorEnd = System.Drawing.Color.Empty;
-            this.EC_MainRarityAfter.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.EC_MainRarityAfter.ForeColor = System.Drawing.Color.White;
-            this.EC_MainRarityAfter.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EC_MainRarityAfter.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_MainRarityAfter.LBorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EC_MainRarityAfter.LFont = new System.Drawing.Font("微軟正黑體", 20F);
-            this.EC_MainRarityAfter.LForeColor = System.Drawing.Color.White;
-            this.EC_MainRarityAfter.Location = new System.Drawing.Point(6, 23);
-            this.EC_MainRarityAfter.LText = "";
-            this.EC_MainRarityAfter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.EC_MainRarityAfter.Name = "EC_MainRarityAfter";
-            this.EC_MainRarityAfter.Size = new System.Drawing.Size(204, 42);
-            this.EC_MainRarityAfter.TabIndex = 20;
             // 
             // EC_MainSSAfter
             // 
@@ -906,26 +1195,6 @@
             this.EC_MainParamBefore.TabIndex = 5;
             this.EC_MainParamBefore.TabStop = false;
             // 
-            // EC_MainRarityBefore
-            // 
-            this.EC_MainRarityBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.EC_MainRarityBefore.ChangeTime = 1500;
-            this.EC_MainRarityBefore.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_MainRarityBefore.ColorEnd = System.Drawing.Color.Empty;
-            this.EC_MainRarityBefore.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.EC_MainRarityBefore.ForeColor = System.Drawing.Color.White;
-            this.EC_MainRarityBefore.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EC_MainRarityBefore.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_MainRarityBefore.LBorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EC_MainRarityBefore.LFont = new System.Drawing.Font("微軟正黑體", 20F);
-            this.EC_MainRarityBefore.LForeColor = System.Drawing.Color.White;
-            this.EC_MainRarityBefore.Location = new System.Drawing.Point(6, 23);
-            this.EC_MainRarityBefore.LText = "";
-            this.EC_MainRarityBefore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.EC_MainRarityBefore.Name = "EC_MainRarityBefore";
-            this.EC_MainRarityBefore.Size = new System.Drawing.Size(204, 42);
-            this.EC_MainRarityBefore.TabIndex = 9;
-            // 
             // EC_MainSSBefore
             // 
             this.EC_MainSSBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -1076,24 +1345,6 @@
             this.EC_MainExpNeedText.TabIndex = 4;
             this.EC_MainExpNeedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // EC_MainCalc
-            // 
-            this.EC_MainCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.EC_MainCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_MainCalc.ButtonBackgroundImage = null;
-            this.EC_MainCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.EC_MainCalc.ButtonColor = System.Drawing.Color.White;
-            this.EC_MainCalc.ButtonEnabled = true;
-            this.EC_MainCalc.ButtonImage = null;
-            this.EC_MainCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EC_MainCalc.ButtonText = "";
-            this.EC_MainCalc.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.EC_MainCalc.Location = new System.Drawing.Point(350, 22);
-            this.EC_MainCalc.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.EC_MainCalc.Name = "EC_MainCalc";
-            this.EC_MainCalc.Size = new System.Drawing.Size(94, 82);
-            this.EC_MainCalc.TabIndex = 6;
-            // 
             // EC_MainAfter
             // 
             this.EC_MainAfter.Controls.Add(this.EC_MainExpAfter);
@@ -1232,46 +1483,6 @@
             this.label1.Text = "將推出角色參數計算功能，敬請期待！";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // EC_CharaTips
-            // 
-            this.EC_CharaTips.Direction = MarqueeDirection.Horizontal;
-            this.EC_CharaTips.EnableMarquee = true;
-            this.EC_CharaTips.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.EC_CharaTips.FreezeTime = 2000;
-            this.EC_CharaTips.LabelSize = new System.Drawing.Size(438, 25);
-            this.EC_CharaTips.LeftDistance = 5;
-            this.EC_CharaTips.LForeColor = System.Drawing.Color.White;
-            this.EC_CharaTips.Location = new System.Drawing.Point(6, 164);
-            this.EC_CharaTips.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.EC_CharaTips.MarqueeText = "";
-            this.EC_CharaTips.Mode = MarqueeMode.ContinualAndSneeze;
-            this.EC_CharaTips.MoveDifferenceEachTime = 1;
-            this.EC_CharaTips.MoveInterval = 15;
-            this.EC_CharaTips.Name = "EC_CharaTips";
-            this.EC_CharaTips.OverBorderDistance = 15;
-            this.EC_CharaTips.Size = new System.Drawing.Size(438, 25);
-            this.EC_CharaTips.TabIndex = 10;
-            // 
-            // EC_CharaExpNeed
-            // 
-            this.EC_CharaExpNeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.EC_CharaExpNeed.ChangeTime = 1500;
-            this.EC_CharaExpNeed.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_CharaExpNeed.ColorEnd = System.Drawing.Color.Gray;
-            this.EC_CharaExpNeed.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.EC_CharaExpNeed.ForeColor = System.Drawing.Color.White;
-            this.EC_CharaExpNeed.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EC_CharaExpNeed.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_CharaExpNeed.LBorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EC_CharaExpNeed.LFont = new System.Drawing.Font("Consolas", 25F);
-            this.EC_CharaExpNeed.LForeColor = System.Drawing.Color.White;
-            this.EC_CharaExpNeed.Location = new System.Drawing.Point(115, 111);
-            this.EC_CharaExpNeed.LText = "";
-            this.EC_CharaExpNeed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.EC_CharaExpNeed.Name = "EC_CharaExpNeed";
-            this.EC_CharaExpNeed.Size = new System.Drawing.Size(329, 46);
-            this.EC_CharaExpNeed.TabIndex = 9;
-            // 
             // EC_CharaExpNeedText
             // 
             this.EC_CharaExpNeedText.Font = new System.Drawing.Font("微軟正黑體", 11F);
@@ -1281,24 +1492,6 @@
             this.EC_CharaExpNeedText.Size = new System.Drawing.Size(102, 46);
             this.EC_CharaExpNeedText.TabIndex = 4;
             this.EC_CharaExpNeedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // EC_CharaCalc
-            // 
-            this.EC_CharaCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.EC_CharaCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.EC_CharaCalc.ButtonBackgroundImage = null;
-            this.EC_CharaCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.EC_CharaCalc.ButtonColor = System.Drawing.Color.White;
-            this.EC_CharaCalc.ButtonEnabled = true;
-            this.EC_CharaCalc.ButtonImage = null;
-            this.EC_CharaCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.EC_CharaCalc.ButtonText = "";
-            this.EC_CharaCalc.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.EC_CharaCalc.Location = new System.Drawing.Point(350, 22);
-            this.EC_CharaCalc.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.EC_CharaCalc.Name = "EC_CharaCalc";
-            this.EC_CharaCalc.Size = new System.Drawing.Size(94, 82);
-            this.EC_CharaCalc.TabIndex = 6;
             // 
             // EC_CharaAfter
             // 
@@ -1432,24 +1625,6 @@
             this.SS_Monster.Size = new System.Drawing.Size(369, 663);
             this.SS_Monster.TabIndex = 1;
             this.SS_Monster.TabStop = false;
-            // 
-            // SS_MonsterCalculate
-            // 
-            this.SS_MonsterCalculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SS_MonsterCalculate.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.SS_MonsterCalculate.ButtonBackgroundImage = null;
-            this.SS_MonsterCalculate.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SS_MonsterCalculate.ButtonColor = System.Drawing.Color.White;
-            this.SS_MonsterCalculate.ButtonEnabled = true;
-            this.SS_MonsterCalculate.ButtonImage = null;
-            this.SS_MonsterCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SS_MonsterCalculate.ButtonText = "";
-            this.SS_MonsterCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.SS_MonsterCalculate.Location = new System.Drawing.Point(298, 628);
-            this.SS_MonsterCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.SS_MonsterCalculate.Name = "SS_MonsterCalculate";
-            this.SS_MonsterCalculate.Size = new System.Drawing.Size(65, 28);
-            this.SS_MonsterCalculate.TabIndex = 31;
             // 
             // SS_MonsterPanel
             // 
@@ -1681,24 +1856,6 @@
             this.SS_CharaElementRateText.TabIndex = 27;
             this.SS_CharaElementRateText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // SS_CharaCalculate
-            // 
-            this.SS_CharaCalculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SS_CharaCalculate.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.SS_CharaCalculate.ButtonBackgroundImage = null;
-            this.SS_CharaCalculate.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.SS_CharaCalculate.ButtonColor = System.Drawing.Color.White;
-            this.SS_CharaCalculate.ButtonEnabled = true;
-            this.SS_CharaCalculate.ButtonImage = null;
-            this.SS_CharaCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SS_CharaCalculate.ButtonText = "";
-            this.SS_CharaCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.SS_CharaCalculate.Location = new System.Drawing.Point(298, 628);
-            this.SS_CharaCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.SS_CharaCalculate.Name = "SS_CharaCalculate";
-            this.SS_CharaCalculate.Size = new System.Drawing.Size(65, 28);
-            this.SS_CharaCalculate.TabIndex = 23;
-            // 
             // SS_Weapon
             // 
             this.SS_Weapon.ForeColor = System.Drawing.Color.White;
@@ -1710,6 +1867,10 @@
             // 
             // P_CsvTable
             // 
+            this.P_CsvTable.Controls.Add(this.CT_A100);
+            this.P_CsvTable.Controls.Add(this.CT_D100);
+            this.P_CsvTable.Controls.Add(this.CT_A1K);
+            this.P_CsvTable.Controls.Add(this.CT_D1K);
             this.P_CsvTable.Controls.Add(this.CT_FindResultList);
             this.P_CsvTable.Controls.Add(this.CT_SearchGo);
             this.P_CsvTable.Controls.Add(this.CT_Search);
@@ -1746,24 +1907,6 @@
             this.CT_FindResultList.TabIndex = 20;
             this.CT_FindResultList.UseCompatibleStateImageBehavior = false;
             this.CT_FindResultList.View = System.Windows.Forms.View.Details;
-            // 
-            // CT_SearchGo
-            // 
-            this.CT_SearchGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_SearchGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CT_SearchGo.ButtonBackgroundImage = null;
-            this.CT_SearchGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_SearchGo.ButtonColor = System.Drawing.Color.White;
-            this.CT_SearchGo.ButtonEnabled = true;
-            this.CT_SearchGo.ButtonImage = null;
-            this.CT_SearchGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CT_SearchGo.ButtonText = "";
-            this.CT_SearchGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CT_SearchGo.Location = new System.Drawing.Point(193, 118);
-            this.CT_SearchGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CT_SearchGo.Name = "CT_SearchGo";
-            this.CT_SearchGo.Size = new System.Drawing.Size(52, 23);
-            this.CT_SearchGo.TabIndex = 19;
             // 
             // CT_Search
             // 
@@ -1823,7 +1966,7 @@
             this.CT_EndColumn.TabIndex = 14;
             this.CT_EndColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CT_EndColumn.Value = new decimal(new int[] {
-            1,
+            70,
             0,
             0,
             0});
@@ -1853,44 +1996,6 @@
             0,
             0,
             0});
-            // 
-            // CT_Tips
-            // 
-            this.CT_Tips.Direction = MarqueeDirection.Horizontal;
-            this.CT_Tips.EnableMarquee = true;
-            this.CT_Tips.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CT_Tips.FreezeTime = 2000;
-            this.CT_Tips.LabelSize = new System.Drawing.Size(234, 23);
-            this.CT_Tips.LeftDistance = 5;
-            this.CT_Tips.LForeColor = System.Drawing.Color.White;
-            this.CT_Tips.Location = new System.Drawing.Point(11, 8);
-            this.CT_Tips.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CT_Tips.MarqueeText = "";
-            this.CT_Tips.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.CT_Tips.MoveDifferenceEachTime = 1;
-            this.CT_Tips.MoveInterval = 20;
-            this.CT_Tips.Name = "CT_Tips";
-            this.CT_Tips.OverBorderDistance = 15;
-            this.CT_Tips.Size = new System.Drawing.Size(234, 23);
-            this.CT_Tips.TabIndex = 12;
-            // 
-            // CT_StepGo
-            // 
-            this.CT_StepGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_StepGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CT_StepGo.ButtonBackgroundImage = null;
-            this.CT_StepGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CT_StepGo.ButtonColor = System.Drawing.Color.White;
-            this.CT_StepGo.ButtonEnabled = true;
-            this.CT_StepGo.ButtonImage = null;
-            this.CT_StepGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CT_StepGo.ButtonText = "";
-            this.CT_StepGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CT_StepGo.Location = new System.Drawing.Point(193, 430);
-            this.CT_StepGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CT_StepGo.Name = "CT_StepGo";
-            this.CT_StepGo.Size = new System.Drawing.Size(52, 23);
-            this.CT_StepGo.TabIndex = 11;
             // 
             // CT_StepLabel
             // 
@@ -1996,46 +2101,6 @@
             this.ST_SourceASBText.TabIndex = 6;
             this.ST_SourceASBText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ST_SourceCSV
-            // 
-            this.ST_SourceCSV.Direction = MarqueeDirection.Horizontal;
-            this.ST_SourceCSV.EnableMarquee = true;
-            this.ST_SourceCSV.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_SourceCSV.FreezeTime = 2000;
-            this.ST_SourceCSV.LabelSize = new System.Drawing.Size(359, 25);
-            this.ST_SourceCSV.LeftDistance = 5;
-            this.ST_SourceCSV.LForeColor = System.Drawing.Color.White;
-            this.ST_SourceCSV.Location = new System.Drawing.Point(92, 53);
-            this.ST_SourceCSV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_SourceCSV.MarqueeText = "";
-            this.ST_SourceCSV.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.ST_SourceCSV.MoveDifferenceEachTime = 1;
-            this.ST_SourceCSV.MoveInterval = 15;
-            this.ST_SourceCSV.Name = "ST_SourceCSV";
-            this.ST_SourceCSV.OverBorderDistance = 15;
-            this.ST_SourceCSV.Size = new System.Drawing.Size(359, 25);
-            this.ST_SourceCSV.TabIndex = 15;
-            // 
-            // ST_SourceASB
-            // 
-            this.ST_SourceASB.Direction = MarqueeDirection.Horizontal;
-            this.ST_SourceASB.EnableMarquee = true;
-            this.ST_SourceASB.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_SourceASB.FreezeTime = 2000;
-            this.ST_SourceASB.LabelSize = new System.Drawing.Size(359, 25);
-            this.ST_SourceASB.LeftDistance = 5;
-            this.ST_SourceASB.LForeColor = System.Drawing.Color.White;
-            this.ST_SourceASB.Location = new System.Drawing.Point(92, 22);
-            this.ST_SourceASB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_SourceASB.MarqueeText = "";
-            this.ST_SourceASB.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.ST_SourceASB.MoveDifferenceEachTime = 1;
-            this.ST_SourceASB.MoveInterval = 15;
-            this.ST_SourceASB.Name = "ST_SourceASB";
-            this.ST_SourceASB.OverBorderDistance = 15;
-            this.ST_SourceASB.Size = new System.Drawing.Size(359, 25);
-            this.ST_SourceASB.TabIndex = 14;
-            // 
             // ST_SourceCSVText
             // 
             this.ST_SourceCSVText.Location = new System.Drawing.Point(6, 53);
@@ -2072,26 +2137,6 @@
             this.ST_AUProg.Size = new System.Drawing.Size(299, 181);
             this.ST_AUProg.TabIndex = 20;
             this.ST_AUProg.TabStop = false;
-            // 
-            // ST_AUProgCheckGo
-            // 
-            this.ST_AUProgCheckGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_AUProgCheckGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_AUProgCheckGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_AUProgCheckGo.ButtonBackgroundImage = null;
-            this.ST_AUProgCheckGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_AUProgCheckGo.ButtonColor = System.Drawing.Color.White;
-            this.ST_AUProgCheckGo.ButtonEnabled = true;
-            this.ST_AUProgCheckGo.ButtonImage = null;
-            this.ST_AUProgCheckGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ST_AUProgCheckGo.ButtonText = "";
-            this.ST_AUProgCheckGo.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
-            this.ST_AUProgCheckGo.ForeColor = System.Drawing.Color.White;
-            this.ST_AUProgCheckGo.Location = new System.Drawing.Point(192, 151);
-            this.ST_AUProgCheckGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_AUProgCheckGo.Name = "ST_AUProgCheckGo";
-            this.ST_AUProgCheckGo.Size = new System.Drawing.Size(101, 24);
-            this.ST_AUProgCheckGo.TabIndex = 23;
             // 
             // ST_AUProgChannel
             // 
@@ -2205,26 +2250,6 @@
             this.ST_DevelopersText.TabIndex = 19;
             this.ST_DevelopersText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ST_Developer
-            // 
-            this.ST_Developer.Direction = MarqueeDirection.Vertical;
-            this.ST_Developer.EnableMarquee = true;
-            this.ST_Developer.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_Developer.FreezeTime = 3000;
-            this.ST_Developer.LabelSize = new System.Drawing.Size(201, 24);
-            this.ST_Developer.LeftDistance = 3;
-            this.ST_Developer.LForeColor = System.Drawing.Color.White;
-            this.ST_Developer.Location = new System.Drawing.Point(92, 22);
-            this.ST_Developer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_Developer.MarqueeText = "";
-            this.ST_Developer.Mode = MarqueeMode.ContinualAndSneeze;
-            this.ST_Developer.MoveDifferenceEachTime = 1;
-            this.ST_Developer.MoveInterval = 30;
-            this.ST_Developer.Name = "ST_Developer";
-            this.ST_Developer.OverBorderDistance = 30;
-            this.ST_Developer.Size = new System.Drawing.Size(201, 24);
-            this.ST_Developer.TabIndex = 18;
-            // 
             // ST_VersionText
             // 
             this.ST_VersionText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2267,26 +2292,6 @@
             this.ST_DataTitle.TabIndex = 8;
             this.ST_DataTitle.TabStop = false;
             // 
-            // ST_ClearAllAttachments
-            // 
-            this.ST_ClearAllAttachments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_ClearAllAttachments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_ClearAllAttachments.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_ClearAllAttachments.ButtonBackgroundImage = null;
-            this.ST_ClearAllAttachments.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_ClearAllAttachments.ButtonColor = System.Drawing.Color.Red;
-            this.ST_ClearAllAttachments.ButtonEnabled = true;
-            this.ST_ClearAllAttachments.ButtonImage = null;
-            this.ST_ClearAllAttachments.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ST_ClearAllAttachments.ButtonText = "";
-            this.ST_ClearAllAttachments.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
-            this.ST_ClearAllAttachments.ForeColor = System.Drawing.Color.White;
-            this.ST_ClearAllAttachments.Location = new System.Drawing.Point(264, 173);
-            this.ST_ClearAllAttachments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_ClearAllAttachments.Name = "ST_ClearAllAttachments";
-            this.ST_ClearAllAttachments.Size = new System.Drawing.Size(319, 29);
-            this.ST_ClearAllAttachments.TabIndex = 29;
-            // 
             // ST_AttachmentMode
             // 
             this.ST_AttachmentMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
@@ -2310,66 +2315,6 @@
             this.ST_AttachmentModeText.TabIndex = 27;
             this.ST_AttachmentModeText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ST_AUCsvBrowse
-            // 
-            this.ST_AUCsvBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_AUCsvBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_AUCsvBrowse.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_AUCsvBrowse.ButtonBackgroundImage = null;
-            this.ST_AUCsvBrowse.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_AUCsvBrowse.ButtonColor = System.Drawing.Color.White;
-            this.ST_AUCsvBrowse.ButtonEnabled = true;
-            this.ST_AUCsvBrowse.ButtonImage = null;
-            this.ST_AUCsvBrowse.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ST_AUCsvBrowse.ButtonText = "";
-            this.ST_AUCsvBrowse.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
-            this.ST_AUCsvBrowse.ForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvBrowse.Location = new System.Drawing.Point(541, 52);
-            this.ST_AUCsvBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_AUCsvBrowse.Name = "ST_AUCsvBrowse";
-            this.ST_AUCsvBrowse.Size = new System.Drawing.Size(42, 23);
-            this.ST_AUCsvBrowse.TabIndex = 26;
-            // 
-            // ST_AUCsvCheckGo
-            // 
-            this.ST_AUCsvCheckGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_AUCsvCheckGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_AUCsvCheckGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_AUCsvCheckGo.ButtonBackgroundImage = null;
-            this.ST_AUCsvCheckGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_AUCsvCheckGo.ButtonColor = System.Drawing.Color.White;
-            this.ST_AUCsvCheckGo.ButtonEnabled = true;
-            this.ST_AUCsvCheckGo.ButtonImage = null;
-            this.ST_AUCsvCheckGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ST_AUCsvCheckGo.ButtonText = "";
-            this.ST_AUCsvCheckGo.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
-            this.ST_AUCsvCheckGo.ForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvCheckGo.Location = new System.Drawing.Point(493, 111);
-            this.ST_AUCsvCheckGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_AUCsvCheckGo.Name = "ST_AUCsvCheckGo";
-            this.ST_AUCsvCheckGo.Size = new System.Drawing.Size(90, 55);
-            this.ST_AUCsvCheckGo.TabIndex = 23;
-            // 
-            // ST_AUCsvPath
-            // 
-            this.ST_AUCsvPath.Direction = MarqueeDirection.Horizontal;
-            this.ST_AUCsvPath.EnableMarquee = true;
-            this.ST_AUCsvPath.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_AUCsvPath.FreezeTime = 2000;
-            this.ST_AUCsvPath.LabelSize = new System.Drawing.Size(271, 23);
-            this.ST_AUCsvPath.LeftDistance = 5;
-            this.ST_AUCsvPath.LForeColor = System.Drawing.Color.White;
-            this.ST_AUCsvPath.Location = new System.Drawing.Point(264, 52);
-            this.ST_AUCsvPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_AUCsvPath.MarqueeText = "";
-            this.ST_AUCsvPath.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.ST_AUCsvPath.MoveDifferenceEachTime = 1;
-            this.ST_AUCsvPath.MoveInterval = 15;
-            this.ST_AUCsvPath.Name = "ST_AUCsvPath";
-            this.ST_AUCsvPath.OverBorderDistance = 15;
-            this.ST_AUCsvPath.Size = new System.Drawing.Size(271, 23);
-            this.ST_AUCsvPath.TabIndex = 22;
-            // 
             // ST_AUCsvMode
             // 
             this.ST_AUCsvMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
@@ -2389,26 +2334,6 @@
             this.ST_AutoLoad.Size = new System.Drawing.Size(212, 24);
             this.ST_AutoLoad.TabIndex = 17;
             this.ST_AutoLoad.UseVisualStyleBackColor = true;
-            // 
-            // ST_ReLoad
-            // 
-            this.ST_ReLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_ReLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_ReLoad.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_ReLoad.ButtonBackgroundImage = null;
-            this.ST_ReLoad.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_ReLoad.ButtonColor = System.Drawing.Color.White;
-            this.ST_ReLoad.ButtonEnabled = true;
-            this.ST_ReLoad.ButtonImage = null;
-            this.ST_ReLoad.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ST_ReLoad.ButtonText = "";
-            this.ST_ReLoad.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
-            this.ST_ReLoad.ForeColor = System.Drawing.Color.White;
-            this.ST_ReLoad.Location = new System.Drawing.Point(482, 82);
-            this.ST_ReLoad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_ReLoad.Name = "ST_ReLoad";
-            this.ST_ReLoad.Size = new System.Drawing.Size(101, 24);
-            this.ST_ReLoad.TabIndex = 16;
             // 
             // ST_AUCsvPathText
             // 
@@ -2481,46 +2406,6 @@
             this.ST_PathMessageMute.TabIndex = 25;
             this.ST_PathMessageMute.UseVisualStyleBackColor = true;
             // 
-            // ST_PathMessageBrowse
-            // 
-            this.ST_PathMessageBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_PathMessageBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_PathMessageBrowse.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ST_PathMessageBrowse.ButtonBackgroundImage = null;
-            this.ST_PathMessageBrowse.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ST_PathMessageBrowse.ButtonColor = System.Drawing.Color.White;
-            this.ST_PathMessageBrowse.ButtonEnabled = true;
-            this.ST_PathMessageBrowse.ButtonImage = null;
-            this.ST_PathMessageBrowse.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ST_PathMessageBrowse.ButtonText = "";
-            this.ST_PathMessageBrowse.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
-            this.ST_PathMessageBrowse.ForeColor = System.Drawing.Color.White;
-            this.ST_PathMessageBrowse.Location = new System.Drawing.Point(458, 84);
-            this.ST_PathMessageBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_PathMessageBrowse.Name = "ST_PathMessageBrowse";
-            this.ST_PathMessageBrowse.Size = new System.Drawing.Size(67, 25);
-            this.ST_PathMessageBrowse.TabIndex = 23;
-            // 
-            // ST_PathMessage
-            // 
-            this.ST_PathMessage.Direction = MarqueeDirection.Horizontal;
-            this.ST_PathMessage.EnableMarquee = true;
-            this.ST_PathMessage.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.ST_PathMessage.FreezeTime = 2000;
-            this.ST_PathMessage.LabelSize = new System.Drawing.Size(381, 25);
-            this.ST_PathMessage.LeftDistance = 5;
-            this.ST_PathMessage.LForeColor = System.Drawing.Color.White;
-            this.ST_PathMessage.Location = new System.Drawing.Point(71, 84);
-            this.ST_PathMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ST_PathMessage.MarqueeText = "";
-            this.ST_PathMessage.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
-            this.ST_PathMessage.MoveDifferenceEachTime = 1;
-            this.ST_PathMessage.MoveInterval = 15;
-            this.ST_PathMessage.Name = "ST_PathMessage";
-            this.ST_PathMessage.OverBorderDistance = 15;
-            this.ST_PathMessage.Size = new System.Drawing.Size(381, 25);
-            this.ST_PathMessage.TabIndex = 24;
-            // 
             // ST_PathMessageText
             // 
             this.ST_PathMessageText.Location = new System.Drawing.Point(6, 84);
@@ -2562,6 +2447,1179 @@
             this.ST_PathBGMText.Size = new System.Drawing.Size(59, 25);
             this.ST_PathBGMText.TabIndex = 16;
             this.ST_PathBGMText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ST_PathBeepText
+            // 
+            this.ST_PathBeepText.Location = new System.Drawing.Point(6, 22);
+            this.ST_PathBeepText.Margin = new System.Windows.Forms.Padding(3);
+            this.ST_PathBeepText.Name = "ST_PathBeepText";
+            this.ST_PathBeepText.Size = new System.Drawing.Size(59, 25);
+            this.ST_PathBeepText.TabIndex = 6;
+            this.ST_PathBeepText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ST_PathWarningText
+            // 
+            this.ST_PathWarningText.Location = new System.Drawing.Point(6, 53);
+            this.ST_PathWarningText.Margin = new System.Windows.Forms.Padding(3);
+            this.ST_PathWarningText.Name = "ST_PathWarningText";
+            this.ST_PathWarningText.Size = new System.Drawing.Size(59, 25);
+            this.ST_PathWarningText.TabIndex = 7;
+            this.ST_PathWarningText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EX_FileDialog
+            // 
+            this.EX_FileDialog.Filter = "csv 檔案|*.csv|assetbundle 檔案|*.assetbundle|wav 檔案|*.wav|mp3 檔案|*.mp3|所有檔案|*.*";
+            // 
+            // HM_ToHomePage
+            // 
+            this.HM_ToHomePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToHomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToHomePage.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToHomePage.ButtonBackgroundImage = null;
+            this.HM_ToHomePage.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToHomePage.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToHomePage.ButtonEnabled = true;
+            this.HM_ToHomePage.ButtonImage = null;
+            this.HM_ToHomePage.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToHomePage.ButtonText = "";
+            this.HM_ToHomePage.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.HM_ToHomePage.ForeColor = System.Drawing.Color.White;
+            this.HM_ToHomePage.Location = new System.Drawing.Point(888, 1);
+            this.HM_ToHomePage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.HM_ToHomePage.Name = "HM_ToHomePage";
+            this.HM_ToHomePage.Size = new System.Drawing.Size(67, 24);
+            this.HM_ToHomePage.TabIndex = 5;
+            // 
+            // MN_Close
+            // 
+            this.MN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.MN_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MN_Close.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.MN_Close.ButtonBackgroundImage = null;
+            this.MN_Close.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MN_Close.ButtonColor = System.Drawing.Color.Red;
+            this.MN_Close.ButtonEnabled = true;
+            this.MN_Close.ButtonImage = null;
+            this.MN_Close.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MN_Close.ButtonText = "";
+            this.MN_Close.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.MN_Close.ForeColor = System.Drawing.Color.Red;
+            this.MN_Close.Location = new System.Drawing.Point(1029, 1);
+            this.MN_Close.Margin = new System.Windows.Forms.Padding(0);
+            this.MN_Close.Name = "MN_Close";
+            this.MN_Close.Size = new System.Drawing.Size(50, 24);
+            this.MN_Close.TabIndex = 1;
+            // 
+            // MN_Min
+            // 
+            this.MN_Min.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.MN_Min.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MN_Min.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.MN_Min.ButtonBackgroundImage = null;
+            this.MN_Min.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MN_Min.ButtonColor = System.Drawing.Color.White;
+            this.MN_Min.ButtonEnabled = true;
+            this.MN_Min.ButtonImage = null;
+            this.MN_Min.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MN_Min.ButtonText = "";
+            this.MN_Min.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.MN_Min.ForeColor = System.Drawing.Color.White;
+            this.MN_Min.Location = new System.Drawing.Point(979, 1);
+            this.MN_Min.Margin = new System.Windows.Forms.Padding(0);
+            this.MN_Min.Name = "MN_Min";
+            this.MN_Min.Size = new System.Drawing.Size(50, 24);
+            this.MN_Min.TabIndex = 2;
+            // 
+            // EQ_FavRem
+            // 
+            this.EQ_FavRem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_FavRem.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_FavRem.ButtonBackgroundImage = null;
+            this.EQ_FavRem.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_FavRem.ButtonColor = System.Drawing.Color.Red;
+            this.EQ_FavRem.ButtonEnabled = true;
+            this.EQ_FavRem.ButtonImage = null;
+            this.EQ_FavRem.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EQ_FavRem.ButtonText = "移除最愛";
+            this.EQ_FavRem.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EQ_FavRem.Location = new System.Drawing.Point(143, 151);
+            this.EQ_FavRem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.EQ_FavRem.Name = "EQ_FavRem";
+            this.EQ_FavRem.Size = new System.Drawing.Size(126, 39);
+            this.EQ_FavRem.TabIndex = 35;
+            // 
+            // EQ_GoAccessory
+            // 
+            this.EQ_GoAccessory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_GoAccessory.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_GoAccessory.ButtonBackgroundImage = null;
+            this.EQ_GoAccessory.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_GoAccessory.ButtonColor = System.Drawing.Color.White;
+            this.EQ_GoAccessory.ButtonEnabled = true;
+            this.EQ_GoAccessory.ButtonImage = null;
+            this.EQ_GoAccessory.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EQ_GoAccessory.ButtonText = "飾品";
+            this.EQ_GoAccessory.Font = new System.Drawing.Font("微軟正黑體", 15F);
+            this.EQ_GoAccessory.Location = new System.Drawing.Point(948, 167);
+            this.EQ_GoAccessory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EQ_GoAccessory.Name = "EQ_GoAccessory";
+            this.EQ_GoAccessory.Size = new System.Drawing.Size(119, 72);
+            this.EQ_GoAccessory.TabIndex = 32;
+            // 
+            // EQ_GoArmor
+            // 
+            this.EQ_GoArmor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_GoArmor.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_GoArmor.ButtonBackgroundImage = null;
+            this.EQ_GoArmor.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_GoArmor.ButtonColor = System.Drawing.Color.White;
+            this.EQ_GoArmor.ButtonEnabled = true;
+            this.EQ_GoArmor.ButtonImage = null;
+            this.EQ_GoArmor.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EQ_GoArmor.ButtonText = "防具";
+            this.EQ_GoArmor.Font = new System.Drawing.Font("微軟正黑體", 15F);
+            this.EQ_GoArmor.Location = new System.Drawing.Point(823, 167);
+            this.EQ_GoArmor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EQ_GoArmor.Name = "EQ_GoArmor";
+            this.EQ_GoArmor.Size = new System.Drawing.Size(119, 72);
+            this.EQ_GoArmor.TabIndex = 31;
+            // 
+            // EQ_GoWeapon
+            // 
+            this.EQ_GoWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_GoWeapon.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_GoWeapon.ButtonBackgroundImage = null;
+            this.EQ_GoWeapon.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_GoWeapon.ButtonColor = System.Drawing.Color.Red;
+            this.EQ_GoWeapon.ButtonEnabled = true;
+            this.EQ_GoWeapon.ButtonImage = null;
+            this.EQ_GoWeapon.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EQ_GoWeapon.ButtonText = "武器";
+            this.EQ_GoWeapon.Font = new System.Drawing.Font("微軟正黑體", 15F);
+            this.EQ_GoWeapon.ForeColor = System.Drawing.Color.White;
+            this.EQ_GoWeapon.Location = new System.Drawing.Point(698, 167);
+            this.EQ_GoWeapon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EQ_GoWeapon.Name = "EQ_GoWeapon";
+            this.EQ_GoWeapon.Size = new System.Drawing.Size(119, 72);
+            this.EQ_GoWeapon.TabIndex = 30;
+            // 
+            // EQ_FavAdd
+            // 
+            this.EQ_FavAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_FavAdd.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_FavAdd.ButtonBackgroundImage = null;
+            this.EQ_FavAdd.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_FavAdd.ButtonColor = System.Drawing.Color.Red;
+            this.EQ_FavAdd.ButtonEnabled = true;
+            this.EQ_FavAdd.ButtonImage = null;
+            this.EQ_FavAdd.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EQ_FavAdd.ButtonText = "加到最愛";
+            this.EQ_FavAdd.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EQ_FavAdd.Location = new System.Drawing.Point(11, 151);
+            this.EQ_FavAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EQ_FavAdd.Name = "EQ_FavAdd";
+            this.EQ_FavAdd.Size = new System.Drawing.Size(125, 39);
+            this.EQ_FavAdd.TabIndex = 29;
+            // 
+            // EQ_Search
+            // 
+            this.EQ_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_Search.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_Search.ButtonBackgroundImage = null;
+            this.EQ_Search.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_Search.ButtonColor = System.Drawing.Color.White;
+            this.EQ_Search.ButtonEnabled = true;
+            this.EQ_Search.ButtonImage = null;
+            this.EQ_Search.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EQ_Search.ButtonText = "";
+            this.EQ_Search.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EQ_Search.Location = new System.Drawing.Point(6, 154);
+            this.EQ_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EQ_Search.Name = "EQ_Search";
+            this.EQ_Search.Size = new System.Drawing.Size(246, 37);
+            this.EQ_Search.TabIndex = 25;
+            // 
+            // EQ_WStatus
+            // 
+            this.EQ_WStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EQ_WStatus.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EQ_WStatus.ForeColor = System.Drawing.Color.White;
+            this.EQ_WStatus.Location = new System.Drawing.Point(275, 7);
+            this.EQ_WStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EQ_WStatus.Name = "EQ_WStatus";
+            this.EQ_WStatus.Size = new System.Drawing.Size(415, 652);
+            this.EQ_WStatus.TabIndex = 26;
+            // 
+            // EQ_WeaponSearch
+            // 
+            this.EQ_WeaponSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_WeaponSearch.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EQ_WeaponSearch.ButtonBackgroundImage = null;
+            this.EQ_WeaponSearch.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EQ_WeaponSearch.ButtonColor = System.Drawing.Color.White;
+            this.EQ_WeaponSearch.ButtonEnabled = true;
+            this.EQ_WeaponSearch.ButtonImage = null;
+            this.EQ_WeaponSearch.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EQ_WeaponSearch.ButtonText = "";
+            this.EQ_WeaponSearch.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EQ_WeaponSearch.Location = new System.Drawing.Point(215, 7);
+            this.EQ_WeaponSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EQ_WeaponSearch.Name = "EQ_WeaponSearch";
+            this.EQ_WeaponSearch.Size = new System.Drawing.Size(54, 36);
+            this.EQ_WeaponSearch.TabIndex = 24;
+            // 
+            // CD_MakeIDTable
+            // 
+            this.CD_MakeIDTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_MakeIDTable.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CD_MakeIDTable.ButtonBackgroundImage = null;
+            this.CD_MakeIDTable.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_MakeIDTable.ButtonColor = System.Drawing.Color.White;
+            this.CD_MakeIDTable.ButtonEnabled = true;
+            this.CD_MakeIDTable.ButtonImage = null;
+            this.CD_MakeIDTable.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CD_MakeIDTable.ButtonText = "";
+            this.CD_MakeIDTable.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_MakeIDTable.Location = new System.Drawing.Point(860, 8);
+            this.CD_MakeIDTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_MakeIDTable.Name = "CD_MakeIDTable";
+            this.CD_MakeIDTable.Size = new System.Drawing.Size(149, 23);
+            this.CD_MakeIDTable.TabIndex = 41;
+            // 
+            // CD_SearchCharacter
+            // 
+            this.CD_SearchCharacter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CD_SearchCharacter.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_SearchCharacter.ForeColor = System.Drawing.Color.White;
+            this.CD_SearchCharacter.Location = new System.Drawing.Point(11, 51);
+            this.CD_SearchCharacter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_SearchCharacter.Name = "CD_SearchCharacter";
+            this.CD_SearchCharacter.Size = new System.Drawing.Size(294, 335);
+            this.CD_SearchCharacter.TabIndex = 40;
+            // 
+            // CD_CloseTab
+            // 
+            this.CD_CloseTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CloseTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CD_CloseTab.ButtonBackgroundImage = null;
+            this.CD_CloseTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CloseTab.ButtonColor = System.Drawing.Color.Red;
+            this.CD_CloseTab.ButtonEnabled = true;
+            this.CD_CloseTab.ButtonImage = null;
+            this.CD_CloseTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CD_CloseTab.ButtonText = "×";
+            this.CD_CloseTab.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.CD_CloseTab.Location = new System.Drawing.Point(1015, 8);
+            this.CD_CloseTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_CloseTab.Name = "CD_CloseTab";
+            this.CD_CloseTab.Size = new System.Drawing.Size(23, 23);
+            this.CD_CloseTab.TabIndex = 39;
+            // 
+            // CD_NewTab
+            // 
+            this.CD_NewTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_NewTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CD_NewTab.ButtonBackgroundImage = null;
+            this.CD_NewTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_NewTab.ButtonColor = System.Drawing.Color.White;
+            this.CD_NewTab.ButtonEnabled = true;
+            this.CD_NewTab.ButtonImage = null;
+            this.CD_NewTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CD_NewTab.ButtonText = "+";
+            this.CD_NewTab.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_NewTab.Location = new System.Drawing.Point(1044, 8);
+            this.CD_NewTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_NewTab.Name = "CD_NewTab";
+            this.CD_NewTab.Size = new System.Drawing.Size(23, 23);
+            this.CD_NewTab.TabIndex = 38;
+            // 
+            // CharaDataDisplay
+            // 
+            this.CharaDataDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.CharaDataDisplay.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CharaDataDisplay.ForeColor = System.Drawing.Color.White;
+            this.CharaDataDisplay.Location = new System.Drawing.Point(0, 0);
+            this.CharaDataDisplay.Name = "CharaDataDisplay";
+            this.CharaDataDisplay.Padding = new System.Windows.Forms.Padding(5);
+            this.CharaDataDisplay.Size = new System.Drawing.Size(748, 602);
+            this.CharaDataDisplay.TabIndex = 0;
+            // 
+            // CD_CharacterIDGo
+            // 
+            this.CD_CharacterIDGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CharacterIDGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CD_CharacterIDGo.ButtonBackgroundImage = null;
+            this.CD_CharacterIDGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CD_CharacterIDGo.ButtonColor = System.Drawing.Color.White;
+            this.CD_CharacterIDGo.ButtonEnabled = true;
+            this.CD_CharacterIDGo.ButtonImage = null;
+            this.CD_CharacterIDGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CD_CharacterIDGo.ButtonText = "";
+            this.CD_CharacterIDGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CD_CharacterIDGo.Location = new System.Drawing.Point(251, 8);
+            this.CD_CharacterIDGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CD_CharacterIDGo.Name = "CD_CharacterIDGo";
+            this.CD_CharacterIDGo.Size = new System.Drawing.Size(54, 36);
+            this.CD_CharacterIDGo.TabIndex = 21;
+            // 
+            // DL_SearchCharacter
+            // 
+            this.DL_SearchCharacter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.DL_SearchCharacter.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_SearchCharacter.ForeColor = System.Drawing.Color.White;
+            this.DL_SearchCharacter.Location = new System.Drawing.Point(6, 25);
+            this.DL_SearchCharacter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_SearchCharacter.Name = "DL_SearchCharacter";
+            this.DL_SearchCharacter.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DL_SearchCharacter.Size = new System.Drawing.Size(294, 335);
+            this.DL_SearchCharacter.TabIndex = 0;
+            // 
+            // DL_AbortDownload
+            // 
+            this.DL_AbortDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AbortDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_AbortDownload.ButtonBackgroundImage = null;
+            this.DL_AbortDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AbortDownload.ButtonColor = System.Drawing.Color.Red;
+            this.DL_AbortDownload.ButtonEnabled = false;
+            this.DL_AbortDownload.ButtonImage = null;
+            this.DL_AbortDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_AbortDownload.ButtonText = "";
+            this.DL_AbortDownload.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_AbortDownload.Location = new System.Drawing.Point(625, 393);
+            this.DL_AbortDownload.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_AbortDownload.Name = "DL_AbortDownload";
+            this.DL_AbortDownload.Size = new System.Drawing.Size(76, 23);
+            this.DL_AbortDownload.TabIndex = 51;
+            // 
+            // DL_ClearAll
+            // 
+            this.DL_ClearAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_ClearAll.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_ClearAll.ButtonBackgroundImage = null;
+            this.DL_ClearAll.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_ClearAll.ButtonColor = System.Drawing.Color.White;
+            this.DL_ClearAll.ButtonEnabled = true;
+            this.DL_ClearAll.ButtonImage = null;
+            this.DL_ClearAll.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_ClearAll.ButtonText = "";
+            this.DL_ClearAll.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_ClearAll.Location = new System.Drawing.Point(625, 238);
+            this.DL_ClearAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_ClearAll.Name = "DL_ClearAll";
+            this.DL_ClearAll.Size = new System.Drawing.Size(76, 23);
+            this.DL_ClearAll.TabIndex = 48;
+            // 
+            // DL_StartDownload
+            // 
+            this.DL_StartDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_StartDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_StartDownload.ButtonBackgroundImage = null;
+            this.DL_StartDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_StartDownload.ButtonColor = System.Drawing.Color.Red;
+            this.DL_StartDownload.ButtonEnabled = false;
+            this.DL_StartDownload.ButtonImage = null;
+            this.DL_StartDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_StartDownload.ButtonText = "";
+            this.DL_StartDownload.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_StartDownload.Location = new System.Drawing.Point(625, 364);
+            this.DL_StartDownload.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_StartDownload.Name = "DL_StartDownload";
+            this.DL_StartDownload.Size = new System.Drawing.Size(76, 23);
+            this.DL_StartDownload.TabIndex = 47;
+            // 
+            // DL_CharaIDAdd
+            // 
+            this.DL_CharaIDAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_CharaIDAdd.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_CharaIDAdd.ButtonBackgroundImage = null;
+            this.DL_CharaIDAdd.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_CharaIDAdd.ButtonColor = System.Drawing.Color.White;
+            this.DL_CharaIDAdd.ButtonEnabled = true;
+            this.DL_CharaIDAdd.ButtonImage = null;
+            this.DL_CharaIDAdd.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_CharaIDAdd.ButtonText = "";
+            this.DL_CharaIDAdd.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_CharaIDAdd.Location = new System.Drawing.Point(649, 84);
+            this.DL_CharaIDAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_CharaIDAdd.Name = "DL_CharaIDAdd";
+            this.DL_CharaIDAdd.Size = new System.Drawing.Size(52, 25);
+            this.DL_CharaIDAdd.TabIndex = 46;
+            // 
+            // DL_Add
+            // 
+            this.DL_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Add.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_Add.ButtonBackgroundImage = null;
+            this.DL_Add.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Add.ButtonColor = System.Drawing.Color.White;
+            this.DL_Add.ButtonEnabled = false;
+            this.DL_Add.ButtonImage = null;
+            this.DL_Add.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_Add.ButtonText = "";
+            this.DL_Add.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_Add.Location = new System.Drawing.Point(152, 390);
+            this.DL_Add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_Add.Name = "DL_Add";
+            this.DL_Add.Size = new System.Drawing.Size(71, 24);
+            this.DL_Add.TabIndex = 43;
+            // 
+            // DL_Remove
+            // 
+            this.DL_Remove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Remove.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_Remove.ButtonBackgroundImage = null;
+            this.DL_Remove.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_Remove.ButtonColor = System.Drawing.Color.White;
+            this.DL_Remove.ButtonEnabled = true;
+            this.DL_Remove.ButtonImage = null;
+            this.DL_Remove.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_Remove.ButtonText = "";
+            this.DL_Remove.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_Remove.Location = new System.Drawing.Point(625, 209);
+            this.DL_Remove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_Remove.Name = "DL_Remove";
+            this.DL_Remove.Size = new System.Drawing.Size(76, 23);
+            this.DL_Remove.TabIndex = 42;
+            // 
+            // DL_AddAll
+            // 
+            this.DL_AddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AddAll.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DL_AddAll.ButtonBackgroundImage = null;
+            this.DL_AddAll.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DL_AddAll.ButtonColor = System.Drawing.Color.White;
+            this.DL_AddAll.ButtonEnabled = false;
+            this.DL_AddAll.ButtonImage = null;
+            this.DL_AddAll.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DL_AddAll.ButtonText = "";
+            this.DL_AddAll.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.DL_AddAll.Location = new System.Drawing.Point(229, 390);
+            this.DL_AddAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DL_AddAll.Name = "DL_AddAll";
+            this.DL_AddAll.Size = new System.Drawing.Size(71, 24);
+            this.DL_AddAll.TabIndex = 41;
+            // 
+            // EC_MainExpNeed
+            // 
+            this.EC_MainExpNeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_MainExpNeed.ChangeTime = 2000;
+            this.EC_MainExpNeed.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainExpNeed.ColorEnd = System.Drawing.Color.Gray;
+            this.EC_MainExpNeed.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_MainExpNeed.ForeColor = System.Drawing.Color.White;
+            this.EC_MainExpNeed.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainExpNeed.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainExpNeed.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainExpNeed.LFont = new System.Drawing.Font("Consolas", 25F);
+            this.EC_MainExpNeed.LForeColor = System.Drawing.Color.White;
+            this.EC_MainExpNeed.Location = new System.Drawing.Point(115, 111);
+            this.EC_MainExpNeed.LText = "";
+            this.EC_MainExpNeed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_MainExpNeed.Name = "EC_MainExpNeed";
+            this.EC_MainExpNeed.Size = new System.Drawing.Size(329, 46);
+            this.EC_MainExpNeed.TabIndex = 10;
+            // 
+            // EC_MainRarityAfter
+            // 
+            this.EC_MainRarityAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_MainRarityAfter.ChangeTime = 1500;
+            this.EC_MainRarityAfter.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainRarityAfter.ColorEnd = System.Drawing.Color.Empty;
+            this.EC_MainRarityAfter.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_MainRarityAfter.ForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityAfter.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainRarityAfter.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainRarityAfter.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainRarityAfter.LFont = new System.Drawing.Font("微軟正黑體", 20F);
+            this.EC_MainRarityAfter.LForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityAfter.Location = new System.Drawing.Point(6, 23);
+            this.EC_MainRarityAfter.LText = "";
+            this.EC_MainRarityAfter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_MainRarityAfter.Name = "EC_MainRarityAfter";
+            this.EC_MainRarityAfter.Size = new System.Drawing.Size(204, 42);
+            this.EC_MainRarityAfter.TabIndex = 20;
+            // 
+            // EC_MainRarityBefore
+            // 
+            this.EC_MainRarityBefore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_MainRarityBefore.ChangeTime = 1500;
+            this.EC_MainRarityBefore.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainRarityBefore.ColorEnd = System.Drawing.Color.Empty;
+            this.EC_MainRarityBefore.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_MainRarityBefore.ForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityBefore.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainRarityBefore.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainRarityBefore.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_MainRarityBefore.LFont = new System.Drawing.Font("微軟正黑體", 20F);
+            this.EC_MainRarityBefore.LForeColor = System.Drawing.Color.White;
+            this.EC_MainRarityBefore.Location = new System.Drawing.Point(6, 23);
+            this.EC_MainRarityBefore.LText = "";
+            this.EC_MainRarityBefore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_MainRarityBefore.Name = "EC_MainRarityBefore";
+            this.EC_MainRarityBefore.Size = new System.Drawing.Size(204, 42);
+            this.EC_MainRarityBefore.TabIndex = 9;
+            // 
+            // EC_MainCalc
+            // 
+            this.EC_MainCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_MainCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_MainCalc.ButtonBackgroundImage = null;
+            this.EC_MainCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_MainCalc.ButtonColor = System.Drawing.Color.White;
+            this.EC_MainCalc.ButtonEnabled = true;
+            this.EC_MainCalc.ButtonImage = null;
+            this.EC_MainCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_MainCalc.ButtonText = "";
+            this.EC_MainCalc.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EC_MainCalc.Location = new System.Drawing.Point(350, 22);
+            this.EC_MainCalc.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.EC_MainCalc.Name = "EC_MainCalc";
+            this.EC_MainCalc.Size = new System.Drawing.Size(94, 82);
+            this.EC_MainCalc.TabIndex = 6;
+            // 
+            // EC_CharaTips
+            // 
+            this.EC_CharaTips.Direction = MarqueeDirection.Horizontal;
+            this.EC_CharaTips.EnableMarquee = true;
+            this.EC_CharaTips.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.EC_CharaTips.FreezeTime = 2000;
+            this.EC_CharaTips.LabelSize = new System.Drawing.Size(438, 25);
+            this.EC_CharaTips.LeftDistance = 5;
+            this.EC_CharaTips.LForeColor = System.Drawing.Color.White;
+            this.EC_CharaTips.Location = new System.Drawing.Point(6, 164);
+            this.EC_CharaTips.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_CharaTips.MarqueeText = "";
+            this.EC_CharaTips.Mode = MarqueeMode.ContinualAndSneeze;
+            this.EC_CharaTips.MoveDifferenceEachTime = 1;
+            this.EC_CharaTips.MoveInterval = 15;
+            this.EC_CharaTips.Name = "EC_CharaTips";
+            this.EC_CharaTips.OverBorderDistance = 15;
+            this.EC_CharaTips.Size = new System.Drawing.Size(438, 25);
+            this.EC_CharaTips.TabIndex = 10;
+            // 
+            // EC_CharaExpNeed
+            // 
+            this.EC_CharaExpNeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.EC_CharaExpNeed.ChangeTime = 1500;
+            this.EC_CharaExpNeed.ColorBegin = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaExpNeed.ColorEnd = System.Drawing.Color.Gray;
+            this.EC_CharaExpNeed.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.EC_CharaExpNeed.ForeColor = System.Drawing.Color.White;
+            this.EC_CharaExpNeed.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_CharaExpNeed.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaExpNeed.LBorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EC_CharaExpNeed.LFont = new System.Drawing.Font("Consolas", 25F);
+            this.EC_CharaExpNeed.LForeColor = System.Drawing.Color.White;
+            this.EC_CharaExpNeed.Location = new System.Drawing.Point(115, 111);
+            this.EC_CharaExpNeed.LText = "";
+            this.EC_CharaExpNeed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EC_CharaExpNeed.Name = "EC_CharaExpNeed";
+            this.EC_CharaExpNeed.Size = new System.Drawing.Size(329, 46);
+            this.EC_CharaExpNeed.TabIndex = 9;
+            // 
+            // EC_CharaCalc
+            // 
+            this.EC_CharaCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_CharaCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EC_CharaCalc.ButtonBackgroundImage = null;
+            this.EC_CharaCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EC_CharaCalc.ButtonColor = System.Drawing.Color.White;
+            this.EC_CharaCalc.ButtonEnabled = true;
+            this.EC_CharaCalc.ButtonImage = null;
+            this.EC_CharaCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EC_CharaCalc.ButtonText = "";
+            this.EC_CharaCalc.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.EC_CharaCalc.Location = new System.Drawing.Point(350, 22);
+            this.EC_CharaCalc.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.EC_CharaCalc.Name = "EC_CharaCalc";
+            this.EC_CharaCalc.Size = new System.Drawing.Size(94, 82);
+            this.EC_CharaCalc.TabIndex = 6;
+            // 
+            // HM_ToEXPCalc
+            // 
+            this.HM_ToEXPCalc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToEXPCalc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToEXPCalc.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToEXPCalc.ButtonBackgroundImage = null;
+            this.HM_ToEXPCalc.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToEXPCalc.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToEXPCalc.ButtonEnabled = true;
+            this.HM_ToEXPCalc.ButtonImage = null;
+            this.HM_ToEXPCalc.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToEXPCalc.ButtonText = "";
+            this.HM_ToEXPCalc.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToEXPCalc.ForeColor = System.Drawing.Color.White;
+            this.HM_ToEXPCalc.Location = new System.Drawing.Point(277, 186);
+            this.HM_ToEXPCalc.Margin = new System.Windows.Forms.Padding(4);
+            this.HM_ToEXPCalc.Name = "HM_ToEXPCalc";
+            this.HM_ToEXPCalc.Size = new System.Drawing.Size(258, 170);
+            this.HM_ToEXPCalc.TabIndex = 14;
+            // 
+            // HM_ToDownload
+            // 
+            this.HM_ToDownload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToDownload.ButtonBackgroundImage = null;
+            this.HM_ToDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToDownload.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToDownload.ButtonEnabled = true;
+            this.HM_ToDownload.ButtonImage = null;
+            this.HM_ToDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToDownload.ButtonText = "";
+            this.HM_ToDownload.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToDownload.ForeColor = System.Drawing.Color.White;
+            this.HM_ToDownload.Location = new System.Drawing.Point(11, 186);
+            this.HM_ToDownload.Margin = new System.Windows.Forms.Padding(3, 4, 4, 4);
+            this.HM_ToDownload.Name = "HM_ToDownload";
+            this.HM_ToDownload.Size = new System.Drawing.Size(258, 170);
+            this.HM_ToDownload.TabIndex = 13;
+            // 
+            // HM_ToStatistics
+            // 
+            this.HM_ToStatistics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToStatistics.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToStatistics.ButtonBackgroundImage = null;
+            this.HM_ToStatistics.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToStatistics.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToStatistics.ButtonEnabled = true;
+            this.HM_ToStatistics.ButtonImage = null;
+            this.HM_ToStatistics.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToStatistics.ButtonText = "";
+            this.HM_ToStatistics.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToStatistics.ForeColor = System.Drawing.Color.White;
+            this.HM_ToStatistics.Location = new System.Drawing.Point(809, 8);
+            this.HM_ToStatistics.Margin = new System.Windows.Forms.Padding(4, 4, 3, 4);
+            this.HM_ToStatistics.Name = "HM_ToStatistics";
+            this.HM_ToStatistics.Size = new System.Drawing.Size(258, 170);
+            this.HM_ToStatistics.TabIndex = 12;
+            // 
+            // HM_Announcement
+            // 
+            this.HM_Announcement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.HM_Announcement.Direction = MarqueeDirection.Vertical;
+            this.HM_Announcement.EnableMarquee = true;
+            this.HM_Announcement.Font = new System.Drawing.Font("微軟正黑體", 11F);
+            this.HM_Announcement.FreezeTime = 3000;
+            this.HM_Announcement.LabelSize = new System.Drawing.Size(829, 30);
+            this.HM_Announcement.LeftDistance = 5;
+            this.HM_Announcement.LForeColor = System.Drawing.Color.White;
+            this.HM_Announcement.Location = new System.Drawing.Point(12, 637);
+            this.HM_Announcement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.HM_Announcement.MarqueeText = "";
+            this.HM_Announcement.Mode = MarqueeMode.ContinualAndSneeze;
+            this.HM_Announcement.MoveDifferenceEachTime = 1;
+            this.HM_Announcement.MoveInterval = 15;
+            this.HM_Announcement.Name = "HM_Announcement";
+            this.HM_Announcement.OverBorderDistance = 0;
+            this.HM_Announcement.Size = new System.Drawing.Size(829, 30);
+            this.HM_Announcement.TabIndex = 11;
+            // 
+            // HM_ToConfig
+            // 
+            this.HM_ToConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToConfig.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToConfig.ButtonBackgroundImage = null;
+            this.HM_ToConfig.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToConfig.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToConfig.ButtonEnabled = true;
+            this.HM_ToConfig.ButtonImage = null;
+            this.HM_ToConfig.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToConfig.ButtonText = "";
+            this.HM_ToConfig.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToConfig.ForeColor = System.Drawing.Color.White;
+            this.HM_ToConfig.Location = new System.Drawing.Point(847, 474);
+            this.HM_ToConfig.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.HM_ToConfig.Name = "HM_ToConfig";
+            this.HM_ToConfig.Size = new System.Drawing.Size(220, 153);
+            this.HM_ToConfig.TabIndex = 10;
+            // 
+            // HM_ToCsvTable
+            // 
+            this.HM_ToCsvTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToCsvTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToCsvTable.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToCsvTable.ButtonBackgroundImage = null;
+            this.HM_ToCsvTable.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToCsvTable.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToCsvTable.ButtonEnabled = true;
+            this.HM_ToCsvTable.ButtonImage = null;
+            this.HM_ToCsvTable.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToCsvTable.ButtonText = "";
+            this.HM_ToCsvTable.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToCsvTable.ForeColor = System.Drawing.Color.White;
+            this.HM_ToCsvTable.Location = new System.Drawing.Point(543, 8);
+            this.HM_ToCsvTable.Margin = new System.Windows.Forms.Padding(4);
+            this.HM_ToCsvTable.Name = "HM_ToCsvTable";
+            this.HM_ToCsvTable.Size = new System.Drawing.Size(258, 170);
+            this.HM_ToCsvTable.TabIndex = 9;
+            // 
+            // HM_Res_Load
+            // 
+            this.HM_Res_Load.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_Res_Load.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_Res_Load.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_Res_Load.ButtonBackgroundImage = null;
+            this.HM_Res_Load.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_Res_Load.ButtonColor = System.Drawing.Color.White;
+            this.HM_Res_Load.ButtonEnabled = true;
+            this.HM_Res_Load.ButtonImage = null;
+            this.HM_Res_Load.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_Res_Load.ButtonText = "";
+            this.HM_Res_Load.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.HM_Res_Load.ForeColor = System.Drawing.Color.White;
+            this.HM_Res_Load.Location = new System.Drawing.Point(847, 637);
+            this.HM_Res_Load.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.HM_Res_Load.Name = "HM_Res_Load";
+            this.HM_Res_Load.Size = new System.Drawing.Size(107, 30);
+            this.HM_Res_Load.TabIndex = 7;
+            // 
+            // HM_Res_Select
+            // 
+            this.HM_Res_Select.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_Res_Select.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_Res_Select.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_Res_Select.ButtonBackgroundImage = null;
+            this.HM_Res_Select.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_Res_Select.ButtonColor = System.Drawing.Color.White;
+            this.HM_Res_Select.ButtonEnabled = true;
+            this.HM_Res_Select.ButtonImage = null;
+            this.HM_Res_Select.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_Res_Select.ButtonText = "";
+            this.HM_Res_Select.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.HM_Res_Select.ForeColor = System.Drawing.Color.White;
+            this.HM_Res_Select.Location = new System.Drawing.Point(960, 637);
+            this.HM_Res_Select.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.HM_Res_Select.Name = "HM_Res_Select";
+            this.HM_Res_Select.Size = new System.Drawing.Size(107, 30);
+            this.HM_Res_Select.TabIndex = 6;
+            // 
+            // HM_ToEquipmentData
+            // 
+            this.HM_ToEquipmentData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToEquipmentData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToEquipmentData.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToEquipmentData.ButtonBackgroundImage = null;
+            this.HM_ToEquipmentData.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToEquipmentData.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToEquipmentData.ButtonEnabled = true;
+            this.HM_ToEquipmentData.ButtonImage = null;
+            this.HM_ToEquipmentData.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToEquipmentData.ButtonText = "";
+            this.HM_ToEquipmentData.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToEquipmentData.ForeColor = System.Drawing.Color.White;
+            this.HM_ToEquipmentData.Location = new System.Drawing.Point(277, 8);
+            this.HM_ToEquipmentData.Margin = new System.Windows.Forms.Padding(4);
+            this.HM_ToEquipmentData.Name = "HM_ToEquipmentData";
+            this.HM_ToEquipmentData.Size = new System.Drawing.Size(258, 170);
+            this.HM_ToEquipmentData.TabIndex = 4;
+            // 
+            // HM_ToCharacterData
+            // 
+            this.HM_ToCharacterData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToCharacterData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToCharacterData.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HM_ToCharacterData.ButtonBackgroundImage = null;
+            this.HM_ToCharacterData.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HM_ToCharacterData.ButtonColor = System.Drawing.Color.White;
+            this.HM_ToCharacterData.ButtonEnabled = true;
+            this.HM_ToCharacterData.ButtonImage = null;
+            this.HM_ToCharacterData.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HM_ToCharacterData.ButtonText = "";
+            this.HM_ToCharacterData.Font = new System.Drawing.Font("微軟正黑體", 20F);
+            this.HM_ToCharacterData.ForeColor = System.Drawing.Color.White;
+            this.HM_ToCharacterData.Location = new System.Drawing.Point(11, 8);
+            this.HM_ToCharacterData.Margin = new System.Windows.Forms.Padding(3, 4, 4, 4);
+            this.HM_ToCharacterData.Name = "HM_ToCharacterData";
+            this.HM_ToCharacterData.Size = new System.Drawing.Size(258, 170);
+            this.HM_ToCharacterData.TabIndex = 3;
+            // 
+            // SS_MonsterCalculate
+            // 
+            this.SS_MonsterCalculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_MonsterCalculate.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.SS_MonsterCalculate.ButtonBackgroundImage = null;
+            this.SS_MonsterCalculate.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_MonsterCalculate.ButtonColor = System.Drawing.Color.White;
+            this.SS_MonsterCalculate.ButtonEnabled = true;
+            this.SS_MonsterCalculate.ButtonImage = null;
+            this.SS_MonsterCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SS_MonsterCalculate.ButtonText = "";
+            this.SS_MonsterCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.SS_MonsterCalculate.Location = new System.Drawing.Point(298, 628);
+            this.SS_MonsterCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SS_MonsterCalculate.Name = "SS_MonsterCalculate";
+            this.SS_MonsterCalculate.Size = new System.Drawing.Size(65, 28);
+            this.SS_MonsterCalculate.TabIndex = 31;
+            // 
+            // SS_CharaCalculate
+            // 
+            this.SS_CharaCalculate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_CharaCalculate.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.SS_CharaCalculate.ButtonBackgroundImage = null;
+            this.SS_CharaCalculate.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SS_CharaCalculate.ButtonColor = System.Drawing.Color.White;
+            this.SS_CharaCalculate.ButtonEnabled = true;
+            this.SS_CharaCalculate.ButtonImage = null;
+            this.SS_CharaCalculate.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SS_CharaCalculate.ButtonText = "";
+            this.SS_CharaCalculate.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.SS_CharaCalculate.Location = new System.Drawing.Point(298, 628);
+            this.SS_CharaCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SS_CharaCalculate.Name = "SS_CharaCalculate";
+            this.SS_CharaCalculate.Size = new System.Drawing.Size(65, 28);
+            this.SS_CharaCalculate.TabIndex = 23;
+            // 
+            // CT_A100
+            // 
+            this.CT_A100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_A100.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_A100.ButtonBackgroundImage = null;
+            this.CT_A100.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_A100.ButtonColor = System.Drawing.Color.White;
+            this.CT_A100.ButtonEnabled = true;
+            this.CT_A100.ButtonImage = null;
+            this.CT_A100.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_A100.ButtonText = "";
+            this.CT_A100.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_A100.Location = new System.Drawing.Point(19, 458);
+            this.CT_A100.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_A100.Name = "CT_A100";
+            this.CT_A100.Size = new System.Drawing.Size(52, 23);
+            this.CT_A100.TabIndex = 24;
+            // 
+            // CT_D100
+            // 
+            this.CT_D100.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_D100.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_D100.ButtonBackgroundImage = null;
+            this.CT_D100.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_D100.ButtonColor = System.Drawing.Color.White;
+            this.CT_D100.ButtonEnabled = true;
+            this.CT_D100.ButtonImage = null;
+            this.CT_D100.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_D100.ButtonText = "";
+            this.CT_D100.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_D100.Location = new System.Drawing.Point(77, 458);
+            this.CT_D100.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_D100.Name = "CT_D100";
+            this.CT_D100.Size = new System.Drawing.Size(52, 23);
+            this.CT_D100.TabIndex = 23;
+            // 
+            // CT_A1K
+            // 
+            this.CT_A1K.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_A1K.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_A1K.ButtonBackgroundImage = null;
+            this.CT_A1K.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_A1K.ButtonColor = System.Drawing.Color.White;
+            this.CT_A1K.ButtonEnabled = true;
+            this.CT_A1K.ButtonImage = null;
+            this.CT_A1K.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_A1K.ButtonText = "";
+            this.CT_A1K.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_A1K.Location = new System.Drawing.Point(135, 458);
+            this.CT_A1K.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_A1K.Name = "CT_A1K";
+            this.CT_A1K.Size = new System.Drawing.Size(52, 23);
+            this.CT_A1K.TabIndex = 22;
+            // 
+            // CT_D1K
+            // 
+            this.CT_D1K.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_D1K.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_D1K.ButtonBackgroundImage = null;
+            this.CT_D1K.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_D1K.ButtonColor = System.Drawing.Color.White;
+            this.CT_D1K.ButtonEnabled = true;
+            this.CT_D1K.ButtonImage = null;
+            this.CT_D1K.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_D1K.ButtonText = "";
+            this.CT_D1K.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_D1K.Location = new System.Drawing.Point(193, 458);
+            this.CT_D1K.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_D1K.Name = "CT_D1K";
+            this.CT_D1K.Size = new System.Drawing.Size(52, 23);
+            this.CT_D1K.TabIndex = 21;
+            // 
+            // CT_SearchGo
+            // 
+            this.CT_SearchGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_SearchGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_SearchGo.ButtonBackgroundImage = null;
+            this.CT_SearchGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_SearchGo.ButtonColor = System.Drawing.Color.White;
+            this.CT_SearchGo.ButtonEnabled = true;
+            this.CT_SearchGo.ButtonImage = null;
+            this.CT_SearchGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_SearchGo.ButtonText = "";
+            this.CT_SearchGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_SearchGo.Location = new System.Drawing.Point(193, 118);
+            this.CT_SearchGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_SearchGo.Name = "CT_SearchGo";
+            this.CT_SearchGo.Size = new System.Drawing.Size(52, 23);
+            this.CT_SearchGo.TabIndex = 19;
+            // 
+            // CT_Tips
+            // 
+            this.CT_Tips.Direction = MarqueeDirection.Horizontal;
+            this.CT_Tips.EnableMarquee = true;
+            this.CT_Tips.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_Tips.FreezeTime = 2000;
+            this.CT_Tips.LabelSize = new System.Drawing.Size(234, 23);
+            this.CT_Tips.LeftDistance = 5;
+            this.CT_Tips.LForeColor = System.Drawing.Color.White;
+            this.CT_Tips.Location = new System.Drawing.Point(11, 8);
+            this.CT_Tips.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_Tips.MarqueeText = "";
+            this.CT_Tips.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.CT_Tips.MoveDifferenceEachTime = 1;
+            this.CT_Tips.MoveInterval = 20;
+            this.CT_Tips.Name = "CT_Tips";
+            this.CT_Tips.OverBorderDistance = 15;
+            this.CT_Tips.Size = new System.Drawing.Size(234, 23);
+            this.CT_Tips.TabIndex = 12;
+            // 
+            // CT_StepGo
+            // 
+            this.CT_StepGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_StepGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.CT_StepGo.ButtonBackgroundImage = null;
+            this.CT_StepGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CT_StepGo.ButtonColor = System.Drawing.Color.White;
+            this.CT_StepGo.ButtonEnabled = true;
+            this.CT_StepGo.ButtonImage = null;
+            this.CT_StepGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CT_StepGo.ButtonText = "";
+            this.CT_StepGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.CT_StepGo.Location = new System.Drawing.Point(193, 430);
+            this.CT_StepGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CT_StepGo.Name = "CT_StepGo";
+            this.CT_StepGo.Size = new System.Drawing.Size(52, 23);
+            this.CT_StepGo.TabIndex = 11;
+            // 
+            // ST_SourceCSV
+            // 
+            this.ST_SourceCSV.Direction = MarqueeDirection.Horizontal;
+            this.ST_SourceCSV.EnableMarquee = true;
+            this.ST_SourceCSV.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_SourceCSV.FreezeTime = 2000;
+            this.ST_SourceCSV.LabelSize = new System.Drawing.Size(359, 25);
+            this.ST_SourceCSV.LeftDistance = 5;
+            this.ST_SourceCSV.LForeColor = System.Drawing.Color.White;
+            this.ST_SourceCSV.Location = new System.Drawing.Point(92, 53);
+            this.ST_SourceCSV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_SourceCSV.MarqueeText = "";
+            this.ST_SourceCSV.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.ST_SourceCSV.MoveDifferenceEachTime = 1;
+            this.ST_SourceCSV.MoveInterval = 15;
+            this.ST_SourceCSV.Name = "ST_SourceCSV";
+            this.ST_SourceCSV.OverBorderDistance = 15;
+            this.ST_SourceCSV.Size = new System.Drawing.Size(359, 25);
+            this.ST_SourceCSV.TabIndex = 15;
+            // 
+            // ST_SourceASB
+            // 
+            this.ST_SourceASB.Direction = MarqueeDirection.Horizontal;
+            this.ST_SourceASB.EnableMarquee = true;
+            this.ST_SourceASB.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_SourceASB.FreezeTime = 2000;
+            this.ST_SourceASB.LabelSize = new System.Drawing.Size(359, 25);
+            this.ST_SourceASB.LeftDistance = 5;
+            this.ST_SourceASB.LForeColor = System.Drawing.Color.White;
+            this.ST_SourceASB.Location = new System.Drawing.Point(92, 22);
+            this.ST_SourceASB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_SourceASB.MarqueeText = "";
+            this.ST_SourceASB.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.ST_SourceASB.MoveDifferenceEachTime = 1;
+            this.ST_SourceASB.MoveInterval = 15;
+            this.ST_SourceASB.Name = "ST_SourceASB";
+            this.ST_SourceASB.OverBorderDistance = 15;
+            this.ST_SourceASB.Size = new System.Drawing.Size(359, 25);
+            this.ST_SourceASB.TabIndex = 14;
+            // 
+            // ST_AUProgCheckGo
+            // 
+            this.ST_AUProgCheckGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_AUProgCheckGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_AUProgCheckGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_AUProgCheckGo.ButtonBackgroundImage = null;
+            this.ST_AUProgCheckGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_AUProgCheckGo.ButtonColor = System.Drawing.Color.White;
+            this.ST_AUProgCheckGo.ButtonEnabled = true;
+            this.ST_AUProgCheckGo.ButtonImage = null;
+            this.ST_AUProgCheckGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ST_AUProgCheckGo.ButtonText = "";
+            this.ST_AUProgCheckGo.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
+            this.ST_AUProgCheckGo.ForeColor = System.Drawing.Color.White;
+            this.ST_AUProgCheckGo.Location = new System.Drawing.Point(192, 151);
+            this.ST_AUProgCheckGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_AUProgCheckGo.Name = "ST_AUProgCheckGo";
+            this.ST_AUProgCheckGo.Size = new System.Drawing.Size(101, 24);
+            this.ST_AUProgCheckGo.TabIndex = 23;
+            // 
+            // ST_Developer
+            // 
+            this.ST_Developer.Direction = MarqueeDirection.Vertical;
+            this.ST_Developer.EnableMarquee = true;
+            this.ST_Developer.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_Developer.FreezeTime = 3000;
+            this.ST_Developer.LabelSize = new System.Drawing.Size(201, 24);
+            this.ST_Developer.LeftDistance = 3;
+            this.ST_Developer.LForeColor = System.Drawing.Color.White;
+            this.ST_Developer.Location = new System.Drawing.Point(92, 22);
+            this.ST_Developer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_Developer.MarqueeText = "";
+            this.ST_Developer.Mode = MarqueeMode.ContinualAndSneeze;
+            this.ST_Developer.MoveDifferenceEachTime = 1;
+            this.ST_Developer.MoveInterval = 30;
+            this.ST_Developer.Name = "ST_Developer";
+            this.ST_Developer.OverBorderDistance = 30;
+            this.ST_Developer.Size = new System.Drawing.Size(201, 24);
+            this.ST_Developer.TabIndex = 18;
+            // 
+            // ST_ClearAllAttachments
+            // 
+            this.ST_ClearAllAttachments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_ClearAllAttachments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_ClearAllAttachments.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_ClearAllAttachments.ButtonBackgroundImage = null;
+            this.ST_ClearAllAttachments.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_ClearAllAttachments.ButtonColor = System.Drawing.Color.Red;
+            this.ST_ClearAllAttachments.ButtonEnabled = true;
+            this.ST_ClearAllAttachments.ButtonImage = null;
+            this.ST_ClearAllAttachments.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ST_ClearAllAttachments.ButtonText = "";
+            this.ST_ClearAllAttachments.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
+            this.ST_ClearAllAttachments.ForeColor = System.Drawing.Color.White;
+            this.ST_ClearAllAttachments.Location = new System.Drawing.Point(264, 173);
+            this.ST_ClearAllAttachments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_ClearAllAttachments.Name = "ST_ClearAllAttachments";
+            this.ST_ClearAllAttachments.Size = new System.Drawing.Size(319, 29);
+            this.ST_ClearAllAttachments.TabIndex = 29;
+            // 
+            // ST_AUCsvBrowse
+            // 
+            this.ST_AUCsvBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_AUCsvBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_AUCsvBrowse.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_AUCsvBrowse.ButtonBackgroundImage = null;
+            this.ST_AUCsvBrowse.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_AUCsvBrowse.ButtonColor = System.Drawing.Color.White;
+            this.ST_AUCsvBrowse.ButtonEnabled = true;
+            this.ST_AUCsvBrowse.ButtonImage = null;
+            this.ST_AUCsvBrowse.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ST_AUCsvBrowse.ButtonText = "";
+            this.ST_AUCsvBrowse.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
+            this.ST_AUCsvBrowse.ForeColor = System.Drawing.Color.White;
+            this.ST_AUCsvBrowse.Location = new System.Drawing.Point(541, 52);
+            this.ST_AUCsvBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_AUCsvBrowse.Name = "ST_AUCsvBrowse";
+            this.ST_AUCsvBrowse.Size = new System.Drawing.Size(42, 23);
+            this.ST_AUCsvBrowse.TabIndex = 26;
+            // 
+            // ST_AUCsvCheckGo
+            // 
+            this.ST_AUCsvCheckGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_AUCsvCheckGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_AUCsvCheckGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_AUCsvCheckGo.ButtonBackgroundImage = null;
+            this.ST_AUCsvCheckGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_AUCsvCheckGo.ButtonColor = System.Drawing.Color.White;
+            this.ST_AUCsvCheckGo.ButtonEnabled = true;
+            this.ST_AUCsvCheckGo.ButtonImage = null;
+            this.ST_AUCsvCheckGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ST_AUCsvCheckGo.ButtonText = "";
+            this.ST_AUCsvCheckGo.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
+            this.ST_AUCsvCheckGo.ForeColor = System.Drawing.Color.White;
+            this.ST_AUCsvCheckGo.Location = new System.Drawing.Point(493, 111);
+            this.ST_AUCsvCheckGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_AUCsvCheckGo.Name = "ST_AUCsvCheckGo";
+            this.ST_AUCsvCheckGo.Size = new System.Drawing.Size(90, 55);
+            this.ST_AUCsvCheckGo.TabIndex = 23;
+            // 
+            // ST_AUCsvPath
+            // 
+            this.ST_AUCsvPath.Direction = MarqueeDirection.Horizontal;
+            this.ST_AUCsvPath.EnableMarquee = true;
+            this.ST_AUCsvPath.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_AUCsvPath.FreezeTime = 2000;
+            this.ST_AUCsvPath.LabelSize = new System.Drawing.Size(271, 23);
+            this.ST_AUCsvPath.LeftDistance = 5;
+            this.ST_AUCsvPath.LForeColor = System.Drawing.Color.White;
+            this.ST_AUCsvPath.Location = new System.Drawing.Point(264, 52);
+            this.ST_AUCsvPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_AUCsvPath.MarqueeText = "";
+            this.ST_AUCsvPath.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.ST_AUCsvPath.MoveDifferenceEachTime = 1;
+            this.ST_AUCsvPath.MoveInterval = 15;
+            this.ST_AUCsvPath.Name = "ST_AUCsvPath";
+            this.ST_AUCsvPath.OverBorderDistance = 15;
+            this.ST_AUCsvPath.Size = new System.Drawing.Size(271, 23);
+            this.ST_AUCsvPath.TabIndex = 22;
+            // 
+            // ST_ReLoad
+            // 
+            this.ST_ReLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_ReLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_ReLoad.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_ReLoad.ButtonBackgroundImage = null;
+            this.ST_ReLoad.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_ReLoad.ButtonColor = System.Drawing.Color.White;
+            this.ST_ReLoad.ButtonEnabled = true;
+            this.ST_ReLoad.ButtonImage = null;
+            this.ST_ReLoad.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ST_ReLoad.ButtonText = "";
+            this.ST_ReLoad.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
+            this.ST_ReLoad.ForeColor = System.Drawing.Color.White;
+            this.ST_ReLoad.Location = new System.Drawing.Point(482, 82);
+            this.ST_ReLoad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_ReLoad.Name = "ST_ReLoad";
+            this.ST_ReLoad.Size = new System.Drawing.Size(101, 24);
+            this.ST_ReLoad.TabIndex = 16;
+            // 
+            // ST_PathMessageBrowse
+            // 
+            this.ST_PathMessageBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_PathMessageBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_PathMessageBrowse.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ST_PathMessageBrowse.ButtonBackgroundImage = null;
+            this.ST_PathMessageBrowse.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ST_PathMessageBrowse.ButtonColor = System.Drawing.Color.White;
+            this.ST_PathMessageBrowse.ButtonEnabled = true;
+            this.ST_PathMessageBrowse.ButtonImage = null;
+            this.ST_PathMessageBrowse.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ST_PathMessageBrowse.ButtonText = "";
+            this.ST_PathMessageBrowse.Font = new System.Drawing.Font("微軟正黑體", 9.5F);
+            this.ST_PathMessageBrowse.ForeColor = System.Drawing.Color.White;
+            this.ST_PathMessageBrowse.Location = new System.Drawing.Point(458, 84);
+            this.ST_PathMessageBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_PathMessageBrowse.Name = "ST_PathMessageBrowse";
+            this.ST_PathMessageBrowse.Size = new System.Drawing.Size(67, 25);
+            this.ST_PathMessageBrowse.TabIndex = 23;
+            // 
+            // ST_PathMessage
+            // 
+            this.ST_PathMessage.Direction = MarqueeDirection.Horizontal;
+            this.ST_PathMessage.EnableMarquee = true;
+            this.ST_PathMessage.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.ST_PathMessage.FreezeTime = 2000;
+            this.ST_PathMessage.LabelSize = new System.Drawing.Size(381, 25);
+            this.ST_PathMessage.LeftDistance = 5;
+            this.ST_PathMessage.LForeColor = System.Drawing.Color.White;
+            this.ST_PathMessage.Location = new System.Drawing.Point(71, 84);
+            this.ST_PathMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ST_PathMessage.MarqueeText = "";
+            this.ST_PathMessage.Mode = ((MarqueeMode)((MarqueeMode.Continual | MarqueeMode.ContinualAndSneeze)));
+            this.ST_PathMessage.MoveDifferenceEachTime = 1;
+            this.ST_PathMessage.MoveInterval = 15;
+            this.ST_PathMessage.Name = "ST_PathMessage";
+            this.ST_PathMessage.OverBorderDistance = 15;
+            this.ST_PathMessage.Size = new System.Drawing.Size(381, 25);
+            this.ST_PathMessage.TabIndex = 24;
             // 
             // ST_PathBGM
             // 
@@ -2623,15 +3681,6 @@
             this.ST_PathBGMBrowse.Size = new System.Drawing.Size(67, 25);
             this.ST_PathBGMBrowse.TabIndex = 17;
             // 
-            // ST_PathBeepText
-            // 
-            this.ST_PathBeepText.Location = new System.Drawing.Point(6, 22);
-            this.ST_PathBeepText.Margin = new System.Windows.Forms.Padding(3);
-            this.ST_PathBeepText.Name = "ST_PathBeepText";
-            this.ST_PathBeepText.Size = new System.Drawing.Size(59, 25);
-            this.ST_PathBeepText.TabIndex = 6;
-            this.ST_PathBeepText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // ST_PathBeepBrowse
             // 
             this.ST_PathBeepBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -2692,614 +3741,6 @@
             this.ST_PathBeep.Size = new System.Drawing.Size(381, 25);
             this.ST_PathBeep.TabIndex = 14;
             // 
-            // ST_PathWarningText
-            // 
-            this.ST_PathWarningText.Location = new System.Drawing.Point(6, 53);
-            this.ST_PathWarningText.Margin = new System.Windows.Forms.Padding(3);
-            this.ST_PathWarningText.Name = "ST_PathWarningText";
-            this.ST_PathWarningText.Size = new System.Drawing.Size(59, 25);
-            this.ST_PathWarningText.TabIndex = 7;
-            this.ST_PathWarningText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // P_CharacterData
-            // 
-            this.P_CharacterData.Controls.Add(this.CD_MakeIDTable);
-            this.P_CharacterData.Controls.Add(this.CD_SearchCharacter);
-            this.P_CharacterData.Controls.Add(this.CD_CloseTab);
-            this.P_CharacterData.Controls.Add(this.CD_NewTab);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterTab);
-            this.P_CharacterData.Controls.Add(this.CD_Favorite);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterIDText);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterIDGo);
-            this.P_CharacterData.Controls.Add(this.CD_CharacterID);
-            this.P_CharacterData.Controls.Add(this.CD_FavoriteText);
-            this.P_CharacterData.Location = new System.Drawing.Point(1, 24);
-            this.P_CharacterData.Margin = new System.Windows.Forms.Padding(0);
-            this.P_CharacterData.Name = "P_CharacterData";
-            this.P_CharacterData.Size = new System.Drawing.Size(1078, 695);
-            this.P_CharacterData.TabIndex = 11;
-            this.P_CharacterData.Visible = false;
-            // 
-            // CD_SearchCharacter
-            // 
-            this.CD_SearchCharacter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_SearchCharacter.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_SearchCharacter.ForeColor = System.Drawing.Color.White;
-            this.CD_SearchCharacter.Location = new System.Drawing.Point(11, 51);
-            this.CD_SearchCharacter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_SearchCharacter.Name = "CD_SearchCharacter";
-            this.CD_SearchCharacter.Size = new System.Drawing.Size(294, 335);
-            this.CD_SearchCharacter.TabIndex = 40;
-            // 
-            // CD_CloseTab
-            // 
-            this.CD_CloseTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CloseTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_CloseTab.ButtonBackgroundImage = null;
-            this.CD_CloseTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CloseTab.ButtonColor = System.Drawing.Color.Red;
-            this.CD_CloseTab.ButtonEnabled = true;
-            this.CD_CloseTab.ButtonImage = null;
-            this.CD_CloseTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_CloseTab.ButtonText = "×";
-            this.CD_CloseTab.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.CD_CloseTab.Location = new System.Drawing.Point(1015, 8);
-            this.CD_CloseTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_CloseTab.Name = "CD_CloseTab";
-            this.CD_CloseTab.Size = new System.Drawing.Size(23, 23);
-            this.CD_CloseTab.TabIndex = 39;
-            // 
-            // CD_NewTab
-            // 
-            this.CD_NewTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_NewTab.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_NewTab.ButtonBackgroundImage = null;
-            this.CD_NewTab.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_NewTab.ButtonColor = System.Drawing.Color.White;
-            this.CD_NewTab.ButtonEnabled = true;
-            this.CD_NewTab.ButtonImage = null;
-            this.CD_NewTab.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_NewTab.ButtonText = "+";
-            this.CD_NewTab.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_NewTab.Location = new System.Drawing.Point(1044, 8);
-            this.CD_NewTab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_NewTab.Name = "CD_NewTab";
-            this.CD_NewTab.Size = new System.Drawing.Size(23, 23);
-            this.CD_NewTab.TabIndex = 38;
-            // 
-            // CD_CharacterTab
-            // 
-            this.CD_CharacterTab.Controls.Add(this.tabPage1);
-            this.CD_CharacterTab.HotTrack = true;
-            this.CD_CharacterTab.Location = new System.Drawing.Point(311, 30);
-            this.CD_CharacterTab.Multiline = true;
-            this.CD_CharacterTab.Name = "CD_CharacterTab";
-            this.CD_CharacterTab.SelectedIndex = 0;
-            this.CD_CharacterTab.ShowToolTips = true;
-            this.CD_CharacterTab.Size = new System.Drawing.Size(756, 631);
-            this.CD_CharacterTab.TabIndex = 37;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.CharaDataDisplay);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(748, 602);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "角色資料 1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // CharaDataDisplay
-            // 
-            this.CharaDataDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CharaDataDisplay.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CharaDataDisplay.ForeColor = System.Drawing.Color.White;
-            this.CharaDataDisplay.Location = new System.Drawing.Point(0, 0);
-            this.CharaDataDisplay.Name = "CharaDataDisplay";
-            this.CharaDataDisplay.Padding = new System.Windows.Forms.Padding(5);
-            this.CharaDataDisplay.Size = new System.Drawing.Size(748, 602);
-            this.CharaDataDisplay.TabIndex = 0;
-            // 
-            // CD_Favorite
-            // 
-            this.CD_Favorite.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.CD_Favorite.AutoArrange = false;
-            this.CD_Favorite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_Favorite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_Favorite.ForeColor = System.Drawing.Color.White;
-            this.CD_Favorite.FullRowSelect = true;
-            this.CD_Favorite.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.CD_Favorite.Location = new System.Drawing.Point(11, 418);
-            this.CD_Favorite.MultiSelect = false;
-            this.CD_Favorite.Name = "CD_Favorite";
-            this.CD_Favorite.Size = new System.Drawing.Size(294, 243);
-            this.CD_Favorite.TabIndex = 36;
-            this.CD_Favorite.UseCompatibleStateImageBehavior = false;
-            this.CD_Favorite.View = System.Windows.Forms.View.Details;
-            // 
-            // CD_CharacterIDText
-            // 
-            this.CD_CharacterIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_CharacterIDText.Location = new System.Drawing.Point(11, 8);
-            this.CD_CharacterIDText.Margin = new System.Windows.Forms.Padding(3);
-            this.CD_CharacterIDText.Name = "CD_CharacterIDText";
-            this.CD_CharacterIDText.Size = new System.Drawing.Size(54, 36);
-            this.CD_CharacterIDText.TabIndex = 22;
-            this.CD_CharacterIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CD_CharacterIDGo
-            // 
-            this.CD_CharacterIDGo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CharacterIDGo.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_CharacterIDGo.ButtonBackgroundImage = null;
-            this.CD_CharacterIDGo.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_CharacterIDGo.ButtonColor = System.Drawing.Color.White;
-            this.CD_CharacterIDGo.ButtonEnabled = true;
-            this.CD_CharacterIDGo.ButtonImage = null;
-            this.CD_CharacterIDGo.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_CharacterIDGo.ButtonText = "";
-            this.CD_CharacterIDGo.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_CharacterIDGo.Location = new System.Drawing.Point(251, 8);
-            this.CD_CharacterIDGo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_CharacterIDGo.Name = "CD_CharacterIDGo";
-            this.CD_CharacterIDGo.Size = new System.Drawing.Size(54, 36);
-            this.CD_CharacterIDGo.TabIndex = 21;
-            // 
-            // CD_CharacterID
-            // 
-            this.CD_CharacterID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.CD_CharacterID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CD_CharacterID.Font = new System.Drawing.Font("Consolas", 18F);
-            this.CD_CharacterID.ForeColor = System.Drawing.Color.White;
-            this.CD_CharacterID.Location = new System.Drawing.Point(71, 8);
-            this.CD_CharacterID.MaxLength = 8;
-            this.CD_CharacterID.Name = "CD_CharacterID";
-            this.CD_CharacterID.Size = new System.Drawing.Size(176, 36);
-            this.CD_CharacterID.TabIndex = 20;
-            this.CD_CharacterID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // CD_FavoriteText
-            // 
-            this.CD_FavoriteText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_FavoriteText.Location = new System.Drawing.Point(11, 391);
-            this.CD_FavoriteText.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.CD_FavoriteText.Name = "CD_FavoriteText";
-            this.CD_FavoriteText.Size = new System.Drawing.Size(294, 24);
-            this.CD_FavoriteText.TabIndex = 36;
-            this.CD_FavoriteText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // P_Download
-            // 
-            this.P_Download.Controls.Add(this.DL_DownloadStatus);
-            this.P_Download.Controls.Add(this.DL_Failed);
-            this.P_Download.Controls.Add(this.DL_FailedText);
-            this.P_Download.Controls.Add(this.DL_Progress);
-            this.P_Download.Controls.Add(this.DL_Completed);
-            this.P_Download.Controls.Add(this.DL_CompletedText);
-            this.P_Download.Controls.Add(this.DL_DLing);
-            this.P_Download.Controls.Add(this.DL_DLingText);
-            this.P_Download.Controls.Add(this.DL_Pending);
-            this.P_Download.Controls.Add(this.DL_CompleteListText);
-            this.P_Download.Controls.Add(this.DL_PendingText);
-            this.P_Download.Controls.Add(this.DL_CompleteList);
-            this.P_Download.Controls.Add(this.DL_DownloadLogText);
-            this.P_Download.Controls.Add(this.DL_CharaPicBox);
-            this.P_Download.Location = new System.Drawing.Point(1, 24);
-            this.P_Download.Margin = new System.Windows.Forms.Padding(0);
-            this.P_Download.Name = "P_Download";
-            this.P_Download.Size = new System.Drawing.Size(1078, 695);
-            this.P_Download.TabIndex = 13;
-            this.P_Download.Visible = false;
-            // 
-            // DL_DownloadStatus
-            // 
-            this.DL_DownloadStatus.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.DL_DownloadStatus.AutoArrange = false;
-            this.DL_DownloadStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_DownloadStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DL_DownloadStatus.ForeColor = System.Drawing.Color.White;
-            this.DL_DownloadStatus.FullRowSelect = true;
-            this.DL_DownloadStatus.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.DL_DownloadStatus.Location = new System.Drawing.Point(12, 457);
-            this.DL_DownloadStatus.MultiSelect = false;
-            this.DL_DownloadStatus.Name = "DL_DownloadStatus";
-            this.DL_DownloadStatus.Size = new System.Drawing.Size(330, 210);
-            this.DL_DownloadStatus.TabIndex = 51;
-            this.DL_DownloadStatus.UseCompatibleStateImageBehavior = false;
-            this.DL_DownloadStatus.View = System.Windows.Forms.View.Details;
-            // 
-            // DL_Failed
-            // 
-            this.DL_Failed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DL_Failed.Font = new System.Drawing.Font("Consolas", 13F);
-            this.DL_Failed.ForeColor = System.Drawing.Color.Red;
-            this.DL_Failed.Location = new System.Drawing.Point(643, 642);
-            this.DL_Failed.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_Failed.Name = "DL_Failed";
-            this.DL_Failed.Size = new System.Drawing.Size(76, 25);
-            this.DL_Failed.TabIndex = 59;
-            this.DL_Failed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_FailedText
-            // 
-            this.DL_FailedText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_FailedText.ForeColor = System.Drawing.Color.Red;
-            this.DL_FailedText.Location = new System.Drawing.Point(643, 619);
-            this.DL_FailedText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_FailedText.Name = "DL_FailedText";
-            this.DL_FailedText.Size = new System.Drawing.Size(76, 17);
-            this.DL_FailedText.TabIndex = 58;
-            this.DL_FailedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_Progress
-            // 
-            this.DL_Progress.ForeColor = System.Drawing.Color.White;
-            this.DL_Progress.Location = new System.Drawing.Point(643, 433);
-            this.DL_Progress.Name = "DL_Progress";
-            this.DL_Progress.Size = new System.Drawing.Size(76, 18);
-            this.DL_Progress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.DL_Progress.TabIndex = 57;
-            // 
-            // DL_Completed
-            // 
-            this.DL_Completed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DL_Completed.Font = new System.Drawing.Font("Consolas", 13F);
-            this.DL_Completed.Location = new System.Drawing.Point(643, 588);
-            this.DL_Completed.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_Completed.Name = "DL_Completed";
-            this.DL_Completed.Size = new System.Drawing.Size(76, 25);
-            this.DL_Completed.TabIndex = 56;
-            this.DL_Completed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_CompletedText
-            // 
-            this.DL_CompletedText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_CompletedText.Location = new System.Drawing.Point(643, 565);
-            this.DL_CompletedText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_CompletedText.Name = "DL_CompletedText";
-            this.DL_CompletedText.Size = new System.Drawing.Size(76, 17);
-            this.DL_CompletedText.TabIndex = 55;
-            this.DL_CompletedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_DLing
-            // 
-            this.DL_DLing.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DL_DLing.Font = new System.Drawing.Font("Consolas", 13F);
-            this.DL_DLing.Location = new System.Drawing.Point(643, 534);
-            this.DL_DLing.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_DLing.Name = "DL_DLing";
-            this.DL_DLing.Size = new System.Drawing.Size(76, 25);
-            this.DL_DLing.TabIndex = 54;
-            this.DL_DLing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_DLingText
-            // 
-            this.DL_DLingText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_DLingText.Location = new System.Drawing.Point(643, 511);
-            this.DL_DLingText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_DLingText.Name = "DL_DLingText";
-            this.DL_DLingText.Size = new System.Drawing.Size(76, 17);
-            this.DL_DLingText.TabIndex = 53;
-            this.DL_DLingText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_Pending
-            // 
-            this.DL_Pending.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DL_Pending.Font = new System.Drawing.Font("Consolas", 13F);
-            this.DL_Pending.Location = new System.Drawing.Point(643, 480);
-            this.DL_Pending.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_Pending.Name = "DL_Pending";
-            this.DL_Pending.Size = new System.Drawing.Size(76, 25);
-            this.DL_Pending.TabIndex = 52;
-            this.DL_Pending.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_CompleteListText
-            // 
-            this.DL_CompleteListText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_CompleteListText.Location = new System.Drawing.Point(348, 433);
-            this.DL_CompleteListText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_CompleteListText.Name = "DL_CompleteListText";
-            this.DL_CompleteListText.Size = new System.Drawing.Size(289, 18);
-            this.DL_CompleteListText.TabIndex = 50;
-            this.DL_CompleteListText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // DL_PendingText
-            // 
-            this.DL_PendingText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_PendingText.Location = new System.Drawing.Point(643, 457);
-            this.DL_PendingText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_PendingText.Name = "DL_PendingText";
-            this.DL_PendingText.Size = new System.Drawing.Size(76, 17);
-            this.DL_PendingText.TabIndex = 51;
-            this.DL_PendingText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_CompleteList
-            // 
-            this.DL_CompleteList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_CompleteList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DL_CompleteList.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_CompleteList.ForeColor = System.Drawing.Color.White;
-            this.DL_CompleteList.Location = new System.Drawing.Point(348, 457);
-            this.DL_CompleteList.Name = "DL_CompleteList";
-            this.DL_CompleteList.ReadOnly = true;
-            this.DL_CompleteList.Size = new System.Drawing.Size(289, 210);
-            this.DL_CompleteList.TabIndex = 49;
-            this.DL_CompleteList.Text = "";
-            // 
-            // DL_DownloadLogText
-            // 
-            this.DL_DownloadLogText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_DownloadLogText.Location = new System.Drawing.Point(11, 433);
-            this.DL_DownloadLogText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_DownloadLogText.Name = "DL_DownloadLogText";
-            this.DL_DownloadLogText.Size = new System.Drawing.Size(331, 18);
-            this.DL_DownloadLogText.TabIndex = 48;
-            this.DL_DownloadLogText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // DL_CharaPicBox
-            // 
-            this.DL_CharaPicBox.Controls.Add(this.DL_SearchCharacter);
-            this.DL_CharaPicBox.Controls.Add(this.DL_AbortDownload);
-            this.DL_CharaPicBox.Controls.Add(this.DL_PicCount);
-            this.DL_CharaPicBox.Controls.Add(this.DL_PicCountText);
-            this.DL_CharaPicBox.Controls.Add(this.DL_ClearAll);
-            this.DL_CharaPicBox.Controls.Add(this.DL_StartDownload);
-            this.DL_CharaPicBox.Controls.Add(this.DL_CharaIDAdd);
-            this.DL_CharaPicBox.Controls.Add(this.DL_CharaIDText);
-            this.DL_CharaPicBox.Controls.Add(this.DL_CharaID);
-            this.DL_CharaPicBox.Controls.Add(this.DL_Add);
-            this.DL_CharaPicBox.Controls.Add(this.DL_Remove);
-            this.DL_CharaPicBox.Controls.Add(this.DL_AddAll);
-            this.DL_CharaPicBox.Controls.Add(this.DL_DownloadListText);
-            this.DL_CharaPicBox.Controls.Add(this.DL_DownloadList);
-            this.DL_CharaPicBox.Controls.Add(this.DL_Arrow);
-            this.DL_CharaPicBox.ForeColor = System.Drawing.Color.White;
-            this.DL_CharaPicBox.Location = new System.Drawing.Point(11, 4);
-            this.DL_CharaPicBox.Name = "DL_CharaPicBox";
-            this.DL_CharaPicBox.Size = new System.Drawing.Size(708, 423);
-            this.DL_CharaPicBox.TabIndex = 28;
-            this.DL_CharaPicBox.TabStop = false;
-            // 
-            // DL_SearchCharacter
-            // 
-            this.DL_SearchCharacter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.DL_SearchCharacter.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_SearchCharacter.ForeColor = System.Drawing.Color.White;
-            this.DL_SearchCharacter.Location = new System.Drawing.Point(6, 25);
-            this.DL_SearchCharacter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_SearchCharacter.Name = "DL_SearchCharacter";
-            this.DL_SearchCharacter.Size = new System.Drawing.Size(294, 335);
-            this.DL_SearchCharacter.TabIndex = 0;
-            // 
-            // DL_AbortDownload
-            // 
-            this.DL_AbortDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_AbortDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_AbortDownload.ButtonBackgroundImage = null;
-            this.DL_AbortDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_AbortDownload.ButtonColor = System.Drawing.Color.Red;
-            this.DL_AbortDownload.ButtonEnabled = false;
-            this.DL_AbortDownload.ButtonImage = null;
-            this.DL_AbortDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DL_AbortDownload.ButtonText = "";
-            this.DL_AbortDownload.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_AbortDownload.Location = new System.Drawing.Point(625, 393);
-            this.DL_AbortDownload.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_AbortDownload.Name = "DL_AbortDownload";
-            this.DL_AbortDownload.Size = new System.Drawing.Size(76, 23);
-            this.DL_AbortDownload.TabIndex = 51;
-            // 
-            // DL_PicCount
-            // 
-            this.DL_PicCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DL_PicCount.Font = new System.Drawing.Font("Consolas", 13F);
-            this.DL_PicCount.Location = new System.Drawing.Point(625, 333);
-            this.DL_PicCount.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_PicCount.Name = "DL_PicCount";
-            this.DL_PicCount.Size = new System.Drawing.Size(76, 25);
-            this.DL_PicCount.TabIndex = 50;
-            this.DL_PicCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_PicCountText
-            // 
-            this.DL_PicCountText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_PicCountText.Location = new System.Drawing.Point(625, 310);
-            this.DL_PicCountText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_PicCountText.Name = "DL_PicCountText";
-            this.DL_PicCountText.Size = new System.Drawing.Size(76, 17);
-            this.DL_PicCountText.TabIndex = 49;
-            this.DL_PicCountText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_ClearAll
-            // 
-            this.DL_ClearAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_ClearAll.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_ClearAll.ButtonBackgroundImage = null;
-            this.DL_ClearAll.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_ClearAll.ButtonColor = System.Drawing.Color.White;
-            this.DL_ClearAll.ButtonEnabled = true;
-            this.DL_ClearAll.ButtonImage = null;
-            this.DL_ClearAll.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DL_ClearAll.ButtonText = "";
-            this.DL_ClearAll.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_ClearAll.Location = new System.Drawing.Point(625, 238);
-            this.DL_ClearAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_ClearAll.Name = "DL_ClearAll";
-            this.DL_ClearAll.Size = new System.Drawing.Size(76, 23);
-            this.DL_ClearAll.TabIndex = 48;
-            // 
-            // DL_StartDownload
-            // 
-            this.DL_StartDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_StartDownload.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_StartDownload.ButtonBackgroundImage = null;
-            this.DL_StartDownload.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_StartDownload.ButtonColor = System.Drawing.Color.Red;
-            this.DL_StartDownload.ButtonEnabled = false;
-            this.DL_StartDownload.ButtonImage = null;
-            this.DL_StartDownload.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DL_StartDownload.ButtonText = "";
-            this.DL_StartDownload.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_StartDownload.Location = new System.Drawing.Point(625, 364);
-            this.DL_StartDownload.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_StartDownload.Name = "DL_StartDownload";
-            this.DL_StartDownload.Size = new System.Drawing.Size(76, 23);
-            this.DL_StartDownload.TabIndex = 47;
-            // 
-            // DL_CharaIDAdd
-            // 
-            this.DL_CharaIDAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_CharaIDAdd.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_CharaIDAdd.ButtonBackgroundImage = null;
-            this.DL_CharaIDAdd.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_CharaIDAdd.ButtonColor = System.Drawing.Color.White;
-            this.DL_CharaIDAdd.ButtonEnabled = true;
-            this.DL_CharaIDAdd.ButtonImage = null;
-            this.DL_CharaIDAdd.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DL_CharaIDAdd.ButtonText = "";
-            this.DL_CharaIDAdd.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_CharaIDAdd.Location = new System.Drawing.Point(649, 84);
-            this.DL_CharaIDAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_CharaIDAdd.Name = "DL_CharaIDAdd";
-            this.DL_CharaIDAdd.Size = new System.Drawing.Size(52, 25);
-            this.DL_CharaIDAdd.TabIndex = 46;
-            // 
-            // DL_CharaIDText
-            // 
-            this.DL_CharaIDText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_CharaIDText.Location = new System.Drawing.Point(625, 22);
-            this.DL_CharaIDText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_CharaIDText.Name = "DL_CharaIDText";
-            this.DL_CharaIDText.Size = new System.Drawing.Size(76, 25);
-            this.DL_CharaIDText.TabIndex = 45;
-            this.DL_CharaIDText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DL_CharaID
-            // 
-            this.DL_CharaID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.DL_CharaID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DL_CharaID.Font = new System.Drawing.Font("Consolas", 11F);
-            this.DL_CharaID.ForeColor = System.Drawing.Color.White;
-            this.DL_CharaID.Location = new System.Drawing.Point(625, 53);
-            this.DL_CharaID.MaxLength = 8;
-            this.DL_CharaID.Name = "DL_CharaID";
-            this.DL_CharaID.Size = new System.Drawing.Size(76, 25);
-            this.DL_CharaID.TabIndex = 44;
-            // 
-            // DL_Add
-            // 
-            this.DL_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_Add.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_Add.ButtonBackgroundImage = null;
-            this.DL_Add.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_Add.ButtonColor = System.Drawing.Color.White;
-            this.DL_Add.ButtonEnabled = false;
-            this.DL_Add.ButtonImage = null;
-            this.DL_Add.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DL_Add.ButtonText = "";
-            this.DL_Add.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_Add.Location = new System.Drawing.Point(152, 390);
-            this.DL_Add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_Add.Name = "DL_Add";
-            this.DL_Add.Size = new System.Drawing.Size(71, 24);
-            this.DL_Add.TabIndex = 43;
-            // 
-            // DL_Remove
-            // 
-            this.DL_Remove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_Remove.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_Remove.ButtonBackgroundImage = null;
-            this.DL_Remove.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_Remove.ButtonColor = System.Drawing.Color.White;
-            this.DL_Remove.ButtonEnabled = true;
-            this.DL_Remove.ButtonImage = null;
-            this.DL_Remove.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DL_Remove.ButtonText = "";
-            this.DL_Remove.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_Remove.Location = new System.Drawing.Point(625, 209);
-            this.DL_Remove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_Remove.Name = "DL_Remove";
-            this.DL_Remove.Size = new System.Drawing.Size(76, 23);
-            this.DL_Remove.TabIndex = 42;
-            // 
-            // DL_AddAll
-            // 
-            this.DL_AddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_AddAll.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.DL_AddAll.ButtonBackgroundImage = null;
-            this.DL_AddAll.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.DL_AddAll.ButtonColor = System.Drawing.Color.White;
-            this.DL_AddAll.ButtonEnabled = false;
-            this.DL_AddAll.ButtonImage = null;
-            this.DL_AddAll.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DL_AddAll.ButtonText = "";
-            this.DL_AddAll.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_AddAll.Location = new System.Drawing.Point(229, 390);
-            this.DL_AddAll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DL_AddAll.Name = "DL_AddAll";
-            this.DL_AddAll.Size = new System.Drawing.Size(71, 24);
-            this.DL_AddAll.TabIndex = 41;
-            // 
-            // DL_DownloadListText
-            // 
-            this.DL_DownloadListText.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_DownloadListText.Location = new System.Drawing.Point(337, 22);
-            this.DL_DownloadListText.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_DownloadListText.Name = "DL_DownloadListText";
-            this.DL_DownloadListText.Size = new System.Drawing.Size(224, 18);
-            this.DL_DownloadListText.TabIndex = 40;
-            this.DL_DownloadListText.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // DL_DownloadList
-            // 
-            this.DL_DownloadList.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-            this.DL_DownloadList.AutoArrange = false;
-            this.DL_DownloadList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.DL_DownloadList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DL_DownloadList.ForeColor = System.Drawing.Color.White;
-            this.DL_DownloadList.FullRowSelect = true;
-            this.DL_DownloadList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.DL_DownloadList.Location = new System.Drawing.Point(337, 46);
-            this.DL_DownloadList.Name = "DL_DownloadList";
-            this.DL_DownloadList.Size = new System.Drawing.Size(282, 370);
-            this.DL_DownloadList.TabIndex = 39;
-            this.DL_DownloadList.UseCompatibleStateImageBehavior = false;
-            this.DL_DownloadList.View = System.Windows.Forms.View.Details;
-            // 
-            // DL_Arrow
-            // 
-            this.DL_Arrow.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.DL_Arrow.Location = new System.Drawing.Point(294, 226);
-            this.DL_Arrow.Margin = new System.Windows.Forms.Padding(3);
-            this.DL_Arrow.Name = "DL_Arrow";
-            this.DL_Arrow.Size = new System.Drawing.Size(37, 25);
-            this.DL_Arrow.TabIndex = 38;
-            this.DL_Arrow.Text = "→";
-            this.DL_Arrow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // EX_FileDialog
-            // 
-            this.EX_FileDialog.Filter = "csv 檔案|*.csv|assetbundle 檔案|*.assetbundle|wav 檔案|*.wav|mp3 檔案|*.mp3|所有檔案|*.*";
-            // 
-            // CD_MakeIDTable
-            // 
-            this.CD_MakeIDTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_MakeIDTable.ButtonBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.CD_MakeIDTable.ButtonBackgroundImage = null;
-            this.CD_MakeIDTable.ButtonBackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CD_MakeIDTable.ButtonColor = System.Drawing.Color.White;
-            this.CD_MakeIDTable.ButtonEnabled = true;
-            this.CD_MakeIDTable.ButtonImage = null;
-            this.CD_MakeIDTable.ButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CD_MakeIDTable.ButtonText = "";
-            this.CD_MakeIDTable.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.CD_MakeIDTable.Location = new System.Drawing.Point(860, 8);
-            this.CD_MakeIDTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CD_MakeIDTable.Name = "CD_MakeIDTable";
-            this.CD_MakeIDTable.Size = new System.Drawing.Size(149, 23);
-            this.CD_MakeIDTable.TabIndex = 41;
-            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -3313,6 +3754,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FMain";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "SAOCR Data Manager";
             this.Load += new System.EventHandler(this.Form_Load);
             this.P_HomePage.ResumeLayout(false);
@@ -3321,6 +3763,17 @@
             this.MN_StatusStrip.ResumeLayout(false);
             this.MN_StatusStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BGM)).EndInit();
+            this.P_Equip.ResumeLayout(false);
+            this.P_Equip.PerformLayout();
+            this.EQ_SearchBox.ResumeLayout(false);
+            this.EQ_SharpBox.ResumeLayout(false);
+            this.P_CharacterData.ResumeLayout(false);
+            this.P_CharacterData.PerformLayout();
+            this.CD_CharacterTab.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.P_Download.ResumeLayout(false);
+            this.DL_CharaPicBox.ResumeLayout(false);
+            this.DL_CharaPicBox.PerformLayout();
             this.P_EXPCalc.ResumeLayout(false);
             this.EC_Main.ResumeLayout(false);
             this.EC_MainParamAfter.ResumeLayout(false);
@@ -3351,13 +3804,6 @@
             this.ST_AboutProgram.ResumeLayout(false);
             this.ST_DataTitle.ResumeLayout(false);
             this.ST_SoundPath.ResumeLayout(false);
-            this.P_CharacterData.ResumeLayout(false);
-            this.P_CharacterData.PerformLayout();
-            this.CD_CharacterTab.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.P_Download.ResumeLayout(false);
-            this.DL_CharaPicBox.ResumeLayout(false);
-            this.DL_CharaPicBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3581,6 +4027,32 @@
         private Controls.CharacterSearcher CD_SearchCharacter;
         private Controls.CharacterSearcher DL_SearchCharacter;
         private Button_SE_ CD_MakeIDTable;
+        private Button_SE_ CT_A100;
+        private Button_SE_ CT_D100;
+        private Button_SE_ CT_A1K;
+        private Button_SE_ CT_D1K;
+        private System.Windows.Forms.Panel P_Equip;
+        private System.Windows.Forms.Label EQ_WeaponIDText;
+        private Button_SE_ EQ_WeaponSearch;
+        private System.Windows.Forms.TextBox EQ_WeaponID;
+        private Module.WeaponStatus EQ_WStatus;
+        private System.Windows.Forms.GroupBox EQ_SharpBox;
+        private System.Windows.Forms.RadioButton EQ_R4;
+        private System.Windows.Forms.RadioButton EQ_R3;
+        private System.Windows.Forms.RadioButton EQ_R2;
+        private System.Windows.Forms.RadioButton EQ_R1;
+        private System.Windows.Forms.GroupBox EQ_SearchBox;
+        private System.Windows.Forms.ListView EQ_Result;
+        private Button_SE_ EQ_Search;
+        private System.Windows.Forms.ListView EQ_Condition2;
+        private System.Windows.Forms.ListView EQ_Condition1;
+        private Button_SE_ EQ_FavAdd;
+        private Button_SE_ EQ_GoAccessory;
+        private Button_SE_ EQ_GoArmor;
+        private Button_SE_ EQ_GoWeapon;
+        private System.Windows.Forms.Label EQ_FavText;
+        private Button_SE_ EQ_FavRem;
+        private System.Windows.Forms.ListView EQ_FavList;
     }
 }
 

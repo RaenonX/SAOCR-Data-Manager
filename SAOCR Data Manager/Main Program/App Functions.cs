@@ -151,6 +151,7 @@ namespace SAOCR_Data_Manager
             P_Statistics.Visible = false;
             P_Download.Visible = false;
             P_EXPCalc.Visible = false;
+            P_Equip.Visible = false;
             
             PanelToShow.Visible = true;
             string LogText = RMain.Log_GoToPage;
@@ -187,6 +188,10 @@ namespace SAOCR_Data_Manager
                     LogText += MN_Title.Text += RMain.AtPage_EXPCalc;
                     Status(RStatus.S_0xF0000000 + RMain.AtPage_EXPCalc);
                     break;
+                case "P_Equip":
+                    LogText += MN_Title.Text += RMain.AtPage_Equip;
+                    Status(RStatus.S_0xF0000000 + RMain.AtPage_Equip);
+                    break;
             }
             StatusLog.Log(LogText);
         }
@@ -215,6 +220,9 @@ namespace SAOCR_Data_Manager
                         break;
                     case "DL_CharaID":
                         DL_CharaIDAdd_Click(this, EventArgs.Empty);
+                        break;
+                    case "EQ_WeaponID":
+                        EQ_Search_Click(this, EventArgs.Empty);
                         break;
                 }
             }

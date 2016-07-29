@@ -38,24 +38,24 @@ namespace SAOCR_Data_Manager
 
                 if (Extent.isEmptyString(EC_MainLvBefore.Text))
                 {
-                    EC_CharaLvBeforeText.ForeColor = Color.FromArgb((int)EForeColor.Red);
+                    EC_MainLvBeforeText.ForeColor = Color.FromArgb((int)EForeColor.Red);
                     SystemAPI.Warning(RWarning.W_0xC0006002);
                     return;
                 } else
                 {
-                    EC_CharaLvBeforeText.ForeColor = Color.FromArgb((int)EForeColor.White);
+                    EC_MainLvBeforeText.ForeColor = Color.FromArgb((int)EForeColor.White);
                     CE.Before.Lv = Convert.ToInt32(EC_MainLvBefore.Text);
                 }
 
                 if (Extent.isEmptyString(EC_MainLvAfter.Text))
                 {
-                    EC_CharaLvAfterText.ForeColor = Color.FromArgb((int)EForeColor.Red);
+                    EC_MainLvAfterText.ForeColor = Color.FromArgb((int)EForeColor.Red);
                     SystemAPI.Warning(RWarning.W_0xC0006003);
                     return;
                 }
                 else
                 {
-                    EC_CharaLvAfterText.ForeColor = Color.FromArgb((int)EForeColor.White);
+                    EC_MainLvAfterText.ForeColor = Color.FromArgb((int)EForeColor.White);
                     CE.After.Lv = Convert.ToInt32(EC_MainLvAfter.Text);
                 }
                 #endregion
@@ -177,7 +177,116 @@ namespace SAOCR_Data_Manager
         {
             try
             {
+                CharaExp CE = new CharaExp();
+                DataTable Data = DT.ExpChara;
 
+                #region Check Section
+                if (Data == null || Data.Rows.Count <= 0)
+                {
+                    SystemAPI.Warning(RWarning.W_0xC0006007);
+                    return;
+                }
+
+                if (Extent.isEmptyString(EC_CharaLvBefore.Text))
+                {
+                    EC_CharaLvBeforeText.ForeColor = Color.FromArgb((int)EForeColor.Red);
+                    SystemAPI.Warning(RWarning.W_0xC0006000);
+                    return;
+                }
+                else
+                {
+                    EC_CharaLvBeforeText.ForeColor = Color.FromArgb((int)EForeColor.White);
+                    CE.Before.Lv = Convert.ToInt32(EC_CharaLvBefore.Text);
+                }
+
+                if (Extent.isEmptyString(EC_CharaLvAfter.Text))
+                {
+                    EC_CharaLvAfterText.ForeColor = Color.FromArgb((int)EForeColor.Red);
+                    SystemAPI.Warning(RWarning.W_0xC0006001);
+                    return;
+                }
+                else
+                {
+                    EC_CharaLvAfterText.ForeColor = Color.FromArgb((int)EForeColor.White);
+                    CE.After.Lv = Convert.ToInt32(EC_CharaLvAfter.Text);
+                }
+                #endregion
+
+                #region Verify and Calculate Exp Needed
+                CE.Before.SpecifiedLv = DataAPI.Search(CE.Before.Lv.ToString(), Data, 0, Data.Rows.Count, (int)ECharaExpSecCol.LEVEL, true);
+                CE.Before.AtNextLv = DataAPI.Search((CE.Before.Lv + 1).ToString(), Data, 0, Data.Rows.Count, (int)ECharaExpSecCol.LEVEL, true);
+                CE.After.SpecifiedLv = DataAPI.Search(CE.After.Lv.ToString(), Data, 0, Data.Rows.Count, (int)ECharaExpSecCol.LEVEL, true);
+                CE.After.AtNextLv = DataAPI.Search((CE.After.Lv + 1).ToString(), Data, 0, Data.Rows.Count, (int)ECharaExpSecCol.LEVEL, true);
+
+                if (CE.Before.SpecifiedLv == null)
+                {
+                    SystemAPI.Warning(RWarning.W_0xC0006008);
+                    EC_CharaExpNeed.BreezeStop();
+                    return;
+                }
+
+                if (CE.Before.AtNextLv == null)
+                {
+                    CE.Before.Sum += Convert.ToInt32(CE.Before.SpecifiedLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]);
+                    CE.Before.ExpLeft = 0;
+                }
+                else
+                {
+                    CE.Before.Sum += Convert.ToInt32(CE.Before.AtNextLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]);
+
+                    if (!Extent.isEmptyString(EC_CharaExpBefore.Text))
+                    {
+                        CE.Before.ExpLeft = Convert.ToInt32(EC_CharaExpBefore.Text);
+                    }
+                    else
+                    {
+                        CE.Before.ExpLeft = Convert.ToInt32(CE.Before.AtNextLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]) - Convert.ToInt32(CE.Before.SpecifiedLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]);
+                    }
+                }
+
+                EC_CharaExpBefore.Text = CE.Before.ExpLeft.ToString();
+                CE.Before.Sum -= CE.Before.ExpLeft;
+
+                if (CE.After.SpecifiedLv == null)
+                {
+                    SystemAPI.Warning(RWarning.W_0xC0006008);
+                    EC_CharaExpNeed.BreezeStop();
+                    return;
+                }
+
+                if (CE.After.AtNextLv == null)
+                {
+                    CE.After.Sum += Convert.ToInt32(CE.After.SpecifiedLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]);
+                    CE.After.ExpLeft = 0;
+                }
+                else
+                {
+                    CE.After.Sum += Convert.ToInt32(CE.After.AtNextLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]);
+
+                    if (!Extent.isEmptyString(EC_CharaExpAfter.Text))
+                    {
+                        CE.After.ExpLeft = Convert.ToInt32(EC_CharaExpAfter.Text);
+                    }
+                    else
+                    {
+                        CE.After.ExpLeft = Convert.ToInt32(CE.After.AtNextLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]) - Convert.ToInt32(CE.After.SpecifiedLv[0][(int)ECharaExpSecCol.SUM_EXP_REQUIRED]);
+                    }
+                }
+
+                EC_CharaExpAfter.Text = CE.After.ExpLeft.ToString();
+                CE.After.Sum -= CE.After.ExpLeft;
+
+                if (CE.Before.Lv > CE.After.Lv)
+                {
+                    SystemAPI.Warning(RWarning.W_0xC0006009);
+                    EC_CharaExpNeed.BreezeStop();
+                    return;
+                }
+
+                int Result = CE.After.Sum - CE.Before.Sum;
+                EC_CharaExpNeed.LText = Result.ToString();
+                EC_CharaExpNeed.BreezeBegin();
+                #endregion
             }
             catch (Exception ex)
             {

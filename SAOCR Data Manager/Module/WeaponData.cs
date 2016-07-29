@@ -9,17 +9,23 @@ using System.Threading.Tasks;
 
 namespace SAOCR_Data_Manager.Module
 {
-    class WeaponData
+    public class WeaponData
     {
         public WInfo Info;
-        public WSharp Param;
+        public WParam Param;
         public bool CreateSucceed;
-        WData Data;
+        public WData Data;
 
         public WeaponData(WData WData)
         {
             try
             {
+                if (WData.ID.Length != 9)
+                {
+                    SystemAPI.Warning(RWarning.W_0xC002B003);
+                    CreateSucceed = false;
+                    return;
+                }
                 Data.ID = WData.ID;
 
                 WData.Data.Name = DataAPI.Search(WData.ID, WData.DTs.Source, WData.TitleP.Start[(int)DataTitle.WeaponName], WData.TitleP.End[(int)DataTitle.WeaponName], (int)EWeaponNameSecCol.ID);
@@ -28,7 +34,7 @@ namespace SAOCR_Data_Manager.Module
                 WData.Data.Param = DataAPI.Search(WData.ID, WData.DTs.Source, WData.TitleP.Start[(int)DataTitle.WeaponParams], WData.TitleP.End[(int)DataTitle.WeaponParams], (int)EWeaponParamSecCol.ID);
 
                 Info = new WInfo(WData);
-                Param = new WSharp(WData);
+                Param = new WParam(WData);
 
                 if (WData.Data.Name != null && WData.Data.ID != null && WData.Data.Param != null)
                 {
@@ -37,6 +43,7 @@ namespace SAOCR_Data_Manager.Module
                 else
                 {
                     CreateSucceed = false;
+                    return;
                 }
             } 
             catch (Exception e)
@@ -77,7 +84,7 @@ namespace SAOCR_Data_Manager.Module
                         }
                         else
                         {
-                            InfoList.Add(InfoList[3] + RWarning.W_0xC002B001.Replace("\\n", " "));
+                            InfoList.Add(InfoList[3] + " - " + RWarning.W_0xC002B001.Replace("\\n", " "));
                         }
                     }
                     else
@@ -85,6 +92,8 @@ namespace SAOCR_Data_Manager.Module
                         InfoList.Add(Const.EMPTY);
                         InfoList.Add(Const.EMPTY);
                     }
+
+                    InfoList.Add(EnumTranslator.WeaponT((EWeapon)Convert.ToInt32(Data.ID.Substring(1, 2))));
                 }
                 catch (Exception e)
                 {
@@ -106,6 +115,10 @@ namespace SAOCR_Data_Manager.Module
                 }
             }
 
+            /// <summary>
+            /// 回傳陣列。
+            /// </summary>
+            /// <returns>ID、名稱、稀有度、日文效果、中文效果</returns>
             public string[] GetWeaponInfoArray()
             {
                 try
@@ -120,74 +133,102 @@ namespace SAOCR_Data_Manager.Module
     }
         }
 
-        public class WSharp
+        public class WParam
         {
             WData DT;
 
-            public WSharp(WData WData)
+            List<int> PRM_S = new List<int>();
+            List<int> PRM_V = new List<int>();
+            List<int> PRM_I = new List<int>();
+            List<int> PRM_M = new List<int>();
+
+            public WParam(WData WData)
             {
                 try
                 {
                     DT = WData;
+                    List<double> MAX = new List<double>();
+                    List<double> MIN = new List<double>();
+                    DataRow[] MAXRes = DT.Data.Param;
+                    DataRow[] MINRes = DT.Data.Name;
+                    for (int j = 0; j < Const.Count.WEAPON_SHARPNESS; j++)
+                    {
+                        for (int i = (int)EWeaponParamSecCol.STR_MAX; i <= (int)EWeaponParamSecCol.MEN_MAX; i++)
+                        {
+                            if (MAXRes == null)
+                            {
+                                MAX.Add(0);
+                            }
+                            else
+                            {
+                                try
+                                {
+                                    MAX.Add(Convert.ToDouble(MAXRes[j][i]));
+                                } catch (IndexOutOfRangeException)
+                                {
+                                    MAX.Add(0);
+                                }
+                            }
+                        }
+                    }
+                    for (int i = (int)EWeaponNameSecCol.STR_MIN; i <= (int)EWeaponNameSecCol.MEN_MIN; i++)
+                    {
+                        if (MINRes == null)
+                        {
+                            MIN.Add(0);
+                        }
+                        else
+                        {
+                            MIN.Add(Convert.ToDouble(MINRes[0][i]));
+                        }
+                    }
+
+                    for (int j = 0; j < Const.Count.WEAPON_SHARPNESS; j++)
+                    {
+                        for (int Lv = 0; Lv < Const.Count.WEAPON_MAX_LEVEL; Lv++)
+                        {
+                            double LvP = Lv / ((double)Const.Count.WEAPON_MAX_LEVEL - 1);
+
+                            double SumP = MIN[(int)EParamCategory.STR - 1] + (MAX[j * 4 + (int)EParamCategory.STR - 1] - MIN[(int)EParamCategory.STR - 1]) * LvP;
+                            PRM_S.Add(Convert.ToInt32(SumP));
+
+                            SumP = MIN[(int)EParamCategory.VIT - 1] + (MAX[j * 4 + (int)EParamCategory.VIT - 1] - MIN[(int)EParamCategory.VIT - 1]) * LvP;
+                            PRM_V.Add(Convert.ToInt32(SumP));
+
+                            SumP = MIN[(int)EParamCategory.INT - 1] + (MAX[j * 4 + (int)EParamCategory.INT - 1] - MIN[(int)EParamCategory.INT - 1]) * LvP;
+                            PRM_I.Add(Convert.ToInt32(SumP));
+
+                            SumP = MIN[(int)EParamCategory.MEN - 1] + (MAX[j * 4 + (int)EParamCategory.MEN - 1] - MIN[(int)EParamCategory.MEN - 1]) * LvP;
+                            PRM_M.Add(Convert.ToInt32(SumP));
+                        }
+                    }
                 }
                 catch (Exception e)
                 {
-                    SystemAPI.Error(RError.E_0x0002B003, e);
+                    SystemAPI.Error(RError.E_0x0002B007, e);
                     throw;
                 }
             }
 
-            public int[] GetArray(ESharpness ESP)
+            public int[] GetArray(int Level, ESharpness ES)
             {
                 try
                 {
-                    List<int> ParamList = new List<int>();
+                    List<int> Ret = new List<int>();
+                    int Pos = (int)ES * Const.Count.WEAPON_MAX_LEVEL + Level - 1;
 
-                    for (int j = 0; j < Const.Count.PARAM_CATEGORY; j++)
-                    {
-                        string X = DT.Data.Param[(int)ESP - 1][(int)EWeaponParamSecCol.STR_MAX + j].ToString();
-                        ParamList.Add(Convert.ToInt32(DT.Data.Param[(int)ESP - 1][(int)EWeaponParamSecCol.STR_MAX + j]));
-                    }
+                    Ret.Add(PRM_S[Pos]);
+                    Ret.Add(PRM_V[Pos]);
+                    Ret.Add(PRM_I[Pos]);
+                    Ret.Add(PRM_M[Pos]);
 
-                    return ParamList.ToArray();
+                    return Ret.ToArray();
                 }
                 catch (Exception e)
                 {
-                    SystemAPI.Error(RError.E_0x0002B006, e);
+                    SystemAPI.Error(RError.E_0x0002B008 + Level.ToString() + "、" + DT.ID + "、" + (int)ES, e);
                     throw;
                 }
-            }
-
-            public class WParam
-            {
-                public WParam(WData WData)
-                {
-                    //塞資料成一個陣列
-                }
-
-                public int[] GetArray(int Level)
-                {
-                    return null;
-                }
-
-                public int[] GetArrayAtMax()
-                {
-                    return null;
-                }
-
-                public int GetParam(int Level)
-                {
-                    return 0;
-                }
-            }
-        }
-
-        public class WMaterial
-        {
-
-            public WMaterial(WData WData)
-            {
-
             }
         }
     }

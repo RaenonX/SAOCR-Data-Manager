@@ -70,6 +70,42 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
+        ///   查詢類似 +100 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_A100 {
+            get {
+                return ResourceManager.GetString("Layout_A100", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 +1K 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_A1K {
+            get {
+                return ResourceManager.GetString("Layout_A1K", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 -100 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_D100 {
+            get {
+                return ResourceManager.GetString("Layout_D100", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 -1K 的當地語系化字串。
+        /// </summary>
+        internal static string Layout_D1K {
+            get {
+                return ResourceManager.GetString("Layout_D1K", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 結束欄位 的當地語系化字串。
         /// </summary>
         internal static string Layout_EndColumn {

@@ -581,15 +581,59 @@
     <comment>RExpCalculator</comment>
   </data>
   <data name="W_0xC0006007" xml:space="preserve">
-    <value>警告代碼 0xC0006007\n\n</value>
+    <value>警告代碼 0xC0006007\n\n角色經驗資料匯入失敗，已中斷經驗計算作業。</value>
     <comment>RExpCalculator</comment>
   </data>
   <data name="W_0xC0006008" xml:space="preserve">
-    <value>警告代碼 0xC0006008\n\n</value>
+    <value>警告代碼 0xC0006008\n\n資料庫內沒有登記此等級的經驗資料，請重新輸入。</value>
     <comment>RExpCalculator</comment>
   </data>
   <data name="W_0xC0006009" xml:space="preserve">
-    <value>警告代碼 0xC0006009\n\n</value>
+    <value>警告代碼 0xC0006009\n\n哪有人倒著訓練的，重打！</value>
     <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC000600A" xml:space="preserve">
+    <value>警告代碼 0xC000600A\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC000600B" xml:space="preserve">
+    <value>警告代碼 0xC000600B\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC000600C" xml:space="preserve">
+    <value>警告代碼 0xC000600C\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC000600D" xml:space="preserve">
+    <value>警告代碼 0xC000600D\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC000600E" xml:space="preserve">
+    <value>警告代碼 0xC000600E\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC000600F" xml:space="preserve">
+    <value>警告代碼 0xC000600F\n\n</value>
+    <comment>RExpCalculator</comment>
+  </data>
+  <data name="W_0xC002B002" xml:space="preserve">
+    <value>警告代碼 0xC002B002\n\n跳行時發生錯誤。請重新選擇跳躍行號。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="W_0xC0030000" xml:space="preserve">
+    <value>警告代碼 0xC0030000\n\n請輸入武器ID再搜尋相關資訊。</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="W_0xC0030001" xml:space="preserve">
+    <value>警告代碼 0xC0030001\n\n請選擇武器業物度後，重新搜尋武器參數。</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="W_0xC002B003" xml:space="preserve">
+    <value>警告代碼 0xC002B003\n\n武器ID不正確，請重新輸入。</value>
+    <comment>WeaponData</comment>
+  </data>
+  <data name="W_0xC0030002" xml:space="preserve">
+    <value>警告代碼 0xC0030002\n\n最愛清單中導入的武器ID有誤。已將此ID從最愛清單中移除。</value>
+    <comment>Equip</comment>
   </data>
 </root>

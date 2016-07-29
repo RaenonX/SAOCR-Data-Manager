@@ -118,7 +118,9 @@ public enum InitItem
     SS_MonsterTypeRate,
     SS_MonsterHPRate,
     DL_DownloadList,
-    DL_DownloadStatus
+    DL_DownloadStatus,
+    EQ_Result,
+    EQ_Favorite
 }
 
 [Flags] 
@@ -598,7 +600,8 @@ public enum EWInfoCategory
     NAME,
     RARITY,
     EFFECT_JP,
-    EFFECT_CH
+    EFFECT_CH,
+    CATEGORY
 }
 
 [Flags] 
@@ -655,7 +658,7 @@ public enum EWeaponEffDictCode
 [Flags]
 public enum ESharpness
 {
-    R1 = 1, R2 = 2, R3 = 3, R4 = 4
+    R1, R2, R3, R4
 }
 
 [Flags]
@@ -710,3 +713,23 @@ public enum EMainExpSecCol
     RARITY = 12
 }
 #endregion
+
+#region 角色ID對照表
+[Flags]
+public enum ECharaIDTagCode
+{
+    ID_4NUM = 1,
+    EN_NAME,
+    TEXT
+}
+#endregion
+
+[Flags]
+public enum EEquipType
+{
+    Character = 8,
+    Armor = 7,
+    Weapon = 9,
+    Accessory = 10,
+    Null
+}

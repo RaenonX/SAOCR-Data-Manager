@@ -79,7 +79,7 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         }
         
         /// <summary>
-        ///   查詢類似 我的最愛角色 的當地語系化字串。
+        ///   查詢類似 我的最愛角色(查詢角色後、點選此處會刷新清單) 的當地語系化字串。
         /// </summary>
         internal static string Layout_FavoriteText {
             get {
@@ -129,6 +129,33 @@ namespace SAOCR_Data_Manager.Resources.Forms {
         internal static string Log_ShowCharacterFail {
             get {
                 return ResourceManager.GetString("Log_ShowCharacterFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 請選擇要輸出角色ID表的資料夾。 的當地語系化字串。
+        /// </summary>
+        internal static string Message_FolderToOutput {
+            get {
+                return ResourceManager.GetString("Message_FolderToOutput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色ID表輸出完成。是否開啟檔案？ 的當地語系化字串。
+        /// </summary>
+        internal static string Message_IDTableExportCompleted {
+            get {
+                return ResourceManager.GetString("Message_IDTableExportCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ID Tag Data 的當地語系化字串。
+        /// </summary>
+        internal static string Name_IDTagDatatableName {
+            get {
+                return ResourceManager.GetString("Name_IDTagDatatableName", resourceCulture);
             }
         }
     }

@@ -430,6 +430,51 @@ namespace SAOCR_Data_Manager.Resources {
         }
         
         /// <summary>
+        ///   查詢類似 飾品 的當地語系化字串。
+        /// </summary>
+        internal static string ET_Accessory {
+            get {
+                return ResourceManager.GetString("ET_Accessory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 防具 的當地語系化字串。
+        /// </summary>
+        internal static string ET_Armor {
+            get {
+                return ResourceManager.GetString("ET_Armor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 角色 的當地語系化字串。
+        /// </summary>
+        internal static string ET_Character {
+            get {
+                return ResourceManager.GetString("ET_Character", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 不明 的當地語系化字串。
+        /// </summary>
+        internal static string ET_Null {
+            get {
+                return ResourceManager.GetString("ET_Null", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 武器 的當地語系化字串。
+        /// </summary>
+        internal static string ET_Weapon {
+            get {
+                return ResourceManager.GetString("ET_Weapon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 D 的當地語系化字串。
         /// </summary>
         internal static string LG_Debug {

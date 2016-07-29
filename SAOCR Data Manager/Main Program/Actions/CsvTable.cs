@@ -118,5 +118,37 @@ namespace SAOCR_Data_Manager
             CT_CsvView.FirstDisplayedScrollingRowIndex = Convert.ToInt32(Sender.SelectedItems[0].Text) - 1;
             CT_CsvView.CurrentCell = CT_CsvView.Rows[CT_CsvView.FirstDisplayedScrollingRowIndex].Cells[0];
         }
+
+        private void CT_MoveStep(object sender, EventArgs e)
+        {
+            try
+            {
+                Button_SE_ BSE = (Button_SE_)sender;
+                int ColumnNum = Convert.ToInt32(CT_Step.Text);
+
+                switch (BSE.Name)
+                {
+                    case "CT_A100":
+                        ColumnNum += 100;
+                        break;
+                    case "CT_A1K":
+                        ColumnNum += 1000;
+                        break;
+                    case "CT_D100":
+                        ColumnNum += -100;
+                        break;
+                    case "CT_D1K":
+                        ColumnNum += -1000;
+                        break;
+                }
+
+                CT_Step.Text = ColumnNum.ToString();
+                CT_StepGo_ButtonClick();
+            }
+            catch (Exception)
+            {
+                SystemAPI.Warning(RWarning.W_0xC002B002);
+            }
+        }
     }
 }

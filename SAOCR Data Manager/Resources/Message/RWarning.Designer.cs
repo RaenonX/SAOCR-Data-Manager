@@ -511,7 +511,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0006007\n\n 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0006007\n\n角色經驗資料匯入失敗，已中斷經驗計算作業。 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0006007 {
             get {
@@ -520,7 +520,7 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0006008\n\n 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0006008\n\n資料庫內沒有登記此等級的經驗資料，請重新輸入。 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0006008 {
             get {
@@ -529,11 +529,65 @@ namespace SAOCR_Data_Manager.Resources.Message {
         }
         
         /// <summary>
-        ///   查詢類似 警告代碼 0xC0006009\n\n 的當地語系化字串。
+        ///   查詢類似 警告代碼 0xC0006009\n\n哪有人倒著訓練的，重打！ 的當地語系化字串。
         /// </summary>
         internal static string W_0xC0006009 {
             get {
                 return ResourceManager.GetString("W_0xC0006009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC000600A\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC000600A {
+            get {
+                return ResourceManager.GetString("W_0xC000600A", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC000600B\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC000600B {
+            get {
+                return ResourceManager.GetString("W_0xC000600B", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC000600C\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC000600C {
+            get {
+                return ResourceManager.GetString("W_0xC000600C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC000600D\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC000600D {
+            get {
+                return ResourceManager.GetString("W_0xC000600D", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC000600E\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC000600E {
+            get {
+                return ResourceManager.GetString("W_0xC000600E", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC000600F\n\n 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC000600F {
+            get {
+                return ResourceManager.GetString("W_0xC000600F", resourceCulture);
             }
         }
         
@@ -1119,6 +1173,51 @@ namespace SAOCR_Data_Manager.Resources.Message {
         internal static string W_0xC002B001 {
             get {
                 return ResourceManager.GetString("W_0xC002B001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC002B002\n\n跳行時發生錯誤。請重新選擇跳躍行號。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC002B002 {
+            get {
+                return ResourceManager.GetString("W_0xC002B002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC002B003\n\n武器ID不正確，請重新輸入。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC002B003 {
+            get {
+                return ResourceManager.GetString("W_0xC002B003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0030000\n\n請輸入武器ID再搜尋相關資訊。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0030000 {
+            get {
+                return ResourceManager.GetString("W_0xC0030000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0030001\n\n請選擇武器業物度後，重新搜尋武器參數。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0030001 {
+            get {
+                return ResourceManager.GetString("W_0xC0030001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 警告代碼 0xC0030002\n\n最愛清單中導入的武器ID有誤。已將此ID從最愛清單中移除。 的當地語系化字串。
+        /// </summary>
+        internal static string W_0xC0030002 {
+            get {
+                return ResourceManager.GetString("W_0xC0030002", resourceCulture);
             }
         }
         

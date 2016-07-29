@@ -183,7 +183,7 @@
             // 
             this.Intro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.Intro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Intro.Font = new System.Drawing.Font("Meiryo", 9F);
+            this.Intro.Font = new System.Drawing.Font("微軟正黑體", 9F);
             this.Intro.ForeColor = System.Drawing.Color.White;
             this.Intro.Location = new System.Drawing.Point(6, 236);
             this.Intro.Name = "Intro";
@@ -226,7 +226,7 @@
             // GetMethod
             // 
             this.GetMethod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GetMethod.Font = new System.Drawing.Font("Meiryo", 11F);
+            this.GetMethod.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.GetMethod.Location = new System.Drawing.Point(398, 137);
             this.GetMethod.Margin = new System.Windows.Forms.Padding(3);
             this.GetMethod.Name = "GetMethod";
@@ -248,7 +248,7 @@
             // ReleaseDate
             // 
             this.ReleaseDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReleaseDate.Font = new System.Drawing.Font("Meiryo", 11F);
+            this.ReleaseDate.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.ReleaseDate.Location = new System.Drawing.Point(98, 137);
             this.ReleaseDate.Margin = new System.Windows.Forms.Padding(3);
             this.ReleaseDate.Name = "ReleaseDate";
@@ -292,7 +292,7 @@
             // Sex
             // 
             this.Sex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Sex.Font = new System.Drawing.Font("Meiryo", 11F);
+            this.Sex.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.Sex.Location = new System.Drawing.Point(392, 101);
             this.Sex.Margin = new System.Windows.Forms.Padding(3);
             this.Sex.Name = "Sex";
@@ -346,7 +346,7 @@
             // Weapon
             // 
             this.Weapon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Weapon.Font = new System.Drawing.Font("Meiryo", 11F);
+            this.Weapon.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.Weapon.Location = new System.Drawing.Point(199, 101);
             this.Weapon.Margin = new System.Windows.Forms.Padding(3);
             this.Weapon.Name = "Weapon";
@@ -379,7 +379,7 @@
             // Element
             // 
             this.Element.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Element.Font = new System.Drawing.Font("Meiryo", 11F);
+            this.Element.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.Element.Location = new System.Drawing.Point(69, 101);
             this.Element.Margin = new System.Windows.Forms.Padding(3);
             this.Element.Name = "Element";
@@ -400,7 +400,7 @@
             // CV
             // 
             this.CV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CV.Font = new System.Drawing.Font("Meiryo", 11F);
+            this.CV.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.CV.Location = new System.Drawing.Point(349, 65);
             this.CV.Margin = new System.Windows.Forms.Padding(3);
             this.CV.Name = "CV";
@@ -433,7 +433,7 @@
             // EN
             // 
             this.EN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EN.Font = new System.Drawing.Font("Meiryo", 11F);
+            this.EN.Font = new System.Drawing.Font("微軟正黑體", 11F);
             this.EN.Location = new System.Drawing.Point(98, 65);
             this.EN.Margin = new System.Windows.Forms.Padding(3);
             this.EN.Name = "EN";

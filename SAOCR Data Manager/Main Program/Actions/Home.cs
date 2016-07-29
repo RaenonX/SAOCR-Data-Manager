@@ -55,7 +55,6 @@ namespace SAOCR_Data_Manager
 
             if (LoadCSVData())
             {
-                Button_SE_[] FunctionButtons = { HM_ToCharacterData, HM_ToEquipmentData, HM_ToCsvTable };
                 foreach (Button_SE_ item in FunctionButtons)
                 {
                     item.ButtonEnabled = true;
@@ -102,7 +101,7 @@ namespace SAOCR_Data_Manager
 
         private void ToEquipmentData_Click(object sender, EventArgs e)
         {
-            Test();
+            PageSwitch(P_Equip);
         }
 
         private void Announcement_ArriveToBorder(object sender, EventArgs e)

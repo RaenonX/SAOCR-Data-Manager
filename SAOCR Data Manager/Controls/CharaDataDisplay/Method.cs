@@ -15,7 +15,7 @@ namespace SAOCR_Data_Manager.Forms
 {
     public partial class CharaDataDisplay : UserControl
     {
-        public void DisplayCharacterData(CharaData Data, RefreshFavorite RefreshFavorite)
+        public void DisplayCharacterData(CharaData Data, Action<object, EventArgs> RefreshList)
         {
             try
             {
@@ -27,6 +27,7 @@ namespace SAOCR_Data_Manager.Forms
                     CDT = Data;
                     isFavorite = Extent.isContainFullElement(AC.Chara_Favorite.Cast<string>().ToList(), Data.Data.CharaID);
                     RefreshFavoriteStatus();
+                    RefreshList(null, null);
 
                     Favorite.ButtonEnabled = true;
 
@@ -37,8 +38,6 @@ namespace SAOCR_Data_Manager.Forms
                     BA.DisplayCharacterBA(Data);
                     Param.DisplayCharacterParameters(Data);
                     LS.DisplayCharacterLeaderSkill(Data);
-
-                    FavoriteSaved += new EventHandler(RefreshFavorite);
 
                     LoadCompleted?.Invoke(this, EventArgs.Empty);
                 } else

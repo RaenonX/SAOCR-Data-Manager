@@ -60,6 +60,7 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\Assembly-CSharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
@@ -94,6 +95,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
@@ -105,9 +107,6 @@
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\..\..\..\SAOCR\DeCompile\APK Multi Tool\projects\SAOCRv1.2.91-D-EH1-PH99K.apk\assets\bin\Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +121,18 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\CharacterSearcher\Program.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialEstimater\Initial+Property.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialEstimater\Initial+Property.Designer.cs">
+      <DependentUpon>Initial+Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MaterialEstimater\Method.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialEstimater\Program.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\DataRegister.cs">
@@ -140,6 +151,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Program\Actions\Download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Program\Actions\Equip.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Program\Actions\Statistics.cs">
@@ -301,6 +315,11 @@
     </Compile>
     <Compile Include="Resources\Controls\RCharaSearcher.Designer.cs">
       <DependentUpon>RCharaSearcher.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Forms\REquip.Designer.cs">
+      <DependentUpon>REquip.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -472,6 +491,9 @@
     <EmbeddedResource Include="Controls\LS Display\Initial+Property.resx">
       <DependentUpon>Initial+Property.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MaterialEstimater\Initial+Property.resx">
+      <DependentUpon>Initial+Property.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\WeaponStatus\Initial+Property.resx">
       <DependentUpon>Initial+Property.cs</DependentUpon>
     </EmbeddedResource>
@@ -501,6 +523,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RCharaSearcher.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Forms\REquip.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>REquip.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Forms\RExpCalc.resx">
       <Generator>ResXFileCodeGenerator</Generator>

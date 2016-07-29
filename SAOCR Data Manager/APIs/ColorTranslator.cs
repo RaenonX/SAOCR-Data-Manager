@@ -182,6 +182,8 @@ namespace SAOCR_Data_Manager
                         return Color.FromArgb((int)EForeColor.Orange);
                     case "6":
                         return Color.FromArgb((int)EForeColor.Red);
+                    case "7":
+                        return Color.FromArgb((int)EForeColor.Purple);
                     default:
                         throw new ArgumentException(RError.E_0x00006002);
                 }

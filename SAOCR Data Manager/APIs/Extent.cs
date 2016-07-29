@@ -94,6 +94,11 @@ namespace SAOCR_Data_Manager
             }
         }
 
+        public static EEquipType IDtoIdentifyEquipType(string ID)
+        {
+            return (EEquipType)ID.Length;
+        }
+
         /// <summary>
         /// 測試字串是否為空字串，如果是空則傳回true，否則回傳false。
         /// </summary>

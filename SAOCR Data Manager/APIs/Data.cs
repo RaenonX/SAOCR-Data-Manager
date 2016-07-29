@@ -508,6 +508,10 @@ namespace SAOCR_Data_Manager
         public static string EscapeLikeValue(string valueWithoutWildcards)
         {
             StringBuilder sb = new StringBuilder();
+            if (Extent.isEmptyString(valueWithoutWildcards))
+            {
+                return valueWithoutWildcards;
+            }
             for (int i = 0; i < valueWithoutWildcards.Length; i++)
             {
                 char c = valueWithoutWildcards[i];

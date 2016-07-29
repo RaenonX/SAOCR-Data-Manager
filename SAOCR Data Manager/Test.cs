@@ -26,23 +26,11 @@ namespace SAOCR_Data_Manager
     {
         public void Test()
         {
-            /*
             BattlePlayer ATK = new BattlePlayer();
             BattlePlayer DEF = new BattlePlayer();
             BaseCalculator BaseCalculator = new NomarlAttackCalculator(ATK, DEF);
 
             Debug.Print(BaseCalculator.getRandomDamage(500).ToString());
-            */
-
-            /*
-            WData WDT = new WData();
-            WDT.ID = "101000730";
-            WDT.DTs = DT;
-            WDT.TitleP = TitleP;
-
-            WeaponData WD = new WeaponData(WDT);
-            Debug.Print(WD.Param.GetArray(ESharpness.R4)[0].ToString())
-            */
         }
     }
 }

@@ -777,5 +777,24 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
+
+        public static string EquipTypeT(EEquipType EET)
+        {
+            switch (EET)
+            {
+                case EEquipType.Accessory:
+                    return RDictEnumString.ET_Accessory;
+                case EEquipType.Armor:
+                    return RDictEnumString.ET_Armor;
+                case EEquipType.Character:
+                    return RDictEnumString.ET_Character;
+                case EEquipType.Null:
+                    return RDictEnumString.ET_Null;
+                case EEquipType.Weapon:
+                    return RDictEnumString.ET_Weapon;
+                default:
+                    return null;
+            }
+        }
     } 
 }

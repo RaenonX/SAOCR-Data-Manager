@@ -37,7 +37,6 @@ namespace SAOCR_Data_Manager
                 }
                 if (DT.Source == null)
                 {
-                    Button_SE_[] FunctionButtons = { HM_ToCharacterData, HM_ToEquipmentData, HM_ToCsvTable };
                     foreach (Button_SE_ item in FunctionButtons)
                     {
                         item.ButtonEnabled = false;
@@ -68,7 +67,7 @@ namespace SAOCR_Data_Manager
 
                 DT.ExpMain = DataAPI.Specified<int>(DT.Source, TitleP.Start[(int)DataTitle.MainCharacterParams] + 1, TitleP.End[(int)DataTitle.MainCharacterParams], null, "Main Chara Exp Section");
 
-                DT.ExpChara = DataAPI.Specified<int>(DT.Source, TitleP.Start[(int)DataTitle.CharacterParams] + 1, TitleP.End[(int)DataTitle.CharacterParams], null, "Normal Chara Exp Section");
+                DT.ExpChara = DataAPI.Specified<int>(DT.Source, TitleP.Start[(int)DataTitle.CharacterExpTable] + 1, TitleP.End[(int)DataTitle.CharacterExpTable], null, "Normal Chara Exp Section");
 
                 if (!LoadBADictionary())
                 {

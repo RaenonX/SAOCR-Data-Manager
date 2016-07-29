@@ -115,6 +115,10 @@ namespace SAOCR_Data_Manager
                 CT_StartColumnLabel.Text = RCsvTable.Layout_StartColumn;
                 CT_EndColumnLabel.Text = RCsvTable.Layout_EndColumn;
                 CT_SearchString.Text = RCsvTable.Layout_SearchString;
+                CT_A100.ButtonText = RCsvTable.Layout_A100;
+                CT_A1K.ButtonText = RCsvTable.Layout_A1K;
+                CT_D100.ButtonText = RCsvTable.Layout_D100;
+                CT_D1K.ButtonText = RCsvTable.Layout_D1K;
 
                 //Character Data
                 CD_CharacterIDText.Text = RCharaData.Layout_CharaIDText;
@@ -172,6 +176,17 @@ namespace SAOCR_Data_Manager
                 EC_MainSSBeforeText.Text = EC_MainSSAfterText.Text = RExpCalc.Layout_SS;
                 EC_CharaTips.MarqueeText = RExpCalc.Message_FastTip;
                 EC_MainCostBeforeText.Text = EC_MainCostAfterText.Text = RExpCalc.Layout_Cost;
+
+                //Equipment
+                EQ_WeaponIDText.Text = REquip.Layout_SearchText;
+                EQ_WeaponSearch.ButtonText = REquip.Layout_Search;
+                EQ_Search.ButtonText = REquip.Layout_Search;
+                EQ_SearchBox.Text = REquip.Layout_Search;
+                EQ_SharpBox.Text = REquip.Layout_Sharpness;
+                EQ_R1.Text = REquip.Layout_R1;
+                EQ_R2.Text = REquip.Layout_R2;
+                EQ_R3.Text = REquip.Layout_R3;
+                EQ_R4.Text = REquip.Layout_R4;
             }
             catch (Exception e)
             {
@@ -242,6 +257,10 @@ namespace SAOCR_Data_Manager
                 CT_Search.KeyPress += new KeyPressEventHandler(TextBoxEnter);
                 CT_Search.KeyPress += Extent.VerifyLetterDigitOnly;
                 CT_FindResultList.DoubleClick += new EventHandler(CT_FindResultList_DoubleClick);
+                CT_A100.ButtonClick += CT_MoveStep;
+                CT_A1K.ButtonClick += CT_MoveStep;
+                CT_D100.ButtonClick += CT_MoveStep;
+                CT_D1K.ButtonClick += CT_MoveStep;
 
                 //Character Data
                 CD_CharacterID.KeyPress += new KeyPressEventHandler(Extent.VerifyTextIsNum);
@@ -254,6 +273,7 @@ namespace SAOCR_Data_Manager
                 CD_SearchCharacter.SearchClicked += CD_SearchCharacter_SearchClicked;
                 CD_SearchCharacter.SeriesTableClicked += CD_SearchCharacter_SeriesTableClicked;
                 CD_MakeIDTable.ButtonClick += CD_MakeIDTable_ButtonClick;
+                CD_FavoriteText.Click += RefreshFavoriteList;
 
                 //Statistics
                 SS_CharaCalculate.ButtonClick += SS_WeaponCalculate_ButtonClick;
@@ -287,6 +307,20 @@ namespace SAOCR_Data_Manager
                 EC_MainExpAfter.KeyPress += Extent.VerifyTextIsNum;
                 EC_MainLvBefore.KeyPress += Extent.VerifyTextIsNum;
                 EC_MainLvAfter.KeyPress += Extent.VerifyTextIsNum;
+
+                //Equip
+                EQ_WeaponSearch.ButtonClick += EQ_Search_Click;
+                EQ_WeaponID.KeyPress += Extent.VerifyTextIsNum;
+                EQ_WeaponID.KeyPress += TextBoxEnter;
+                EQ_Search.ButtonClick += EQ_WSearch_Click;
+                EQ_Result.MouseDoubleClick += EQ_Result_MouseDoubleClick;
+                EQ_Result.KeyPress += EQ_Result_KeyPress;
+                EQ_FavAdd.ButtonClick += EQ_FavAdd_Click;
+                EQ_FavRem.ButtonClick += EQ_FavRem_Click;
+                EQ_FavList.DoubleClick += EQ_FavList_DoubleClick;
+                EQ_GoAccessory.ButtonClick += EQ_DisplayChange;
+                EQ_GoArmor.ButtonClick += EQ_DisplayChange;
+                EQ_GoWeapon.ButtonClick += EQ_DisplayChange;
             }
             catch (Exception e)
             {
@@ -294,7 +328,7 @@ namespace SAOCR_Data_Manager
                 throw;
             }
         }
-        
+
         public void InitializeControlAttributes()
         {
             try
@@ -346,6 +380,25 @@ namespace SAOCR_Data_Manager
 
                 //Exp Calculator
                 EC_CharaTips.Marquee();
+
+                //Equip
+                string[] Rarity = { REquip.Layout_S1, REquip.Layout_S2, REquip.Layout_S3, REquip.Layout_S4, REquip.Layout_S5, REquip.Layout_S6 };
+                EQ_Condition1.Columns.Add("星級", EQ_Condition1.Width - Const.SCROLL_BAR_WIDTH);
+                foreach (string R in Rarity)
+                {
+                    EQ_Condition1.Items.Add(R);
+                }
+                EQ_Condition1.Items.Add(REquip.Layout_Empty);
+
+                EQ_Condition2.Columns.Add("武器種類", EQ_Condition2.Width - Const.SCROLL_BAR_WIDTH);
+                for (int i = 1; i <= Const.Count.WEAPON_CATEGORY; i++)
+                {
+                    EQ_Condition2.Items.Add(EnumTranslator.WeaponT((EWeapon)i));
+                }
+                EQ_Condition2.Items.Add(REquip.Layout_Empty);
+
+                InitializeList(InitItem.EQ_Result);
+                InitializeList(InitItem.EQ_Favorite);
             }
             catch (Exception e)
             {
@@ -438,6 +491,19 @@ namespace SAOCR_Data_Manager
                         DL_DownloadStatus.Columns.Add(Const.ColName.DOWNLOAD_FILE_SIZE, 60, HorizontalAlignment.Left);
                         DL_DownloadStatus.Columns.Add(Const.ColName.DOWNLOAD_PROGRESS, 70, HorizontalAlignment.Left);
                         DL_DownloadStatus.Columns.Add(Const.ColName.DOWNLOAD_STATUS, 110, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.EQ_Result:
+                        EQ_Result.Clear();
+                        EQ_Result.Columns.Add(Const.ColName.N_A, 0);
+                        EQ_Result.Columns.Add(Const.ColName.WEAPON_ID, 75, HorizontalAlignment.Left);
+                        EQ_Result.Columns.Add(Const.ColName.WEAPON_NAME, 154, HorizontalAlignment.Left);
+                        break;
+                    case InitItem.EQ_Favorite:
+                        EQ_FavList.Clear();
+                        EQ_FavList.Columns.Add(Const.ColName.N_A, 0);
+                        EQ_FavList.Columns.Add(Const.ColName.EQUIP_CATEGORY, 40, HorizontalAlignment.Left);
+                        EQ_FavList.Columns.Add(Const.ColName.EQUIP_ID, 75, HorizontalAlignment.Left);
+                        EQ_FavList.Columns.Add(Const.ColName.EQUIP_NAME, 237, HorizontalAlignment.Left);
                         break;
                 }
             }
@@ -619,9 +685,11 @@ namespace SAOCR_Data_Manager
                     }
                     else
                     {
+                        FDTL.Location.StartList.Add(0);
+                        FDTL.Location.EndList.Add(99999);
                         item.SubItems.Add("");
                         item.SubItems.Add("");
-                        break;
+                        continue;
                     }
                     int EndStack = Convert.ToInt32(FDTL.Location.StartList[i] + DataAPI.EndStack(DT.Source, FDTL.Location.StartList[i], FDTL.EndKey.Key[i], 1) - 1);
                     FDTL.Location.EndList.Add(EndStack);

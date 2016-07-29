@@ -124,7 +124,7 @@
     <value>角色ID</value>
   </data>
   <data name="Layout_FavoriteText" xml:space="preserve">
-    <value>我的最愛角色</value>
+    <value>我的最愛角色(查詢角色後、點選此處會刷新清單)</value>
   </data>
   <data name="Layout_MakeIDTable" xml:space="preserve">
     <value>製作角色圖片、ID對照表</value>
@@ -140,5 +140,14 @@
   </data>
   <data name="Log_ShowCharacterFail" xml:space="preserve">
     <value>無法顯示角色資料。提供的角色ID: </value>
+  </data>
+  <data name="Message_FolderToOutput" xml:space="preserve">
+    <value>請選擇要輸出角色ID表的資料夾。</value>
+  </data>
+  <data name="Message_IDTableExportCompleted" xml:space="preserve">
+    <value>角色ID表輸出完成。是否開啟檔案？</value>
+  </data>
+  <data name="Name_IDTagDatatableName" xml:space="preserve">
+    <value>ID Tag Data</value>
   </data>
 </root>

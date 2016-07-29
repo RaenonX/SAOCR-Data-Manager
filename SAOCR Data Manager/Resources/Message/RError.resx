@@ -616,7 +616,7 @@
     <comment>PCharacterData</comment>
   </data>
   <data name="E_0x00011006" xml:space="preserve">
-    <value>錯誤代碼 0x00011006\n\n</value>
+    <value>錯誤代碼 0x00011006\n\n執行ID表輸出作業時發生錯誤。</value>
     <comment>PCharacterData</comment>
   </data>
   <data name="E_0x00011007" xml:space="preserve">
@@ -1412,15 +1412,15 @@
     <comment>BreezeLabel</comment>
   </data>
   <data name="E_0x00001000" xml:space="preserve">
-    <value>錯誤代碼 0x00001000\n\n初始化武器基本資料時發生錯誤。</value>
+    <value>錯誤代碼 0x00001000\n\n初始化武器資料顯示介面時發生錯誤。</value>
     <comment>WeaponStatus</comment>
   </data>
   <data name="E_0x00001001" xml:space="preserve">
-    <value>錯誤代碼 0x00001001\n\n初始化武器基本資料的事件時發生錯誤。</value>
+    <value>錯誤代碼 0x00001001\n\n初始化武器資料顯示介面的事件時發生錯誤。</value>
     <comment>WeaponStatus</comment>
   </data>
   <data name="E_0x00001002" xml:space="preserve">
-    <value>錯誤代碼 0x00001002\n\n</value>
+    <value>錯誤代碼 0x00001002\n\n要求顯示武器資料發生錯誤。ID、業務度分別是: </value>
     <comment>WeaponStatus</comment>
   </data>
   <data name="E_0x00001003" xml:space="preserve">
@@ -1532,15 +1532,15 @@
     <comment>WeaponData</comment>
   </data>
   <data name="E_0x0002B006" xml:space="preserve">
-    <value>錯誤代碼 0x0002B006\n\n根據業物度獲得參數陣列時發生錯誤。</value>
+    <value>錯誤代碼 0x0002B006\n\n</value>
     <comment>WeaponData</comment>
   </data>
   <data name="E_0x0002B007" xml:space="preserve">
-    <value>錯誤代碼 0x0002B007\n\n</value>
+    <value>錯誤代碼 0x0002B007\n\n初始化武器資料的參數部分時發生錯誤。</value>
     <comment>WeaponData</comment>
   </data>
   <data name="E_0x0002B008" xml:space="preserve">
-    <value>錯誤代碼 0x0002B008\n\n</value>
+    <value>錯誤代碼 0x0002B008\n\n獲取指定等級的武器參數時發生錯誤。武器等級、ID、業務度代碼分別為: </value>
     <comment>WeaponData</comment>
   </data>
   <data name="E_0x0002B009" xml:space="preserve">
@@ -2078,5 +2078,89 @@
   <data name="E_0x00006009" xml:space="preserve">
     <value>錯誤代碼 0x00006009\n\n</value>
     <comment>PExpCalculator</comment>
+  </data>
+  <data name="E_0x0002F000" xml:space="preserve">
+    <value>錯誤代碼 0x0002F000\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F001" xml:space="preserve">
+    <value>錯誤代碼 0x0002F001\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F002" xml:space="preserve">
+    <value>錯誤代碼 0x0002F002\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F003" xml:space="preserve">
+    <value>錯誤代碼 0x0002F003\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F004" xml:space="preserve">
+    <value>錯誤代碼 0x0002F004\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F005" xml:space="preserve">
+    <value>錯誤代碼 0x0002F005\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F006" xml:space="preserve">
+    <value>錯誤代碼 0x0002F006\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F007" xml:space="preserve">
+    <value>錯誤代碼 0x0002F007\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F008" xml:space="preserve">
+    <value>錯誤代碼 0x0002F008\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x0002F009" xml:space="preserve">
+    <value>錯誤代碼 0x0002F009\n\n</value>
+    <comment>CsvTable</comment>
+  </data>
+  <data name="E_0x00030000" xml:space="preserve">
+    <value>錯誤代碼 0x00030000\n\n搜尋裝備資料時發生錯誤。</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030001" xml:space="preserve">
+    <value>錯誤代碼 0x00030001\n\n搜尋武器時發生錯誤。</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030002" xml:space="preserve">
+    <value>錯誤代碼 0x00030002\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030003" xml:space="preserve">
+    <value>錯誤代碼 0x00030003\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030004" xml:space="preserve">
+    <value>錯誤代碼 0x00030004\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030005" xml:space="preserve">
+    <value>錯誤代碼 0x00030005\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030006" xml:space="preserve">
+    <value>錯誤代碼 0x00030006\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030007" xml:space="preserve">
+    <value>錯誤代碼 0x00030007\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030008" xml:space="preserve">
+    <value>錯誤代碼 0x00030008\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00030009" xml:space="preserve">
+    <value>錯誤代碼 0x00030009\n\n</value>
+    <comment>Equip</comment>
+  </data>
+  <data name="E_0x00028000" xml:space="preserve">
+    <value>錯誤代碼 0x00028000\n\n將武器目錄ID轉譯成文字時發生錯誤。</value>
+    <comment>Translate</comment>
   </data>
 </root>

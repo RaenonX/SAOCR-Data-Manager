@@ -204,4 +204,7 @@
   <data name="AtPage_EXPCalc" xml:space="preserve">
     <value>經驗計算器</value>
   </data>
+  <data name="AtPage_Equip" xml:space="preserve">
+    <value>裝備資訊</value>
+  </data>
 </root>

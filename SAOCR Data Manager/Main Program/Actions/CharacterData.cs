@@ -98,7 +98,11 @@ namespace SAOCR_Data_Manager
                         ListViewItem LVI = new ListViewItem();
                         LVI.SubItems.Add(item);
 
-                        DataRow[] CharaData = DataAPI.Search(item, DT.CharaMix, 0, (int)ECharaMixCode.ID);
+                        DataRow[] CharaData = null;
+                        if (DT.CharaMix != null)
+                        {
+                            CharaData = DataAPI.Search(item, DT.CharaMix, 0, (int)ECharaMixCode.ID);
+                        }
                         if (CharaData != null)
                         {
                             string HEAD = CharaData[0][(int)ECharaMixCode.HEAD].ToString();
@@ -181,7 +185,109 @@ namespace SAOCR_Data_Manager
 
         private void CD_MakeIDTable_ButtonClick(object sender, EventArgs e)
         {
+            try
+            {
+                FolderBrowserDialog FBD = new FolderBrowserDialog();
+                FBD.RootFolder = Environment.SpecialFolder.DesktopDirectory;
+                FBD.Description = RCharaData.Message_FolderToOutput;
+                FBD.ShowNewFolderButton = true;
 
+                if (Extent.isEmptyString(FBD.SelectedPath) && FBD.ShowDialog() == DialogResult.OK)
+                {
+                    DataTable CharaIDTag = new DataTable();
+                    List<string> DataList = new List<string>();
+
+                    InitializeDataTable(ref CharaIDTag, Const.Column.COLUMN_TAG, RCharaData.Name_IDTagDatatableName);
+
+                    DataAPI.LoadCSV(ref CharaIDTag, Const.Path.RESOURCES + "/" + Const.Path.ID_TABLE + "/" + Const.Path.ID_TAG, "\t");
+                    DataAPI.LoadCSV(ref DataList, Const.Path.RESOURCES + "/" + Const.Path.ID_TABLE + "/" + Const.Path.ID_TABLE_DATA);
+
+                    string Path = FBD.SelectedPath + "/Export.html";
+
+                    if (File.Exists(Path))
+                    {
+                        File.Delete(Path);
+                    }
+
+                    using (FileStream FS = File.Create(Path))
+                    {
+                        WriteText(FS, My.FileSystem.ReadAllText(Const.Path.RESOURCES + "/" + Const.Path.ID_TABLE + "/" + Const.Path.ID_TABLE_HEADER));
+
+                        foreach (DataRow DR in CharaIDTag.Rows)
+                        {
+                            string TextToWrite = "";
+                            TextToWrite += "<li><a href=\"#";
+                            TextToWrite += DR[(int)ECharaIDTagCode.EN_NAME].ToString();
+                            TextToWrite += "\">";
+                            TextToWrite += DR[(int)ECharaIDTagCode.TEXT].ToString();
+                            TextToWrite += "</a></li>\n";
+
+                            WriteText(FS, TextToWrite);
+                        }
+
+                        WriteText(FS, My.FileSystem.ReadAllText(Const.Path.RESOURCES + "/" + Const.Path.ID_TABLE + "/" + Const.Path.ID_TABLE_BEGIN));
+
+                        foreach (DataRow DR in DT.CharaMix.Rows)
+                        {
+                            string TextToWrite = "";
+                            for (int i = 0; i < DataList.Count; i++)
+                            {
+                                TextToWrite += DataList[i];
+
+                                switch (i)
+                                {
+                                    case 0:
+                                        DataRow[] Result = DataAPI.Search(DR[(int)ECharaMixCode.ID].ToString().Substring(0, 4), CharaIDTag, 0, (int)ECharaIDTagCode.ID_4NUM);
+                                        if (Result != null)
+                                        {
+                                            TextToWrite += "<a id=\"" + Result[0][(int)ECharaIDTagCode.EN_NAME] + "\">";
+                                        }
+                                        TextToWrite += DR[(int)ECharaMixCode.ID].ToString().Substring(6, 1);
+                                        if (Result != null)
+                                        {
+                                            TextToWrite += "</a>";
+                                        }
+                                        break;
+                                    case 1:
+                                    case 6:
+                                    case 7:
+                                        TextToWrite += DR[(int)ECharaMixCode.ID].ToString();
+                                        break;
+                                    case 2:
+                                    case 3:
+                                        TextToWrite += DR[(int)ECharaMixCode.HEAD].ToString() + DR[(int)ECharaMixCode.NAME].ToString();
+                                        break;
+                                    case 4:
+                                        TextToWrite += DR[(int)ECharaMixCode.EN].ToString();
+                                        break;
+                                    case 5:
+                                        TextToWrite += DR[(int)ECharaMixCode.CV].ToString();
+                                        break;
+                                }
+                            }
+
+                            WriteText(FS, TextToWrite);
+                        }
+
+                        WriteText(FS, My.FileSystem.ReadAllText(Const.Path.RESOURCES + "/" + Const.Path.ID_TABLE + "/" + Const.Path.ID_TABLE_END));
+                    }
+                    if (new MessageDialog(RCharaData.Message_IDTableExportCompleted, Path, MessageBoxButtonStyle.YesNo).ShowDialog() == DialogResult.Yes)
+                    {
+                        Process.Start(Path);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                SystemAPI.Error(RError.E_0x00011006, ex);
+                throw;
+            }
+        }
+
+        private void WriteText(FileStream FS, string Text)
+        {
+            byte[] DataToWrite = new UTF8Encoding(true).GetBytes(Text);
+            FS.Write(DataToWrite, 0, DataToWrite.Length);
         }
     }
 }

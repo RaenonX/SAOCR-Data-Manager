@@ -120,6 +120,18 @@
   <data name="Error_EmptyStepStack" xml:space="preserve">
     <value>請輸入要跳轉的位置。</value>
   </data>
+  <data name="Layout_A100" xml:space="preserve">
+    <value>+100</value>
+  </data>
+  <data name="Layout_A1K" xml:space="preserve">
+    <value>+1K</value>
+  </data>
+  <data name="Layout_D100" xml:space="preserve">
+    <value>-100</value>
+  </data>
+  <data name="Layout_D1K" xml:space="preserve">
+    <value>-1K</value>
+  </data>
   <data name="Layout_EndColumn" xml:space="preserve">
     <value>結束欄位</value>
   </data>

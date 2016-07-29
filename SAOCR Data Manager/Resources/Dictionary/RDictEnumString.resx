@@ -384,4 +384,19 @@
   <data name="AM_DLonce" xml:space="preserve">
     <value>只下載一次</value>
   </data>
+  <data name="ET_Accessory" xml:space="preserve">
+    <value>飾品</value>
+  </data>
+  <data name="ET_Armor" xml:space="preserve">
+    <value>防具</value>
+  </data>
+  <data name="ET_Character" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="ET_Null" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="ET_Weapon" xml:space="preserve">
+    <value>武器</value>
+  </data>
 </root>

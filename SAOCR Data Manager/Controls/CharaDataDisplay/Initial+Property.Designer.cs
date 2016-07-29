@@ -139,12 +139,12 @@
             this.CharacterName.ColorBegin = System.Drawing.Color.Empty;
             this.CharacterName.ColorEnd = System.Drawing.Color.Empty;
             this.CharacterName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CharacterName.Font = new System.Drawing.Font("Meiryo", 17F);
+            this.CharacterName.Font = new System.Drawing.Font("微軟正黑體", 17F);
             this.CharacterName.ForeColor = System.Drawing.Color.White;
             this.CharacterName.LAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CharacterName.LBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.CharacterName.LBorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CharacterName.LFont = new System.Drawing.Font("Meiryo", 17F);
+            this.CharacterName.LFont = new System.Drawing.Font("微軟正黑體", 17F);
             this.CharacterName.LForeColor = System.Drawing.Color.White;
             this.CharacterName.Location = new System.Drawing.Point(1, 1);
             this.CharacterName.LText = "";

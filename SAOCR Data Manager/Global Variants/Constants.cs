@@ -73,10 +73,24 @@ namespace SAOCR_Data_Manager
             public const string DOWNLOAD_FILE_SIZE = "檔案大小";
             public const string DOWNLOAD_PROGRESS = "下載進度";
             public const string DOWNLOAD_STATUS = "下載狀態";
+            public const string WEAPON_ID = "武器ID";
+            public const string WEAPON_NAME = "武器名稱";
+            public const string EQUIP_CATEGORY = "種類";
+            public const string EQUIP_ID = "ID";
+            public const string EQUIP_NAME = "名稱";
         }
 
         public static class Path
         {
+            public const string RESOURCES = "Dimension";
+
+            public const string ID_TABLE = "IDTable";
+            public const string ID_TABLE_HEADER = "TableHead.txt";
+            public const string ID_TABLE_BEGIN = "TableBegin.txt";
+            public const string ID_TABLE_DATA = "TableData.txt";
+            public const string ID_TABLE_END = "TableEnd.txt";
+            public const string ID_TAG = "IDToTag.txt";
+
             public const string DEFAULT_CSV = "csv.assetbundle";
             public const string CHARA_DIM = "Dimension/CharaDim.txt";
             public const string CHARA_SERIES = "Dimension/CharaSeries.txt";
@@ -115,6 +129,7 @@ namespace SAOCR_Data_Manager
             public const int PARAM_CATEGORY = 4;
             public const int WEAPON_CATEGORY = 12;
             public const int WEAPON_SHARPNESS = 4;
+            public const int WEAPON_MAX_LEVEL = 15;
             public const int ELEMENT_CATEGORY = 3;
             public const int SCENE_CATEGORY = 4;
             public const int RARITY = 6;
@@ -133,6 +148,7 @@ namespace SAOCR_Data_Manager
             public const int LS_DICT = 15;
             public const int PATH_DICT = 2;
             public const int WEAPON_EFFECT = 2;
+            public const int COLUMN_TAG = 4;
         }
 
         public static class Log

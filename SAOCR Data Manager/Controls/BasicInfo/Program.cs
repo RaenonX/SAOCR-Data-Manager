@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SAOCR_Data_Manager.Resources.Controls;
 using SAOCR_Data_Manager.Resources.Message;
 using SAOCR_Data_Manager.Forms;
+using Microsoft.VisualBasic.Devices;
 
 namespace SAOCR_Data_Manager.Controls.Initialize_Properties
 {
@@ -129,6 +130,10 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
 
         private void Picture_Download_Failed(object sender, EventArgs e)
         {
+            Computer My = new Computer();
+            Downloader DL = (Downloader)sender;
+
+            My.FileSystem.DeleteFile(DL.GetFileLocation(DataSource.Local));
             Picture.Image = Properties.Resources.Error;
             Picture.Click -= Picture_Click;
         }

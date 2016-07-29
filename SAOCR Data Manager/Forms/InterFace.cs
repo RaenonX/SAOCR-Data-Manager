@@ -36,13 +36,18 @@ namespace SAOCR_Data_Manager
         UpdateChecker AUProgram, AUResource, AUCsv;
         int CT_TipsCounter = 0, ST_DevelopersCounter = 0;
         public static Timer BreezeLabel = new Timer(), MarqueeLabel = new Timer();
+
         List<Downloader> DLs = new List<Downloader>();
         PicDownloadInfo PDI = new PicDownloadInfo();
+        Button_SE_[] FunctionButtons;
 
         public FMain()
         {
             InitializeAtBegin();
             InitializeComponent();
+
+            FunctionButtons = new Button_SE_[] { HM_ToCharacterData, HM_ToEquipmentData, HM_ToCsvTable, HM_ToDownload,
+            HM_ToEXPCalc, HM_ToStatistics };
         }
     }
 }
