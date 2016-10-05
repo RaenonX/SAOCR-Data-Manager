@@ -84,6 +84,7 @@ namespace SAOCR_Data_Manager.Controls.Initialize_Properties
                         } else
                         {
                             Picture.ImageLocation = PicAtLocal;
+                            Picture.Click += Picture_Click;
                         }
                         break;
                 }

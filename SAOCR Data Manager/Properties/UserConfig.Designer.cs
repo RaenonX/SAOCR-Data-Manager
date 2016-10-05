@@ -25,7 +25,7 @@ namespace SAOCR_Data_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
         public int AU_ProgramMode {
             get {
                 return ((int)(this["AU_ProgramMode"]));
@@ -37,7 +37,7 @@ namespace SAOCR_Data_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool SE_BGMMute {
             get {
                 return ((bool)(this["SE_BGMMute"]));
@@ -85,7 +85,7 @@ namespace SAOCR_Data_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SE/ソウルワーカー(Soul Worker) BGM - STEEL GRAVE.mp3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("SE/Maplestory OST - Kinesis_001.mp3")]
         public string SE_BGM {
             get {
                 return ((string)(this["SE_BGM"]));
@@ -157,7 +157,7 @@ namespace SAOCR_Data_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
         public int AU_CSVMode {
             get {
                 return ((int)(this["AU_CSVMode"]));
@@ -205,7 +205,7 @@ namespace SAOCR_Data_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int AMMode {
             get {
                 return ((int)(this["AMMode"]));

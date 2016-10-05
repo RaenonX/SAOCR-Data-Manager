@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="AU_ProgramMode" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">3</Value>
+      <Value Profile="(Default)">2</Value>
     </Setting>
     <Setting Name="SE_BGMMute" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="AU_ProgramChannel" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
@@ -18,7 +18,7 @@
       <Value Profile="(Default)">SE/Notify.SAO.System.wav</Value>
     </Setting>
     <Setting Name="SE_BGM" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SE/ソウルワーカー(Soul Worker) BGM - STEEL GRAVE.mp3</Value>
+      <Value Profile="(Default)">SE/Maplestory OST - Kinesis_001.mp3</Value>
     </Setting>
     <Setting Name="SE_WarningMute" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -36,7 +36,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="AU_CSVMode" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">3</Value>
+      <Value Profile="(Default)">2</Value>
     </Setting>
     <Setting Name="SE_Message" Type="System.String" Scope="User">
       <Value Profile="(Default)">SE/Popup.SAO.Message.wav</Value>
@@ -48,7 +48,7 @@
       <Value Profile="(Default)">Dimension/CharaHTMLTemplate.txt</Value>
     </Setting>
     <Setting Name="AMMode" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">1</Value>
     </Setting>
   </Settings>
 </SettingsFile>

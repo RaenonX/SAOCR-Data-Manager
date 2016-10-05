@@ -188,7 +188,7 @@ namespace SAOCR_Data_Manager
             try
             {
                 FolderBrowserDialog FBD = new FolderBrowserDialog();
-                FBD.RootFolder = Environment.SpecialFolder.DesktopDirectory;
+                FBD.RootFolder = Environment.SpecialFolder.MyComputer;
                 FBD.Description = RCharaData.Message_FolderToOutput;
                 FBD.ShowNewFolderButton = true;
 
